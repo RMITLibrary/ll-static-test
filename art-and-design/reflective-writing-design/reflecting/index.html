@@ -1,0 +1,1467 @@
+<!doctype html>
+<html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
+
+<head>
+<!-- 
+    DARK MODE
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+  -->
+  <script>
+    (function() {
+      'use strict';
+
+      // Function to get the stored theme from local storage
+      const getStoredTheme = () => localStorage.getItem('theme');
+
+      // Function to determine the preferred theme
+      const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+          return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      };
+
+      // Function to apply the specified theme
+      const setTheme = theme => {
+        if (theme === 'auto') {
+          // If theme is 'auto', set it based on system preference
+          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+          // Otherwise, set the theme explicitly
+          document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+      };
+
+      // Set the theme based on the preferred theme
+      setTheme(getPreferredTheme());
+    })();
+  </script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- wp_head -->
+	<title>Reflecting on your learning - lab</title>
+
+		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
+		<meta name="description" content="The main section of the knowledge object contains a series of reflections on your studio learning. Reflections identify key learning and insights gained through critical incidents in the design process and activities in the studio. Articulation of your learning through reflection supports learning-by-doing and transfer of learning from one studio to another. The aim is" />
+		<meta name="robots" content="max-image-preview:large" />
+		<link rel="canonical" href="index.html" />
+		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content="lab -" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Reflecting on your learning - lab" />
+		<meta property="og:description" content="The main section of the knowledge object contains a series of reflections on your studio learning. Reflections identify key learning and insights gained through critical incidents in the design process and activities in the studio. Articulation of your learning through reflection supports learning-by-doing and transfer of learning from one studio to another. The aim is" />
+		<meta property="og:url" content="https://lab.bitma.app/art-and-design/reflective-writing-design/reflecting/" />
+		<meta property="article:published_time" content="2023-10-16T05:34:27+00:00" />
+		<meta property="article:modified_time" content="2024-10-29T22:59:31+00:00" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Reflecting on your learning - lab" />
+		<meta name="twitter:description" content="The main section of the knowledge object contains a series of reflections on your studio learning. Reflections identify key learning and insights gained through critical incidents in the design process and activities in the studio. Articulation of your learning through reflection supports learning-by-doing and transfer of learning from one studio to another. The aim is" />
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/art-and-design\/reflective-writing-design\/reflecting\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/art-and-design\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/art-and-design\/#listItem","position":2,"name":"Art and design","item":"https:\/\/lab.bitma.app\/art-and-design\/","nextItem":"https:\/\/lab.bitma.app\/art-and-design\/reflective-writing-design\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/art-and-design\/reflective-writing-design\/#listItem","position":3,"name":"Reflective writing in design","item":"https:\/\/lab.bitma.app\/art-and-design\/reflective-writing-design\/","nextItem":"https:\/\/lab.bitma.app\/art-and-design\/reflective-writing-design\/reflecting\/#listItem","previousItem":"https:\/\/lab.bitma.app\/art-and-design\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/art-and-design\/reflective-writing-design\/reflecting\/#listItem","position":4,"name":"Reflecting on your learning","previousItem":"https:\/\/lab.bitma.app\/art-and-design\/reflective-writing-design\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/art-and-design\/reflective-writing-design\/reflecting\/#webpage","url":"https:\/\/lab.bitma.app\/art-and-design\/reflective-writing-design\/reflecting\/","name":"Reflecting on your learning - lab","description":"The main section of the knowledge object contains a series of reflections on your studio learning. Reflections identify key learning and insights gained through critical incidents in the design process and activities in the studio. Articulation of your learning through reflection supports learning-by-doing and transfer of learning from one studio to another. The aim is","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/art-and-design\/reflective-writing-design\/reflecting\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:27+00:00","dateModified":"2024-10-29T22:59:31+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$','$'],['\\(','\\)']], 
+    processEscapes: true
+  },
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore|editor-rich-text'
+  }
+};
+
+</script>
+<link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
+<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
+<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
+<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+ 	<!-- /wp_head -->
+    
+    <style>
+        </style>
+</head>
+
+<body class="page-template-default page page-id-2794 page-child parent-pageid-3110 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
+	
+		
+<header>
+<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+<div class="top-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-auto left-nav">
+                <div class="rmit-logo"><span class="visually-hidden">RMIT University logo</span></div>
+				<h2>
+					<!-- Explicitly turn off one bit of text and turn on the other to deal with JAWS bug - https://github.com/alphagov/govuk-frontend/issues/1643 -->
+					<a href="../../../index.html">
+						<span aria-hidden="true">Learning lab</span>
+						<span class="visually-hidden">Learning lab homepage</span>
+					</a>
+				</h2>
+            </div>
+            <div class="col">       
+                <ul>
+                    <li class="hide-sm">
+                        <a href="https://www.rmit.edu.au/library">
+							<span aria-hidden="true">Library</span>
+							<span class="visually-hidden">Library homepage</span>
+						</a>
+                    </li>
+                    <li class="search">
+                        <a href="../../../search/index.html" id="search2">
+                            <div class="search-label">Search</div>
+                            <div class="mag-glass"></div>
+                        </a>
+                    </li>
+                    <li class="menu">
+                        <button id="menu-button" 
+                        class="btn btn-primary collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#context-menu" data-bs-display="static" aria-expanded="false" 
+                        aria-controls="context-menu">Click for main menu</button>
+                    </li>
+                </ul> 
+            </div>   
+        </div>
+    </div>
+</div>
+<nav id="context-menu" class="collapse" aria-label="Main Menu">
+    <div class="container nav-container not-wordpress">
+        <div class="row">
+            <!-- START menu -->
+            <div class="col-xl-8">
+				<div class="accordion accordion-white" id="context-menu-accordion">	
+						<div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-6823">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-6823" aria-expanded="false" aria-controls="accordion-body-6823">University essentials</button>
+</h2>
+<div id="accordion-body-6823" class="accordion-collapse collapse" aria-labelledby="accordion-head-6823">
+<div class="accordion-body"><ul><li class="page_item page-item-3339 page_item_has_children"><a href="../../../university-essentials/acting-academic-integrity/index.html">Academic integrity</a></li>
+<li class="page_item page-item-3347 page_item_has_children"><a href="../../../university-essentials/artificial-intelligence-tools/index.html">Artificial intelligence</a></li>
+<li class="page_item page-item-3117 page_item_has_children"><a href="../../../university-essentials/critical-thinking-and-argument-analysis/index.html">Critical thinking</a></li>
+<li class="page_item page-item-2501 page_item_has_children"><a href="../../../university-essentials/getting-started/index.html">Getting started with Uni</a></li>
+<li class="page_item page-item-3097 page_item_has_children"><a href="../../../university-essentials/group-work/index.html">Group work</a></li>
+<li class="page_item page-item-3175 page_item_has_children"><a href="../../../university-essentials/online-learning-skills/index.html">Online learning skills</a></li>
+<li class="page_item page-item-6844 page_item_has_children"><a href="../../../university-essentials/study-essentials/index.html">Study essentials</a></li>
+<li class="page_item page-item-3313 page_item_has_children"><a href="../../../university-essentials/sustainability/index.html">Sustainability</a></li>
+</ul></div></div></div><div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-6825">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-6825" aria-expanded="false" aria-controls="accordion-body-6825">Writing fundamentals</button>
+</h2>
+<div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
+<div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-3295"><a href="../../../writing-fundamentals/understanding-your-audience/index.html">Understanding your audience</a></li>
+<li class="page_item page-item-3107 page_item_has_children"><a href="../../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
+<li class="page_item page-item-2520 page_item_has_children"><a href="../../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
+<li class="page_item page-item-2521"><a href="../../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
+<li class="page_item page-item-2855 page_item_has_children"><a href="../../../writing-fundamentals/writing-workplace/index.html">Writing for the workplace</a></li>
+</ul></div></div></div><div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-6828">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-6828" aria-expanded="false" aria-controls="accordion-body-6828">Assessments</button>
+</h2>
+<div id="accordion-body-6828" class="accordion-collapse collapse" aria-labelledby="accordion-head-6828">
+<div class="accordion-body"><ul><li class="page_item page-item-7168 page_item_has_children"><a href="../../../assessments/getting-started-with-assignments/index.html">Getting started with assignments</a></li>
+<li class="page_item page-item-2516 page_item_has_children"><a href="../../../assessments/essays/index.html">Essays</a></li>
+<li class="page_item page-item-2580 page_item_has_children"><a href="../../../assessments/reflective-writing-1/index.html">Academic reflection</a></li>
+<li class="page_item page-item-7204 page_item_has_children"><a href="../../../assessments/presentations/index.html">Presentations</a></li>
+<li class="page_item page-item-2578 page_item_has_children"><a href="../../../assessments/case-studies/index.html">Case studies</a></li>
+<li class="page_item page-item-2544 page_item_has_children"><a href="../../../assessments/reports/index.html">Reports</a></li>
+<li class="page_item page-item-2536 page_item_has_children"><a href="../../../assessments/literature-review/index.html">Literature review</a></li>
+<li class="page_item page-item-2617"><a href="../../../assessments/annotated-bibliographies/index.html">Annotated bibliographies</a></li>
+</ul></div></div></div><div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-2545">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-2545" aria-expanded="false" aria-controls="accordion-body-2545">Referencing</button>
+</h2>
+<div id="accordion-body-2545" class="accordion-collapse collapse" aria-labelledby="accordion-head-2545">
+<div class="accordion-body"><ul><li class="page_item page-item-3329"><a href="../../../referencing/using-other-peoples-ideas/index.html">What is referencing?</a></li>
+<li class="page_item page-item-3346"><a href="../../../referencing/understanding-citations/index.html">Understanding citations</a></li>
+<li class="page_item page-item-3330"><a href="../../../referencing/when-referencing-isnt-needed/index.html">When referencing isn't needed</a></li>
+<li class="page_item page-item-3331"><a href="../../../referencing/quoting/index.html">Quoting</a></li>
+<li class="page_item page-item-3337"><a href="../../../referencing/paraphrasing-4/index.html">Paraphrasing</a></li>
+<li class="page_item page-item-3334"><a href="../../../referencing/summarising-0/index.html">Summarising</a></li>
+<li class="page_item page-item-3338"><a href="../../../referencing/synthesising/index.html">Synthesising</a></li>
+<li class="page_item page-item-3333"><a href="../../../referencing/integrating-ideas-reporting-words/index.html">Integrating ideas with reporting words</a></li>
+<li class="page_item page-item-3336"><a href="../../../referencing/getting-help-referencing/index.html">Easy Cite and referencing help</a></li>
+</ul></div></div></div>						<!-- START Subject support
+                        special case. Effectively each of the child pages here is a section page. For the nav, however, we want toshow these under the banner of subject support. -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-head-subject-support">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-subject-support" aria-expanded="false" aria-controls="accordion-body-subject-support">
+								Subject support
+							  	</button>
+							</h2>
+							<div id="accordion-body-subject-support" class="accordion-collapse collapse" aria-labelledby="accordion-head-subject-support" style="">
+								<div class="accordion-body">
+									<ul>
+										<li><a href="../../index.html">Art and design</a></li>
+										<li><a href="../../../chemistry/index.html">Chemistry</a></li>
+										<li><a href="../../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../../maths-statistics/index.html">Mathematics and statistics</a></li>
+										<li><a href="../../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
+										<li><a href="../../../subject-areas/physics/index.html">Physics</a></li>
+										<!-- <li><a href="//">Life sciences</a></li> -->
+									</ul>
+								</div>
+							  </div>
+						</div>
+						<!-- END subject support - special case -->
+                </div>	
+            </div>
+            <!-- END menu -->
+        </div>
+    </div>
+</nav>
+</header>
+
+	<main id='theme-main'>
+
+<div class="container" id="page-content">
+    <div class="row ">
+        <!-- START right nav -->
+        <div class="col-xl-4 order-last">
+            
+
+<!-- this style changes the page link style in the sidebar nav 
+to indicate the current page and removes bullets from unordered lists. 
+The wp_list_pages function allocates the classes automatically. 
+This should be moved to a stylesheet once style is determined. -->
+
+<!--<style>
+[aria-current="page"] {
+  pointer-events: none !important; 
+  cursor: default;
+  text-decoration: none !important;
+  color: #000054;
+}
+</style>-->
+
+	
+<!-- START SIDEBAR NAV PANEL -->
+<nav class="right-nav" aria-label="Section Menu">
+
+<h2><a href="../../index.html">Art and design</a></h2><h3><a href="../index.html">Reflective writing in design</a></h3><ul><li><a href="../contextualising/index.html">Contextualising a field of enquiry</a></li><li><a href="index.html" class="selected"  aria-current="page">Reflecting on your learning</a><li><a href="../future-application/index.html">Future application</a></li></ul></nav>
+<!-- END SIDEBAR NAV PANEL -->
+
+
+
+
+<!--<script language="javascript">
+//this script shortens strings for titles that repeat the section title at the start
+//it currently looks for the characters colon and space ": " in the page title
+//this requires strict naming conventions for the title that use a colon 
+//to separate the repeated section title from the descriptive page title
+//the regex pattern to look for - in this case, text that comes after these characters ": "
+const regex = /:\s(.*)/; 
+list.querySelectorAll('a').forEach(a => {
+  //get the text from inside all the <a> tags inside the div with the id "list"
+  const text = a.innerHTML; 
+  //find matches with the regex pattern
+  const match = text.match(regex); 
+  if(match) {
+	//replace what's in each <a> tag that matches the pattern and convert the first character to upper case
+	a.innerHTML = match[1].charAt(0).toUpperCase() + match[1].slice(1); 
+  }
+})
+//as above, but for Heading 6
+list.querySelectorAll('h4').forEach(h4 => {
+  const text = h4.innerHTML; 
+  const match = text.match(regex);
+  if(match) {
+	h4.innerHTML = match[1].charAt(0).toUpperCase() + match[1].slice(1);
+  }
+})
+</script>-->
+		        </div>
+        <!-- END right nav -->
+        <!-- START content -->
+        <div class="col-xl-8 order-first">
+            <nav aria-label="breadcrumbs">
+<ul class="breadcrumbs">
+<li><a href="../../../index.html">Home</a></li>
+<li><a href="../../index.html">Art and design</a></li>
+<li><a href="../index.html">Reflective writing in design</a></li>
+</ul>
+</nav>            <a id="main-content"></a>
+            <h1 class="margin-top-zero">Reflecting on your learning</h1>
+            <p class="lead">The main section of the knowledge object contains a series of reflections on your studio learning. Reflections identify key learning and insights gained through critical incidents in the design process and activities in the studio.</p>
+<p>Articulation of your learning through reflection supports learning-by-doing and transfer of learning from one studio to another. The aim is to identify general principles from specific learning experiences, linking practice with design theory and methods. It is common for a studio object knowledge assignment to contain three or more reflection paragraphs.</p>
+<h2>Step-by-step guide for each reflection</h2>
+<p>There are a number of ways that reflective writing can be structured. One is using the <strong>DIEP</strong> framework. Here's how it works:</p>
+<ol>
+<li><strong> Describe</strong> the insight:<br />
+First, <strong>identify</strong> what the insight is. An insight is a new understanding that emerged from the studio activities or your design process. It may be a practical, theoretical or critical understanding such as a new awareness of certain factors in the design process, a new method that improves your efficiency, a deeper understanding of a particular issue, a connection between a particular theory and practice, a model that supports your interrogation of a problem, or a framework for evaluating design outcomes.</p>
+<p>Then, briefly <strong>describe</strong> the incident that led to this insight. What was the catalyst?</li>
+<li><strong>Interpret</strong> the insight:<br />
+Explain the connection between this insight and the methods, principles and theory of the design field.</li>
+<li><strong>Evaluate</strong> the insight:<br />
+Make an evaluation of the significance of this new understanding for you. This may relate to the further development of the project or future design projects, or to your design process or the way you think about design.</li>
+<li><strong>Plan</strong>:<br />
+Make a plan for how you might transfer this new understanding to future projects and/or practice. Speculate about how this new insight might change the way you approach a design task in the future.</li>
+</ol>
+<h2>Language features</h2>
+<h3> Verb tense</h3>
+<p>Verb tense is used in reflective writing to indicate what you have learnt from the experience. For example, when you speak about your level of knowledge or experience before the insight, often the past tense is used.<br />
+On the other hand, a mixture of the simple present, present continuous, present perfect and future tenses are used to describe your current level of knowledge or experience.</p>
+<h3>I, me, my</h3>
+<p>In most cases, pronouns like <strong>I</strong>, <strong>me</strong> and <strong>my</strong> are avoided in academic writing. However, in reflective writing you are writing about <em>your</em> experiences. This requires a more personal style of writing where <strong>I</strong>, <strong>me</strong> and <strong>my</strong> should be used.</p>
+<h2>Example paragraphs</h2>
+<p>The following examples of student writing provide a guide to the structure and language of a reflection paragraph. They highlight the identify, describe, interpret, evaluate and plan sections of the paragraphs, as well as pointing out verb tense and the use of I, me and my.</p>
+<div class="accordion">
+<div class="accordion-item ">
+<h2 class="accordion-header" id="head-example-paragraph-1-7333">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-example-paragraph-1-8298" aria-expanded="false" aria-controls="body-example-paragraph-1-8298" >Example paragraph 1</button>
+</h2>
+<div id="body-example-paragraph-1-8298" class="accordion-collapse collapse " aria-labelledby="head-example-paragraph-1-7333">
+<div class="accordion-body">
+<h3>Example paragraph 1: structure</h3>
+<p class="visually-hidden">Screen reader users, this text uses visual highlights to indicate different features of the text. Each highlight is explained for your convenience.</p><div class="highlight-text "><div class="key"><ul aria-hidden="true"><li class="highlight-1">1 Identify</li><li class="highlight-2">2 Describe</li><li class="highlight-3">3 Interpret</li><li class="highlight-4">4 Evaluate</li><li class="highlight-5">5 Plan</li></ul></div><div class="content">
+<p class="keep"><span class="highlight-1">
+In this studio, I gained insight into using strategy to form enduring connections with an audience, which is crucial for affecting social change.<sup aria-hidden="true">1</sup><span class="visually-hidden">Screen reader users, this is identify.</span></span> <span class="highlight-2">Initially, my strategy was too complicated and unrealistic, as I tried to address too many issues at once. Through skill-building in mapping, I identified clear correlations between climate change and food security, their impacts on third-world communities, and the threats they pose to the future. This process helped me develop empathy and a sense of responsibility.<sup aria-hidden="true">2</sup><span class="visually-hidden">Screen reader users, this is describe.</span></span> <span class="highlight-3">I realised that understanding my chosen archetype was essential. By improving my interviewing and research skills, I was able to create a detailed persona archetype. This understanding allowed me to design a more focused mission and informed touchpoints, helping me see what issues could be realistically addressed.<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is interpret.</span></span> <span class="highlight-4">The studio challenged and enhanced my personal and professional skills as a designer. It taught me how to create strategies that appeal to target audiences, consider their interactions with the strategy, and establish long-term connections.<sup aria-hidden="true">4</sup><span class="visually-hidden">Screen reader users, this is evaluate.</span></span> <span class="highlight-5">Moving forward, I plan to refine my strategies by focusing on realistic and achievable goals. I will continue to develop my skills in mapping, interviewing, and researching to better understand and connect with my audience.<sup aria-hidden="true">5</sup><span class="visually-hidden">Screen reader users, this is plan.</span></span>
+</div></div>
+<h3>Example paragraph 1: language features</h3>
+<p class="visually-hidden">Screen reader users, this text uses visual highlights to indicate different parts of speech. Each highlight is explained for your convenience.</p><div class="highlight-text "><div class="key"><ul aria-hidden="true"><li class="highlight-1">1 Indicates the present or future</li><li class="highlight-2">2 Indicates the past</li><li class="highlight-3">3 I, me or my</li></ul></div><div class="content">
+In this studio, <span class="highlight-3">I<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> <span class="highlight-2">gained<sup aria-hidden="true">2</sup><span class="visually-hidden">Screen reader users, this indicates the past.</span></span> insight into using strategy to form enduring connections with an audience, which <span class="highlight-1">is<sup aria-hidden="true">1</sup><span class="visually-hidden">Screen reader users, this indicates the present or future.</span></span> crucial for affecting social change. Initially, <span class="highlight-3">my<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> strategy <span class="highlight-2">was<sup aria-hidden="true">2</sup><span class="visually-hidden">Screen reader users, this indicates the past.</span></span> too complicated and unrealistic, as <span class="highlight-3">I<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> <span class="highlight-2">tried<sup aria-hidden="true">2</sup><span class="visually-hidden">Screen reader users, this indicates the past.</span></span> to address too many issues at once. Through skill-building in mapping, <span class="highlight-3">I<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> <span class="highlight-2">identified<sup aria-hidden="true">2</sup><span class="visually-hidden">Screen reader users, this indicates the past.</span></span> clear correlations between climate change and food security, their impacts on third-world communities, and the threats they pose to the future. This process <span class="highlight-2">helped<sup aria-hidden="true">2</sup><span class="visually-hidden">Screen reader users, this indicates the past.</span></span> <span class="highlight-3">me<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> develop empathy and a sense of responsibility. <span class="highlight-3">I<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> <span class="highlight-2">realised<sup aria-hidden="true">2</sup><span class="visually-hidden">Screen reader users, this indicates the past.</span></span> that understanding <span class="highlight-3">my<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> chosen archetype was essential. By improving <span class="highlight-3">my<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> interviewing and research skills, <span class="highlight-3">I<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> <span class="highlight-2">was<sup aria-hidden="true">2</sup><span class="visually-hidden">Screen reader users, this indicates the past.</span></span> able to create a detailed persona archetype. This understanding <span class="highlight-2"><span class="highlight-2"><sup aria-hidden="true">2</sup><span class="visually-hidden">Screen reader users, this indicates the past.</span></span>allowed<sup aria-hidden="true">2</sup><span class="visually-hidden">Screen reader users, this indicates the past.</span></span> <span class="highlight-3">me<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> to design a more focused mission and informed touchpoints, helping <span class="highlight-3">me<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> see what issues could be realistically addressed. The studio <span class="highlight-2">challenged<sup aria-hidden="true">2</sup><span class="visually-hidden">Screen reader users, this indicates the past.</span></span> and <span class="highlight-2">enhanced<sup aria-hidden="true">2</sup><span class="visually-hidden">Screen reader users, this indicates the past.</span></span> <span class="highlight-3">my<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> personal and professional skills as a designer. It <span class="highlight-2">taught<sup aria-hidden="true">2</sup><span class="visually-hidden">Screen reader users, this indicates the past.</span></span> <span class="highlight-3">me<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> how to create strategies that appeal to target audiences, consider their interactions with the strategy, and establish long-term connections. Moving forward, <span class="highlight-3">I<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> <span class="highlight-1">plan<sup aria-hidden="true">1</sup><span class="visually-hidden">Screen reader users, this indicates the present or future.</span></span> to refine <span class="highlight-3">my<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> strategies by focusing on realistic and achievable goals. <span class="highlight-3">I<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> <span class="highlight-1">will continue<sup aria-hidden="true">1</sup><span class="visually-hidden">Screen reader users, this indicates the present or future.</span></span> to develop <span class="highlight-3">my<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> skills in mapping, interviewing, and researching to better understand and connect with <span class="highlight-3">my<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> audience.<br />
+</div></div>
+</div></div></div>
+<div class="accordion-item ">
+<h2 class="accordion-header" id="head-example-paragraph-2-8825">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-example-paragraph-2-6592" aria-expanded="false" aria-controls="body-example-paragraph-2-6592" >Example paragraph 2</button>
+</h2>
+<div id="body-example-paragraph-2-6592" class="accordion-collapse collapse " aria-labelledby="head-example-paragraph-2-8825">
+<div class="accordion-body">
+<h3>Example paragraph 2: structure</h3>
+<p class="visually-hidden">Screen reader users, this text uses visual highlights to indicate different features of the text. Each highlight is explained for your convenience.</p><div class="highlight-text "><div class="key"><ul aria-hidden="true"><li class="highlight-1">1 Identify</li><li class="highlight-2">2 Describe</li><li class="highlight-3">3 Interpret</li><li class="highlight-4">4 Evaluate</li><li class="highlight-5">5 Plan</li></ul></div><div class="content">
+<p class="keep"><span class="highlight-1">
+In this studio, I discovered the importance of research methods for creating end-user profiles through hands-on projects and interactive workshops.<sup aria-hidden="true">1</sup><span class="visually-hidden">Screen reader users, this is identify.</span></span> <span class="highlight-2">Initially, my approach to design research involved creating mood boards and identifying basic audience demographics, which provided a surface-level understanding of the audience. However, as I engaged in various activities, such as conducting interviews and analysing case studies, I began to see the value of deeper research methods.<sup aria-hidden="true">2</sup><span class="visually-hidden">Screen reader users, this is describe.</span></span> <span class="highlight-3">These experiences highlighted the need to go beyond traditional techniques to truly understand user needs and behaviours. For example, I now realise that research can extend beyond these initial methods. Through the Design for Social Change studio, I learned about case studies, interviews, customer journey mapping, and building comprehensive persona profiles. These methods help in understanding complex problems and developing meaningful strategies for social change.<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is interpret.</span></span> <span class="highlight-4">Learning about these research techniques was crucial in designing my Oxfam Student Month project as they offered a deeper understanding of users and facilitated the creation of more targeted and valid strategies.<sup aria-hidden="true">4</sup><span class="visually-hidden">Screen reader users, this is evaluate.</span></span> <span class="highlight-5">I am confident that this enhanced understanding of research methods will greatly benefit my future design practice. I plan to continue using these techniques to better identify and target specific users in my projects.<sup aria-hidden="true">5</sup><span class="visually-hidden">Screen reader users, this is plan.</span></span>
+</div></div>
+<h3>Example paragraph 2: language features</h3>
+<p class="visually-hidden">Screen reader users, this text uses visual highlights to indicate different features of the text. Each highlight is explained for your convenience.</p><div class="highlight-text "><div class="key"><ul aria-hidden="true"><li class="highlight-1">1 Indicates the present or future</li><li class="highlight-2">2 Indicates the past</li><li class="highlight-3">3 I, me or my</li></ul></div><div class="content">
+<p>In this studio, <span class="highlight-3">I<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> <span class="highlight-2">discovered<sup aria-hidden="true">2</sup><span class="visually-hidden">Screen reader users, this indicates the past.</span></span> the importance of research methods for creating end-user profiles through hands-on projects and interactive workshops. Initially, <span class="highlight-3">my<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> approach to design research <span class="highlight-2">involved<sup aria-hidden="true">2</sup><span class="visually-hidden">Screen reader users, this indicates the past.</span></span> creating mood boards and identifying basic audience demographics, which <span class="highlight-2">provided<sup aria-hidden="true">2</sup><span class="visually-hidden">Screen reader users, this indicates the past.</span></span> a surface-level understanding of the audience. However, as <span class="highlight-3">I<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> <span class="highlight-2">engaged<sup aria-hidden="true">2</sup><span class="visually-hidden">Screen reader users, this indicates the past.</span></span> in various activities, such as conducting interviews and analysing case studies, <span class="highlight-3">I<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> <span class="highlight-2">began<sup aria-hidden="true">2</sup><span class="visually-hidden">Screen reader users, this indicates the past.</span></span> to see the value of deeper research methods. These experiences <span class="highlight-2">highlighted<sup aria-hidden="true">2</sup><span class="visually-hidden">Screen reader users, this indicates the past.</span></span> the need to go beyond traditional techniques to truly understand user needs and behaviours. <span class="highlight-3">I<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> now <span class="highlight-1">realise<sup aria-hidden="true">1</sup><span class="visually-hidden">Screen reader users, this indicates the present or future.</span></span> that research can extend beyond these initial methods. Through the <em>Design for Social Change</em> studio, <span class="highlight-3">I<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> <span class="highlight-2">learned<sup aria-hidden="true">2</sup><span class="visually-hidden">Screen reader users, this indicates the past.</span></span> about case studies, interviews, customer journey mapping, and building comprehensive persona profiles. These methods <span class="highlight-1">help<sup aria-hidden="true">1</sup><span class="visually-hidden">Screen reader users, this indicates the present or future.</span></span> in understanding complex problems and developing meaningful strategies for social change. These research techniques <span class="highlight-2">were<sup aria-hidden="true">2</sup><span class="visually-hidden">Screen reader users, this indicates the past.</span></span> crucial in designing <span class="highlight-3">my<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> Oxfam Student Month project. They <span class="highlight-2">offered<sup aria-hidden="true">2</sup><span class="visually-hidden">Screen reader users, this indicates the past.</span></span> a deeper understanding of users and facilitated the creation of more targeted and valid strategies. <span class="highlight-3">I<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> <span class="highlight-1">am<sup aria-hidden="true">1</sup><span class="visually-hidden">Screen reader users, this indicates the present or future.</span></span> confident that this enhanced understanding of research methods <span class="highlight-1">will greatly benefit<sup aria-hidden="true">1</sup><span class="visually-hidden">Screen reader users, this indicates the present or future.</span></span> <span class="highlight-3">my<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> future design practice. <span class="highlight-3">I<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> <span class="highlight-1">plan<sup aria-hidden="true">1</sup><span class="visually-hidden">Screen reader users, this indicates the present or future.</span></span> to continue using these techniques to better identify and <span class="highlight-1">target<sup aria-hidden="true">1</sup><span class="visually-hidden">Screen reader users, this indicates the present or future.</span></span> specific users in <span class="highlight-3">my<sup aria-hidden="true">3</sup><span class="visually-hidden">Screen reader users, this is a use of I, me or my.</span></span> projects.</div></div>
+</div></div></div>
+<p><!--Select the buttons below to explore the different features of the writing.
+
+
+[ll-accordion title="Example 1"]
+
+
+
+<div style="text-align: center; margin-bottom: 15px;"><button class="tab-btn active">Structure</button><button class="tab-btn">Language features</button></div>
+
+
+
+
+<div class="structure tab-content">
+
+
+<div class="legends" mode-id="0" style="vertical-align: top;">
+
+
+<div class="row">
+
+
+<h3 class="col-xs-8 pull-right">Questions</h3>
+
+
+</div>
+
+
+
+
+<div class="row">
+
+<button id="ins_btn" class="btn btn-default col-xs-4" title="Identifies a specific new insight or understanding that changes an approach or practice" data-toggle="tooltip">insights</button>
+
+
+<div class="question col-xs-8">What <span class="ins-h ins-b ins">insight(s)</span> did I gain through the studio?</div>
+
+
+</div>
+
+
+
+
+<div class="row">
+
+<button id="met_btn" class="btn btn-default col-xs-4" title="Refers to methods/approaches, events, thinkers/theories/ practitioners" data-toggle="tooltip">methods/
+thinkers</button>
+
+
+<div class="question col-xs-8">Which significant <span class="met-h met-b met">events</span>, <span class="met-h met-b met">theories</span>, <span class="met-h met-b met">methods</span>, <span class="met-h met-b met">thinkers</span> and <span class="met-h met-b met">practitioners</span> contributed to your insight?</div>
+
+
+</div>
+
+
+
+
+<div class="row">
+
+<button id="mea_btn" class="btn btn-default col-xs-4" title="Indicates the meaning and value of the insights and its effects on future practice" data-toggle="tooltip">meaning/
+value</button>
+
+
+<div class="question col-xs-8">What do you now <span class="mea-h mea-b mea">understand</span> and how does it <span class="mea-h mea-b mea">affect</span> your practice?</div>
+
+
+</div>
+
+
+
+
+<div class="row"><button id="show_btn" class="btn btn-default show-all col-xs-4">Show all</button></div>
+
+
+</div>
+
+
+
+
+<div class="paragraph">
+
+
+<h3>Example paragraph structure</h3>
+
+
+<span class="ins-h ins">My specific insight from this studio is that <span class="ins-b">I can use strategy to form an enduring connection with an audience.</span> This is important in this studio because we want to affect social change.</span> <span class="mea-h mea">My initial strategy was complicated and unrealistic. I was trying to solve too much. I realised my strategy required a great consideration of my chosen archetype.</span><span class="met-h met"> By building skills in <span class="met-b">mapping</span> I made very clear correlations between climate change and food security, their current effects on third world communities and the very real threat they pose to our future. Mapping my own connection to the victims of these effects formed a strong sense of empathy and responsibility to take action. Strengthening my skills in <span class="met-b">interviewing and researching</span> helped me to <span class="met-b">develop a persona archetype</span>. As I sought to understand everything about them to design a more direct mission and informed touch points, I began to see what could be realistically addressed.</span> <span class="mea-h mea">I think this studio has challenged and strengthened a range of my personal and professional skills as a designer: <span class="mea-b">how my strategy can appeal to the target audience, how they might interact with the strategy</span> and how I can develop a long-term connection between my strategy and the audience.</span>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="language tab-content">
+
+
+<div class="legends" style="vertical-align: top;">
+
+
+<h3>Features</h3>
+
+
+
+
+<p class="question">A reflective paragraph identifies a change in learning over time from the <span class="color2 color2-h">past</span> to the <span class="color1 color1-h">present/future</span></p>
+
+
+
+
+<p class="question">Use <span class="color3 color3-h color3-b">'I'</span>, <span class="color3 color3-h color3-b">'me'</span> or <span class="color3 color3-h color3-b">'my'</span> to demonstrate your personal and subjective response</p>
+
+
+
+</div>
+
+
+
+
+<div class="paragraph">
+
+
+<h3>Example paragraph</h3>
+
+
+
+
+<p class="lang-para"><span class="color1 color1-h"><span class="color3-h color3-b color3">My</span> specific insight from this studio is that<span class="color3-h color3-b color3"> I </span>can use strategy to form an enduring connection with an audience. This is important in this studio because we want to affect social change. </span><span class="color2 color2-h"><span class="color3-h color3-b color3">My</span> initial strategy was complicated and unrealistic.<span class="color3-h color3-b color3"> I </span>was trying to solve too much.<span class="color3-h color3-b color3"> I </span>realised <span class="color3-h color3-b color3">my</span> strategy required a great consideration of <span class="color3-h color3-b color3">my</span> chosen archetype. By building skills in mapping<span class="color3-h color3-b color3"> I </span>made very clear correlations between climate change and food security, their current effects on third world communities and the very real threat they pose to our future. Mapping <span class="color3-h color3-b color3">my</span> own connection to the victims of these effects formed a strong sense of empathy and responsibility to take action. Strengthening <span class="color3-h color3-b color3">my</span> skills in interviewing and researching helped <span class="color3-h color3-b color3">me</span> to develop a persona archetype. As<span class="color3-h color3-b color3"> I </span>sought to understand everything about them to design a more direct mission and informed touch points,<span class="color3-h color3-b color3"> I </span>began to see what could be realistically addressed.</span><span class="color1 color1-h"><span class="color3-h color3-b color3"> I </span>think this studio has challenged and strengthened a range of <span class="color3-h color3-b color3">my</span> personal and professional skills as a designer: how <span class="color3-h color3-b color3">my</span> strategy can appeal to the target audience, how they might interact with the strategy and how<span class="color3-h color3-b color3"> I </span>can develop a long-term connection between <span class="color3-h color3-b color3">my</span> strategy and the audience.</span></p>
+
+
+
+</div>
+
+
+</div>
+
+
+
+[transcript]
+
+
+<h2>Structure</h2>
+
+
+
+
+<h3>Questions to ask:</h3>
+
+
+
+
+<ol>
+ 	
+
+<li>What insight(s) did I gain through the studio? (Insights)</li>
+
+
+ 	
+
+<li>Which significant events, theories, methods, thinkers and practitioners contributed to your insight? (Methods/thinkers)</li>
+
+
+ 	
+
+<li>What do you now understand and how does it affect your practice? (Meaning/value)</li>
+
+
+</ol>
+
+
+[Insights] My specific insight from this studio is that I can use strategy to form an enduring connection with an audience. This is important in this studio because we want to affect social change. [End insights] [Meaning/value] My initial strategy was complicated and unrealistic. I was trying to solve too much. I realised my strategy required a great consideration of my chosen archetype. [End meaning/value] [Methods/thinkers] By building skills in mapping I made very clear correlations between climate change and food security, their current effects on third world communities and the very real threat they pose to our future. Mapping my own connection to the victims of these effects formed a strong sense of empathy and responsibility to take action. Strengthening my skills in interviewing and researching helped me to develop a persona archetype. As I sought to understand everything about them to design a more direct mission and informed touch points, I began to see what could be realistically addressed. [End methods/thinkers] [Meaning/value] I think this studio has challenged and strengthened a range of my personal and professional skills as a designer: how my strategy can appeal to the target audience, how they might interact with the strategy and how I can develop a long-term connection between my strategy and the audience. [End meaning/value]
+
+
+
+
+<h2>Language features</h2>
+
+
+
+
+<h3>Features</h3>
+
+
+
+
+<ol>
+ 	
+
+<li>Use ‘I' to demonstrate your personal and subjective response to the field of practice</li>
+
+
+ 	
+
+<li>A reflective paragraph identifies a change in learning over time from the past to the present/future</li>
+
+
+</ol>
+
+
+[Present/future] My specific insight from this studio is that I can use strategy to form an enduring connection with an audience. This is important in this studio because we want to affect social change. [End present/future] [Past] My initial strategy was complicated and unrealistic. I was trying to solve too much. I realised my strategy required a great consideration of my chosen archetype. By building skills in mapping I made very clear correlations between climate change and food security, their current effects on third world communities and the very real threat they pose to our future. Mapping my own connection to the victims of these effects formed a strong sense of empathy and responsibility to take action. Strengthening my skills in interviewing and researching helped me to develop a persona archetype. As I sought to understand everything about them to design a more direct mission and informed touch points, I began to see what could be realistically addressed. [End past] [Present/future] I think this studio has challenged and strengthened a range of my personal and professional skills as a designer: how my strategy can appeal to the target audience, how they might interact with the strategy and how I can develop a long-term connection between my strategy and the audience. [End present/future]
+
+
+[/transcript] 
+
+[/ll-accordion]
+
+[ll-accordion title="Example 2"]
+
+
+<div class="accessibility-hide">
+
+
+<div style="text-align: center; margin-bottom: 15px;"><button class="tab-btn active">Structure</button><button class="tab-btn">Language features</button></div>
+
+
+
+
+<div class="structure tab-content">
+
+
+<div class="legends" mode-id="0" style="vertical-align: top;">
+
+
+<div class="row">
+
+
+<h3 class="col-xs-8 pull-right">Questions</h3>
+
+
+</div>
+
+
+
+
+<div class="row">
+
+<button id="ins_btn" class="btn btn-default col-xs-4" title="Identifies a specific new insight or understanding that changes an approach or practice" data-toggle="tooltip">insights</button>
+
+
+<div class="question col-xs-8">What <span class="ins-h ins-b ins">insight(s)</span> did I gain through the studio?</div>
+
+
+</div>
+
+
+
+
+<div class="row">
+
+<button id="met_btn" class="btn btn-default col-xs-4" title="Refers to methods/approaches, events, thinkers/theories/ practitioners" data-toggle="tooltip">methods/
+thinkers</button>
+
+
+<div class="question col-xs-8">Which significant <span class="met-h met-b met">events</span>, <span class="met-h met-b met">theories</span>, <span class="met-h met-b met">methods</span>, <span class="met-h met-b met">thinkers</span> and <span class="met-h met-b met">practitioners</span> contributed to your insight?</div>
+
+
+</div>
+
+
+
+
+<div class="row">
+
+<button id="mea_btn" class="btn btn-default col-xs-4" title="Indicates the meaning and value of the insights and its effects on future practice" data-toggle="tooltip">meaning/
+value</button>
+
+
+<div class="question col-xs-8">What do you now <span class="mea-h mea-b mea">understand</span> and how does it <span class="mea-h mea-b mea">affect</span> your practice?</div>
+
+
+</div>
+
+
+
+
+<div class="row"><button id="show_btn" class="btn btn-default show-all col-xs-4">Show all</button></div>
+
+
+</div>
+
+
+
+
+<div class="paragraph">
+
+
+<h3>Example paragraph structure</h3>
+
+
+<span class="ins-h ins">The most useful and interesting insight I have gained from this studio is the <span class="ins-b">importance of research methods for creating end-user profiles.</span></span><span class="mea-h mea"> Before this journey, design research (for me) was about making mood boards and identifying basic audience demographics. Without downgrading the importance of these methods, <span class="mea-b">I now recognise that there can be a lot more to research</span> than that.</span> <span class="met-h met">In the Design for Social Change studio I have gained an understanding of specific research methods such as <span class="met-b">case studies, interviews, customer journey mapping and building comprehensive persona profiles</span>. These methods help designers understand the complexity of the problems and then develop strategies for social change that actually have some validity and meaning.</span> <span class="mea-h mea">These ways of understanding the user or customer were very helpful in designing my Oxfam Student Month project. I am confident that this <span class="mea-b">new understanding of research methods</span> for identifying and targeting specific users <span class="mea-b">will be beneficial for my future design practice</span>.</span>
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="language tab-content">
+
+
+<div class="legends" style="vertical-align: top;">
+
+
+<h3>Features</h3>
+
+
+
+
+<p class="question">A reflective paragraph identifies a change in learning over time from the <span class="color2 color2-h">past</span> to the <span class="color1 color1-h">present/future</span></p>
+
+
+
+
+<p class="question">Use <span class="color3 color3-h color3-b">'I'</span>, <span class="color3 color3-h color3-b">'me'</span> or <span class="color3 color3-h color3-b">'my'</span> to demonstrate your personal and subjective response</p>
+
+
+
+</div>
+
+
+
+
+<div class="paragraph">
+
+
+<h3>Example paragraph</h3>
+
+
+
+
+<p class="lang-para"><span class="color1 color1-h">The most useful and interesting insight<span class="color3-h color3-b color3"> I </span>have gained from this studio is the importance of research methods for creating end-user profiles.</span> <span class="color2 color2-h">Before this journey, design research (for <span class="color3-h">me</span>) was about making mood boards and identifying basic audience demographics.</span> <span class="color1 color1-h">Without downgrading the importance of these methods,<span class="color3-h color3-b color3"> I </span>now recognise that there can be a lot more to research than that. In the Design for Social Change studio<span class="color3-h color3-b color3"> I </span>have gained an understanding of specific research methods such as case studies, interviews, customer journey mapping and building comprehensive persona profiles. These methods help designers understand the complexity of the problems and then develop strategies for social change that actually have some validity and meaning.</span> <span class="color2 color2-h">These ways of understanding the user or customer were very helpful in designing <span class="color3-h color3-b color3">my</span> Oxfam Student Month project. </span><span class="color1 color1-h"><span class="color3-h color3-b color3"> I </span>am confident that this new understanding of research methods for identifying and targeting specific users will be beneficial for <span class="color3-h color3-b color3">my</span> future design practice.</span></p>
+
+
+
+
+[transcript]
+
+
+<h2>Structure</h2>
+
+
+
+
+<h3>Questions to ask:</h3>
+
+
+
+
+<ol>
+ 	
+
+<li>What insight(s) did I gain through the studio? (Insights)</li>
+
+
+ 	
+
+<li>Which significant events, theories, methods, thinkers and practitioners contributed to your insight? (Methods/thinkers)</li>
+
+
+ 	
+
+<li>What do you now understand and how does it affect your practice? (Meaning/value)</li>
+
+
+</ol>
+
+
+[Insights] The most useful and interesting insight I have gained from this studio is the importance of research methods for creating end-user profiles. [End insights] [Meaning/value] Before this journey, design research (for me) was about making mood boards and identifying basic audience demographics. Without downgrading the importance of these methods, I now recognise that there can be a lot more to research than that. [End meaning/value] [Methods/thinkers] In the Design for Social Change studio I have gained an understanding of specific research methods such as case studies, interviews, customer journey mapping and building comprehensive persona profiles. These methods help designers understand the complexity of the problems and then develop strategies for social change that actually have some validity and meaning. [End methods/thinkers] [Meaning/value] These ways of understanding the user or customer were very helpful in designing my Oxfam Student Month project. I am confident that this new understanding of research methods for identifying and targeting specific users will be beneficial for my future design practice. [End meaning/value]
+
+
+<h2>Language features</h2>
+
+
+
+
+<h3>Features</h3>
+
+
+
+
+<ol>
+ 	
+
+<li>Use ‘I' to demonstrate your personal and subjective response to the field of practice</li>
+
+
+ 	
+
+<li>A reflective paragraph identifies a change in learning over time from the past to the present/future</li>
+
+
+</ol>
+
+
+[Present/future] The most useful and interesting insight I have gained from this studio is the importance of research methods for creating end-user profiles. [End present/future] [Past] Before this journey, design research (for me) was about making mood boards and identifying basic audience demographics. [End past] [Present/future] Without downgrading the importance of these methods, I now recognise that there can be a lot more to research than that. In the Design for Social Change studio I have gained an understanding of specific research methods such as case studies, interviews, customer journey mapping and building comprehensive persona profiles. These methods help designers understand the complexity of the problems and then develop strategies for social change that actually have some validity and meaning. [End present/future] [Past] These ways of understanding the user or customer were very helpful in designing my Oxfam Student Month project. [End past] [Present/future] I am confident that this new understanding of research methods for identifying and targeting specific users will be beneficial for my future design practice. [End present/future]
+
+
+[/transcript]
+[/ll-accordion] 
+
+[ll-accordion title="Example 3"]
+
+
+<div class="accessibility-hide">
+
+
+<div style="text-align: center; margin-bottom: 15px;"><button class="tab-btn active">Structure</button><button class="tab-btn ">Language features</button></div>
+
+
+
+
+<div class="structure tab-content" style="display: block;">
+
+
+<div class="legends" mode-id="0" style="vertical-align: top;">
+
+
+<div class="row">
+
+
+<h3 class="col-xs-8 pull-right">Questions</h3>
+
+
+</div>
+
+
+
+
+<div class="row">
+
+<button id="ins_btn" class="btn btn-default col-xs-4" title="Identifies a specific new insight or understanding that changes an approach or practice" data-toggle="tooltip">insights</button>
+
+
+<div class="question col-xs-8">What <span class="ins-h ins-b ins">insight(s)</span> did I gain through the studio?</div>
+
+
+</div>
+
+
+
+
+<div class="row">
+
+<button id="met_btn" class="btn btn-default col-xs-4" title="Refers to methods/approaches, events, thinkers/theories/ practitioners" data-toggle="tooltip">methods/
+thinkers</button>
+
+
+<div class="question col-xs-8">Which significant <span class="met-h met-b met">events</span>, <span class="met-h met-b met">theories</span>, <span class="met-h met-b met">methods</span>, <span class="met-h met-b met">thinkers</span> and <span class="met-h met-b met">practitioners</span> contributed to your insight?</div>
+
+
+</div>
+
+
+
+
+<div class="row">
+
+<button id="mea_btn" class="btn btn-default col-xs-4" title="Indicates the meaning and value of the insights and its effects on future practice" data-toggle="tooltip">meaning/
+value</button>
+
+
+<div class="question col-xs-8">What do you now <span class="mea-h mea-b mea">understand</span> and how does it <span class="mea-h mea-b mea">affect</span> your practice?</div>
+
+
+</div>
+
+
+
+
+<div class="row"><button id="show_btn" class="btn btn-default show-all col-xs-4">Show all</button></div>
+
+
+</div>
+
+
+
+
+<div class="paragraph">
+
+
+<h3>Example paragraph structure</h3>
+
+
+<span class="ins-h ins">From this studio I have a new understanding of <span class="ins-b">how psychology underpins exhibition design</span> for learning and play environments such as zoos, museums and the like. </span> <span class="met-h met">Throughout the course I was exposed to <span class="met-b">immersive and interactive design principles</span>; that combine sound, visual, text and spatial elements to create positive learning environments. <span class="met-b">At the Melbourne Museum and the Melbourne Zoo</span> the exhibitions are created with attention to elements such as: goals or challenges to overcome, stimulus of the senses, feelings of control and minimal distractions. <span class="met-b">Lidwell, Holden and Butler (2003)</span> suggest these elements are necessary to create a successful immersive experience. <span class="met-b">Stevenson (1994, p.32)</span> highlights the effectiveness of interactivity to 'inspire and provoke exploration ... and to tempt people to look more thoughtfully' at the displays. Through designing my own miniature suitcase exhibition in this studio, I have gained an understanding of how to undertake integrated design for learning and play. <span class="met-b">Falk and Dierking's contextual model of learning (2012)</span> suggests that a visitor's personal, sociocultural and physical context all work together to shape their experiences and what they decide to absorb and learn from an exhibition.</span> <span class="mea-h mea">The idea that <span class="mea-b">the visitor contributes to the learning process</span>, which is a feedback loop between museum and visitor, allows for more flexible and positive, interactive play and learning. <span class="mea-b">Appreciating how these elements combine with the use of different mediums and techniques will assist me in my future practice</span> to create memorable, impactful and effective learning and play environments.</span>
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="language tab-content" style="display: none;">
+
+
+<div class="legends" style="vertical-align: top;">
+
+
+<h3>Features</h3>
+
+
+
+
+<p class="question">A reflective paragraph identifies a change in learning over time from the <span class="color2 color2-h">past</span> to the <span class="color1 color1-h">present/future</span></p>
+
+
+
+
+<p class="question">Use <span class="color3 color3-h color3-b">'I'</span>, <span class="color3 color3-h color3-b">'me'</span> or <span class="color3 color3-h color3-b">'my'</span> to demonstrate your personal and subjective response</p>
+
+
+
+</div>
+
+
+
+
+<div class="paragraph">
+
+
+<h3>Example paragraph</h3>
+
+
+
+
+<p class="lang-para"><span class="color1 color1-h">From this studio<span class="color3-h color3-b color3"> I </span>have a new understanding of how psychology underpins exhibition design for learning and play environments such as zoos, museums and the like. </span><span class="color2 color2-h">Throughout the course<span class="color3-h color3-b color3"> I </span>was exposed to immersive and interactive design principles; that combined sound, visual, text and spatial elements to create positive learning environments.</span> At the Melbourne Museum and the Melbourne Zoo the exhibitions are created with attention to elements such as: goals or challenges to overcome, stimulus of the senses, feelings of control and minimal distractions. Lidwell, Holden and Butler (2003) suggest these elements are necessary to create a successful immersive experience. Stevenson (1994, p. 32) highlights the effectiveness of interactivity to ‘inspire and provoke exploration … and to tempt people to look more thoughtfully' at the displays. <span class="color1 color1-h">Through designing <span class="color3-h color3-b color3">my</span> own miniature suitcase exhibition in this studio,<span class="color3-h color3-b color3"> I </span>have gained an understanding of how to undertake integrated design for learning and play.</span> Falk and Dierking's contextual model of learning (2012) suggests that a visitor's personal, sociocultural and physical context all work together to shape their experiences and what they decide to absorb and learn from an exhibition. The idea that the visitor contributes to the learning process, which is a feedback loop between museum and visitor, allows for more flexible and positive, interactive play and learning. <span class="color1 color1-h">Appreciating how these elements combine with the use of different mediums and techniques will assist <span class="color3-h color3-b color3">me</span> in <span class="color3-h color3-b color3">my</span> future practice to create memorable, impactful and effective learning and play environments.</span></p>
+
+
+
+</div>
+
+
+</div>
+
+
+
+[transcript]
+
+
+<h2>Structure</h2>
+
+
+
+
+<h3>Questions to ask:</h3>
+
+
+
+
+<ol>
+ 	
+
+<li>What insight(s) did I gain through the studio? (Insights)</li>
+
+
+ 	
+
+<li>Which significant events, theories, methods, thinkers and practitioners contributed to your insight? (Methods/thinkers)</li>
+
+
+ 	
+
+<li>What do you now understand and how does it affect your practice? (Meaning/value)</li>
+
+
+</ol>
+
+
+[Insights] From this studio I have a new understanding of how psychology underpins exhibition design for learning and play environments such as zoos, museums and the like. [End insights] [Methods/thinkers] Throughout the course I was exposed to immersive and interactive design principles; that combine sound, visual, text and spatial elements to create positive learning environments. At the Melbourne Museum and the Melbourne Zoo the exhibitions are created with attention to elements such as: goals or challenges to overcome, stimulus of the senses, feelings of control and minimal distractions. Lidwell, Holden and Butler (2003) suggest these elements are necessary to create a successful immersive experience.Stevenson (1994, p.32) highlights the effectiveness of interactivity to 'inspire and provoke exploration ... and to tempt people to look more thoughtfully' at the displays. Through designing my own miniature suitcase exhibition in this studio, I have gained an understanding of how to undertake integrated design for learning and play. Falk and Dierking's contextual model of learning (2012) suggests that a visitor's personal, sociocultural and physical context all work together to shape their experiences and what they decide to absorb and learn from an exhibition. [End methods/thinkers] [Meaning/value] The idea that the visitor contributes to the learning process, which is a feedback loop between museum and visitor, allows for more flexible and positive, interactive play and learning. Appreciating how these elements combine with the use of different mediums and techniques will assist me in my future practice to create memorable, impactful and effective learning and play environments. [End meaning/value]
+
+
+<h2>Language features</h2>
+
+
+
+
+<h3>Features</h3>
+
+
+
+
+<ol>
+ 	
+
+<li>Use ‘I' to demonstrate your personal and subjective response to the field of practice</li>
+
+
+ 	
+
+<li>A reflective paragraph identifies a change in learning over time from the past to the present/future</li>
+
+
+</ol>
+
+
+[Present/future] From this studio I have a new understanding of how psychology underpins exhibition design for learning and play environments such as zoos, museums and the like. [End present/future] [Past] Throughout the course I was exposed to immersive and interactive design principles; that combined sound, visual, text and spatial elements to create positive learning environments. [End past] At the Melbourne Museum and the Melbourne Zoo the exhibitions are created with attention to elements such as: goals or challenges to overcome, stimulus of the senses, feelings of control and minimal distractions. Lidwell, Holden and Butler (2003) suggest these elements are necessary to create a successful immersive experience. Stevenson (1994, p. 32) highlights the effectiveness of interactivity to ‘inspire and provoke exploration … and to tempt people to look more thoughtfully' at the displays. [Present/future] Through designing my own miniature suitcase exhibition in this studio, I have gained an understanding of how to undertake integrated design for learning and play. [End present/future] Falk and Dierking's contextual model of learning (2012) suggests that a visitor's personal, sociocultural and physical context all work together to shape their experiences and what they decide to absorb and learn from an exhibition. The idea that the visitor contributes to the learning process, which is a feedback loop between museum and visitor, allows for more flexible and positive, interactive play and learning. [Present/future] Appreciating how these elements combine with the
+[/transcript]
+[/ll-accordion]
+</div>
+
+
+</div>
+
+--></p>
+			<nav class="btn-nav-container" aria-label="Previous and next links">
+<h2 class="btn-nav-prev">
+    <a href="../contextualising/index.html">
+        <span aria-hidden="true">Contextualising a field of enquiry</span>
+        <span class="visually-hidden">Previous page: Contextualising a field of enquiry</span>
+    </a>
+</h2>
+    
+
+
+<h2 class="btn-nav-next">
+    <a href="../future-application/index.html">
+        <span aria-hidden="true">Future application</span>
+        <span class="visually-hidden">Next page: Future application</span>
+    </a>
+</h2>
+	
+</nav><!-- .navigation -->			<div id="additional-info">
+			
+<hr class="margin-top-xl"><blockquote class="complex ">
+<a href="../../../assessments/reflective-writing-1/index.html">
+<div class="content">
+<h3>Reflective writing</h3>
+<p>For more information, visit the <em>Academic reflection</em> section of the Learning Lab.</p>
+</div></a></blockquote>
+			
+
+
+
+<!-- keywords echo - https://www.advancedcustomfields.com/resources/taxonomy/ -->      
+
+<hr class="margin-top-xl">
+<div class="keywords">
+    <h2 class="h5">Keywords</h2>
+    <ul>
+                <li><a href="../../../keyword/reflective-writing/index.html">Reflective writing</a></li>  
+        </ul>
+</div>
+ 
+<!-- keywords echo end 
+
+<!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
+<!--
+<p><strong>Subjects </strong>
+    | <strong><a href="https://lab.bitma.app/subject-area/writing/">Writing</a></strong>  
+    </p>
+-->
+<!-- category echo end -->
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+        <!-- END content --> 
+    </div>
+</div>
+
+</main>
+
+					
+		
+<div class="wrapper footer-container" id="wrapper-footer-colophon">
+	<div class="container">
+        <div class="row">
+            <div class="col">
+				<!-- START ask the library -->
+				<div class="ask-container">
+					
+					<section class="ask-the-library">
+						<a href="https://www.rmit.edu.au/library/about-and-contacts/ask-the-library">
+							<img src="https://rmitlibrary.github.io/cdn/image/svg/ask-the-library.svg" class="ask-logo" alt="Ask the library" />
+							<div class="ask-text">
+								<p class="lead">Still can't find what you need?</p>
+								<p>The RMIT University Library provides study support, one-on-one consultations and peer mentoring to RMIT students.</p>
+							</div>
+						</a>
+					</section>
+			
+				</div>
+				<!-- END ask the library -->
+			</div>
+ 		</div>
+	</div>
+    <!-- START acknowledgement -->
+    <div class="acknowledgement">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <section class="acknowledgement-container">
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
+                        </div>
+
+                        <div class="content">
+                            <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
+                            <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
+                            
+                            <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
+                            <a href="#" class="link-large">More information</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!-- END acknowledgement -->
+    <!-- START footer -->
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- START logo -->    
+                <a aria-label="Royal Melbourne Institute of Technology University Logo" href="https://www.rmit.edu.au/">
+					<div aria-hidden="true" class="logo"><span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/rmit-logo.svg" style="width: 100px" alt="" /></span>
+					</div>
+				</a>
+                <!-- END logo -->
+                <!-- START links -->
+				<ul class="footer-links">
+					<li><a href="">About Learning Lab</a></li>
+					<li><a href="">For educators</a></li>
+					<li><a href="">Contribute</a></li>
+					<li><a href="">Contact us</a></li>
+				</ul>
+                <!-- END links -->
+                <!-- START legal-social -->
+                <div class="footerlegalShareItems">
+                    <!-- START legal -->
+                    <div class="footer-legal">
+                    <ul>
+                        <li>Copyright © 2024 RMIT University<span> | </span></li>
+                        <li><a href="https://www.rmit.edu.au/utilities/terms"><span class="no-focus" tabindex="-1">Terms</span></a><span> | </span></li>
+                        <li><a href="https://www.rmit.edu.au/utilities/privacy"><span class="no-focus" tabindex="-1">Privacy</span></a><span> | </span></li>
+                        <li><a href="https://www.rmit.edu.au/utilities/accessibility"><span class="no-focus" tabindex="-1">Accessibility</span></a> <span> | </span></li>
+                        <li><a data-analytics-type="footerlink" data-analytics-value="Website feedback" href="https://www.rmit.edu.au/utilities/website-feedback"><span class="no-focus" tabindex="-1">Website feedback</span></a><span> | </span></li>
+                        <li><a data-analytics-type="footerlink" data-analytics-value="Complaints" href="https://www.rmit.edu.au/utilities/complaints"><span class="no-focus" tabindex="-1">Complaints</span></a><span> | </span></li>
+                        <li>ABN 49 781 030 034<span> | </span></li>
+                        <li>CRICOS provider number: 00122A<span> | </span></li>
+                        <li>TEQSA provider number: PRV12145<span> | </span></li>
+                        <li>RTO Code: 3046<span> | </span></li>
+                        <li><a href="https://www.open.edu.au/online-courses/rmit-university"><span class="no-focus" tabindex="-1">Open Universities Australia</span></a> </li>
+                      </ul>
+                    </div>
+                    <!-- END legal -->
+                    <!-- START social -->
+                    <div class="social-nav">
+                    <ul> 
+                        <!-- START facebook -->
+                        <li><a aria-label="For Facebook"  href="https://www.facebook.com/RMITuniversity/"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/facebook.svg" alt="" /></span></a></li>
+                        <!-- END facebook -->
+                        <!-- START twitter/x -->
+                        <li><a aria-label="For Twitter" href="https://twitter.com/rmit"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/twitter.svg" alt="" /></span></a></li>
+                        <!-- END twitter/x -->
+                        <!-- START insta -->
+                        <li><a aria-label="For Instagram" href="https://www.instagram.com/rmituniversity/"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/instagram.svg" alt="" /></span> </a></li>
+                        <!-- END insta -->              
+                        <!-- START LinkedIn -->
+                        <li><a aria-label="For LinkedIn" data-analytics-type="socialshare" data-analytics-value="LinkedIn" href="https://www.linkedin.com/school/rmit-university/"><span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/linkedin.svg" alt="" /></span></a></li>
+                        <!-- END LinkedIn -->
+                        <!-- START YouTube -->
+                        <li><a aria-label="For Youtube" href="https://www.youtube.com/user/rmitmedia"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/youtube.svg" alt="" /></span></a></li>
+                        <!-- END YouTube -->     
+                        <!-- START Weibo -->          
+                        <li><a aria-label="For Weibo" href="https://www.weibo.com/rmituni"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/weibo.svg" alt="" /></span></a></li>
+                        <!-- END Weibo -->                
+					</ul>
+					</div>
+                    <!-- END social -->
+                </div>
+                <!-- END legal-social -->
+            </div>
+        </div>
+    </div>
+	</footer>
+    <!-- END footer -->		
+</div><!-- wrapper end -->
+		
+	
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+<script src="../../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
+<!-- adding requirements for context/hamburger menu start -->
+<script>
+// ---------
+// Script to show and hide hamburger menu 
+// ---------    
+
+// Grab both the menu button, the page content and footer
+var menuButton = document.getElementById("menu-button");
+var pageContent = document.getElementById("theme-main"); 
+var footer = document.getElementById("wrapper-footer-colophon"); 
+  
+// Store display status of menu
+var menuDisplay = false;
+    
+// Store content scroll position
+var scrollPosition;
+
+// Listen for click - call showhideMenu
+menuButton.addEventListener("click", showHideMenu);
+
+// Menu uses bootstraps "collapse" function
+// If menu is hidden, bootstrap will show it, hide page content.
+// If it's displayed, bootstrap will hide it, show the content.
+
+
+// Function to toggle the visibility of a menu and adjust page content accordingly.
+function showHideMenu() {
+    // Check if the menu is currently hidden
+    if(menuDisplay == false)
+    {
+        // Set the menu display flag to true (menu is now shown) and save scroll position
+        menuDisplay = true;
+        scrollPosition = window.scrollY;
+        
+        // Hide the main page content and footer
+        pageContent.style.display = "none"; 
+        footer.style.display = "none"; 
+    }
+    else
+    {
+        // Set the menu display flag to false (menu is now hidden)
+        menuDisplay = false;
+        
+        // Show the main page content and footer
+        pageContent.style.display = "block"; 
+        footer.style.display = "block"; 
+        
+        //turn off smooth scrolling, jump to stored scroll postion, then turn smooth scrolling back on
+        document.documentElement.style.scrollBehavior = "auto";
+        window.scroll(0, scrollPosition);
+        document.documentElement.style.scrollBehavior = "smooth";
+    }
+}
+
+</script>
+<!-- adding requirements for context/hamburger menu end -->
+<!-- adding requirements for reponsive iframes -->
+<!-- Code to handle resizing iframes on this page -->
+    <script type="text/javascript" src="../../../wp-content/themes/picostrap5-child-base/js/iframeResizer.min.js"></script>
+    <script type="text/javascript">
+        iFrameResize({log:true});
+    </script>
+
+<!--    code to handle this page being resized by other wordpress pages,
+        e.g. embed mode described below -->
+<script src="https://rmitlibrary.github.io/cdn/libraries/js/iframeResizer.contentWindow.min.js"></script>
+
+<!-- adding requirements for reponsive iframes end -->
+
+<!-- adding requirements for embed mode start -->
+<script>
+    
+// ---------
+/* Script to turn on embed mode
+// Removes top nav, footer, breadcrumbs, right nav, keywords and prev/next by default
+// Options to remove h1, p lead and show prev/next
+ Sample query string:
+ ?iframe=true&hide-title=true&hide-intro=true
+ 
+ iframe - set to true to enable embed mode
+ hide-title - set to true to hide title
+ hide-intro - set to true to hid first <p class="lead">
+ show-prev-next - set to true to show previous and next buttons
+ 
+ Unlikely hide-title and hide-intro would be used in concert with show-prev-next 
+*/
+// ---------
+    
+//Check query string for embed=true. If it is there, call embedThisPage
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const embedBool = urlParams.get('iframe');
+    
+//in this mode title and intro are shown by default
+const hideTitle = urlParams.get('hide-title');
+const hideIntro = urlParams.get('hide-intro');
+
+//in this mode prev and next are hidden by default
+const showPrevNext = urlParams.get('show-prev-next');
+	
+if(embedBool == 'true') {
+	embedThisPage();
+    handeEmbedLinks();
+}
+
+// embedThisPage hides or removes markup to optimise the display of a page inside an iframe,
+// depending on additional query string values
+function embedThisPage()
+{
+	// pick up the relevant objects in the page
+	var nav = document.querySelector('header');
+	var breadcrumbs = document.querySelector('nav[aria-label="breadcrumbs"]');
+	var rightNav = document.querySelector('div.col-xl-4.order-last');
+    var myFooter = document.getElementById("wrapper-footer-colophon"); 
+    
+    //These are layout divs, looking to remove bootstrap styling to go full width
+    var containerDiv = document.getElementById("page-content");
+    var contentDiv = document.querySelector('div.order-first');
+    
+    //grab content below prev/next buttons
+    var additionalInfo = document.getElementById('additional-info');
+    
+    //grab landing banner for landing pages
+    var landingBanner = document.querySelector("div.landing-banner"); 
+    
+    //console.log("Dom elements retrieved");
+    
+	// hide nav and footer (we have footer var from script above)
+	nav.style.display = "none";
+    myFooter.style.display = "none";
+    
+    //console.log("Hid nav and footer");
+	
+    // Check breadcrumbs exists, then hide it
+    if(breadcrumbs) { breadcrumbs.style.display = "none"; }
+    
+    // Check right nav exists, then remove it
+    if (rightNav) { rightNav.remove(); }
+    
+    //console.log("Hid breadcrumbs and right nav if present");
+    
+    // Check additionalInfo exists, then hide it
+    if(additionalInfo) { additionalInfo.style.display = "none"; }
+    
+    //console.log("Hid additional info");
+    
+    //Check for landing banner
+    if(landingBanner) { 
+        console.log("landing banner exists");
+        landingBanner.classList.remove("landing-banner"); 
+        console.log("removed landing banner");
+        
+        var landingImage = document.querySelector("figure");
+        landingImage.style.marginTop = "0";
+    }
+    
+    
+
+	//remove bootstrap classes that provide adaptive styling
+	if(containerDiv) { 
+        containerDiv.classList.remove("container"); 
+        //remove padding at the top and add margin right to give content space against scroll bar (do we need this?)
+        containerDiv.style.paddingTop = '0';
+        containerDiv.style.marginRight = "2rem";
+    }
+    
+	if(contentDiv) { contentDiv.classList.remove("col-xl-8"); }
+    
+    //console.log("removed containers");
+    //console.log("adjusted padding etc.");
+    
+    //process optional query string vars
+    if(hideTitle == 'true') {
+        var myTitle = document.querySelector('h1');
+        myTitle.style.display = "none";
+        
+        //console.log("Hid title");
+    }
+    
+    if(hideIntro == 'true') {
+        var firstLeadParagraph = document.querySelector('p.lead');
+        firstLeadParagraph.style.display = "none";
+        
+        //console.log("Hid intro");
+    }
+    
+    if(showPrevNext != 'true')  {
+        //hide prev and next - the default behaviour
+        var btnNavContainer = document.querySelector('.btn-nav-container');
+        if(btnNavContainer) { btnNavContainer.style.display = "none"; }
+        
+        //console.log("Hid prev");
+    }
+}
+
+// handeEmbedLinks either adds the query string or target="+top" depending on context
+    
+function handeEmbedLinks()
+{
+    //grab all the links
+    const links = document.querySelectorAll('a');
+    
+    links.forEach(link => {
+
+        const href = link.getAttribute('href');
+        
+        //if we have an href
+        if (href !== null) {
+            if(showPrevNext == 'true') {
+                //if prev next buttons are displayed
+                if(href.startsWith('http://') || href.startsWith('https://')) {
+                    //if external link, break from iframe
+                    addTargetTopToLink(link);
+                } 
+                else {
+                    //otherwise add the query string to the link
+                    link.setAttribute('href', href + queryString);
+                }
+            }
+            else {
+                //otherwise, add _top to break from iframe
+                addTargetTopToLink(link);
+            }
+        }
+    });
+}
+                  
+function addTargetTopToLink(link) {
+    link.setAttribute('target', '_top');
+}
+	
+// Dark mode
+(function() {
+      'use strict';
+
+      // Function to get the stored theme from local storage
+      const getStoredTheme = () => localStorage.getItem('theme');
+
+      // Function to set the theme in local storage
+      const setStoredTheme = theme => localStorage.setItem('theme', theme);
+
+      // Function to determine the preferred theme
+      const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+          return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      };
+
+      // Function to apply the specified theme
+      const setTheme = theme => {
+        if (theme === 'auto') {
+          // If theme is 'auto', set it based on system preference
+          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+          // Otherwise, set the theme explicitly
+          document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+      };
+
+      // Function to update the UI to reflect the active theme
+      const showActiveTheme = theme => {
+        const themeSwitcher = document.querySelector('#theme-switcher');
+        if (!themeSwitcher) {
+          return; // If no theme switcher element is found, exit
+        }
+        // Remove 'checked' attribute from all radio buttons
+        document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+          element.checked = false;
+        });
+        // Add 'checked' attribute to the selected theme radio button
+        const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`);
+        if (btnToActive) {
+          btnToActive.checked = true;
+        }
+      };
+
+      // Listen for changes to the system's dark mode preference
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+        const storedTheme = getStoredTheme();
+        if (storedTheme !== 'light' && storedTheme !== 'dark') {
+          setTheme(getPreferredTheme()); // Update the theme if it's set to 'auto'
+        }
+      });
+
+      // When the DOM content is loaded, initialise the theme switcher
+      window.addEventListener('DOMContentLoaded', () => {
+        showActiveTheme(getPreferredTheme()); // Show the active theme
+        // Add click event listeners to all theme toggle radio buttons
+        document.querySelectorAll('[data-bs-theme-value]').forEach(toggle => {
+          toggle.addEventListener('change', () => {
+            const theme = toggle.getAttribute('data-bs-theme-value');
+            setStoredTheme(theme); // Store the selected theme
+            setTheme(theme); // Apply the selected theme
+            showActiveTheme(theme); // Update the UI
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
+

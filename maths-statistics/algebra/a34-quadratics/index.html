@@ -1,0 +1,997 @@
+<!doctype html>
+<html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
+
+<head>
+<!-- 
+    DARK MODE
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+  -->
+  <script>
+    (function() {
+      'use strict';
+
+      // Function to get the stored theme from local storage
+      const getStoredTheme = () => localStorage.getItem('theme');
+
+      // Function to determine the preferred theme
+      const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+          return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      };
+
+      // Function to apply the specified theme
+      const setTheme = theme => {
+        if (theme === 'auto') {
+          // If theme is 'auto', set it based on system preference
+          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+          // Otherwise, set the theme explicitly
+          document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+      };
+
+      // Set the theme based on the preferred theme
+      setTheme(getPreferredTheme());
+    })();
+  </script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- wp_head -->
+	<title>A3.4 Quadratics - lab</title>
+
+		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
+		<meta name="description" content="Image: Pixabay Quadratic expressions have the general form \[ax^2+bx+c\] where \(a\), \(b\) and \(c\) are real numbers and \(a\neq 0\). Quadratics frequently arise in mathematics, science and engineering. This module explains how to factorise a quadratic into two linear factors. For example \[x^2+5x+6 = \left(x+2\right)\left(x+3\right).\] The general form of a quadratic expression is: \(ax^{2}+bx+c\), \(a\neq0\)," />
+		<meta name="robots" content="max-image-preview:large" />
+		<link rel="canonical" href="index.html" />
+		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content="lab -" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="A3.4 Quadratics - lab" />
+		<meta property="og:description" content="Image: Pixabay Quadratic expressions have the general form \[ax^2+bx+c\] where \(a\), \(b\) and \(c\) are real numbers and \(a\neq 0\). Quadratics frequently arise in mathematics, science and engineering. This module explains how to factorise a quadratic into two linear factors. For example \[x^2+5x+6 = \left(x+2\right)\left(x+3\right).\] The general form of a quadratic expression is: \(ax^{2}+bx+c\), \(a\neq0\)," />
+		<meta property="og:url" content="https://lab.bitma.app/maths-statistics/algebra/a34-quadratics/" />
+		<meta property="article:published_time" content="2023-10-16T05:34:41+00:00" />
+		<meta property="article:modified_time" content="2024-08-20T05:48:21+00:00" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="A3.4 Quadratics - lab" />
+		<meta name="twitter:description" content="Image: Pixabay Quadratic expressions have the general form \[ax^2+bx+c\] where \(a\), \(b\) and \(c\) are real numbers and \(a\neq 0\). Quadratics frequently arise in mathematics, science and engineering. This module explains how to factorise a quadratic into two linear factors. For example \[x^2+5x+6 = \left(x+2\right)\left(x+3\right).\] The general form of a quadratic expression is: \(ax^{2}+bx+c\), \(a\neq0\)," />
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/a34-quadratics\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/lab.bitma.app\/maths-statistics\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/#listItem","position":3,"name":"Algebra","item":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/a34-quadratics\/#listItem","previousItem":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/a34-quadratics\/#listItem","position":4,"name":"A3.4 Quadratics","previousItem":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/a34-quadratics\/#webpage","url":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/a34-quadratics\/","name":"A3.4 Quadratics - lab","description":"Image: Pixabay Quadratic expressions have the general form \\[ax^2+bx+c\\] where \\(a\\), \\(b\\) and \\(c\\) are real numbers and \\(a\\neq 0\\). Quadratics frequently arise in mathematics, science and engineering. This module explains how to factorise a quadratic into two linear factors. For example \\[x^2+5x+6 = \\left(x+2\\right)\\left(x+3\\right).\\] The general form of a quadratic expression is: \\(ax^{2}+bx+c\\), \\(a\\neq0\\),","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/a34-quadratics\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:41+00:00","dateModified":"2024-08-20T05:48:21+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$','$'],['\\(','\\)']], 
+    processEscapes: true
+  },
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore|editor-rich-text'
+  }
+};
+
+</script>
+<link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
+<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
+<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
+<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+ 	<!-- /wp_head -->
+    
+    <style>
+        </style>
+</head>
+
+<body class="page-template-default page page-id-3038 page-child parent-pageid-2670 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
+	
+		
+<header>
+<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+<div class="top-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-auto left-nav">
+                <div class="rmit-logo"><span class="visually-hidden">RMIT University logo</span></div>
+				<h2>
+					<!-- Explicitly turn off one bit of text and turn on the other to deal with JAWS bug - https://github.com/alphagov/govuk-frontend/issues/1643 -->
+					<a href="../../../index.html">
+						<span aria-hidden="true">Learning lab</span>
+						<span class="visually-hidden">Learning lab homepage</span>
+					</a>
+				</h2>
+            </div>
+            <div class="col">       
+                <ul>
+                    <li class="hide-sm">
+                        <a href="https://www.rmit.edu.au/library">
+							<span aria-hidden="true">Library</span>
+							<span class="visually-hidden">Library homepage</span>
+						</a>
+                    </li>
+                    <li class="search">
+                        <a href="../../../search/index.html" id="search2">
+                            <div class="search-label">Search</div>
+                            <div class="mag-glass"></div>
+                        </a>
+                    </li>
+                    <li class="menu">
+                        <button id="menu-button" 
+                        class="btn btn-primary collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#context-menu" data-bs-display="static" aria-expanded="false" 
+                        aria-controls="context-menu">Click for main menu</button>
+                    </li>
+                </ul> 
+            </div>   
+        </div>
+    </div>
+</div>
+<nav id="context-menu" class="collapse" aria-label="Main Menu">
+    <div class="container nav-container not-wordpress">
+        <div class="row">
+            <!-- START menu -->
+            <div class="col-xl-8">
+				<div class="accordion accordion-white" id="context-menu-accordion">	
+						<div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-6823">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-6823" aria-expanded="false" aria-controls="accordion-body-6823">University essentials</button>
+</h2>
+<div id="accordion-body-6823" class="accordion-collapse collapse" aria-labelledby="accordion-head-6823">
+<div class="accordion-body"><ul><li class="page_item page-item-3339 page_item_has_children"><a href="../../../university-essentials/acting-academic-integrity/index.html">Academic integrity</a></li>
+<li class="page_item page-item-3347 page_item_has_children"><a href="../../../university-essentials/artificial-intelligence-tools/index.html">Artificial intelligence</a></li>
+<li class="page_item page-item-3117 page_item_has_children"><a href="../../../university-essentials/critical-thinking-and-argument-analysis/index.html">Critical thinking</a></li>
+<li class="page_item page-item-2501 page_item_has_children"><a href="../../../university-essentials/getting-started/index.html">Getting started with Uni</a></li>
+<li class="page_item page-item-3097 page_item_has_children"><a href="../../../university-essentials/group-work/index.html">Group work</a></li>
+<li class="page_item page-item-3175 page_item_has_children"><a href="../../../university-essentials/online-learning-skills/index.html">Online learning skills</a></li>
+<li class="page_item page-item-6844 page_item_has_children"><a href="../../../university-essentials/study-essentials/index.html">Study essentials</a></li>
+<li class="page_item page-item-3313 page_item_has_children"><a href="../../../university-essentials/sustainability/index.html">Sustainability</a></li>
+</ul></div></div></div><div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-6825">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-6825" aria-expanded="false" aria-controls="accordion-body-6825">Writing fundamentals</button>
+</h2>
+<div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
+<div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-3295"><a href="../../../writing-fundamentals/understanding-your-audience/index.html">Understanding your audience</a></li>
+<li class="page_item page-item-3107 page_item_has_children"><a href="../../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
+<li class="page_item page-item-2520 page_item_has_children"><a href="../../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
+<li class="page_item page-item-2521"><a href="../../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
+<li class="page_item page-item-2855 page_item_has_children"><a href="../../../writing-fundamentals/writing-workplace/index.html">Writing for the workplace</a></li>
+</ul></div></div></div><div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-6828">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-6828" aria-expanded="false" aria-controls="accordion-body-6828">Assessments</button>
+</h2>
+<div id="accordion-body-6828" class="accordion-collapse collapse" aria-labelledby="accordion-head-6828">
+<div class="accordion-body"><ul><li class="page_item page-item-7168 page_item_has_children"><a href="../../../assessments/getting-started-with-assignments/index.html">Getting started with assignments</a></li>
+<li class="page_item page-item-2516 page_item_has_children"><a href="../../../assessments/essays/index.html">Essays</a></li>
+<li class="page_item page-item-2580 page_item_has_children"><a href="../../../assessments/reflective-writing-1/index.html">Academic reflection</a></li>
+<li class="page_item page-item-7204 page_item_has_children"><a href="../../../assessments/presentations/index.html">Presentations</a></li>
+<li class="page_item page-item-2578 page_item_has_children"><a href="../../../assessments/case-studies/index.html">Case studies</a></li>
+<li class="page_item page-item-2544 page_item_has_children"><a href="../../../assessments/reports/index.html">Reports</a></li>
+<li class="page_item page-item-2536 page_item_has_children"><a href="../../../assessments/literature-review/index.html">Literature review</a></li>
+<li class="page_item page-item-2617"><a href="../../../assessments/annotated-bibliographies/index.html">Annotated bibliographies</a></li>
+</ul></div></div></div><div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-2545">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-2545" aria-expanded="false" aria-controls="accordion-body-2545">Referencing</button>
+</h2>
+<div id="accordion-body-2545" class="accordion-collapse collapse" aria-labelledby="accordion-head-2545">
+<div class="accordion-body"><ul><li class="page_item page-item-3329"><a href="../../../referencing/using-other-peoples-ideas/index.html">What is referencing?</a></li>
+<li class="page_item page-item-3346"><a href="../../../referencing/understanding-citations/index.html">Understanding citations</a></li>
+<li class="page_item page-item-3330"><a href="../../../referencing/when-referencing-isnt-needed/index.html">When referencing isn't needed</a></li>
+<li class="page_item page-item-3331"><a href="../../../referencing/quoting/index.html">Quoting</a></li>
+<li class="page_item page-item-3337"><a href="../../../referencing/paraphrasing-4/index.html">Paraphrasing</a></li>
+<li class="page_item page-item-3334"><a href="../../../referencing/summarising-0/index.html">Summarising</a></li>
+<li class="page_item page-item-3338"><a href="../../../referencing/synthesising/index.html">Synthesising</a></li>
+<li class="page_item page-item-3333"><a href="../../../referencing/integrating-ideas-reporting-words/index.html">Integrating ideas with reporting words</a></li>
+<li class="page_item page-item-3336"><a href="../../../referencing/getting-help-referencing/index.html">Easy Cite and referencing help</a></li>
+</ul></div></div></div>						<!-- START Subject support
+                        special case. Effectively each of the child pages here is a section page. For the nav, however, we want toshow these under the banner of subject support. -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-head-subject-support">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-subject-support" aria-expanded="false" aria-controls="accordion-body-subject-support">
+								Subject support
+							  	</button>
+							</h2>
+							<div id="accordion-body-subject-support" class="accordion-collapse collapse" aria-labelledby="accordion-head-subject-support" style="">
+								<div class="accordion-body">
+									<ul>
+										<li><a href="../../../art-and-design/index.html">Art and design</a></li>
+										<li><a href="../../../chemistry/index.html">Chemistry</a></li>
+										<li><a href="../../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../index.html">Mathematics and statistics</a></li>
+										<li><a href="../../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
+										<li><a href="../../../subject-areas/physics/index.html">Physics</a></li>
+										<!-- <li><a href="//">Life sciences</a></li> -->
+									</ul>
+								</div>
+							  </div>
+						</div>
+						<!-- END subject support - special case -->
+                </div>	
+            </div>
+            <!-- END menu -->
+        </div>
+    </div>
+</nav>
+</header>
+
+	<main id='theme-main'>
+
+<div class="container" id="page-content">
+    <div class="row ">
+        <!-- START right nav -->
+        <div class="col-xl-4 order-last">
+            
+
+<!-- this style changes the page link style in the sidebar nav 
+to indicate the current page and removes bullets from unordered lists. 
+The wp_list_pages function allocates the classes automatically. 
+This should be moved to a stylesheet once style is determined. -->
+
+<!--<style>
+[aria-current="page"] {
+  pointer-events: none !important; 
+  cursor: default;
+  text-decoration: none !important;
+  color: #000054;
+}
+</style>-->
+
+	
+<!-- START SIDEBAR NAV PANEL -->
+<nav class="right-nav" aria-label="Section Menu">
+
+<h2><a href="../../index.html">Maths and statistics</a></h2><h3><a href="../index.html">Algebra</a></h3><ul><li><a href="../a11-algebraic-operations/index.html">A1.1 Algebraic operations</a></li><li><a href="../a12-algebraic-substitution/index.html">A1.2 Algebraic substitution</a></li><li><a href="../a13-removing-brackets/index.html">A1.3 Removing brackets</a></li><li><a href="../a14-algebraic-fractions-addition-and-subtraction/index.html">A1.4 Algebraic fractions &ndash; Addition and subtraction</a></li><li><a href="../a15-algebraic-fractions-multiplication-and-division/index.html">A1.5 Algebraic fractions &ndash; Multiplication and division</a></li><li><a href="../a16-quadratics/index.html">A1.6 Quadratics</a></li><li><a href="../a17-partial-fractions/index.html">A1.7 Partial fractions</a></li><li><a href="../a21-rearranging-formulae/index.html">A2.1 Rearranging formulas</a></li><li><a href="../a22-rearranging-formulas-brackets-and-fractions/index.html">A2.2 Rearranging formulas &ndash; Brackets and fractions</a></li><li><a href="../a23-transposition-formulas-challenges/index.html">A2.3 Transposition of formulas with challenges</a></li><li><a href="../a31-common-factors/index.html">A3.1 Common factors</a></li><li><a href="../a32-perfect-squares/index.html">A3.2 Perfect squares</a></li><li><a href="../a33-difference-two-squares/index.html">A3.3 Difference of two squares</a></li><li><a href="index.html" class="selected"  aria-current="page">A3.4 Quadratics</a><li><a href="../a35-completing-square/index.html">A3.5 Completing the square</a></li><li><a href="../a36-polynomial-long-division/index.html">A3.6 Polynomial long division</a></li></ul></nav>
+<!-- END SIDEBAR NAV PANEL -->
+
+
+
+
+<!--<script language="javascript">
+//this script shortens strings for titles that repeat the section title at the start
+//it currently looks for the characters colon and space ": " in the page title
+//this requires strict naming conventions for the title that use a colon 
+//to separate the repeated section title from the descriptive page title
+//the regex pattern to look for - in this case, text that comes after these characters ": "
+const regex = /:\s(.*)/; 
+list.querySelectorAll('a').forEach(a => {
+  //get the text from inside all the <a> tags inside the div with the id "list"
+  const text = a.innerHTML; 
+  //find matches with the regex pattern
+  const match = text.match(regex); 
+  if(match) {
+	//replace what's in each <a> tag that matches the pattern and convert the first character to upper case
+	a.innerHTML = match[1].charAt(0).toUpperCase() + match[1].slice(1); 
+  }
+})
+//as above, but for Heading 6
+list.querySelectorAll('h4').forEach(h4 => {
+  const text = h4.innerHTML; 
+  const match = text.match(regex);
+  if(match) {
+	h4.innerHTML = match[1].charAt(0).toUpperCase() + match[1].slice(1);
+  }
+})
+</script>-->
+		        </div>
+        <!-- END right nav -->
+        <!-- START content -->
+        <div class="col-xl-8 order-first">
+            <nav aria-label="breadcrumbs">
+<ul class="breadcrumbs">
+<li><a href="../../../index.html">Home</a></li>
+<li><a href="../../index.html">Maths and statistics</a></li>
+<li><a href="../index.html">Algebra</a></li>
+</ul>
+</nav>            <a id="main-content"></a>
+            <h1 class="margin-top-zero">A3.4 Quadratics</h1>
+            <div class="acc plain">
+<p><span class="marginnote"><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-a34.png" alt="Character imagining an equation" /><br />
+Image: Pixabay </span></p>
+<p class="lead">Quadratic expressions have the general form <span class="math display">\[ax^2+bx+c\]</span> where <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span> are real numbers and <span class="math inline">\(a\neq 0\)</span>. Quadratics frequently arise in mathematics, science and engineering. This module explains how to factorise a quadratic into two linear factors. For example <span class="math display">\[x^2+5x+6 = \left(x+2\right)\left(x+3\right).\]</span></p>
+<p>The general form of a quadratic expression is: <span class="math inline">\(ax^{2}+bx+c\)</span>, <span class="math inline">\(a\neq0\)</span>, where <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span> are real constants and <span class="math inline">\(x\)</span> is the variable.</p>
+<p>We will initially work with expressions that have <span class="math inline">\(a=1\)</span> so the expression becomes <span class="math inline">\(x^{2}+bx+c\)</span>.</p>
+<div id="expansion" class="section level1">
+<h2>Expansion</h2>
+<p>To expand an expression of the form <span class="math inline">\((a+b)(c+d)\)</span>, multiply each term in the first bracket by each term in the second bracket.</p>
+<p><span class="math display">\[\begin{align*} (x+2)(x+3) &amp; =x(x+3)+2(x+3)\\ &amp; =x^{2}+3x+2x+6\\ &amp; =x^{2}+5x+6. \end{align*}\]</span></p>
+</div>
+<div id="factorisation" class="section level1">
+<h2>Factorisation</h2>
+<p>Factorisation is the reverse of expansion:</p>
+<p><span class="math inline">\(x^{2}+5x+6\)</span> is expressed as the product of two factors, <span class="math inline">\((x+2)\)</span> and <span class="math inline">\((x+3).\)</span> That is <span class="math display">\[\begin{align*} x^{2}+5x+6 &amp; =\left(x+2\right)\left(x+3\right). \end{align*}\]</span></p>
+<p>Note that:</p>
+<ul>
+<li>Multiplying the first term in each bracket gives the term <span class="math inline">\(x^{2}\)</span> in the expression as above.</li>
+<li>Multiplying the last term in each bracket gives the constant term, <span class="math inline">\(+6\)</span> in the expression.</li>
+<li>The coefficient of the <span class="math inline">\(x\)</span> term is the sum of the last term in each bracket <span class="math inline">\((+2+3=+5)\)</span>.</li>
+</ul>
+<div class="responsive-video"><iframe src="https://www.youtube.com/embed/Q-eWKzLAJic" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+<div class="acc transcript">
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-2054">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-4331" aria-expanded="false" aria-controls="body-transcript-4331" >Transcript</button>
+</p>
+<div id="body-transcript-4331" class="accordion-collapse collapse " aria-labelledby="head-transcript-2054">
+<div class="accordion-body">
+<p>Hi, this is Martin Lindsay from the Study and Learning Centre at RMIT University. This is a short movie on factorising quadratics. The general form of a quadratic expression is given by A X squared plus B X plus C. Here A, B and C are constants and X is the unknown. For instance here’s an expression, two X squared minus three X minus four, A is plus two, B is minus three and C is minus four. Note carefully the sign for each of the numbers.</p>
+<p>Let’s go back a step first and look at revision of expansion, in other words removing brackets. Here’s an expression, X plus two X plus three and when you expand that you multiply each term in the first bracket by the terms in the second bracket to get an answer of X squared plus five X plus six. We’ve done this in a previous movie.</p>
+<p>Now factorisation is the reverse of expansion, in other words X square plus five X plus six can be expressed to the product of two factors, X plus two and X plus three. In other words as you go from left to right in this equation we’re factorising, as we go from right to left we’re expanding. A few important things to notice about factorisation; first of all multiplying the first terms in each bracket gives the X squared in the expression, in other words X times X is X squared. Multiplying the last terms in each bracket gives the constant term plus six in the expression, in other words plus two times plus three is plus six. Finally the co-efficient of the X terms, in other words the middle term, is the sum of the last term in each bracket, in other words here plus two and plus three is plus five. Now we’ll be using these steps to work out some of these examples that follow.</p>
+<p>So in general for the expression A squared plus B X plus C where A is equal to one multiply two numbers to get C, we add the same two numbers to get B, in other words we insert one number into each of the brackets and secondly the order is not important, in other words the second brackets could be the first and vice versa, it doesn’t matter which way around you place the brackets.</p>
+<p>So here’s our first example, X squared plus nine X plus 14. So straight away we can place two brackets, as I’ve done, to the right of the equal signs. Using the rules we need two numbers that when multiplied together gives us the last term, 14, and those same two numbers that, when added, gives us the co-efficient of X, the middle term, which is nine. So we can look at 14 and one, seven and two and so on until we get those two numbers that when multiplied gives us 14 but also added gives us nine and those two numbers are seven and two, seven times two is 14, seven plus two is nine. Notice if I use 14 and one multiplying them is fine but adding them will not give us nine.</p>
+<p>Let’s look at another one; Y squared minus seven Y plus 12. Here we have a negative sign in the middle term which makes it slightly more difficult but we still use the same idea as in the previous example, in other words two numbers that multiply gives us 12, the same two numbers that when added gives us minus seven, so we can look at 12 and one, six and two, four and three. Notice when we look at those different combinations, those factors of 12, there’s only one that will satisfy the two conditions and that is minus three and minus four. Notice minus three times minus four is plus 12, minus three plus minus four is minus seven, so our answer is Y minus three Y minus four.</p>
+<p>Here’s another one. Notice the terms are separated by negative signs, P squared minus five P minus 14. Again, using the rules, multiplying the two you must get minus 14, adding the two numbers we must get minus five. Here it’s not so difficult because we only have 14 and one, that gives us 14, but 14 and one there’s no way in which, when adding those two numbers, whether they be negative or positive, will give us minus five, so the solution to this is P minus seven and P plus two. Be extra careful with the negative signs here, notice that minus seven times plus two gives us minus 14 and minus seven plus two is minus five.</p>
+<p>And finally here’s another one; A squared plus six A minus seven. We need two numbers that multiply to give minus seven and two numbers that add to give plus six. So we don’t have much choice here, the only factors we have of seven are seven and one, so they must be seven and one, but the difficult problem here is to work out where the negative signs go and this usually comes just with trial and error, in other words A plus seven A minus one, seven times minus one is minus seven, plus seven minus one is plus six. If you tried minus seven and plus one you would notice you would not get plus six A, so try the different methods to make sure you’re correct.</p>
+<p>Now try some problems for yourself. The answers to these questions are on the next slide. Thanks for watching this short movie.</p>
+</div></div></div>
+</div>
+<p>The basic rule is:</p>
+<hr />
+<blockquote><p>To factorise <span class="math inline">\(x^{2}+bx+c\)</span>, find two numbers <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> such that <span class="math display">\[\begin{align*} x^{2}+bx+c &amp; =\left(x+m\right)\left(x+n\right) \end{align*}\]</span> where <span class="math inline">\(m\times n=c\)</span> and <span class="math inline">\(m+n=b.\)</span></p></blockquote>
+<hr />
+<p>Note that order of the factors does not matter. That is <span class="math display">\[\begin{align*} x^{2}+bx+c &amp; =\left(x+m\right)\left(x+n\right)\\ &amp; =\left(x+n\right)\left(x+m\right). \end{align*}\]</span></p>
+<div id="example-1" class="section level2">
+<h3>Example 1</h3>
+<p>Factorise <span class="math inline">\(x^{2}+9x+14.\)</span></p>
+<h4>Solution</h4>
+<p>We want to write <span class="math display">\[\begin{align*} x^{2}+9x+14 &amp; =\left(x+m\right)\left(x+n\right) \end{align*}\]</span> where according to the rule above, <span class="math display">\[\begin{align*} m\times n &amp; =14\ \text{and }\\ m+n &amp; =9. \end{align*}\]</span></p>
+<p>The factors of <span class="math inline">\(14\)</span> are</p>
+<p><span class="math display">\[\begin{align*} 1.\ m &amp; =1 &amp; 2.\ m &amp; =-1 &amp; 3.\ m &amp; =2 &amp; 4.\ m &amp; =-2\\ n &amp; =14 &amp; n &amp; =-14 &amp; n &amp; =7 &amp; n &amp; =-7. \end{align*}\]</span> Of these, only the factors in <span class="math inline">\(3\)</span> satisfy the requirement that <span class="math inline">\(m+n=9\)</span>. So <span class="math display">\[\begin{align*} x^{2}+9x+14 &amp; =\left(x+2\right)\left(x+7\right). \end{align*}\]</span></p>
+</div>
+<div id="example-2" class="section level2">
+<h3>Example 2</h3>
+<p>Factorise <span class="math inline">\(y^{2}-7y+12\)</span>.</p>
+<h4>Solution</h4>
+<p>We want to write <span class="math display">\[\begin{align*} y^{2}-7x+12 &amp; =\left(y+m\right)\left(y+n\right) \end{align*}\]</span> where according to the rule above, <span class="math display">\[\begin{align*} m\times n &amp; =12\ \text{and }\\ m+n &amp; =-7. \end{align*}\]</span></p>
+<p>The factors of <span class="math inline">\(12\)</span> are</p>
+<p><span class="math display">\[\begin{align*} 1.\ m &amp; =3 &amp; 2.\ m &amp; =-3 &amp; 3.\ m &amp; =2 &amp; 4.\ m &amp; =-2 &amp; 5.\ m &amp; =12 &amp; 6.\ m &amp; =-12\\ n &amp; =4 &amp; n &amp; =-4 &amp; n &amp; =6 &amp; n &amp; =-6 &amp; n &amp; =1 &amp; n &amp; =-1. \end{align*}\]</span> Of these, only the factors in <span class="math inline">\(2\)</span> satisfy the requirement that <span class="math inline">\(m+n=-7\)</span>. So <span class="math display">\[\begin{align*} y^{2}-7x+12 &amp; =\left(y-3\right)\left(y-4\right). \end{align*}\]</span></p>
+</div>
+<div id="example-3" class="section level2">
+<h3>Example 3</h3>
+<p>Factorise <span class="math inline">\(p^{2}-5p-14\)</span>.</p>
+<h4>Solution</h4>
+<p>We want to write <span class="math display">\[\begin{align*} p^{2}-5p-14 &amp; =\left(p+m\right)\left(p+n\right) \end{align*}\]</span> where according to the rule above, <span class="math display">\[\begin{align*} m\times n &amp; =14\ \text{and }\\ m+n &amp; =-5. \end{align*}\]</span></p>
+<p>The factors of <span class="math inline">\(-14\)</span> are</p>
+<p><span class="math display">\[\begin{align*} 1.\ m &amp; =1 &amp; 2.\ m &amp; =-1 &amp; 3.\ m &amp; =-2 &amp; 4.\ m &amp; =2\\ n &amp; =-14 &amp; n &amp; =14 &amp; n &amp; =7 &amp; n &amp; =-7. \end{align*}\]</span> Of these, only the factors in <span class="math inline">\(4\)</span> satisfy the requirement that <span class="math inline">\(m+n=-5\)</span>. So <span class="math display">\[\begin{align*} p^{2}-5x-14 &amp; =\left(p+2\right)\left(p-7\right). \end{align*}\]</span></p>
+</div>
+<div id="example-4" class="section level2">
+<h3>Example 4</h3>
+<p>Factorise <span class="math inline">\(a^{2}+6a-7\)</span>.</p>
+<h4>Solution</h4>
+<p>We want to write <span class="math display">\[\begin{align*} a^{2}+6a-7 &amp; =\left(a+m\right)\left(a+n\right) \end{align*}\]</span> where according to the rule above, <span class="math display">\[\begin{align*} m\times n &amp; =-7\ \text{and }\\ m+n &amp; =6. \end{align*}\]</span></p>
+<p>The factors of <span class="math inline">\(-7\)</span> are</p>
+<p><span class="math display">\[\begin{align*} 1.\ m &amp; =1 &amp; 2.\ m &amp; =-1\\ n &amp; =-7 &amp; n &amp; =7 \end{align*}\]</span></p>
+<p>Of these, only the factors in <span class="math inline">\(2\)</span> satisfy the requirement that <span class="math inline">\(m+n=6\)</span>. So <span class="math display">\[\begin{align*} a^{2}+6a-7 &amp; =\left(a-1\right)\left(a+7\right). \end{align*}\]</span></p>
+</div>
+<div id="example-5-no-real-factors" class="section level2">
+<h3>Example 5 (no real factors)</h3>
+<p>Factorise <span class="math inline">\(a^{2}+3a+6\)</span>.</p>
+<h4>Solution</h4>
+<p>We want to write <span class="math display">\[\begin{align*} a^{2}+3a+6 &amp; =\left(a+m\right)\left(a+n\right) \end{align*}\]</span> where according to the rule above, <span class="math display">\[\begin{align*} m\times n &amp; =6\ \text{and }\\ m+n &amp; =3. \end{align*}\]</span></p>
+<p>The factors of <span class="math inline">\(6\)</span> are <span class="math display">\[\begin{align*} 1.\ m &amp; =1 &amp; 2.\ m &amp; =-1 &amp; 3.\ m &amp; =-2 &amp; 4.\ m &amp; =2\\ n &amp; =6 &amp; n &amp; =-6 &amp; n &amp; =-3 &amp; n &amp; =3. \end{align*}\]</span></p>
+<p>None of these factors satisfy the requirement that <span class="math inline">\(m+n=3\)</span>. So it is not possible to factorise the expression <span class="math display">\[\begin{align*} a^{2}+3a+6 &amp; . \end{align*}\]</span> In this case we say there are no real factors.<span class="sidenote"><span class="sidenote-number">1</span> Geometrically this means that the graph of <span class="math inline">\(y=a^{2}+3a+6\)</span> does not touch or intersect the <span class="math inline">\(a-\text{axis$.$ }\)</span> There are complex factors but these are not dealt with in this module. </span>It is important to understand when this occurs and is discussed in a later section.</p>
+</div>
+</div>
+<div id="factorisation-when-aneq1." class="section level1">
+<h2>Factorisation when <span class="math inline">\(a\neq1\)</span></h2>
+<p>In this section we deal with factorisation of expressions of the form <span class="math display">\[\begin{align*} ax^{2}+bx+c \end{align*}\]</span> where <span class="math inline">\(a\neq1.\)</span></p>
+<p>Expressions of the type <span class="math inline">\(ax^{2}+bx+c\)</span> can be factorised using a technique similar to that used for expressions of the type <span class="math inline">\(x^{2}+bx+c.\)</span></p>
+<p>In this case the coefficient of <span class="math inline">\(x\)</span>, in at least one bracket, will not equal 1.</p>
+<p>Consider the following product.</p>
+<p><span class="math display">\[\begin{align*} (3x+2)(2x+1) &amp; =(3x)(2x)+(3x)(1)+(2)(2x)+(2)(1)\\ &amp; =6x^{2}+3x+4x+2\\ &amp; =6x^{2}+7x+2. \end{align*}\]</span> Note that</p>
+<ul>
+<li>multiplying the first term in each bracket gives the <span class="math inline">\(x^{2}\)</span> term. In this case <span class="math inline">\(6x^{2}.\)</span></li>
+<li>multiplying the last term in each bracket gives the constant term, in this case <span class="math inline">\(2.\)</span></li>
+<li>the coefficient of the <span class="math inline">\(x-\)</span>term is the sum of the <span class="math inline">\(x\)</span> terms in the expansion. In this case <span class="math inline">\(3x+4x=7x.\)</span></li>
+</ul>
+<p>We can use these ideas to factorise expressions like <span class="math inline">\(ax^{2}+bx+c\)</span>.</p>
+<div id="example-6" class="section level2">
+<h3>Example 6</h3>
+<p>Factorise <span class="math inline">\(2x^{2}+7x+6\)</span>.</p>
+<h4>Solution</h4>
+<p>The only factors of the coefficient of the <span class="math inline">\(x^{2}\)</span> term are <span class="math inline">\(2\)</span> and 1. So we are looking for a factorisation like <span class="math display">\[\begin{align*} 2x^{2}+7x+6 &amp; =\left(2x+m\right)\left(x+n\right)\text{}\\ &amp; =2x^{2}+2nx+mx+nm\\ &amp; =2x^{2}+\left(2n+m\right)x+nm \end{align*}\]</span> where <span class="math inline">\(mn=6\)</span> and <span class="math inline">\(2n+m=7.\)</span> We have the following possibilities:<span class="sidenote"><span class="sidenote-number">2</span> Note that negative factors like <span class="math inline">\(m=-6,\,n=-1\)</span> and <span class="math inline">\(m=-1,\,n=-6\)</span> don’t need to be considered as they don’t satisfy condition <span class="math inline">\(2n+m=7\)</span>.</span></p>
+<ol style="list-style-type: decimal;">
+<li><span class="math inline">\(m=3,\ \:n=2\)</span></li>
+<li><span class="math inline">\(m=2,\ \ n=3\)</span></li>
+<li><span class="math inline">\(m=6,\ \:n=1\)</span></li>
+</ol>
+<p>Of these possibilities, the only one that satisfies <span class="math inline">\(2n+m=7\)</span> is number <span class="math inline">\(1.\)</span> That is <span class="math inline">\(m=2\text{ and }n=2\)</span>, so <span class="math display">\[\begin{align*} 2x^{2}+7x+6 &amp; =\left(2x+3\right)\left(x+2\right). \end{align*}\]</span></p>
+</div>
+<div id="example-7" class="section level2">
+<h3>Example 7</h3>
+<p>Factorise <span class="math inline">\(2x^{2}-10x+12.\)</span></p>
+<h4>Solution</h4>
+<p>At first this looks like a case where <span class="math inline">\(a=2\)</span> but a factor of <span class="math inline">\(2\)</span> can be taken out to get: <span class="sidenote"><span class="sidenote-number">3</span> You should always check if there is a number that divides into all terms of the quadratic. </span> <span class="math display">\[\begin{align*} 2x^{2}-10x+12 &amp; =2\left(x^{2}-5x+6\right) \end{align*}\]</span> Now we can use the methods in Examples <span class="math inline">\(1-4\)</span> above to get</p>
+<p><span class="math display">\[\begin{align*} 2x^{2}-10x+12 &amp; =2\left(x+m\right)\left(x+n\right) \end{align*}\]</span> where <span class="math inline">\(mn=6\)</span> and <span class="math inline">\(m+n=-5.\)</span> This implies <span class="math inline">\(m=-2\)</span> and <span class="math inline">\(n=-3\)</span> and so: <span class="math display">\[\begin{align*} 2x^{2}-10x+12 &amp; =2\left(x^{2}-5x+6\right)\\ &amp; =2\left(x-2\right)\left(x-3\right). \end{align*}\]</span></p>
+</div>
+<div id="example-8" class="section level2">
+<h3>Example 8</h3>
+<p>Factorise <span class="math inline">\(6x^{2}+13x-8\)</span>.</p>
+<h4>Solution</h4>
+<p>In this case there are no numbers that divide into each term as we had in Example 7 above. The coefficient of the <span class="math inline">\(x^{2}\)</span> term is <span class="math inline">\(6\)</span> which has factors <span class="math display">\[\begin{align*} 6 &amp; =6\times1\\ &amp; =2\times3. \end{align*}\]</span> So we are looking for a factorisation such as: <span class="math display">\[\begin{align*} 6x^{2}+13x-8 &amp; =\left(6x+m\right)\left(x+n\right)\\ &amp; =6x^{2}+6xn+mx-8\\ &amp; =6x^{2}+\left(6n+m\right)x-8 &amp; \left(8.1\right) \end{align*}\]</span> or <span class="math display">\[\begin{align*} 6x^{2}+13x-8 &amp; =\left(3x+m\right)\left(2x+n\right)\\ &amp; =6x^{2}+3xn+2mx-8\\ &amp; =6x^{2}+\left(3n+2m\right)x-8 &amp; \left(8.2\right) \end{align*}\]</span> In both cases, <span class="math inline">\(mn=-8.\)</span> So we have the possibilities <span class="math display">\[\begin{align*} m &amp; =-8 &amp; n &amp; =1\\ m &amp; =8 &amp; n &amp; =-1\\ m &amp; =4 &amp; n &amp; =-2\\ m &amp; =-4 &amp; n &amp; =2. \end{align*}\]</span></p>
+<p>For eqn <span class="math inline">\(\left(8.1\right)\)</span> we know that <span class="math inline">\(6n+m=13\)</span>. This is not satisfied by any of the <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> values above.</p>
+<p>For eqn <span class="math inline">\(\left(8.2\right)\)</span> we know that <span class="math inline">\(3n+2m=13\)</span>. This is satisfied by <span class="math inline">\(m=8\)</span> and <span class="math inline">\(n=-1\)</span> and so <span class="math display">\[\begin{align*} 6x^{2}+13x-8 &amp; =\left(3x+8\right)\left(2x-1\right). \end{align*}\]</span></p>
+</div>
+<div id="example-9" class="section level2">
+<h3>Example 9</h3>
+<p>Factorise <span class="math inline">\(4x^{2}+4x+1\)</span></p>
+<h4>Solution</h4>
+<p>In this case there are no numbers that divide into each term as we had in Example 7 above. The coefficient of the <span class="math inline">\(x^{2}\)</span> term is <span class="math inline">\(4\)</span> which has factors <span class="math display">\[\begin{align*} 4 &amp; =4\times1\\ &amp; =2\times2. \end{align*}\]</span></p>
+<p>So we are looking for a factorisation such as: <span class="math display">\[\begin{align*} 4x^{2}+4x+1 &amp; =\left(4x+m\right)\left(x+n\right)\\ &amp; =4x^{2}+4xn+mx+mn\\ &amp; =4x^{2}+\left(4n+m\right)x+1 &amp; \left(9.1\right) \end{align*}\]</span> or <span class="math display">\[\begin{align*} 4x^{2}+4x+1 &amp; =\left(2x+m\right)\left(2x+n\right)\\ &amp; =4x^{2}+2xn+2mx+mn\\ &amp; =4x^{2}+\left(2n+2m\right)x+1 &amp; \left(9.2\right) \end{align*}\]</span> where <span class="math inline">\(mn=1\)</span>. That means <span class="math display">\[\begin{align*} m &amp; =1 &amp; n= &amp; 1 &amp; \left(9.3\right)\\ m &amp; =-1 &amp; n= &amp; -1. &amp; \left(9.4\right) \end{align*}\]</span> Suppose eqn <span class="math inline">\(\left(9.1\right)\)</span> is correct then <span class="math inline">\(\left(4n+m\right)=4.\)</span> But this is not possible with the choices for <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> in <span class="math inline">\(\left(9.3\right)\)</span> and <span class="math inline">\(\left(9.4\right)\)</span>. Hence the factorisation must be as in eqn <span class="math inline">\(\left(9.2\right)\)</span> with <span class="math inline">\(2n+2m=4.\)</span> The latter is achieved with <span class="math inline">\(\left(9.3\right)\)</span> and so <span class="math display">\[\begin{align*} 4x^{2}+4x+1 &amp; =\left(2x+1\right)\left(2x+1\right). \end{align*}\]</span></p>
+<p>The approach given in examples 6-9 is okay provided there are not too many factors for <span class="math inline">\(a\)</span> and <span class="math inline">\(c\)</span>. If the number of factors is excessive, we can employ other methods.</p>
+</div>
+</div>
+<div id="when-can-you-get-real-linear-factors-for-a-quadratic" class="section level1">
+<h2>When can you get real linear factors for a quadratic?</h2>
+<p>In Example 5 above we found that we could not get real linear factors for <span class="math display">\[\begin{align*} a^{2}+3a+6 &amp; . \end{align*}\]</span></p>
+<p>This raises the question of when real solutions to general quadratics may be found. The most general quadratic has the form <span class="sidenote"><span class="sidenote-number">4</span> Note that the graph of <span class="math display">\[\begin{align*} y &amp; =ax^{2}+bx+c \end{align*}\]</span> is a parabola. </span> <span class="math display">\[\begin{align*} ax^{2}+bx+c &amp; . \end{align*}\]</span></p>
+<p>To determine if there are real linear factors, we introduce the discriminant.</p>
+<div id="the-discriminant" class="section level2">
+<h3>The discriminant</h3>
+<p>The discriminant denoted <span class="math inline">\(\Delta,\)</span> for the general quadratic <span class="math display">\[\begin{align*} ax^{2}+bx+c \end{align*}\]</span> is <span class="math display">\[\begin{align*} \Delta &amp; =b^{2}-4ac. \end{align*}\]</span></p>
+<p>If <span class="math display">\[\begin{align*} \Delta &amp; =\begin{cases} 0\text{ there is one repeated linear factor}\\ &gt;0\text{ there are two distinct linear factors}\\ &lt;0\text{ there are no real linear factors.} \end{cases} \end{align*}\]</span> The discriminant tells us how many real roots there are to the equation <span class="sidenote"><span class="sidenote-number">5</span> Geometrically, the discriminant tells us how many times the graph of <span class="math display">\[\begin{align*} y &amp; =ax^{2}+bx+c \end{align*}\]</span> intersects the <span class="math inline">\(x-\)</span>axis. If <span class="math inline">\(\Delta=0\)</span>, the graph just touches the <span class="math inline">\(x-\)</span>axis at one point. If <span class="math inline">\(\Delta&gt;0,\)</span> the graph intersects the <span class="math inline">\(x-\)</span>axis at two points. If <span class="math inline">\(\Delta&lt;0,\)</span> the graph does not intersect the <span class="math inline">\(x-\)</span>axis.</span> <span class="math display">\[\begin{align*} ax^{2}+bx+c=0 &amp; . \end{align*}\]</span></p>
+</div>
+<div id="example-10" class="section level2">
+<h3>Example 10</h3>
+<p>Factorise (if possible) <span class="math inline">\(x^{2}+6x+12\)</span></p>
+<h4>Solution</h4>
+<p>In this case: <span class="math inline">\(a=1\)</span> , <span class="math inline">\(b=+6\)</span> , <span class="math inline">\(c=+12\)</span> therefore</p>
+<p><span class="math display">\[\begin{align*} \Delta &amp; =\left(b^{2}-4ac\right)\\ &amp; =36-4(1)(12)\\ &amp; =36-48\\ &amp; =-12\\ &amp; &lt;0. \end{align*}\]</span> The discriminant is negative therefore <span class="math inline">\(x^{2}+6x+12\)</span> has no real factors.</p>
+</div>
+</div>
+<div id="exercise-1" class="section level1">
+<h2>Exercise 1</h2>
+<p>Factorise the following expressions (if possible):</p>
+<p><span class="math inline">\(\text{a)$\ x^{2}+10x+21\qquad\text{b)$\ z^{2}+11z+18\qquad\text{c)$\ x^{2}+5x-14$ }$ }$ }\)</span></p>
+<p><span class="math inline">\(\text{d)$\ m^{2}-m-72\qquad\text{e)$\ x^{2}+6x+9\qquad\text{f)$\ a^{2}-15a+44$ }$ }$ }\)</span></p>
+<p><span class="math inline">\(\text{g)$\ x^{2}-2x-24\qquad\text{h)$\ y^{2}-10y+16\qquad\text{i)$\ z^{2}+4z-60$ }$ }$ }\)</span></p>
+<p><span class="math inline">\(\text{j)$\ n^{2}+6n-16\qquad\text{k)$\ a^{2}+5a+10\qquad\text{l)$\ s^{2}+2s-48$ }$ }$ }\)</span></p>
+<p><span class="math inline">\(\text{m)$\ y^{2}+7y+19\qquad\text{n)$\ x^{2}+16x+39\qquad\text{o)$\ x^{2}-14x+45$ }$ }$ }\)</span></p>
+<div id="answers" class="section level2">
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-answers-6707">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-1500" aria-expanded="false" aria-controls="body-answers-1500" >Answers</button>
+</p>
+<div id="body-answers-1500" class="accordion-collapse collapse " aria-labelledby="head-answers-6707">
+<div class="accordion-body">
+<p>Note that order of factors does not matter.</p>
+<p><span class="math inline">\(\text{a)$\ \left(x+7\right)\left(x+3\right)\qquad\text{b)$\ \left(z+9\right)\left(z+2\right)\qquad\text{c)$\ \left(x+7\right)\left(x-2\right)$ }$ }$ }\)</span></p>
+<p><span class="math inline">\(\text{d)$\ \left(m-9\right)\left(m+8\right)\qquad\text{e)$\ \left(x+3\right)\left(x+3\right)\qquad\text{f)$\ \left(a-11\right)\left(a-4\right)$ }$ }$ }\)</span></p>
+<p><span class="math inline">\(\text{g)$\ \left(x-6\right)\left(x+4\right)\qquad\text{h)$\ \left(y-2\right)\left(y-8\right)\qquad\text{i)$\ \left(z-6\right)\left(z+10\right)$ }$ }$ }\)</span></p>
+<p><span class="math inline">\(\text{j)$\ \left(n-2\right)\left(n+8\right)\qquad\text{k) no real factors$\qquad\text{l)$\ \left(s+8\right)\left(s-6\right)$ }$ }$ }\)</span></p>
+<p><span class="math inline">\(\text{m) no real factors$\qquad\text{n)$\ \left(x+13\right)\left(x+3\right)\qquad\text{o)$\ \left(x-9\right)\left(x-5\right).$ }$ }$ }\)</span></p>
+</div></div></div>
+</div>
+</div>
+<div id="exercise-2" class="section level1">
+<h2>Exercise 2</h2>
+<p>Factorise the following if possible.</p>
+<p><span class="math inline">\(\text{a)$\ 5x^{2}+13x+6\qquad\text{b)$\ 2x^{2}+x-15\qquad\text{c)$\ 3m^{2}-m-2$ }$ }$ }\)</span></p>
+<p><span class="math inline">\(\text{d)$\ 3y^{2}-10y+8\qquad\text{e)$\ 2a^{2}+11a+12\qquad\text{f)$\ 6x^{2}-11x+5$ }$ }$ }\)</span></p>
+<div id="answers-1" class="section level2">
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-answers-9711">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-5047" aria-expanded="false" aria-controls="body-answers-5047" >Answers</button>
+</p>
+<div id="body-answers-5047" class="accordion-collapse collapse " aria-labelledby="head-answers-9711">
+<div class="accordion-body">
+<p>Note that order of factors does not matter.</p>
+<p><span class="math inline">\(\text{a)$\ \left(5x+3\right)\left(x+2\right)\qquad\text{b)$\ \left(2x-5\right)\left(x+3\right)\qquad\text{c)$\ \left(3m+2\right)\left(m-1\right)$ }$ }$ }\)</span></p>
+<p><span class="math inline">\(\text{d)$\ \left(3y-4\right)\left(y-2\right)\qquad\text{e)$\ \left(2a+3\right)\left(a+4\right)\qquad\text{f)$\ \left(6x-5\right)\left(x-1\right).$ }$ }$ }\)</span></p>
+</div></div></div>
+</div>
+</div>
+<p><a class="mathspdf" href="https://rmitlibrary.github.io/cdn/learninglab/docs/A3.4_Factorisation_Quadratics.pdf" type="application/pdf">Download this page, A3.4 Factorisation: Quadratics <span class="file-link-info">(PDF 258 KB) </span></a></p>
+</div>
+			<nav class="btn-nav-container" aria-label="Previous and next links">
+<h2 class="btn-nav-prev">
+    <a href="../a33-difference-two-squares/index.html">
+        <span aria-hidden="true">A3.3 Difference of two squares</span>
+        <span class="visually-hidden">Previous page: A3.3 Difference of two squares</span>
+    </a>
+</h2>
+    
+
+
+<h2 class="btn-nav-next">
+    <a href="../a35-completing-square/index.html">
+        <span aria-hidden="true">A3.5 Completing the square</span>
+        <span class="visually-hidden">Next page: A3.5 Completing the square</span>
+    </a>
+</h2>
+	
+</nav><!-- .navigation -->			<div id="additional-info">
+			
+			
+
+
+
+<!-- keywords echo - https://www.advancedcustomfields.com/resources/taxonomy/ -->      
+
+<hr class="margin-top-xl">
+<div class="keywords">
+    <h2 class="h5">Keywords</h2>
+    <ul>
+                <li><a href="../../../keyword/algebra/index.html">Algebra</a></li>  
+                <li><a href="../../../keyword/maths-equations/index.html">Maths equations</a></li>  
+        </ul>
+</div>
+ 
+<!-- keywords echo end 
+
+<!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
+<!--
+<p><strong>Subjects </strong>
+    | <strong><a href="https://lab.bitma.app/subject-area/maths/">Maths</a></strong>  
+    </p>
+-->
+<!-- category echo end -->
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+        <!-- END content --> 
+    </div>
+</div>
+
+</main>
+
+					
+		
+<div class="wrapper footer-container" id="wrapper-footer-colophon">
+	<div class="container">
+        <div class="row">
+            <div class="col">
+				<!-- START ask the library -->
+				<div class="ask-container">
+					
+					<section class="ask-the-library">
+						<a href="https://www.rmit.edu.au/library/about-and-contacts/ask-the-library">
+							<img src="https://rmitlibrary.github.io/cdn/image/svg/ask-the-library.svg" class="ask-logo" alt="Ask the library" />
+							<div class="ask-text">
+								<p class="lead">Still can't find what you need?</p>
+								<p>The RMIT University Library provides study support, one-on-one consultations and peer mentoring to RMIT students.</p>
+							</div>
+						</a>
+					</section>
+			
+				</div>
+				<!-- END ask the library -->
+			</div>
+ 		</div>
+	</div>
+    <!-- START acknowledgement -->
+    <div class="acknowledgement">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <section class="acknowledgement-container">
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
+                        </div>
+
+                        <div class="content">
+                            <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
+                            <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
+                            
+                            <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
+                            <a href="#" class="link-large">More information</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!-- END acknowledgement -->
+    <!-- START footer -->
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- START logo -->    
+                <a aria-label="Royal Melbourne Institute of Technology University Logo" href="https://www.rmit.edu.au/">
+					<div aria-hidden="true" class="logo"><span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/rmit-logo.svg" style="width: 100px" alt="" /></span>
+					</div>
+				</a>
+                <!-- END logo -->
+                <!-- START links -->
+				<ul class="footer-links">
+					<li><a href="">About Learning Lab</a></li>
+					<li><a href="">For educators</a></li>
+					<li><a href="">Contribute</a></li>
+					<li><a href="">Contact us</a></li>
+				</ul>
+                <!-- END links -->
+                <!-- START legal-social -->
+                <div class="footerlegalShareItems">
+                    <!-- START legal -->
+                    <div class="footer-legal">
+                    <ul>
+                        <li>Copyright © 2024 RMIT University<span> | </span></li>
+                        <li><a href="https://www.rmit.edu.au/utilities/terms"><span class="no-focus" tabindex="-1">Terms</span></a><span> | </span></li>
+                        <li><a href="https://www.rmit.edu.au/utilities/privacy"><span class="no-focus" tabindex="-1">Privacy</span></a><span> | </span></li>
+                        <li><a href="https://www.rmit.edu.au/utilities/accessibility"><span class="no-focus" tabindex="-1">Accessibility</span></a> <span> | </span></li>
+                        <li><a data-analytics-type="footerlink" data-analytics-value="Website feedback" href="https://www.rmit.edu.au/utilities/website-feedback"><span class="no-focus" tabindex="-1">Website feedback</span></a><span> | </span></li>
+                        <li><a data-analytics-type="footerlink" data-analytics-value="Complaints" href="https://www.rmit.edu.au/utilities/complaints"><span class="no-focus" tabindex="-1">Complaints</span></a><span> | </span></li>
+                        <li>ABN 49 781 030 034<span> | </span></li>
+                        <li>CRICOS provider number: 00122A<span> | </span></li>
+                        <li>TEQSA provider number: PRV12145<span> | </span></li>
+                        <li>RTO Code: 3046<span> | </span></li>
+                        <li><a href="https://www.open.edu.au/online-courses/rmit-university"><span class="no-focus" tabindex="-1">Open Universities Australia</span></a> </li>
+                      </ul>
+                    </div>
+                    <!-- END legal -->
+                    <!-- START social -->
+                    <div class="social-nav">
+                    <ul> 
+                        <!-- START facebook -->
+                        <li><a aria-label="For Facebook"  href="https://www.facebook.com/RMITuniversity/"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/facebook.svg" alt="" /></span></a></li>
+                        <!-- END facebook -->
+                        <!-- START twitter/x -->
+                        <li><a aria-label="For Twitter" href="https://twitter.com/rmit"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/twitter.svg" alt="" /></span></a></li>
+                        <!-- END twitter/x -->
+                        <!-- START insta -->
+                        <li><a aria-label="For Instagram" href="https://www.instagram.com/rmituniversity/"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/instagram.svg" alt="" /></span> </a></li>
+                        <!-- END insta -->              
+                        <!-- START LinkedIn -->
+                        <li><a aria-label="For LinkedIn" data-analytics-type="socialshare" data-analytics-value="LinkedIn" href="https://www.linkedin.com/school/rmit-university/"><span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/linkedin.svg" alt="" /></span></a></li>
+                        <!-- END LinkedIn -->
+                        <!-- START YouTube -->
+                        <li><a aria-label="For Youtube" href="https://www.youtube.com/user/rmitmedia"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/youtube.svg" alt="" /></span></a></li>
+                        <!-- END YouTube -->     
+                        <!-- START Weibo -->          
+                        <li><a aria-label="For Weibo" href="https://www.weibo.com/rmituni"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/weibo.svg" alt="" /></span></a></li>
+                        <!-- END Weibo -->                
+					</ul>
+					</div>
+                    <!-- END social -->
+                </div>
+                <!-- END legal-social -->
+            </div>
+        </div>
+    </div>
+	</footer>
+    <!-- END footer -->		
+</div><!-- wrapper end -->
+		
+	
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+<script src="../../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
+<!-- adding requirements for context/hamburger menu start -->
+<script>
+// ---------
+// Script to show and hide hamburger menu 
+// ---------    
+
+// Grab both the menu button, the page content and footer
+var menuButton = document.getElementById("menu-button");
+var pageContent = document.getElementById("theme-main"); 
+var footer = document.getElementById("wrapper-footer-colophon"); 
+  
+// Store display status of menu
+var menuDisplay = false;
+    
+// Store content scroll position
+var scrollPosition;
+
+// Listen for click - call showhideMenu
+menuButton.addEventListener("click", showHideMenu);
+
+// Menu uses bootstraps "collapse" function
+// If menu is hidden, bootstrap will show it, hide page content.
+// If it's displayed, bootstrap will hide it, show the content.
+
+
+// Function to toggle the visibility of a menu and adjust page content accordingly.
+function showHideMenu() {
+    // Check if the menu is currently hidden
+    if(menuDisplay == false)
+    {
+        // Set the menu display flag to true (menu is now shown) and save scroll position
+        menuDisplay = true;
+        scrollPosition = window.scrollY;
+        
+        // Hide the main page content and footer
+        pageContent.style.display = "none"; 
+        footer.style.display = "none"; 
+    }
+    else
+    {
+        // Set the menu display flag to false (menu is now hidden)
+        menuDisplay = false;
+        
+        // Show the main page content and footer
+        pageContent.style.display = "block"; 
+        footer.style.display = "block"; 
+        
+        //turn off smooth scrolling, jump to stored scroll postion, then turn smooth scrolling back on
+        document.documentElement.style.scrollBehavior = "auto";
+        window.scroll(0, scrollPosition);
+        document.documentElement.style.scrollBehavior = "smooth";
+    }
+}
+
+</script>
+<!-- adding requirements for context/hamburger menu end -->
+<!-- adding requirements for reponsive iframes -->
+<!-- Code to handle resizing iframes on this page -->
+    <script type="text/javascript" src="../../../wp-content/themes/picostrap5-child-base/js/iframeResizer.min.js"></script>
+    <script type="text/javascript">
+        iFrameResize({log:true});
+    </script>
+
+<!--    code to handle this page being resized by other wordpress pages,
+        e.g. embed mode described below -->
+<script src="https://rmitlibrary.github.io/cdn/libraries/js/iframeResizer.contentWindow.min.js"></script>
+
+<!-- adding requirements for reponsive iframes end -->
+
+<!-- adding requirements for embed mode start -->
+<script>
+    
+// ---------
+/* Script to turn on embed mode
+// Removes top nav, footer, breadcrumbs, right nav, keywords and prev/next by default
+// Options to remove h1, p lead and show prev/next
+ Sample query string:
+ ?iframe=true&hide-title=true&hide-intro=true
+ 
+ iframe - set to true to enable embed mode
+ hide-title - set to true to hide title
+ hide-intro - set to true to hid first <p class="lead">
+ show-prev-next - set to true to show previous and next buttons
+ 
+ Unlikely hide-title and hide-intro would be used in concert with show-prev-next 
+*/
+// ---------
+    
+//Check query string for embed=true. If it is there, call embedThisPage
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const embedBool = urlParams.get('iframe');
+    
+//in this mode title and intro are shown by default
+const hideTitle = urlParams.get('hide-title');
+const hideIntro = urlParams.get('hide-intro');
+
+//in this mode prev and next are hidden by default
+const showPrevNext = urlParams.get('show-prev-next');
+	
+if(embedBool == 'true') {
+	embedThisPage();
+    handeEmbedLinks();
+}
+
+// embedThisPage hides or removes markup to optimise the display of a page inside an iframe,
+// depending on additional query string values
+function embedThisPage()
+{
+	// pick up the relevant objects in the page
+	var nav = document.querySelector('header');
+	var breadcrumbs = document.querySelector('nav[aria-label="breadcrumbs"]');
+	var rightNav = document.querySelector('div.col-xl-4.order-last');
+    var myFooter = document.getElementById("wrapper-footer-colophon"); 
+    
+    //These are layout divs, looking to remove bootstrap styling to go full width
+    var containerDiv = document.getElementById("page-content");
+    var contentDiv = document.querySelector('div.order-first');
+    
+    //grab content below prev/next buttons
+    var additionalInfo = document.getElementById('additional-info');
+    
+    //grab landing banner for landing pages
+    var landingBanner = document.querySelector("div.landing-banner"); 
+    
+    //console.log("Dom elements retrieved");
+    
+	// hide nav and footer (we have footer var from script above)
+	nav.style.display = "none";
+    myFooter.style.display = "none";
+    
+    //console.log("Hid nav and footer");
+	
+    // Check breadcrumbs exists, then hide it
+    if(breadcrumbs) { breadcrumbs.style.display = "none"; }
+    
+    // Check right nav exists, then remove it
+    if (rightNav) { rightNav.remove(); }
+    
+    //console.log("Hid breadcrumbs and right nav if present");
+    
+    // Check additionalInfo exists, then hide it
+    if(additionalInfo) { additionalInfo.style.display = "none"; }
+    
+    //console.log("Hid additional info");
+    
+    //Check for landing banner
+    if(landingBanner) { 
+        console.log("landing banner exists");
+        landingBanner.classList.remove("landing-banner"); 
+        console.log("removed landing banner");
+        
+        var landingImage = document.querySelector("figure");
+        landingImage.style.marginTop = "0";
+    }
+    
+    
+
+	//remove bootstrap classes that provide adaptive styling
+	if(containerDiv) { 
+        containerDiv.classList.remove("container"); 
+        //remove padding at the top and add margin right to give content space against scroll bar (do we need this?)
+        containerDiv.style.paddingTop = '0';
+        containerDiv.style.marginRight = "2rem";
+    }
+    
+	if(contentDiv) { contentDiv.classList.remove("col-xl-8"); }
+    
+    //console.log("removed containers");
+    //console.log("adjusted padding etc.");
+    
+    //process optional query string vars
+    if(hideTitle == 'true') {
+        var myTitle = document.querySelector('h1');
+        myTitle.style.display = "none";
+        
+        //console.log("Hid title");
+    }
+    
+    if(hideIntro == 'true') {
+        var firstLeadParagraph = document.querySelector('p.lead');
+        firstLeadParagraph.style.display = "none";
+        
+        //console.log("Hid intro");
+    }
+    
+    if(showPrevNext != 'true')  {
+        //hide prev and next - the default behaviour
+        var btnNavContainer = document.querySelector('.btn-nav-container');
+        if(btnNavContainer) { btnNavContainer.style.display = "none"; }
+        
+        //console.log("Hid prev");
+    }
+}
+
+// handeEmbedLinks either adds the query string or target="+top" depending on context
+    
+function handeEmbedLinks()
+{
+    //grab all the links
+    const links = document.querySelectorAll('a');
+    
+    links.forEach(link => {
+
+        const href = link.getAttribute('href');
+        
+        //if we have an href
+        if (href !== null) {
+            if(showPrevNext == 'true') {
+                //if prev next buttons are displayed
+                if(href.startsWith('http://') || href.startsWith('https://')) {
+                    //if external link, break from iframe
+                    addTargetTopToLink(link);
+                } 
+                else {
+                    //otherwise add the query string to the link
+                    link.setAttribute('href', href + queryString);
+                }
+            }
+            else {
+                //otherwise, add _top to break from iframe
+                addTargetTopToLink(link);
+            }
+        }
+    });
+}
+                  
+function addTargetTopToLink(link) {
+    link.setAttribute('target', '_top');
+}
+	
+// Dark mode
+(function() {
+      'use strict';
+
+      // Function to get the stored theme from local storage
+      const getStoredTheme = () => localStorage.getItem('theme');
+
+      // Function to set the theme in local storage
+      const setStoredTheme = theme => localStorage.setItem('theme', theme);
+
+      // Function to determine the preferred theme
+      const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+          return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      };
+
+      // Function to apply the specified theme
+      const setTheme = theme => {
+        if (theme === 'auto') {
+          // If theme is 'auto', set it based on system preference
+          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+          // Otherwise, set the theme explicitly
+          document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+      };
+
+      // Function to update the UI to reflect the active theme
+      const showActiveTheme = theme => {
+        const themeSwitcher = document.querySelector('#theme-switcher');
+        if (!themeSwitcher) {
+          return; // If no theme switcher element is found, exit
+        }
+        // Remove 'checked' attribute from all radio buttons
+        document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+          element.checked = false;
+        });
+        // Add 'checked' attribute to the selected theme radio button
+        const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`);
+        if (btnToActive) {
+          btnToActive.checked = true;
+        }
+      };
+
+      // Listen for changes to the system's dark mode preference
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+        const storedTheme = getStoredTheme();
+        if (storedTheme !== 'light' && storedTheme !== 'dark') {
+          setTheme(getPreferredTheme()); // Update the theme if it's set to 'auto'
+        }
+      });
+
+      // When the DOM content is loaded, initialise the theme switcher
+      window.addEventListener('DOMContentLoaded', () => {
+        showActiveTheme(getPreferredTheme()); // Show the active theme
+        // Add click event listeners to all theme toggle radio buttons
+        document.querySelectorAll('[data-bs-theme-value]').forEach(toggle => {
+          toggle.addEventListener('change', () => {
+            const theme = toggle.getAttribute('data-bs-theme-value');
+            setStoredTheme(theme); // Store the selected theme
+            setTheme(theme); // Apply the selected theme
+            showActiveTheme(theme); // Update the UI
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
+

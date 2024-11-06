@@ -1,0 +1,1073 @@
+<!doctype html>
+<html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
+
+<head>
+<!-- 
+    DARK MODE
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+  -->
+  <script>
+    (function() {
+      'use strict';
+
+      // Function to get the stored theme from local storage
+      const getStoredTheme = () => localStorage.getItem('theme');
+
+      // Function to determine the preferred theme
+      const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+          return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      };
+
+      // Function to apply the specified theme
+      const setTheme = theme => {
+        if (theme === 'auto') {
+          // If theme is 'auto', set it based on system preference
+          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+          // Otherwise, set the theme explicitly
+          document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+      };
+
+      // Set the theme based on the preferred theme
+      setTheme(getPreferredTheme());
+    })();
+  </script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- wp_head -->
+	<title>D15 Logarithmic differentiation - lab</title>
+
+		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
+		<meta name="description" content="Sometimes it is easier to differentiate the logarithm of a function than the original function. This is called logarithmic differentiation and this module provides an overview of the method and provides some examples. Suppose you have to differentiate \[\begin{align*} y &amp; =\frac{x^{2}-1}{x^{8}\sqrt{x^{4}+1}}. \end{align*}\] At first sight, you need to use the quotient rule. You also" />
+		<meta name="robots" content="max-image-preview:large" />
+		<link rel="canonical" href="index.html" />
+		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content="lab -" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="D15 Logarithmic differentiation - lab" />
+		<meta property="og:description" content="Sometimes it is easier to differentiate the logarithm of a function than the original function. This is called logarithmic differentiation and this module provides an overview of the method and provides some examples. Suppose you have to differentiate \[\begin{align*} y &amp; =\frac{x^{2}-1}{x^{8}\sqrt{x^{4}+1}}. \end{align*}\] At first sight, you need to use the quotient rule. You also" />
+		<meta property="og:url" content="https://lab.bitma.app/maths-statistics/differentiation/d15-logarithmic-differentiation/" />
+		<meta property="article:published_time" content="2024-11-04T04:24:17+00:00" />
+		<meta property="article:modified_time" content="2024-11-04T04:24:36+00:00" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="D15 Logarithmic differentiation - lab" />
+		<meta name="twitter:description" content="Sometimes it is easier to differentiate the logarithm of a function than the original function. This is called logarithmic differentiation and this module provides an overview of the method and provides some examples. Suppose you have to differentiate \[\begin{align*} y &amp; =\frac{x^{2}-1}{x^{8}\sqrt{x^{4}+1}}. \end{align*}\] At first sight, you need to use the quotient rule. You also" />
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/maths-statistics\/differentiation\/d15-logarithmic-differentiation\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/lab.bitma.app\/maths-statistics\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/differentiation\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/differentiation\/#listItem","position":3,"name":"Differentiation","item":"https:\/\/lab.bitma.app\/maths-statistics\/differentiation\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/differentiation\/d15-logarithmic-differentiation\/#listItem","previousItem":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/differentiation\/d15-logarithmic-differentiation\/#listItem","position":4,"name":"D15 Logarithmic differentiation","previousItem":"https:\/\/lab.bitma.app\/maths-statistics\/differentiation\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/maths-statistics\/differentiation\/d15-logarithmic-differentiation\/#webpage","url":"https:\/\/lab.bitma.app\/maths-statistics\/differentiation\/d15-logarithmic-differentiation\/","name":"D15 Logarithmic differentiation - lab","description":"Sometimes it is easier to differentiate the logarithm of a function than the original function. This is called logarithmic differentiation and this module provides an overview of the method and provides some examples. Suppose you have to differentiate \\[\\begin{align*} y & =\\frac{x^{2}-1}{x^{8}\\sqrt{x^{4}+1}}. \\end{align*}\\] At first sight, you need to use the quotient rule. You also","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/maths-statistics\/differentiation\/d15-logarithmic-differentiation\/#breadcrumblist"},"datePublished":"2024-11-04T04:24:17+00:00","dateModified":"2024-11-04T04:24:36+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$','$'],['\\(','\\)']], 
+    processEscapes: true
+  },
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore|editor-rich-text'
+  }
+};
+
+</script>
+<link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
+<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
+<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
+<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+ 	<!-- /wp_head -->
+    
+    <style>
+        </style>
+</head>
+
+<body class="page-template page-template-page-templates page-template-last-content-page page-template-page-templateslast-content-page-php page page-id-4927 page-child parent-pageid-2528 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
+	
+		
+<header>
+<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+<div class="top-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-auto left-nav">
+                <div class="rmit-logo"><span class="visually-hidden">RMIT University logo</span></div>
+				<h2>
+					<!-- Explicitly turn off one bit of text and turn on the other to deal with JAWS bug - https://github.com/alphagov/govuk-frontend/issues/1643 -->
+					<a href="../../../index.html">
+						<span aria-hidden="true">Learning lab</span>
+						<span class="visually-hidden">Learning lab homepage</span>
+					</a>
+				</h2>
+            </div>
+            <div class="col">       
+                <ul>
+                    <li class="hide-sm">
+                        <a href="https://www.rmit.edu.au/library">
+							<span aria-hidden="true">Library</span>
+							<span class="visually-hidden">Library homepage</span>
+						</a>
+                    </li>
+                    <li class="search">
+                        <a href="../../../search/index.html" id="search2">
+                            <div class="search-label">Search</div>
+                            <div class="mag-glass"></div>
+                        </a>
+                    </li>
+                    <li class="menu">
+                        <button id="menu-button" 
+                        class="btn btn-primary collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#context-menu" data-bs-display="static" aria-expanded="false" 
+                        aria-controls="context-menu">Click for main menu</button>
+                    </li>
+                </ul> 
+            </div>   
+        </div>
+    </div>
+</div>
+<nav id="context-menu" class="collapse" aria-label="Main Menu">
+    <div class="container nav-container not-wordpress">
+        <div class="row">
+            <!-- START menu -->
+            <div class="col-xl-8">
+				<div class="accordion accordion-white" id="context-menu-accordion">	
+						<div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-6823">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-6823" aria-expanded="false" aria-controls="accordion-body-6823">University essentials</button>
+</h2>
+<div id="accordion-body-6823" class="accordion-collapse collapse" aria-labelledby="accordion-head-6823">
+<div class="accordion-body"><ul><li class="page_item page-item-3339 page_item_has_children"><a href="../../../university-essentials/acting-academic-integrity/index.html">Academic integrity</a></li>
+<li class="page_item page-item-3347 page_item_has_children"><a href="../../../university-essentials/artificial-intelligence-tools/index.html">Artificial intelligence</a></li>
+<li class="page_item page-item-3117 page_item_has_children"><a href="../../../university-essentials/critical-thinking-and-argument-analysis/index.html">Critical thinking</a></li>
+<li class="page_item page-item-2501 page_item_has_children"><a href="../../../university-essentials/getting-started/index.html">Getting started with Uni</a></li>
+<li class="page_item page-item-3097 page_item_has_children"><a href="../../../university-essentials/group-work/index.html">Group work</a></li>
+<li class="page_item page-item-3175 page_item_has_children"><a href="../../../university-essentials/online-learning-skills/index.html">Online learning skills</a></li>
+<li class="page_item page-item-6844 page_item_has_children"><a href="../../../university-essentials/study-essentials/index.html">Study essentials</a></li>
+<li class="page_item page-item-3313 page_item_has_children"><a href="../../../university-essentials/sustainability/index.html">Sustainability</a></li>
+</ul></div></div></div><div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-6825">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-6825" aria-expanded="false" aria-controls="accordion-body-6825">Writing fundamentals</button>
+</h2>
+<div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
+<div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-3295"><a href="../../../writing-fundamentals/understanding-your-audience/index.html">Understanding your audience</a></li>
+<li class="page_item page-item-3107 page_item_has_children"><a href="../../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
+<li class="page_item page-item-2520 page_item_has_children"><a href="../../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
+<li class="page_item page-item-2521"><a href="../../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
+<li class="page_item page-item-2855 page_item_has_children"><a href="../../../writing-fundamentals/writing-workplace/index.html">Writing for the workplace</a></li>
+</ul></div></div></div><div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-6828">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-6828" aria-expanded="false" aria-controls="accordion-body-6828">Assessments</button>
+</h2>
+<div id="accordion-body-6828" class="accordion-collapse collapse" aria-labelledby="accordion-head-6828">
+<div class="accordion-body"><ul><li class="page_item page-item-7168 page_item_has_children"><a href="../../../assessments/getting-started-with-assignments/index.html">Getting started with assignments</a></li>
+<li class="page_item page-item-2516 page_item_has_children"><a href="../../../assessments/essays/index.html">Essays</a></li>
+<li class="page_item page-item-2580 page_item_has_children"><a href="../../../assessments/reflective-writing-1/index.html">Academic reflection</a></li>
+<li class="page_item page-item-7204 page_item_has_children"><a href="../../../assessments/presentations/index.html">Presentations</a></li>
+<li class="page_item page-item-2578 page_item_has_children"><a href="../../../assessments/case-studies/index.html">Case studies</a></li>
+<li class="page_item page-item-2544 page_item_has_children"><a href="../../../assessments/reports/index.html">Reports</a></li>
+<li class="page_item page-item-2536 page_item_has_children"><a href="../../../assessments/literature-review/index.html">Literature review</a></li>
+<li class="page_item page-item-2617"><a href="../../../assessments/annotated-bibliographies/index.html">Annotated bibliographies</a></li>
+</ul></div></div></div><div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-2545">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-2545" aria-expanded="false" aria-controls="accordion-body-2545">Referencing</button>
+</h2>
+<div id="accordion-body-2545" class="accordion-collapse collapse" aria-labelledby="accordion-head-2545">
+<div class="accordion-body"><ul><li class="page_item page-item-3329"><a href="../../../referencing/using-other-peoples-ideas/index.html">What is referencing?</a></li>
+<li class="page_item page-item-3346"><a href="../../../referencing/understanding-citations/index.html">Understanding citations</a></li>
+<li class="page_item page-item-3330"><a href="../../../referencing/when-referencing-isnt-needed/index.html">When referencing isn't needed</a></li>
+<li class="page_item page-item-3331"><a href="../../../referencing/quoting/index.html">Quoting</a></li>
+<li class="page_item page-item-3337"><a href="../../../referencing/paraphrasing-4/index.html">Paraphrasing</a></li>
+<li class="page_item page-item-3334"><a href="../../../referencing/summarising-0/index.html">Summarising</a></li>
+<li class="page_item page-item-3338"><a href="../../../referencing/synthesising/index.html">Synthesising</a></li>
+<li class="page_item page-item-3333"><a href="../../../referencing/integrating-ideas-reporting-words/index.html">Integrating ideas with reporting words</a></li>
+<li class="page_item page-item-3336"><a href="../../../referencing/getting-help-referencing/index.html">Easy Cite and referencing help</a></li>
+</ul></div></div></div>						<!-- START Subject support
+                        special case. Effectively each of the child pages here is a section page. For the nav, however, we want toshow these under the banner of subject support. -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-head-subject-support">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-subject-support" aria-expanded="false" aria-controls="accordion-body-subject-support">
+								Subject support
+							  	</button>
+							</h2>
+							<div id="accordion-body-subject-support" class="accordion-collapse collapse" aria-labelledby="accordion-head-subject-support" style="">
+								<div class="accordion-body">
+									<ul>
+										<li><a href="../../../art-and-design/index.html">Art and design</a></li>
+										<li><a href="../../../chemistry/index.html">Chemistry</a></li>
+										<li><a href="../../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../index.html">Mathematics and statistics</a></li>
+										<li><a href="../../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
+										<li><a href="../../../subject-areas/physics/index.html">Physics</a></li>
+										<!-- <li><a href="//">Life sciences</a></li> -->
+									</ul>
+								</div>
+							  </div>
+						</div>
+						<!-- END subject support - special case -->
+                </div>	
+            </div>
+            <!-- END menu -->
+        </div>
+    </div>
+</nav>
+</header>
+
+	<main id='theme-main'>
+
+<div class="container" id="page-content">
+    <div class="row ">
+        <!-- START right nav -->
+        <div class="col-xl-4 order-last">
+            
+
+<!-- this style changes the page link style in the sidebar nav 
+to indicate the current page and removes bullets from unordered lists. 
+The wp_list_pages function allocates the classes automatically. 
+This should be moved to a stylesheet once style is determined. -->
+
+<!--<style>
+[aria-current="page"] {
+  pointer-events: none !important; 
+  cursor: default;
+  text-decoration: none !important;
+  color: #000054;
+}
+</style>-->
+
+	
+<!-- START SIDEBAR NAV PANEL -->
+<nav class="right-nav" aria-label="Section Menu">
+
+<h2><a href="../../index.html">Maths and statistics</a></h2><h3><a href="../index.html">Differentiation</a></h3><ul><li><a href="../d1-limit-function/index.html">D1 Limit of a function</a></li><li><a href="../d2-gradients-tangents-and-derivatives/index.html">D2 Gradients, tangents and derivatives</a></li><li><a href="../d3-differentiation-first-principles/index.html">D3 Differentiation from first principles</a></li><li><a href="../d4-rules-differentiation/index.html">D4 Rules for differentiation</a></li><li><a href="../d5-chain-rule/index.html">D5 The chain rule</a></li><li><a href="../d6-product-rule/index.html">D6 The product rule</a></li><li><a href="../d7-quotient-rule/index.html">D7 The quotient rule</a></li><li><a href="../d8-maxima-and-minima/index.html">D8 Maxima and minima</a></li><li><a href="../d9-curve-sketching/index.html">D9 Curve sketching</a></li><li><a href="../d10-rates-change/index.html">D10 Rates of change</a></li><li><a href="../d11-small-changes-and-approximations/index.html">D11 Small changes and approximations</a></li><li><a href="../d12-implicit-differentiation/index.html">D12 Implicit differentiation</a></li><li><a href="../d13-partial-differentiation/index.html">D13 Partial differentiation</a></li><li><a href="../d14-higher-order-derivatives/index.html">D14 Higher Order Derivatives</a></li><li><a href="index.html" class="selected"  aria-current="page">D15 Logarithmic differentiation</a></ul></nav>
+<!-- END SIDEBAR NAV PANEL -->
+
+
+
+
+<!--<script language="javascript">
+//this script shortens strings for titles that repeat the section title at the start
+//it currently looks for the characters colon and space ": " in the page title
+//this requires strict naming conventions for the title that use a colon 
+//to separate the repeated section title from the descriptive page title
+//the regex pattern to look for - in this case, text that comes after these characters ": "
+const regex = /:\s(.*)/; 
+list.querySelectorAll('a').forEach(a => {
+  //get the text from inside all the <a> tags inside the div with the id "list"
+  const text = a.innerHTML; 
+  //find matches with the regex pattern
+  const match = text.match(regex); 
+  if(match) {
+	//replace what's in each <a> tag that matches the pattern and convert the first character to upper case
+	a.innerHTML = match[1].charAt(0).toUpperCase() + match[1].slice(1); 
+  }
+})
+//as above, but for Heading 6
+list.querySelectorAll('h4').forEach(h4 => {
+  const text = h4.innerHTML; 
+  const match = text.match(regex);
+  if(match) {
+	h4.innerHTML = match[1].charAt(0).toUpperCase() + match[1].slice(1);
+  }
+})
+</script>-->
+		        </div>
+        <!-- END right nav -->
+        <!-- START content -->
+        <div class="col-xl-8 order-first">
+            <nav aria-label="breadcrumbs">
+<ul class="breadcrumbs">
+<li><a href="../../../index.html">Home</a></li>
+<li><a href="../../index.html">Maths and statistics</a></li>
+<li><a href="../index.html">Differentiation</a></li>
+</ul>
+</nav>			            <a id="main-content"></a>
+            <h1 class="margin-top-zero">D15 Logarithmic differentiation</h1>
+            <p><span class="marginnote"><img decoding="async" class="class" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-d15-1.png" alt="" /></span></p>
+<p class="lead">Sometimes it is easier to differentiate the logarithm of a function than the original function. This is called logarithmic differentiation and this module provides an overview of the method and provides some examples.</p>
+<p>Suppose you have to differentiate<br />
+<span class="math display">\[\begin{align*}<br />
+y &amp; =\frac{x^{2}-1}{x^{8}\sqrt{x^{4}+1}}.<br />
+\end{align*}\]</span><br />
+At first sight, you need to use the quotient rule. You also need to use the product rule to differentiate the denominator. If you try to do it, it will be a difficult problem. A problem like this can be easier to solve if you take the logarithm of both sides and then differentiate.</p>
+<p><span class="sidenote"> Assuming <span class="math inline">\(y&gt;0.\)</span> Remember the domain of the log function is <span class="math inline">\(\left(0,\infty\right)\)</span></span></p>
+<div id="required-background" class="section level1">
+<h2>Required background</h2>
+<p>Before you attempt logarithmic differerentiation, it is essential<br />
+that you know how to:</p>
+<ol style="list-style-type: decimal;">
+<li>Use logarithm laws; and</li>
+<li>Differentiate a log function using the chain rule (also known as implicit<br />
+differentiation).</li>
+</ol>
+<p>These are reviewed briefly in the next section.</p>
+<div id="logarithm-laws" class="section level2">
+<h3>Logarithm laws</h3>
+<p>There are three laws of logarithms that you need to remember. If <span class="math inline">\(m\left(x\right)\)</span><br />
+and <span class="math inline">\(n\left(x\right)\)</span> are functions of <span class="math inline">\(x\)</span> and <span class="math inline">\(m\left(x\right)\)</span>,<br />
+<span class="math inline">\(n\left(x\right)&gt;0\)</span> and <span class="math inline">\(a&gt;0,\ a\neq1\)</span> then:</p>
+<ol style="list-style-type: decimal;">
+<li>First Logarithm Law<br />
+<span class="math display">\[\begin{align*}<br />
+\log_{a}(mn) &amp; =\log_{a}m+\log_{a}n &amp; \left(1\right)<br />
+\end{align*}\]</span></li>
+<li>Second Logarithm Law<br />
+<span class="math display">\[\begin{align*}<br />
+\log_{a}\frac{m}{n} &amp; =\log_{a}m-\log_{a}n &amp; \left(2\right)<br />
+\end{align*}\]</span></li>
+<li>Third Logarithm Law<br />
+<span class="math display">\[\begin{align*}<br />
+\log_{a}m^{p} &amp; =p\log_{a}m\,. &amp; \left(3\right)<br />
+\end{align*}\]</span></li>
+</ol>
+<p>The number <span class="math inline">\(a\)</span> is called the base. We will use <span class="math inline">\(a=e.\)</span><br />
+That is, we will use natural logarithms and the notation <span class="math inline">\(\log_{e}\left(x\right)=\ln\left(x\right)\)</span>.</p>
+</div>
+<div id="derivative-of-a-log-function-and-the-chain-rule" class="section level2">
+<h3>Derivative of a log function and the chain rule</h3>
+<p>Suppose you want to differentiate<br />
+<span class="math display">\[\begin{align*}<br />
+y &amp; =f\left(x\right)<br />
+\end{align*}\]</span><br />
+where <span class="math inline">\(f\left(x\right)&gt;0\)</span> for all <span class="math inline">\(x\)</span>. Taking logs of both sides,<br />
+<span class="math display">\[\begin{align*}<br />
+\ln\left(y\right) &amp; =\ln\left(f\left(x\right)\right).<br />
+\end{align*}\]</span><br />
+Differentiating with respect to <span class="math inline">\(x,\)</span><br />
+<span class="math display">\[\begin{align*}<br />
+\frac{d}{dx} &amp; \ln\left(y\right)=\frac{d}{dx}\left(\ln\left(f\left(x\right)\right)\right).<br />
+\end{align*}\]</span><br />
+The left-hand side may be differentiated implicitly using the chain rule,<br />
+<span class="math display">\[\begin{align*}<br />
+\frac{d}{dx}\ln\left(y\right) &amp; =\frac{d}{dy}\left(\ln\left(y\right)\right)\frac{dy}{dx}\\<br />
+&amp; =\frac{1}{y}\frac{dy}{dx}. &amp; \left(4\right)<br />
+\end{align*}\]</span><br />
+Equation <span class="math inline">\(\left(4\right)\)</span> is the basis of logarithmic differentiation.</p>
+<p>The effectiveness of logarithmic differentiation depends on whether<br />
+it is easier to differentiate the original <span class="math inline">\(f\left(x\right)\)</span> or <span class="math inline">\(\ln\left(f\left(x\right)\right)\)</span>.</p>
+</div>
+</div>
+<div id="logarithmic-differentiation" class="section level1">
+<h2>Logarithmic differentiation</h2>
+<p>Suppose you have to differentiate<br />
+<span class="math display">\[\begin{align*}<br />
+y &amp; =\frac{x^{2}-1}{x^{8}\sqrt{x^{4}+1}}.<br />
+\end{align*}\]</span><br />
+You could use the quotient rule and then you would need to use the product rule to differentiate the denominator. However, this approach will be messy and prone to error.</p>
+<p>A better approach is to take the logarithm of both sides:<span class="sidenote"><span class="sidenote-number">2</span> Because we will take a log of both sides, we should ensure that <span class="math inline">\(y&gt;0.\)</span><br />
+The sign of <span class="math inline">\(y\)</span> is determined by the numerator and is positive for<br />
+<span class="math inline">\(\left|x\right|&gt;1\)</span>. Hence, we assume <span class="math inline">\(\left|x\right|&gt;1.\)</span></span><br />
+<span class="math display">\[\begin{align*}<br />
+\ln y &amp; =\ln\left(\frac{x^{2}-1}{x^{8}\sqrt{x^{4}+1}}\right)\\<br />
+&amp; =\ln\left(x^{2}-1\right)-\ln\left(x^{8}\sqrt{x^{4}+1}\right)\text{ using second log rule equation $\left(2\right)$ above}\\<br />
+&amp; =\ln\left(x^{2}-1\right)-\ln\left(x^{8}\right)-\ln\left(\sqrt{x^{4}+1}\right)\text{ using first log rule equation $\left(1\right)$ above.}<br />
+\end{align*}\]</span><br />
+Now differentiate each of the terms:<br />
+<span class="math display">\[\begin{align*}<br />
+\frac{d}{dx}\ln y &amp; =\frac{d}{dx}\ln\left(x^{2}-1\right)-\frac{d}{dx}\ln\left(x^{8}\right)-\frac{d}{dx}\ln\left(\sqrt{x^{4}+1}\right). &amp; \left(5\right)<br />
+\end{align*}\]</span><br />
+The term on the left</p>
+<p><span class="math display">\[\begin{align*}<br />
+\frac{d}{dx}\ln\left(y\right) &amp; =\frac{d}{dy}\left(\ln\left(y\right)\right)\frac{dy}{dx}\\<br />
+&amp; =\frac{1}{y}\frac{dy}{dx}\text{ using equation $\left(4\right)$ }\\<br />
+&amp; =\frac{x^{8}\sqrt{x^{4}+1}}{x^{2}-1}\frac{dy}{dx}.<br />
+\end{align*}\]</span></p>
+<p>The first term on the right is calculated by setting <span class="math inline">\(u=x^{2}-1\)</span><br />
+so <span class="math inline">\(du/dx=2x\)</span> and<br />
+<span class="math display">\[\begin{align*}<br />
+\frac{d}{dx}\ln\left(x^{2}-1\right) &amp; =\frac{d}{du}\ln\left(u\right)\frac{du}{dx}\text{ by the chain rule}\\<br />
+&amp; =\frac{1}{u}\frac{du}{dx}\\<br />
+&amp; =\frac{1}{x^{2}-1}\cdot2x\\<br />
+&amp; =\frac{2x}{x^{2}-1}.<br />
+\end{align*}\]</span></p>
+<p>The second term on the right is calculated by setting <span class="math inline">\(u=x^{8}\)</span>.<br />
+Then <span class="math inline">\(du/dx=8x^{7}\)</span> and, using equation <span class="math inline">\(\left(4\right),\)</span><br />
+<span class="math display">\[\begin{align*}<br />
+\frac{d}{dx}\ln\left(x^{8}\right) &amp; =\frac{d}{du}\ln\left(u\right)\frac{du}{dx}\text{ by the chain rule}\\<br />
+&amp; =\frac{1}{u}\frac{du}{dx}\\<br />
+&amp; =\frac{1}{x^{8}}\cdot8x^{7}\\<br />
+&amp; =\frac{8}{x}.<br />
+\end{align*}\]</span></p>
+<p>The final term on the right is calculated by setting <span class="math inline">\(u=\sqrt{x^{4}+1}\)</span>.<br />
+Then<span class="sidenote"><span class="sidenote-number">3</span> Here we use the chain rule twice. </span></p>
+<p><span class="math display">\[\begin{align*}<br />
+u &amp; =\left(x^{4}+1\right)^{\frac{1}{2}}\\<br />
+\frac{du}{dx} &amp; =\frac{1}{2}\left(x^{4}+1\right)^{-\frac{1}{2}}\cdot4x^{3}\textrm{ by the chain rule}\\<br />
+&amp; =\frac{4}{2}x^{3}\left(x^{4}+1\right)^{-\frac{1}{2}}\\<br />
+&amp; =2x^{3}\left(x^{4}+1\right)^{-\frac{1}{2}}\\<br />
+&amp; =\frac{2x^{3}}{\sqrt{x^{4}+1}}.\\<br />
+\\<br />
+\frac{d}{dx}\ln\left(\sqrt{x^{4}+1}\right) &amp; =\frac{d}{du}\ln\left(u\right)\frac{du}{dx}\text{ by the chain rule}\\<br />
+&amp; =\frac{1}{u}\frac{du}{dx}\\<br />
+&amp; =\frac{1}{\sqrt{x^{4}+1}}\frac{2x^{3}}{\sqrt{x^{4}+1}}\\<br />
+&amp; =\frac{2x^{3}}{x^{4}+1}.<br />
+\end{align*}\]</span></p>
+<p>Substituting in <span class="math inline">\(\left(5\right)\)</span>, we have:</p>
+<p><span class="math display">\[\begin{align*}<br />
+\frac{x^{8}\sqrt{x^{4}+1}}{x^{2}-1}\frac{dy}{dx} &amp; =\frac{2x}{x^{2}-1}-\frac{8}{x}-\frac{2x^{3}}{x^{4}+1}\\<br />
+\frac{dy}{dx} &amp; =\frac{x^{2}-1}{x^{8}\sqrt{x^{4}+1}}\left(\frac{2x}{x^{2}-1}-\frac{8}{x}-\frac{2x^{3}}{x^{4}+1}\right).<br />
+\end{align*}\]</span><br />
+Note that it is possible to give this answer in several forms depending on how far you go in simplification.</p>
+<p>In the following examples, you should be aware that the answers may be given in different, (but equivalent forms), depending on algebraic simplification.</p>
+<div id="example-1" class="section level2">
+<h3>Example 1</h3>
+<p>Differentiate<br />
+<span class="math display">\[\begin{align*}<br />
+y &amp; =\frac{\left(2x+1\right)^{9}}{\left(x-2\right)^{3}\left(x+8\right)^{6}}<br />
+\end{align*}\]</span><br />
+with respect to <span class="math inline">\(x.\)</span></p>
+<h4>Solution</h4>
+<p>Taking logs of both sides,<br />
+<span class="math display">\[\begin{align*}<br />
+\ln\left(y\right) &amp; =\ln\left(\frac{\left(2x+1\right)^{9}}{\left(x-2\right)^{3}\left(x+8\right)^{6}}\right)\\<br />
+&amp; =\ln\left(\left(2x+1\right)^{9}\right)-\ln\left(\left(x-2\right)^{3}\left(x+8\right)^{6}\right)\text{ using the second logarithm law (equation $\left(2\right)$ )}\\<br />
+&amp; =\ln\left(\left(2x+1\right)^{9}\right)-\ln\left(\left(x-2\right)^{3}\right)-\ln\left(\left(x+8\right)^{6}\right)\text{ using the first logarithm law (equation $\left(1\right)$ )}\\<br />
+&amp; =9\ln\left(2x+1\right)-3\ln\left(x-2\right)-6\ln\left(x+8\right)\text{ using the third logarithm law (equation $\left(3\right)$ )}.<br />
+\end{align*}\]</span><br />
+Now differentiate both sides:<br />
+<span class="math display">\[\begin{align*}<br />
+\frac{d}{dx}\left(\ln\left(y\right)\right) &amp; =\frac{d}{dx}\left(9\ln\left(2x+1\right)-3\ln\left(x-2\right)-6\ln\left(x+8\right)\right)\\<br />
+&amp; =9\frac{d}{dx}\ln\left(2x+1\right)-3\frac{d}{dx}\ln\left(x-2\right)-6\frac{d}{dx}\ln\left(x+8\right).<br />
+\end{align*}\]</span><br />
+Using equation <span class="math inline">\(\left(4\right)\)</span> the left-hand side is<br />
+<span class="math display">\[\begin{align*}<br />
+\frac{d}{dx}\left(\ln\left(y\right)\right) &amp; =\frac{1}{y}\frac{dy}{dx}.<br />
+\end{align*}\]</span></p>
+<p>The first term on the right-hand side is calculated using the chain<br />
+rule with <span class="math inline">\(u=2x+1.\)</span> Then<br />
+<span class="math display">\[\begin{align*}<br />
+\frac{du}{dx} &amp; =2<br />
+\end{align*}\]</span><br />
+and<br />
+<span class="math display">\[\begin{align*}<br />
+9\frac{d}{dx}\ln\left(2x+1\right) &amp; =9\frac{d}{du}\ln\left(u\right)\frac{du}{dx}\\<br />
+&amp; =\frac{9}{u}\cdot2\\<br />
+&amp; =\frac{18}{2x+1}.<br />
+\end{align*}\]</span><br />
+The second term on the right-hand side is calculated using the chain<br />
+rule with <span class="math inline">\(u=x-2.\)</span> Then<br />
+<span class="math display">\[\begin{align*}<br />
+\frac{du}{dx} &amp; =1<br />
+\end{align*}\]</span><br />
+and<br />
+<span class="math display">\[\begin{align*}<br />
+-3\frac{d}{dx}\ln\left(x-2\right) &amp; =-3\frac{d}{du}\ln\left(u\right)\frac{du}{dx}\\<br />
+&amp; =-\frac{3}{u}\cdot1\\<br />
+&amp; =-\frac{3}{x-2}.<br />
+\end{align*}\]</span><br />
+The last term on the right-hand side is calculated using the chain<br />
+rule with <span class="math inline">\(u=x+8.\)</span> Then<br />
+<span class="math display">\[\begin{align*}<br />
+\frac{du}{dx} &amp; =1<br />
+\end{align*}\]</span><br />
+and<br />
+<span class="math display">\[\begin{align*}<br />
+-6\frac{d}{dx}\ln\left(x+8\right) &amp; =-6\frac{d}{du}\ln\left(u\right)\frac{du}{dx}\\<br />
+&amp; =-\frac{6}{u}\cdot1\\<br />
+&amp; =-\frac{6}{x+8}.<br />
+\end{align*}\]</span><br />
+Hence,<br />
+<span class="math display">\[\begin{align*}<br />
+\frac{1}{y}\frac{dy}{dx} &amp; =\frac{18}{2x+1}-\frac{3}{x-2}-\frac{6}{x+8}<br />
+\end{align*}\]</span><br />
+and<br />
+<span class="math display">\[\begin{align*}<br />
+\frac{dy}{dx} &amp; =y\left(\frac{18}{2x+1}-\frac{3}{x-2}-\frac{6}{x+8}\right)\\<br />
+&amp; =\frac{\left(2x+1\right)^{9}}{\left(x-2\right)^{3}\left(x+8\right)^{6}}\left(\frac{18}{2x+1}-\frac{3}{x-2}-\frac{6}{x+8}\right).<br />
+\end{align*}\]</span></p>
+</div>
+<div id="example-2" class="section level2">
+<h3>Example 2</h3>
+<p>Differentiate <span class="math inline">\(y=2^{x}\)</span> with respect to <span class="math inline">\(x\)</span>.</p>
+<h4>Solution</h4>
+<p>Take logs of both sides,<br />
+<span class="math display">\[\begin{align*}<br />
+\ln\left(y\right) &amp; =\ln\left(2^{x}\right)\\<br />
+&amp; =x\ln\left(2\right)\text{ using third log law }(\text{equation }\left(3\right)\text{ above). }<br />
+\end{align*}\]</span><br />
+Differentiating both sides,<br />
+<span class="math display">\[\begin{align*}<br />
+\frac{d}{dx}\left(\ln\left(y\right)\right) &amp; =\frac{d}{dx}\left(x\ln\left(2\right)\right)\\<br />
+\frac{d}{dy}\left(\ln\left(y\right)\right)\frac{dy}{dx} &amp; =\frac{d}{dx}\left(x\ln\left(2\right)\right)\text{ using the chain rule (equation$\left(4\right))$ on the left term}\\<br />
+\frac{1}{y}\frac{dy}{dx} &amp; =\frac{d}{dx}\left(x\ln\left(2\right)\right)\\<br />
+&amp; =\ln\left(2\right)\\<br />
+\frac{dy}{dx} &amp; =y\left(\ln\left(2\right)\right)\\<br />
+&amp; =2^{x}\ln\left(2\right).<br />
+\end{align*}\]</span></p>
+</div>
+<div id="example-3" class="section level2">
+<h3>Example 3</h3>
+<p>Differentiate <span class="math inline">\(y=x^{x}.\)</span></p>
+<h4>Solution</h4>
+<p>Take logs of both sides,<br />
+<span class="math display">\[\begin{align*}<br />
+\ln\left(y\right) &amp; =\ln\left(x^{x}\right)\\<br />
+&amp; =x\ln\left(x\right).<br />
+\end{align*}\]</span><br />
+Differentiating,<br />
+<span class="math display">\[\begin{align*}<br />
+\frac{d}{dx}\left(\ln\left(y\right)\right) &amp; =\frac{d}{dx}\left(x\ln\left(x\right)\right)\\<br />
+\frac{d}{dy}\left(\ln\left(y\right)\right)\frac{dy}{dx} &amp; =\frac{d}{dx}\left(x\ln\left(x\right)\right)\text{ using the chain rule (equation$\left(4\right))$ on the left term}\\<br />
+\frac{1}{y}\frac{dy}{dx} &amp; =\frac{d}{dx}\left(x\ln\left(x\right)\right)\\<br />
+&amp; =\ln\left(x\right)+x\frac{d}{dx}\left(\ln\left(x\right)\right)\text{ using the product rule on the right term}\\<br />
+&amp; =\ln\left(x\right)+1\\<br />
+\frac{dy}{dx} &amp; =y\left(\ln\left(x\right)+1\right)\\<br />
+&amp; =x^{x}\left(\ln\left(x\right)+1\right).<br />
+\end{align*}\]</span></p>
+</div>
+<div id="example-4" class="section level2">
+<h3>Example 4</h3>
+<p>Differentiate <span class="math inline">\(y=\left(1-2x\right)^{\sin\left(x\right)}\)</span> where <span class="math inline">\(x&lt;0.5\ .\)</span></p>
+<h4>Solution</h4>
+<p>Take logs of both sides,<br />
+<span class="math display">\[\begin{align*}<br />
+\ln\left(y\right) &amp; =\ln\left(1-2x\right)^{\sin\left(x\right)}\\<br />
+&amp; =\sin\left(x\right)\ln\left(1-2x\right)\text{ using third log law 3 }(\text{equation }\left(3\right)\text{ above). }<br />
+\end{align*}\]</span><br />
+Differentiate both sides with respect to <span class="math inline">\(x:\)</span><br />
+<span class="math display">\[\begin{align*}<br />
+\frac{d}{dx}\ln\left(y\right) &amp; =\frac{d}{dx}\left[\sin\left(x\right)\ln\left(1-2x\right)\right]\\<br />
+\frac{1}{y}\frac{dy}{dx} &amp; =\frac{d}{dx}\left[\sin\left(x\right)\ln\left(1-2x\right)\right]\text{ using equation $\left(4\right)$ }\\<br />
+&amp; =\frac{d}{dx}\left[\sin\left(x\right)\right]\ln\left(1-2x\right)+\frac{d}{dx}\left[\ln\left(1-2x\right)\right]\sin\left(x\right)\text{ by the product rule}\\<br />
+&amp; =\cos\left(x\right)\ln\left(1-2x\right)+\left(-2\right)\frac{1}{\left(1-2x\right)}\sin\left(x\right)\text{ using the chain rule on the last term}\\<br />
+&amp; =\cos\left(x\right)\ln\left(1-2x\right)-\frac{2}{\left(1-2x\right)}\sin\left(x\right).<br />
+\end{align*}\]</span><br />
+Now multiply both sides by <span class="math inline">\(y=\left(1-2x\right)^{\sin\left(x\right)}\)</span><br />
+to get the answer<br />
+<span class="math display">\[\begin{align*}<br />
+\frac{dy}{dx} &amp; =\left(1-2x\right)^{\sin\left(x\right)}\left(\cos\left(x\right)\ln\left(1-2x\right)-\frac{2}{\left(1-2x\right)}\sin\left(x\right)\right).<br />
+\end{align*}\]</span></p>
+</div>
+</div>
+<div id="exercises" class="section level1">
+<h2>Exercises</h2>
+<ol style="list-style-type: decimal;">
+<li>Differentiate <span class="math inline">\(y=3^{x}\)</span> with respect to <span class="math inline">\(x\)</span> using logarithmic<br />
+differentiation.</li>
+<li>Using logarithmic differentiation, differentiate with<br />
+respect to <span class="math inline">\(x\)</span>,<br />
+<span class="math display">\[\begin{align*}<br />
+y &amp; =\frac{\left(x-1\right)^{3}}{\left(x+1\right)^{4}\left(2x+3\right)}<br />
+\end{align*}\]</span><br />
+for <span class="math inline">\(x&gt;1.\)</span></li>
+</ol>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-answers-7112">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-9538" aria-expanded="false" aria-controls="body-answers-9538" >Answers</button>
+</p>
+<div id="body-answers-9538" class="accordion-collapse collapse " aria-labelledby="head-answers-7112">
+<div class="accordion-body">
+<ol style="list-style-type: decimal;">
+<li><span class="math inline">\(\frac{dy}{dx}=3^{x}\ln\left(3\right)\)</span></li>
+<li><span class="math inline">\(\frac{dy}{dx}=\frac{\left(x-1\right)^{3}}{\left(x+1\right)^{4}\left(2x+3\right)}\left[\frac{3}{x-1}-\frac{4}{x+1}-\frac{2}{2x+3}\right]\)</span></li>
+</ol>
+</div></div></div>
+</div>
+<p><a class="mathspdf" href="https://rmitlibrary.github.io/cdn/learninglab/docs/D15LogarithmicDifferentiation_CO.pdf" type="application/pdf">Download this page: D15 Logarithmic Differentiation <span class="file-link-info">(PDF 274KB)</span></a></p>
+<p>Images on this page by RMIT, licensed under CC BY-NC 4.0.</p>
+						<nav class="btn-nav-container" aria-label="Previous and next links">
+<h2 class="btn-nav-prev">
+    <a href="../d14-higher-order-derivatives/index.html">
+        <span aria-hidden="true">D14 Higher Order Derivatives</span>
+        <span class="visually-hidden">Previous page: D14 Higher Order Derivatives</span>
+    </a>
+</h2>
+    
+
+</nav><!-- .navigation -->            <div id="additional-info">
+			
+			
+
+
+
+<!-- keywords echo - https://www.advancedcustomfields.com/resources/taxonomy/ -->      
+
+<hr class="margin-top-xl">
+<div class="keywords">
+    <h2 class="h5">Keywords</h2>
+    <ul>
+                <li><a href="../../../keyword/differentiation/index.html">Differentiation</a></li>  
+                <li><a href="../../../keyword/maths/index.html">Maths</a></li>  
+        </ul>
+</div>
+ 
+<!-- keywords echo end 
+
+<!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
+<!--
+<p><strong>Subjects </strong>
+    | <strong><a href="https://lab.bitma.app/subject-area/maths/">Maths</a></strong>  
+    </p>
+-->
+<!-- category echo end -->
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+        <!-- END content --> 
+    </div>
+</div>
+
+</main>
+
+					
+		
+<div class="wrapper footer-container" id="wrapper-footer-colophon">
+	<div class="container">
+        <div class="row">
+            <div class="col">
+				<!-- START ask the library -->
+				<div class="ask-container">
+					
+					<section class="ask-the-library">
+						<a href="https://www.rmit.edu.au/library/about-and-contacts/ask-the-library">
+							<img src="https://rmitlibrary.github.io/cdn/image/svg/ask-the-library.svg" class="ask-logo" alt="Ask the library" />
+							<div class="ask-text">
+								<p class="lead">Still can't find what you need?</p>
+								<p>The RMIT University Library provides study support, one-on-one consultations and peer mentoring to RMIT students.</p>
+							</div>
+						</a>
+					</section>
+			
+				</div>
+				<!-- END ask the library -->
+			</div>
+ 		</div>
+	</div>
+    <!-- START acknowledgement -->
+    <div class="acknowledgement">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <section class="acknowledgement-container">
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
+                        </div>
+
+                        <div class="content">
+                            <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
+                            <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
+                            
+                            <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
+                            <a href="#" class="link-large">More information</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!-- END acknowledgement -->
+    <!-- START footer -->
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- START logo -->    
+                <a aria-label="Royal Melbourne Institute of Technology University Logo" href="https://www.rmit.edu.au/">
+					<div aria-hidden="true" class="logo"><span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/rmit-logo.svg" style="width: 100px" alt="" /></span>
+					</div>
+				</a>
+                <!-- END logo -->
+                <!-- START links -->
+				<ul class="footer-links">
+					<li><a href="">About Learning Lab</a></li>
+					<li><a href="">For educators</a></li>
+					<li><a href="">Contribute</a></li>
+					<li><a href="">Contact us</a></li>
+				</ul>
+                <!-- END links -->
+                <!-- START legal-social -->
+                <div class="footerlegalShareItems">
+                    <!-- START legal -->
+                    <div class="footer-legal">
+                    <ul>
+                        <li>Copyright © 2024 RMIT University<span> | </span></li>
+                        <li><a href="https://www.rmit.edu.au/utilities/terms"><span class="no-focus" tabindex="-1">Terms</span></a><span> | </span></li>
+                        <li><a href="https://www.rmit.edu.au/utilities/privacy"><span class="no-focus" tabindex="-1">Privacy</span></a><span> | </span></li>
+                        <li><a href="https://www.rmit.edu.au/utilities/accessibility"><span class="no-focus" tabindex="-1">Accessibility</span></a> <span> | </span></li>
+                        <li><a data-analytics-type="footerlink" data-analytics-value="Website feedback" href="https://www.rmit.edu.au/utilities/website-feedback"><span class="no-focus" tabindex="-1">Website feedback</span></a><span> | </span></li>
+                        <li><a data-analytics-type="footerlink" data-analytics-value="Complaints" href="https://www.rmit.edu.au/utilities/complaints"><span class="no-focus" tabindex="-1">Complaints</span></a><span> | </span></li>
+                        <li>ABN 49 781 030 034<span> | </span></li>
+                        <li>CRICOS provider number: 00122A<span> | </span></li>
+                        <li>TEQSA provider number: PRV12145<span> | </span></li>
+                        <li>RTO Code: 3046<span> | </span></li>
+                        <li><a href="https://www.open.edu.au/online-courses/rmit-university"><span class="no-focus" tabindex="-1">Open Universities Australia</span></a> </li>
+                      </ul>
+                    </div>
+                    <!-- END legal -->
+                    <!-- START social -->
+                    <div class="social-nav">
+                    <ul> 
+                        <!-- START facebook -->
+                        <li><a aria-label="For Facebook"  href="https://www.facebook.com/RMITuniversity/"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/facebook.svg" alt="" /></span></a></li>
+                        <!-- END facebook -->
+                        <!-- START twitter/x -->
+                        <li><a aria-label="For Twitter" href="https://twitter.com/rmit"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/twitter.svg" alt="" /></span></a></li>
+                        <!-- END twitter/x -->
+                        <!-- START insta -->
+                        <li><a aria-label="For Instagram" href="https://www.instagram.com/rmituniversity/"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/instagram.svg" alt="" /></span> </a></li>
+                        <!-- END insta -->              
+                        <!-- START LinkedIn -->
+                        <li><a aria-label="For LinkedIn" data-analytics-type="socialshare" data-analytics-value="LinkedIn" href="https://www.linkedin.com/school/rmit-university/"><span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/linkedin.svg" alt="" /></span></a></li>
+                        <!-- END LinkedIn -->
+                        <!-- START YouTube -->
+                        <li><a aria-label="For Youtube" href="https://www.youtube.com/user/rmitmedia"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/youtube.svg" alt="" /></span></a></li>
+                        <!-- END YouTube -->     
+                        <!-- START Weibo -->          
+                        <li><a aria-label="For Weibo" href="https://www.weibo.com/rmituni"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/weibo.svg" alt="" /></span></a></li>
+                        <!-- END Weibo -->                
+					</ul>
+					</div>
+                    <!-- END social -->
+                </div>
+                <!-- END legal-social -->
+            </div>
+        </div>
+    </div>
+	</footer>
+    <!-- END footer -->		
+</div><!-- wrapper end -->
+		
+	
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+<script src="../../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
+<!-- adding requirements for context/hamburger menu start -->
+<script>
+// ---------
+// Script to show and hide hamburger menu 
+// ---------    
+
+// Grab both the menu button, the page content and footer
+var menuButton = document.getElementById("menu-button");
+var pageContent = document.getElementById("theme-main"); 
+var footer = document.getElementById("wrapper-footer-colophon"); 
+  
+// Store display status of menu
+var menuDisplay = false;
+    
+// Store content scroll position
+var scrollPosition;
+
+// Listen for click - call showhideMenu
+menuButton.addEventListener("click", showHideMenu);
+
+// Menu uses bootstraps "collapse" function
+// If menu is hidden, bootstrap will show it, hide page content.
+// If it's displayed, bootstrap will hide it, show the content.
+
+
+// Function to toggle the visibility of a menu and adjust page content accordingly.
+function showHideMenu() {
+    // Check if the menu is currently hidden
+    if(menuDisplay == false)
+    {
+        // Set the menu display flag to true (menu is now shown) and save scroll position
+        menuDisplay = true;
+        scrollPosition = window.scrollY;
+        
+        // Hide the main page content and footer
+        pageContent.style.display = "none"; 
+        footer.style.display = "none"; 
+    }
+    else
+    {
+        // Set the menu display flag to false (menu is now hidden)
+        menuDisplay = false;
+        
+        // Show the main page content and footer
+        pageContent.style.display = "block"; 
+        footer.style.display = "block"; 
+        
+        //turn off smooth scrolling, jump to stored scroll postion, then turn smooth scrolling back on
+        document.documentElement.style.scrollBehavior = "auto";
+        window.scroll(0, scrollPosition);
+        document.documentElement.style.scrollBehavior = "smooth";
+    }
+}
+
+</script>
+<!-- adding requirements for context/hamburger menu end -->
+<!-- adding requirements for reponsive iframes -->
+<!-- Code to handle resizing iframes on this page -->
+    <script type="text/javascript" src="../../../wp-content/themes/picostrap5-child-base/js/iframeResizer.min.js"></script>
+    <script type="text/javascript">
+        iFrameResize({log:true});
+    </script>
+
+<!--    code to handle this page being resized by other wordpress pages,
+        e.g. embed mode described below -->
+<script src="https://rmitlibrary.github.io/cdn/libraries/js/iframeResizer.contentWindow.min.js"></script>
+
+<!-- adding requirements for reponsive iframes end -->
+
+<!-- adding requirements for embed mode start -->
+<script>
+    
+// ---------
+/* Script to turn on embed mode
+// Removes top nav, footer, breadcrumbs, right nav, keywords and prev/next by default
+// Options to remove h1, p lead and show prev/next
+ Sample query string:
+ ?iframe=true&hide-title=true&hide-intro=true
+ 
+ iframe - set to true to enable embed mode
+ hide-title - set to true to hide title
+ hide-intro - set to true to hid first <p class="lead">
+ show-prev-next - set to true to show previous and next buttons
+ 
+ Unlikely hide-title and hide-intro would be used in concert with show-prev-next 
+*/
+// ---------
+    
+//Check query string for embed=true. If it is there, call embedThisPage
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const embedBool = urlParams.get('iframe');
+    
+//in this mode title and intro are shown by default
+const hideTitle = urlParams.get('hide-title');
+const hideIntro = urlParams.get('hide-intro');
+
+//in this mode prev and next are hidden by default
+const showPrevNext = urlParams.get('show-prev-next');
+	
+if(embedBool == 'true') {
+	embedThisPage();
+    handeEmbedLinks();
+}
+
+// embedThisPage hides or removes markup to optimise the display of a page inside an iframe,
+// depending on additional query string values
+function embedThisPage()
+{
+	// pick up the relevant objects in the page
+	var nav = document.querySelector('header');
+	var breadcrumbs = document.querySelector('nav[aria-label="breadcrumbs"]');
+	var rightNav = document.querySelector('div.col-xl-4.order-last');
+    var myFooter = document.getElementById("wrapper-footer-colophon"); 
+    
+    //These are layout divs, looking to remove bootstrap styling to go full width
+    var containerDiv = document.getElementById("page-content");
+    var contentDiv = document.querySelector('div.order-first');
+    
+    //grab content below prev/next buttons
+    var additionalInfo = document.getElementById('additional-info');
+    
+    //grab landing banner for landing pages
+    var landingBanner = document.querySelector("div.landing-banner"); 
+    
+    //console.log("Dom elements retrieved");
+    
+	// hide nav and footer (we have footer var from script above)
+	nav.style.display = "none";
+    myFooter.style.display = "none";
+    
+    //console.log("Hid nav and footer");
+	
+    // Check breadcrumbs exists, then hide it
+    if(breadcrumbs) { breadcrumbs.style.display = "none"; }
+    
+    // Check right nav exists, then remove it
+    if (rightNav) { rightNav.remove(); }
+    
+    //console.log("Hid breadcrumbs and right nav if present");
+    
+    // Check additionalInfo exists, then hide it
+    if(additionalInfo) { additionalInfo.style.display = "none"; }
+    
+    //console.log("Hid additional info");
+    
+    //Check for landing banner
+    if(landingBanner) { 
+        console.log("landing banner exists");
+        landingBanner.classList.remove("landing-banner"); 
+        console.log("removed landing banner");
+        
+        var landingImage = document.querySelector("figure");
+        landingImage.style.marginTop = "0";
+    }
+    
+    
+
+	//remove bootstrap classes that provide adaptive styling
+	if(containerDiv) { 
+        containerDiv.classList.remove("container"); 
+        //remove padding at the top and add margin right to give content space against scroll bar (do we need this?)
+        containerDiv.style.paddingTop = '0';
+        containerDiv.style.marginRight = "2rem";
+    }
+    
+	if(contentDiv) { contentDiv.classList.remove("col-xl-8"); }
+    
+    //console.log("removed containers");
+    //console.log("adjusted padding etc.");
+    
+    //process optional query string vars
+    if(hideTitle == 'true') {
+        var myTitle = document.querySelector('h1');
+        myTitle.style.display = "none";
+        
+        //console.log("Hid title");
+    }
+    
+    if(hideIntro == 'true') {
+        var firstLeadParagraph = document.querySelector('p.lead');
+        firstLeadParagraph.style.display = "none";
+        
+        //console.log("Hid intro");
+    }
+    
+    if(showPrevNext != 'true')  {
+        //hide prev and next - the default behaviour
+        var btnNavContainer = document.querySelector('.btn-nav-container');
+        if(btnNavContainer) { btnNavContainer.style.display = "none"; }
+        
+        //console.log("Hid prev");
+    }
+}
+
+// handeEmbedLinks either adds the query string or target="+top" depending on context
+    
+function handeEmbedLinks()
+{
+    //grab all the links
+    const links = document.querySelectorAll('a');
+    
+    links.forEach(link => {
+
+        const href = link.getAttribute('href');
+        
+        //if we have an href
+        if (href !== null) {
+            if(showPrevNext == 'true') {
+                //if prev next buttons are displayed
+                if(href.startsWith('http://') || href.startsWith('https://')) {
+                    //if external link, break from iframe
+                    addTargetTopToLink(link);
+                } 
+                else {
+                    //otherwise add the query string to the link
+                    link.setAttribute('href', href + queryString);
+                }
+            }
+            else {
+                //otherwise, add _top to break from iframe
+                addTargetTopToLink(link);
+            }
+        }
+    });
+}
+                  
+function addTargetTopToLink(link) {
+    link.setAttribute('target', '_top');
+}
+	
+// Dark mode
+(function() {
+      'use strict';
+
+      // Function to get the stored theme from local storage
+      const getStoredTheme = () => localStorage.getItem('theme');
+
+      // Function to set the theme in local storage
+      const setStoredTheme = theme => localStorage.setItem('theme', theme);
+
+      // Function to determine the preferred theme
+      const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+          return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      };
+
+      // Function to apply the specified theme
+      const setTheme = theme => {
+        if (theme === 'auto') {
+          // If theme is 'auto', set it based on system preference
+          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+          // Otherwise, set the theme explicitly
+          document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+      };
+
+      // Function to update the UI to reflect the active theme
+      const showActiveTheme = theme => {
+        const themeSwitcher = document.querySelector('#theme-switcher');
+        if (!themeSwitcher) {
+          return; // If no theme switcher element is found, exit
+        }
+        // Remove 'checked' attribute from all radio buttons
+        document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+          element.checked = false;
+        });
+        // Add 'checked' attribute to the selected theme radio button
+        const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`);
+        if (btnToActive) {
+          btnToActive.checked = true;
+        }
+      };
+
+      // Listen for changes to the system's dark mode preference
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+        const storedTheme = getStoredTheme();
+        if (storedTheme !== 'light' && storedTheme !== 'dark') {
+          setTheme(getPreferredTheme()); // Update the theme if it's set to 'auto'
+        }
+      });
+
+      // When the DOM content is loaded, initialise the theme switcher
+      window.addEventListener('DOMContentLoaded', () => {
+        showActiveTheme(getPreferredTheme()); // Show the active theme
+        // Add click event listeners to all theme toggle radio buttons
+        document.querySelectorAll('[data-bs-theme-value]').forEach(toggle => {
+          toggle.addEventListener('change', () => {
+            const theme = toggle.getAttribute('data-bs-theme-value');
+            setStoredTheme(theme); // Store the selected theme
+            setTheme(theme); // Apply the selected theme
+            showActiveTheme(theme); // Update the UI
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,883 @@
+<!doctype html>
+<html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
+
+<head>
+<!-- 
+    DARK MODE
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+  -->
+  <script>
+    (function() {
+      'use strict';
+
+      // Function to get the stored theme from local storage
+      const getStoredTheme = () => localStorage.getItem('theme');
+
+      // Function to determine the preferred theme
+      const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+          return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      };
+
+      // Function to apply the specified theme
+      const setTheme = theme => {
+        if (theme === 'auto') {
+          // If theme is 'auto', set it based on system preference
+          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+          // Otherwise, set the theme explicitly
+          document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+      };
+
+      // Set the theme based on the preferred theme
+      setTheme(getPreferredTheme());
+    })();
+  </script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- wp_head -->
+	<title>Fractions - lab</title>
+
+		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
+		<meta name="description" content="How do we use fractions? A fraction is the easiest way to express a part of a whole. On this page you will learn how to simplify, add, subtract, multiply and divide fractions. If you received 18/20 for your test, you got 18 marks correct out of the 20 marks available on the whole test." />
+		<meta name="robots" content="max-image-preview:large" />
+		<link rel="canonical" href="index.html" />
+		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content="lab -" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Fractions - lab" />
+		<meta property="og:description" content="How do we use fractions? A fraction is the easiest way to express a part of a whole. On this page you will learn how to simplify, add, subtract, multiply and divide fractions. If you received 18/20 for your test, you got 18 marks correct out of the 20 marks available on the whole test." />
+		<meta property="og:url" content="https://lab.bitma.app/maths-statistics/arithmetic/fractions/" />
+		<meta property="article:published_time" content="2023-10-16T05:34:22+00:00" />
+		<meta property="article:modified_time" content="2024-08-21T01:42:52+00:00" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Fractions - lab" />
+		<meta name="twitter:description" content="How do we use fractions? A fraction is the easiest way to express a part of a whole. On this page you will learn how to simplify, add, subtract, multiply and divide fractions. If you received 18/20 for your test, you got 18 marks correct out of the 20 marks available on the whole test." />
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/maths-statistics\/arithmetic\/fractions\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/lab.bitma.app\/maths-statistics\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/arithmetic\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/arithmetic\/#listItem","position":3,"name":"Arithmetic","item":"https:\/\/lab.bitma.app\/maths-statistics\/arithmetic\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/arithmetic\/fractions\/#listItem","previousItem":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/arithmetic\/fractions\/#listItem","position":4,"name":"Fractions","previousItem":"https:\/\/lab.bitma.app\/maths-statistics\/arithmetic\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/maths-statistics\/arithmetic\/fractions\/#webpage","url":"https:\/\/lab.bitma.app\/maths-statistics\/arithmetic\/fractions\/","name":"Fractions - lab","description":"How do we use fractions? A fraction is the easiest way to express a part of a whole. On this page you will learn how to simplify, add, subtract, multiply and divide fractions. If you received 18\/20 for your test, you got 18 marks correct out of the 20 marks available on the whole test.","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/maths-statistics\/arithmetic\/fractions\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:22+00:00","dateModified":"2024-08-21T01:42:52+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$','$'],['\\(','\\)']], 
+    processEscapes: true
+  },
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore|editor-rich-text'
+  }
+};
+
+</script>
+<link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
+<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
+<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
+<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+ 	<!-- /wp_head -->
+    
+    <style>
+        </style>
+</head>
+
+<body class="page-template-default page page-id-2693 page-child parent-pageid-2527 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
+	
+		
+<header>
+<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+<div class="top-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-auto left-nav">
+                <div class="rmit-logo"><span class="visually-hidden">RMIT University logo</span></div>
+				<h2>
+					<!-- Explicitly turn off one bit of text and turn on the other to deal with JAWS bug - https://github.com/alphagov/govuk-frontend/issues/1643 -->
+					<a href="../../../index.html">
+						<span aria-hidden="true">Learning lab</span>
+						<span class="visually-hidden">Learning lab homepage</span>
+					</a>
+				</h2>
+            </div>
+            <div class="col">       
+                <ul>
+                    <li class="hide-sm">
+                        <a href="https://www.rmit.edu.au/library">
+							<span aria-hidden="true">Library</span>
+							<span class="visually-hidden">Library homepage</span>
+						</a>
+                    </li>
+                    <li class="search">
+                        <a href="../../../search/index.html" id="search2">
+                            <div class="search-label">Search</div>
+                            <div class="mag-glass"></div>
+                        </a>
+                    </li>
+                    <li class="menu">
+                        <button id="menu-button" 
+                        class="btn btn-primary collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#context-menu" data-bs-display="static" aria-expanded="false" 
+                        aria-controls="context-menu">Click for main menu</button>
+                    </li>
+                </ul> 
+            </div>   
+        </div>
+    </div>
+</div>
+<nav id="context-menu" class="collapse" aria-label="Main Menu">
+    <div class="container nav-container not-wordpress">
+        <div class="row">
+            <!-- START menu -->
+            <div class="col-xl-8">
+				<div class="accordion accordion-white" id="context-menu-accordion">	
+						<div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-6823">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-6823" aria-expanded="false" aria-controls="accordion-body-6823">University essentials</button>
+</h2>
+<div id="accordion-body-6823" class="accordion-collapse collapse" aria-labelledby="accordion-head-6823">
+<div class="accordion-body"><ul><li class="page_item page-item-3339 page_item_has_children"><a href="../../../university-essentials/acting-academic-integrity/index.html">Academic integrity</a></li>
+<li class="page_item page-item-3347 page_item_has_children"><a href="../../../university-essentials/artificial-intelligence-tools/index.html">Artificial intelligence</a></li>
+<li class="page_item page-item-3117 page_item_has_children"><a href="../../../university-essentials/critical-thinking-and-argument-analysis/index.html">Critical thinking</a></li>
+<li class="page_item page-item-2501 page_item_has_children"><a href="../../../university-essentials/getting-started/index.html">Getting started with Uni</a></li>
+<li class="page_item page-item-3097 page_item_has_children"><a href="../../../university-essentials/group-work/index.html">Group work</a></li>
+<li class="page_item page-item-3175 page_item_has_children"><a href="../../../university-essentials/online-learning-skills/index.html">Online learning skills</a></li>
+<li class="page_item page-item-6844 page_item_has_children"><a href="../../../university-essentials/study-essentials/index.html">Study essentials</a></li>
+<li class="page_item page-item-3313 page_item_has_children"><a href="../../../university-essentials/sustainability/index.html">Sustainability</a></li>
+</ul></div></div></div><div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-6825">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-6825" aria-expanded="false" aria-controls="accordion-body-6825">Writing fundamentals</button>
+</h2>
+<div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
+<div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-3295"><a href="../../../writing-fundamentals/understanding-your-audience/index.html">Understanding your audience</a></li>
+<li class="page_item page-item-3107 page_item_has_children"><a href="../../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
+<li class="page_item page-item-2520 page_item_has_children"><a href="../../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
+<li class="page_item page-item-2521"><a href="../../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
+<li class="page_item page-item-2855 page_item_has_children"><a href="../../../writing-fundamentals/writing-workplace/index.html">Writing for the workplace</a></li>
+</ul></div></div></div><div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-6828">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-6828" aria-expanded="false" aria-controls="accordion-body-6828">Assessments</button>
+</h2>
+<div id="accordion-body-6828" class="accordion-collapse collapse" aria-labelledby="accordion-head-6828">
+<div class="accordion-body"><ul><li class="page_item page-item-7168 page_item_has_children"><a href="../../../assessments/getting-started-with-assignments/index.html">Getting started with assignments</a></li>
+<li class="page_item page-item-2516 page_item_has_children"><a href="../../../assessments/essays/index.html">Essays</a></li>
+<li class="page_item page-item-2580 page_item_has_children"><a href="../../../assessments/reflective-writing-1/index.html">Academic reflection</a></li>
+<li class="page_item page-item-7204 page_item_has_children"><a href="../../../assessments/presentations/index.html">Presentations</a></li>
+<li class="page_item page-item-2578 page_item_has_children"><a href="../../../assessments/case-studies/index.html">Case studies</a></li>
+<li class="page_item page-item-2544 page_item_has_children"><a href="../../../assessments/reports/index.html">Reports</a></li>
+<li class="page_item page-item-2536 page_item_has_children"><a href="../../../assessments/literature-review/index.html">Literature review</a></li>
+<li class="page_item page-item-2617"><a href="../../../assessments/annotated-bibliographies/index.html">Annotated bibliographies</a></li>
+</ul></div></div></div><div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-2545">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-2545" aria-expanded="false" aria-controls="accordion-body-2545">Referencing</button>
+</h2>
+<div id="accordion-body-2545" class="accordion-collapse collapse" aria-labelledby="accordion-head-2545">
+<div class="accordion-body"><ul><li class="page_item page-item-3329"><a href="../../../referencing/using-other-peoples-ideas/index.html">What is referencing?</a></li>
+<li class="page_item page-item-3346"><a href="../../../referencing/understanding-citations/index.html">Understanding citations</a></li>
+<li class="page_item page-item-3330"><a href="../../../referencing/when-referencing-isnt-needed/index.html">When referencing isn't needed</a></li>
+<li class="page_item page-item-3331"><a href="../../../referencing/quoting/index.html">Quoting</a></li>
+<li class="page_item page-item-3337"><a href="../../../referencing/paraphrasing-4/index.html">Paraphrasing</a></li>
+<li class="page_item page-item-3334"><a href="../../../referencing/summarising-0/index.html">Summarising</a></li>
+<li class="page_item page-item-3338"><a href="../../../referencing/synthesising/index.html">Synthesising</a></li>
+<li class="page_item page-item-3333"><a href="../../../referencing/integrating-ideas-reporting-words/index.html">Integrating ideas with reporting words</a></li>
+<li class="page_item page-item-3336"><a href="../../../referencing/getting-help-referencing/index.html">Easy Cite and referencing help</a></li>
+</ul></div></div></div>						<!-- START Subject support
+                        special case. Effectively each of the child pages here is a section page. For the nav, however, we want toshow these under the banner of subject support. -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-head-subject-support">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-subject-support" aria-expanded="false" aria-controls="accordion-body-subject-support">
+								Subject support
+							  	</button>
+							</h2>
+							<div id="accordion-body-subject-support" class="accordion-collapse collapse" aria-labelledby="accordion-head-subject-support" style="">
+								<div class="accordion-body">
+									<ul>
+										<li><a href="../../../art-and-design/index.html">Art and design</a></li>
+										<li><a href="../../../chemistry/index.html">Chemistry</a></li>
+										<li><a href="../../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../index.html">Mathematics and statistics</a></li>
+										<li><a href="../../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
+										<li><a href="../../../subject-areas/physics/index.html">Physics</a></li>
+										<!-- <li><a href="//">Life sciences</a></li> -->
+									</ul>
+								</div>
+							  </div>
+						</div>
+						<!-- END subject support - special case -->
+                </div>	
+            </div>
+            <!-- END menu -->
+        </div>
+    </div>
+</nav>
+</header>
+
+	<main id='theme-main'>
+
+<div class="container" id="page-content">
+    <div class="row ">
+        <!-- START right nav -->
+        <div class="col-xl-4 order-last">
+            
+
+<!-- this style changes the page link style in the sidebar nav 
+to indicate the current page and removes bullets from unordered lists. 
+The wp_list_pages function allocates the classes automatically. 
+This should be moved to a stylesheet once style is determined. -->
+
+<!--<style>
+[aria-current="page"] {
+  pointer-events: none !important; 
+  cursor: default;
+  text-decoration: none !important;
+  color: #000054;
+}
+</style>-->
+
+	
+<!-- START SIDEBAR NAV PANEL -->
+<nav class="right-nav" aria-label="Section Menu">
+
+<h2><a href="../../index.html">Maths and statistics</a></h2><h3><a href="../index.html">Arithmetic</a></h3><ul><li><a href="../decimals/index.html">Decimals</a></li><li><a href="index.html" class="selected"  aria-current="page">Fractions</a><li><a href="../numbers/index.html">Numbers</a></li><li><a href="../percentages-surds/index.html">Percentages &#038; surds</a></li><li><a href="../measurement/index.html">Measurement</a></li></ul></nav>
+<!-- END SIDEBAR NAV PANEL -->
+
+
+
+
+<!--<script language="javascript">
+//this script shortens strings for titles that repeat the section title at the start
+//it currently looks for the characters colon and space ": " in the page title
+//this requires strict naming conventions for the title that use a colon 
+//to separate the repeated section title from the descriptive page title
+//the regex pattern to look for - in this case, text that comes after these characters ": "
+const regex = /:\s(.*)/; 
+list.querySelectorAll('a').forEach(a => {
+  //get the text from inside all the <a> tags inside the div with the id "list"
+  const text = a.innerHTML; 
+  //find matches with the regex pattern
+  const match = text.match(regex); 
+  if(match) {
+	//replace what's in each <a> tag that matches the pattern and convert the first character to upper case
+	a.innerHTML = match[1].charAt(0).toUpperCase() + match[1].slice(1); 
+  }
+})
+//as above, but for Heading 6
+list.querySelectorAll('h4').forEach(h4 => {
+  const text = h4.innerHTML; 
+  const match = text.match(regex);
+  if(match) {
+	h4.innerHTML = match[1].charAt(0).toUpperCase() + match[1].slice(1);
+  }
+})
+</script>-->
+		        </div>
+        <!-- END right nav -->
+        <!-- START content -->
+        <div class="col-xl-8 order-first">
+            <nav aria-label="breadcrumbs">
+<ul class="breadcrumbs">
+<li><a href="../../../index.html">Home</a></li>
+<li><a href="../../index.html">Maths and statistics</a></li>
+<li><a href="../index.html">Arithmetic</a></li>
+</ul>
+</nav>            <a id="main-content"></a>
+            <h1 class="margin-top-zero">Fractions</h1>
+            <p class="lead">How do we use fractions? A fraction is the easiest way to express a part of a whole. On this page you will learn how to simplify, add, subtract, multiply and divide fractions.</p>
+<p>If you received 18/20 for your test, you got 18 marks correct out of the 20 marks available on the whole test.<br />
+Work through this tutorial to see how to add, subtract, multiply and divide fractions, and how to reduce your fraction to its simplest terms (i.e.using the smallest numbers)</p>
+<ul>
+<li>Simplifying fractions</li>
+<li>Adding fractions</li>
+<li>Subtracting fractions</li>
+<li>Multiplying fractions</li>
+<li>Dividing fractions</li>
+</ul>
+<p>See also: <a href="../decimals/index.html">Converting between fractions and decimals</a></p>
+<div class="acc transcript">
+<h2>Simplifying fractions</h2>
+<div class="responsive-video"><iframe src="https://www.youtube.com/embed/B74uCOswaqo" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-9374">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-5605" aria-expanded="false" aria-controls="body-transcript-5605" >Transcript</button>
+</p>
+<div id="body-transcript-5605" class="accordion-collapse collapse " aria-labelledby="head-transcript-9374">
+<div class="accordion-body">
+<p>Hi, I’m Martin Lindsay from the Study and Learning Centre at RMIT University. This is a short movie on simplifying fractions.</p>
+<p>Let’s start by simplifying 27 divided by 36. The thing to notice about this fraction is that you can divide both top and bottom by nine, in other words, nine into 27 goes three and 36 divided by nine is 4. So we’ve reduced a more complicated fraction to a much simpler one, three quarters.</p>
+<p>Let’s write this another way. 27 over 36 is divisible both top and bottom by nine. Nine into 27 goes three. Notice here we’ve cancelled the 27, in other words, we’re dividing by nine. And what we do to the top we do to the bottom, so we cancel the 36 and divide by nine, giving us four. Thus the answer is three quarters.</p>
+<p>Here’s another example. We have to write 16 over five as a mixed number, or sometimes called a mixed fraction. 16 over five as you can see is a top heavy fraction, the number on the top is bigger than the number on the bottom. First of all what we need to do is divide the five into the 16, which gives us three and that gives us a remainder of one. And the remainder one is divided by the five, because the five is on the bottom of the fraction 16 over five. In other words, 16 over five is equal to three and one 5th.</p>
+<p>Now let’s work in the reverse to what we were doing in the previous slide. Here we start with a mixed fraction or a mixed number and we need to turn it into an improper fraction. So we want to write two and four 7ths as an improper fraction. There’s our two and four 7ths and what we do is this. We multiply the seven by the two to give us 14. Once we’ve got the 14 we then add it to the four on the top of the fraction part of this number. So 14 plus four is 18. There’s the arithmetic on the right hand side. Two times seven in brackets, which we do first, then we add the four. That gives us fourteen plus four over seven, which gives us 18 over seven. In other words, the mixed fraction two and four 7ths is 18 over seven as an improper fraction.</p>
+<p>Now try some questions for yourself. The answers to these questions are on the next slide. Thanks for watching this short movie.</p>
+</div></div></div>
+<h2>Adding fractions</h2>
+<div class="responsive-video"><iframe src="https://www.youtube.com/embed/70YApdQ-mwY" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-8296">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-4111" aria-expanded="false" aria-controls="body-transcript-4111" >Transcript</button>
+</p>
+<div id="body-transcript-4111" class="accordion-collapse collapse " aria-labelledby="head-transcript-8296">
+<div class="accordion-body">
+<p>Hi, I’m Martin Lindsay from the Study and Learning Centre at RMIT University. This is a short movie on adding fractions.</p>
+<p>Let’s start by adding two basic fractions, a quarter plus two quarters. Notice in this case that the number on the bottom called the denominator is the same. We call that the common denominator, in other words, the number they both have in common is four. Once the denominator is the same then we can just go ahead and start adding the top numbers, called the numerators, in other words, one plus two gives us three over four. So we leave the denominator alone and we add the numerators. So the answer is three quarters.</p>
+<p>But what happens if the denominators are not the same? Well, we need to now find the common denominator of five and four, meaning what number does five and four divide into. That number is 20, so the common denominator is 20. And this is how we go about doing it. Five goes into 20 four times, so we multiple five by four in the left hand fraction. If we multiple the bottom by four, we must multiply the top of the fraction by four, so two times four is on the top. With our three quarters fraction, we’re multiplying four by five to give us 20, therefore we multiply the top by five, three times five. In other words, we now have adding the eight and the 15 to give us the answer for our numerator, so eight plus 15 is 23, divided by 20 will give us one and three 20ths.</p>
+<p>Let’s add whole number fractions or mixed fraction. One and one 3rd, plus two and three 5ths. The first job is to separate out the whole numbers from the fractions. So we now have one plus two, and the fractions are one 3rd plus three 5ths. So the whole numbers must be added up and the fractions must be added up. So we now have three, and now we go ahead and find the common denominator of three and five, which is 15. So as with the previous slide, we say three times five is 15, one times five is five. The second fraction is five times three is 15, and therefore we multiply the top of the fraction by three, three times three. This gives us three plus five over 15, plus nine over 15. And five over 15 plus nine over 15 gives us 14 over 15. So our answer is three and 14 15ths.</p>
+<p>Now try some questions for yourself. The answers to these questions are on the next slide. Thanks for watching this short movie.</p>
+</div></div></div>
+<h2>Subtracting fractions</h2>
+<div class="responsive-video"><iframe src="https://www.youtube.com/embed/FjwJkoMp4tI" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-5392">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-7442" aria-expanded="false" aria-controls="body-transcript-7442" >Transcript</button>
+</p>
+<div id="body-transcript-7442" class="accordion-collapse collapse " aria-labelledby="head-transcript-5392">
+<div class="accordion-body">
+<p>Hi, this is Martin Lindsay from the Study and Learning Centre at RMIT University. This is a short movie on subtracting fractions.</p>
+<p>Let’s start with an easy fraction subtraction; two quarters minus one quarter. The thing to notice about this particular fraction subtraction is that the denominator for both fractions is in fact the same, which is four. If the denominator is the same then we can simply carry out the subtraction of the numerators for both fractions to take away one giving us an answer of one quarter, but just to reiterate in this particular case the fraction denominators are the same, so the subtraction for the numerators can be carried out straight away. However what if the two fractions have different denominators, in this case four and five are different denominators, so what we do first of all is look for a common denominator, that is the lowest number in which the four and the five will divide into, that number is 20, so we then carry out a little operation here. What I’ve done is to multiply the four by the five and in the second fraction I’ve multiplied the five by the four, so what I do to the bottom I must do to the top, so I’ve multiplied the three by the five for the first fraction and I’ve multiplied the two by the four for the second fraction. Now I have the same denominator on both, for both fractions, which is 20, because the denominator is the same I can then simply subtract the numerators, 15 minus eight.</p>
+<p>What about whole number fraction subtractions, in this case two and three-fifths take away one and one-third. What we do first of all is to subtract the whole numbers, in this case it’s two take away one, then we go ahead and subtract the fractions, three‑fifths minus one-third. Here the common denominator is 15 and so with the first fraction, three over five, I’m multiplying that by three to make me 15, therefore I multiply the top by three. The second fraction, one-third, I multiply the bottom by five to give us 15, therefore I multiply the top by five, this gives me one plus nine‑fifteenths minus five-fifteenths, which is an answer of one and four-fifteenths.</p>
+<p>Now try some questions for yourself. The answers to the questions are on the next slide. Thanks for watching this short movie.</p>
+</div></div></div>
+<h2>Multiplying fractions</h2>
+<div class="responsive-video"><iframe src="https://www.youtube.com/embed/vrStoUovAqs" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-6354">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-6932" aria-expanded="false" aria-controls="body-transcript-6932" >Transcript</button>
+</p>
+<div id="body-transcript-6932" class="accordion-collapse collapse " aria-labelledby="head-transcript-6354">
+<div class="accordion-body">
+<p>Hi, I’m Martin Lindsay from the Study and Learning Centre at RMIT University. This is a short movie on multiplying fractions.</p>
+<p>Let’s start by looking at two simple fractions, two 3rds times four 5ths. Notice with this fraction problem that there are no terms top and bottom that cancel. In other words, what we do is to multiply out the top line and multiply out the bottom line, in other words, the numerator which is the top line is multiplied out, two times four, and the denominator, the bottom line, is multiplied out, three times five. Again stress the point here that there are no terms that cancel. So this gives us four times two is eight, three times five is 15. So our answer to this problem is eight 15ths.</p>
+<p>But what happens if we have terms that do cancel? Here we have the problem five over eight times two over five. And you should notice that there are terms that cancel here. The first one which is the obvious one are the fives top and bottom. So we go ahead with our cancelling. Five into five goes one, five into five goes one. So we now have one times two over eight times one. But notice again we have cancelling of the two and the eight. Two into two goes once, and two into eights goes four. So we’re cancelling more terms. That’s about as far as we can go, so we multiply out the top line, one times one is one, the bottom line is four times one is four. So the answer to this problem is a quarter.</p>
+<p>How about multiplying out mixed numbers? Here we have mixed numbers one and three quarters multiplied by two and two 3rds. When we multiply mixed numbers we first of all turn them into improper fractions. So one and three quarters is seven over four, two and two 3rds is eight over three. So now we look to see whether any of these terms cancel. And as you can see four goes into four once, four goes into eight twice. Nothing else cancels, so we then multiply out the top line, seven times two is 14, the bottom line, one times three is three. But notice we give our answer as a mixed number, not an improper fraction, so 14 over three is four and two 3rds.</p>
+<p>Now try some questions for yourself. The answers to these questions are on the next slide. Thanks for watching this short movie.</p>
+</div></div></div>
+<h2>Dividing fractions</h2>
+<div class="responsive-video"><iframe src="https://www.youtube.com/embed/o6D7E-F3LV8" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-5006">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-5146" aria-expanded="false" aria-controls="body-transcript-5146" >Transcript</button>
+</p>
+<div id="body-transcript-5146" class="accordion-collapse collapse " aria-labelledby="head-transcript-5006">
+<div class="accordion-body">
+<p>Hi, I’m Martin Lindsay from the Study and Learning Centre at RMIT University. This is a short movie on dividing fractions.</p>
+<p>Let’s start by dividing two simple fractions, four 3rds divided by two 5ths. We start by changing the division sign to a multiplication sign and then we take the reciprocal of the two 5ths, the last term. In other words, we flip the two over five upside, which becomes five over two. We then carry out the operation multiplying four over three by five over two, and as you can see, the twos cancel, two into two goes one, two into four goes two. Nothing else cancels, so we multiply out top and bottom, 10 over three and leave our answer as a mixed fraction. So the answer to this question is three and one 3rd.</p>
+<p>Let’s divide two mixed fractions. Two and one quarter divided by one and one 5th. Before we actually carry out the division we must express our mixed fractions as improper fractions, so two and one quarter is nine over four divided by one and one 5th is six over five. Now we carry out our division by first of all changing the division sign to a multiplication sign and then taking the reciprocal of six over five, which becomes five over six. From there we look to see if anything cancels, and as you can see the nine and the six will divided by three, three into six goes two, three into nine goes three. Nothing else cancels, so we multiply out the top line, three times five is 15, the bottom line, four times two is eight. Thus an improper fraction which must be converted into a mixed fraction, which is one and seven 8ths. So the answer to this mixed fraction question is one and seven 8ths.</p>
+<p>Occasionally you may see questions like this where there is a fraction divided by a whole number, and before you carry out the division problem you must express the whole number as a fraction. In other words, three over four divided by six, which is six over one. So you express the whole number as six over one. Then we carry out the operation by changing the division sign to a multiplication sign and taking the reciprocal of six over one, which is one over six. Look again for terms that cancel, here three goes into three once, three goes into six twice. Nothing else cancels, multiply out the numerator, one, the denominator, four times two is eight. So our answer to this question is one over eight.</p>
+<p>Now carry out some questions for yourself. The answers to these questions are on the next slide. Thanks for watching this short movie.</p>
+</div></div></div>
+</div>
+			<nav class="btn-nav-container" aria-label="Previous and next links">
+<h2 class="btn-nav-prev">
+    <a href="../decimals/index.html">
+        <span aria-hidden="true">Decimals</span>
+        <span class="visually-hidden">Previous page: Decimals</span>
+    </a>
+</h2>
+    
+
+
+<h2 class="btn-nav-next">
+    <a href="../numbers/index.html">
+        <span aria-hidden="true">Numbers</span>
+        <span class="visually-hidden">Next page: Numbers</span>
+    </a>
+</h2>
+	
+</nav><!-- .navigation -->			<div id="additional-info">
+			
+			
+
+
+
+<!-- keywords echo - https://www.advancedcustomfields.com/resources/taxonomy/ -->      
+
+<hr class="margin-top-xl">
+<div class="keywords">
+    <h2 class="h5">Keywords</h2>
+    <ul>
+                <li><a href="../../../keyword/arithmetic/index.html">Arithmetic</a></li>  
+                <li><a href="../../../keyword/fractions/index.html">Fractions</a></li>  
+                <li><a href="../../../keyword/maths/index.html">Maths</a></li>  
+        </ul>
+</div>
+ 
+<!-- keywords echo end 
+
+<!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
+<!--
+<p><strong>Subjects </strong>
+    | <strong><a href="https://lab.bitma.app/subject-area/maths/">Maths</a></strong>  
+    </p>
+-->
+<!-- category echo end -->
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+        <!-- END content --> 
+    </div>
+</div>
+
+</main>
+
+					
+		
+<div class="wrapper footer-container" id="wrapper-footer-colophon">
+	<div class="container">
+        <div class="row">
+            <div class="col">
+				<!-- START ask the library -->
+				<div class="ask-container">
+					
+					<section class="ask-the-library">
+						<a href="https://www.rmit.edu.au/library/about-and-contacts/ask-the-library">
+							<img src="https://rmitlibrary.github.io/cdn/image/svg/ask-the-library.svg" class="ask-logo" alt="Ask the library" />
+							<div class="ask-text">
+								<p class="lead">Still can't find what you need?</p>
+								<p>The RMIT University Library provides study support, one-on-one consultations and peer mentoring to RMIT students.</p>
+							</div>
+						</a>
+					</section>
+			
+				</div>
+				<!-- END ask the library -->
+			</div>
+ 		</div>
+	</div>
+    <!-- START acknowledgement -->
+    <div class="acknowledgement">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <section class="acknowledgement-container">
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
+                        </div>
+
+                        <div class="content">
+                            <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
+                            <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
+                            
+                            <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
+                            <a href="#" class="link-large">More information</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!-- END acknowledgement -->
+    <!-- START footer -->
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- START logo -->    
+                <a aria-label="Royal Melbourne Institute of Technology University Logo" href="https://www.rmit.edu.au/">
+					<div aria-hidden="true" class="logo"><span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/rmit-logo.svg" style="width: 100px" alt="" /></span>
+					</div>
+				</a>
+                <!-- END logo -->
+                <!-- START links -->
+				<ul class="footer-links">
+					<li><a href="">About Learning Lab</a></li>
+					<li><a href="">For educators</a></li>
+					<li><a href="">Contribute</a></li>
+					<li><a href="">Contact us</a></li>
+				</ul>
+                <!-- END links -->
+                <!-- START legal-social -->
+                <div class="footerlegalShareItems">
+                    <!-- START legal -->
+                    <div class="footer-legal">
+                    <ul>
+                        <li>Copyright © 2024 RMIT University<span> | </span></li>
+                        <li><a href="https://www.rmit.edu.au/utilities/terms"><span class="no-focus" tabindex="-1">Terms</span></a><span> | </span></li>
+                        <li><a href="https://www.rmit.edu.au/utilities/privacy"><span class="no-focus" tabindex="-1">Privacy</span></a><span> | </span></li>
+                        <li><a href="https://www.rmit.edu.au/utilities/accessibility"><span class="no-focus" tabindex="-1">Accessibility</span></a> <span> | </span></li>
+                        <li><a data-analytics-type="footerlink" data-analytics-value="Website feedback" href="https://www.rmit.edu.au/utilities/website-feedback"><span class="no-focus" tabindex="-1">Website feedback</span></a><span> | </span></li>
+                        <li><a data-analytics-type="footerlink" data-analytics-value="Complaints" href="https://www.rmit.edu.au/utilities/complaints"><span class="no-focus" tabindex="-1">Complaints</span></a><span> | </span></li>
+                        <li>ABN 49 781 030 034<span> | </span></li>
+                        <li>CRICOS provider number: 00122A<span> | </span></li>
+                        <li>TEQSA provider number: PRV12145<span> | </span></li>
+                        <li>RTO Code: 3046<span> | </span></li>
+                        <li><a href="https://www.open.edu.au/online-courses/rmit-university"><span class="no-focus" tabindex="-1">Open Universities Australia</span></a> </li>
+                      </ul>
+                    </div>
+                    <!-- END legal -->
+                    <!-- START social -->
+                    <div class="social-nav">
+                    <ul> 
+                        <!-- START facebook -->
+                        <li><a aria-label="For Facebook"  href="https://www.facebook.com/RMITuniversity/"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/facebook.svg" alt="" /></span></a></li>
+                        <!-- END facebook -->
+                        <!-- START twitter/x -->
+                        <li><a aria-label="For Twitter" href="https://twitter.com/rmit"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/twitter.svg" alt="" /></span></a></li>
+                        <!-- END twitter/x -->
+                        <!-- START insta -->
+                        <li><a aria-label="For Instagram" href="https://www.instagram.com/rmituniversity/"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/instagram.svg" alt="" /></span> </a></li>
+                        <!-- END insta -->              
+                        <!-- START LinkedIn -->
+                        <li><a aria-label="For LinkedIn" data-analytics-type="socialshare" data-analytics-value="LinkedIn" href="https://www.linkedin.com/school/rmit-university/"><span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/linkedin.svg" alt="" /></span></a></li>
+                        <!-- END LinkedIn -->
+                        <!-- START YouTube -->
+                        <li><a aria-label="For Youtube" href="https://www.youtube.com/user/rmitmedia"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/youtube.svg" alt="" /></span></a></li>
+                        <!-- END YouTube -->     
+                        <!-- START Weibo -->          
+                        <li><a aria-label="For Weibo" href="https://www.weibo.com/rmituni"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/weibo.svg" alt="" /></span></a></li>
+                        <!-- END Weibo -->                
+					</ul>
+					</div>
+                    <!-- END social -->
+                </div>
+                <!-- END legal-social -->
+            </div>
+        </div>
+    </div>
+	</footer>
+    <!-- END footer -->		
+</div><!-- wrapper end -->
+		
+	
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+<script src="../../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
+<!-- adding requirements for context/hamburger menu start -->
+<script>
+// ---------
+// Script to show and hide hamburger menu 
+// ---------    
+
+// Grab both the menu button, the page content and footer
+var menuButton = document.getElementById("menu-button");
+var pageContent = document.getElementById("theme-main"); 
+var footer = document.getElementById("wrapper-footer-colophon"); 
+  
+// Store display status of menu
+var menuDisplay = false;
+    
+// Store content scroll position
+var scrollPosition;
+
+// Listen for click - call showhideMenu
+menuButton.addEventListener("click", showHideMenu);
+
+// Menu uses bootstraps "collapse" function
+// If menu is hidden, bootstrap will show it, hide page content.
+// If it's displayed, bootstrap will hide it, show the content.
+
+
+// Function to toggle the visibility of a menu and adjust page content accordingly.
+function showHideMenu() {
+    // Check if the menu is currently hidden
+    if(menuDisplay == false)
+    {
+        // Set the menu display flag to true (menu is now shown) and save scroll position
+        menuDisplay = true;
+        scrollPosition = window.scrollY;
+        
+        // Hide the main page content and footer
+        pageContent.style.display = "none"; 
+        footer.style.display = "none"; 
+    }
+    else
+    {
+        // Set the menu display flag to false (menu is now hidden)
+        menuDisplay = false;
+        
+        // Show the main page content and footer
+        pageContent.style.display = "block"; 
+        footer.style.display = "block"; 
+        
+        //turn off smooth scrolling, jump to stored scroll postion, then turn smooth scrolling back on
+        document.documentElement.style.scrollBehavior = "auto";
+        window.scroll(0, scrollPosition);
+        document.documentElement.style.scrollBehavior = "smooth";
+    }
+}
+
+</script>
+<!-- adding requirements for context/hamburger menu end -->
+<!-- adding requirements for reponsive iframes -->
+<!-- Code to handle resizing iframes on this page -->
+    <script type="text/javascript" src="../../../wp-content/themes/picostrap5-child-base/js/iframeResizer.min.js"></script>
+    <script type="text/javascript">
+        iFrameResize({log:true});
+    </script>
+
+<!--    code to handle this page being resized by other wordpress pages,
+        e.g. embed mode described below -->
+<script src="https://rmitlibrary.github.io/cdn/libraries/js/iframeResizer.contentWindow.min.js"></script>
+
+<!-- adding requirements for reponsive iframes end -->
+
+<!-- adding requirements for embed mode start -->
+<script>
+    
+// ---------
+/* Script to turn on embed mode
+// Removes top nav, footer, breadcrumbs, right nav, keywords and prev/next by default
+// Options to remove h1, p lead and show prev/next
+ Sample query string:
+ ?iframe=true&hide-title=true&hide-intro=true
+ 
+ iframe - set to true to enable embed mode
+ hide-title - set to true to hide title
+ hide-intro - set to true to hid first <p class="lead">
+ show-prev-next - set to true to show previous and next buttons
+ 
+ Unlikely hide-title and hide-intro would be used in concert with show-prev-next 
+*/
+// ---------
+    
+//Check query string for embed=true. If it is there, call embedThisPage
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const embedBool = urlParams.get('iframe');
+    
+//in this mode title and intro are shown by default
+const hideTitle = urlParams.get('hide-title');
+const hideIntro = urlParams.get('hide-intro');
+
+//in this mode prev and next are hidden by default
+const showPrevNext = urlParams.get('show-prev-next');
+	
+if(embedBool == 'true') {
+	embedThisPage();
+    handeEmbedLinks();
+}
+
+// embedThisPage hides or removes markup to optimise the display of a page inside an iframe,
+// depending on additional query string values
+function embedThisPage()
+{
+	// pick up the relevant objects in the page
+	var nav = document.querySelector('header');
+	var breadcrumbs = document.querySelector('nav[aria-label="breadcrumbs"]');
+	var rightNav = document.querySelector('div.col-xl-4.order-last');
+    var myFooter = document.getElementById("wrapper-footer-colophon"); 
+    
+    //These are layout divs, looking to remove bootstrap styling to go full width
+    var containerDiv = document.getElementById("page-content");
+    var contentDiv = document.querySelector('div.order-first');
+    
+    //grab content below prev/next buttons
+    var additionalInfo = document.getElementById('additional-info');
+    
+    //grab landing banner for landing pages
+    var landingBanner = document.querySelector("div.landing-banner"); 
+    
+    //console.log("Dom elements retrieved");
+    
+	// hide nav and footer (we have footer var from script above)
+	nav.style.display = "none";
+    myFooter.style.display = "none";
+    
+    //console.log("Hid nav and footer");
+	
+    // Check breadcrumbs exists, then hide it
+    if(breadcrumbs) { breadcrumbs.style.display = "none"; }
+    
+    // Check right nav exists, then remove it
+    if (rightNav) { rightNav.remove(); }
+    
+    //console.log("Hid breadcrumbs and right nav if present");
+    
+    // Check additionalInfo exists, then hide it
+    if(additionalInfo) { additionalInfo.style.display = "none"; }
+    
+    //console.log("Hid additional info");
+    
+    //Check for landing banner
+    if(landingBanner) { 
+        console.log("landing banner exists");
+        landingBanner.classList.remove("landing-banner"); 
+        console.log("removed landing banner");
+        
+        var landingImage = document.querySelector("figure");
+        landingImage.style.marginTop = "0";
+    }
+    
+    
+
+	//remove bootstrap classes that provide adaptive styling
+	if(containerDiv) { 
+        containerDiv.classList.remove("container"); 
+        //remove padding at the top and add margin right to give content space against scroll bar (do we need this?)
+        containerDiv.style.paddingTop = '0';
+        containerDiv.style.marginRight = "2rem";
+    }
+    
+	if(contentDiv) { contentDiv.classList.remove("col-xl-8"); }
+    
+    //console.log("removed containers");
+    //console.log("adjusted padding etc.");
+    
+    //process optional query string vars
+    if(hideTitle == 'true') {
+        var myTitle = document.querySelector('h1');
+        myTitle.style.display = "none";
+        
+        //console.log("Hid title");
+    }
+    
+    if(hideIntro == 'true') {
+        var firstLeadParagraph = document.querySelector('p.lead');
+        firstLeadParagraph.style.display = "none";
+        
+        //console.log("Hid intro");
+    }
+    
+    if(showPrevNext != 'true')  {
+        //hide prev and next - the default behaviour
+        var btnNavContainer = document.querySelector('.btn-nav-container');
+        if(btnNavContainer) { btnNavContainer.style.display = "none"; }
+        
+        //console.log("Hid prev");
+    }
+}
+
+// handeEmbedLinks either adds the query string or target="+top" depending on context
+    
+function handeEmbedLinks()
+{
+    //grab all the links
+    const links = document.querySelectorAll('a');
+    
+    links.forEach(link => {
+
+        const href = link.getAttribute('href');
+        
+        //if we have an href
+        if (href !== null) {
+            if(showPrevNext == 'true') {
+                //if prev next buttons are displayed
+                if(href.startsWith('http://') || href.startsWith('https://')) {
+                    //if external link, break from iframe
+                    addTargetTopToLink(link);
+                } 
+                else {
+                    //otherwise add the query string to the link
+                    link.setAttribute('href', href + queryString);
+                }
+            }
+            else {
+                //otherwise, add _top to break from iframe
+                addTargetTopToLink(link);
+            }
+        }
+    });
+}
+                  
+function addTargetTopToLink(link) {
+    link.setAttribute('target', '_top');
+}
+	
+// Dark mode
+(function() {
+      'use strict';
+
+      // Function to get the stored theme from local storage
+      const getStoredTheme = () => localStorage.getItem('theme');
+
+      // Function to set the theme in local storage
+      const setStoredTheme = theme => localStorage.setItem('theme', theme);
+
+      // Function to determine the preferred theme
+      const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+          return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      };
+
+      // Function to apply the specified theme
+      const setTheme = theme => {
+        if (theme === 'auto') {
+          // If theme is 'auto', set it based on system preference
+          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+          // Otherwise, set the theme explicitly
+          document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+      };
+
+      // Function to update the UI to reflect the active theme
+      const showActiveTheme = theme => {
+        const themeSwitcher = document.querySelector('#theme-switcher');
+        if (!themeSwitcher) {
+          return; // If no theme switcher element is found, exit
+        }
+        // Remove 'checked' attribute from all radio buttons
+        document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+          element.checked = false;
+        });
+        // Add 'checked' attribute to the selected theme radio button
+        const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`);
+        if (btnToActive) {
+          btnToActive.checked = true;
+        }
+      };
+
+      // Listen for changes to the system's dark mode preference
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+        const storedTheme = getStoredTheme();
+        if (storedTheme !== 'light' && storedTheme !== 'dark') {
+          setTheme(getPreferredTheme()); // Update the theme if it's set to 'auto'
+        }
+      });
+
+      // When the DOM content is loaded, initialise the theme switcher
+      window.addEventListener('DOMContentLoaded', () => {
+        showActiveTheme(getPreferredTheme()); // Show the active theme
+        // Add click event listeners to all theme toggle radio buttons
+        document.querySelectorAll('[data-bs-theme-value]').forEach(toggle => {
+          toggle.addEventListener('change', () => {
+            const theme = toggle.getAttribute('data-bs-theme-value');
+            setStoredTheme(theme); // Store the selected theme
+            setTheme(theme); // Apply the selected theme
+            showActiveTheme(theme); // Update the UI
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
+

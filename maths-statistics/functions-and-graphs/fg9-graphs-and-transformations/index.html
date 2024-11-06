@@ -1,0 +1,1075 @@
+<!doctype html>
+<html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
+
+<head>
+<!-- 
+    DARK MODE
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+  -->
+  <script>
+    (function() {
+      'use strict';
+
+      // Function to get the stored theme from local storage
+      const getStoredTheme = () => localStorage.getItem('theme');
+
+      // Function to determine the preferred theme
+      const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+          return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      };
+
+      // Function to apply the specified theme
+      const setTheme = theme => {
+        if (theme === 'auto') {
+          // If theme is 'auto', set it based on system preference
+          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+          // Otherwise, set the theme explicitly
+          document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+      };
+
+      // Set the theme based on the preferred theme
+      setTheme(getPreferredTheme());
+    })();
+  </script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- wp_head -->
+	<title>FG9 Graphs and transformations - lab</title>
+
+		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
+		<meta name="description" content="The known graphs of some simple functions and relations can be used to sketch related, but more complicated functions. If you know the graph of a function, you can often transform it to a graph of a more complex but related function. A simple example is the graph of the line \[\begin{align*} y &amp; =x." />
+		<meta name="robots" content="max-image-preview:large" />
+		<link rel="canonical" href="index.html" />
+		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content="lab -" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="FG9 Graphs and transformations - lab" />
+		<meta property="og:description" content="The known graphs of some simple functions and relations can be used to sketch related, but more complicated functions. If you know the graph of a function, you can often transform it to a graph of a more complex but related function. A simple example is the graph of the line \[\begin{align*} y &amp; =x." />
+		<meta property="og:url" content="https://lab.bitma.app/maths-statistics/functions-and-graphs/fg9-graphs-and-transformations/" />
+		<meta property="article:published_time" content="2023-10-16T05:34:53+00:00" />
+		<meta property="article:modified_time" content="2024-08-21T06:14:35+00:00" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="FG9 Graphs and transformations - lab" />
+		<meta name="twitter:description" content="The known graphs of some simple functions and relations can be used to sketch related, but more complicated functions. If you know the graph of a function, you can often transform it to a graph of a more complex but related function. A simple example is the graph of the line \[\begin{align*} y &amp; =x." />
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/maths-statistics\/functions-and-graphs\/fg9-graphs-and-transformations\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/lab.bitma.app\/maths-statistics\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/functions-and-graphs\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/functions-and-graphs\/#listItem","position":3,"name":"Functions and graphs","item":"https:\/\/lab.bitma.app\/maths-statistics\/functions-and-graphs\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/functions-and-graphs\/fg9-graphs-and-transformations\/#listItem","previousItem":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/functions-and-graphs\/fg9-graphs-and-transformations\/#listItem","position":4,"name":"FG9 Graphs and transformations","previousItem":"https:\/\/lab.bitma.app\/maths-statistics\/functions-and-graphs\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/maths-statistics\/functions-and-graphs\/fg9-graphs-and-transformations\/#webpage","url":"https:\/\/lab.bitma.app\/maths-statistics\/functions-and-graphs\/fg9-graphs-and-transformations\/","name":"FG9 Graphs and transformations - lab","description":"The known graphs of some simple functions and relations can be used to sketch related, but more complicated functions. If you know the graph of a function, you can often transform it to a graph of a more complex but related function. A simple example is the graph of the line \\[\\begin{align*} y & =x.","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/maths-statistics\/functions-and-graphs\/fg9-graphs-and-transformations\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:53+00:00","dateModified":"2024-08-21T06:14:35+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$','$'],['\\(','\\)']], 
+    processEscapes: true
+  },
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore|editor-rich-text'
+  }
+};
+
+</script>
+<link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
+<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
+<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
+<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+ 	<!-- /wp_head -->
+    
+    <style>
+        </style>
+</head>
+
+<body class="page-template-default page page-id-3246 page-child parent-pageid-2529 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
+	
+		
+<header>
+<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+<div class="top-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-auto left-nav">
+                <div class="rmit-logo"><span class="visually-hidden">RMIT University logo</span></div>
+				<h2>
+					<!-- Explicitly turn off one bit of text and turn on the other to deal with JAWS bug - https://github.com/alphagov/govuk-frontend/issues/1643 -->
+					<a href="../../../index.html">
+						<span aria-hidden="true">Learning lab</span>
+						<span class="visually-hidden">Learning lab homepage</span>
+					</a>
+				</h2>
+            </div>
+            <div class="col">       
+                <ul>
+                    <li class="hide-sm">
+                        <a href="https://www.rmit.edu.au/library">
+							<span aria-hidden="true">Library</span>
+							<span class="visually-hidden">Library homepage</span>
+						</a>
+                    </li>
+                    <li class="search">
+                        <a href="../../../search/index.html" id="search2">
+                            <div class="search-label">Search</div>
+                            <div class="mag-glass"></div>
+                        </a>
+                    </li>
+                    <li class="menu">
+                        <button id="menu-button" 
+                        class="btn btn-primary collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#context-menu" data-bs-display="static" aria-expanded="false" 
+                        aria-controls="context-menu">Click for main menu</button>
+                    </li>
+                </ul> 
+            </div>   
+        </div>
+    </div>
+</div>
+<nav id="context-menu" class="collapse" aria-label="Main Menu">
+    <div class="container nav-container not-wordpress">
+        <div class="row">
+            <!-- START menu -->
+            <div class="col-xl-8">
+				<div class="accordion accordion-white" id="context-menu-accordion">	
+						<div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-6823">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-6823" aria-expanded="false" aria-controls="accordion-body-6823">University essentials</button>
+</h2>
+<div id="accordion-body-6823" class="accordion-collapse collapse" aria-labelledby="accordion-head-6823">
+<div class="accordion-body"><ul><li class="page_item page-item-3339 page_item_has_children"><a href="../../../university-essentials/acting-academic-integrity/index.html">Academic integrity</a></li>
+<li class="page_item page-item-3347 page_item_has_children"><a href="../../../university-essentials/artificial-intelligence-tools/index.html">Artificial intelligence</a></li>
+<li class="page_item page-item-3117 page_item_has_children"><a href="../../../university-essentials/critical-thinking-and-argument-analysis/index.html">Critical thinking</a></li>
+<li class="page_item page-item-2501 page_item_has_children"><a href="../../../university-essentials/getting-started/index.html">Getting started with Uni</a></li>
+<li class="page_item page-item-3097 page_item_has_children"><a href="../../../university-essentials/group-work/index.html">Group work</a></li>
+<li class="page_item page-item-3175 page_item_has_children"><a href="../../../university-essentials/online-learning-skills/index.html">Online learning skills</a></li>
+<li class="page_item page-item-6844 page_item_has_children"><a href="../../../university-essentials/study-essentials/index.html">Study essentials</a></li>
+<li class="page_item page-item-3313 page_item_has_children"><a href="../../../university-essentials/sustainability/index.html">Sustainability</a></li>
+</ul></div></div></div><div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-6825">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-6825" aria-expanded="false" aria-controls="accordion-body-6825">Writing fundamentals</button>
+</h2>
+<div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
+<div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-3295"><a href="../../../writing-fundamentals/understanding-your-audience/index.html">Understanding your audience</a></li>
+<li class="page_item page-item-3107 page_item_has_children"><a href="../../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
+<li class="page_item page-item-2520 page_item_has_children"><a href="../../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
+<li class="page_item page-item-2521"><a href="../../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
+<li class="page_item page-item-2855 page_item_has_children"><a href="../../../writing-fundamentals/writing-workplace/index.html">Writing for the workplace</a></li>
+</ul></div></div></div><div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-6828">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-6828" aria-expanded="false" aria-controls="accordion-body-6828">Assessments</button>
+</h2>
+<div id="accordion-body-6828" class="accordion-collapse collapse" aria-labelledby="accordion-head-6828">
+<div class="accordion-body"><ul><li class="page_item page-item-7168 page_item_has_children"><a href="../../../assessments/getting-started-with-assignments/index.html">Getting started with assignments</a></li>
+<li class="page_item page-item-2516 page_item_has_children"><a href="../../../assessments/essays/index.html">Essays</a></li>
+<li class="page_item page-item-2580 page_item_has_children"><a href="../../../assessments/reflective-writing-1/index.html">Academic reflection</a></li>
+<li class="page_item page-item-7204 page_item_has_children"><a href="../../../assessments/presentations/index.html">Presentations</a></li>
+<li class="page_item page-item-2578 page_item_has_children"><a href="../../../assessments/case-studies/index.html">Case studies</a></li>
+<li class="page_item page-item-2544 page_item_has_children"><a href="../../../assessments/reports/index.html">Reports</a></li>
+<li class="page_item page-item-2536 page_item_has_children"><a href="../../../assessments/literature-review/index.html">Literature review</a></li>
+<li class="page_item page-item-2617"><a href="../../../assessments/annotated-bibliographies/index.html">Annotated bibliographies</a></li>
+</ul></div></div></div><div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-2545">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-2545" aria-expanded="false" aria-controls="accordion-body-2545">Referencing</button>
+</h2>
+<div id="accordion-body-2545" class="accordion-collapse collapse" aria-labelledby="accordion-head-2545">
+<div class="accordion-body"><ul><li class="page_item page-item-3329"><a href="../../../referencing/using-other-peoples-ideas/index.html">What is referencing?</a></li>
+<li class="page_item page-item-3346"><a href="../../../referencing/understanding-citations/index.html">Understanding citations</a></li>
+<li class="page_item page-item-3330"><a href="../../../referencing/when-referencing-isnt-needed/index.html">When referencing isn't needed</a></li>
+<li class="page_item page-item-3331"><a href="../../../referencing/quoting/index.html">Quoting</a></li>
+<li class="page_item page-item-3337"><a href="../../../referencing/paraphrasing-4/index.html">Paraphrasing</a></li>
+<li class="page_item page-item-3334"><a href="../../../referencing/summarising-0/index.html">Summarising</a></li>
+<li class="page_item page-item-3338"><a href="../../../referencing/synthesising/index.html">Synthesising</a></li>
+<li class="page_item page-item-3333"><a href="../../../referencing/integrating-ideas-reporting-words/index.html">Integrating ideas with reporting words</a></li>
+<li class="page_item page-item-3336"><a href="../../../referencing/getting-help-referencing/index.html">Easy Cite and referencing help</a></li>
+</ul></div></div></div>						<!-- START Subject support
+                        special case. Effectively each of the child pages here is a section page. For the nav, however, we want toshow these under the banner of subject support. -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-head-subject-support">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-subject-support" aria-expanded="false" aria-controls="accordion-body-subject-support">
+								Subject support
+							  	</button>
+							</h2>
+							<div id="accordion-body-subject-support" class="accordion-collapse collapse" aria-labelledby="accordion-head-subject-support" style="">
+								<div class="accordion-body">
+									<ul>
+										<li><a href="../../../art-and-design/index.html">Art and design</a></li>
+										<li><a href="../../../chemistry/index.html">Chemistry</a></li>
+										<li><a href="../../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../index.html">Mathematics and statistics</a></li>
+										<li><a href="../../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
+										<li><a href="../../../subject-areas/physics/index.html">Physics</a></li>
+										<!-- <li><a href="//">Life sciences</a></li> -->
+									</ul>
+								</div>
+							  </div>
+						</div>
+						<!-- END subject support - special case -->
+                </div>	
+            </div>
+            <!-- END menu -->
+        </div>
+    </div>
+</nav>
+</header>
+
+	<main id='theme-main'>
+
+<div class="container" id="page-content">
+    <div class="row ">
+        <!-- START right nav -->
+        <div class="col-xl-4 order-last">
+            
+
+<!-- this style changes the page link style in the sidebar nav 
+to indicate the current page and removes bullets from unordered lists. 
+The wp_list_pages function allocates the classes automatically. 
+This should be moved to a stylesheet once style is determined. -->
+
+<!--<style>
+[aria-current="page"] {
+  pointer-events: none !important; 
+  cursor: default;
+  text-decoration: none !important;
+  color: #000054;
+}
+</style>-->
+
+	
+<!-- START SIDEBAR NAV PANEL -->
+<nav class="right-nav" aria-label="Section Menu">
+
+<h2><a href="../../index.html">Maths and statistics</a></h2><h3><a href="../index.html">Functions and graphs</a></h3><ul><li><a href="../graphs/index.html">Plotting points on a graph</a></li><li><a href="../fg1-functions-and-relations/index.html">FG1 Functions and relations</a></li><li><a href="../fg2-interval-notation/index.html">FG2 Interval notation</a></li><li><a href="../fg3-inverse-notation/index.html">FG3 Inverse notation</a></li><li><a href="../fg4-absolute-value-functions/index.html">FG4 Absolute value functions</a></li><li><a href="../fg5-hybrid-functions/index.html">FG5 Hybrid functions</a></li><li><a href="../fg6-circular-functions/index.html">FG6 Circular functions</a></li><li><a href="../fg7-linear-graphs/index.html">FG7 Linear graphs</a></li><li><a href="../fg8-quadratic-graphs/index.html">FG8 Quadratic graphs</a></li><li><a href="index.html" class="selected"  aria-current="page">FG9 Graphs and transformations</a><li><a href="../fg10-graphs-sine-and-cosine-functions/index.html">FG10 Graphs of sine and cosine functions</a></li></ul></nav>
+<!-- END SIDEBAR NAV PANEL -->
+
+
+
+
+<!--<script language="javascript">
+//this script shortens strings for titles that repeat the section title at the start
+//it currently looks for the characters colon and space ": " in the page title
+//this requires strict naming conventions for the title that use a colon 
+//to separate the repeated section title from the descriptive page title
+//the regex pattern to look for - in this case, text that comes after these characters ": "
+const regex = /:\s(.*)/; 
+list.querySelectorAll('a').forEach(a => {
+  //get the text from inside all the <a> tags inside the div with the id "list"
+  const text = a.innerHTML; 
+  //find matches with the regex pattern
+  const match = text.match(regex); 
+  if(match) {
+	//replace what's in each <a> tag that matches the pattern and convert the first character to upper case
+	a.innerHTML = match[1].charAt(0).toUpperCase() + match[1].slice(1); 
+  }
+})
+//as above, but for Heading 6
+list.querySelectorAll('h4').forEach(h4 => {
+  const text = h4.innerHTML; 
+  const match = text.match(regex);
+  if(match) {
+	h4.innerHTML = match[1].charAt(0).toUpperCase() + match[1].slice(1);
+  }
+})
+</script>-->
+		        </div>
+        <!-- END right nav -->
+        <!-- START content -->
+        <div class="col-xl-8 order-first">
+            <nav aria-label="breadcrumbs">
+<ul class="breadcrumbs">
+<li><a href="../../../index.html">Home</a></li>
+<li><a href="../../index.html">Maths and statistics</a></li>
+<li><a href="../index.html">Functions and graphs</a></li>
+</ul>
+</nav>            <a id="main-content"></a>
+            <h1 class="margin-top-zero">FG9 Graphs and transformations</h1>
+            <p><span class="marginnote"><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-0.png" alt="" /></span></p>
+<p class="lead">The known graphs of some simple functions and relations can be used to sketch related, but more complicated functions.</p>
+<p>If you know the graph of a function, you can often transform it to a graph of a more complex but related function. A simple example is the graph of the line <span class="math display">\[\begin{align*} y &amp; =x. \end{align*}\]</span> It has the graph:</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEqualsX.png" alt="Graph of y equals x" /></p>
+<p>The graph of <span class="math display">\[\begin{align*} y &amp; =x+2 \end{align*}\]</span> is shown in red below</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEqualsXAndYEqualsXPlus2.png" alt="Graph of y equals x plus 2" /></p>
+<p>This is just the graph of <span class="math inline">\(y=x\)</span> shifted <span class="math inline">\(2\)</span> units upward and is an example of a transformation involving vertical translation.</p>
+<p>This module discusses how to transform the graphs of known functions to more complex functions using simple rules that are called transformations. In particular, we will consider the following transformations:</p>
+<ol style="list-style-type: decimal;">
+<li>Reflection</li>
+<li>Translation</li>
+<li>Dilation</li>
+<li>Combinations of the above.</li>
+</ol>
+<div id="basic-graphs" class="section level1">
+<h2>Basic graphs</h2>
+<p>When attempting to graph a function, the following items need to be considered:</p>
+<ul>
+<li><span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> intercepts</li>
+<li>turning points</li>
+<li>behavior as <span class="math inline">\(x\rightarrow\pm\infty\)</span></li>
+<li>asymptotes. It is very useful to know the graphs of some simple functions. You can then transform them to more complex functions using the contents of this module. Below are some basic graphs that you should know.<span class="sidenote"><span class="sidenote-number">1</span> While it is best that you know these graphs, if you cannot recall them, you can still determine their graphs by plotting some points.</span></li>
+</ul>
+<div id="graph-of-yx" class="section level2">
+<h3>Graph of <span class="math inline">\(y=x\)</span></h3>
+<p>This is a straight line with slope or gradient of <span class="math inline">\(1.\)</span> It passes through the origin and is shown below.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEqualsX.png" alt="Graph of y equals x" /></p>
+</div>
+<div id="graph-of-yx2" class="section level2">
+<h3>Graph of <span class="math inline">\(y=x^{2}\)</span></h3>
+<p>This is a parabola with vertex at the origin as shown below.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEqualsXSquared.png" alt="Graph of y equals x squared" /></p>
+</div>
+<div id="graph-of-yx3" class="section level2">
+<h3>Graph of <span class="math inline">\(y=x^{3}\)</span></h3>
+<p>The essential feature is that the graph goes through the origin increases for positive <span class="math inline">\(x\)</span> and decreases for negative <span class="math inline">\(x.\)</span></p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEqualsXCubed.png" alt="Graph of y equals x cubed" /></p>
+</div>
+<div id="graph-of-y1x" class="section level2">
+<h3>Graph of <span class="math inline">\(y=1/x\)</span></h3>
+<p>This is a graph with asymptotes at <span class="math inline">\(x=0\)</span> and <span class="math inline">\(y=0\)</span> (the <span class="math inline">\(x-\)</span> axis) as shown below.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEqualsOneOverX.png" alt="Graph of y equals 1 over x" /></p>
+</div>
+<div id="graph-of-yax" class="section level2">
+<h3>Graph of <span class="math inline">\(y=a^{x}\)</span></h3>
+<p>The basic graph is as shown below for <span class="math inline">\(a=1.6\)</span>.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEqualsAToThePowerOfX.png" alt="Graph of y equals a to the power of x" /></p>
+<p>The important thing to note is that the <span class="math inline">\(y-\)</span> intercept is at <span class="math inline">\(1\)</span> and doesn’t depend on the value of <span class="math inline">\(a\)</span> because <span class="math inline">\(a^{0}=1.\)</span> Also the function cannot be less than zero so the negative <span class="math inline">\(x-\)</span>axis is an asymptote. Changing the value of <span class="math inline">\(a\)</span> will change the values on the <span class="math inline">\(y-\)</span>axis but the basic shape of the graph is the same. In practice, the most common value of <span class="math inline">\(a\)</span> is <span class="math inline">\(e\)</span> and is most likely to come up in your course. So the graph above gives the basic shape of <span class="math inline">\(y=e^{x}\)</span> but the <span class="math inline">\(y-\)</span> axis values are incorrect.</p>
+</div>
+<div id="graph-of-ylog-x" class="section level2">
+<h3>Graph of <span class="math inline">\(y=\log x\)</span></h3>
+<p>The graph is shown below.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEqualsLogX.png" alt="Graph of y equals log base ten of x" /></p>
+<p>The important characteristic is that the graph cuts the <span class="math inline">\(x-\)</span> axis at <span class="math inline">\(1\)</span> because <span class="math inline">\(\log\left(1\right)=0.\)</span> Note that this graph is similar for <span class="math inline">\(\ln\left(x\right)=\log_{e}\left(x\right)\)</span> or any other log base .</p>
+</div>
+<div id="graph-of-ysinleftxright" class="section level2">
+<h3>Graph of <span class="math inline">\(y=\sin\left(x\right)\)</span></h3>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YSinOfX.png" alt="Graph of y equals sine of x" /></p>
+</div>
+</div>
+<div id="transformations" class="section level1">
+<h2>Transformations</h2>
+<p>As mentioned above, transformations may be used to modify basic graphs. The transformations are</p>
+<ol style="list-style-type: decimal;">
+<li>Reflection</li>
+<li>Translation</li>
+<li>Dilation</li>
+<li>Combinations of the above.</li>
+</ol>
+</div>
+<div id="reflection" class="section level1">
+<h2>Reflection</h2>
+<p>As the name suggests, a reflection is a mirror image of a graph. Reflection may be about any line but generally involves the <span class="math inline">\(x\)</span> or <span class="math inline">\(y\)</span> axes.</p>
+<p>For a graph <span class="math inline">\(y=f\left(x\right),\)</span> <span class="math display">\[\begin{align*} y &amp; =f\left(-x\right) \end{align*}\]</span> reflects the graph about the <span class="math inline">\(y-\)</span>axis while</p>
+<p><span class="math display">\[\begin{align*} y= &amp; -f\left(x\right) \end{align*}\]</span> reflects the graph about the <span class="math inline">\(x-\)</span>axis.</p>
+<div id="example-1-reflection-of-yax-in-the-x-and-y-axes" class="section level2">
+<h3>Example <span class="math inline">\(1\)</span>: Reflection of <span class="math inline">\(y=a^{x}\)</span> in the <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> axes</h3>
+<p>Referring to the graphs shown below.</p>
+<p>The original graph is <span class="math inline">\(y=a^{x}\)</span> and is shown in blue.</p>
+<p>Reflection about the <span class="math inline">\(y-\)</span>axis is given by <span class="math inline">\(y=a^{-x}\)</span> and is shown in red.</p>
+<p>Reflection about the <span class="math inline">\(x-\)</span>axis is given by <span class="math inline">\(y=-a^{x}\)</span> and is shown in green.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEqualsAToThePowerOfXReflection.png" alt="Graphs of y equals a to the power of x in blue, a to the power of minus x in red and minus a to the power of x in green" /></p>
+</div>
+<div id="example-2-reflection-of-yx2-in-the-x-and-y-axes" class="section level2">
+<h3>Example <span class="math inline">\(2\)</span>: Reflection of <span class="math inline">\(y=x^{2}\)</span> in the <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> axes</h3>
+<p>Original graph is <span class="math inline">\(y=x^{2}\)</span> and is shown in blue below</p>
+<p>Reflection about the <span class="math inline">\(y-\)</span>axis is given by <span class="math inline">\(y=\left(-x\right)^{2}=x^{2}.\)</span> This means the reflection in the <span class="math inline">\(y-\)</span>axis of the original graph doesn’t change anything. This is due to symmetry of the original graph about the <span class="math inline">\(y-\)</span>axis.</p>
+<p>Reflection about the <span class="math inline">\(x-\)</span>axis is given by <span class="math inline">\(y=-x^{2}\)</span> and is shown below in red.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-ReflctionOfXSquaredAboutXAxis.png" alt="Graphs of y equals x squared in blue and graph of minus x squared in red" /></p>
+</div>
+<div id="example-3-reflection-of-y2x1-in-the-x-and-y-axes" class="section level2">
+<h3>Example <span class="math inline">\(3\)</span>: Reflection of <span class="math inline">\(y=2x+1\)</span> in the <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> axes</h3>
+<p>Original graph is <span class="math inline">\(y=2x+1\)</span> and is shown in blue below.</p>
+<p>Reflection in the <span class="math inline">\(y-\)</span>axis is given by <span class="math inline">\(y=2\left(-x\right)+1=-2x+1\)</span> and is shown in green.</p>
+<p>Reflection in the <span class="math inline">\(x-\)</span>axis is given by <span class="math inline">\(y=-\left(2x+1\right)=-2x-1\)</span> and is shown in red.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEquals2XPlus1AndReflections.png" alt="Graphs of y equals 2x plus 1 in blue, y equals minus 2x plus 1 in green and y equals minus 2x minus 1 in red" /></p>
+</div>
+</div>
+<div id="translation" class="section level1">
+<h2>Translation</h2>
+<p>Translation involves moving a graph, in the <span class="math inline">\(x-y\)</span> plane, horizontally or vertically.</p>
+<div id="horizontal" class="section level2">
+<h3>Horizontal</h3>
+<p>The graph of <span class="math inline">\(y=f\left(x-a\right)\)</span> is a shift of the graph of <span class="math inline">\(y=f\left(x\right)\)</span> “<span class="math inline">\(a\)</span>” units to the <strong>right</strong>.</p>
+<p>The graph of <span class="math inline">\(y=f\left(x+a\right)\)</span> is a shift of the graph of <span class="math inline">\(y=f\left(x\right)\)</span> “<span class="math inline">\(a\)</span>” units to the <strong>left</strong>.</p>
+</div>
+<div id="vertical" class="section level2">
+<h3>Vertical</h3>
+<p>The graph of <span class="math inline">\(y=f\left(x\right)+b\)</span> is a shift of the graph of <span class="math inline">\(y=f\left(x\right)\)</span> “<span class="math inline">\(b\)</span>” units <strong>up</strong>.</p>
+<p>The graph of <span class="math inline">\(y=f\left(x\right)-b\)</span> is a shift of the graph of <span class="math inline">\(y=f\left(x\right)\)</span> “<span class="math inline">\(b\)</span>” units <strong>down</strong>.</p>
+</div>
+<div id="example-4-translation-of-ylogleftxright-1-unit-to-the-right." class="section level2">
+<h3>Example <span class="math inline">\(4\)</span>: Translation of <span class="math inline">\(y=\log\left(x\right)\)</span> <span class="math inline">\(1\)</span> unit to the right</h3>
+<p>Original graph is <span class="math inline">\(y=\log\left(x\right)\)</span> and is shown in blue below. The translated graph is <span class="math inline">\(y=\log\left(x-1\right)\)</span> and is shown in red below. It is the graph of the original function shifted <span class="math inline">\(1\)</span> unit to the right.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEqualsLogXAndLrackXminus1Rbrack.png" alt="Graphs of y equals log base ten x in blue and y equals log base ten left bracket x minus 1 right bracket in red" /></p>
+<p>Note that the negative <span class="math inline">\(y-\)</span>axis forms an asymptote for the original graph. The translated graph has an asymptote of <span class="math inline">\(x=1\)</span> and is shown as a dotted line. The new asymptote should be shown on the graph of the transformed function.</p>
+</div>
+<div id="example-5-translation-of-y1x-three-units-to-the-left" class="section level2">
+<h3>Example <span class="math inline">\(5\)</span>: Translation of <span class="math inline">\(y=1/x\)</span> three units to the left</h3>
+<p>The original graph is of <span class="math inline">\(y=1/x\)</span> and is shown in blue below. The translated graph is <span class="math display">\[\begin{align*} y &amp; =\frac{1}{x+3} \end{align*}\]</span> and is the graph of the original function shifted <span class="math inline">\(3\)</span> units to the left. It is shown in red below.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEqualsOneOverXAndOneOverLbrackXPlusThreeRbrack.png" alt="Graphs of y equals 1 over x in blue and y equals 1 over left bracket x plus 3 right bracket. New asymptote at x equals minus 3 dotted black" /></p>
+<p>The original graph had the <span class="math inline">\(y-\)</span>axis as its asymptote. The transformed graph has an asymptote at <span class="math inline">\(x=-1\)</span> which is shown as a dotted line.</p>
+</div>
+<div id="example-6-translation-of-ysinleftxright-pi2-units-to-the-left" class="section level2">
+<h3>Example <span class="math inline">\(6\)</span>: Translation of <span class="math inline">\(y=\sin\left(x\right),\)</span> <span class="math inline">\(\pi/2\)</span> units to the left</h3>
+<p>The original graph is of <span class="math inline">\(y=\sin\left(x\right)\)</span>. The transformed graph is <span class="math inline">\(y=\sin\left(x+\pi/2\right)\)</span> . Both graphs are shown below in blue and red respectively below.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-Translation-of-y.png" alt="Graph of y equals sine of x in blue and y equals sine of left bracket x minus half pi right in red" /></p>
+<p>This is an interesting example as the translation converts the sine function to the cosine function.<span class="sidenote"><span class="sidenote-number">2</span> To see this, recall the trigonometry identity <span class="math display">\[\begin{align*} \sin\left(a+b\right) &amp; =\sin\left(a\right)\cos\left(b\right)+\cos\left(a\right)\sin\left(b\right). \end{align*}\]</span> Now let <span class="math inline">\(a=x\)</span> and <span class="math inline">\(b=\pi/2.\)</span> Substituting in the above identity we get <span class="math display">\[\begin{align*} \sin\left(x+\frac{\pi}{2}\right) &amp; =\sin\left(x\right)\cos\left(\frac{\pi}{2}\right)+\cos\left(x\right)\sin\left(\frac{\pi}{2}\right)\\ &amp; =\sin\left(x\right)\cdot0+\cos\left(x\right)\cdot1\\ &amp; =\cos\left(x\right). \end{align*}\]</span></span></p>
+</div>
+<div id="example-7-translation-of-ysinleftxright-two-units-vertically-up" class="section level2">
+<h3>Example <span class="math inline">\(7\)</span>: Translation of <span class="math inline">\(y=\sin\left(x\right)\)</span> two units vertically up</h3>
+<p>The original graph is of <span class="math inline">\(y=\sin\left(x\right)\)</span>. The transformed graph is <span class="math inline">\(y=\sin\left(x\right)+2\)</span> . Both graphs are shown below in blue and red respectively below.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEqualsSinXAndSinXPlus2.png" alt="Graph of y equals sine of x in blue and y equals sine of left bracket x right bracket plus 2 in red" /></p>
+<p>It is clear that the translation simply moves the graph of <span class="math inline">\(y=\sin\left(x\right)\)</span> up <span class="math inline">\(2\)</span> units. Nothing else changes.</p>
+</div>
+<div id="example-8-translation-of-yx2-two-units-vertically-down" class="section level2">
+<h3>Example <span class="math inline">\(8\)</span>: Translation of <span class="math inline">\(y=x^{2}\)</span> two units vertically down</h3>
+<p>The original graph is of <span class="math inline">\(y=x^{2}\)</span>. The transformed graph is <span class="math inline">\(y=x^{2}-2\)</span> . Both graphs are shown below in blue and red respectively.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEqualsXSquaredAndMinusXSquaredAndXSquaredMinus2.png" alt="Graph of y equals x squared in blue and y equals x squared plus 2 in red" /></p>
+<p>It is clear that the translation simply moves the graph of <span class="math inline">\(y=x^{2}\)</span> down <span class="math inline">\(2\)</span> units. Nothing else changes.</p>
+</div>
+</div>
+<div id="dilations" class="section level1">
+<h2>Dilations</h2>
+<p>Dilations stretch or compress a graph of a function. The stretching or compression can occur in the directions of either the <span class="math inline">\(x\)</span> or the <span class="math inline">\(y\)</span> axes, or both.</p>
+<p>The graph of <span class="math inline">\(y=af\left(x\right)\)</span> is a dilation of the graph of <span class="math inline">\(y=f\left(x\right)\)</span> by a factor of “<span class="math inline">\(a\)</span>” units in the direction parallel to the <span class="math inline">\(y-\)</span>axis. If <span class="math inline">\(a&gt;1\)</span> the graph is stretched or elongated. If <span class="math inline">\(a&lt;1,\)</span>the graph is compressed or squashed.</p>
+<p>The graph of <span class="math inline">\(y=f\left(bx\right)\)</span> is a dilation of the graph of <span class="math inline">\(y=f\left(x\right)\)</span> by a factor of “<span class="math inline">\(1/b\)</span>” units in the direction parallel to the <span class="math inline">\(x-\)</span>axis. If <span class="math inline">\(b&gt;1\)</span> the graph is compressed or squashed. If <span class="math inline">\(b&lt;1,\)</span>the graph is stretched or elongated.</p>
+<div id="example-9-dilation-of-yx2-parallel-to-the-y-axis-by-a-factor-of-4-and-13" class="section level2">
+<h3>Example <span class="math inline">\(9\)</span>: Dilation of <span class="math inline">\(y=x^{2}\)</span> parallel to the <span class="math inline">\(y-\)</span>axis by a factor of <span class="math inline">\(4\)</span> and 1/3</h3>
+<p>The graphs are shown below.</p>
+<p>The original graph of <span class="math inline">\(y=x^{2}\)</span> is shown in blue.</p>
+<p>The dilation <span class="math inline">\(y=4x^{2}\)</span> is shown in red and shows that the original graph is stretched parallel to the <span class="math inline">\(y-\)</span> axis.</p>
+<p>The dilation <span class="math inline">\(y=\frac{1}{3}x^{2}\)</span>is shown in green and shows that the original graph is squashed parallel to the <span class="math inline">\(y-\)</span> axis.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEquals1OverTimesXSquaredAndXSquaredAnd4TimesXSquared.png" alt="Graphs of y equals x squared in blue and y equals 4 times x squared in red and y equals one third x squared in green" /></p>
+</div>
+<div id="example-10-dilation-of-ysinleftxright-parallel-to-the-x-axis-by-a-factor-of-2" class="section level2">
+<h3>Example <span class="math inline">\(10\)</span>: Dilation of <span class="math inline">\(y=\sin\left(x\right)\)</span> parallel to the <span class="math inline">\(x-\)</span>axis by a factor of <span class="math inline">\(2\)</span></h3>
+<p>The graphs are shown below.</p>
+<p>The original graph of <span class="math inline">\(y=\sin\left(x\right)\)</span> is shown in blue. It has a period of <span class="math inline">\(2\pi.\)</span></p>
+<p>The dilation <span class="math inline">\(y=\sin\left(2x\right)\)</span> is shown in red and shows that the original graph is squashed by a factor of <span class="math inline">\(2\)</span> parallel to the <span class="math inline">\(x-\)</span> axis. The dilated graph has a period of <span class="math inline">\(\pi\)</span> which is half that of the original graph.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEqualsSinXAndSin2X.png" alt="Graphs of y equals sine of x in blue and y equals sine of 2x in red" /></p>
+</div>
+<div id="example-11-dilation-of-ysinleftxright-parallel-to-the-x-axis-by-a-factor-of-12" class="section level2">
+<h3>Example <span class="math inline">\(11\)</span>: Dilation of <span class="math inline">\(y=\sin\left(x\right)\)</span> parallel to the <span class="math inline">\(x-\)</span>axis by a factor of <span class="math inline">\(1/2\)</span></h3>
+<p>The graphs are shown below.</p>
+<p>The original graph of <span class="math inline">\(y=\sin\left(x\right)\)</span> is shown in blue. It has a period of <span class="math inline">\(2\pi.\)</span></p>
+<p>The dilation <span class="math inline">\(y=\sin\left(0.5x\right)\)</span> is shown in red and shows that the original graph is stretched parallel to the <span class="math inline">\(x-\)</span> axis. The dilated graph has a period of <span class="math inline">\(4\pi\)</span> which is twice that of the original graph.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEqualsSinXAndSinHalfX.png" alt="Graphs of y equals sine of x in blue and y equals sine of half of x in red" /></p>
+</div>
+</div>
+<div id="combinations-of-transformations" class="section level1">
+<h2>Combinations of transformations</h2>
+<p>More complicated graphs may be obtained from a basic graph by combining reflection, translation and dilation. In such cases you start with the basic graph and do the dilation first (if there is one). After this step, do translations and reflections in any order.</p>
+<div id="example-12-graph-of-y2x34" class="section level2">
+<h3>Example <span class="math inline">\(12\)</span>: Graph of <span class="math inline">\(y=2x^{3}+4\)</span></h3>
+<p>The basic graph is <span class="math inline">\(y=x^{3}.\)</span> We want to transform this to <span class="math inline">\(y=2x^{3}+4.\)</span> This involves two transformations <span class="math display">\[\begin{align*} y &amp; =\underbrace{\ 2\ }_{\text{Transformation1 }}x^{3}+\underbrace{\ 4\ }_{\text{Transformation 2}} \end{align*}\]</span></p>
+<p>Transformation <span class="math inline">\(1\)</span> is a dilation of 2 parallel to the <span class="math inline">\(y-\)</span>axis. It is a stretching of the original graph parallel to the <span class="math inline">\(y-\)</span>axis.</p>
+<p>Transformation <span class="math inline">\(2\)</span> is a translation of <span class="math inline">\(4\)</span> units upward.</p>
+<p>The basic graph to be transformed is <span class="math inline">\(y=x^{3}\)</span> and is shown in blue below.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEquals2XCubedPlus4Part1.png" alt="Graph of y equals x cubed in blue" /></p>
+<p>We first do the dilation on this basic graph. That is we graph <span class="math inline">\(y=2x^{3}\)</span>. This is shown as the dashed blue graph below.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEquals2XCubedPlus4Part2.png" alt="Graph of y equals x cubed in blue and y equals 2 times x cubed in dashed blue" /></p>
+<p>Finally we do the translation of <span class="math inline">\(4\)</span> units upwards to get the desired graph of <span class="math inline">\(y=2x^{3}+4\)</span>. This is shown in red below.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEquals2XCubedPlus4Part3.png" alt="Graph of y equals x cubed in blue and y equals 2 times x cubed in dashed blue any y equals 2 times x cubed plus 4 in red." /></p>
+<p>The only thing left to do is identify where the graph of <span class="math inline">\(y=2x^{3}+4\)</span> intersects the <span class="math inline">\(x-\)</span>axis. To do this we set <span class="math inline">\(y=0\)</span> and solve for <span class="math inline">\(x.\)</span> That is <span class="math display">\[\begin{align*} 2x^{3}+4 &amp; =0\\ 2x^{3} &amp; =-4\\ x^{3} &amp; =-2\\ x &amp; =-1.26. \end{align*}\]</span> This information can be added to get the following figure:</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEquals2XCubedPlus4Part4.png" alt="Same as previous graph but showing x intercept" /></p>
+<p>Our final answer is the red graph shown below:</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEquals2XCubedPlus4Part5.png" alt="Final graph of y equals 2 times x cubed plus 4 in red" /></p>
+</div>
+<div id="example-13-graph-of-y-leftx2right2-1" class="section level2">
+<h3>Example <span class="math inline">\(13\)</span>: Graph of <span class="math inline">\(y=-\left(x+2\right)^{2}-1\)</span></h3>
+<p>The basic graph in this case is <span class="math inline">\(y=x^{2}.\)</span> There are three transformations involved: <span class="math display">\[\begin{align*} y &amp; =\underbrace{-}_{\text{Transformation 1}}\underbrace{\left(x+2\right)^{2}}_{\text{Tranformation 2 }}\underbrace{-1}_{\text{Transformation 3}} \end{align*}\]</span></p>
+<p>Transformation <span class="math inline">\(1\)</span> is a reflection about the <span class="math inline">\(x-\)</span>axis.</p>
+<p>Transformation <span class="math inline">\(2\)</span> is shift of <span class="math inline">\(y=x^{2}\)</span> to the left by <span class="math inline">\(2\)</span>units.</p>
+<p>Transformation <span class="math inline">\(3\)</span> is a shift of <span class="math inline">\(1\)</span> unit downwards.</p>
+<p>As there is no dilation, we are free to make the transforms on the basic graph in any order. In this example we will go from transformation <span class="math inline">\(1\)</span> to <span class="math inline">\(3\)</span> but the order does not matter.</p>
+<p>The figure below shows the basic graph <span class="math inline">\(y=x^{2}\)</span> in blue.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEqualsMinusLbrackXPlus2RbrackMinus1Part1.png" alt="Graph of y equals x squared in blue" /></p>
+<p>Transformation <span class="math inline">\(1\)</span> reflects this in the <span class="math inline">\(x-\)</span>axis. This is the graph of <span class="math inline">\(y=-x^{2}\)</span> and is shown in dashed blue below.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEqualsMinusLbrackXPlus2RbrackMinus1Part2.png" alt="Graph of y equals x squared in blue and y equals minus x squared in dashed blue" /></p>
+<p>Transformation 2 shifts the graph of <span class="math inline">\(y=-x^{2}\)</span>, <span class="math inline">\(2\)</span> units to the left. This is the graph of <span class="math inline">\(y=-\left(x-2\right)^{2}\)</span> and is shown in orange.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEqualsMinusLbrackXPlus2RbrackMinus1Part3.png" alt="Graph of y equals x squared in blue and y equals minus x squared in dashed blue and y equals minus left bracket x plus 2 right bracket squared in orange." /></p>
+<p>Transformation <span class="math inline">\(3\)</span> shifts the graph of <span class="math inline">\(y=-\left(x+2\right)^{2}\)</span> down one unit. This is the desired graph of <span class="math inline">\(y=-\left(x+2\right)^{2}-1\)</span> and is shown below in red.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEqualsMinusLbrackXPlus2RbrackMinus1Part4.png" alt="Previous graph with orange graph translated 1 unit downwards and shown in red" /></p>
+<p>The intercept of the graph of <span class="math inline">\(y=-\left(x+2\right)^{2}-1\)</span> appears to at <span class="math inline">\(\left(0,-5)\right)\)</span>. This can be checked by setting <span class="math inline">\(x=0:\)</span> <span class="math display">\[\begin{align*} y &amp; =-\left(x+2\right)^{2}-1\\ &amp; =-\left(0+2\right)^{2}-1\\ &amp; =-5. \end{align*}\]</span> The final graph of <span class="math inline">\(y=-\left(x+2\right)^{2}-1\)</span> is shown below in red. We have marked the <span class="math inline">\(y-\)</span>intercept at <span class="math inline">\(\left(0,-5\right)\)</span> and the vertex at <span class="math inline">\(\left(-2,1\right).\)</span></p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEqualsMinusLbrackXPlus2RbrackMinus1Part5.png" alt="Final graph of y equals minus left bracket x plus 2 right bracket squared minus 1 in red" /></p>
+</div>
+<div id="example-14-graph-of-ysqrt-x2" class="section level2">
+<h3>Example <span class="math inline">\(14\)</span>: Graph of <span class="math inline">\(y=\sqrt{-x}+2\)</span></h3>
+<p>The basic graph is of <span class="math inline">\(y=\sqrt{x}\)</span> .</p>
+<p>The graph of <span class="math inline">\(y=\sqrt{-x}+2\)</span> involves two transformations: <span class="math display">\[\begin{align*} y &amp; =\sqrt{\underbrace{\,-x}_{\text{Transformation 1}}}+\underbrace{\,2}_{\text{Transformation 2}}. \end{align*}\]</span></p>
+<p>Transformation 1 is a reflection of the graph of <span class="math inline">\(y=\sqrt{x}\)</span> in the <span class="math inline">\(y-\)</span>axis and is the graph of <span class="math inline">\(y=\sqrt{-x}\)</span>.</p>
+<p>Transformation 2 is a translation of <span class="math inline">\(2\)</span>units vertically up and gives the graph of <span class="math inline">\(y=\sqrt{x}+2\)</span>.</p>
+<p>The graphs of <span class="math inline">\(y=\sqrt{x}\)</span>, <span class="math inline">\(y=\sqrt{-x}\)</span>, and <span class="math inline">\(y=\sqrt{-x}+2\)</span> are shown below in blue, dashed blue and red, respectively.</p>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-YEqualsSqrtLbrackMinus1RbrackPlus2.png" alt="Graphs of y equals square root of x in blue, y equals sqaure root of minus x in dashed blue, y equals square root of minus x plus 2" /></p>
+</div>
+</div>
+<div id="exercises" class="section level1">
+<h2>Exercises</h2>
+<p>Sketch the following graphs</p>
+<p><span class="math inline">\(\text{1. }y=\frac{2}{x+1}\)</span></p>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-answer-9710">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-9548" aria-expanded="false" aria-controls="body-answer-9548" >Answer</button>
+</p>
+<div id="body-answer-9548" class="accordion-collapse collapse " aria-labelledby="head-answer-9710">
+<div class="accordion-body">
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-Exercise1Answer.png" alt="Graph of y equals 2 over left bracket x plus 1 right bracket" /></p>
+</div></div></div>
+<p><span class="math inline">\(\text{2. }y=\log\left(x+3\right)\)</span></p>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-answer-9835">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-3876" aria-expanded="false" aria-controls="body-answer-3876" >Answer</button>
+</p>
+<div id="body-answer-3876" class="accordion-collapse collapse " aria-labelledby="head-answer-9835">
+<div class="accordion-body">
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-Exercise2Answer.png" alt="Graph of y equals log left bracket x plus 3 right bracket" /></p>
+</div></div></div>
+<p><span class="math inline">\(\text{3. }y=x^{2}-25\)</span></p>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-answer-6177">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-2284" aria-expanded="false" aria-controls="body-answer-2284" >Answer</button>
+</p>
+<div id="body-answer-2284" class="accordion-collapse collapse " aria-labelledby="head-answer-6177">
+<div class="accordion-body">
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-Exercise3Answer.png" alt="Graph of y equals x squared minus 25" /></p>
+</div></div></div>
+<p><span class="math inline">\(\text{4. }y=2-\left(x+1\right)^{2}\)</span></p>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-answer-1722">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-3976" aria-expanded="false" aria-controls="body-answer-3976" >Answer</button>
+</p>
+<div id="body-answer-3976" class="accordion-collapse collapse " aria-labelledby="head-answer-1722">
+<div class="accordion-body">
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-Exercise4Answer.png" alt="Graph of y equals 2 minus left bracket x plus 1 right bracket squared" /></p>
+</div></div></div>
+<p><span class="math inline">\(\text{5. }y=4^{x}\)</span></p>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-answer-2080">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-5703" aria-expanded="false" aria-controls="body-answer-5703" >Answer</button>
+</p>
+<div id="body-answer-5703" class="accordion-collapse collapse " aria-labelledby="head-answer-2080">
+<div class="accordion-body">
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-Exercise5Answer.png" alt="y equals 4 to the power of x" /></p>
+</div></div></div>
+<p><span class="math inline">\(\text{6. }y=2e^{x}+1\)</span></p>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-answer-6935">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-7665" aria-expanded="false" aria-controls="body-answer-7665" >Answer</button>
+</p>
+<div id="body-answer-7665" class="accordion-collapse collapse " aria-labelledby="head-answer-6935">
+<div class="accordion-body"></div></div></div>
+<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-fg9-Exercise6Answer.png" alt="&quot;Gr&lt;/p" /></p>
+</div>
+<p>Images on this page by RMIT, licensed under CC BY-NC 4.0.</p>
+			<nav class="btn-nav-container" aria-label="Previous and next links">
+<h2 class="btn-nav-prev">
+    <a href="../fg8-quadratic-graphs/index.html">
+        <span aria-hidden="true">FG8 Quadratic graphs</span>
+        <span class="visually-hidden">Previous page: FG8 Quadratic graphs</span>
+    </a>
+</h2>
+    
+
+
+<h2 class="btn-nav-next">
+    <a href="../fg10-graphs-sine-and-cosine-functions/index.html">
+        <span aria-hidden="true">FG10 Graphs of sine and cosine functions</span>
+        <span class="visually-hidden">Next page: FG10 Graphs of sine and cosine functions</span>
+    </a>
+</h2>
+	
+</nav><!-- .navigation -->			<div id="additional-info">
+			
+			
+
+
+
+<!-- keywords echo - https://www.advancedcustomfields.com/resources/taxonomy/ -->      
+
+<hr class="margin-top-xl">
+<div class="keywords">
+    <h2 class="h5">Keywords</h2>
+    <ul>
+                <li><a href="../../../keyword/functions/index.html">Functions</a></li>  
+                <li><a href="../../../keyword/graphs/index.html">Graphs</a></li>  
+                <li><a href="../../../keyword/maths/index.html">Maths</a></li>  
+        </ul>
+</div>
+ 
+<!-- keywords echo end 
+
+<!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
+<!--
+<p><strong>Subjects </strong>
+    | <strong><a href="https://lab.bitma.app/subject-area/maths/">Maths</a></strong>  
+    </p>
+-->
+<!-- category echo end -->
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+        <!-- END content --> 
+    </div>
+</div>
+
+</main>
+
+					
+		
+<div class="wrapper footer-container" id="wrapper-footer-colophon">
+	<div class="container">
+        <div class="row">
+            <div class="col">
+				<!-- START ask the library -->
+				<div class="ask-container">
+					
+					<section class="ask-the-library">
+						<a href="https://www.rmit.edu.au/library/about-and-contacts/ask-the-library">
+							<img src="https://rmitlibrary.github.io/cdn/image/svg/ask-the-library.svg" class="ask-logo" alt="Ask the library" />
+							<div class="ask-text">
+								<p class="lead">Still can't find what you need?</p>
+								<p>The RMIT University Library provides study support, one-on-one consultations and peer mentoring to RMIT students.</p>
+							</div>
+						</a>
+					</section>
+			
+				</div>
+				<!-- END ask the library -->
+			</div>
+ 		</div>
+	</div>
+    <!-- START acknowledgement -->
+    <div class="acknowledgement">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <section class="acknowledgement-container">
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
+                        </div>
+
+                        <div class="content">
+                            <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
+                            <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
+                            
+                            <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
+                            <a href="#" class="link-large">More information</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!-- END acknowledgement -->
+    <!-- START footer -->
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- START logo -->    
+                <a aria-label="Royal Melbourne Institute of Technology University Logo" href="https://www.rmit.edu.au/">
+					<div aria-hidden="true" class="logo"><span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/rmit-logo.svg" style="width: 100px" alt="" /></span>
+					</div>
+				</a>
+                <!-- END logo -->
+                <!-- START links -->
+				<ul class="footer-links">
+					<li><a href="">About Learning Lab</a></li>
+					<li><a href="">For educators</a></li>
+					<li><a href="">Contribute</a></li>
+					<li><a href="">Contact us</a></li>
+				</ul>
+                <!-- END links -->
+                <!-- START legal-social -->
+                <div class="footerlegalShareItems">
+                    <!-- START legal -->
+                    <div class="footer-legal">
+                    <ul>
+                        <li>Copyright © 2024 RMIT University<span> | </span></li>
+                        <li><a href="https://www.rmit.edu.au/utilities/terms"><span class="no-focus" tabindex="-1">Terms</span></a><span> | </span></li>
+                        <li><a href="https://www.rmit.edu.au/utilities/privacy"><span class="no-focus" tabindex="-1">Privacy</span></a><span> | </span></li>
+                        <li><a href="https://www.rmit.edu.au/utilities/accessibility"><span class="no-focus" tabindex="-1">Accessibility</span></a> <span> | </span></li>
+                        <li><a data-analytics-type="footerlink" data-analytics-value="Website feedback" href="https://www.rmit.edu.au/utilities/website-feedback"><span class="no-focus" tabindex="-1">Website feedback</span></a><span> | </span></li>
+                        <li><a data-analytics-type="footerlink" data-analytics-value="Complaints" href="https://www.rmit.edu.au/utilities/complaints"><span class="no-focus" tabindex="-1">Complaints</span></a><span> | </span></li>
+                        <li>ABN 49 781 030 034<span> | </span></li>
+                        <li>CRICOS provider number: 00122A<span> | </span></li>
+                        <li>TEQSA provider number: PRV12145<span> | </span></li>
+                        <li>RTO Code: 3046<span> | </span></li>
+                        <li><a href="https://www.open.edu.au/online-courses/rmit-university"><span class="no-focus" tabindex="-1">Open Universities Australia</span></a> </li>
+                      </ul>
+                    </div>
+                    <!-- END legal -->
+                    <!-- START social -->
+                    <div class="social-nav">
+                    <ul> 
+                        <!-- START facebook -->
+                        <li><a aria-label="For Facebook"  href="https://www.facebook.com/RMITuniversity/"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/facebook.svg" alt="" /></span></a></li>
+                        <!-- END facebook -->
+                        <!-- START twitter/x -->
+                        <li><a aria-label="For Twitter" href="https://twitter.com/rmit"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/twitter.svg" alt="" /></span></a></li>
+                        <!-- END twitter/x -->
+                        <!-- START insta -->
+                        <li><a aria-label="For Instagram" href="https://www.instagram.com/rmituniversity/"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/instagram.svg" alt="" /></span> </a></li>
+                        <!-- END insta -->              
+                        <!-- START LinkedIn -->
+                        <li><a aria-label="For LinkedIn" data-analytics-type="socialshare" data-analytics-value="LinkedIn" href="https://www.linkedin.com/school/rmit-university/"><span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/linkedin.svg" alt="" /></span></a></li>
+                        <!-- END LinkedIn -->
+                        <!-- START YouTube -->
+                        <li><a aria-label="For Youtube" href="https://www.youtube.com/user/rmitmedia"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/youtube.svg" alt="" /></span></a></li>
+                        <!-- END YouTube -->     
+                        <!-- START Weibo -->          
+                        <li><a aria-label="For Weibo" href="https://www.weibo.com/rmituni"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/weibo.svg" alt="" /></span></a></li>
+                        <!-- END Weibo -->                
+					</ul>
+					</div>
+                    <!-- END social -->
+                </div>
+                <!-- END legal-social -->
+            </div>
+        </div>
+    </div>
+	</footer>
+    <!-- END footer -->		
+</div><!-- wrapper end -->
+		
+	
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+<script src="../../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
+<!-- adding requirements for context/hamburger menu start -->
+<script>
+// ---------
+// Script to show and hide hamburger menu 
+// ---------    
+
+// Grab both the menu button, the page content and footer
+var menuButton = document.getElementById("menu-button");
+var pageContent = document.getElementById("theme-main"); 
+var footer = document.getElementById("wrapper-footer-colophon"); 
+  
+// Store display status of menu
+var menuDisplay = false;
+    
+// Store content scroll position
+var scrollPosition;
+
+// Listen for click - call showhideMenu
+menuButton.addEventListener("click", showHideMenu);
+
+// Menu uses bootstraps "collapse" function
+// If menu is hidden, bootstrap will show it, hide page content.
+// If it's displayed, bootstrap will hide it, show the content.
+
+
+// Function to toggle the visibility of a menu and adjust page content accordingly.
+function showHideMenu() {
+    // Check if the menu is currently hidden
+    if(menuDisplay == false)
+    {
+        // Set the menu display flag to true (menu is now shown) and save scroll position
+        menuDisplay = true;
+        scrollPosition = window.scrollY;
+        
+        // Hide the main page content and footer
+        pageContent.style.display = "none"; 
+        footer.style.display = "none"; 
+    }
+    else
+    {
+        // Set the menu display flag to false (menu is now hidden)
+        menuDisplay = false;
+        
+        // Show the main page content and footer
+        pageContent.style.display = "block"; 
+        footer.style.display = "block"; 
+        
+        //turn off smooth scrolling, jump to stored scroll postion, then turn smooth scrolling back on
+        document.documentElement.style.scrollBehavior = "auto";
+        window.scroll(0, scrollPosition);
+        document.documentElement.style.scrollBehavior = "smooth";
+    }
+}
+
+</script>
+<!-- adding requirements for context/hamburger menu end -->
+<!-- adding requirements for reponsive iframes -->
+<!-- Code to handle resizing iframes on this page -->
+    <script type="text/javascript" src="../../../wp-content/themes/picostrap5-child-base/js/iframeResizer.min.js"></script>
+    <script type="text/javascript">
+        iFrameResize({log:true});
+    </script>
+
+<!--    code to handle this page being resized by other wordpress pages,
+        e.g. embed mode described below -->
+<script src="https://rmitlibrary.github.io/cdn/libraries/js/iframeResizer.contentWindow.min.js"></script>
+
+<!-- adding requirements for reponsive iframes end -->
+
+<!-- adding requirements for embed mode start -->
+<script>
+    
+// ---------
+/* Script to turn on embed mode
+// Removes top nav, footer, breadcrumbs, right nav, keywords and prev/next by default
+// Options to remove h1, p lead and show prev/next
+ Sample query string:
+ ?iframe=true&hide-title=true&hide-intro=true
+ 
+ iframe - set to true to enable embed mode
+ hide-title - set to true to hide title
+ hide-intro - set to true to hid first <p class="lead">
+ show-prev-next - set to true to show previous and next buttons
+ 
+ Unlikely hide-title and hide-intro would be used in concert with show-prev-next 
+*/
+// ---------
+    
+//Check query string for embed=true. If it is there, call embedThisPage
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const embedBool = urlParams.get('iframe');
+    
+//in this mode title and intro are shown by default
+const hideTitle = urlParams.get('hide-title');
+const hideIntro = urlParams.get('hide-intro');
+
+//in this mode prev and next are hidden by default
+const showPrevNext = urlParams.get('show-prev-next');
+	
+if(embedBool == 'true') {
+	embedThisPage();
+    handeEmbedLinks();
+}
+
+// embedThisPage hides or removes markup to optimise the display of a page inside an iframe,
+// depending on additional query string values
+function embedThisPage()
+{
+	// pick up the relevant objects in the page
+	var nav = document.querySelector('header');
+	var breadcrumbs = document.querySelector('nav[aria-label="breadcrumbs"]');
+	var rightNav = document.querySelector('div.col-xl-4.order-last');
+    var myFooter = document.getElementById("wrapper-footer-colophon"); 
+    
+    //These are layout divs, looking to remove bootstrap styling to go full width
+    var containerDiv = document.getElementById("page-content");
+    var contentDiv = document.querySelector('div.order-first');
+    
+    //grab content below prev/next buttons
+    var additionalInfo = document.getElementById('additional-info');
+    
+    //grab landing banner for landing pages
+    var landingBanner = document.querySelector("div.landing-banner"); 
+    
+    //console.log("Dom elements retrieved");
+    
+	// hide nav and footer (we have footer var from script above)
+	nav.style.display = "none";
+    myFooter.style.display = "none";
+    
+    //console.log("Hid nav and footer");
+	
+    // Check breadcrumbs exists, then hide it
+    if(breadcrumbs) { breadcrumbs.style.display = "none"; }
+    
+    // Check right nav exists, then remove it
+    if (rightNav) { rightNav.remove(); }
+    
+    //console.log("Hid breadcrumbs and right nav if present");
+    
+    // Check additionalInfo exists, then hide it
+    if(additionalInfo) { additionalInfo.style.display = "none"; }
+    
+    //console.log("Hid additional info");
+    
+    //Check for landing banner
+    if(landingBanner) { 
+        console.log("landing banner exists");
+        landingBanner.classList.remove("landing-banner"); 
+        console.log("removed landing banner");
+        
+        var landingImage = document.querySelector("figure");
+        landingImage.style.marginTop = "0";
+    }
+    
+    
+
+	//remove bootstrap classes that provide adaptive styling
+	if(containerDiv) { 
+        containerDiv.classList.remove("container"); 
+        //remove padding at the top and add margin right to give content space against scroll bar (do we need this?)
+        containerDiv.style.paddingTop = '0';
+        containerDiv.style.marginRight = "2rem";
+    }
+    
+	if(contentDiv) { contentDiv.classList.remove("col-xl-8"); }
+    
+    //console.log("removed containers");
+    //console.log("adjusted padding etc.");
+    
+    //process optional query string vars
+    if(hideTitle == 'true') {
+        var myTitle = document.querySelector('h1');
+        myTitle.style.display = "none";
+        
+        //console.log("Hid title");
+    }
+    
+    if(hideIntro == 'true') {
+        var firstLeadParagraph = document.querySelector('p.lead');
+        firstLeadParagraph.style.display = "none";
+        
+        //console.log("Hid intro");
+    }
+    
+    if(showPrevNext != 'true')  {
+        //hide prev and next - the default behaviour
+        var btnNavContainer = document.querySelector('.btn-nav-container');
+        if(btnNavContainer) { btnNavContainer.style.display = "none"; }
+        
+        //console.log("Hid prev");
+    }
+}
+
+// handeEmbedLinks either adds the query string or target="+top" depending on context
+    
+function handeEmbedLinks()
+{
+    //grab all the links
+    const links = document.querySelectorAll('a');
+    
+    links.forEach(link => {
+
+        const href = link.getAttribute('href');
+        
+        //if we have an href
+        if (href !== null) {
+            if(showPrevNext == 'true') {
+                //if prev next buttons are displayed
+                if(href.startsWith('http://') || href.startsWith('https://')) {
+                    //if external link, break from iframe
+                    addTargetTopToLink(link);
+                } 
+                else {
+                    //otherwise add the query string to the link
+                    link.setAttribute('href', href + queryString);
+                }
+            }
+            else {
+                //otherwise, add _top to break from iframe
+                addTargetTopToLink(link);
+            }
+        }
+    });
+}
+                  
+function addTargetTopToLink(link) {
+    link.setAttribute('target', '_top');
+}
+	
+// Dark mode
+(function() {
+      'use strict';
+
+      // Function to get the stored theme from local storage
+      const getStoredTheme = () => localStorage.getItem('theme');
+
+      // Function to set the theme in local storage
+      const setStoredTheme = theme => localStorage.setItem('theme', theme);
+
+      // Function to determine the preferred theme
+      const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+          return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      };
+
+      // Function to apply the specified theme
+      const setTheme = theme => {
+        if (theme === 'auto') {
+          // If theme is 'auto', set it based on system preference
+          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+          // Otherwise, set the theme explicitly
+          document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+      };
+
+      // Function to update the UI to reflect the active theme
+      const showActiveTheme = theme => {
+        const themeSwitcher = document.querySelector('#theme-switcher');
+        if (!themeSwitcher) {
+          return; // If no theme switcher element is found, exit
+        }
+        // Remove 'checked' attribute from all radio buttons
+        document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+          element.checked = false;
+        });
+        // Add 'checked' attribute to the selected theme radio button
+        const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`);
+        if (btnToActive) {
+          btnToActive.checked = true;
+        }
+      };
+
+      // Listen for changes to the system's dark mode preference
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+        const storedTheme = getStoredTheme();
+        if (storedTheme !== 'light' && storedTheme !== 'dark') {
+          setTheme(getPreferredTheme()); // Update the theme if it's set to 'auto'
+        }
+      });
+
+      // When the DOM content is loaded, initialise the theme switcher
+      window.addEventListener('DOMContentLoaded', () => {
+        showActiveTheme(getPreferredTheme()); // Show the active theme
+        // Add click event listeners to all theme toggle radio buttons
+        document.querySelectorAll('[data-bs-theme-value]').forEach(toggle => {
+          toggle.addEventListener('change', () => {
+            const theme = toggle.getAttribute('data-bs-theme-value');
+            setStoredTheme(theme); // Store the selected theme
+            setTheme(theme); // Apply the selected theme
+            showActiveTheme(theme); // Update the UI
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
+
