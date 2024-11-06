@@ -245,19 +245,13 @@ MathJax = {
             <h1 class="margin-top-zero">Archived Page</h1>
             <p>This content has been updated or relocated. You will be redirected shortly to the latest version. Please update your links if necessary.</p>
 
+            
             <script>
-                // JavaScript variable with the slug to redirect to
-                var redirectSlug = '/writing-fundamentals';
-
-                // Get the site URL
-                var siteUrl = 'https://lab.bitma.app';
-
-                // Redirect after 5 seconds
-                setTimeout(function() {
-                    window.location.href = siteUrl + '/' + redirectSlug;
-                }, 5000);
+                //Get redirect path
+                var redirectPath = '/writing-fundamentals';
+                console.log("redirectPath: " +redirectPath);
             </script>
-
+            <script type="text/javascript" src="../../../wp-content/themes/picostrap5-child-base/js/redirect.js"></script>
         </div>
         <!-- END content --> 
     </div>

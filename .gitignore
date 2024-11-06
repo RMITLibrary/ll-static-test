@@ -1,3 +1,6 @@
 
 config.codekit3
 .DS_Store
+.DS_Store
+wp-includes/.DS_Store
+wp-content/.DS_Store
