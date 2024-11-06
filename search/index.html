@@ -399,8 +399,8 @@ MathJax = {
                             return ["documentation", "archive", "redirect"].includes(lowerKeyword);
                         })) {
                             var li = document.createElement('li');
-
-                            var itemOutput = '<a href="' + link + '"><h3 class="text">' + title + '</h3></a><p>' + snippet + '</p>';
+                            
+                            var itemOutput = '<a href="../' + link + '"><h3 class="text">' + title + '</h3></a><p>' + snippet + '</p>';
                             if (debug === true) itemOutput += '<p class="small">Score: ' + score + " &nbsp;&nbsp;&nbsp;&nbsp;Matches: " + matches + "</p>";
 
                             li.innerHTML = itemOutput;
