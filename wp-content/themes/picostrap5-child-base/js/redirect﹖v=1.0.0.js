@@ -37,6 +37,6 @@ console.log('Redirect URL:', redirectUrl);
 // Redirect after 5 seconds
 setTimeout(function() {
     console.log('Redirecting to:', redirectUrl);
-    //window.location.href = redirectUrl;
+    window.location.href = redirectUrl;
 }, 5000);
 
