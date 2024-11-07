@@ -97,6 +97,7 @@ fetch(dataURL)
                     var matches = result.matches; // Get matches
                     var keywords = result.item.keywords;
 
+                    console.log("Link: "+link);
                     // Only output result if keywords don't contain "documentation", "archive", or "redirect"
                     if (keywords && !keywords.some(keyword => {
                         const lowerKeyword = keyword.toLowerCase();
@@ -104,7 +105,7 @@ fetch(dataURL)
                     })) {
                         //create and format html element
                         var li = document.createElement('li');
-                        var itemOutput = '<a href="' + link + '"><h3 class="text">' + title + '</h3></a><p>' + snippet + '</p>';
+                        var itemOutput = '<a href="..' + link + '"><h3 class="text">' + title + '</h3></a><p>' + snippet + '</p>';
                         
                         //if debug is true, so score and match vars
                         if (debug === true) itemOutput += '<p class="small">Score: ' + score + " &nbsp;&nbsp;&nbsp;&nbsp;Matches: " + matches + "</p>";
