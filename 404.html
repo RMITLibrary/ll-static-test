@@ -87,25 +87,33 @@
             return urlObj.toString();
         }
 
-        // Use window.location to get the current URL
+       // Use window.location to get the current URL
         const currentURL = window.location.href;
 
         // Extract and normalize the path after the domain
         const extractedPath = normalizePath(extractPathAfterDomain(currentURL));
 
+        // Log the extracted path for debugging
+        console.log("Extracted Path: " + extractedPath);
+
         // Compare the normalized extracted path with the normalized oldURL in the list
-        const mapping = urlMappings.find(mapping => normalizePath(mapping.oldURL) === extractedPath);
+        const mapping = urlMappings.find(function(mapping) {
+            const normalizedOldURL = normalizePath(mapping.oldURL);
+            // Log each comparison for debugging
+            console.log("Comparing: " + normalizedOldURL + " with " + extractedPath);
+            return normalizedOldURL === extractedPath;
+        });
 
         if (mapping) {
             // Construct the new URL using the newURL from the mapping
             // Show the redirect info
             const newUrl = replaceUrlPath(currentURL, mapping.newURL);
-            console.log("New URL: " + newUrl);
+            console.log("Match found! New URL: " + newUrl);
             redirectInfo.style.display = "block";
             doRedirect(newUrl);
         } else {
             // No match, show the 404 info
-            console.log('No match found.');
+            console.log("No match found.");
             fourOhInfo.style.display = "block";
         }
 
