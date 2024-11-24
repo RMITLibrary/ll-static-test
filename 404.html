@@ -47,17 +47,33 @@
         
         <script>
 
-        // references to dom objects
+        // References to DOM objects
         var fourOhInfo = document.getElementById("four-oh-container");
         var redirectInfo = document.getElementById("redirect-container");
 
         // Array of objects with oldURL and newURL properties
         const urlMappings = [
             { oldURL: '/blergh', newURL: '/documentation/shortcodes/transcript-shortcode/' },
-            { oldURL: '/owl', newURL: '/documentation/shortcodes/accordion-shortcode/' },
-            { oldURL: '/frog', newURL: '/documentation/shortcodes/image-shortcode/' },
-            { oldURL: '/fish', newURL: '/documentation/shortcodes/nav-panel-shortcode/' }
+            { oldURL: '/old-example2', newURL: '/new-example2' },
+            { oldURL: '/old-example3', newURL: '/new-example3' },
+            { oldURL: '/old-example4', newURL: '/new-example4' }
         ];
+
+        // Base path for the test environment
+        const testEnvironmentBasePath = '/ll-static-test';
+
+        // Function to extract the path after the domain, considering the base path for test environment
+        function extractPathAfterDomain(url) {
+            const urlObj = new URL(url);
+            let path = urlObj.pathname;
+
+            // Remove the test environment base path if present
+            if (path.startsWith(testEnvironmentBasePath)) {
+                path = path.substring(testEnvironmentBasePath.length);
+            }
+
+            return path;
+        }
 
         // Function to normalize a path by trimming leading and trailing slashes
         function normalizePath(path) {
@@ -77,18 +93,18 @@
         // Extract and normalize the path after the domain
         const extractedPath = normalizePath(extractPathAfterDomain(currentURL));
 
-        // Compare the extracted path with the oldURL in the list
-        const mapping = urlMappings.find(mapping => mapping.oldURL === extractedPath);
+        // Compare the normalized extracted path with the normalized oldURL in the list
+        const mapping = urlMappings.find(mapping => normalizePath(mapping.oldURL) === extractedPath);
 
         if (mapping) {
             // Construct the new URL using the newURL from the mapping
-            //Show the redirect info
+            // Show the redirect info
             const newUrl = replaceUrlPath(currentURL, mapping.newURL);
             console.log("New URL: " + newUrl);
             redirectInfo.style.display = "block";
             doRedirect(newUrl);
         } else {
-            //No match, show the 404 info
+            // No match, show the 404 info
             console.log('No match found.');
             fourOhInfo.style.display = "block";
         }
