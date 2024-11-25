@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-        <title>404 - v3</title>
+        <title>404 - v4</title>
         <style>
             #redirect-container {
                 display: none;
@@ -35,7 +35,7 @@
 
                     <!-- START 404 container -->
                     <div id="four-oh-container">
-                        <h1 class="margin-top-zero">Page not found - v3</h1>
+                        <h1 class="margin-top-zero">Page not found - v4</h1>
 			            <p>We're sorry, but the page you're looking for doesn't exist.</p>
                     </div>
                     <!-- END 404 container -->
@@ -59,17 +59,17 @@
             { oldURL: '/fish', newURL: '/documentation/shortcodes/nav-panel-shortcode/' }
         ];
 
-        // Base path for the test environment
-        const testEnvironmentBasePath = '/ll-static-test';
+        // Prefix for the environment; set to '' for live and '/ll-static-test' for test
+        const pathPrefix = '/ll-static-test';
 
-        // Function to extract the path after the domain, considering the base path for test environment
+        // Function to extract the path after the domain, considering the prefix for the environment
         function extractPathAfterDomain(url) {
             const urlObj = new URL(url);
             let path = urlObj.pathname;
 
-            // Remove the test environment base path if present
-            if (path.startsWith(testEnvironmentBasePath)) {
-                path = path.substring(testEnvironmentBasePath.length);
+            // Remove the path prefix if present
+            if (path.startsWith(pathPrefix)) {
+                path = path.substring(pathPrefix.length);
             }
 
             return path;
@@ -80,14 +80,14 @@
             return path.replace(/^\/|\/$/g, '');
         }
 
-        // Function to replace the old URL path with the new URL path
+        // Function to replace the old URL path with the new URL path, adding the prefix
         function replaceUrlPath(url, newPath) {
             const urlObj = new URL(url);
-            urlObj.pathname = newPath;
+            urlObj.pathname = pathPrefix + newPath;
             return urlObj.toString();
         }
 
-       // Use window.location to get the current URL
+        // Use window.location to get the current URL
         const currentURL = window.location.href;
 
         // Extract and normalize the path after the domain
@@ -117,12 +117,10 @@
             fourOhInfo.style.display = "block";
         }
 
-
-        function doRedirect(redirectUrl)
-        {
+        function doRedirect(redirectUrl) {
             // Redirect after 5 seconds
             setTimeout(function() {
-                console.log('Redirecting to: '+redirectUrl);
+                console.log('Redirecting to: ' + redirectUrl);
                 window.location.href = redirectUrl;
             }, 5000);
         }
