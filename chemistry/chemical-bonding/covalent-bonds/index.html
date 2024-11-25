@@ -2,68 +2,31 @@
 <html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
 
 <head>
-<!-- 
-    DARK MODE
-    This script is placed in the <head> to ensure the theme is set as early as possible,
-    reducing the flash of unstyled content (FOUC). It determines the user's preferred
-    theme (either from local storage or system settings) and applies it immediately.
-  -->
-  <script>
-    (function() {
-      'use strict';
-
-      // Function to get the stored theme from local storage
-      const getStoredTheme = () => localStorage.getItem('theme');
-
-      // Function to determine the preferred theme
-      const getPreferredTheme = () => {
-        const storedTheme = getStoredTheme(); // Retrieve the stored theme
-        if (storedTheme) {
-          return storedTheme; // If a theme is stored, return it
-        }
-        // If no theme is stored, check the system preference for dark mode
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      // Function to apply the specified theme
-      const setTheme = theme => {
-        if (theme === 'auto') {
-          // If theme is 'auto', set it based on system preference
-          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-        } else {
-          // Otherwise, set the theme explicitly
-          document.documentElement.setAttribute('data-bs-theme', theme);
-        }
-      };
-
-      // Set the theme based on the preferred theme
-      setTheme(getPreferredTheme());
-    })();
-  </script>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- wp_head -->
-	<title>Covalent bonds - lab</title>
-
-		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
-		<meta name="description" content="\[\require{mhchem}\] Covalent bonds are formed between atoms by sharing electrons. Eager to learn more? Keep reading! In a covalent bond, the difference between the electronegativity of participating atoms is smaller than the ionic bonds. Covalent bonds are usually formed between elements within the \(p\) block. Atoms held together by covalent bonds give rise to molecular" />
+	<title>Covalent bonding - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		
+		<meta name="description" content="Covalent bonding is responsible for creating many substances we encounter in our daily lives. Water (\(\ce{H2O}\)) is essential for life, carbon dioxide (\(\ce{CO2}\)) is a key component of the Earth&#039;s atmosphere, and methane (\(\ce{CH4}\)) is a common fuel source. Use this resource to learn more about how covalent bonds form. Formation of molecular compounds Covalent" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
-		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		
 		<meta property="og:locale" content="en_US" />
-		<meta property="og:site_name" content="lab -" />
+		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="Covalent bonds - lab" />
-		<meta property="og:description" content="\[\require{mhchem}\] Covalent bonds are formed between atoms by sharing electrons. Eager to learn more? Keep reading! In a covalent bond, the difference between the electronegativity of participating atoms is smaller than the ionic bonds. Covalent bonds are usually formed between elements within the \(p\) block. Atoms held together by covalent bonds give rise to molecular" />
-		<meta property="og:url" content="https://lab.bitma.app/chemistry/chemical-bonding/covalent-bonds/" />
+		<meta property="og:title" content="Covalent bonding - Learning Lab" />
+		<meta property="og:description" content="Covalent bonding is responsible for creating many substances we encounter in our daily lives. Water (\(\ce{H2O}\)) is essential for life, carbon dioxide (\(\ce{CO2}\)) is a key component of the Earth&#039;s atmosphere, and methane (\(\ce{CH4}\)) is a common fuel source. Use this resource to learn more about how covalent bonds form. Formation of molecular compounds Covalent" />
+		<meta property="og:url" content="https://learninglab.rmit.edu.au/chemistry/chemical-bonding/covalent-bonds/" />
 		<meta property="article:published_time" content="2023-10-16T05:34:48+00:00" />
-		<meta property="article:modified_time" content="2024-08-22T23:00:41+00:00" />
+		<meta property="article:modified_time" content="2024-11-22T06:01:50+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Covalent bonds - lab" />
-		<meta name="twitter:description" content="\[\require{mhchem}\] Covalent bonds are formed between atoms by sharing electrons. Eager to learn more? Keep reading! In a covalent bond, the difference between the electronegativity of participating atoms is smaller than the ionic bonds. Covalent bonds are usually formed between elements within the \(p\) block. Atoms held together by covalent bonds give rise to molecular" />
+		<meta name="twitter:title" content="Covalent bonding - Learning Lab" />
+		<meta name="twitter:description" content="Covalent bonding is responsible for creating many substances we encounter in our daily lives. Water (\(\ce{H2O}\)) is essential for life, carbon dioxide (\(\ce{CO2}\)) is a key component of the Earth&#039;s atmosphere, and methane (\(\ce{CH4}\)) is a common fuel source. Use this resource to learn more about how covalent bonds form. Formation of molecular compounds Covalent" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/covalent-bonds\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/lab.bitma.app\/chemistry\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/#listItem","position":3,"name":"Chemical bonding","item":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/covalent-bonds\/#listItem","previousItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/covalent-bonds\/#listItem","position":4,"name":"Covalent bonds","previousItem":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/covalent-bonds\/#webpage","url":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/covalent-bonds\/","name":"Covalent bonds - lab","description":"\\[\\require{mhchem}\\] Covalent bonds are formed between atoms by sharing electrons. Eager to learn more? Keep reading! In a covalent bond, the difference between the electronegativity of participating atoms is smaller than the ionic bonds. Covalent bonds are usually formed between elements within the \\(p\\) block. Atoms held together by covalent bonds give rise to molecular","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/covalent-bonds\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:48+00:00","dateModified":"2024-08-22T23:00:41+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/covalent-bonds\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/#listItem","position":3,"name":"Chemical bonding","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/covalent-bonds\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/covalent-bonds\/#listItem","position":4,"name":"Covalent bonding","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/covalent-bonds\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/covalent-bonds\/","name":"Covalent bonding - Learning Lab","description":"Covalent bonding is responsible for creating many substances we encounter in our daily lives. Water (\\(\\ce{H2O}\\)) is essential for life, carbon dioxide (\\(\\ce{CO2}\\)) is a key component of the Earth's atmosphere, and methane (\\(\\ce{CH4}\\)) is a common fuel source. Use this resource to learn more about how covalent bonds form. Formation of molecular compounds Covalent","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/covalent-bonds\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:48+00:00","dateModified":"2024-11-22T06:01:50+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
@@ -81,25 +44,96 @@ MathJax = {
 
 </script>
 <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
-<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
-<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
-<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+
+
+
+
+<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=849.css' media='all' />
  	<!-- /wp_head -->
+
     
+    
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta name="author" content="RMIT Library">
+
+    <meta name="geo.position" content="-37.807778, 144.963333">
+    <meta name="geo.placename" content="Melbourne">
+    <meta name="geo.region" content="AU">
+
+    <meta name="dcterms.title" content="Learning Lab">
+    
+    <meta name="dcterms.description" content="Covalent bonding is responsible for creating many substances we encounter in our daily lives. Water (\(\ce{H2O}\)) is essential for life, carbon dioxide (\(\ce{CO2}\)) is a key component of the Earth&#039;s atmosphere, and methane (\(\ce{CH4}\)) is a common fuel source. Use this resource to learn more about how covalent bonds form....">
+    <meta name="dcterms.type" content="Text">
+    <meta name="dcterms.identifier" content="https://learninglab.rmit.edu.au/chemistry/chemical-bonding/covalent-bonds/">
+    <meta name="dcterms.format" content="text/html">
+    <!-- END Additional meta tags not covered by wp_head -->
+
+
+    <!-- START Additional scripts for tracking -->
+
+    <!-- Microsoft Clarity - does hotspot tracking of pages -->
+    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+
+    <!-- Google tag - (gtag.js) --> 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLHPB23GYR');
+    </script>
+
+    <!-- Microsoft Bing - Not sure how useful this is? --> 
+    <meta name="msvalidate.01" content="8E4954E1DFAB7E2F8A92DD0A0BD6ED09">
+
+    <!-- END Additional scripts for tracking -->
+
     <style>
         </style>
+
+    <!-- 
+    DARK MODE javascript
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+    -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Function to get the stored theme from local storage
+        const getStoredTheme = () => localStorage.getItem('theme');
+
+        // Function to determine the preferred theme
+        const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+            return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        // Function to apply the specified theme
+        const setTheme = theme => {
+        if (theme === 'auto') {
+            // If theme is 'auto', set it based on system preference
+            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+            // Otherwise, set the theme explicitly
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        };
+
+        // Set the theme based on the preferred theme
+        setTheme(getPreferredTheme());
+    })();
+    </script>
 </head>
 
 <body class="page-template-default page page-id-3158 page-child parent-pageid-3135 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
-	
 		
 <header>
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
@@ -166,7 +200,7 @@ MathJax = {
 </h2>
 <div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
 <div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
-<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic Word List tool</a></li>
 <li class="page_item page-item-3107 page_item_has_children"><a href="../../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
 <li class="page_item page-item-2520 page_item_has_children"><a href="../../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
 <li class="page_item page-item-2521"><a href="../../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
@@ -211,7 +245,7 @@ MathJax = {
 									<ul>
 										<li><a href="../../../art-and-design/index.html">Art and design</a></li>
 										<li><a href="../../index.html">Chemistry</a></li>
-										<li><a href="../../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../../law-resources/index.html">Legal studies</a></li>
 										<li><a href="../../../maths-statistics/index.html">Mathematics and statistics</a></li>
 										<li><a href="../../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
 										<li><a href="../../../subject-areas/physics/index.html">Physics</a></li>
@@ -275,7 +309,7 @@ This should be moved to a stylesheet once style is determined. -->
 <!-- START SIDEBAR NAV PANEL -->
 <nav class="right-nav" aria-label="Section Menu">
 
-<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">Chemical bonding</a></h3><ul><li><a href="../chemical-bonding-ionic-bonds/index.html">Chemical bonding &ndash; ionic bonds</a></li><li><a href="../chemical-bonding-quiz/index.html">Chemical bonding quiz</a></li><li><a href="../lewis-electron-dot-structure/index.html">Lewis electron &ndash; dot structure</a></li><li><a href="../lewis-structure-exercises/index.html">Lewis structure exercises</a></li><li><a href="index.html" class="selected"  aria-current="page">Covalent bonds</a><li><a href="../covalent-bonds-exercises/index.html">Covalent bonds - exercises</a></li></ul></nav>
+<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">Chemical bonding</a></h3><ul><li><a href="../chemical-bonding-ionic-bonds/index.html">Ionic bonding</a></li><li><a href="index.html" class="selected"  aria-current="page">Covalent bonding</a><li><a href="../lewis-electron-dot-structure/index.html">Lewis structures</a></li><li><a href="../covalent-bonding-lewis-structures-quiz/index.html">Quiz – Covalent bonding and Lewis structures</a></li></ul></nav>
 <!-- END SIDEBAR NAV PANEL -->
 
 
@@ -318,18 +352,46 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li><a href="../index.html">Chemical bonding</a></li>
 </ul>
 </nav>            <a id="main-content"></a>
-            <h1 class="margin-top-zero">Covalent bonds</h1>
-            <p><script> var kw = "Keywords: " node = document.getElementById('page-title'); node.insertAdjacentHTML('afterend', '</p>
-<p class="keywords">'+kw+'<a href="/learninglab/tags/chemistry" title="view all content with this keyword">Chemistry</a> | <a href="/learninglab/tags/chemical-bonding" title="view all content with this keyword">Chemical bonding</a> | <a href="/learninglab/keywords/covalent-bonds" title="view all content with this keyword">Covalent bonds</a> | </p>
-<p>'); </script></p>
-<style type="text/css">.keywords { text-align:right; padding: 2rem; color: #ccc; } .keywords a { color: #fff; } .field-name-field-keywords-tags { display: none; } #title-wrapper { background: url('https://rmitlibrary.github.io/cdn/learninglab/images/br129.jpg'); color: white; background-size: auto; margin: 0; height: inherit; } .lower-level #page #main h2#page-title { padding: 4rem 0 1rem 3rem ; margin: 0 0 0rem 0; line-height: 3.2rem; background: inherit; color: white; } /* hide em dash */ .lower-level #page #main h2#page-title:before { Display: none; } #sidebar-second { margin-top: 0px; } /* hide keywords */ </style>
-<style type="text/css">.btn{ cursor: default; } </style>
-<p>\[\require{mhchem}\]</p>
-<p class="lead">Covalent bonds are formed between atoms by sharing electrons. Eager to learn more? Keep reading!</p>
-<p class="lead">In a covalent bond, the difference between the electronegativity of participating atoms is smaller than the ionic bonds. Covalent bonds are usually formed between elements within the \(p\) block. Atoms held together by covalent bonds give rise to molecular compounds.</p>
-<p>Examples: \(\ce{H}_{2}\), \(\ce{HF}\) and \(\ce{H}_{2}\ce{O}\)</p>
-<p><img decoding="async" style="width: 746px; height: 700px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/chem7-covalenbondformation.png" alt="The hydrogen molecule is composed of two hydrogens sharing their one valence shell electron by a covalent bond. A fluorine molecule is composed of two fluorine atoms sharing one of their valence shell electrons by a covalent bond. The water molecule is composed of covalent bonds between two hydrogens and one oxygen atom. Two hydrogens share their one valence shell electron with oxygen. This way, each atom acquires an octet. " /></p>
-<p>Atoms involved in a covalent bond acquire the octet in their valence shell by sharing electrons between atoms. Generally, the number of covalent bonds an atom forms depends on how many electrons an atom requires to achieve an octet. For instance, \(\ce{C}\) forms four covalent bonds as \(\ce{C}\) \(\left(1s^{2}2s^{2}2p^{2}\right)\) needs four more electrons to acquire an octet in their valence shell. A few more examples are listed in the following table.</p>
+            <h1 class="margin-top-zero">Covalent bonding</h1>
+            <p class="lead">Covalent bonding is responsible for creating many substances we encounter in our daily lives. Water (\(\ce{H2O}\)) is essential for life, carbon dioxide (\(\ce{CO2}\)) is a key component of the Earth's atmosphere, and methane (\(\ce{CH4}\)) is a common fuel source. Use this resource to learn more about how covalent bonds form.</p>
+<h2>Formation of molecular compounds</h2>
+<p>Covalent bonding primarily occurs between non-metal atoms or elements located in the \(p\)-block. Whereas ionic bonding involves the transfer of valence electrons, covalent bonding involves the sharing of valence shell electrons to achieve a complete outer shell. Atoms held together by covalent bonds are called <strong>molecular compounds</strong>. The figure below shows the formation of three covalent molecular compounds: \(\ce{H}_{2}\), \(\ce{F}_{2}\) and \(\ce{H}_{2}\ce{O}\).</p>
+<div style="text-align: center;">
+<img decoding="async" style="width: 746px; height: 700px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/chem7-covalenbondformation.png" alt="The hydrogen molecule is composed of two hydrogens sharing their one valence shell electron by a covalent bond. A fluorine molecule is composed of two fluorine atoms sharing one of their valence shell electrons by a covalent bond. The water molecule is composed of covalent bonds between two hydrogens and one oxygen atom. Two hydrogens share their one valence shell electron with oxygen. This way, each atom acquires an octet."/>
+</div>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-3389">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-1445" aria-expanded="false" aria-controls="body-transcript-1445" >Transcript</button>
+</p>
+<div id="body-transcript-1445" class="accordion-collapse collapse " aria-labelledby="head-transcript-3389">
+<div class="accordion-body">
+<h3>Covalent bonding diagrams</h3>
+<div>
+<h4>Hydrogen molecule (H<sub>2</sub>)</h4>
+<p>
+            Two hydrogen atoms (H), each with 1s electron, combine to form an H<sub>2</sub> molecule with a shared electron pair.
+        </p>
+</p></div>
+<div>
+<h4>Fluorine molecule (F<sub>2</sub>)</h4>
+<p>
+            Two fluorine atoms (F), each with 2p electrons, combine to form an F<sub>2</sub> molecule with a shared electron pair.
+        </p>
+</p></div>
+<div>
+<h4>Water molecule (H<sub>2</sub>O)</h4>
+<p>
+            Two hydrogen atoms and one oxygen atom combine. The oxygen atom (with 2p electrons) shares electrons with two hydrogen atoms to form an H<sub>2</sub>O molecule, showing shared electron pairs.
+        </p>
+</p></div>
+</div></div></div>
+<ul>
+<li>Hydrogen gas, \(\ce{H2}\), is formed when two hydrogen atoms share one electron in their valence electron shell (\(1s\)) with each other. This allows each hydrogen atom to achieve a full electron shell with the electron configuration of a noble gas, \(\ce{He}\): \(1s^{2}\)</li>
+<li>Fluorine gas, \(\ce{F2}\), is formed when two fluorine atoms share a pair of electrons in their valence electron shell (\(2p\)). This allows each fluorine atom to achieve a full electron shell with the electron configuration of a noble gas, \(\ce{Ne}\): \(1s^{2}\,2s^{2}\,2p^{6}\)</li>
+<li>Water, \(\ce{H2O}\), is formed when two hydrogen atoms share one electron in their valence electron shell (\(1s\)) with an oxygen atom. The oxygen atom shares one electron in their valence electron shell (\(2p\)) with each hydrogen atom. This allows each hydrogen atom to achieve a full electron shell with the electron configuration of a noble gas, \(\ce{He}\): \(1s^{2}\). It also allows the oxygen atom to achieve a full electron shell with the electron configuration of a noble gas, \(\ce{Ne}\): \(1s^{2}\,2s^{2}\,2p^{6}\)</li>
+</ul>
+<h3>Number of covalent bonds</h3>
+<p>Generally, the number of covalent bonds an atom forms depends on how many electrons an atom requires to achieve an octet. For instance, \(\ce{C}\) forms four covalent bonds as \(\ce{C}\) \(\left(1s^{2}\,2s^{2}\,2p^{2}\right)\) needs four more electrons to acquire an octet in their valence shell. A few more examples are listed in the table.</p>
 <table>
 <colgroup>
 <col width="25%" />
@@ -338,28 +400,28 @@ list.querySelectorAll('h4').forEach(h4 => {
 <col width="25%" /></colgroup>
 <thead>
 <tr>
-<th>Element</th>
-<th>Electron configuration</th>
-<th>Electrons required to fill the octet</th>
-<th>Number of covalent bonds</th>
+<th><strong>Element</strong></th>
+<th><strong>Electron configuration</strong></th>
+<th><strong>Electrons required to fill the octet</strong></th>
+<th><strong>Number of covalent bonds</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>\(\ce{N}\)</td>
-<td>\(1s^{2}2s^{2}2p^{3}\)</td>
+<td>\(1s^{2}\,2s^{2}\,2p^{3}\)</td>
 <td>\(3\)</td>
 <td>\(3\)</td>
 </tr>
 <tr>
 <td>\(\ce{O}\)</td>
-<td>\(1s^{2}2s^{2}2p^{4}\)</td>
+<td>\(1s^{2}\,2s^{2}\,2p^{4}\)</td>
 <td>\(2\)</td>
 <td>\(2\)</td>
 </tr>
 <tr>
 <td>\(\ce{F}\)</td>
-<td>\(1s^{2}2s^{2}2p^{5}\)</td>
+<td>\(1s^{2}\,2s^{2}\,2p^{5}\)</td>
 <td>\(1\)</td>
 <td>\(1\)</td>
 </tr>
@@ -371,27 +433,117 @@ list.querySelectorAll('h4').forEach(h4 => {
 </tr>
 </tbody>
 </table>
-<p>However, the number of covalent bonds formed by an atom is not always guided by the octet rule. For instance, \(\ce{S}\) can form four or six covalent bonds such as \(\ce{SF}_{4}\) and \(\ce{SF}_{6}\). Some of the other exceptions to the octet rule are \(\ce{BF}_{3}\), \(\ce{PCl}_{5}\) and some of the \(p\) block elements in period four as they have empty \(d\) orbitals.</p>
+<p>However, the number of covalent bonds formed by an atom is not always guided by the octet rule. Let's take \(\ce{S}\) as an example. \(\ce{S}\) can form four or six covalent bonds, such as \(\ce{SF}_{4}\) and \(\ce{SF}_{6}\). Some other exceptions to the octet rule are \(\ce{BF}_{3}\), \(\ce{PCl}_{5}\) and some of the \(p\) block elements in period \(4\), as they have empty \(d\) orbitals.</p>
 <div>
-<h2>Multiple covalent bonds</h2>
-<p>Multiple covalent bonds are formed between two atoms when they share more than one pair of electrons to acquire valence shell octet. For instance, \(\ce{CO}_{2}\): \(\ce{C}\) forms two covalent bonds (2 pairs of electrons or 4 electrons) with each oxygen atom involved.</p>
-<p><img decoding="async" style="width: 85px; height: 23px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6carbondioxide.png" alt="Carbon dioxide showing the sharing of two bonds between the two oxygen molecules and the carbon " /></p>
-<p>Ethyne is another example where carbon forms multiple bonds. In this case, one carbon atom forms a triple bond (6 electrons or 3 electron pairs) with another carbon atom to complete the octet.</p>
-<p><img decoding="async" style="width: 83px; height: 23px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6ethyne.png" alt="Carbon and hydrogen molecules of ethyne with three covalent bonds" /></p>
-<p>Single bonds: when two electrons are shared between two atoms.</p>
-<p>Double bonds: when four electrons are shared between two atoms.</p>
-<p>Triple bonds: when six electrons are shared between two atoms.</p>
+<h3>Types of covalent bonds</h3>
+<p>When two electrons are shared between two atoms, a <strong>single bond</strong> forms. </p>
+<p>Multiple covalent bonds are formed between two atoms when they share more than one pair of electrons to acquire valence shell octet. For instance, \(\ce{CO}_{2}\): \(\ce{C}\) forms two covalent bonds (two pairs of electrons or four electrons) with each oxygen atom involved. These are called <strong>double bonds</strong>.</p>
+<div style="text-align: center;">
+<img decoding="async" style="width: 85px; height: 23px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6carbondioxide.png" alt="Carbon dioxide showing the sharing of two bonds between the two oxygen molecules and the carbon"/>
 </div>
-<div>
-<h3>Coordinate covalent bonds</h3>
-<p>When the shared electrons between two atoms are donated only by one atom, the resulting bond is known as a coordinate covalent bond. In a typical covalent bond, both atoms donate electrons to the bond. In contrast, in a coordinate covalent bond, an atom with a filled orbital shares its two electrons with an empty orbital of another atom.</p>
-<p><img decoding="async" style="width: 657px; height: 404px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/chem7-coordinatecovalentbonds.png" alt="If a molecule called XY is composed of a typical covalent bond, both X and Y donate one electron each to the bond; however, if the molecule XY is composed of a coordinate covalent bond, only X or Y donates both electrons to the bond. " /></p>
-<p>Examples: \(\ce{H}_{3}\ce{O}^{+}\) ion and \(\ce{NH}_{4}^{+}\) ion</p>
+<p>In the same way, when six electrons are shared between two atoms, a <strong>triple bond</strong> forms. Ethyne is an example of a molecular compound that forms a triple bond. One carbon atom shares six electrons with another carbon atom to complete the octet.</p>
+<div style="text-align: center;">
+<img decoding="async" style="width: 83px; height: 23px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6ethyne.png" alt="Carbon and hydrogen molecules of ethyne with three covalent bonds"/>
 </div>
-<div>
-<h4>Polar Covalent Bonds</h4>
-<p>Uneven sharing of two electrons creates a single covalent bond, but with a significant ionic component due to the difference in electronegativity, resulting in a distorted polarised molecular electron cloud. For instance, \(\ce{HF}\): \(\ce{H}\)'s EN - EN \(=\) electronegativity: ability of an atom in a molecule to attract electrons - is 2.20. \(\ce{F}\)'s EN is 3.98. The difference of EN \(=3.98-2.2=1.78\). Electrons are more strongly attracted to the more electronegative atom, in this case to \(\ce{F}\). So, the electron-rich \(\ce{F}\) has a partial negative charge (designated as \(\delta-\) ), while electron-poor \(\ce{H}\) has a partial positive charge \(\left(\delta+\right)\), creating a dipole moment \(\left(\mu\right)\). These types of bonds are known as polar covalent bonds.</p>
-<p>The difference between the electronegativity of participating atoms in a bond indicates whether the bond is ionic, covalent or polar covalent.</p>
+<h4>Coordinate covalent bonds</h4>
+<p>Typically, each atom contributes one or more electrons to the covalent bond. When the electrons shared between two atoms are donated by only one atom, the resulting bond is known as a <strong>coordinate covalent bond</strong>. In a coordinate covalent bond, an atom with a filled orbital shares its two electrons with an empty orbital of another atom.</p>
+<div style="text-align: center;">
+<img decoding="async" style="width: 657px; height: 404px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/chem7-coordinatecovalentbonds.png" alt="If a molecule called XY is composed of a typical covalent bond, both X and Y donate one electron each to the bond; however, if the molecule XY is composed of a coordinate covalent bond, only X or Y donates both electrons to the bond."/>
+</div>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-8379">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-8108" aria-expanded="false" aria-controls="body-transcript-8108" >Transcript</button>
+</p>
+<div id="body-transcript-8108" class="accordion-collapse collapse " aria-labelledby="head-transcript-8379">
+<div class="accordion-body">
+<h4>Coordinate covalent bonds diagram</h4>
+<h5>Typical covalent bonds</h5>
+<p>Shows two atoms, X and Y, with partially filled orbitals. They combine to form a shared electron pair.</p>
+<h5>Coordinate covalent bonds</h5>
+<p>Illustrates atom X with an entirely filled orbital and atom Y with an empty orbital. They combine to form a shared electron pair.</p>
+</div></div></div>
+<p>Examples of molecular compounds with coordinate covalent bonds are carbon monoxide (\(\ce{CO}\)) and ozone (\(\ce{O3}\)).</p>
+<h2>The shape of molecular compounds</h2>
+<p>The three-dimensional arrangement of a molecular compound gives it a <strong>molecular shape</strong>. Shape is primarily determined by valence shell electron repulsion (VSEPR) theory. Being able to draw <a href="../../../documentation/redirect/lewis-structures-quiz/index.html">Lewis structures</a> also helps with determining molecular shape.</p>
+<h3>Valence shell electron pair repulsion (VSEPR) theory</h3>
+<p>VSEPR theory states that the shape of a molecule is determined by the number of electron clouds around the central atom. Non-bonding (lone pair) and bonding valence electrons are considered electron clouds. Due to the repulsion forces between electron clouds, they attempt to stay as far as possible. </p>
+<p>For instance, a carbon dioxide molecule has two electron clouds (two \(\ce{C}-\ce{O}\) bonds) around the central atom \(\ce{C}\). As a result of repulsion forces between these two electron clouds, the molecule is arranged into <strong>linear</strong> geometry with a bond angle of \(180^{\circ}\). Multiple bonds, such as double and triple bonds, are considered one electron cloud.</p>
+<p>Depending on the number of electron clouds around a central atom, the number of bonds formed and the number of lone pairs, the molecular shape will vary. The different molecular shapes are summarised in the table below.</p>
+<table>
+<thead>
+<tr>
+<th scope="col">Number of bonds</th>
+<th scope="col">Number of lone pairs</th>
+<th scope="col">Total number of electron clouds</th>
+<th scope="col">Shape</th>
+<th scope="col">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>Linear</td>
+<td><img decoding="async" style="width: 80px; height: 38px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6CO2.png" alt="An example of a linear molecule consisting of three atoms" /></td>
+</tr>
+<tr>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+<td>Angular/bent</td>
+<td><img decoding="async" style="width: 80px; height: 46px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6SO2.png" alt="An example of a bent molecule consisting of three atoms" /></td>
+</tr>
+<tr>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>Angular/bent</td>
+<td><img decoding="async" style="width: 80px; height: 54px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6H2Opng.png" alt="An example of a bent molecule consisting of three atoms" /></td>
+</tr>
+<tr>
+<td>3</td>
+<td>0</td>
+<td>3</td>
+<td>Trigonal planar</td>
+<td><img decoding="async" style="width: 80px; height: 83px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6COH2.png" alt="An example of a trigonal planar molecule consisting of four atoms" /></td>
+</tr>
+<tr>
+<td>3</td>
+<td>1</td>
+<td>4</td>
+<td>Pyramidal</td>
+<td><img decoding="async" style="width: 80px; height: 42px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6NH3.png" alt="An example of a pyramidal molecule consisting of four atoms" /></td>
+</tr>
+<tr>
+<td>4</td>
+<td>0</td>
+<td>4</td>
+<td>Tetrahedal</td>
+<td><img decoding="async" style="width: 80px; height: 86px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6CH4.png" alt="An example of a tetrahedral molecule consisting of five atoms" /></td>
+</tr>
+</tbody>
+</table>
+<p>When more than one central atom is present in the molecule, the molecular geometry of each central atom is predicted and the results are combined. For example, \(\ce{C}_{2}\ce{H}_{4}\) has two central \(\ce{C}\) atoms. Each \(\ce{C}\) atom is attached to three electron clouds. This means each \(\ce{C}\) atom has a trigonal planar geometry. In this case, the whole molecule is also planar, as the bond angles \(\ce{H}-\ce{C}-\ce{H}\) and \(\ce{H}-\ce{C}-\ce{C}\) are \(120^{\circ}\) each.</p>
+<div style="text-align: center;">
+<img decoding="async" style="width: 80%" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6C2H4.png" alt="The ethene molecule is planar due to the trigonal planar shape around its two central carbon atoms"/>
+</div>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-7010">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-9295" aria-expanded="false" aria-controls="body-transcript-9295" >Transcript</button>
+</p>
+<div id="body-transcript-9295" class="accordion-collapse collapse " aria-labelledby="head-transcript-7010">
+<div class="accordion-body">
+<h4>Molecular geometry diagram</h4>
+<p>Two diagrams depicting central carbon atoms (labeled as central atom 1 and central atom 2), each bonded to hydrogen atoms, showing three separate orbitals. On the right, a simplified structure with two carbon atoms double-bonded, displaying bond angles of 120 degrees, and labeled with positions 1 and 2.</p>
+</div></div></div>
+<h2>The polarity of molecular compounds</h2>
+<p>In chemistry, polarity refers to the distribution of electric charge around atoms or molecules. The concept of polarity is crucial in understanding how covalent bonds and entire molecules interact with each other, influencing their physical and chemical properties.</p>
+<h3>Bond polarity</h3>
+<p>In the context of covalent bonds, polarity arises when there is an unequal sharing of electrons between atoms due to differences in their electronegativities. This results in one end of the bond having a partial negative charge (designated \(\delta-\)) and the other a partial positive charge (designated \(\delta+\)). The partially negative end is electron-rich, while the partially positive end is electron-poor. This creates something called a <strong>dipole moment</strong>.</p>
+<p>A covalent bond in which this occurs is called a <strong>polar covalent bond</strong>. One example is \(\ce{HF}\). The electronegativity (EN) of the \(\ce{H}\) atom is \(2.20\). The EN of the \(\ce{F}\) atom is \(3.98\). The difference in EN is \(3.98-2.20=1.78\). Valence electrons shared by \(\ce{H}\) and \(\ce{F}\) are more attracted to the electronegative \(\ce{F}\) atom. The \(\ce{F}\) atom therefore has a partial negative charge and is labelled \(\delta-\), and the \(\ce{H}\) atom has a partial positive charge and is labelled \(\delta+\).</p>
+<p>A bond in which electrons are shared equally is simply called a <strong>non-polar covalent bond</strong>. An example is the bond between the two \(\ce{H}\) atoms that make \(\ce{H2}\). The difference in EN is \(0\).</p>
+<p>The difference between the EN of participating atoms in a bond also indicates whether the bond is ionic, non-polar covalent or polar covalent. Compared to ionic bonds, the difference between the EN of atoms participating in covalent bonding is much smaller.</p>
 <table>
 <thead>
 <tr>
@@ -419,150 +571,58 @@ list.querySelectorAll('h4').forEach(h4 => {
 </tbody>
 </table>
 </div>
-<div>
-<h5>The Polarity of Molecules</h5>
-<p>The net polarity of a molecule depends on the polarity of the individual bonds, the contribution from lone pairs, and the molecule's shape. In a polar molecule, electrons are more strongly attracted to one part of the molecule. For example, in the water molecule, due to the high electronegativity of the oxygen atom, electrons are strongly attracted towards the oxygen atom creating the net polarity point between two \(\ce{O}-\ce{H}\) bonds.</p>
-<p><img decoding="async" style="width: 281px; height: 251px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6water.png" alt="" /></p>
+<h3>Molecular polarity</h3>
+<p>When discussing molecules, polarity depends on the polarity of the individual bonds, the contribution from lone pair electrons, and the molecular shape. In a polar molecule, electrons are more strongly attracted to one end of the molecule. For example, in the \(\ce{H2O}\) molecule, due to the high EN of the \(\ce{O}\) atom, electrons are strongly attracted to the \(\ce{O}\) atom. This creates a net polarity point between two \(\ce{O}-\ce{H}\) bonds. The polarity of the molecule is indicated using a crossed arrow that points in the direction of electron attraction.</p>
+<p><div style="text-align: center;">
+<img decoding="async" style="width: 281px; height: 251px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6water.png" alt="The polar nature of the water molecule is indicated using a crossed arrow which points in the direction of electron attraction, i.e. towards the oxygen atom and its lone pairs" />
+</div>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-8307">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-5813" aria-expanded="false" aria-controls="body-transcript-5813" >Transcript</button>
+</p>
+<div id="body-transcript-5813" class="accordion-collapse collapse " aria-labelledby="head-transcript-8307">
+<div class="accordion-body">
+<h3>Water polarity diagram</h3>
+<p>Diagram showing a central atom bonded to two hydrogen atoms (H). The electron cloud is depicted with grey lobes, indicating areas of higher electron density. The symbols δ- and δ+ indicate partial negative and positive charges, respectively, with δ- on the grey lobes and δ+ by the hydrogen atoms. An arrow points upwards, indicating the direction of polarity.</p>
+</div></div></div>
 <p>In some cases, although the individual covalent bonds are polar, overall the molecule becomes non-polar due to the shape of the molecule. For instance, a carbon dioxide molecule has polar \(\ce{C}-\ce{O}\) bonds. However, due to the linear symmetrical shape of the molecule, polar bonds (dipoles) cancel each other, creating a zero net polarity.</p>
-<p><img decoding="async" style="width: 188px; height: 86px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEMcarbondioxidedipole.png" alt="Carbon dioxide dipole" /></p>
+<div style="text-align: center;">
+<img decoding="async" style="width: 188px; height: 86px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEMcarbondioxidedipole.png" alt="Carbon dioxide with dipoles assigned. The oxygen atoms are partially negatively charged. The carbon atom is partially positively charged."/>
 </div>
-<div>
-<p><strong>Naming Binary Molecular Compounds</strong></p>
+<h2>Naming molecular compounds</h2>
+<p>To name molecular compounds, you can follow the steps below. Let's use \(\ce{CCl4}\) as an example.</p>
 <ol>
-<li>The name of the less electronegative atom is written first, followed by the more electronegative atom. Therefore, metals come before nonmetals, and nonmetals located on the left side of the periodic table are written before nonmetals located on the right side.</li>
-<li>The name of the more electronegative atom should end with the suffix -ide as used for anions.</li>
-<li>Depending on the number of atoms of each element involved in the compound, prefixes such as di, tri, tetra, penta etc. may apply. For instance, compound \(\ce{CCl}_{4}\) is named as "Carbon tetrachloride".</li>
+<li>Name the less electronegative atom first. Non-metals located on the left side of the periodic table are written before non-metals located on the right side. For \(\ce{CCl4}\), carbon is less electronegative than the chlorine, so "carbon" is written first.</li>
+<li>Name the more electronegative atom with the suffix "–ide", as used for anions. For \(\ce{CCl4}\), this would be "chloride".</li>
+<li>Identify the number of atoms of each element involved in the compound and use the prefixes di–, tri–, tetra–, penta–, etc, to show how many of each atom is present. No prefix is used if there is only one atom of the element. \(\ce{CCl4}\) has one carabon atom and four chlorine atoms, so is named "carbon tetrachloride".</li>
 </ol>
-<p>Examples</p>
-<table>
-<thead>
-<tr>
-<th>Molecular formula</th>
-<th>Name of the compound</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>\(\ce{CO}\)</td>
-<td>Carbon monoxide</td>
-</tr>
-<tr>
-<td>\(\ce{CO}_{2}\)</td>
-<td>Carbon dioxide</td>
-</tr>
-<tr>
-<td>\(\ce{BBr}_{3}\)</td>
-<td>Boron tribromide</td>
-</tr>
-<tr>
-<td>\(\ce{N}_{2}\ce{O}_{5}\)</td>
-<td>Dinitrogen pentoxide</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div>
-<p><strong>Valence Shell Electron Pair Repulsion Theory (VSEPR theory)</strong></p>
-<p>VSEPR theory states that the shape of a molecule is determined by the number of electron clouds around the central atom. Lone pairs and bonded valence electrons are considered electron clouds. Due to the repulsion forces between electron clouds, they attempt to stay as far as possible. For instance, a carbon dioxide molecule has two electron clouds (two \(\ce{C}-\ce{O}\) bonds) around the central atom \(\ce{C}\). As a result of repulsion forces between these two electron clouds, the molecule is arranged into linear geometry with a bond angle of \(180^{\circ}\). Multiple bonds such as double and triple bonds are considered one electron cloud.</p>
-<p>Steps to determine the shape of a molecule using VSEPR theory:</p>
-<ol>
-<li>Draw the Lewis structure of the molecule and identify the central atom.<br />
-For instance, in an ammonia molecule (\(\ce{NH}_{3})\), the central atom is \(\ce{N}\) as it forms most bonds.</li>
-</ol>
-<p><img decoding="async" style="width: 162px; height: 127px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEMammonia.png" alt="ammonia" /></p>
-<ol start="2">
-<li>Sum up the number of bonds and lone pairs connected to the central atom to get the total number of electron clouds around the central atom.<br />
-Example: In the ammonia molecule, the central atom \(\ce{N}\) has three bonds with each \(\ce{H}\) atom and one lone pair. Therefore there are four electron clouds (three bonds and one lone pair) around the central atom.</li>
-</ol>
-<p><img decoding="async" style="width: 166px; height: 269px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEMammonia2.png" alt="Ammonia with the bonds and lone pairs highlighted" /></p>
-<ol start="3">
-<li>Anticipate the shape of the molecule based on the number of electron clouds around the central atom.<br />
-Example: Four electron clouds around \(\ce{N}\) arrange in such a way that each cloud stays as far as possible from the others to minimise the repulsion forces between them. Generally, when there are four electron clouds around the central atom, these are arranged to result in a tetrahedral shape. A tetrahedron is composed of four equilateral triangles. The central atom is located in the centre and electron clouds are located towards the corners of the tetrahedron. Molecules with a tetrahedral shape have a bond angle of \(109^{\circ}\). Due to the presence of a lone pair on one corner of the tetrahedron, the overall shape of ammonia becomes pyramidal rather than tetrahedral with a bond angle of \(107^{\circ}\).</li>
-</ol>
-<p><img decoding="async" style="width: 940px; height: 253px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEMammonia3.png" alt="" /></p>
-<table>
-<colgroup>
-<col width="15%" />
-<col width="15%" />
-<col width="15%" />
-<col width="15%" />
-<col width="40%" /></colgroup>
-<thead>
-<tr>
-<th scope="col">Number of bonds</th>
-<th scope="col">Number of lone pairs</th>
-<th scope="col">Total number of electron clouds</th>
-<th scope="col">Shape</th>
-<th scope="col">Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2</td>
-<td>0</td>
-<td>2</td>
-<td>Linear</td>
-<td><img decoding="async" style="width: 80px; height: 38px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6CO2.png" alt="" /></td>
-</tr>
-<tr>
-<td>3</td>
-<td>0</td>
-<td>3</td>
-<td>Trigonal planar</td>
-<td><img decoding="async" style="width: 80px; height: 83px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6COH2.png" alt="" /></td>
-</tr>
-<tr>
-<td>2</td>
-<td>1</td>
-<td>3</td>
-<td>Angular/bent</td>
-<td><img decoding="async" style="width: 80px; height: 46px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6SO2.png" alt="" /></td>
-</tr>
-<tr>
-<td>4</td>
-<td>0</td>
-<td>4</td>
-<td>Tetrahedal</td>
-<td><img decoding="async" style="width: 80px; height: 86px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6CH4.png" alt="" /></td>
-</tr>
-<tr>
-<td>3</td>
-<td>1</td>
-<td>4</td>
-<td>Pyramid</td>
-<td><img decoding="async" style="width: 80px; height: 42px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6NH3.png" alt="" /></td>
-</tr>
-<tr>
-<td>2</td>
-<td>2</td>
-<td>4</td>
-<td>Angular/bent</td>
-<td><img decoding="async" style="width: 80px; height: 54px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6H2Opng.png" alt="" /></td>
-</tr>
-</tbody>
-</table>
-<p>When more than one central atom is present in the molecule, predict the molecular geometry of each central atom and then combine the results. For instance, \(\ce{C}_{2}\ce{H}_{4}\) has two central \(\ce{C}\) atoms. Each \(\ce{C}\) atom is attached to three electron clouds. This means each \(\ce{C}\) atom has a trigonal planar geometry. In this case, the whole molecule is also planar, as the bond angles \(\ce{H}-\ce{C}-\ce{H}\) and \(\ce{H}-\ce{C}-\ce{C}\) are \(120^{\circ}\) each.</p>
-<p><img decoding="async" style="width: 904px; height: 246px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6C2H4.png" alt="" /></p>
-</div>
+<p>Some other examples are "carbon monoxide" for \(\ce{CO}\), "carbon dioxide" for \(\ce{CO2}\), "boron trichloride" for \(\ce{BCl3}\) and "dinitrogen pentoxide" for \(\ce{N2O5}\).</p>
 			<nav class="btn-nav-container" aria-label="Previous and next links">
 <h2 class="btn-nav-prev">
-    <a href="../lewis-structure-exercises/index.html">
-        <span aria-hidden="true">Lewis structure exercises</span>
-        <span class="visually-hidden">Previous page: Lewis structure exercises</span>
+    <a href="../chemical-bonding-ionic-bonds/index.html">
+        <span aria-hidden="true">Ionic bonding</span>
+        <span class="visually-hidden">Previous page: Ionic bonding</span>
     </a>
 </h2>
     
 
 
 <h2 class="btn-nav-next">
-    <a href="../covalent-bonds-exercises/index.html">
-        <span aria-hidden="true">Covalent bonds - exercises</span>
-        <span class="visually-hidden">Next page: Covalent bonds - exercises</span>
+    <a href="../lewis-electron-dot-structure/index.html">
+        <span aria-hidden="true">Lewis structures</span>
+        <span class="visually-hidden">Next page: Lewis structures</span>
     </a>
 </h2>
 	
 </nav><!-- .navigation -->			<div id="additional-info">
 			
+<hr class="margin-top-xl"><blockquote class="complex ">
+<a href="https://rmit.pressbooks.pub/rmitchemistrybridgingcourse/chapter/3-3-covalent-bonds-and-polarity/">
+<div class="content">
+<h3>Covalent bonds and polarity</h3>
+<p>Use this resource to learn more about covalent bonding and polarity.</p>
+</div><div class="icon-wrap"><img src="https://rmitlibrary.github.io/design-system/images/icon-llcc-large.svg" alt="" /></div>
+</a></blockquote>
 			
 
 
@@ -573,9 +633,9 @@ Example: Four electron clouds around \(\ce{N}\) arrange in such a way that each 
 <div class="keywords">
     <h2 class="h5">Keywords</h2>
     <ul>
-                <li><a href="../../../keyword/chemical-bonds/index.html">Chemical bonds</a></li>  
                 <li><a href="../../../keyword/chemistry/index.html">Chemistry</a></li>  
-                <li><a href="../../../keyword/covalent-bonds/index.html">covalent bonds</a></li>  
+                <li><a href="../../../keyword/covalent-bonds/index.html">Covalent bonds</a></li>  
+                <li><a href="../../../keyword/chemical-bonding/index.html">Chemical bonding</a></li>  
         </ul>
 </div>
  
@@ -584,7 +644,7 @@ Example: Four electron clouds around \(\ce{N}\) arrange in such a way that each 
 <!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
 <!--
 <p><strong>Subjects </strong>
-    | <strong><a href="https://lab.bitma.app/subject-area/chemistry/">Chemistry</a></strong>  
+    | <strong><a href="https://learninglab.rmit.edu.au/subject-area/chemistry/">Chemistry</a></strong>  
     </p>
 -->
 <!-- category echo end -->
@@ -644,18 +704,17 @@ Example: Four electron clouds around \(\ce{N}\) arrange in such a way that each 
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <section class="acknowledgement-container">
-                        <div class="acknowledgement-image">
-                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
-                        </div>
-
+                <section class="acknowledgement-container">
                         <div class="content">
                             <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
                             <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
-                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="#" class="link-large">More information</a>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business<span class="img-credit"> - Artwork 'Sentient' by Hollie Johnson, Gunaikurnai and Monero Ngarigo</span>.</p>
+                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                        </div>
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/sentient-hollie-johnson.jpg" alt="" />
                         </div>
                     </section>
                 </div>
@@ -735,7 +794,7 @@ Example: Four electron clouds around \(\ce{N}\) arrange in such a way that each 
 </div><!-- wrapper end -->
 		
 	
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
 <script src="../../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
 <!-- Code to handle hamburger menu, embed mode, dark mode -->

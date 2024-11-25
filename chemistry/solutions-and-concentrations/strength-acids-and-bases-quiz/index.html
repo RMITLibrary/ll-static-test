@@ -2,68 +2,31 @@
 <html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
 
 <head>
-<!-- 
-    DARK MODE
-    This script is placed in the <head> to ensure the theme is set as early as possible,
-    reducing the flash of unstyled content (FOUC). It determines the user's preferred
-    theme (either from local storage or system settings) and applies it immediately.
-  -->
-  <script>
-    (function() {
-      'use strict';
-
-      // Function to get the stored theme from local storage
-      const getStoredTheme = () => localStorage.getItem('theme');
-
-      // Function to determine the preferred theme
-      const getPreferredTheme = () => {
-        const storedTheme = getStoredTheme(); // Retrieve the stored theme
-        if (storedTheme) {
-          return storedTheme; // If a theme is stored, return it
-        }
-        // If no theme is stored, check the system preference for dark mode
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      // Function to apply the specified theme
-      const setTheme = theme => {
-        if (theme === 'auto') {
-          // If theme is 'auto', set it based on system preference
-          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-        } else {
-          // Otherwise, set the theme explicitly
-          document.documentElement.setAttribute('data-bs-theme', theme);
-        }
-      };
-
-      // Set the theme based on the preferred theme
-      setTheme(getPreferredTheme());
-    })();
-  </script>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- wp_head -->
-	<title>Strength of acids and bases quiz - lab</title>
-
-		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
-		<meta name="description" content="How well do you know acids and bases? What makes an acid weak or strong? Check your knowledge. \[\require{mhchem}\] Worked exercises The weak acid \(\ce{HA}\) in \(0.0200M\) solution is \(10\%\) ionised. Calculate the acid ionisation constant for the acid. Answer We are given the percentage ionisation of the weak acid and asked to calculate the" />
+	<title>Quiz – Strength of acids and bases - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		
+		<meta name="description" content="Understanding the strength of acids and bases is crucial for predicting their behaviour in chemical reactions and their impact in various applications. Test your ability to identify and differentiate between strong and weak acids and bases with this quiz. Your turn – strength of acids and bases The \(\ce{HBr}\) in a \(0.1\textrm{M}\) \(\ce{HBr}\) solution is" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
-		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		
 		<meta property="og:locale" content="en_US" />
-		<meta property="og:site_name" content="lab -" />
+		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="Strength of acids and bases quiz - lab" />
-		<meta property="og:description" content="How well do you know acids and bases? What makes an acid weak or strong? Check your knowledge. \[\require{mhchem}\] Worked exercises The weak acid \(\ce{HA}\) in \(0.0200M\) solution is \(10\%\) ionised. Calculate the acid ionisation constant for the acid. Answer We are given the percentage ionisation of the weak acid and asked to calculate the" />
-		<meta property="og:url" content="https://lab.bitma.app/chemistry/solutions-and-concentrations/strength-acids-and-bases-quiz/" />
+		<meta property="og:title" content="Quiz – Strength of acids and bases - Learning Lab" />
+		<meta property="og:description" content="Understanding the strength of acids and bases is crucial for predicting their behaviour in chemical reactions and their impact in various applications. Test your ability to identify and differentiate between strong and weak acids and bases with this quiz. Your turn – strength of acids and bases The \(\ce{HBr}\) in a \(0.1\textrm{M}\) \(\ce{HBr}\) solution is" />
+		<meta property="og:url" content="https://learninglab.rmit.edu.au/chemistry/solutions-and-concentrations/strength-acids-and-bases-quiz/" />
 		<meta property="article:published_time" content="2023-10-16T05:34:52+00:00" />
-		<meta property="article:modified_time" content="2024-08-22T23:18:40+00:00" />
+		<meta property="article:modified_time" content="2024-11-25T00:17:22+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Strength of acids and bases quiz - lab" />
-		<meta name="twitter:description" content="How well do you know acids and bases? What makes an acid weak or strong? Check your knowledge. \[\require{mhchem}\] Worked exercises The weak acid \(\ce{HA}\) in \(0.0200M\) solution is \(10\%\) ionised. Calculate the acid ionisation constant for the acid. Answer We are given the percentage ionisation of the weak acid and asked to calculate the" />
+		<meta name="twitter:title" content="Quiz – Strength of acids and bases - Learning Lab" />
+		<meta name="twitter:description" content="Understanding the strength of acids and bases is crucial for predicting their behaviour in chemical reactions and their impact in various applications. Test your ability to identify and differentiate between strong and weak acids and bases with this quiz. Your turn – strength of acids and bases The \(\ce{HBr}\) in a \(0.1\textrm{M}\) \(\ce{HBr}\) solution is" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/chemistry\/solutions-and-concentrations\/strength-acids-and-bases-quiz\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/lab.bitma.app\/chemistry\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/solutions-and-concentrations\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/solutions-and-concentrations\/#listItem","position":3,"name":"Solutions and concentrations","item":"https:\/\/lab.bitma.app\/chemistry\/solutions-and-concentrations\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/solutions-and-concentrations\/strength-acids-and-bases-quiz\/#listItem","previousItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/solutions-and-concentrations\/strength-acids-and-bases-quiz\/#listItem","position":4,"name":"Strength of acids and bases quiz","previousItem":"https:\/\/lab.bitma.app\/chemistry\/solutions-and-concentrations\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/chemistry\/solutions-and-concentrations\/strength-acids-and-bases-quiz\/#webpage","url":"https:\/\/lab.bitma.app\/chemistry\/solutions-and-concentrations\/strength-acids-and-bases-quiz\/","name":"Strength of acids and bases quiz - lab","description":"How well do you know acids and bases? What makes an acid weak or strong? Check your knowledge. \\[\\require{mhchem}\\] Worked exercises The weak acid \\(\\ce{HA}\\) in \\(0.0200M\\) solution is \\(10\\%\\) ionised. Calculate the acid ionisation constant for the acid. Answer We are given the percentage ionisation of the weak acid and asked to calculate the","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/chemistry\/solutions-and-concentrations\/strength-acids-and-bases-quiz\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:52+00:00","dateModified":"2024-08-22T23:18:40+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/solutions-and-concentrations\/strength-acids-and-bases-quiz\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/solutions-and-concentrations\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/solutions-and-concentrations\/#listItem","position":3,"name":"Solutions and concentration","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/solutions-and-concentrations\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/solutions-and-concentrations\/strength-acids-and-bases-quiz\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/solutions-and-concentrations\/strength-acids-and-bases-quiz\/#listItem","position":4,"name":"Quiz \u2013 Strength of acids and bases","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/solutions-and-concentrations\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/solutions-and-concentrations\/strength-acids-and-bases-quiz\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/chemistry\/solutions-and-concentrations\/strength-acids-and-bases-quiz\/","name":"Quiz \u2013 Strength of acids and bases - Learning Lab","description":"Understanding the strength of acids and bases is crucial for predicting their behaviour in chemical reactions and their impact in various applications. Test your ability to identify and differentiate between strong and weak acids and bases with this quiz. Your turn \u2013 strength of acids and bases The \\(\\ce{HBr}\\) in a \\(0.1\\textrm{M}\\) \\(\\ce{HBr}\\) solution is","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/solutions-and-concentrations\/strength-acids-and-bases-quiz\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:52+00:00","dateModified":"2024-11-25T00:17:22+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
@@ -81,25 +44,96 @@ MathJax = {
 
 </script>
 <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
-<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
-<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
-<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+
+
+
+
+<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=849.css' media='all' />
  	<!-- /wp_head -->
+
     
+    
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta name="author" content="RMIT Library">
+
+    <meta name="geo.position" content="-37.807778, 144.963333">
+    <meta name="geo.placename" content="Melbourne">
+    <meta name="geo.region" content="AU">
+
+    <meta name="dcterms.title" content="Learning Lab">
+    
+    <meta name="dcterms.description" content="Understanding the strength of acids and bases is crucial for predicting their behaviour in chemical reactions and their impact in various applications. Test your ability to identify and differentiate between strong and weak acids and bases with this quiz. Your turn – strength of acids and bases The \(\ce{HBr}\) in...">
+    <meta name="dcterms.type" content="Text">
+    <meta name="dcterms.identifier" content="https://learninglab.rmit.edu.au/chemistry/solutions-and-concentrations/strength-acids-and-bases-quiz/">
+    <meta name="dcterms.format" content="text/html">
+    <!-- END Additional meta tags not covered by wp_head -->
+
+
+    <!-- START Additional scripts for tracking -->
+
+    <!-- Microsoft Clarity - does hotspot tracking of pages -->
+    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+
+    <!-- Google tag - (gtag.js) --> 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLHPB23GYR');
+    </script>
+
+    <!-- Microsoft Bing - Not sure how useful this is? --> 
+    <meta name="msvalidate.01" content="8E4954E1DFAB7E2F8A92DD0A0BD6ED09">
+
+    <!-- END Additional scripts for tracking -->
+
     <style>
         </style>
+
+    <!-- 
+    DARK MODE javascript
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+    -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Function to get the stored theme from local storage
+        const getStoredTheme = () => localStorage.getItem('theme');
+
+        // Function to determine the preferred theme
+        const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+            return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        // Function to apply the specified theme
+        const setTheme = theme => {
+        if (theme === 'auto') {
+            // If theme is 'auto', set it based on system preference
+            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+            // Otherwise, set the theme explicitly
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        };
+
+        // Set the theme based on the preferred theme
+        setTheme(getPreferredTheme());
+    })();
+    </script>
 </head>
 
 <body class="page-template page-template-page-templates page-template-last-content-page page-template-page-templateslast-content-page-php page page-id-3221 page-child parent-pageid-3164 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
-	
 		
 <header>
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
@@ -166,7 +200,7 @@ MathJax = {
 </h2>
 <div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
 <div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
-<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic Word List tool</a></li>
 <li class="page_item page-item-3107 page_item_has_children"><a href="../../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
 <li class="page_item page-item-2520 page_item_has_children"><a href="../../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
 <li class="page_item page-item-2521"><a href="../../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
@@ -211,7 +245,7 @@ MathJax = {
 									<ul>
 										<li><a href="../../../art-and-design/index.html">Art and design</a></li>
 										<li><a href="../../index.html">Chemistry</a></li>
-										<li><a href="../../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../../law-resources/index.html">Legal studies</a></li>
 										<li><a href="../../../maths-statistics/index.html">Mathematics and statistics</a></li>
 										<li><a href="../../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
 										<li><a href="../../../subject-areas/physics/index.html">Physics</a></li>
@@ -275,7 +309,7 @@ This should be moved to a stylesheet once style is determined. -->
 <!-- START SIDEBAR NAV PANEL -->
 <nav class="right-nav" aria-label="Section Menu">
 
-<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">Solutions and concentrations</a></h3><ul><li><a href="../solutions/index.html">Solutions</a></li><li><a href="../concentration-and-dilutions-solutions/index.html">Concentration and dilutions of solutions</a></li><li><a href="../concentration-and-dilutions-exercises/index.html">Concentration and dilutions exercises</a></li><li><a href="../acids-bases-and-salts/index.html">Acids, bases and salts</a></li><li><a href="../exercises-acids-salts-and-bases/index.html">Exercises on acids, salts and bases</a></li><li><a href="../strength-acids-and-bases/index.html">Strength of acids and bases</a></li><li><a href="index.html" class="selected"  aria-current="page">Strength of acids and bases quiz</a></ul></nav>
+<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">Solutions and concentration</a></h3><ul><li><a href="../solutions/index.html">Solubility</a></li><li><a href="../chemistry-solutions-concentration-concentration-and-dilution-solutions/index.html">Concentration and dilutions</a></li><li><a href="../concentration-and-dilution-exercises/index.html">Quiz – Concentration and dilutions</a></li><li><a href="../acids-bases-and-salts/index.html">Acids, bases and salts</a></li><li><a href="../exercises-acids-salts-and-bases/index.html">Quiz – Acids, bases and salts</a></li><li><a href="../strength-acids-and-bases/index.html">Strength of acids and bases</a></li><li><a href="index.html" class="selected"  aria-current="page">Quiz – Strength of acids and bases</a></ul></nav>
 <!-- END SIDEBAR NAV PANEL -->
 
 
@@ -315,82 +349,74 @@ list.querySelectorAll('h4').forEach(h4 => {
 <ul class="breadcrumbs">
 <li><a href="../../../index.html">Home</a></li>
 <li><a href="../../index.html">Chemistry</a></li>
-<li><a href="../index.html">Solutions and concentrations</a></li>
+<li><a href="../index.html">Solutions and concentration</a></li>
 </ul>
 </nav>			            <a id="main-content"></a>
-            <h1 class="margin-top-zero">Strength of acids and bases quiz</h1>
-            <p class="lead">How well do you know acids and bases? What makes an acid weak or strong? Check your knowledge.</p>
-<p>\[\require{mhchem}\]</p>
-<h2>Worked exercises</h2>
-<p>The weak acid \(\ce{HA}\) in \(0.0200M\) solution is \(10\%\) ionised. Calculate the acid ionisation constant for the acid.</p>
-<h3>Answer</h3>
-<p>We are given the percentage ionisation of the weak acid and asked to calculate the acid ionisation constant for the acid. First, we need to calculate the concentrations of \(\ce{H}_{3}\ce{O}^{+}\), \(\ce{A}^{-}\) and \(\ce{HA}\) using the percentage ionisation. The ionisation reaction can be written as follows: \[ \ce{HA}\left(aq\right)+\ce{H}_{2}\ce{O}\left(l\right)\rightleftharpoons\ce{H}_{3}\ce{O}^{+}\left(aq\right)+\ce{A}^{-}\left(aq\right) \]</p>
-<p>The concentration of \(\ce{H}_{3}\ce{O}^{+}\) will be the \(10\%\) of the original concentration of \(\ce{HA}\). \[ \frac{0.0200M}{100}\times10=0.00200M \]</p>
-<p>As the stoichiometric ratio between \(\ce{H}_{3}\ce{O}^{+}\) and \(\ce{A}^{-}\) is one to one \(1:1\), the concentration of \(\ce{A}^{-}\)will also be \(0.00200M\).</p>
-<p>The remaining concentration of \(\ce{HA}\) is: \[ 0.0200M-0.00200M=0.0180M \]</p>
-<p>Next, substitute the concentration values into the acid ionisation constant expression: \[\begin{align*} K_{a} &amp; =\frac{\left[\ce{H}_{3}\ce{O}^{+}\right]\left[\ce{A}^{-}\right]}{\left[\ce{HA}\right]}\\ K_{a} &amp; =\frac{0.00200M\times0.00200M}{0.0180M}\\ K_{a} &amp; =2.2\times10^{-4} \end{align*}\]</p>
-<p>The strength of a base can also be predicted by the ionisation constant, which is known as base ionisation/dissociation constant \(K_{b}\). The general expression for \(K_{b}\) is: \[\begin{align*} \ce{B}\left(aq\right)+\ce{H}_{2}\ce{O}\left(l\right) &amp; \rightleftharpoons\ce{BH}^{+}\left(aq\right)+\ce{OH}^{-}\left(aq\right)\\ K_{b} &amp; =\frac{\left[\ce{OH}^{-}\right]\left[\ce{BH}^{+}\right]}{\left[\ce{B}\right]} \end{align*}\]</p>
-<h2>Exercises</h2>
+            <h1 class="margin-top-zero">Quiz – Strength of acids and bases</h1>
+            <p class="lead">Understanding the strength of acids and bases is crucial for predicting their behaviour in chemical reactions and their impact in various applications. Test your ability to identify and differentiate between strong and weak acids and bases with this quiz.</p>
+<h2>Your turn – strength of acids and bases</h2>
 <ol>
-<li>The \(\ce{HBr}\) in a \(0.1M\) \(\ce{HBr}\) solution is \(100\%\) dissociated. What are the molar concentrations of \(\ce{HBr}\), \(\ce{H}_{3}\ce{O}^{+}\) and \(\ce{Cl}^{-}\) in the solution?</li>
+<li>The \(\ce{HBr}\) in a \(0.1\textrm{M}\) \(\ce{HBr}\) solution is \(100\%\) dissociated. Calculate the molar concentrations of \(\ce{HBr}\), \(\ce{H3O}^{+}\) and \(\ce{Cl}^{-}\) in the solution.</li>
 </ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-7331">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-4930" aria-expanded="false" aria-controls="body-answer-4930" >Answer</button>
+<p class="accordion-header" id="head-answer-1422">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-4655" aria-expanded="false" aria-controls="body-answer-4655" >Answer</button>
 </p>
-<div id="body-answer-4930" class="accordion-collapse collapse " aria-labelledby="head-answer-7331">
+<div id="body-answer-4655" class="accordion-collapse collapse " aria-labelledby="head-answer-1422">
 <div class="accordion-body">
-<p>\(\ce{H}_{3}\ce{O}^{+}\) \(=0.1M\), \(\ce{Br}^{-}\) \(=0.1M\), \(\ce{HBr}\) \(=0\)</p>
-</div></div></div>
+<p>\(\ce{H3O}^{+}=0.1\textrm{M}\)</p>
+<p>\(\ce{Br}^{-}=0.1\textrm{M}\)</p>
+<p>\(\ce{HBr}=0\textrm{M}\)</p>
+<p>	</div></div></div>
 <ol start="2">
-<li>How many acidic hydrogens and non-acidic hydrogens are present in the following molecules?</li>
-</ol>
-<ol class="alpha">
-<li>\(\ce{HNO}_{3}\)</li>
-<li>\(\ce{H}_{2}\ce{C}_{4}\ce{H}_{4}\ce{O}_{4}\) (succinic acid)</li>
-<li>\(\ce{NH}_{3}\)</li>
-<li>\(\ce{CH}_{4}\)</li>
+<li>Determine the number of acidic and non-acidic hydrogens present in the following molecules.</li>
+<ol type="a">
+<li>\(\ce{HNO3}\)</li>
 </ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-9957">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-5485" aria-expanded="false" aria-controls="body-answer-5485" >Answer</button>
+<p class="accordion-header" id="head-answer-1123">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-1677" aria-expanded="false" aria-controls="body-answer-1677" >Answer</button>
 </p>
-<div id="body-answer-5485" class="accordion-collapse collapse " aria-labelledby="head-answer-9957">
+<div id="body-answer-1677" class="accordion-collapse collapse " aria-labelledby="head-answer-1123">
 <div class="accordion-body">
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Acidic</th>
-<th>Non-acidic</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>a</td>
-<td>\(1\)</td>
-<td>\(0\)</td>
-</tr>
-<tr>
-<td>b</td>
-<td>\(2\)</td>
-<td>\(4\)</td>
-</tr>
-<tr>
-<td>c</td>
-<td>\(3\)</td>
-<td>\(0\)</td>
-</tr>
-<tr>
-<td>d</td>
-<td>\(0\)</td>
-<td>\(4\)</td>
-</tr>
-</tbody>
-</table>
-</div></div></div>
+<p>\(1\) acidic and \(0\) non-acidic</p>
+<p>		</div></div></div>
+<ol type="a" start="2">
+<li>\(\ce{H2C4H4O4}\) (succinic acid)</li>
+</ol>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-answer-6913">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-3287" aria-expanded="false" aria-controls="body-answer-3287" >Answer</button>
+</p>
+<div id="body-answer-3287" class="accordion-collapse collapse " aria-labelledby="head-answer-6913">
+<div class="accordion-body">
+<p>\(2\) acidic and \(4\) non-acidic</p>
+<p>		</div></div></div>
+<ol type="a" start="3">
+<li>\(\ce{NH3}\)</li>
+</ol>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-answer-1065">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-1219" aria-expanded="false" aria-controls="body-answer-1219" >Answer</button>
+</p>
+<div id="body-answer-1219" class="accordion-collapse collapse " aria-labelledby="head-answer-1065">
+<div class="accordion-body">
+<p>\(3\) acidic and \(0\) non-acidic</p>
+<p>		</div></div></div>
+<ol type="a" start="4">
+<li>\(\ce{CH4}\)</li>
+</ol>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-answer-6972">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-7691" aria-expanded="false" aria-controls="body-answer-7691" >Answer</button>
+</p>
+<div id="body-answer-7691" class="accordion-collapse collapse " aria-labelledby="head-answer-6972">
+<div class="accordion-body">
+<p>\(0\) acidic and \(4\) non-acidic</p>
+<p>		</div></div></div>
+</ol>
 <ol start="3">
-<li>Using the acid ionisation constants given below, indicate which acid is the stronger in each of the following acid pairs.</li>
+<li>Use the acid ionisation constants in the table to identify the stronger acid in each acid pair.</li>
 </ol>
 <table>
 <thead>
@@ -426,48 +452,74 @@ list.querySelectorAll('h4').forEach(h4 => {
 </tr>
 </tbody>
 </table>
-<ol class="alpha">
-<li>\(\ce{H}_{3}\ce{PO}_{4}\) and \(\ce{HNO}_{2}\)</li>
+<ol>
+<ol type="a">
+<li>\(\ce{H3PO4}\) and \(\ce{HNO2}\)</li>
+</ol>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-answer-8640">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-3494" aria-expanded="false" aria-controls="body-answer-3494" >Answer</button>
+</p>
+<div id="body-answer-3494" class="accordion-collapse collapse " aria-labelledby="head-answer-8640">
+<div class="accordion-body">
+<p>\(\ce{H3PO4}\)</p>
+<p>		</div></div></div>
+<ol type="a" start="2">
 <li>\(\ce{HCN}\) and \(\ce{HF}\)</li>
-<li>\(\ce{H}_{2}\ce{CO}_{3}\) and \(\ce{HCO}_{3}^{-}\)</li>
-<li>\(\ce{HNO}_{2}\) and \(\ce{HCN}\)</li>
 </ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-3432">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-2073" aria-expanded="false" aria-controls="body-answer-2073" >Answer</button>
+<p class="accordion-header" id="head-answer-6677">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-4298" aria-expanded="false" aria-controls="body-answer-4298" >Answer</button>
 </p>
-<div id="body-answer-2073" class="accordion-collapse collapse " aria-labelledby="head-answer-3432">
+<div id="body-answer-4298" class="accordion-collapse collapse " aria-labelledby="head-answer-6677">
 <div class="accordion-body">
-<ol class="alpha">
-<li>\(\ce{H}_{3}\ce{PO}_{4}\) is stronger</li>
-<li>\(\ce{HF}\) is stronger</li>
-<li>\(\ce{H}_{2}\ce{CO}_{3}\) is stronger</li>
-<li>\(\ce{HNO}_{2}\) is stronger</li>
+<p>\(\ce{HF}\)</p>
+<p>		</div></div></div>
+<ol type="a" start="3">
+<li>\(\ce{H2CO3}\) and \(\ce{HCO}_{3}^{-}\)</li>
 </ol>
-</div></div></div>
-<p>4. A \(0.0300M\) of a base is \(7.5\%\) ionised. Calculate the base ionisation constant \(K_{b}\).</p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-3952">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-6916" aria-expanded="false" aria-controls="body-answer-6916" >Answer</button>
+<p class="accordion-header" id="head-answer-2987">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-6491" aria-expanded="false" aria-controls="body-answer-6491" >Answer</button>
 </p>
-<div id="body-answer-6916" class="accordion-collapse collapse " aria-labelledby="head-answer-3952">
+<div id="body-answer-6491" class="accordion-collapse collapse " aria-labelledby="head-answer-2987">
 <div class="accordion-body">
-<p>The general equation for a base ionisation in water is: \[ \ce{B}\left(aq\right)+\ce{H}_{2}\ce{O}\left(l\right)\rightleftharpoons\ce{BH}^{+}\left(aq\right)+\ce{OH}^{-}\left(aq\right) \] The concentration of the \(\ce{OH}^{-}\) will be the \(7.5\%\) of the original concentration of \(\ce{B}\). \[ \frac{0.0300M}{100}\times7.5=0.00225M \]</p>
-<p>As the stoichiometric ratio between \(\ce{OH}^{-}\) and \(\ce{BH}^{+}\)is \(1:1\) the concentration of \(\ce{BH}^{+}\) will also be \(0.00225M\).</p>
-<p>The remaining concentration of \(\ce{B}\) is: \[ 0.0300M-0.00225M=0.0278M \]</p>
-<p>Next, substitute the concentration values into the acid ionisation constant expression: \[\begin{align*} K_{a} &amp; =\frac{\left[\ce{OH}^{-}\right]\left[\ce{BH}^{+}\right]}{\left[\ce{B}\right]}\\ K_{a} &amp; =\frac{0.00225M\times0.00225M}{0.0278M}\\ K_{a} &amp; =1.82\times10^{-4} \end{align*}\] </div></div></div>
-<p>5. A \(0.0500M\) of an acid is \(15\%\) ionised. Calculate the acid ionisation constant \(K_{a}\).</p>
+<p>\(\ce{H2CO3}\)</p>
+<p>		</div></div></div>
+<ol type="a" start="4">
+<li>\(\ce{HNO2}\) and \(\ce{HCN}\)</li>
+</ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-3708">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-4168" aria-expanded="false" aria-controls="body-answer-4168" >Answer</button>
+<p class="accordion-header" id="head-answer-5725">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-8671" aria-expanded="false" aria-controls="body-answer-8671" >Answer</button>
 </p>
-<div id="body-answer-4168" class="accordion-collapse collapse " aria-labelledby="head-answer-3708">
+<div id="body-answer-8671" class="accordion-collapse collapse " aria-labelledby="head-answer-5725">
 <div class="accordion-body">
-<p>The ionisation reaction for an acid can be written as follows: \[ \ce{HA}\left(aq\right)+\ce{H}_{2}\ce{O}\left(l\right)\rightleftharpoons\ce{H}_{3}\ce{O}^{+}\left(aq\right)+\ce{A}^{-}\left(aq\right) \]</p>
-<p>The concentration of the \(\ce{H}_{3}\ce{O}^{+}\)will be the \(15\%\) of the original concentration of \(\ce{HA}\): \[ \frac{0.0500M}{100}\times15=0.00750M \]</p>
-<p>As the stoichiometric ratio between \(\ce{H}_{3}\ce{O}^{+}\) and \(\ce{A}^{-}\)is \(1:1\) the concentration of \(\ce{A}^{-}\)will also be \(0.00750M\).</p>
-<p>The remaining concentration of \(\ce{HA}\) is: \[ 0.0500M-0.00750M=0.0425M \]</p>
-<p>Next, substitute the concentration values into the acid ionisation constant expression: \[\begin{align*} K_{a} &amp; =\frac{\left[\ce{H}_{3}\ce{O}^{+}\right]\left[\ce{A}^{-}\right]}{\left[\ce{HA}\right]}\\ K_{a} &amp; =\frac{0.00750M\times0.00750M}{0.0425M}\\ K_{a} &amp; =1.32\times10^{-3} \end{align*}\] </div></div></div>
+<p>\(\ce{HNO2}\)</p>
+<p>		</div></div></div>
+</ol>
+<ol start="4">
+<li>A \(0.0300\textrm{M}\) of a base is \(7.5\%\) ionised. Calculate the base ionisation constant \(K_{b}\).</li>
+</ol>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-answer-1941">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-4182" aria-expanded="false" aria-controls="body-answer-4182" >Answer</button>
+</p>
+<div id="body-answer-4182" class="accordion-collapse collapse " aria-labelledby="head-answer-1941">
+<div class="accordion-body">
+<p>\(K_{b}=1.82\times10^{-4}\textrm{M}\)</p>
+<p>	</div></div></div>
+<ol start="5">
+<li>A \(0.0500\textrm{M}\) of an acid is \(15\%\) ionised. Calculate the acid ionisation constant \(K_{a}\).</li>
+</ol>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-answer-6704">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-2226" aria-expanded="false" aria-controls="body-answer-2226" >Answer</button>
+</p>
+<div id="body-answer-2226" class="accordion-collapse collapse " aria-labelledby="head-answer-6704">
+<div class="accordion-body">
+<p>\(K_{a}=1.32/times10^{-3}\textrm{M}\)</p>
+<p>	</div></div></div>
 						<nav class="btn-nav-container" aria-label="Previous and next links">
 <h2 class="btn-nav-prev">
     <a href="../strength-acids-and-bases/index.html">
@@ -500,7 +552,7 @@ list.querySelectorAll('h4').forEach(h4 => {
 <!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
 <!--
 <p><strong>Subjects </strong>
-    | <strong><a href="https://lab.bitma.app/subject-area/chemistry/">Chemistry</a></strong>  
+    | <strong><a href="https://learninglab.rmit.edu.au/subject-area/chemistry/">Chemistry</a></strong>  
     </p>
 -->
 <!-- category echo end -->
@@ -560,18 +612,17 @@ list.querySelectorAll('h4').forEach(h4 => {
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <section class="acknowledgement-container">
-                        <div class="acknowledgement-image">
-                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
-                        </div>
-
+                <section class="acknowledgement-container">
                         <div class="content">
                             <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
                             <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
-                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="#" class="link-large">More information</a>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business<span class="img-credit"> - Artwork 'Sentient' by Hollie Johnson, Gunaikurnai and Monero Ngarigo</span>.</p>
+                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                        </div>
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/sentient-hollie-johnson.jpg" alt="" />
                         </div>
                     </section>
                 </div>
@@ -651,7 +702,7 @@ list.querySelectorAll('h4').forEach(h4 => {
 </div><!-- wrapper end -->
 		
 	
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
 <script src="../../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
 <!-- Code to handle hamburger menu, embed mode, dark mode -->

@@ -2,68 +2,31 @@
 <html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
 
 <head>
-<!-- 
-    DARK MODE
-    This script is placed in the <head> to ensure the theme is set as early as possible,
-    reducing the flash of unstyled content (FOUC). It determines the user's preferred
-    theme (either from local storage or system settings) and applies it immediately.
-  -->
-  <script>
-    (function() {
-      'use strict';
-
-      // Function to get the stored theme from local storage
-      const getStoredTheme = () => localStorage.getItem('theme');
-
-      // Function to determine the preferred theme
-      const getPreferredTheme = () => {
-        const storedTheme = getStoredTheme(); // Retrieve the stored theme
-        if (storedTheme) {
-          return storedTheme; // If a theme is stored, return it
-        }
-        // If no theme is stored, check the system preference for dark mode
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      // Function to apply the specified theme
-      const setTheme = theme => {
-        if (theme === 'auto') {
-          // If theme is 'auto', set it based on system preference
-          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-        } else {
-          // Otherwise, set the theme explicitly
-          document.documentElement.setAttribute('data-bs-theme', theme);
-        }
-      };
-
-      // Set the theme based on the preferred theme
-      setTheme(getPreferredTheme());
-    })();
-  </script>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- wp_head -->
-	<title>Acids, bases and salts - lab</title>
-
-		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
-		<meta name="description" content="Learn how to define an acid, base and a salt. Understand where they come from and how to measure them. \[\require{mhchem}\] Arrhenius acid-base theory Arrhenius acid: Any substance that contains hydrogen and generates hydrogen ions in water. Examples - \(\ce{HCl}\) and \(\ce{HNO}_{3}\). \[ \ce{HNO}_{3}\left(l\right)\rightarrow\ce{H}^{+}\left(aq\right)+\ce{NO}_{3}^{-}\left(aq\right) \] \[ \ce{HCl}\left(g\right)\rightarrow\ce{H}^{+}\left(aq\right)+\ce{Cl}^{-}\left(aq\right) \] Arrhenius base: Any substance containing hydroxide and" />
+	<title>Acids, bases and salts - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		
+		<meta name="description" content="Acids and bases are vital chemical compounds with significant roles in both science and daily life. Acids, with their sour taste and reactivity, are found in citrus fruits and vinegar, while bases, known for their bitter taste and slipperiness, appear in cleaning products and baking soda. When acids and bases react, they form salts, compounds" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
-		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		
 		<meta property="og:locale" content="en_US" />
-		<meta property="og:site_name" content="lab -" />
+		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="Acids, bases and salts - lab" />
-		<meta property="og:description" content="Learn how to define an acid, base and a salt. Understand where they come from and how to measure them. \[\require{mhchem}\] Arrhenius acid-base theory Arrhenius acid: Any substance that contains hydrogen and generates hydrogen ions in water. Examples - \(\ce{HCl}\) and \(\ce{HNO}_{3}\). \[ \ce{HNO}_{3}\left(l\right)\rightarrow\ce{H}^{+}\left(aq\right)+\ce{NO}_{3}^{-}\left(aq\right) \] \[ \ce{HCl}\left(g\right)\rightarrow\ce{H}^{+}\left(aq\right)+\ce{Cl}^{-}\left(aq\right) \] Arrhenius base: Any substance containing hydroxide and" />
-		<meta property="og:url" content="https://lab.bitma.app/chemistry/solutions-and-concentrations/acids-bases-and-salts/" />
+		<meta property="og:title" content="Acids, bases and salts - Learning Lab" />
+		<meta property="og:description" content="Acids and bases are vital chemical compounds with significant roles in both science and daily life. Acids, with their sour taste and reactivity, are found in citrus fruits and vinegar, while bases, known for their bitter taste and slipperiness, appear in cleaning products and baking soda. When acids and bases react, they form salts, compounds" />
+		<meta property="og:url" content="https://learninglab.rmit.edu.au/chemistry/solutions-and-concentrations/acids-bases-and-salts/" />
 		<meta property="article:published_time" content="2023-10-16T05:34:52+00:00" />
-		<meta property="article:modified_time" content="2024-08-22T23:16:28+00:00" />
+		<meta property="article:modified_time" content="2024-11-25T00:14:05+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Acids, bases and salts - lab" />
-		<meta name="twitter:description" content="Learn how to define an acid, base and a salt. Understand where they come from and how to measure them. \[\require{mhchem}\] Arrhenius acid-base theory Arrhenius acid: Any substance that contains hydrogen and generates hydrogen ions in water. Examples - \(\ce{HCl}\) and \(\ce{HNO}_{3}\). \[ \ce{HNO}_{3}\left(l\right)\rightarrow\ce{H}^{+}\left(aq\right)+\ce{NO}_{3}^{-}\left(aq\right) \] \[ \ce{HCl}\left(g\right)\rightarrow\ce{H}^{+}\left(aq\right)+\ce{Cl}^{-}\left(aq\right) \] Arrhenius base: Any substance containing hydroxide and" />
+		<meta name="twitter:title" content="Acids, bases and salts - Learning Lab" />
+		<meta name="twitter:description" content="Acids and bases are vital chemical compounds with significant roles in both science and daily life. Acids, with their sour taste and reactivity, are found in citrus fruits and vinegar, while bases, known for their bitter taste and slipperiness, appear in cleaning products and baking soda. When acids and bases react, they form salts, compounds" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/chemistry\/solutions-and-concentrations\/acids-bases-and-salts\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/lab.bitma.app\/chemistry\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/solutions-and-concentrations\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/solutions-and-concentrations\/#listItem","position":3,"name":"Solutions and concentrations","item":"https:\/\/lab.bitma.app\/chemistry\/solutions-and-concentrations\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/solutions-and-concentrations\/acids-bases-and-salts\/#listItem","previousItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/solutions-and-concentrations\/acids-bases-and-salts\/#listItem","position":4,"name":"Acids, bases and salts","previousItem":"https:\/\/lab.bitma.app\/chemistry\/solutions-and-concentrations\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/chemistry\/solutions-and-concentrations\/acids-bases-and-salts\/#webpage","url":"https:\/\/lab.bitma.app\/chemistry\/solutions-and-concentrations\/acids-bases-and-salts\/","name":"Acids, bases and salts - lab","description":"Learn how to define an acid, base and a salt. Understand where they come from and how to measure them. \\[\\require{mhchem}\\] Arrhenius acid-base theory Arrhenius acid: Any substance that contains hydrogen and generates hydrogen ions in water. Examples - \\(\\ce{HCl}\\) and \\(\\ce{HNO}_{3}\\). \\[ \\ce{HNO}_{3}\\left(l\\right)\\rightarrow\\ce{H}^{+}\\left(aq\\right)+\\ce{NO}_{3}^{-}\\left(aq\\right) \\] \\[ \\ce{HCl}\\left(g\\right)\\rightarrow\\ce{H}^{+}\\left(aq\\right)+\\ce{Cl}^{-}\\left(aq\\right) \\] Arrhenius base: Any substance containing hydroxide and","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/chemistry\/solutions-and-concentrations\/acids-bases-and-salts\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:52+00:00","dateModified":"2024-08-22T23:16:28+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/solutions-and-concentrations\/acids-bases-and-salts\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/solutions-and-concentrations\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/solutions-and-concentrations\/#listItem","position":3,"name":"Solutions and concentration","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/solutions-and-concentrations\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/solutions-and-concentrations\/acids-bases-and-salts\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/solutions-and-concentrations\/acids-bases-and-salts\/#listItem","position":4,"name":"Acids, bases and salts","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/solutions-and-concentrations\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/solutions-and-concentrations\/acids-bases-and-salts\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/chemistry\/solutions-and-concentrations\/acids-bases-and-salts\/","name":"Acids, bases and salts - Learning Lab","description":"Acids and bases are vital chemical compounds with significant roles in both science and daily life. Acids, with their sour taste and reactivity, are found in citrus fruits and vinegar, while bases, known for their bitter taste and slipperiness, appear in cleaning products and baking soda. When acids and bases react, they form salts, compounds","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/solutions-and-concentrations\/acids-bases-and-salts\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:52+00:00","dateModified":"2024-11-25T00:14:05+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
@@ -81,25 +44,96 @@ MathJax = {
 
 </script>
 <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
-<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
-<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
-<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+
+
+
+
+<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=849.css' media='all' />
  	<!-- /wp_head -->
+
     
+    
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta name="author" content="RMIT Library">
+
+    <meta name="geo.position" content="-37.807778, 144.963333">
+    <meta name="geo.placename" content="Melbourne">
+    <meta name="geo.region" content="AU">
+
+    <meta name="dcterms.title" content="Learning Lab">
+    
+    <meta name="dcterms.description" content="Acids and bases are vital chemical compounds with significant roles in both science and daily life. Acids, with their sour taste and reactivity, are found in citrus fruits and vinegar, while bases, known for their bitter taste and slipperiness, appear in cleaning products and baking soda. When acids and bases...">
+    <meta name="dcterms.type" content="Text">
+    <meta name="dcterms.identifier" content="https://learninglab.rmit.edu.au/chemistry/solutions-and-concentrations/acids-bases-and-salts/">
+    <meta name="dcterms.format" content="text/html">
+    <!-- END Additional meta tags not covered by wp_head -->
+
+
+    <!-- START Additional scripts for tracking -->
+
+    <!-- Microsoft Clarity - does hotspot tracking of pages -->
+    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+
+    <!-- Google tag - (gtag.js) --> 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLHPB23GYR');
+    </script>
+
+    <!-- Microsoft Bing - Not sure how useful this is? --> 
+    <meta name="msvalidate.01" content="8E4954E1DFAB7E2F8A92DD0A0BD6ED09">
+
+    <!-- END Additional scripts for tracking -->
+
     <style>
         </style>
+
+    <!-- 
+    DARK MODE javascript
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+    -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Function to get the stored theme from local storage
+        const getStoredTheme = () => localStorage.getItem('theme');
+
+        // Function to determine the preferred theme
+        const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+            return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        // Function to apply the specified theme
+        const setTheme = theme => {
+        if (theme === 'auto') {
+            // If theme is 'auto', set it based on system preference
+            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+            // Otherwise, set the theme explicitly
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        };
+
+        // Set the theme based on the preferred theme
+        setTheme(getPreferredTheme());
+    })();
+    </script>
 </head>
 
 <body class="page-template-default page page-id-3218 page-child parent-pageid-3164 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
-	
 		
 <header>
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
@@ -166,7 +200,7 @@ MathJax = {
 </h2>
 <div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
 <div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
-<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic Word List tool</a></li>
 <li class="page_item page-item-3107 page_item_has_children"><a href="../../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
 <li class="page_item page-item-2520 page_item_has_children"><a href="../../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
 <li class="page_item page-item-2521"><a href="../../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
@@ -211,7 +245,7 @@ MathJax = {
 									<ul>
 										<li><a href="../../../art-and-design/index.html">Art and design</a></li>
 										<li><a href="../../index.html">Chemistry</a></li>
-										<li><a href="../../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../../law-resources/index.html">Legal studies</a></li>
 										<li><a href="../../../maths-statistics/index.html">Mathematics and statistics</a></li>
 										<li><a href="../../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
 										<li><a href="../../../subject-areas/physics/index.html">Physics</a></li>
@@ -275,7 +309,7 @@ This should be moved to a stylesheet once style is determined. -->
 <!-- START SIDEBAR NAV PANEL -->
 <nav class="right-nav" aria-label="Section Menu">
 
-<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">Solutions and concentrations</a></h3><ul><li><a href="../solutions/index.html">Solutions</a></li><li><a href="../concentration-and-dilutions-solutions/index.html">Concentration and dilutions of solutions</a></li><li><a href="../concentration-and-dilutions-exercises/index.html">Concentration and dilutions exercises</a></li><li><a href="index.html" class="selected"  aria-current="page">Acids, bases and salts</a><li><a href="../exercises-acids-salts-and-bases/index.html">Exercises on acids, salts and bases</a></li><li><a href="../strength-acids-and-bases/index.html">Strength of acids and bases</a></li><li><a href="../strength-acids-and-bases-quiz/index.html">Strength of acids and bases quiz</a></li></ul></nav>
+<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">Solutions and concentration</a></h3><ul><li><a href="../solutions/index.html">Solubility</a></li><li><a href="../chemistry-solutions-concentration-concentration-and-dilution-solutions/index.html">Concentration and dilutions</a></li><li><a href="../concentration-and-dilution-exercises/index.html">Quiz – Concentration and dilutions</a></li><li><a href="index.html" class="selected"  aria-current="page">Acids, bases and salts</a><li><a href="../exercises-acids-salts-and-bases/index.html">Quiz – Acids, bases and salts</a></li><li><a href="../strength-acids-and-bases/index.html">Strength of acids and bases</a></li><li><a href="../strength-acids-and-bases-quiz/index.html">Quiz – Strength of acids and bases</a></li></ul></nav>
 <!-- END SIDEBAR NAV PANEL -->
 
 
@@ -315,56 +349,101 @@ list.querySelectorAll('h4').forEach(h4 => {
 <ul class="breadcrumbs">
 <li><a href="../../../index.html">Home</a></li>
 <li><a href="../../index.html">Chemistry</a></li>
-<li><a href="../index.html">Solutions and concentrations</a></li>
+<li><a href="../index.html">Solutions and concentration</a></li>
 </ul>
 </nav>            <a id="main-content"></a>
             <h1 class="margin-top-zero">Acids, bases and salts</h1>
-            <p class="lead">Learn how to define an acid, base and a salt. Understand where they come from and how to measure them.</p>
-<p>\[\require{mhchem}\]</p>
-<div class="acc plain">
-<h2>Arrhenius acid-base theory</h2>
-<p>Arrhenius acid: Any substance that contains hydrogen and generates hydrogen ions in water. Examples - \(\ce{HCl}\) and \(\ce{HNO}_{3}\). \[ \ce{HNO}_{3}\left(l\right)\rightarrow\ce{H}^{+}\left(aq\right)+\ce{NO}_{3}^{-}\left(aq\right) \]</p>
-<p>\[ \ce{HCl}\left(g\right)\rightarrow\ce{H}^{+}\left(aq\right)+\ce{Cl}^{-}\left(aq\right) \]</p>
-<p>Arrhenius base: Any substance containing hydroxide and generating hydroxyl ions in water. Examples - \(\ce{NaOH}\) and \(\ce{KOH}\).</p>
-<p>\[ \ce{NaOH}\left(s\right)\rightarrow\ce{Na}^{+}\left(aq\right)+\ce{OH}^{-}\left(aq\right) \]</p>
-<p>\[ \ce{KOH}\left(s\right)\rightarrow\ce{K}^{+}\left(aq\right)+\ce{OH}^{-}\left(aq\right) \]</p>
-<h3>Limitations of the Arrhenius acid-base theory</h3>
-<p>Arrhenius's acid base theory is limited to aqueous solutions. This theory can not explain why compounds without hydroxyl groups behave as bases, such as ammonia generating a basic aqueous solution.</p>
-<h2>Bronsted-Lowry acid-base theory</h2>
-<p>Due to the limitations in the Arrhenius acid-base theory, the Bronsted-Lowry Acid-Base Theory was introduced.</p>
-<p>Bronsted-Lowry acid: any substance that can donate a hydrogen ion (or a proton) to another substance.</p>
-<p>Bronsted-Lowry base: any substance that can accept a hydrogen ion (or a proton) from another substance<sup>1</sup> \(=\) hydrogen ion/proton acceptor</p>
-<p>Bronsted-Lowry acids can donate a different number of hydrogen ions. For instance, \(\ce{HCl}\) and \(\ce{HNO}_{3}\) can donate one hydrogen ion (monoprotic acids), \(\ce{H}_{2}\ce{SO}_{4}\) is capable of donating two hydrogen ions (diprotic acids), and \(\ce{H}_{3}\ce{PO}_{4}\) can donate three hydrogen ions (triprotic acids).</p>
-<p>Not all hydrogens are acidic. Only the hydrogens bound to highly electronegative atoms such as oxygen and chlorine can be released as protons or hydrogen ions. Hydrogens in the examples above, \(\ce{HCl}\), \(\ce{HNO}_{3}\), \(\ce{H}_{2}\ce{SO}_{4}\), and \(\ce{H}_{3}\ce{PO}_{4}\) are all acidic as those hydrogens are bound to \(\ce{Cl}\), \(\ce{O}\). However, if you consider acetic acid \(\left(\ce{CH}_{3}\ce{COOH}\right)\), only one hydrogen out of four is acidic as one hydrogen connected to a highly electronegative atom, \(\ce{O}\) and the others are bound to \(\ce{C}\).</p>
-<figure style="width: 473px" class="wp-caption alignnone"><img fetchpriority="high" decoding="async" style="width: 473px; height: 722px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/1651_diagram_acids.png" alt="Chemical structures of acids" width="473" height="722" /><figcaption class="wp-caption-text">Structures of common acids by RMIT, licensed under CC BY-NC 4.0</figcaption></figure>
-<p>According to the Bronsted-Lowry acid-base theory, the presence of a species that can accept protons (a base) is vital for the existence of a Bronsted-Lowry acid. Proton donation and acceptance are complementary processes. For instance, consider the following reactions:</p>
+            <p class="lead">Acids and bases are vital chemical compounds with significant roles in both science and daily life. Acids, with their sour taste and reactivity, are found in citrus fruits and vinegar, while bases, known for their bitter taste and slipperiness, appear in cleaning products and baking soda. When acids and bases react, they form salts, compounds that are essential in everything from seasoning food to preserving life through electrolytes. Understanding these compounds is key to grasping many chemical reactions and processes.</p>
+<p>Acids and bases can be easily classified based on their useful properties, but how are they defined from a chemical perspective?</p>
+<h2>Arrhenius acids and bases</h2>
+<p>Arrhenius' theory of acids and bases defines acids and bases in terms of their behaviour in water.</p>
 <ul>
-<li>When \(\ce{HCl}\) gas dissolves in water - \(\ce{HCl}\) donates the proton to the water (Bronsted-Lowry acid). The polar water molecules accept the proton (Bronsted-Lowry base) and become hydronium ions. The bond formed between the proton and the water molecule is a coordinate covalent bond as the oxygen atom supplies both electrons to the bond: \[ \ce{HCl}\left(g\right)+\ce{H}_{2}\ce{O}\left(l\right)\rightarrow\ce{H}_{3}\ce{O}^{+}\left(aq\right)+\ce{Cl}^{-}\left(aq\right) \] \(\ce{HCl}\) \(=\) Proton donor \(=\) Acid</li>
+<li>An <strong>Arrhenius acid</strong> is any substance that increases the concentration of hydrogen ions (\(\ce{H}^{+}\)) in water. They do this by dissociating or breaking down into their constituent ions when dissolved in water. Arrhenius acids contain \(\ce{H}^{+}\) ions. Examples of Arrhenius acids are \(\ce{HCl}\) and \(\ce{HNO3}\). The equations for their dissociation are shown:<br />
+	\[ \ce{HNO3}(\textrm{l})\rightarrow\ce{H}^{+}(\textrm{aq})+\ce{NO}_{3}^{-}(\textrm{aq}) \] \[ \ce{HCl}(\textrm{g})\rightarrow\ce{H}^{+}(\textrm{aq})+\ce{Cl}^{-}(\textrm{aq}) \]</li>
+<li>An <strong>Arrhenius base</strong> is any substance that increases the concentration of hydroxide ions (\(\ce{OH}_{-}\)) in water. They achieve this by dissociating into their constituent ions when dissolved in water. Arrhenius bases contain \(\ce{OH}_{-}\) groups. Examples of Arrhenius bases are \(\ce{NaOH}\) and \(\ce{KOH}\). The equations for their dissociation in water are:<br />
+	\[ \ce{NaOH}(\textrm{s})\rightarrow\ce{Na}^{+}(\textrm{aq})+\ce{OH}^{-}(\textrm{aq}) \] \[ \ce{KOH}(\textrm{s})\rightarrow\ce{K}^{+}(\textrm{aq})+\ce{OH}^{-}(\textrm{aq}) \]
 </ul>
-<p>\(\ce{H}_{2}\ce{O}\) \(=\) Proton acceptor \(=\) Base</p>
+<h3>Limitations of Arrhenius' theory of acids and bases</h3>
+<p>Arrhenius's theory is limited to aqueous solutions, since it specifically defines acids and bases based on their behaviour in water. This theory cannot explain why compounds without hydroxyl groups behave as bases, such as ammonia generating a basic aqueous solution.</p>
+<h2>Brønsted–Lowry acid–base theory</h2>
+<p>Due to the limitations of Arrhenius' theory of acids and bases, the Brønsted–Lowry acid–base theory was introduced.</p>
 <ul>
-<li>The reaction between \(\ce{NH}_{3}\) gas and \(\ce{HCl}\) gas - \(\ce{HCl}\) donates a proton to \(\ce{NH}_{3}\). Ammonia molecules accept the protons and become ammonium ions (\(\ce{NH}_{4}^{+}\)). The bond created between ammonia and the proton is a coordinate covalent bond as the nitrogen atom provides both electrons to the bond. \[ \ce{NH}_{3}\left(g\right)+\ce{HCl}\left(g\right)\rightarrow\ce{NH}_{4}^{+}\left(g\right)+\ce{Cl}^{-}\left(g\right) \] \(\ce{HCl}\) = Proton donor = Acid</li>
+<li>A <strong>Brønsted–Lowry acid</strong> is any substance that can donate a hydrogen ion (or a proton) to another substance. It is called a proton because the hydrogen ion is a hydrogen atom that has lost its one electron, leaving behind a proton. Thus, a Brønsted–Lowry acid is a <strong>proton donor</strong> and is denoted by \(\ce{HA}\), where \(\ce{H}\) is the hydrogen atom and \(\ce{A}\) is the rest of the acid.</li>
+<li>A <strong>Brønsted–Lowry base</strong> is any substance that can accept a hydrogen ion (or a proton) from another substance. To do this, it needs a lone pair of electrons. Brønsted–Lowry bases are <strong>proton acceptors</strong>. They are denoted by \(\ce{B}\colon\), where \(\ce{B}\) is the base and the \(\colon\) is the lone pair of electrons. In some instances, they are simply denoted by \(\ce{B}\).</li>
 </ul>
-<p>\(\ce{NH}_{3}\) = Proton acceptor = Base</p>
-<p>Bronsted-Lowry acids are denoted by \(\ce{HA}\). The \('H'\) represents the hydrogen atom, and the \('A'\) represents the rest of the acid.</p>
-<p>Bronsted-Lowry bases are denoted by \(\ce{B}\colon\) as the main requirement of a Bronsted-Lowry base is to bear a lone pair of electrons.</p>
-<p>The general equation of the Bronsted-Lowry acid-base reaction can be written as the following: \[ \ce{HA}+\ce{B}\colon\rightarrow\ce{A}^{-}+\left[\ce{B}\colon\ce{H}\right]^{+} \]</p>
-<h3>Conjugate acid-base pairs</h3>
-<p>Many Bronsted-Lowry acid-base reactions are reversible.</p>
-<p>Let's consider the general equation for the Bronsted-Lowry acid-base reaction. This reaction consists of two acids and two bases: \[ \ce{HA}+\ce{B}\rightleftharpoons\ce{HB}^{+}+\ce{A}^{-} \]</p>
-<p>In the forward reaction, \(\ce{HA}\) donates a proton to \(\ce{B}\). So, \(\ce{HA}\) functions as an acid and \(\ce{B}\) functions as a base: \[ \ce{HA}+\ce{B}\rightarrow\ce{HB}^{+}+\ce{A}^{-} \]</p>
-<p>In the reverse reaction, \(\ce{HB}^{+}\)donates a proton to \(\ce{A}^{-}\). Therefore, \(\ce{HB}^{+}\) functions as an acid and \(\ce{A}^{-}\) functions as a base: \[ \ce{HB}^{+}+\ce{A}^{-}\rightarrow\ce{HA}+\ce{B} \]</p>
-<p>\(\ce{HA}\), \(\ce{A}^{-}\) and \(\ce{B}\) , \(\ce{HB}^{+}\) are referred to as conjugate acid-base pairs. Conjugate acid-base pairs are always present on opposite sides of the chemical equation. For instance, \(\ce{HA}\) (conjugate acid) and \(\ce{A}^{-}\) (conjugate base).</p>
-<figure style="width: 698px" class="wp-caption alignnone"><img decoding="async" style="width: 698px; height: 517px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/1651_digram_conjugate_acid_base.PNG" alt="General equation for the Bronsted-Lowry acid-base reaction" width="698" height="517" /><figcaption class="wp-caption-text">Conjugate acid-base pairs by RMIT, licensed under CC BY-NC 4.0</figcaption></figure>
-<p>In a conjugate acid-base pair, acid always has one more hydrogen atom than the base. For instance, \(\ce{CH}_{3}\ce{COOH}\) (acetic acid) dissociation in water. \[ \ce{CH}_{3}\ce{COOH}+\ce{H}_{2}\ce{O}\rightleftharpoons\ce{CH}_{3}\ce{COO}^{-}+\ce{H}_{3}\ce{O}^{+} \]</p>
-<p>\(\ce{CH}_{3}\ce{COOH}/\ce{CH}_{3}\ce{COO}^{-}\) \(=\) conjugate acid-base pair. \(\ce{CH}_{3}\ce{COOH}\) has one hydrogen atom greater than the \(\ce{CH}_{3}\ce{COO}^{-}\) ion. So, \(\ce{CH}_{3}\ce{COOH}\) is the acid and \(\ce{CH}_{3}\ce{COO}^{-}\) is base in the conjugate acid-base pair.</p>
-<p><sup>1</sup>A hydrogen atom contains one electron and one proton. When a hydrogen atom becomes a hydrogen cation, it loses the electron. So the hydrogen ion only contains a proton. Therefore, we refer to a hydrogen ion as a proton. \(=\) hydrogen ion/proton donor.</p>
-</div>
+<h3>Polyprotic acids</h3>
+<p>Brønsted–Lowry acids such as \(\ce{HCl}\) and \(\ce{HNO3}\) can donate one hydrogen ion, so they are called <strong>monoprotic acids</strong>. Some Brønsted–Lowry acids can donate multiple hydrogen ions. For example, \(\ce{H2SO4}\) is capable of donating two hydrogen ions (<strong>diprotic acid</strong>), and \(\ce{H3PO4}\) can donate three hydrogen ions (<strong>triprotic acid</strong>).</p>
+<h3>Acidity of hydrogens</h3>
+<p>Not all hydrogens are acidic. Only the hydrogens bound to highly electronegative atoms such as oxygen and chlorine can be released as protons or hydrogen ions. Hydrogens in \(\ce{HCl}\), \(\ce{HNO3}\), \(\ce{H2SO4}\), and \(\ce{H3PO4}\) are all acidic as the hydrogens are bound to electronegative \(\ce{Cl}\) and \(\ce{O}\). However, if you consider acetic acid, \(\ce{CH3COOH}\), only one of the four hydrogens is acidic. This is the hydrogen atom connected to the highly electronegative atom, \(\ce{O}\). The others are bound to \(\ce{C}\).</p>
+<p>Examine the structures below and determine which of the hydrogens in each are acidic.</p>
+<p><figure style="width: 350px" class="wp-caption alignnone"><img decoding="async" style="width: 350px" src="https://rmitlibrary.github.io/cdn/learninglab/images/1651_diagram_acids.png" alt="Chemical structures of acids: hydrochloric acid, nitric acid, sulfuric acid, phosphoric acid and acetic acid" width="350"/><figcaption class="wp-caption-text">Structures of common acids by RMIT, licensed under CC BY-NC 4.0</figcaption></figure> <div class="accordion-item transcript ">
+<p class="accordion-header" id="head-answer-6328">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-3309" aria-expanded="false" aria-controls="body-answer-3309" >Answer</button>
+</p>
+<div id="body-answer-3309" class="accordion-collapse collapse " aria-labelledby="head-answer-6328">
+<div class="accordion-body">
+<p>The single hydrogen in hydrochloric is acidic since it is bound to an electronegative chlorine.</p>
+<p>The single hydrogen in nitric acid is acidic since it is bound to an electronegative oxygen.</p>
+<p>The two hydrogens in sulfuric acid are acidic since they are bound to electronegative oxygens.</p>
+<p>The three hydrogens in phosphoric acid are acidic since they are bound to electronegative oxygens.</p>
+<p>Only one hydrogen in acetic acid is acidic since it is bound to an electronegative oxygen. The other three are bound to a carbon, which is not highly electronegative.</p>
+</div></div></div>
+<h3>Acid–base reactions</h3>
+<p>The presence of a species that can accept protons (a base) is vital for the existence of a Brønsted–Lowry acid, and vice versa. Proton donation and acceptance are complementary processes. The general equation of the Brønsted–Lowry acid–base reaction is:</p>
+<p>\[ \ce{HA}+\ce{B}\colon\rightarrow\ce{A}^{-}+\left[\ce{B}\colon\ce{H}\right]^{+} \]</p>
+<p>Let's look at two examples written in this format.</p>
+<ul>
+<li>When \(\ce{HCl}\) gas dissolves in water, \(\ce{HCl}\) is the Brønsted–Lowry acid as it donates the proton to the water. The polar water molecule is the Brønsted–Lowry base as it accepts protons to become a hydronium (\(\ce{H3O}^{+}\)) ion.<br />
+	\[ \ce{HCl}(\textrm{g})+\ce{H2O}(\textrm{l})\rightarrow\ce{Cl}^{-}(\textrm{aq})+\ce{H3O}^{+}(\textrm{aq}) \]</li>
+<li>When \(\ce{NH3}\) gas reacts with \(\ce{HCl}\) gas, \(\ce{HCl}\) is the Brønsted–Lowry that donates a proton to \(\ce{NH3}\). The ammonia molecules are the Brønsted–Lowry bases that accept the protons and become ammonium ions (\(\ce{NH}_{4}^{+}\)).<br />
+	\[ \ce{HCl}(\textrm{g})+\ce{NH3}(\textrm{g})\rightarrow\ce{Cl}^{-}(\textrm{aq})+\ce{NH}_{4}^{+}(\textrm{aq}) \]</li>
+</ul>
+<h3>Conjugate acid–base pairs</h3>
+<p>Many Brønsted–Lowry acid–base reactions are reversible. After donating protons, acids are able to act as bases and accept protons. In the same way, after accepting a proton, bases can act as acids and donate the proton.</p>
+<p>Let's consider the general equation for the Brønsted-Lowry acid-base reaction. This reaction involves two acids and two bases:<br />
+\[ \ce{HA}+\ce{B}\rightleftharpoons\ce{HB}^{+}+\ce{A}^{-} \]</p>
+<ul>
+<li>In the forward reaction, \(\ce{HA}\) donates a proton to \(\ce{B}\). So, \(\ce{HA}\) functions as an acid and \(\ce{B}\) functions as a base:<br />
+	\[ \ce{HA}+\ce{B}\rightarrow\ce{HB}^{+}+\ce{A}^{-} \]</li>
+<li>In the reverse reaction, \(\ce{HB}^{+}\) donates a proton to \(\ce{A}^{-}\). Therefore, \(\ce{HB}^{+}\) functions as an acid and \(\ce{A}^{-}\) functions as a base:<br />
+	\[ \ce{HB}^{+}+\ce{A}^{-}\rightarrow\ce{HA}+\ce{B} \]</li>
+<p>\(\ce{HA}\)/\(\ce{A}^{-}\) and \(\ce{B}\)/\(\ce{HB}^{+}\) are referred to as <strong>conjugate acid–base pairs</strong>. Conjugate acid–base pairs are always present on opposite sides of the chemical equation. For instance, \(\ce{HA}\) (acid) and \(\ce{A}^{-}\) (conjugate base).</p>
+<figure style="width: 698px" class="wp-caption alignnone"><img fetchpriority="high" decoding="async" style="width: 698px; height: 517px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/1651_digram_conjugate_acid_base.PNG" alt="General equation for the Bronsted-Lowry acid–base reaction showing an acid reacting with a base to form a conjugate base and a conjugate acid" width="698" height="517" /><figcaption class="wp-caption-text">Conjugate acid–base pairs by RMIT, licensed under CC BY-NC 4.0</figcaption></figure>
+<p>In a conjugate acid–base pair, the acid always has one more hydrogen atom than the base. For example, the reaction for the dissociation of \(\ce{CH}_{3}\ce{COOH}\) (acetic acid) in water is:</p>
+<p>\[ \ce{CH3COOH}+\ce{H2O}\rightleftharpoons\ce{CH3COO}^{-}+\ce{H3O}^{+} \]</p>
+<p>\(\ce{CH3COOH}/\ce{CH3COO}^{-}\) is a conjugate acid–base pair. \(\ce{CH3COOH}\) has one hydrogen atom more than the \(\ce{CH3COO}^{-}\) ion. So, \(\ce{CH3COOH}\) is the acid and \(\ce{CH3COO}^{-}\) is base in the conjugate acid-base pair.</p>
+<h2>Worked example – identifying Brønsted–Lowry acids and bases</h2>
+<p>Identify the following substances as a Brønsted-Lowry acid or base:</p>
+<ol type="a">
+<li>\(\ce{HF}\)</li>
+<li>\(\ce{PO}_{4}^{3-}\).</li>
+</ol>
+<p><strong>Step 1:</strong> Recall the definitions of a Brønsted–Lowry acid and a Brønsted–Lowry base.</p>
+<p>A Brønsted–Lowry acid is any substance that can donate a hydrogen ion (or a proton) to another substance; they typically have one or more hydrogen atoms attached to a highly electronegative atom. A Brønsted–Lowry base is any substance that can accept a hydrogen ion (or a proton) from another substance; they typically contain a lone pair.</p>
+<p><strong>Step 2:</strong> Identify whether the substance can donate hydrogen ions or accept hydrogen ions.</p>
+<ol type="a">
+<li>\(\ce{HF}\) is a Brønsted–Lowry acid as it contains a hydrogen attached to an electronegative fluorine. This hydrogen can be donated as \(\ce{H}^{+}\).</li>
+<li>\(\ce{PO}_{4}^{3-}\) does not contain hydrogen. However, oxygen atoms present in the phosphate ion have lone pairs of electrons which can be shared with hydrogen ions. Therefore, \(\ce{PO}_{4}^{3-}\) is a Brønsted–Lowry base.</li>
+</ol>
+<h2>Worked example – identifying acid–base conjugate pairs</h2>
+<p>Write the formula for the:</p>
+<ol type="a">
+<li>conjugate base of \(\ce{H3PO4}\)</li>
+<li>conjugate acid of \(\ce{NO}_{3}^{-}\).</li>
+</ol>
+<p><strong>Step 1:</strong> Write the equations for the dissociation of each acid or base.</p>
+<ol type="a">
+<li>\( \ce{H3PO4}\rightarrow\ce{H}^{+}+\ce{H2PO}_{4}^{-} \)</li>
+<li>\( \ce{NO}_{3}^{-}+\ce{H}^{+}\rightarrow\ce{HNO3} \)</li>
+</ol>
+<p><strong>Step 2:</strong> In a conjugate acid–base pair, the acid always has one more hydrogen atom than the base. Therefore, the conjugate base is the species with one less hydrogen atom, and the conjugate acid is the species with one more hydrogen atom.</p>
+<p>\(\ce{H3PO4}\) is an acid that donates a hydrogen ion to become \(\ce{H2PO}_{4}^{-}\). Therefore, the conjugate base of \(\ce{H3PO4}\) is the \(\ce{H2PO}_{4}^{-}\) ion.</p>
+<p>As a base, \(\ce{NO}_{3}^{-}\) accepts a hydrogen ion to become \(\ce{HNO3}\). Therefore, the conjugate acid of \(\ce{NO}_{3}^{-}\) is the \(\ce{HNO3}\).</p>
 			<nav class="btn-nav-container" aria-label="Previous and next links">
 <h2 class="btn-nav-prev">
-    <a href="../concentration-and-dilutions-exercises/index.html">
-        <span aria-hidden="true">Concentration and dilutions exercises</span>
-        <span class="visually-hidden">Previous page: Concentration and dilutions exercises</span>
+    <a href="../concentration-and-dilution-exercises/index.html">
+        <span aria-hidden="true">Quiz – Concentration and dilutions</span>
+        <span class="visually-hidden">Previous page: Quiz – Concentration and dilutions</span>
     </a>
 </h2>
     
@@ -372,13 +451,20 @@ list.querySelectorAll('h4').forEach(h4 => {
 
 <h2 class="btn-nav-next">
     <a href="../exercises-acids-salts-and-bases/index.html">
-        <span aria-hidden="true">Exercises on acids, salts and bases</span>
-        <span class="visually-hidden">Next page: Exercises on acids, salts and bases</span>
+        <span aria-hidden="true">Quiz – Acids, bases and salts</span>
+        <span class="visually-hidden">Next page: Quiz – Acids, bases and salts</span>
     </a>
 </h2>
 	
 </nav><!-- .navigation -->			<div id="additional-info">
 			
+<hr class="margin-top-xl"><blockquote class="complex ">
+<a href="https://rmit.pressbooks.pub/rmitchemistrybridgingcourse/chapter/definitions-and-theories-of-acids-and-bases/">
+<div class="content">
+<h3>Definitions and theories of acids and bases</h3>
+<p>Explore the definitions and theories of acids and bases in more detail using this helpful resource.</p>
+</div><div class="icon-wrap"><img src="https://rmitlibrary.github.io/design-system/images/icon-llcc-large.svg" alt="" /></div>
+</a></blockquote>
 			
 
 
@@ -400,7 +486,7 @@ list.querySelectorAll('h4').forEach(h4 => {
 <!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
 <!--
 <p><strong>Subjects </strong>
-    | <strong><a href="https://lab.bitma.app/subject-area/chemistry/">Chemistry</a></strong>  
+    | <strong><a href="https://learninglab.rmit.edu.au/subject-area/chemistry/">Chemistry</a></strong>  
     </p>
 -->
 <!-- category echo end -->
@@ -460,18 +546,17 @@ list.querySelectorAll('h4').forEach(h4 => {
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <section class="acknowledgement-container">
-                        <div class="acknowledgement-image">
-                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
-                        </div>
-
+                <section class="acknowledgement-container">
                         <div class="content">
                             <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
                             <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
-                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="#" class="link-large">More information</a>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business<span class="img-credit"> - Artwork 'Sentient' by Hollie Johnson, Gunaikurnai and Monero Ngarigo</span>.</p>
+                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                        </div>
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/sentient-hollie-johnson.jpg" alt="" />
                         </div>
                     </section>
                 </div>
@@ -551,7 +636,7 @@ list.querySelectorAll('h4').forEach(h4 => {
 </div><!-- wrapper end -->
 		
 	
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
 <script src="../../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
 <!-- Code to handle hamburger menu, embed mode, dark mode -->

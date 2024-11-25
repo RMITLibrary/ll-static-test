@@ -2,57 +2,19 @@
 <html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
 
 <head>
-<!-- 
-    DARK MODE
-    This script is placed in the <head> to ensure the theme is set as early as possible,
-    reducing the flash of unstyled content (FOUC). It determines the user's preferred
-    theme (either from local storage or system settings) and applies it immediately.
-  -->
-  <script>
-    (function() {
-      'use strict';
-
-      // Function to get the stored theme from local storage
-      const getStoredTheme = () => localStorage.getItem('theme');
-
-      // Function to determine the preferred theme
-      const getPreferredTheme = () => {
-        const storedTheme = getStoredTheme(); // Retrieve the stored theme
-        if (storedTheme) {
-          return storedTheme; // If a theme is stored, return it
-        }
-        // If no theme is stored, check the system preference for dark mode
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      // Function to apply the specified theme
-      const setTheme = theme => {
-        if (theme === 'auto') {
-          // If theme is 'auto', set it based on system preference
-          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-        } else {
-          // Otherwise, set the theme explicitly
-          document.documentElement.setAttribute('data-bs-theme', theme);
-        }
-      };
-
-      // Set the theme based on the preferred theme
-      setTheme(getPreferredTheme());
-    })();
-  </script>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- wp_head -->
-	<title>Maths - lab</title>
-
-		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
+	<title>Maths - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
-		<link rel="next" href="page/2/index.html" />
-		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/keyword\/maths\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/keyword\/maths\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/keyword\/maths\/#listItem","position":2,"name":"Maths","previousItem":"https:\/\/lab.bitma.app\/#listItem"}]},{"@type":"CollectionPage","@id":"https:\/\/lab.bitma.app\/keyword\/maths\/#collectionpage","url":"https:\/\/lab.bitma.app\/keyword\/maths\/","name":"Maths - lab","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/keyword\/maths\/#breadcrumblist"}},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/keyword\/maths\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/keyword\/maths\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/keyword\/maths\/#listItem","position":2,"name":"Maths","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"}]},{"@type":"CollectionPage","@id":"https:\/\/learninglab.rmit.edu.au\/keyword\/maths\/#collectionpage","url":"https:\/\/learninglab.rmit.edu.au\/keyword\/maths\/","name":"Maths - Learning Lab","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/keyword\/maths\/#breadcrumblist"}},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
@@ -70,25 +32,95 @@ MathJax = {
 
 </script>
 <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
-<link rel='stylesheet' id='wp-block-library-css' href='../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
-<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
-<link rel='stylesheet' id='picostrap-styles-css' href='../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+
+
+
+
+<link rel='stylesheet' id='picostrap-styles-css' href='../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=849.css' media='all' />
  	<!-- /wp_head -->
+
     
+    
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta name="author" content="RMIT Library">
+
+    <meta name="geo.position" content="-37.807778, 144.963333">
+    <meta name="geo.placename" content="Melbourne">
+    <meta name="geo.region" content="AU">
+
+    <meta name="dcterms.title" content="Learning Lab">
+    
+        <meta name="dcterms.type" content="Text">
+    <meta name="dcterms.identifier" content="../../maths-statistics/algebra/a22-rearranging-formulas-brackets-and-fractions/index.html">
+    <meta name="dcterms.format" content="text/html">
+    <!-- END Additional meta tags not covered by wp_head -->
+
+
+    <!-- START Additional scripts for tracking -->
+
+    <!-- Microsoft Clarity - does hotspot tracking of pages -->
+    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+
+    <!-- Google tag - (gtag.js) --> 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLHPB23GYR');
+    </script>
+
+    <!-- Microsoft Bing - Not sure how useful this is? --> 
+    <meta name="msvalidate.01" content="8E4954E1DFAB7E2F8A92DD0A0BD6ED09">
+
+    <!-- END Additional scripts for tracking -->
+
     <style>
         </style>
+
+    <!-- 
+    DARK MODE javascript
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+    -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Function to get the stored theme from local storage
+        const getStoredTheme = () => localStorage.getItem('theme');
+
+        // Function to determine the preferred theme
+        const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+            return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        // Function to apply the specified theme
+        const setTheme = theme => {
+        if (theme === 'auto') {
+            // If theme is 'auto', set it based on system preference
+            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+            // Otherwise, set the theme explicitly
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        };
+
+        // Set the theme based on the preferred theme
+        setTheme(getPreferredTheme());
+    })();
+    </script>
 </head>
 
 <body class="archive tax-keyword term-maths term-122 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
-	
 		
 <header>
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
@@ -155,7 +187,7 @@ MathJax = {
 </h2>
 <div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
 <div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
-<li class="page_item page-item-2534 page_item_has_children"><a href="../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../writing-fundamentals/academic-word-list-tool/index.html">Academic Word List tool</a></li>
 <li class="page_item page-item-3107 page_item_has_children"><a href="../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
 <li class="page_item page-item-2520 page_item_has_children"><a href="../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
 <li class="page_item page-item-2521"><a href="../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
@@ -200,7 +232,7 @@ MathJax = {
 									<ul>
 										<li><a href="../../art-and-design/index.html">Art and design</a></li>
 										<li><a href="../../chemistry/index.html">Chemistry</a></li>
-										<li><a href="../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../law-resources/index.html">Legal studies</a></li>
 										<li><a href="../../maths-statistics/index.html">Mathematics and statistics</a></li>
 										<li><a href="../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
 										<li><a href="../../subject-areas/physics/index.html">Physics</a></li>
@@ -259,6 +291,99 @@ MathJax = {
                             <div>
                     <ul class="list-link-expanded">
 
+                                       <script>
+                        console.log("title: " + "A2.2 Rearranging formulas &ndash; Brackets and fractions");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/algebra/a22-rearranging-formulas-brackets-and-fractions/index.html">
+                                    A2.2 Rearranging formulas &ndash; Brackets and fractions                                </a>
+                            </h2>
+                            <p>Learn how to manipulate or rearrange formulas that involve fractions and brackets. Introduction Formulas are used in many branches of economics, science and engineering. For example, the formula for simple interest is:1 Note that when we write \(nr\) we mean \(n\times r\). Most of the time we ignore the multiplication...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Arithmetic");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/arithmetic/index.html">
+                                    Arithmetic                                </a>
+                            </h2>
+                            <p>Links to videos explaining different aspects of arithmetic: decimals, fractions, numbers, percentages and surds, and measurement. In this tutorial Decimals Fractions Numbers Percentages &amp; surds Measurement...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Complex numbers");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/complex-numbers/index.html">
+                                    Complex numbers                                </a>
+                            </h2>
+                            <p>Complex numbers are a group of numbers that help us to get mathematical solutions where real numbers (which includes positive and negative, counting numbers, fractions and decimals) just can’t work. They can be useful in engineering and physical sciences. They have two parts: one part is an imaginary number. (For...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "D1 Limit of a function");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/differentiation/d1-limit-function/index.html">
+                                    D1 Limit of a function                                </a>
+                            </h2>
+                            <p>The limit of a function means finding the value of a curve at a particular point. But what is that point? A value to many decimal places can be very long, to define a value that is very precise. The precise point can be infinitely small. We can only ask...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "D10 Rates of change");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/differentiation/d10-rates-change/index.html">
+                                    D10 Rates of change                                </a>
+                            </h2>
+                            <p>Image: Pixabay If there is a relationship between two or more variables (like, area and radius of a circle (A = πr2 ), or pressure, volume and temperature of a gas), then there will also be a relationship between how these variables change. You may need to find how fast...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "D11 Small changes and approximations");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/differentiation/d11-small-changes-and-approximations/index.html">
+                                    D11 Small changes and approximations                                </a>
+                            </h2>
+                            <p>Sometimes a small change in one variable can render a big change in a larger value. For example, a small increase (or error) in the radius of a sphere means a lot more volume is added! If you estimate the small error in one variable, you can calculate the significant...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "D12 Implicit differentiation");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/differentiation/d12-implicit-differentiation/index.html">
+                                    D12 Implicit differentiation                                </a>
+                            </h2>
+                            <p>Implicit differentiation enables you to find the derivative of y with respect to x without having to solve the original equation for y. If we are able to write an equation relating \(x\) and \(y\) explicitly, that is in the form \(y=f(x)\), then we can find the derivative function \(y=f&#039;\left(x\right)\)...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "D13 Partial differentiation");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/differentiation/d13-partial-differentiation/index.html">
+                                    D13 Partial differentiation                                </a>
+                            </h2>
+                            <p>Partial derivatives reveal how a function with many variables changes when you adjust just one of the variables in the input. Let us suppose that we have the equation for a paraboloid with an elliptical cross-section such as \(z=x^{2}+4y^{2}.\) In this case we have a function of two independent variables,...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "D14 Higher Order Derivatives");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/differentiation/d14-higher-order-derivatives/index.html">
+                                    D14 Higher Order Derivatives                                </a>
+                            </h2>
+                            <p>Higher derivatives are used in many mathematical, scientific and engineering subjects. Consider a function \(y=f(x)=4x^{3}-6x^{2}+7\). If we differentiate this function we obtain \(f^{\prime}\left(x\right)=12x^{2}-12x\). This is the first derivative of the function \(y=f\left(x\right)\). It is possible to find second, third and subsequent derivatives by continuing to differentiate and these are called...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "D15 Logarithmic differentiation");
+                    </script>
                                             <li>
                             <h2 class="h3">
                                 <a href="../../maths-statistics/differentiation/d15-logarithmic-differentiation/index.html">
@@ -266,20 +391,319 @@ MathJax = {
                             </h2>
                             <p>Sometimes it is easier to differentiate the logarithm of a function than the original function. This is called logarithmic differentiation and this module provides an overview of the method and provides some examples. Suppose you have to differentiate \[\begin{align*} y &amp; =\frac{x^{2}-1}{x^{8}\sqrt{x^{4}+1}}. \end{align*}\] At first sight, you need to use...</p>
                         </li>
+                                       <script>
+                        console.log("title: " + "D2 Gradients, tangents and derivatives");
+                    </script>
                                             <li>
                             <h2 class="h3">
-                                <a href="../../maths-statistics/hyperbolic-functions/hf3-inverse-hyperbolic-functions/index.html">
-                                    HF3 Inverse hyperbolic functions                                </a>
+                                <a href="../../maths-statistics/differentiation/d2-gradients-tangents-and-derivatives/index.html">
+                                    D2 Gradients, tangents and derivatives                                </a>
                             </h2>
-                            <p>Providing a function is one to one, it is possible to find an inverse function. This module discusses inverse hyperbolic functions, which are used in advanced calculus for integration and in the solution of differential equations. Definitions The basic hyperbolic functions are sinh and cosh and are defined as follows....</p>
+                            <p>A tangent is a line that touches a curve at only one point. Where that point sits along the function curve, determines the slope (i.e. the gradient) of the tangent to that point. A derivative of a function gives you the gradient of a tangent at a certain point on...</p>
                         </li>
+                                       <script>
+                        console.log("title: " + "D3 Differentiation from first principles");
+                    </script>
                                             <li>
                             <h2 class="h3">
-                                <a href="../../maths-statistics/hyperbolic-functions/hf2-derivatives-integrals/index.html">
-                                    HF2 Derivatives and integrals of hyperbolic functions                                </a>
+                                <a href="../../maths-statistics/differentiation/d3-differentiation-first-principles/index.html">
+                                    D3 Differentiation from first principles                                </a>
                             </h2>
-                            <p>The differentiation and integration of hyperbolic functions allow us to understand how these functions change and accumulate values which teaches us the essential tools for analysing complex mathematical and real-world systems. Keep reading to learn about these functions and put your new knowledge to the test with some exercises. Definitions...</p>
+                            <p>Learn how to take a derivative of a function using first principles. Using this method is the best way to understand the concepts around differentiation. Start here to really appreciate what you are doing when you differentiate, before you start differentiating using other methods in later modules. Definition The derivative...</p>
                         </li>
+                                       <script>
+                        console.log("title: " + "D4 Rules for differentiation");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/differentiation/d4-rules-differentiation/index.html">
+                                    D4 Rules for differentiation                                </a>
+                            </h2>
+                            <p>Learn about the rules for differentiation and the different notations that are used. This section includes algebraic, exponential, logarithmic and trigonometric examples. It is not always convenient to use differentiation from first principles to find a derivative function. The “rules” shown below have been established from first principles and can...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "D5 The chain rule");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/differentiation/d5-chain-rule/index.html">
+                                    D5 The chain rule                                </a>
+                            </h2>
+                            <p>How do you differentiate a larger function that has components that are smaller functions? This module will show you how to package these functions and work them out separately, before plugging them into the Chain Rule formula. The derivatives of functions such as \(y=\sin\left(x^{3}\right)\)and \(f(x)=\left(x^{2}-1\right)^{4}\) can be found using the...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "D6 The product rule");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/differentiation/d6-product-rule/index.html">
+                                    D6 The product rule                                </a>
+                            </h2>
+                            <p>What is the product rule? It is useful when you want to differentiate a function that comprises one function multiplied by another function. The derivatives of functions such as \(y=f(x)=2x\sin\left(x\right)\) and \(y=f(x)=xe^{x}\) can be found using the product rule. Definition If \[\begin{align*} y &amp; =f\left(x\right)\\ &amp; =u\left(x\right)\cdot v\left(x\right) \end{align*}\] then...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "D7 The quotient rule");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/differentiation/d7-quotient-rule/index.html">
+                                    D7 The quotient rule                                </a>
+                            </h2>
+                            <p>What is the quotient rule? The quotient rule is like the product rule but this time it is for one function that is divided by another (rather than multiplied). Review this section to learn how to differentiate using the quotient rule. Functions such as \(y=f(x)=\frac{1}{x^{2}+x}\), \(y=f(x)=\frac{\sin x}{x}\) and \(y=f(x)=\frac{x^{2}+1}{x+1}\) may...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "D8 Maxima and minima");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/differentiation/d8-maxima-and-minima/index.html">
+                                    D8 Maxima and minima                                </a>
+                            </h2>
+                            <p>How do you find the maximum (highest) or minimum (lowest) value of a curve? The maximum or minimum values of a function occur where the derivative is zero. That is where the graph of the function has a horizontal tangent. If you go looking for the horizontal tangents (i.e. where...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "D9 Curve sketching");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/differentiation/d9-curve-sketching/index.html">
+                                    D9 Curve sketching                                </a>
+                            </h2>
+                            <p>If you find some key points of a function such as: maxima, minima, or turning points; x and y axis intercepts; and regions where the gradient is positive or negative, you can put together a sketch of a curve. Read this section to find examples of this being done. To...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Decimals");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/arithmetic/decimals/index.html">
+                                    Decimals                                </a>
+                            </h2>
+                            <p>What is a decimal? Decimals are another way to express fractions or parts of a whole. We need them for measurement, and it is the easiest way to express fractions on a computer or a calculator. Work through these videos to get a review of decimals overall. Adding decimals Subtracting...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Differential equations");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/differential-equations/index.html">
+                                    Differential equations                                </a>
+                            </h2>
+                            <p>Differential equations provide calculations where things happen with a changing rate. The rate that things change may depend on another value which is changing too. For example, compound interest or rabbit populations both get bigger and bigger. Moreover, they get bigger faster! as time goes along. Their rate of change...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Differentiation");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/differentiation/index.html">
+                                    Differentiation                                </a>
+                            </h2>
+                            <p>The value of a function changes when one of the variables (x, y, a, or b etc) changes. It may change like the variable, (both doubling) or it may change more, or less. Differentiation means finding the derivative of an expression. This means you are finding a rate of change...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Equation solving");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/equation-solving/index.html">
+                                    Equation solving                                </a>
+                            </h2>
+                            <p>Not sure what a linear equation is? Don&#039;t know where to start with quadratic or simultaneous equations? The links on this page will take you to resources that will help to fill any gaps in your knowledge. ES1 Linear equations Equations with one variable may be solved using transposition skills...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "ES1 Linear equations");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/equation-solving/es1-linear-equations/index.html">
+                                    ES1 Linear equations                                </a>
+                            </h2>
+                            <p>Equations with one variable may be solved using transposition skills to make the variable the subject of the equation. A linear equation has one unknown variable and may be solved by transposing the equation to make the variable the subject of the equation. For example, the equation \[\begin{align*} 3\left(2x-7\right) &amp;...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "ES2 Simultaneous equations");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/equation-solving/es2-simultaneous-equations/index.html">
+                                    ES2 Simultaneous equations                                </a>
+                            </h2>
+                            <p>Two equations in two variables are said to be simultaneous if both must be considered at the same time. Two equations in two variables are said to be simultaneous if both must be considered at the same time. An ordered pair \(\left(x,y\right)\) which satisfies both equations is said to be...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "ES3 Quadratic equations");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/equation-solving/es3-quadratic-equations/index.html">
+                                    ES3 Quadratic equations                                </a>
+                            </h2>
+                            <p>The solution to a quadratic equation gives the \(x\)- intercepts of its graph. The general form of a quadratic equation is A X squared plus B X plus C equals zero where A is not equal to one. This tip sheet looks at solutions to quadratic equations using the “null...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "ES4 Quadratic formula");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/equation-solving/es4-quadratic-formula/index.html">
+                                    ES4 Quadratic formula                                </a>
+                            </h2>
+                            <p>The solutions to any quadratic equation can be found by substituting the values a, b, c into the quadratic formula. The solutions to any quadratic equation \(ax^{2}+bx+c=0\) can be found by substituting the values \(a,b,c\) into the quadratic formula: \[ x=\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}. \] Solutions may be real or complex numbers. In...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "ES5 Cubic equations, polynomial long division");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/equation-solving/es5-cubic-equations-polynomial-long-division/index.html">
+                                    ES5 Cubic equations, polynomial long division                                </a>
+                            </h2>
+                            <p>One polynomial may be divided by another of lower degree by long division (similar to arithmetic long division). At primary school you were probably exposed to long division, whereby a big number was divided by another big number. Sometimes this gave an integer result or sometimes a number plus a...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "ES6 Exponential equations");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/equation-solving/es6-exponential-equations/index.html">
+                                    ES6 Exponential equations                                </a>
+                            </h2>
+                            <p>Indicial (or exponential) equations have the form ax = b. If we can write b as a number with a base a and an index, then we can equate the indices to find x. If two equal numbers are written to the same base then the indices must be equal....</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "FG1 Functions and relations");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/functions-and-graphs/fg1-functions-and-relations/index.html">
+                                    FG1 Functions and relations                                </a>
+                            </h2>
+                            <p>Understanding functions and relations is crucial for exploring more advanced topics in mathematics and their applications in various scientific and engineering domains. In this module, you&#039;ll learn about what functions and relations are and you can practice with the provided exercises. Relations A relation is a set of ordered pairs....</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "FG10 Graphs of sine and cosine functions");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/functions-and-graphs/fg10-graphs-sine-and-cosine-functions/index.html">
+                                    FG10 Graphs of sine and cosine functions                                </a>
+                            </h2>
+                            <p>...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "FG2 Interval notation");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/functions-and-graphs/fg2-interval-notation/index.html">
+                                    FG2 Interval notation                                </a>
+                            </h2>
+                            <p>Often the domain of a function will be restricted to a subset of R. This subset is called an interval, and the end points are a and b. Intervals Often the domain of a function will be restricted to a subset of the set of real numbers, \(\mathbb{R}.\) This subset...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "FG3 Inverse notation");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/functions-and-graphs/fg3-inverse-notation/index.html">
+                                    FG3 Inverse notation                                </a>
+                            </h2>
+                            <p>If f-1(x) is the inverse function of a one-to-one function f(x) then f-1(x) is the set of ordered pairs obtained by interchanging the first and second elements in each ordered pair. Definition of an inverse function If \(f^{-1}(x)\) is the inverse function of a one-to-one function \(f(x)\) then \(f^{-1}(x)\) is...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "FG4 Absolute value functions");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/functions-and-graphs/fg4-absolute-value-functions/index.html">
+                                    FG4 Absolute value functions                                </a>
+                            </h2>
+                            <p>The absolute value of a number x gives a measure of its size or magnitude regardless of whether it is positive or negative. If a number is plotted on a number line then its absolute value can be considered to be the distance from zero. Introduction The absolute value of...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "FG5 Hybrid functions");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/functions-and-graphs/fg5-hybrid-functions/index.html">
+                                    FG5 Hybrid functions                                </a>
+                            </h2>
+                            <p>Functions which have different rules for each subset of the domain are called hybrid functions. Sometimes they are referred to as piecewise defined functions. An example of a hybrid function is: \[\begin{align*} y=f(x) &amp; =\begin{cases} -x, &amp; x\leq-1\\ 1, &amp; -1&lt;x&lt;1\\ x, &amp; x\geq1. \end{cases} \end{align*}\] Note that this hybrid...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "FG6 Circular functions");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/functions-and-graphs/fg6-circular-functions/index.html">
+                                    FG6 Circular functions                                </a>
+                            </h2>
+                            <p>...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "FG7 Linear graphs");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/functions-and-graphs/fg7-linear-graphs/index.html">
+                                    FG7 Linear graphs                                </a>
+                            </h2>
+                            <p>A linear graph is the simplest way of representing data or a functional relationship. Consequently an understanding of linear graphs is an essential requirement for many courses in science, engineering and mathematics. The Cartesian plane The Cartesian plane is defined by a pair of mutually perpendicular coordinate axes. The horizontal...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "FG8 Quadratic graphs");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/functions-and-graphs/fg8-quadratic-graphs/index.html">
+                                    FG8 Quadratic graphs                                </a>
+                            </h2>
+                            <p>A quadratic graph is the graph of a quadratic function. These graphs have applications in a wide range of fields. Keep reading to learn about parabolas and how to sketch them, then test your knowledge with some exercises. A quadratic function has the form \(y=ax^{2}+bx+c\) where \(a\neq0\) . Parabolas The...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "FG9 Graphs and transformations");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/functions-and-graphs/fg9-graphs-and-transformations/index.html">
+                                    FG9 Graphs and transformations                                </a>
+                            </h2>
+                            <p>The known graphs of some simple functions and relations can be used to sketch related, but more complicated functions. If you know the graph of a function, you can often transform it to a graph of a more complex but related function. A simple example is the graph of the...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Fractions");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/arithmetic/fractions/index.html">
+                                    Fractions                                </a>
+                            </h2>
+                            <p>How do we use fractions? A fraction is the easiest way to express a part of a whole. On this page you will learn how to simplify, add, subtract, multiply and divide fractions. If you received 18/20 for your test, you got 18 marks correct out of the 20 marks...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Functions and graphs");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/functions-and-graphs/index.html">
+                                    Functions and graphs                                </a>
+                            </h2>
+                            <p>Functions and graphs provide a way to represent, analyse, and understand relationships between different quantities. If you are looking to improve your knowledge of this area, the linked resources are a great way to start. Plotting points on a graph Graphs usually have points or markers on them. The location...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Glossary of maths symbols");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/glossary-maths-symbols/index.html">
+                                    Glossary of maths symbols                                </a>
+                            </h2>
+                            <p>Maths contains many symbols, known as notations, which represent different functions and operations. If you have questions about a symbol you’ve seen on the Learning Lab, check out the glossary below. Foundational notations These symbols appear across different areas of maths and science content. Symbol Explanation \(+\) plus \(-\) minus...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "HF1 Hyperbolic functions");
+                    </script>
                                             <li>
                             <h2 class="h3">
                                 <a href="../../maths-statistics/hyperbolic-functions/hf1-hyperbolic-functions/index.html">
@@ -287,6 +711,29 @@ MathJax = {
                             </h2>
                             <p>Image from Pixabay The hyperbolic functions are analogous to the circular (trigonometric) functions and are widely used in engineering, science and mathematics. This module introduces hyperbolic functions, their graphs and similarities to the circular functions. Whereas circular functions are defined on a unit circle, the hyperbolic functions are defined on...</p>
                         </li>
+                                       <script>
+                        console.log("title: " + "HF2 Derivatives and integrals of hyperbolic functions");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/hyperbolic-functions/hf2-derivatives-integrals/index.html">
+                                    HF2 Derivatives and integrals of hyperbolic functions                                </a>
+                            </h2>
+                            <p>The differentiation and integration of hyperbolic functions allow us to understand how these functions change and accumulate values which teaches us the essential tools for analysing complex mathematical and real-world systems. Keep reading to learn about these functions and put your new knowledge to the test with some exercises. Definitions...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "HF3 Inverse hyperbolic functions");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/hyperbolic-functions/hf3-inverse-hyperbolic-functions/index.html">
+                                    HF3 Inverse hyperbolic functions                                </a>
+                            </h2>
+                            <p>Providing a function is one to one, it is possible to find an inverse function. This module discusses inverse hyperbolic functions, which are used in advanced calculus for integration and in the solution of differential equations. Definitions The basic hyperbolic functions are sinh and cosh and are defined as follows....</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Hyperbolic functions");
+                    </script>
                                             <li>
                             <h2 class="h3">
                                 <a href="../../maths-statistics/hyperbolic-functions/index.html">
@@ -294,20 +741,709 @@ MathJax = {
                             </h2>
                             <p>Information about functions and graphs to improve your maths skills in these areas. HF1 Hyperbolic functions This module introduces hyperbolic functions, their graphs and similarities to the circular functions. HF2 Derivatives and integrals of hyperbolic functions The hyperbolic functions are widely used in engineering, science and mathematics. HF3 Inverse hyperbolic...</p>
                         </li>
+                                       <script>
+                        console.log("title: " + "ILS1.1 Indices");
+                    </script>
                                             <li>
                             <h2 class="h3">
-                                <a href="../../maths-statistics/trigonometry/t9-identities/index.html">
-                                    T9 Trigonometric identities                                </a>
+                                <a href="../../maths-statistics/indices-logs-surds/ils11-indices/index.html">
+                                    ILS1.1 Indices                                </a>
                             </h2>
-                            <p>Trigonometric identities are equations involving trigonometric functions that are true for all values of the involved variables. They are essential tools for simplifying expressions and solving equations in mathematics. On this page, you&#039;ll learn about fundamental identities, double angle formulas, sums and difference, and other trigonometric functions. An algebraic expression...</p>
+                            <p>What is index notation? When a number such as 16 is written in the form 42 (which means 4 x 4) we say that it is written as an exponential, or in index notation. There are laws about multiplying and dividing indices as well as how to deal with negative indices....</p>
                         </li>
+                                       <script>
+                        console.log("title: " + "ILS1.2 Fractional indices");
+                    </script>
                                             <li>
                             <h2 class="h3">
-                                <a href="../../maths-statistics/trigonometry/t8-graphs-of-sine-and-cosine-functions/index.html">
-                                    T8 Graphs of sine and cosine functions                                </a>
+                                <a href="../../maths-statistics/indices-logs-surds/ils12-fractional-indices/index.html">
+                                    ILS1.2 Fractional indices                                </a>
                             </h2>
-                            <p>Both the functions y = sin x and y = cos x have a domain of R and a range of [-1,1]. The graphs of both functions have an amplitude of 1 and a period of 2π radians. The functions \(y=\sin x\) and \(y=\cos x\) have a domain of \(\mathbb{R}\)...</p>
+                            <p>Can an index also be a fractional number? An index can be an integer – a counting number - either positive or negative. An index can also be a fraction such as ½, ¾, or 2.5. Find out what this means, and how the laws of indices apply to fractional...</p>
                         </li>
+                                       <script>
+                        console.log("title: " + "ILS2.1 Logarithms");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/indices-logs-surds/ils21-logarithms/index.html">
+                                    ILS2.1 Logarithms                                </a>
+                            </h2>
+                            <p>Image: hmvierow, Pixabay What is a logarithm? The logarithm of a number is the power that the base must be raised to, to give that number. The logarithm of 16 with a base of 2 is 4, because 2to the power of 4 = 16. The modeling of growth and...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "ILS2.2 Exponential equations");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/indices-logs-surds/ils22-exponential-equations/index.html">
+                                    ILS2.2 Exponential equations                                </a>
+                            </h2>
+                            <p>We know that 3 to the power of 2 is 9 and 3 to the power of 3 is 27. But what is the power of 3 that is equal to something in between, such as 20? It would be 3 to the power of something greater than 2 but...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "ILS3.1 Simplifying surds");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/indices-logs-surds/ils31-simplifying-surds/index.html">
+                                    ILS3.1 Simplifying surds                                </a>
+                            </h2>
+                            <p>What happens if you want to take the root of larger surds? These may be factorised down to numbers that may or may not be surds. Find out how larger surds can be factorised out and expressed as a combination of both rational numbers and surds. A surd is an...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "IN1 Antidifferentiation");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/integration/in1-antidifferentiation/index.html">
+                                    IN1 Antidifferentiation                                </a>
+                            </h2>
+                            <p>Isaac Newton co-invented Calculus which comprises differentiation and antidifferentiation (integration). This portrait of Newton at age 46 was done by Godfrey Kneller in 1689. Image via Wikimedia Commons, licensed in the public domain. How do you antidifferentiate a function? Antidifferentiation (also called integration) is the opposite operation to differentiation. If...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "IN2 Integration of polynomials");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/integration/in2-integration-polynomials/index.html">
+                                    IN2 Integration of polynomials                                </a>
+                            </h2>
+                            <p>How do you integrate a polynomial where x is raised to a power? We saw this in the previous section on antidifferentiation. But how do you integrate a linear expression in brackets where the whole bracket is raised to a power? This module shows how to integrate functions like :...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "IN3.1 Integration of functions of the form m over (ax+b)");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/integration/in3-integration-functions/index.html">
+                                    IN3.1 Integration of functions of the form m over (ax+b)                                </a>
+                            </h2>
+                            <p>How do you integrate a logarithm? How do you integrate an exponential function? How do you integrate a trigonometric function? Read this worksheet to see how this is done. This module looks at integrals such as \(\int\frac{1}{x}dx\) and\(\int\frac{1}{3x-1}dx.\) The power rule for integration One of the most important rules for...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "IN3.3 Integration of exponential functions");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/integration/in33-integration-exponential-functions/index.html">
+                                    IN3.3 Integration of exponential functions                                </a>
+                            </h2>
+                            <p>The integration of exponential functions is widely used in various fields such as physics, engineering, and economics to model and solve problems involving growth, decay, and other processes that change exponentially over time. Keep reading to find out more. This module deals with differentiation of exponential functions such as: \[\begin{align*}...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "IN3.4 Integration of trigonometric functions");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/integration/in34-integration-trigonometric-functions/index.html">
+                                    IN3.4 Integration of trigonometric functions                                </a>
+                            </h2>
+                            <p>The integration of trigonometric functions in solving problems is related to oscillatory motion, waves and other periodic phenomena in physics and engineering. This module deals with integration of trigonometric functions These include: \[\begin{align*} &amp; \int\sin\left(2x+3\right)dx\\ &amp; \int\cos\left(5x\right)dx\\ &amp; \int_{1}^{2}\sec^{2}\left(x-2\right)dx. \end{align*}\] Indefinite integral (antiderivative) of a trigonometric function Recall that: \[\begin{align*}...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "IN5 Area under a curve");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/integration/in5-area-under-curve/index.html">
+                                    IN5 Area under a curve                                </a>
+                            </h2>
+                            <p>An area under a curve might be above the axis (and therefore positive). But sections might also be below the axis (and therefore negative). Read this worksheet to see how to deal with finding the integral for sections of graph which go above and below the x-axis (horizontal axis). This...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "IN6 Integration by substitution");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/integration/in6-integration-substitution/index.html">
+                                    IN6 Integration by substitution                                </a>
+                            </h2>
+                            <p>An expression that is composed of two functions (say an algebraic expression nested within a trigonometric expression) can be complicated to integrate. You can simplify this by substituting a single pronumeral (say u) to represent one of the functions. The substitution rule for integration is like the chain rule for...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "IN7 Integration using partial fractions");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/integration/in7-integration-using-partial-fractions/index.html">
+                                    IN7 Integration using partial fractions                                </a>
+                            </h2>
+                            <p>How do you integrate an expression when there is an algebraic expression in the numerator and denominator of a fraction? Integrating using partial fractions helps you to solve this problem. Read this worksheet for several worked examples. Some times a complex function may be integrated by breaking it up into...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "IN8 Integration by parts");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/integration/in8-integration-parts/index.html">
+                                    IN8 Integration by parts                                </a>
+                            </h2>
+                            <p>If you can consider your expression to be a product (i.e. Multiplication x) of two functions, you can integrate this using Integration by parts. This reflects the product rule in differentiation and is applicable to logarithmic, exponential, trigonometric and algebraic functions. Integration by parts is a technique for integrating the...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "IN9 Double integrals");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/integration/in9-double-integrals/index.html">
+                                    IN9 Double integrals                                </a>
+                            </h2>
+                            <p>Integrating will find the area between the curve and the x-axis (horizontal axis). We&#039;ve learned how to limit this to a section of the x axis. But what if you have an area that is bounded by limits on both the x and the y axes? You will need to...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Indices, logs, surds");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/indices-logs-surds/index.html">
+                                    Indices, logs, surds                                </a>
+                            </h2>
+                            <p>Indices are also known as powers or exponents. Exponential growth or decay can describe changes in population or the spread of a disease. Logarithms and indices are vital for all areas of STEM, finance, geography and epidemiology. See also Percentages &amp; surds ILS1.1 Indices What is index notation? When a...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Integration");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/integration/index.html">
+                                    Integration                                </a>
+                            </h2>
+                            <p>Integration is vital in engineering. It is the key mathematical tool for finding the centre of mass or the surface area of a body. Integration is also called antidifferentiation. It is the reverse process of differentiation. If you differentiate an expression, you can integrate it to get back to the...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Inverse square law");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/inverse-square-law/index.html">
+                                    Inverse square law                                </a>
+                            </h2>
+                            <p>The Inverse Square Law is a mathematical concept that gives the relationship between intensity and the distance from an energy source. \({intensity} \ \propto \ \frac{1}{{distance}^2} \) This is relevant to the energy of wave phenomena whether it be sound, light waves or other forms of radiation. The video will...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Laplace transforms");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/laplace-transforms/index.html">
+                                    Laplace transforms                                </a>
+                            </h2>
+                            <p>Transforms are another means of solving some differential equations that may prove too difficult to solve using other methods. Download the laplace transforms worksheets to improve your skills in these areas. LT1 Basic definition of laplace transforms (PDF) LT2 Table of transforms (PDF) LT3 Solving differential equations (PDF) LT4 Convolutional...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "M1 Matrices &ndash; Introduction");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/matrices/m1-matrices-introduction/index.html">
+                                    M1 Matrices &ndash; Introduction                                </a>
+                            </h2>
+                            <p>This module discusses matrices, their order, row and column matrices, square matrices and the identity matrix. A matrix is a rectangular array of elements. Matrices are usually denoted by upper case letters. The elements are usually written within brackets. The order or shape of the matrix is determined by the...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "M10 Eigenvalues and eigenvectors");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/matrices/m10-eigenvalues-and-eigenvectors/index.html">
+                                    M10 Eigenvalues and eigenvectors                                </a>
+                            </h2>
+                            <p>Eigenvalues and eigenvectors are an important part of an engineer’s mathematical toolbox. They give us an understanding of how buildings, structures, automobiles and materials react in real life. Moreover they are useful for data scientists. This module does not go into each of these facets of eigenvalues and eigenvectors but...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "M2 Addition and subtraction of matrices");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/matrices/m2-addition-and-subtraction-matrices/index.html">
+                                    M2 Addition and subtraction of matrices                                </a>
+                            </h2>
+                            <p>There are rules for adding and subtracting matrices and these are reviewed in this module. Matrices of the same shape (same number of rows and columns) may be added and subtracted. Addition Matrices of the same shape (same number of rows and columns) may be added by adding the corresponding...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "M3 Matrix multiplication");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/matrices/m3-matrix-multiplication/index.html">
+                                    M3 Matrix multiplication                                </a>
+                            </h2>
+                            <p>Matrices may be added and subtracted if they have the same shape; that is, the number of rows and columns is the same. Matrices may also be multiplied, however the requirements for multiplication are very different to that for addition/subtraction. Matrix shape or order of a matrix The shape of...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "M4 Determinant of a matrix");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/matrices/m4-determinant-matrix/index.html">
+                                    M4 Determinant of a matrix                                </a>
+                            </h2>
+                            <p>A determinant is a number that can be calculated for any square matrix. The determinant is used in calculating vector cross products, eigenvalues, eigenvectors and solving simultaneous equations. Determinant of a \(2\times2\) matrix The determinant of a \(2\times2\) matrix is called a second order determinant. Let \[\begin{align*} A &amp; =\left[\begin{array}{cc}...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "M5 Special matrices");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/matrices/m5-special-matrices/index.html">
+                                    M5 Special matrices                                </a>
+                            </h2>
+                            <p>It is helpful to understand the definition of a number of different types of “special” matrices. Transpose of a matrix The transpose of a matrix \(\mathbf{A}\) is denoted \(\mathbf{A}^{T}\)and is found by interchanging the rows and the columns. The first row becomes the first column, the second row becomes the...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "M6 Systems of equations");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/matrices/m6-systems-equations/index.html">
+                                    M6 Systems of equations                                </a>
+                            </h2>
+                            <p>Matrices can be used to solve systems of equations by using elementary row operations and the augmented matrix. The augmented matrix Consider the following system of equations: \[\begin{align*} x+2y-z &amp; =-3\\ 2x-3y+2z &amp; =13\\ -x+5y-4z &amp; =-19 \end{align*}\] The corresponding augmented matrix for this system is \[\begin{align*} \left[\begin{array}{ccc} 1 &amp;...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "M7 Types of solutions");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/matrices/m7-types-solutions/index.html">
+                                    M7 Types of solutions                                </a>
+                            </h2>
+                            <p>For any system of equations, there may be: Infinitely many solutions No solution A unique solution Coefficient matrix Consider the following system of equations: \[\begin{align*} 2x+4y-z &amp; =9\\ x-y+2z &amp; =-4\\ -x+y-z &amp; =3 \end{align*}\] These may be written in the matrix form: \[\begin{align*} \left[\begin{array}{ccc} 2 &amp; 4 &amp; -1\\...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "M8 Inverse of a 2x2 matrix");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/matrices/m8-inverse-2x2-matrix/index.html">
+                                    M8 Inverse of a 2x2 matrix                                </a>
+                            </h2>
+                            <p>In matrix algebra, we can add, subtract and multiply matrices subject to conditions on the matrix shape (or order). While matrix algebra does not have a division operation, there is multiplication by the inverse matrix. Definition Let \(I\) denote the identity matrix. That is the matrix containing ones on the...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "M9 Inverse of a 3x3 matrix");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/matrices/m9-inverse-3x3-matrix/index.html">
+                                    M9 Inverse of a 3x3 matrix                                </a>
+                            </h2>
+                            <p>Understanding the inverse of a 3x3 matrix equips you with skills for solving systems of linear equations, crucial in fields like engineering, physics, and computer science. This knowledge simplifies complex problems and enhances your ability to perform matrix operations efficiently. Mastering this concept will boost your mathematical proficiency and problem-solving...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Maths and statistics");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/index.html">
+                                    Maths and statistics                                </a>
+                            </h2>
+                            <p>We&#039;ve got plenty of maths and statistic resources to help you get the most out of your study. This glossary of maths symbols explains common notations you might encounter in the Learning Lab....</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Matrices");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/matrices/index.html">
+                                    Matrices                                </a>
+                            </h2>
+                            <p>Matrices are used in a wide range of fields and applications to represent and manipulate data in a structured way. The links on this page lead to useful resources for students who are starting out with matrices and also those who would like to add to their existing knowledge. M1...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Measurement");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/arithmetic/measurement/index.html">
+                                    Measurement                                </a>
+                            </h2>
+                            <p>What is a unit of measurement? How do I deal with measurement errors? Measurement is an important skill for everyday life but especially in fields of STEM. These pages will enhance your understanding of measurement, units and how to deal with errors. Dimensions (PDF) All measurements need a value as...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "NM1 Newton’s method");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/numerical-methods/nm1-newtons-method/index.html">
+                                    NM1 Newton’s method                                </a>
+                            </h2>
+                            <p>You are used to solving equations using basic algebraic operations and perhaps the quadratic formula. However, some equations cannot be solved using these methods. For example the equations: \[\begin{align*} e^{-x} &amp; =x &amp; \left(1\right) \end{align*}\] or \[\begin{align*} -\ln\left(x\right) &amp; =x^{3} &amp; \left(2\right) \end{align*}\] cannot be solved using conventional methods. However...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "NM2 Simpson’s rule");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/numerical-methods/nm2-simpsons-rule/index.html">
+                                    NM2 Simpson’s rule                                </a>
+                            </h2>
+                            <p>The figure above shows how Simpson’s rule approximates the area under the graph of a function \(f\left(x\right)\) by the area under a parabola using two strips. Some integrals cannot be evaluated in terms of the rules of integration or elementary functions. Simpson’s rule is a numerical method that calculates a...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "NM3 The trapezoidal rule");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/numerical-methods/nm3-trapezoidal-rule/index.html">
+                                    NM3 The trapezoidal rule                                </a>
+                            </h2>
+                            <p>The trapezoidal rule is a numerical method that calculates a numerical value for a definite integral. Some integrals cannot be evaluated in terms of the rules of integration or elementary functions. You will have evaluated definite integrals such as \[\begin{align*} \int_{1}^{3} &amp; \left(x^{2}\right)dx \end{align*}\] before. In doing this, you are...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Numbers");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/arithmetic/numbers/index.html">
+                                    Numbers                                </a>
+                            </h2>
+                            <p>Where do you start counting from? zero? Think again! Calculating with numbers is a basic skill for everyday life. Watch these videos to see how the number system of integers (counting numbers) works. Multiplying numbers Dividing numbers Order of operations Negative numbers: addition and subraction Negative numbers: multiplication and division...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Numerical methods");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/numerical-methods/index.html">
+                                    Numerical methods                                </a>
+                            </h2>
+                            <p>Numerical methods are a collection of techniques used to solve mathematical problems that are difficult or impossible to solve with exact solutions. These worksheets are filled with information that will improve your skills in numerical methods. NM1 Newton’s method Some equations cannot be solved using algebra or other mathematical techniques....</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Nursing");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../subject-areas/nursing-calculations/index.html">
+                                    Nursing                                </a>
+                            </h2>
+                            <p>The following tutorials are an introduction to basic drug calculations for nursing. After each tutorial, test your knowledge with the interactive activities. Also visit Nursing resources for links to relevant tutorials on referencing, academic integrity, critical incident reports and more. Nursing calculations A comprehensive series of videos with interactive activities...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Percentages &#038; surds");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/arithmetic/percentages-surds/index.html">
+                                    Percentages &#038; surds                                </a>
+                            </h2>
+                            <p>How can you turn a raw score in a test into a percentage? If you get 15/20 for a test, you have done as well as someone who got 75 out of 100! This page is full of information about percentages and surds. See also Indices, logs, surds Percentages Surds...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "PF1.1 Newton&#039;s laws of motion");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../subject-areas/physics/dynamics/pf11-newtons-laws-motion/index.html">
+                                    PF1.1 Newton&#039;s laws of motion                                </a>
+                            </h2>
+                            <p>An object in motion tends to stay in motion and an object at rest tends to stay at rest unless acted upon by an unbalanced force. Force equals mass times acceleration. For every action there is an equal and opposite reaction. Do you need to learn about Newton&#039;s first three...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "PF1.2 Forces on slopes");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../subject-areas/physics/dynamics/pf12-forces-slopes/index.html">
+                                    PF1.2 Forces on slopes                                </a>
+                            </h2>
+                            <p>Forces on object sliding downhill We will look at the gravitational force acting on an object on a slope. These can be divided into two components, the normal (resisting) force pushing into the slope which produces friction and the shear or driving force pushing the block down the slope. So...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "PF1.4 Momentum");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../subject-areas/physics/dynamics/pf14-momentum/index.html">
+                                    PF1.4 Momentum                                </a>
+                            </h2>
+                            <p>Momentum is a vector quantitiy, so it is important to remember that direction must be taken into account when doing problems on momentum. Let&#039;s explore how we can do this. The moment p of an object is the product of its mass \(m\) and velocity \(v\), or: \[\begin{align*} p &amp;...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Plotting points on a graph");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/functions-and-graphs/graphs/index.html">
+                                    Plotting points on a graph                                </a>
+                            </h2>
+                            <p>Graphs usually have points or markers on them. The location of this point is given by an ordered pair. Watch this video to find out more. What&#039;s next... FG1 Functions and relations...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "PMO1.2 Linear motion &ndash; Graphs");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../subject-areas/physics/dynamics/pmo12-linear-motion-graphs/index.html">
+                                    PMO1.2 Linear motion &ndash; Graphs                                </a>
+                            </h2>
+                            <p>Linear motion refers to the motion of an object in a straight line. Describing these motions require some technical terms such as displacement, distance, velocity, speed and acceleration. The terms and their relationships to one another are described in this module. Scalar and vector quantities Quantities that have only a...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "PV1.1 Addition of vectors");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/vectors/pv11-addition-vectors/index.html">
+                                    PV1.1 Addition of vectors                                </a>
+                            </h2>
+                            <p>Many concepts in physics may be represented by vectors. A vector has both a size (called its magnitude) and a direction. This module explains how vectors may be added together. Scalars and Vectors Many physical quantities can be classified into one of two groups: scalars or vectors. Scalar quantities are...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "S1 Summation notation");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/statistics/s1-summation-notation/index.html">
+                                    S1 Summation notation                                </a>
+                            </h2>
+                            <p>Summation notation or sigma notation is a shorthand method of writing the sum or addition of a string of similar terms. This module explains the use of this notation. The basic idea We use the Greek symbol sigma \(\Sigma\) to denote summation. \(\Sigma\) is called the summation sign. A typical...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "S10 Standard normal distribution");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/statistics/s10-standard-normal-distribution/index.html">
+                                    S10 Standard normal distribution                                </a>
+                            </h2>
+                            <p>A normal distribution with a mean of zero and a standard deviation of one is called the standard normal distribution. Areas under the standard normal distribution curve represent probabilities which can be found via a calculator or a “z-table”. The standard normal distribution (sometimes called a z-distribution) has a mean...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "S11 Probability and the normal distribution");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/statistics/s11-probability-and-normal-distribution/index.html">
+                                    S11 Probability and the normal distribution                                </a>
+                            </h2>
+                            <p>In any normal distribution the mean and standard deviation can be used to convert it to a standard normal distribution and when can then compute probabilities. Even when data follows a normal distribution, different data sets will have their own mean and standard deviation and a different bell shaped curve...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "S12 Sampling distributions");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/statistics/s12-sampling-distributions/index.html">
+                                    S12 Sampling distributions                                </a>
+                            </h2>
+                            <p>Learn how we can sample distributions. The distribution of the means of all the possible samples of a certain size tend to follow a normal distribution. A sampling distribution is the probability distribution for the means of all samples of size \(n\) from a given population. The sampling distribution will...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "S13 Confidence intervals");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/statistics/s13-confidence-intervals/index.html">
+                                    S13 Confidence intervals                                </a>
+                            </h2>
+                            <p>We can use the mean of a sample to estimate the mean of the entire population. It is more appropriate to give an interval estimate rather than a point estimate. We use the statistics we obtain from samples to make inferences or estimates about the population from which the sample...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "S14 Hypothesis testing");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/statistics/s14-hypothesis-testing/index.html">
+                                    S14 Hypothesis testing                                </a>
+                            </h2>
+                            <p>This module explains how to set up and test hypotheses to see if a difference between a sample mean and a population mean is significant. Consider statements such as Teenagers aged \(13\)-\(15\) spend no more than \(10\) hours a week on Facebook. The average weight of Australian men is the...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "S15 T-tests");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/statistics/s15-t-tests/index.html">
+                                    S15 T-tests                                </a>
+                            </h2>
+                            <p>Image by Pixabay Hypothesis testing usually uses the population standard deviation to calculate a “z” value. If the population standard deviation is unknown, we use the sample standard deviation to calculate a “t” value. T-distribution In conducting a hypothesis test the population standard deviation \(\sigma\) may be unknown. In that...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "S16 P-value");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/statistics/s16-p-value/index.html">
+                                    S16 P-value                                </a>
+                            </h2>
+                            <p>Hypotheses can be tested by comparing the test statistic to the critical value or by comparing the p-value to the significance level, α. In hypothesis testing two approaches are possible when making the decision as to whether to reject the null hypothesis. So far we have compared the test statistic...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "S17 One sided tests");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/statistics/s17-one-sided-tests/index.html">
+                                    S17 One sided tests                                </a>
+                            </h2>
+                            <p>Image by Pixabay How do we apply a test of proportions? Rather than comparing a sample mean to a population mean, we can compare a sample proportion to a population proportion. In the hypothesis tests we have looked at so far, we have been concerned to find evidence that there...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "S18 Tests of proportion");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/statistics/s18-tests-proportion/index.html">
+                                    S18 Tests of proportion                                </a>
+                            </h2>
+                            <p>Image by Pixabay Hypothesis tests can be either two-tailed (non-directional) suggesting that the sample mean is different to the population mean, or one- tailed (directional) suggesting that the sample mean is greater than (or alternatively, less than) the population mean. A test of proportion is used to determine whether or...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "S19 Poisson distribution");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/statistics/s19-poisson-distribution/index.html">
+                                    S19 Poisson distribution                                </a>
+                            </h2>
+                            <p>Image by Pixabay The Poisson distribution deals with the number of random occurrences over a period of time (or distance or area or volume), such as the number of people who enter a shop every hour, or the number of flaws in a sheet of glass. The Poisson distribution is...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "S2 Data");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/statistics/s2-data/index.html">
+                                    S2 Data                                </a>
+                            </h2>
+                            <p>Data is everywhere and increasingly drives many aspects of our day-to-day lives. Here we explain the different types of data that can be collected and some ways of illustrating this data. Definitions \(\mathbf{Population}\): the total group of individuals or items under consideration. \(\mathbf{Sample}\): a group of individuals or items chosen...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "S3 Mean, mode, median");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/statistics/s3-mean-mode-median/index.html">
+                                    S3 Mean, mode, median                                </a>
+                            </h2>
+                            <p>The mean, mode and median are measures of the centre or middle of a set of data. They are sometimes called measures of central tendency and they provide a single value that is typical of the data. Definitions The mode is the value that occurs most often. The median is...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "S4 Measures of spread");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/statistics/s4-measures-spread/index.html">
+                                    S4 Measures of spread                                </a>
+                            </h2>
+                            <p>The range, the interquartile range and the standard deviation are three different measures of the spread of a set of data. This module shows three different ways to calculate a number to represent the spread of a set of data. Measuring spread or dispersion in data Consider the two sets...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "S5 Probability rules");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/statistics/s5-probability-rules/index.html">
+                                    S5 Probability rules                                </a>
+                            </h2>
+                            <p>This module covers the rules of basic probability, including the multiplication and addition principles and complementary events. The probability of an event \(A\) is expressed as a number between zero and one: \(0\leq Pr(A)\leq1\) . \(Pr(A)=0\) means that event \(A\) is impossible. \(Pr(A)=1\) means that event \(A\) is certain. When...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "S6 Sample spaces");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/statistics/s6-sample-spaces/index.html">
+                                    S6 Sample spaces                                </a>
+                            </h2>
+                            <p>A sample space is a list of all the possible outcomes. There are a number of techniques that can be used to list the sample space. A list or diagram showing all possible outcomes in a probability experiment is called a sample space. The probability that an event \(E\) occurs...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "S7 Conditional probability");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/statistics/s7-conditional-probability/index.html">
+                                    S7 Conditional probability                                </a>
+                            </h2>
+                            <p>If two events are not independent then the outcome of one event can change the probability of the second event occurring. Dependent events Two events are dependent if the outcome or occurrence of the first affects the outcome or occurrence of the second so that the probability is changed. Example...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "S8 Binomial probability");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/statistics/s8-binomial-probability/index.html">
+                                    S8 Binomial probability                                </a>
+                            </h2>
+                            <p>The binomial distribution is a discrete distribution consisting of repeated trials, where each trial has two possible outcomes. Introduction A random variable may be described as having a binomial distribution when there are a number of repeated trials and there are only two possible outcomes on each trial. The following...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "S9 Normal distributions");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/statistics/s9-normal-distributions/index.html">
+                                    S9 Normal distributions                                </a>
+                            </h2>
+                            <p>This module introduces the normal distribution. Data that is normally distributed is characterized by a bell shaped curve when displayed graphically. Graphical representations of data may look quite different as shown below: But many things that can be measured, such as heights of people blood pressure errors in measurement scores...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Statistics");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/statistics/index.html">
+                                    Statistics                                </a>
+                            </h2>
+                            <p>Do you need to brush up on statistics or learn some new skills? The links on this page lead to Learning Lab pages that will put you on the right track. S1 Summation notation Summation notation, also known as sigma notation, is a shorthand method of writing the sum or...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "T1 Pythagoras’ theorem");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/trigonometry/t1-pythagoras-theorem/index.html">
+                                    T1 Pythagoras’ theorem                                </a>
+                            </h2>
+                            <p>Pythagoras’ theorem shows the relationship between the sides of a right-angled triangle. Knowing the length of two sides of a right-angled triangle, the length of the third side can be calculated. This mathematical formula is fundamental for finding lengths and distances that are difficult to physically measure. Right angled triangles...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "T2 Right triangle trigonometry");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/trigonometry/t2-right-triangle-trigonometry/index.html">
+                                    T2 Right triangle trigonometry                                </a>
+                            </h2>
+                            <p>Sine, cos and tan can be defined using side lengths of a right-angled triangle. These side lengths are identified as either the hypotenuse or the opposite or adjacent sides to the angle. This module shows how to apply trigonometric ratios to find a missing side length, or angle, in a...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "T3 The sine rule");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/trigonometry/t3-sine-rule/index.html">
+                                    T3 The sine rule                                </a>
+                            </h2>
+                            <p>How can we apply trigonometry to triangles that do not possess a right-angle? The sine rule shows that the ratio of the length of a side, to the sine of its opposite angle, will be the same for all three sides. The Sine rule can be used to find angles...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "T4 Cosine rule");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/trigonometry/t4-cosine-rule/index.html">
+                                    T4 Cosine rule                                </a>
+                            </h2>
+                            <p>The cosine rule is a generalisation of Pythagoras’ theorem. If you have any two sides of a triangle, as long as you know the angle between them, you can calculate the length of the third side. The cosine rule can be used to solve non-right triangles. The cosine rule Consider...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "T5 Angular measurement and the unit circle");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/trigonometry/t5-angular-measurement-and-unit-circle/index.html">
+                                    T5 Angular measurement and the unit circle                                </a>
+                            </h2>
+                            <p>Angles are frequently measured in degrees. However, it is sometimes useful to define angles in terms of the length around the unit circle (a circle of radius = 1). This module introduces radians as a measure of angle. Definition of the radian Though angles have commonly been measured in degrees...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "T6 Circular functions");
+                    </script>
                                             <li>
                             <h2 class="h3">
                                 <a href="../../maths-statistics/trigonometry/t6-circular-functions/index.html">
@@ -315,19 +1451,165 @@ MathJax = {
                             </h2>
                             <p>The trigonometric ratios that have been defined in right-angled triangles can be extended to angles greater than 90 degrees Trigonometric functions such as sin, cos and tan are usually defined as the ratios of sides in a right angled triangle. This module defines the trigonometric functions using angles in a...</p>
                         </li>
+                                       <script>
+                        console.log("title: " + "T7 Trigonometric equations");
+                    </script>
                                             <li>
                             <h2 class="h3">
-                                <a href="../../previous-next-page-text/index.html">
-                                    Previous-Next page text                                </a>
+                                <a href="../../maths-statistics/trigonometry/t7-trigonometric-equations/index.html">
+                                    T7 Trigonometric equations                                </a>
                             </h2>
-                            <p>test text Aden ladngfsdF DSFGNSGN FSG FSG SFG SFG G...</p>
+                            <p>If you know the value of a trigonometric function, how do I find all the possible angles that satisfy this expression? The calculator may only give you one answer to an inverse trig question between 0 and 90 degrees (say InvCos = 40°). The unit circle can help you visualise...</p>
                         </li>
+                                       <script>
+                        console.log("title: " + "T8 Graphs of sine and cosine functions");
+                    </script>
                                             <li>
                             <h2 class="h3">
-                                <a href="../../maths-statistics/glossary-maths-symbols/index.html">
-                                    Glossary of maths symbols                                </a>
+                                <a href="../../maths-statistics/trigonometry/t8-graphs-of-sine-and-cosine-functions/index.html">
+                                    T8 Graphs of sine and cosine functions                                </a>
                             </h2>
-                            <p>Maths contains many symbols, known as notations, which represent different functions and operations. If you have questions about a symbol you’ve seen on the Learning Lab, check out the glossary below. Foundational notations These symbols appear across different areas of maths and science content. Symbol Explanation \(+\) plus \(-\) minus...</p>
+                            <p>Both the functions y = sin x and y = cos x have a domain of R and a range of [-1,1]. The graphs of both functions have an amplitude of 1 and a period of 2π radians. The functions \(y=\sin x\) and \(y=\cos x\) have a domain of \(\mathbb{R}\)...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "T9 Trigonometric identities");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/trigonometry/t9-identities/index.html">
+                                    T9 Trigonometric identities                                </a>
+                            </h2>
+                            <p>Trigonometric identities are equations involving trigonometric functions that are true for all values of the involved variables. They are essential tools for simplifying expressions and solving equations in mathematics. On this page, you&#039;ll learn about fundamental identities, double angle formulas, sums and difference, and other trigonometric functions. An algebraic expression...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Trigonometry");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/trigonometry/index.html">
+                                    Trigonometry                                </a>
+                            </h2>
+                            <p>Trigonometry is a branch of mathematics involving the study of triangles. Ancient builders and mariners used it for finding lengths that are not physically measurable (because they were so large) but they could be defined by angles. Trigonometry has applications in fields such as engineering, surveying, navigation, optics, electronics, aviation,...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "V1: Introduction to vectors");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/vectors/v1-introduction-vectors/index.html">
+                                    V1: Introduction to vectors                                </a>
+                            </h2>
+                            <p>Introducing the basic concept of vectors (which are measurable quantities with direction such as force) and the concept of a scalar (which is a quantity without a direction such as heat or thermal energy). We cover vector components (aligned along the horizontal and vertical or the 3-dimensional axes), unit vectors...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "V10 Distance from a point to a plane");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/vectors/v10-distance-point-plane/index.html">
+                                    V10 Distance from a point to a plane                                </a>
+                            </h2>
+                            <p>The shortest distance from any point in the air to the ground is defined by a line sitting at right angles to the ground going straight down. Learn how to find the perpendicular (right angle) distance from a point to a plane. What do we mean when we talk about...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "V11 Directional derivatives");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/vectors/v11-directional-derivatives/index.html">
+                                    V11 Directional derivatives                                </a>
+                            </h2>
+                            <p>If you are on the side of a hill, the gradient depends on the direction you look. So the directional derivative is the gradient in a particular direction. (See also Linear graphs) Learn how to find the directional derivative of a function of two variables f(x,y) or three variables g(x,y,z)...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "V2: Resolution of vectors");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/vectors/v2-resolution-vectors/index.html">
+                                    V2: Resolution of vectors                                </a>
+                            </h2>
+                            <p>Vector quantities in combination will enhance or counteract each other, depending on their direction. An opposing force for example will lessen another force. However, if the forces (or vector quantities) do not act along exactly the same line, it is difficult to know how they will interact. This task is...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "V3 Scalar product");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/vectors/v3-scalar-product/index.html">
+                                    V3 Scalar product                                </a>
+                            </h2>
+                            <p>What is a scalar product? What is a dot product? This is the result of multiplying the magnitudes of the components of two or more vectors. The result is not a vector, but a scalar (which is without direction). There are two ways to multiply two vectors: The scalar or...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "V4 Vector product");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/vectors/v4-vector-product/index.html">
+                                    V4 Vector product                                </a>
+                            </h2>
+                            <p>What is a vector product? What is a cross product? The vector product is a vector that is the result of multiplying the magnitudes (size) of two vectors. The magnitude is found using matrices and determinants). The result of the cross product is another vector, and the direction is perpendicular...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "V5 Projection of vectors");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/vectors/v5-projection-vectors/index.html">
+                                    V5 Projection of vectors                                </a>
+                            </h2>
+                            <p>In Resolution of vectors we learned how to resolve vectors in two dimensions along horizontal and vertical axes. It is also possible to resolve one vector along the line of another vector (instead of along the x-y axes). (See also Linear graphs) Learn how to find the projection (resolution) of...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "V6 Vector equation of a line");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/vectors/v6-vector-equation-line/index.html">
+                                    V6 Vector equation of a line                                </a>
+                            </h2>
+                            <p>If you want to uniquely define a line, you need to pin it between two points in 3-dimensional space. You can also define a point with a 3-dimensional vector through it. This process uses three types of equations. Learn how to find the vector equation, the parametric equation, and the...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "V7 Intersecting lines in 3D");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/vectors/v7-intersecting-lines-3d/index.html">
+                                    V7 Intersecting lines in 3D                                </a>
+                            </h2>
+                            <p>Learn how to determine if two lines in three dimensions intersect (cross each other) and, if so, what their point of intersection is. (See also Linear graphs) In order to find the point of intersection of two lines in three dimensional space, it is best to have both equations in...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "V8 Equation of a plane");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/vectors/v8-equation-plane/index.html">
+                                    V8 Equation of a plane                                </a>
+                            </h2>
+                            <p>Learn how to find the equation of a plane (a 2-dimensional space) a) through three points or b) given a normal (line at right angles) and a point on the plane or c) given a parallel plane and a point on the plane. (See also Linear graphs) A plane is...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "V9 Intersecting planes");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/vectors/v9-intersecting-planes/index.html">
+                                    V9 Intersecting planes                                </a>
+                            </h2>
+                            <p>Two 2-dimensional planes will slice through each other (unless they are parallel). Where they slice will be defined by a straight line. There will also be an angle between the two planes. Learn how to determine the angle between two intersecting planes and the equation of the line of intersection....</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Vectors");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/vectors/index.html">
+                                    Vectors                                </a>
+                            </h2>
+                            <p>2 + 2 does not always equal 4 when the problem is translated into a 2 or 3 dimensional space. Vectors are quantities that have both magnitude (size) and direction. This branch of maths is fundamental to physics and engineering to represent physical quantities that have a direction. The University...</p>
                         </li>
                                         </ul>
                 </div>
@@ -380,18 +1662,17 @@ MathJax = {
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <section class="acknowledgement-container">
-                        <div class="acknowledgement-image">
-                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
-                        </div>
-
+                <section class="acknowledgement-container">
                         <div class="content">
                             <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
                             <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
-                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="#" class="link-large">More information</a>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business<span class="img-credit"> - Artwork 'Sentient' by Hollie Johnson, Gunaikurnai and Monero Ngarigo</span>.</p>
+                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                        </div>
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/sentient-hollie-johnson.jpg" alt="" />
                         </div>
                     </section>
                 </div>
@@ -471,7 +1752,7 @@ MathJax = {
 </div><!-- wrapper end -->
 		
 	
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
 <script src="../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
 <!-- Code to handle hamburger menu, embed mode, dark mode -->

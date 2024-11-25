@@ -2,68 +2,31 @@
 <html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
 
 <head>
-<!-- 
-    DARK MODE
-    This script is placed in the <head> to ensure the theme is set as early as possible,
-    reducing the flash of unstyled content (FOUC). It determines the user's preferred
-    theme (either from local storage or system settings) and applies it immediately.
-  -->
-  <script>
-    (function() {
-      'use strict';
-
-      // Function to get the stored theme from local storage
-      const getStoredTheme = () => localStorage.getItem('theme');
-
-      // Function to determine the preferred theme
-      const getPreferredTheme = () => {
-        const storedTheme = getStoredTheme(); // Retrieve the stored theme
-        if (storedTheme) {
-          return storedTheme; // If a theme is stored, return it
-        }
-        // If no theme is stored, check the system preference for dark mode
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      // Function to apply the specified theme
-      const setTheme = theme => {
-        if (theme === 'auto') {
-          // If theme is 'auto', set it based on system preference
-          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-        } else {
-          // Otherwise, set the theme explicitly
-          document.documentElement.setAttribute('data-bs-theme', theme);
-        }
-      };
-
-      // Set the theme based on the preferred theme
-      setTheme(getPreferredTheme());
-    })();
-  </script>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- wp_head -->
-	<title>The arrangement of the periodic table - lab</title>
-
-		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
-		<meta name="description" content="The Periodic table is a visual representation of the elements. The way the elements are arranged reveals information about their properties. Select the elements in the table below to learn more about their properties and history. The periodic table arranges elements in order of increasing atomic number. The rows and columns in the periodic table" />
+	<title>The structure of the periodic table - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		
+		<meta name="description" content="The periodic table is more than just a list of elements; it is a structured map that reveals patterns and relationships among them. By examining the arrangement of elements, we gain valuable insights into their properties and behaviours. The periodic table arranges elements in order of increasing atomic number. The rows in the periodic table" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
-		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		
 		<meta property="og:locale" content="en_US" />
-		<meta property="og:site_name" content="lab -" />
+		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="The arrangement of the periodic table - lab" />
-		<meta property="og:description" content="The Periodic table is a visual representation of the elements. The way the elements are arranged reveals information about their properties. Select the elements in the table below to learn more about their properties and history. The periodic table arranges elements in order of increasing atomic number. The rows and columns in the periodic table" />
-		<meta property="og:url" content="https://lab.bitma.app/chemistry/introduction-periodic-table/arrangement-periodic-table/" />
+		<meta property="og:title" content="The structure of the periodic table - Learning Lab" />
+		<meta property="og:description" content="The periodic table is more than just a list of elements; it is a structured map that reveals patterns and relationships among them. By examining the arrangement of elements, we gain valuable insights into their properties and behaviours. The periodic table arranges elements in order of increasing atomic number. The rows in the periodic table" />
+		<meta property="og:url" content="https://learninglab.rmit.edu.au/chemistry/introduction-periodic-table/arrangement-periodic-table/" />
 		<meta property="article:published_time" content="2023-10-16T05:34:42+00:00" />
-		<meta property="article:modified_time" content="2024-10-29T00:46:24+00:00" />
+		<meta property="article:modified_time" content="2024-11-22T06:05:21+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="The arrangement of the periodic table - lab" />
-		<meta name="twitter:description" content="The Periodic table is a visual representation of the elements. The way the elements are arranged reveals information about their properties. Select the elements in the table below to learn more about their properties and history. The periodic table arranges elements in order of increasing atomic number. The rows and columns in the periodic table" />
+		<meta name="twitter:title" content="The structure of the periodic table - Learning Lab" />
+		<meta name="twitter:description" content="The periodic table is more than just a list of elements; it is a structured map that reveals patterns and relationships among them. By examining the arrangement of elements, we gain valuable insights into their properties and behaviours. The periodic table arranges elements in order of increasing atomic number. The rows in the periodic table" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/chemistry\/introduction-periodic-table\/arrangement-periodic-table\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/lab.bitma.app\/chemistry\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/introduction-periodic-table\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/introduction-periodic-table\/#listItem","position":3,"name":"An introduction to the periodic table","item":"https:\/\/lab.bitma.app\/chemistry\/introduction-periodic-table\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/introduction-periodic-table\/arrangement-periodic-table\/#listItem","previousItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/introduction-periodic-table\/arrangement-periodic-table\/#listItem","position":4,"name":"The arrangement of the periodic table","previousItem":"https:\/\/lab.bitma.app\/chemistry\/introduction-periodic-table\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/chemistry\/introduction-periodic-table\/arrangement-periodic-table\/#webpage","url":"https:\/\/lab.bitma.app\/chemistry\/introduction-periodic-table\/arrangement-periodic-table\/","name":"The arrangement of the periodic table - lab","description":"The Periodic table is a visual representation of the elements. The way the elements are arranged reveals information about their properties. Select the elements in the table below to learn more about their properties and history. The periodic table arranges elements in order of increasing atomic number. The rows and columns in the periodic table","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/chemistry\/introduction-periodic-table\/arrangement-periodic-table\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:42+00:00","dateModified":"2024-10-29T00:46:24+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/introduction-periodic-table\/arrangement-periodic-table\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/introduction-periodic-table\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/introduction-periodic-table\/#listItem","position":3,"name":"The periodic table","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/introduction-periodic-table\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/introduction-periodic-table\/arrangement-periodic-table\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/introduction-periodic-table\/arrangement-periodic-table\/#listItem","position":4,"name":"The structure of the periodic table","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/introduction-periodic-table\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/introduction-periodic-table\/arrangement-periodic-table\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/chemistry\/introduction-periodic-table\/arrangement-periodic-table\/","name":"The structure of the periodic table - Learning Lab","description":"The periodic table is more than just a list of elements; it is a structured map that reveals patterns and relationships among them. By examining the arrangement of elements, we gain valuable insights into their properties and behaviours. The periodic table arranges elements in order of increasing atomic number. The rows in the periodic table","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/introduction-periodic-table\/arrangement-periodic-table\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:42+00:00","dateModified":"2024-11-22T06:05:21+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
@@ -81,25 +44,96 @@ MathJax = {
 
 </script>
 <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
-<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
-<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
-<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+
+
+
+
+<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=849.css' media='all' />
  	<!-- /wp_head -->
+
     
+    
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta name="author" content="RMIT Library">
+
+    <meta name="geo.position" content="-37.807778, 144.963333">
+    <meta name="geo.placename" content="Melbourne">
+    <meta name="geo.region" content="AU">
+
+    <meta name="dcterms.title" content="Learning Lab">
+    
+    <meta name="dcterms.description" content="The periodic table is more than just a list of elements; it is a structured map that reveals patterns and relationships among them. By examining the arrangement of elements, we gain valuable insights into their properties and behaviours. The periodic table arranges elements in order of increasing atomic number. The...">
+    <meta name="dcterms.type" content="Text">
+    <meta name="dcterms.identifier" content="https://learninglab.rmit.edu.au/chemistry/introduction-periodic-table/arrangement-periodic-table/">
+    <meta name="dcterms.format" content="text/html">
+    <!-- END Additional meta tags not covered by wp_head -->
+
+
+    <!-- START Additional scripts for tracking -->
+
+    <!-- Microsoft Clarity - does hotspot tracking of pages -->
+    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+
+    <!-- Google tag - (gtag.js) --> 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLHPB23GYR');
+    </script>
+
+    <!-- Microsoft Bing - Not sure how useful this is? --> 
+    <meta name="msvalidate.01" content="8E4954E1DFAB7E2F8A92DD0A0BD6ED09">
+
+    <!-- END Additional scripts for tracking -->
+
     <style>
         </style>
+
+    <!-- 
+    DARK MODE javascript
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+    -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Function to get the stored theme from local storage
+        const getStoredTheme = () => localStorage.getItem('theme');
+
+        // Function to determine the preferred theme
+        const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+            return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        // Function to apply the specified theme
+        const setTheme = theme => {
+        if (theme === 'auto') {
+            // If theme is 'auto', set it based on system preference
+            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+            // Otherwise, set the theme explicitly
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        };
+
+        // Set the theme based on the preferred theme
+        setTheme(getPreferredTheme());
+    })();
+    </script>
 </head>
 
 <body class="page-template-default page page-id-3057 page-child parent-pageid-3134 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
-	
 		
 <header>
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
@@ -166,7 +200,7 @@ MathJax = {
 </h2>
 <div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
 <div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
-<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic Word List tool</a></li>
 <li class="page_item page-item-3107 page_item_has_children"><a href="../../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
 <li class="page_item page-item-2520 page_item_has_children"><a href="../../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
 <li class="page_item page-item-2521"><a href="../../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
@@ -211,7 +245,7 @@ MathJax = {
 									<ul>
 										<li><a href="../../../art-and-design/index.html">Art and design</a></li>
 										<li><a href="../../index.html">Chemistry</a></li>
-										<li><a href="../../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../../law-resources/index.html">Legal studies</a></li>
 										<li><a href="../../../maths-statistics/index.html">Mathematics and statistics</a></li>
 										<li><a href="../../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
 										<li><a href="../../../subject-areas/physics/index.html">Physics</a></li>
@@ -275,7 +309,7 @@ This should be moved to a stylesheet once style is determined. -->
 <!-- START SIDEBAR NAV PANEL -->
 <nav class="right-nav" aria-label="Section Menu">
 
-<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">An introduction to the periodic table</a></h3><ul><li><a href="../history-periodic-table/index.html">History of the periodic table</a></li><li><a href="index.html" class="selected"  aria-current="page">The arrangement of the periodic table</a><li><a href="../periodic-table-quiz/index.html">Periodic table quiz</a></li></ul></nav>
+<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">The periodic table</a></h3><ul><li><a href="../history-periodic-table/index.html">History of the periodic table</a></li><li><a href="index.html" class="selected"  aria-current="page">The structure of the periodic table</a><li><a href="../trends-periodic-table/index.html">Trends in the periodic table</a></li></ul></nav>
 <!-- END SIDEBAR NAV PANEL -->
 
 
@@ -315,112 +349,205 @@ list.querySelectorAll('h4').forEach(h4 => {
 <ul class="breadcrumbs">
 <li><a href="../../../index.html">Home</a></li>
 <li><a href="../../index.html">Chemistry</a></li>
-<li><a href="../index.html">An introduction to the periodic table</a></li>
+<li><a href="../index.html">The periodic table</a></li>
 </ul>
 </nav>            <a id="main-content"></a>
-            <h1 class="margin-top-zero">The arrangement of the periodic table</h1>
-            <p class="lead">The Periodic table is a visual representation of the elements. The way the elements are arranged reveals information about their properties.</p>
-<p>Select the elements in the table below to learn more about their properties and history.</p>
-<p><iframe width="100%" scrolling="no" title="Periodic table of the elements" src="https://rmitlibrary.github.io/cdn/learninglab/interactive/periodic-table-elements.html"></iframe></p>
-<p>The periodic table arranges elements in order of increasing atomic number. The rows and columns in the periodic table are known as periods and groups, respectively.</p>
-<h3>Groups</h3>
-<p>The elements in each group have similar chemical properties due to the similarity in their valence electron configurations.</p>
-<p>Example: Group \(\mathrm{1}\) elements</p>
+            <h1 class="margin-top-zero">The structure of the periodic table</h1>
+            <p class="lead">The periodic table is more than just a list of elements; it is a structured map that reveals patterns and relationships among them. By examining the arrangement of elements, we gain valuable insights into their properties and behaviours.</p>
+<p>The periodic table arranges elements in order of increasing atomic number. The rows in the periodic table are known as <strong>periods</strong>. As an example, \(\ce{C}\), \(\ce{N}\) and \(\ce{O}\) are in period \(2\). The columns in the periodic table are called <strong>groups</strong>. \(\ce{H}\), \(\ce{Li}\) and \(\ce{Na}\) are group \(1\) elements.</p>
+<p>You can select elements in the periodic table to learn more about their properties and history.</p>
+<p><iframe width="100%" scrolling="no" title="Periodic table of the elements" src="https://rmitlibrary.github.io/cdn/learninglab/interactive/periodic-table-elements.html"></iframe><br />
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-5272">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-7947" aria-expanded="false" aria-controls="body-transcript-7947" >Transcript</button>
+</p>
+<div id="body-transcript-7947" class="accordion-collapse collapse " aria-labelledby="head-transcript-5272">
+<div class="accordion-body">
+<h2>Interactive periodic table</h2>
+<p>Interactive periodic table displaying elements. Users can hover over or click on elements to view details such as atomic number, symbol, and properties.</p>
+</div></div></div>
+<h2>Classification of the elements by properties</h2>
+<p>Elements can be classified based on their physical and chemical properties. </p>
+<h3>Physical properties</h3>
+<p>Based primarily on selected physical properties, elements are classified as metals and non-metals. Metals are located on the left side of the periodic table, and non-metals are located on the right. Elements know as metalloids exhibit both metallic and non-metallic properties. Metalloids are located between metals and non-metals in the periodic table.</p>
+<p>The physical properties of metals, non-metals and metalloids are shown in the table below.</p>
 <table>
 <thead>
 <tr>
-<th>Elements</th>
+<th>Name</th>
+<th>Physical properties</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Metals</td>
+<td>good conductors of electricity and heat, exist as solids at room temperature (except mercury), ductile, malleable, shiny in appearance (have a metallic lustre), high density, high melting point</td>
+<td>\(\ce{Fe},\,\ce{Cu},\,\ce{Au}\)</td>
+</tr>
+<tr>
+<td>Non-metals</td>
+<td>poor conductors of electricity and heat, can be gases, liquids or solids at room temperature, vary in appearance</td>
+<td>\(\ce{O},\,\ce{C},\,\ce{S}\)</td>
+</tr>
+<tr>
+<td>Metalloids</td>
+<td>have mixed properties that are intermediate between metals and non-metals, can be semiconductors</td>
+<td>\(\ce{Si},\,\ce{B},\,\ce{As}\)</td>
+</tr>
+</tbody>
+</table>
+<h3>Chemical properties</h3>
+<p>If we focus on chemical properties, we can classify elements as alkali metals, alkaline earth metals, halogens and noble gases. The chemical properties of elements in these classes are shown in the table below.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Chemical properties</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alkali metals</td>
+<td>soft and shiny metals, highly reactive with water</td>
+<td>\(\ce{Li}\), \(\ce{Na}\), \(\ce{K}\)</td>
+</tr>
+<tr>
+<td>Alkaline earth metals</td>
+<td>soft and shiny metals, moderately reactive with water</td>
+<td>\(\ce{Be,\,Mg,\,Ca}\)</td>
+</tr>
+<tr>
+<td>Halogens</td>
+<td>generally reactive elements, exist as gases at room temperature</td>
+<td>\(\ce{F,\,Cl,\,Br}\)</td>
+</tr>
+<tr>
+<td>Noble gases</td>
+<td>exist as gases, unreactive elements</td>
+<td>\(\ce{He,\,Ne,\,Ar}\)</td>
+</tr>
+</tbody>
+</table>
+<h2>Classification of the elements by electron configuration</h2>
+<p>Elements in the same group have similar chemical properties due to the similarity in their outermost electron shell (valence) configurations. Thus, the electrons in the outermost shell (largest and highest-energy) are known as <strong>valence electrons</strong>. Valence electrons are accessible to other chemical species. This allows them to participate in chemical reactions. Elements in the same group have the same number of valence electrons.</p>
+<p>The rest of the electrons in the atom are known as <strong>core electrons</strong>. Core electrons are tightly bound to the nucleus and are considered inaccessible.</p>
+<p>All of the elements in the table below have one \(s\) electron in their outermost electron shell. Group \(1\) elements, except hydrogen, are soft metals and are highly reactivity with water and oxygen.</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
 <th>Electron configuration</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>\(\ce{_{3}Li}\)</td>
-<td>\(1s^{2}\:2s^{1}\)</td>
+<td>\(1s^{2}\,2s^{1}\)</td>
 </tr>
 <tr>
 <td>\(\ce{_{11}Na}\)</td>
-<td>\(1s^{2}\:2s^{2}2p^{6}\:3s^{1}\)</td>
+<td>\(1s^{2}\,2s^{2}\,2p^{6}\,3s^{1}\)</td>
 </tr>
 <tr>
 <td>\(\ce{_{19}K}\)</td>
-<td>\(1s^{2}\:2s^{2}2p^{6}\:3s^{2}3p^{6}\:4s^{1}\)</td>
+<td>\(1s^{2}\,2s^{2}\,2p^{6}\,3s^{2}\,3p^{6}\,4s^{1}\)</td>
 </tr>
 <tr>
 <td>\(\ce{_{37}Rb}\)</td>
-<td>\(1s^{2}\:2s^{2}2p^{6}\:3s^{2}3p^{6}3d^{10}\:4s^{2}4p^{6}\:5s^{1}\)</td>
+<td>\(1s^{2}\,2s^{2}\,2p^{6}\,3s^{2}\,3p^{6}\,3d^{10}\,4s^{2}\,4p^{6}\,5s^{1}\)</td>
 </tr>
 </tbody>
 </table>
-<p>All of these elements have one \(s\) electron in their outermost (valence) shell. Group \(\mathrm{I}\) elements, except hydrogen, are soft metals and demonstrate high reactivity with water and oxygen.</p>
-<h3>Valence electrons and core electrons</h3>
-<p>Electrons located in the outermost shell (largest and highest-energy shell) of an atom are known as valence electrons. The rest of the electrons in the atom are known as core electrons. Valence electrons are accessible, thus participate in the chemical reactions. Core electrons are tightly bound to the nucleus and inaccessible.</p>
-<h2>Classification of the elements</h2>
-<h3>Groups of elements</h3>
+<h3>\(s\)-, \(p\)-, \(d\)-, and \(f\)-blocks</h3>
+<p>The elements in the periodic table are categorised into \(s\)-, \(p\)-, \(d\)- and \(f\)-blocks based on the location of the last electron in the valence shell. The \(s\)- block contains elements that have their last electron in \(s\) subshell. Similarly, \(p\)-, \(d\)-, and \(f\)-blocks have elements with their last electron located in \(p\), \(d\), and \(f\) subshells, respectively. The \(s\)-, \(p\)-, \(d\)- and \(f\)-blocks are shown in the figure below.</p>
+<p><iframe width="100%" scrolling="no" title="s,p,d,f blocks" src="https://rmitlibrary.github.io/cdn/learninglab/interactive/periodic-table-spdf.html"></iframe><br />
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-2504">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-7875" aria-expanded="false" aria-controls="body-transcript-7875" >Transcript</button>
+</p>
+<div id="body-transcript-7875" class="accordion-collapse collapse " aria-labelledby="head-transcript-2504">
+<div class="accordion-body">
+<h4>s-, p-, d- and f-block diagram</h4>
+<p>A colour-coded periodic table showing the s block in green, d block in blue, p block in pink, and f block in orange. Each block includes the corresponding elements grouped by their electron configurations.</p>
+</div></div></div>
+<p>Based on the location of the last electron in an element, elements can also be classified as a noble gas, main group (or representative) element, transition element or inner transition element. This is summarised in the table and figure below.</p>
 <table>
 <thead>
 <tr>
-<th>Group</th>
 <th>Name</th>
-<th>Examples</th>
-<th>Chemical properties</th>
+<th>Description</th>
+</tr>
+<tr>
+<tbody>
+<tr>
+<td>Noble gases</td>
+<td>The last electron completes the \(p\) subshell, except \(\ce{He}\)</td>
+</tr>
+<tr>
+<td>Main group elements</td>
+<td>The last electron partially fills or completes the \(s\) subshell, or partially fills a \(p\) subshell; all of the elements in the \(s\) block and the first five columns of the \(p\)-block</td>
+</tr>
+<tr>
+<td>Transition elements</td>
+<td>The last electron partially fills or completes the \(d\) subshell; all elements in the \(d\)-block</td>
+</tr>
+<tr>
+<td>Inner transition elements</td>
+<td>The last electron partially fills or completes the \(f\) subshell; all elements in the \(f\)-block</td>
+</tr>
+</tbody>
+</table>
+<p><iframe width="100%" scrolling="no" src="https://rmitlibrary.github.io/cdn/learninglab/interactive/periodic-table-representative.html"></iframe><br />
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-6440">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-9151" aria-expanded="false" aria-controls="body-transcript-9151" >Transcript</button>
+</p>
+<div id="body-transcript-9151" class="accordion-collapse collapse " aria-labelledby="head-transcript-6440">
+<div class="accordion-body">
+<h4>Periodic table categories diagram</h4>
+<p>A periodic table colour-coded by categories: representative elements in pink, transition elements in blue, inner transition elements in green, and noble gases in orange. Each category groups elements with similar properties.</p>
+</div></div></div>
+<h2>Worked example – interpreting the periodic table</h2>
+<p>Determine the number of valence electrons in \(\ce{P}\), \(\ce{F}\), \(\ce{Ca}\) and \(\ce{Fe}\).</p>
+<p><strong>Step 1:</strong> Recall how the periodic table is organised, in relation to the number of valence electrons.</p>
+<p>The periodic table is organised such that elements in the same group have the same number of valence electrons. Thus, the group numbers of these elements can be used to determine the number of valence electrons.</p>
+<p><strong>Step 2:</strong> For groups \(1-10\), group number is equal to the number of valence electrons. For groups \(12-18\), subtract \(10\) out of the group number to get the number of valence electrons. For group \(11\), we would expect the number of valence electrons to be \(1\) due to the \(s^{1}\) electron configuration. However, there are a few exceptions in this case.</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Group number</th>
+<th>Valence electrons</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>\(\mathrm{I}\)A</td>
-<td>Alkali metals</td>
-<td>\(\ce{Li}\), \(\ce{Na}\), \(\ce{K}\)</td>
-<td>Soft and shiny metals, highly reactive with water</td>
+<td>\(\ce{P}\)</td>
+<td>\(15\)</td>
+<td>\(15-10=5\)</td>
 </tr>
 <tr>
-<td>\(\mathrm{II}\)A</td>
-<td>Alkaline earth metals</td>
-<td>\(\ce{Be,\,Mg,\,Ca}\)</td>
-<td>Soft and shiny metals, moderately reactive with water</td>
+<td>\(\ce{F}\)</td>
+<td>\(17\)</td>
+<td>\(17-10=7\)</td>
 </tr>
 <tr>
-<td>\(\mathrm{VII}\)A</td>
-<td>Halogens</td>
-<td>\(\ce{F,\,Cl,\,Br}\)</td>
-<td>Generally reactive elements, exist as gases at room temperature</td>
+<td>\(\ce{Ca}\)</td>
+<td>\(2\)</td>
+<td>\(2\)</td>
 </tr>
 <tr>
-<td>\(\mathrm{\mathrm{VIII}}\)A</td>
-<td>Noble gases</td>
-<td>\(\ce{He,\,Ne,\,Ar}\)</td>
-<td>Exist as gases, unreactive elements</td>
+<td>\(\ce{Fe}\)</td>
+<td>\(8\)</td>
+<td>\(8\)</td>
 </tr>
 </tbody>
 </table>
-<h3>Metals and non-metals</h3>
-<p>Based on selected physical properties, elements are classified into metals and nonmetals. Metals are located on the left side of the periodic table, and nonmetals are located on the right.</p>
-<p>Physical properties of metals - conductors of electricity and heat, exist as solids at room temperature (except Mercury), ductile, malleable, shiny appearance (metallic lustre), high density and high melting point.</p>
-<p>Elements know as metalloids exhibit both metallic and nonmetallic properties. Metalloids are located between metals and nonmetals in the periodic table.</p>
-<h3>s,p,d,f blocks</h3>
-<p>The elements in the periodic table are categorised into \(s,p,d,f\) blocks based on the location of the last electron. The \(s\) block contains elements that have their last electron in \(s\) subshell. Similarly, \(p,d,f\) blocks have elements with their last electron located in \(p,d,f\) subshells, respectively.</p>
-<p><iframe width="100%" scrolling="no" title="s,p,d,f blocks" src="https://rmitlibrary.github.io/cdn/learninglab/interactive/periodic-table-spdf.html"></iframe></p>
-<h3>Classification based on electron configurations of the elements</h3>
-<ul>
-<li>The noble gases - The last electron located in the \(p\) subshell except \(\ce{He}\). All noble gases, except \(\ce{He}\) have electron configuration ending with \(p^{6}\) (completes the \(p\) subshell).</li>
-<li>The representative elements - The elements located in \(s\) block and the first five columns of \(p\) block belongs to the representative elements group. The last electron of these elements fills an \(s\) subshell partially or entirely or fills a \(p\) subshell partially.</li>
-<li>The transition elements - The elements located in the \(d\) block.</li>
-<li>The inner transition elements - The elements located in the \(f\) block.</li>
-</ul>
-<p>Classification of the periodic table based on electron configuration of the elements.</p>
-<p><iframe width="100%" scrolling="no" src="https://rmitlibrary.github.io/cdn/learninglab/interactive/periodic-table-representative.html"></iframe></p>
-<h2>Periodic table trends</h2>
-<h3>Atomic radii</h3>
-<p>Atomic radii increase from the top to the bottom of a group of the periodic table. As \(n\) increases when proceeding down a group, valence orbitals become larger, leading to an increase in atomic radii.</p>
-<p>In contrast, from left to right of a period, atomic radii decrease. The effective nuclear charge (Z) increases when the atomic number (Z) increases across the period. As a result of the higher Z, orbitals become smaller.</p>
-<h3>Ionisation energy</h3>
-<p>The first ionisation energy is the minimum energy required to remove an electron from a neutral atom. The second and third ionisation energies are the energies necessary to remove more electrons from the atom.</p>
-<p>First ionisation energy increases when moving from left to right across a period as larger Z makes electrons bound tightly. When proceeding down on a group, the first ionisation energy decreases as an electron in a higher energy level is easier to remove. The trend in the first ionisation energy is inverse of the atomic radii.</p>
-<h3>Electron affinity</h3>
-<p>Electron affinity is the amount of energy change when an electron is added to a gaseous phase atom to form an anion. The electron affinity becomes more negative when moving across a period from left to right.</p>
-<h3>Electronegativity</h3>
-<p>Electronegativity is the power of an atom in a molecule to attract electrons. The larger the value, the larger the electron attracting ability. Atoms with higher electronegativity form anions, whereas atoms with smaller electronegativity form cations. Electronegativity decreases from top to bottom and increases from left to right of the periodic table.</p>
-<p><iframe class="responsive" style="width: 800px; height: 500px;" src="https://rmitlibrary.github.io/cdn/learninglab/interactive/electronegativity.html"></iframe></p>
+<h2>Your turn – the structure of the periodic table</h2>
+<p>Test yourself on your understanding of the structure of the periodic table.</p>
+<p><iframe src="https://rmit.h5p.com/content/1292428301671789589/embed" aria-label="Chemistry_Structure of periodic table_Quiz" width="1088" height="637" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe><script src="https://rmit.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script></p>
 <p class="small">Source: Periodic table data comes from <a href="https://github.com/Bowserinator/Periodic-Table-JSON">Periodic-Table-JSON</a>, Attribution-ShareAlike 3.0 Unported (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>). Interactive Periodic table based on a version by <a href="http://adrianroselli.com/2019/05/periodic-table-of-the-elements.html">Adrian Roselli.</a></p>
 			<nav class="btn-nav-container" aria-label="Previous and next links">
 <h2 class="btn-nav-prev">
@@ -433,9 +560,9 @@ list.querySelectorAll('h4').forEach(h4 => {
 
 
 <h2 class="btn-nav-next">
-    <a href="../periodic-table-quiz/index.html">
-        <span aria-hidden="true">Periodic table quiz</span>
-        <span class="visually-hidden">Next page: Periodic table quiz</span>
+    <a href="../trends-periodic-table/index.html">
+        <span aria-hidden="true">Trends in the periodic table</span>
+        <span class="visually-hidden">Next page: Trends in the periodic table</span>
     </a>
 </h2>
 	
@@ -461,7 +588,7 @@ list.querySelectorAll('h4').forEach(h4 => {
 <!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
 <!--
 <p><strong>Subjects </strong>
-    | <strong><a href="https://lab.bitma.app/subject-area/chemistry/">Chemistry</a></strong>  
+    | <strong><a href="https://learninglab.rmit.edu.au/subject-area/chemistry/">Chemistry</a></strong>  
     </p>
 -->
 <!-- category echo end -->
@@ -521,18 +648,17 @@ list.querySelectorAll('h4').forEach(h4 => {
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <section class="acknowledgement-container">
-                        <div class="acknowledgement-image">
-                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
-                        </div>
-
+                <section class="acknowledgement-container">
                         <div class="content">
                             <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
                             <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
-                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="#" class="link-large">More information</a>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business<span class="img-credit"> - Artwork 'Sentient' by Hollie Johnson, Gunaikurnai and Monero Ngarigo</span>.</p>
+                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                        </div>
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/sentient-hollie-johnson.jpg" alt="" />
                         </div>
                     </section>
                 </div>
@@ -612,7 +738,7 @@ list.querySelectorAll('h4').forEach(h4 => {
 </div><!-- wrapper end -->
 		
 	
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
 <script src="../../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
 <!-- Code to handle hamburger menu, embed mode, dark mode -->

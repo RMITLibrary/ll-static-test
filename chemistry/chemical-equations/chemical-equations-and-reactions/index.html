@@ -2,68 +2,31 @@
 <html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
 
 <head>
-<!-- 
-    DARK MODE
-    This script is placed in the <head> to ensure the theme is set as early as possible,
-    reducing the flash of unstyled content (FOUC). It determines the user's preferred
-    theme (either from local storage or system settings) and applies it immediately.
-  -->
-  <script>
-    (function() {
-      'use strict';
-
-      // Function to get the stored theme from local storage
-      const getStoredTheme = () => localStorage.getItem('theme');
-
-      // Function to determine the preferred theme
-      const getPreferredTheme = () => {
-        const storedTheme = getStoredTheme(); // Retrieve the stored theme
-        if (storedTheme) {
-          return storedTheme; // If a theme is stored, return it
-        }
-        // If no theme is stored, check the system preference for dark mode
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      // Function to apply the specified theme
-      const setTheme = theme => {
-        if (theme === 'auto') {
-          // If theme is 'auto', set it based on system preference
-          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-        } else {
-          // Otherwise, set the theme explicitly
-          document.documentElement.setAttribute('data-bs-theme', theme);
-        }
-      };
-
-      // Set the theme based on the preferred theme
-      setTheme(getPreferredTheme());
-    })();
-  </script>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- wp_head -->
-	<title>Chemical equations and reactions - lab</title>
-
-		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
-		<meta name="description" content="\[\require{mhchem}\] A chemical reaction is represented by a chemical equation that involves ions, atoms and molecular formulas. On this page, you will learn about the main components of a chemical equation, and how to write and balance chemical equations. The main components of a chemical equation are: Reactants: The starting materials of the reaction. Reactants" />
+	<title>Chemical equations and reactions - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		
+		<meta name="description" content="A chemical reaction is represented by a chemical equation that involves ions, atoms and molecular formulas. Use this resource to will learn about the main components of a chemical equation, and how to write and balance chemical equations. The main components of a chemical equation are: Reactants – the starting materials of the reaction. Reactants" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
-		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		
 		<meta property="og:locale" content="en_US" />
-		<meta property="og:site_name" content="lab -" />
+		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="Chemical equations and reactions - lab" />
-		<meta property="og:description" content="\[\require{mhchem}\] A chemical reaction is represented by a chemical equation that involves ions, atoms and molecular formulas. On this page, you will learn about the main components of a chemical equation, and how to write and balance chemical equations. The main components of a chemical equation are: Reactants: The starting materials of the reaction. Reactants" />
-		<meta property="og:url" content="https://lab.bitma.app/chemistry/chemical-equations/chemical-equations-and-reactions/" />
+		<meta property="og:title" content="Chemical equations and reactions - Learning Lab" />
+		<meta property="og:description" content="A chemical reaction is represented by a chemical equation that involves ions, atoms and molecular formulas. Use this resource to will learn about the main components of a chemical equation, and how to write and balance chemical equations. The main components of a chemical equation are: Reactants – the starting materials of the reaction. Reactants" />
+		<meta property="og:url" content="https://learninglab.rmit.edu.au/chemistry/chemical-equations/chemical-equations-and-reactions/" />
 		<meta property="article:published_time" content="2023-10-16T05:34:48+00:00" />
-		<meta property="article:modified_time" content="2024-11-06T03:02:56+00:00" />
+		<meta property="article:modified_time" content="2024-11-19T00:33:13+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Chemical equations and reactions - lab" />
-		<meta name="twitter:description" content="\[\require{mhchem}\] A chemical reaction is represented by a chemical equation that involves ions, atoms and molecular formulas. On this page, you will learn about the main components of a chemical equation, and how to write and balance chemical equations. The main components of a chemical equation are: Reactants: The starting materials of the reaction. Reactants" />
+		<meta name="twitter:title" content="Chemical equations and reactions - Learning Lab" />
+		<meta name="twitter:description" content="A chemical reaction is represented by a chemical equation that involves ions, atoms and molecular formulas. Use this resource to will learn about the main components of a chemical equation, and how to write and balance chemical equations. The main components of a chemical equation are: Reactants – the starting materials of the reaction. Reactants" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/chemical-equations-and-reactions\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/lab.bitma.app\/chemistry\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/#listItem","position":3,"name":"Chemical equations","item":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/chemical-equations-and-reactions\/#listItem","previousItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/chemical-equations-and-reactions\/#listItem","position":4,"name":"Chemical equations and reactions","previousItem":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/chemical-equations-and-reactions\/#webpage","url":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/chemical-equations-and-reactions\/","name":"Chemical equations and reactions - lab","description":"\\[\\require{mhchem}\\] A chemical reaction is represented by a chemical equation that involves ions, atoms and molecular formulas. On this page, you will learn about the main components of a chemical equation, and how to write and balance chemical equations. The main components of a chemical equation are: Reactants: The starting materials of the reaction. Reactants","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/chemical-equations-and-reactions\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:48+00:00","dateModified":"2024-11-06T03:02:56+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/chemical-equations-and-reactions\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/#listItem","position":3,"name":"Chemical equations","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/chemical-equations-and-reactions\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/chemical-equations-and-reactions\/#listItem","position":4,"name":"Chemical equations and reactions","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/chemical-equations-and-reactions\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/chemical-equations-and-reactions\/","name":"Chemical equations and reactions - Learning Lab","description":"A chemical reaction is represented by a chemical equation that involves ions, atoms and molecular formulas. Use this resource to will learn about the main components of a chemical equation, and how to write and balance chemical equations. The main components of a chemical equation are: Reactants \u2013 the starting materials of the reaction. Reactants","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/chemical-equations-and-reactions\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:48+00:00","dateModified":"2024-11-19T00:33:13+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
@@ -81,25 +44,96 @@ MathJax = {
 
 </script>
 <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
-<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
-<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
-<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+
+
+
+
+<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=849.css' media='all' />
  	<!-- /wp_head -->
+
     
+    
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta name="author" content="RMIT Library">
+
+    <meta name="geo.position" content="-37.807778, 144.963333">
+    <meta name="geo.placename" content="Melbourne">
+    <meta name="geo.region" content="AU">
+
+    <meta name="dcterms.title" content="Learning Lab">
+    
+    <meta name="dcterms.description" content="A chemical reaction is represented by a chemical equation that involves ions, atoms and molecular formulas. Use this resource to will learn about the main components of a chemical equation, and how to write and balance chemical equations. The main components of a chemical equation are: Reactants – the starting...">
+    <meta name="dcterms.type" content="Text">
+    <meta name="dcterms.identifier" content="https://learninglab.rmit.edu.au/chemistry/chemical-equations/chemical-equations-and-reactions/">
+    <meta name="dcterms.format" content="text/html">
+    <!-- END Additional meta tags not covered by wp_head -->
+
+
+    <!-- START Additional scripts for tracking -->
+
+    <!-- Microsoft Clarity - does hotspot tracking of pages -->
+    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+
+    <!-- Google tag - (gtag.js) --> 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLHPB23GYR');
+    </script>
+
+    <!-- Microsoft Bing - Not sure how useful this is? --> 
+    <meta name="msvalidate.01" content="8E4954E1DFAB7E2F8A92DD0A0BD6ED09">
+
+    <!-- END Additional scripts for tracking -->
+
     <style>
         </style>
+
+    <!-- 
+    DARK MODE javascript
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+    -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Function to get the stored theme from local storage
+        const getStoredTheme = () => localStorage.getItem('theme');
+
+        // Function to determine the preferred theme
+        const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+            return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        // Function to apply the specified theme
+        const setTheme = theme => {
+        if (theme === 'auto') {
+            // If theme is 'auto', set it based on system preference
+            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+            // Otherwise, set the theme explicitly
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        };
+
+        // Set the theme based on the preferred theme
+        setTheme(getPreferredTheme());
+    })();
+    </script>
 </head>
 
 <body class="page-template-default page page-id-3162 page-child parent-pageid-3161 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
-	
 		
 <header>
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
@@ -166,7 +200,7 @@ MathJax = {
 </h2>
 <div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
 <div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
-<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic Word List tool</a></li>
 <li class="page_item page-item-3107 page_item_has_children"><a href="../../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
 <li class="page_item page-item-2520 page_item_has_children"><a href="../../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
 <li class="page_item page-item-2521"><a href="../../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
@@ -211,7 +245,7 @@ MathJax = {
 									<ul>
 										<li><a href="../../../art-and-design/index.html">Art and design</a></li>
 										<li><a href="../../index.html">Chemistry</a></li>
-										<li><a href="../../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../../law-resources/index.html">Legal studies</a></li>
 										<li><a href="../../../maths-statistics/index.html">Mathematics and statistics</a></li>
 										<li><a href="../../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
 										<li><a href="../../../subject-areas/physics/index.html">Physics</a></li>
@@ -275,7 +309,7 @@ This should be moved to a stylesheet once style is determined. -->
 <!-- START SIDEBAR NAV PANEL -->
 <nav class="right-nav" aria-label="Section Menu">
 
-<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">Chemical equations</a></h3><ul><li><a href="index.html" class="selected"  aria-current="page">Chemical equations and reactions</a><li><a href="../chemical-equations-exercises/index.html">Chemical equations - exercises</a></li><li><a href="../redox-reactions/index.html">Redox reactions</a></li><li><a href="../redox-reactions-exercises/index.html">Redox reactions - exercises</a></li></ul></nav>
+<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">Chemical equations</a></h3><ul><li><a href="index.html" class="selected"  aria-current="page">Chemical equations and reactions</a><li><a href="../chemical-equations-exercises/index.html">Quiz – Chemical equations</a></li><li><a href="../redox-reactions/index.html">Redox reactions</a></li><li><a href="../redox-reactions-exercises/index.html">Quiz – Redox reactions</a></li></ul></nav>
 <!-- END SIDEBAR NAV PANEL -->
 
 
@@ -319,62 +353,42 @@ list.querySelectorAll('h4').forEach(h4 => {
 </ul>
 </nav>            <a id="main-content"></a>
             <h1 class="margin-top-zero">Chemical equations and reactions</h1>
-            <p><!--<script> var kw = "Keywords: " node = document.getElementById('page-title'); node.insertAdjacentHTML('afterend', '</p>
-
-
-
-
-<p class="keywords">'+kw+'<a href="/learninglab/tags/chemistry" title="view all content with this keyword">Chemistry</a> | <a href="/learninglab/tags/chemical-equations" title="view all content with this keyword">Chemical equations</a> | <a href="/learninglab/keywords/Reactions" title="view all content with this keyword">Reactions</a></p>
-
-
-
-
-<p>'); </script>
-
-
-
-<style type="text/css"> .keywords { text-align:right; padding: 2rem; color: #ccc; } .keywords a { color: #fff; } .field-name-field-keywords-tags { display: none; } #title-wrapper { background: url('https://rmitlibrary.github.io/cdn/learninglab/images/br131.jpg'); color: white; background-size: auto; margin: 0; height: inherit; } .lower-level #page #main h2#page-title { padding: 4rem 0 1rem 3rem ; margin: 0 0 0rem 0; line-height: 3.2rem; background: inherit; color: white; } /* hide em dash */ .lower-level #page #main h2#page-title:before { Display: none; } #sidebar-second { margin-top: 0px; } /* hide keywords */</style>
-
---></p>
-<p>\[\require{mhchem}\]</p>
-<p class="lead">A chemical reaction is represented by a chemical equation that involves ions, atoms and molecular formulas. On this page, you will learn about the main components of a chemical equation, and how to write and balance chemical equations.</p>
+            <p class="lead">A chemical reaction is represented by a chemical equation that involves ions, atoms and molecular formulas. Use this resource to will learn about the main components of a chemical equation, and how to write and balance chemical equations.</p>
 <p>The main components of a chemical equation are:</p>
 <ul>
-<li>Reactants: The starting materials of the reaction. Reactants are written on the left side of the equation.</li>
-<li>Products: The materials obtained at the end of the reaction and written on the right side of the equation.</li>
-<li>An arrow is drawn between the reactants and products pointing towards the products to designate a chemical change.</li>
-<li>Conditions required for the reaction to occur, for instance, pressure and temperature, are written above the arrow.</li>
-<li>Physical state of the substances involved: This is written next to the chemical formulas using brackets and abbreviations, as shown next. Solid - (s), Liquid - (l), Gas - (g), Aqueous solution (a substance dissolved in water) - (aq)</li>
-<li>Coefficient: The numbers written before the chemical formulas to balance the chemical equation. <sup>1</sup></li>
+<li><strong>Reactants</strong> – the starting materials of the reaction. Reactants are written on the left side of the equation.</li>
+<li><strong>Products</strong> – the materials obtained at the end of the reaction. Products are written on the right side of the equation.</li>
+<li>An <strong>arrow</strong> – drawn between the reactants and products pointing towards the products to indicate a chemical change</li>
+<li><strong>Conditions</strong> required for the reaction to occus&mdash;such as pressure and temperature&mdash;written above the arrow</li>
+<li><strong>Physical state</strong> of the substances involved – written next to the chemical formulas using brackets and abbreviations
+<ul>
+<li>solid – (s)</li>
+<li>liquid – (l)</li>
+<li>gas – (g)</li>
+<li>aqueous solution (a substance dissolved in water) – (aq)</li>
 </ul>
-<p>Let's take the photosynthesis reaction that occurs in plants as an example. Photosynthesis produces glucose and oxygen in the presence of a pigment known as chlorophyll using sunlight, carbon dioxide and water, as illustrated below.</p>
-<p><iframe src="https://rmitlibrary.github.io/cdn/learninglab/images/hype/photosynthesis/" width="100%" height="300"></iframe></p>
-<p>Photosynthesis equation</p>
-<div>
-<h2>Writing and balancing chemical equations</h2>
-<div>
+<li><strong>Coefficients</strong> – the numbers written before the chemical formulas to balance the chemical equation.</li>
+</ul>
+<p>According to the <strong>law of conservation of mass</strong>, matter cannot be created nor destroyed. None of the atoms disappear during a chemical reaction. Instead, atoms rearrange to form new chemical compounds. Therefore, the total number of atoms of each type on the reactant side of the arrow must be equal to that on the product side.</p>
+<h2>Worked example – writing balanced equations for chemical reactions</h2>
 <p>Write the balanced chemical equation for the reaction between nitrogen gas and hydrogen gas to produce ammonia gas.</p>
-<p><strong>Step 1: Write the reactants and products of the chemical equation using correct symbols and formulas.</strong></p>
-<ol>
-<li>Reactants are written on the left side and, products are written on the right side. Use the plus sign to separate each reactant or product from others. \[ \ce{N}_{2}+\ce{H}_{2}\ce{\qquad}\ce{NH}_{3} \]</li>
-<li>Place an arrow pointing towards the products between reactants and products. \[ \ce{N}_{2}+\ce{H}_{2}\ce{\rightarrow}\ce{NH}_{3} \]</li>
-</ol>
-<p><strong>Step 2: Balance the chemical equation using suitable coefficients.</strong><br />
-In a balanced chemical equation, an equal number of atoms of each element involved must be present on both sides (i.e: left and right sides of the equation).</p>
-<ol>
-<li>Choose one atom to balance first. Generally, it helps to start with the compound that is composed of the greatest number of atoms. First, focus on the element of that compound which has the highest number of atoms. Thus, choose hydrogen from ammonia to start the balancing. Ammonia contains three hydrogen atoms, while hydrogen on the left side has two atoms. Therefore, to balance the number of hydrogen atoms, six hydrogen atoms will be required for each side as six is the lowest possible number that both two and three can divide evenly. So, place two in front of ammonia and three in front of molecular hydrogen to obtain six hydrogen atoms on both sides. \[\begin{align*} 2\ce{NH}_{3} &amp; \qquad2\times3=6\\ 3\ce{H}_{2} &amp; \qquad3\times2=6\\ \ce{N}_{2}+3\ce{H}_{2} &amp; \rightarrow2\ce{NH}_{3} \end{align*}\]</li>
-<li>Next, balance the rest of the atoms in the selected compound. In this example, the next atom will be nitrogen. The right side has two nitrogen atoms and the left side also has two nitrogen atoms. Therefore, nitrogen is already balanced.</li>
-<li>Balance the remaining elements in the equation. As the selected equation only contains two types of atoms, there are no more atoms left to be balanced. Otherwise, balance the remaining atoms.</li>
-</ol>
-<p><strong>Step 3: Do a final check to ensure all types of atoms in the equation are balanced.</strong><br />
-At this point, the equation is balanced for both atoms present. Two nitrogen on both sides and six hydrogens on both sides. \[ \ce{N}_{2}+3\ce{H}_{2}\rightarrow2\ce{NH}_{3} \]</p>
-<p>The following table summarises the total number of atoms for each element involved on each side of the equation.</p>
+<p><strong>Step 1:</strong> Write the reactants and products of the chemical equation using correct symbols and formulas. The reactants are written on the left side of the arrow and the products are written on the right. Use a plus (+) sign to separate each reactant or product from others.</p>
+<p>\[\ce{N}_{2}+\ce{H}_{2}\ce{\rightarrow}\ce{NH}_{3}\]</p>
+<p><strong>Step 2:</strong> Balance the chemical equation by writing the correct coefficients in front of each chemical formula. In a balanced chemical equation, an equal number of atoms of each element involved must be present on either side  of the arrow. Choose one atom to balance at a time. Let's start with the compound that is composed of the greatest number of atoms.</p>
+<p>The compound with the greatest number of atoms is ammonia. The element in ammonia with the highest number of atoms is \(\ce{H}\). The reactant side contains \(3\textrm{ H}\) atoms. On the product side, \(\ce{H}\) contains \(2\textrm{ H}\) atoms.</p>
+<p>To balance the number of \(\ce{H}\) atoms, \(6\textrm{ H}\) atoms are needed on either side, as \(6\) is the least common multiple. To achieve \(6\textrm{ H}\) atoms on either side, we need \(2\ce{NH3}\) molecules and \(3\ce{H2}\) molecules.</p>
+<p>\[\ce{N}_{2}+3\ce{H}_{2}\rightarrow2\ce{NH}_{3}\]</p>
+<p><strong>Step 3:</strong> Repeat step 2 with each atom, as required.</p>
+<p>The next atom will be nitrogen. The reactant side has \(2\textrm{ N}\) atoms and the product side also has \(2\textrm{ N}\) atoms. Therefore, nitrogen is already balanced.</p>
+<p><strong>Step 4:</strong> Do a final check to make sure all types of atoms in the equation are balanced.</p>
+<p>\[\ce{N}_{2}+3\ce{H}_{2}\rightarrow2\ce{NH}_{3}\]</p>
+<p>On the reactant side, there are \(2\ce{N}\) atoms and \(6\ce{H}\) atoms. On the product side, there are \(2\ce{N}\) atoms and \(6\ce{H}\) atoms. The equation is balanced. This is summarised in the table.</p>
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Left side</th>
-<th>Right side</th>
+<th>Element</th>
+<th>Reactant side</th>
+<th>Product side</th>
 </tr>
 </thead>
 <tbody>
@@ -390,29 +404,41 @@ At this point, the equation is balanced for both atoms present. Two nitrogen on 
 </tr>
 </tbody>
 </table>
-<p><strong>Step 4: Check whether the coefficients are in their lowest possible whole numbers.</strong></p>
-<p><strong>​</strong><img decoding="async" style="width: 495px; height: 158px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM8Ammonia.png" alt="" /></p>
-<p>The ratio of \(1:3:2\) is the lowest possible in whole numbers.</p>
-</div>
-<div>
-<h3>Balance the following chemical equation</h3>
-</div>
-<div>
-<h3>\(\ce{C}_{2}\ce{H}_{6}\ce{O}+\ce{O}_{2}\rightarrow\ce{CO}_{2}+\ce{H}_{2}\ce{O}\)</h3>
-<p><strong>Step 1: Write the reactants and products of the chemical equation using correct symbols and formulas.</strong><br />
-As the chemical equation is already given, this step is not applicable.</p>
-<p><strong>Step 2: Balance the chemical equation using suitable coefficients.</strong></p>
-<ol>
-<li>Choose one atom to balance first. Generally, it helps to start with the compound that is composed of the greatest number of atoms. Focus first on the element of that compound which has the highest number of atoms.<br />
-Therefore, start with hydrogen. The left side has six hydrogens, and the right side has two hydrogens. Placing three in front of water can give six hydrogen atoms on the right side as well. \[ \ce{C}_{2}\ce{H}_{6}\ce{O}+\ce{O}_{2}\rightarrow\ce{CO}_{2}+\ce{3H}_{2}\ce{O} \]</li>
-<li>Next, balance the carbon atoms. The left side contains two carbon atoms, and the right side contains one carbon atom. Using two as the coefficient for carbon dioxide makes two carbons on each side. \[ \ce{C}_{2}\ce{H}_{6}\ce{O}+\ce{O}_{2}\rightarrow\ce{2CO}_{2}+\ce{3H}_{2}\ce{O} \]</li>
-<li>Finally, balance the oxygen atoms. The left side has three oxygen atoms, and the right side has seven oxygen atoms. Placing three in front of molecular oxygen on the left side gives seven oxygen atoms on each side. \[ \ce{C}_{2}\ce{H}_{6}\ce{O}+\ce{3O}_{2}\rightarrow\ce{2CO}_{2}+\ce{3H}_{2}\ce{O} \]</li>
-</ol>
-<p><strong>Step 3: Do a final check to ensure all types of atoms in the equation are balanced.</strong></p>
+<p><strong>Step 5:</strong> Check whether the coefficients are in their lowest possible whole numbers.</p>
+<p>\[1\ce{N}_{2}+3\ce{H}_{2}\rightarrow2\ce{NH}_{3}\]<br />
+The ratio of \(1:3:2\) is the lowest possible in whole numbers. In the final equation, any coefficients of \(1\) do not need to be written. That is, \(1\ce{N2}\) is simply \(\ce{N2}\).</p>
+<p><strong>Step 6:</strong> Add the states for each compound.</p>
+<p>\[\ce{N}_{2}(\textrm{g})+3\ce{H}_{2}(\textrm{g})\rightarrow2\ce{NH}_{3}(\textrm{g})\]</p>
+<div class="accordion">
+<div class="accordion-item ">
+<h2 class="accordion-header" id="head-example-2-3354">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-example-2-1190" aria-expanded="false" aria-controls="body-example-2-1190" >Example 2</button>
+</h2>
+<div id="body-example-2-1190" class="accordion-collapse collapse " aria-labelledby="head-example-2-3354">
+<div class="accordion-body">
+The unbalanced equation for the combustion of liquid ethanol is:<br />
+\[\ce{C}_{2}\ce{H}_{6}\ce{O}+\ce{O}_{2}\rightarrow\ce{CO}_{2}+\ce{H}_{2}\ce{O}\]</p>
+<p><strong>Step 1:</strong> Write the reactants and products of the chemical equation using correct symbols and formulas. The reactants are written on the left side of the arrow and the products are written on the right. Use a plus (+) sign to separate each reactant or product from others.</p>
+<p>The equation is given, so you can move on to the next step.</p>
+<p><strong>Step 2:</strong> Balance the chemical equation by writing the correct coefficients in front of each chemical formula. Start with the compound that is composed of the greatest number of atoms.</p>
+<p>The compound with the greatest number of atoms is hydrogen, \(\ce{H2}\). The reactant side contains \(6\textrm{ H}\) atoms and the product side has \(2\textrm{ H}\) atoms.</p>
+<p>To balance the number of \(\ce{H}\) atoms, \(6\textrm{ H}\) atoms are needed on either side, as \(6\) is the least common multiple. To achieve \(6\textrm{ H}\) atoms on either side, we need \(1\ce{C2H6O}\) molecules and \(3\ce{H2O}\) molecules.</p>
+<p>\[1\ce{C}_{2}\ce{H}_{6}\ce{O}+\ce{O}_{2}\rightarrow\ce{CO}_{2}+\ce{3H}_{2}\ce{O}\]</p>
+<p><strong>Step 3:</strong> Repeat step 2 with each atom, as required.</p>
+<ul>
+<li>The next atom will be carbon. The reactant side has \(2\textrm{ C}\) atoms and the product side also has \(1\textrm{ C}\) atom. To balance the number of \(\ce{C}\) atoms, \(2\textrm{ C}\) atoms are need on either side. To achieve this, we need \(2\ce{CO2}\) molecules.<br />
+	\[1\ce{C}_{2}\ce{H}_{6}\ce{O}+\ce{O}_{2}\rightarrow\ce{2CO}_{2}+\ce{3H}_{2}\ce{O}\]
+	</li>
+<li>Finally, balance the oxygen atoms. The reactant side has \(3\textrm{ O}\) atoms, and the product side has \(7\textrm{ O}\) atoms. Placing \(3\) in front of \(\ce{O2}\) on the reactant side gives \(7\textrm{ O}\) atoms on each side.<br />
+	\[1\ce{C}_{2}\ce{H}_{6}\ce{O}+\ce{3O}_{2}\rightarrow\ce{2CO}_{2}+\ce{3H}_{2}\ce{O}\]
+	</li>
+</ul>
+<p><strong>Step 4:</strong> Do a final check to make sure all types of atoms in the equation are balanced.</p>
+<p>\[\ce{N}_{2}+3\ce{H}_{2}\rightarrow2\ce{NH}_{3}\]</p>
 <table>
 <thead>
 <tr>
-<th></th>
+<th>Element</th>
 <th>Left side</th>
 <th>Right side</th>
 </tr>
@@ -435,45 +461,33 @@ Therefore, start with hydrogen. The left side has six hydrogens, and the right s
 </tr>
 </tbody>
 </table>
-<p><strong>Step 4: Check whether the coefficients are in their lowest possible whole numbers.</strong></p>
-<p><strong>​<img decoding="async" style="width: 566px; height: 127px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/1556_Image_equaiton.png" alt="" /></strong></p>
-<p>The ratio of \(1:3:2:3\) is the smallest possible whole number for the given equation.</p>
-</div>
-<div>
-<h3>Write and balance the chemical equation for the decomposition of hydrogen peroxide in the presence of light to water and oxygen gas.</h3>
-<p><strong>Step 1: Write the reactants and products of the chemical equation using correct symbols and formulas.</strong><br />
-Reactants: Hydrogen peroxide<br />
-Products: Water and oxygen gas<br />
-Write the reactants on the left side and products on the right side of the equation. Then place an arrow pointing towards the products. \[ \ce{H}_{2}\ce{O}_{2}\rightarrow\ce{H}_{2}\ce{O}+\ce{O}_{2} \]</p>
-<p><strong>Step 2: Balance the chemical equation using suitable coefficients. \[ \ce{H}_{2}\ce{O}_{2}\rightarrow\ce{H}_{2}\ce{O}+\ce{O}_{2} \]</strong></p>
+<p><strong>Step 5:</strong> Check whether the coefficients are in their lowest possible whole numbers.</p>
+<p>The ratio of \(1:3:2:3\) is the lowest possible in whole numbers. In the final equation, any coefficients of \(1\) do not need to be written. That is, \(1\ce{C2H6O}\) is simply \(\ce{C2H6O}\).</p>
+<p>\[\ce{C}_{2}\ce{H}_{6}\ce{O}+\ce{3O}_{2}\rightarrow\ce{2CO}_{2}+\ce{3H}_{2}\ce{O}\]</p>
+<p><strong>Step 6:</strong> Add the states for each compound.</p>
+<p>\[\ce{C}_{2}\ce{H}_{6}\ce{O}(\textrm{l})+\ce{3O}_{2}(\textrm{g})\rightarrow\ce{2CO}_{2}(\textrm{g})+\ce{3H}_{2}\ce{O}(\textrm{l})\]<br />
+</div></div></div>
+<div class="accordion-item ">
+<h2 class="accordion-header" id="head-example-3-7905">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-example-3-7386" aria-expanded="false" aria-controls="body-example-3-7386" >Example 3</button>
+</h2>
+<div id="body-example-3-7386" class="accordion-collapse collapse " aria-labelledby="head-example-3-7905">
+<div class="accordion-body">
+Write a balanced chemical equation for the decomposition of liquid hydrogen peroxide in the presence of light to water and oxygen gas.</p>
+<p><strong>Step 1:</strong> Write the reactants and products of the chemical equation using correct symbols and formulas. The reactants are written on the left side of the arrow and the products are written on the right. Use a plus (+) sign to separate each reactant or product from others.</p>
+<p>\[\ce{H}_{2}\ce{O}_{2}\rightarrow\ce{H}_{2}\ce{O}+\ce{O}_{2}\]</p>
+<p><strong>Step 2:</strong> Balance the chemical equation by writing the correct coefficients in front of each chemical formula. Start with the compound that is composed of the greatest number of atoms.</p>
+<p>The compound with the greatest number of atoms is hydrogen peroxide, \(\ce{H2O2}\). The reactant side contains \(2\textrm{ H}\) atoms and the product side has \(2\textrm{ H}\) atoms; therefore, \(\ce{H}\) is already balanced.</p>
+<p>\[\ce{H}_{2}\ce{O}_{2}\rightarrow\ce{H}_{2}\ce{O}+\ce{O}_{2}\]</p>
+<p><strong>Step 3:</strong> Repeat step 2 with each atom, as required.</p>
+<p>There are \(2\textrm{ O}\) atoms on the reactant side and \(3\textrm{ O}\) atoms on the product side. The number of oxygen atoms can be balanced by placing a \(\frac{1}{2}\) in front of \(\ce{O2}\). This gives \(2\textrm{ O}\) atoms on each side.</p>
+<p>\[\ce{H}_{2}\ce{O}_{2}\rightarrow\ce{H}_{2}\ce{O}+\frac{1}{2}\ce{O}_{2}\]</p>
+<p><strong>Step 4:</strong> Do a final check to make sure all types of atoms in the equation are balanced.</p>
+<p>\[\ce{H}_{2}\ce{O}_{2}\rightarrow\ce{H}_{2}\ce{O}+\frac{1}{2}\ce{O}_{2}\]</p>
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Left side</th>
-<th>Right side</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>\(\ce{H}\)</td>
-<td>\(2\)</td>
-<td>\(2\)</td>
-</tr>
-<tr>
-<td>\(\ce{O}\)</td>
-<td>\(2\)</td>
-<td>\(3\)</td>
-</tr>
-</tbody>
-</table>
-<p>According to the above table, hydrogen is already balanced. There are two oxygen atoms on the left side and three oxygen atoms on the right side. The number of oxygen atoms can be balanced by placing \(\frac{1}{2}\) in front of molecular oxygen. This gives two oxygen atoms on each side: \[ \ce{H}_{2}\ce{O}_{2}\rightarrow\ce{H}_{2}\ce{O}+\frac{1}{2}\ce{O}_{2} \]</p>
-<p><strong>Step 3: Do a final check to ensure all types of atoms in the equation are balanced.</strong><br />
-At this point, the equation is balanced for both atoms present. Two hydrogens on both sides and two oxygens on both sides.</p>
-<table>
-<thead>
-<tr>
-<th></th>
+<th>Element</th>
 <th>Left side</th>
 <th>Right side</th>
 </tr>
@@ -491,11 +505,12 @@ At this point, the equation is balanced for both atoms present. Two hydrogens on
 </tr>
 </tbody>
 </table>
-<p><strong>Step 4: Check whether the coefficients are in their lowest possible whole numbers.</strong><br />
-\[ \ce{H}_{2}\ce{O}_{2}\rightarrow\ce{H}_{2}\ce{O}+\frac{1}{2}\ce{O}_{2} \] Except for the coefficient of oxygen on the right side of the equation, the rest have whole number coefficients. To make all coefficients in their smallest whole number, multiply all coefficients by two. \[ \ce{2H}_{2}\ce{O}_{2}\rightarrow\ce{2H}_{2}\ce{O}+\ce{O}_{2} \]</p>
-<p><sup>1</sup> According to the law of conservation of mass, none of the atoms disappear during the reaction. However, atoms rearrange to form new chemicals. Therefore the total number of atoms of each type must be equal to that on the other side.</p>
-</div>
-</div>
+<p><strong>Step 5:</strong> Check whether the coefficients are in their lowest possible whole numbers.</p>
+<p>Except for \(\ce{O2}\), the compounds have whole number coefficients. To make all of the coefficients their smallest whole number, multiply all coefficients by \(2\).<br />
+\[\ce{2H}_{2}\ce{O}_{2}\rightarrow\ce{2H}_{2}\ce{O}+\ce{O}_{2}\]</p>
+<p><strong>Step 6:</strong> Add the states for each compound.</p>
+<p>\[\ce{2H}_{2}\ce{O}_{2}(\textrm{l})\rightarrow\ce{2H}_{2}\ce{O}(\textrm{g})+\ce{O}_{2}(\textrm{g})\]<br />
+</div></div></div></div>
 <p><!--
 
 <style media="all" type="text/css"> @import url("/learninglab/sites/default/files/enhanced/maths.css");</style>
@@ -513,8 +528,8 @@ At this point, the equation is balanced for both atoms present. Two hydrogens on
 
 <h2 class="btn-nav-next">
     <a href="../chemical-equations-exercises/index.html">
-        <span aria-hidden="true">Chemical equations - exercises</span>
-        <span class="visually-hidden">Next page: Chemical equations - exercises</span>
+        <span aria-hidden="true">Quiz – Chemical equations</span>
+        <span class="visually-hidden">Next page: Quiz – Chemical equations</span>
     </a>
 </h2>
 	
@@ -541,7 +556,7 @@ At this point, the equation is balanced for both atoms present. Two hydrogens on
 <!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
 <!--
 <p><strong>Subjects </strong>
-    | <strong><a href="https://lab.bitma.app/subject-area/chemistry/">Chemistry</a></strong>  
+    | <strong><a href="https://learninglab.rmit.edu.au/subject-area/chemistry/">Chemistry</a></strong>  
     </p>
 -->
 <!-- category echo end -->
@@ -601,18 +616,17 @@ At this point, the equation is balanced for both atoms present. Two hydrogens on
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <section class="acknowledgement-container">
-                        <div class="acknowledgement-image">
-                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
-                        </div>
-
+                <section class="acknowledgement-container">
                         <div class="content">
                             <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
                             <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
-                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="#" class="link-large">More information</a>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business<span class="img-credit"> - Artwork 'Sentient' by Hollie Johnson, Gunaikurnai and Monero Ngarigo</span>.</p>
+                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                        </div>
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/sentient-hollie-johnson.jpg" alt="" />
                         </div>
                     </section>
                 </div>
@@ -692,7 +706,7 @@ At this point, the equation is balanced for both atoms present. Two hydrogens on
 </div><!-- wrapper end -->
 		
 	
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
 <script src="../../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
 <!-- Code to handle hamburger menu, embed mode, dark mode -->

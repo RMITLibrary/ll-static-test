@@ -2,68 +2,31 @@
 <html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
 
 <head>
-<!-- 
-    DARK MODE
-    This script is placed in the <head> to ensure the theme is set as early as possible,
-    reducing the flash of unstyled content (FOUC). It determines the user's preferred
-    theme (either from local storage or system settings) and applies it immediately.
-  -->
-  <script>
-    (function() {
-      'use strict';
-
-      // Function to get the stored theme from local storage
-      const getStoredTheme = () => localStorage.getItem('theme');
-
-      // Function to determine the preferred theme
-      const getPreferredTheme = () => {
-        const storedTheme = getStoredTheme(); // Retrieve the stored theme
-        if (storedTheme) {
-          return storedTheme; // If a theme is stored, return it
-        }
-        // If no theme is stored, check the system preference for dark mode
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      // Function to apply the specified theme
-      const setTheme = theme => {
-        if (theme === 'auto') {
-          // If theme is 'auto', set it based on system preference
-          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-        } else {
-          // Otherwise, set the theme explicitly
-          document.documentElement.setAttribute('data-bs-theme', theme);
-        }
-      };
-
-      // Set the theme based on the preferred theme
-      setTheme(getPreferredTheme());
-    })();
-  </script>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- wp_head -->
-	<title>Chemical equations - exercises - lab</title>
-
-		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
-		<meta name="description" content="\[\require{mhchem}\] Are you looking to put your chemistry knowledge to the test? Try the exercises on this page. Exercises Identify the reactants and products in the following chemical equations. \(\ce{2H}_{2}+\ce{O}_{2}\rightarrow2\ce{H}_{2}\ce{O}\) \(\ce{CH}_{4}+2\ce{O}_{2}\rightarrow\ce{CO}_{2}+\ce{H}_{2}\ce{O}\) \(2\ce{Fe}_{2}\ce{O}_{3}+3\ce{C}\rightarrow4\ce{Fe}+3\ce{CO}_{2}\) \(\left(\ce{NH}_{4}\right)_{2}\ce{Cr}_{2}\ce{O}_{7}\rightarrow\ce{Cr}_{2}\ce{O}_{3}+4\ce{H}_{2}\ce{O}+\ce{N}_{2}\) \(\ce{CaCO}_{3}\rightarrow\ce{CaO}+\ce{CO}_{2}\) Write and balance the following chemical equations. Ammonia gas reacts with oxygen gas to produce nitrogen gas and water. Sodium sulphate" />
+	<title>Quiz – Chemical equations - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		
+		<meta name="description" content="Do you feel confident about writing balanced equations for chemical reactions? Test yourself with a quiz. Your turn – chemical equations For questions 1—5, identify the reactants and products in the chemical equations. \(\ce{2H}_{2}+\ce{O}_{2}\rightarrow2\ce{H}_{2}\ce{O}\) \(\ce{CH}_{4}+2\ce{O}_{2}\rightarrow\ce{CO}_{2}+\ce{H}_{2}\ce{O}\) \(2\ce{Fe}_{2}\ce{O}_{3}+3\ce{C}\rightarrow4\ce{Fe}+3\ce{CO}_{2}\) \(\left(\ce{NH}_{4}\right)_{2}\ce{Cr}_{2}\ce{O}_{7}\rightarrow\ce{Cr}_{2}\ce{O}_{3}+4\ce{H}_{2}\ce{O}+\ce{N}_{2}\) \(\ce{CaCO}_{3}\rightarrow\ce{CaO}+\ce{CO}_{2}\) For questions 6—10, write balanced equations for the chemical reactions. Ammonia gas reacts with oxygen gas to" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
-		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		
 		<meta property="og:locale" content="en_US" />
-		<meta property="og:site_name" content="lab -" />
+		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="Chemical equations - exercises - lab" />
-		<meta property="og:description" content="\[\require{mhchem}\] Are you looking to put your chemistry knowledge to the test? Try the exercises on this page. Exercises Identify the reactants and products in the following chemical equations. \(\ce{2H}_{2}+\ce{O}_{2}\rightarrow2\ce{H}_{2}\ce{O}\) \(\ce{CH}_{4}+2\ce{O}_{2}\rightarrow\ce{CO}_{2}+\ce{H}_{2}\ce{O}\) \(2\ce{Fe}_{2}\ce{O}_{3}+3\ce{C}\rightarrow4\ce{Fe}+3\ce{CO}_{2}\) \(\left(\ce{NH}_{4}\right)_{2}\ce{Cr}_{2}\ce{O}_{7}\rightarrow\ce{Cr}_{2}\ce{O}_{3}+4\ce{H}_{2}\ce{O}+\ce{N}_{2}\) \(\ce{CaCO}_{3}\rightarrow\ce{CaO}+\ce{CO}_{2}\) Write and balance the following chemical equations. Ammonia gas reacts with oxygen gas to produce nitrogen gas and water. Sodium sulphate" />
-		<meta property="og:url" content="https://lab.bitma.app/chemistry/chemical-equations/chemical-equations-exercises/" />
+		<meta property="og:title" content="Quiz – Chemical equations - Learning Lab" />
+		<meta property="og:description" content="Do you feel confident about writing balanced equations for chemical reactions? Test yourself with a quiz. Your turn – chemical equations For questions 1—5, identify the reactants and products in the chemical equations. \(\ce{2H}_{2}+\ce{O}_{2}\rightarrow2\ce{H}_{2}\ce{O}\) \(\ce{CH}_{4}+2\ce{O}_{2}\rightarrow\ce{CO}_{2}+\ce{H}_{2}\ce{O}\) \(2\ce{Fe}_{2}\ce{O}_{3}+3\ce{C}\rightarrow4\ce{Fe}+3\ce{CO}_{2}\) \(\left(\ce{NH}_{4}\right)_{2}\ce{Cr}_{2}\ce{O}_{7}\rightarrow\ce{Cr}_{2}\ce{O}_{3}+4\ce{H}_{2}\ce{O}+\ce{N}_{2}\) \(\ce{CaCO}_{3}\rightarrow\ce{CaO}+\ce{CO}_{2}\) For questions 6—10, write balanced equations for the chemical reactions. Ammonia gas reacts with oxygen gas to" />
+		<meta property="og:url" content="https://learninglab.rmit.edu.au/chemistry/chemical-equations/chemical-equations-exercises/" />
 		<meta property="article:published_time" content="2023-10-16T05:34:48+00:00" />
-		<meta property="article:modified_time" content="2024-11-06T03:51:57+00:00" />
+		<meta property="article:modified_time" content="2024-11-25T00:10:33+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Chemical equations - exercises - lab" />
-		<meta name="twitter:description" content="\[\require{mhchem}\] Are you looking to put your chemistry knowledge to the test? Try the exercises on this page. Exercises Identify the reactants and products in the following chemical equations. \(\ce{2H}_{2}+\ce{O}_{2}\rightarrow2\ce{H}_{2}\ce{O}\) \(\ce{CH}_{4}+2\ce{O}_{2}\rightarrow\ce{CO}_{2}+\ce{H}_{2}\ce{O}\) \(2\ce{Fe}_{2}\ce{O}_{3}+3\ce{C}\rightarrow4\ce{Fe}+3\ce{CO}_{2}\) \(\left(\ce{NH}_{4}\right)_{2}\ce{Cr}_{2}\ce{O}_{7}\rightarrow\ce{Cr}_{2}\ce{O}_{3}+4\ce{H}_{2}\ce{O}+\ce{N}_{2}\) \(\ce{CaCO}_{3}\rightarrow\ce{CaO}+\ce{CO}_{2}\) Write and balance the following chemical equations. Ammonia gas reacts with oxygen gas to produce nitrogen gas and water. Sodium sulphate" />
+		<meta name="twitter:title" content="Quiz – Chemical equations - Learning Lab" />
+		<meta name="twitter:description" content="Do you feel confident about writing balanced equations for chemical reactions? Test yourself with a quiz. Your turn – chemical equations For questions 1—5, identify the reactants and products in the chemical equations. \(\ce{2H}_{2}+\ce{O}_{2}\rightarrow2\ce{H}_{2}\ce{O}\) \(\ce{CH}_{4}+2\ce{O}_{2}\rightarrow\ce{CO}_{2}+\ce{H}_{2}\ce{O}\) \(2\ce{Fe}_{2}\ce{O}_{3}+3\ce{C}\rightarrow4\ce{Fe}+3\ce{CO}_{2}\) \(\left(\ce{NH}_{4}\right)_{2}\ce{Cr}_{2}\ce{O}_{7}\rightarrow\ce{Cr}_{2}\ce{O}_{3}+4\ce{H}_{2}\ce{O}+\ce{N}_{2}\) \(\ce{CaCO}_{3}\rightarrow\ce{CaO}+\ce{CO}_{2}\) For questions 6—10, write balanced equations for the chemical reactions. Ammonia gas reacts with oxygen gas to" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/chemical-equations-exercises\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/lab.bitma.app\/chemistry\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/#listItem","position":3,"name":"Chemical equations","item":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/chemical-equations-exercises\/#listItem","previousItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/chemical-equations-exercises\/#listItem","position":4,"name":"Chemical equations - exercises","previousItem":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/chemical-equations-exercises\/#webpage","url":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/chemical-equations-exercises\/","name":"Chemical equations - exercises - lab","description":"\\[\\require{mhchem}\\] Are you looking to put your chemistry knowledge to the test? Try the exercises on this page. Exercises Identify the reactants and products in the following chemical equations. \\(\\ce{2H}_{2}+\\ce{O}_{2}\\rightarrow2\\ce{H}_{2}\\ce{O}\\) \\(\\ce{CH}_{4}+2\\ce{O}_{2}\\rightarrow\\ce{CO}_{2}+\\ce{H}_{2}\\ce{O}\\) \\(2\\ce{Fe}_{2}\\ce{O}_{3}+3\\ce{C}\\rightarrow4\\ce{Fe}+3\\ce{CO}_{2}\\) \\(\\left(\\ce{NH}_{4}\\right)_{2}\\ce{Cr}_{2}\\ce{O}_{7}\\rightarrow\\ce{Cr}_{2}\\ce{O}_{3}+4\\ce{H}_{2}\\ce{O}+\\ce{N}_{2}\\) \\(\\ce{CaCO}_{3}\\rightarrow\\ce{CaO}+\\ce{CO}_{2}\\) Write and balance the following chemical equations. Ammonia gas reacts with oxygen gas to produce nitrogen gas and water. Sodium sulphate","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/chemical-equations-exercises\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:48+00:00","dateModified":"2024-11-06T03:51:57+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/chemical-equations-exercises\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/#listItem","position":3,"name":"Chemical equations","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/chemical-equations-exercises\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/chemical-equations-exercises\/#listItem","position":4,"name":"Quiz \u2013 Chemical equations","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/chemical-equations-exercises\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/chemical-equations-exercises\/","name":"Quiz \u2013 Chemical equations - Learning Lab","description":"Do you feel confident about writing balanced equations for chemical reactions? Test yourself with a quiz. Your turn \u2013 chemical equations For questions 1\u20145, identify the reactants and products in the chemical equations. \\(\\ce{2H}_{2}+\\ce{O}_{2}\\rightarrow2\\ce{H}_{2}\\ce{O}\\) \\(\\ce{CH}_{4}+2\\ce{O}_{2}\\rightarrow\\ce{CO}_{2}+\\ce{H}_{2}\\ce{O}\\) \\(2\\ce{Fe}_{2}\\ce{O}_{3}+3\\ce{C}\\rightarrow4\\ce{Fe}+3\\ce{CO}_{2}\\) \\(\\left(\\ce{NH}_{4}\\right)_{2}\\ce{Cr}_{2}\\ce{O}_{7}\\rightarrow\\ce{Cr}_{2}\\ce{O}_{3}+4\\ce{H}_{2}\\ce{O}+\\ce{N}_{2}\\) \\(\\ce{CaCO}_{3}\\rightarrow\\ce{CaO}+\\ce{CO}_{2}\\) For questions 6\u201410, write balanced equations for the chemical reactions. Ammonia gas reacts with oxygen gas to","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/chemical-equations-exercises\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:48+00:00","dateModified":"2024-11-25T00:10:33+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
@@ -81,25 +44,96 @@ MathJax = {
 
 </script>
 <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
-<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
-<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
-<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+
+
+
+
+<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=849.css' media='all' />
  	<!-- /wp_head -->
+
     
+    
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta name="author" content="RMIT Library">
+
+    <meta name="geo.position" content="-37.807778, 144.963333">
+    <meta name="geo.placename" content="Melbourne">
+    <meta name="geo.region" content="AU">
+
+    <meta name="dcterms.title" content="Learning Lab">
+    
+    <meta name="dcterms.description" content="Do you feel confident about writing balanced equations for chemical reactions? Test yourself with a quiz. Your turn – chemical equations For questions 1&mdash;5, identify the reactants and products in the chemical equations. \(\ce{2H}_{2}+\ce{O}_{2}\rightarrow2\ce{H}_{2}\ce{O}\) \(\ce{CH}_{4}+2\ce{O}_{2}\rightarrow\ce{CO}_{2}+\ce{H}_{2}\ce{O}\) \(2\ce{Fe}_{2}\ce{O}_{3}+3\ce{C}\rightarrow4\ce{Fe}+3\ce{CO}_{2}\) \(\left(\ce{NH}_{4}\right)_{2}\ce{Cr}_{2}\ce{O}_{7}\rightarrow\ce{Cr}_{2}\ce{O}_{3}+4\ce{H}_{2}\ce{O}+\ce{N}_{2}\) \(\ce{CaCO}_{3}\rightarrow\ce{CaO}+\ce{CO}_{2}\) For questions 6&mdash;10, write balanced equations for the chemical reactions. Ammonia gas...">
+    <meta name="dcterms.type" content="Text">
+    <meta name="dcterms.identifier" content="https://learninglab.rmit.edu.au/chemistry/chemical-equations/chemical-equations-exercises/">
+    <meta name="dcterms.format" content="text/html">
+    <!-- END Additional meta tags not covered by wp_head -->
+
+
+    <!-- START Additional scripts for tracking -->
+
+    <!-- Microsoft Clarity - does hotspot tracking of pages -->
+    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+
+    <!-- Google tag - (gtag.js) --> 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLHPB23GYR');
+    </script>
+
+    <!-- Microsoft Bing - Not sure how useful this is? --> 
+    <meta name="msvalidate.01" content="8E4954E1DFAB7E2F8A92DD0A0BD6ED09">
+
+    <!-- END Additional scripts for tracking -->
+
     <style>
         </style>
+
+    <!-- 
+    DARK MODE javascript
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+    -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Function to get the stored theme from local storage
+        const getStoredTheme = () => localStorage.getItem('theme');
+
+        // Function to determine the preferred theme
+        const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+            return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        // Function to apply the specified theme
+        const setTheme = theme => {
+        if (theme === 'auto') {
+            // If theme is 'auto', set it based on system preference
+            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+            // Otherwise, set the theme explicitly
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        };
+
+        // Set the theme based on the preferred theme
+        setTheme(getPreferredTheme());
+    })();
+    </script>
 </head>
 
 <body class="page-template-default page page-id-3171 page-child parent-pageid-3161 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
-	
 		
 <header>
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
@@ -166,7 +200,7 @@ MathJax = {
 </h2>
 <div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
 <div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
-<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic Word List tool</a></li>
 <li class="page_item page-item-3107 page_item_has_children"><a href="../../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
 <li class="page_item page-item-2520 page_item_has_children"><a href="../../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
 <li class="page_item page-item-2521"><a href="../../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
@@ -211,7 +245,7 @@ MathJax = {
 									<ul>
 										<li><a href="../../../art-and-design/index.html">Art and design</a></li>
 										<li><a href="../../index.html">Chemistry</a></li>
-										<li><a href="../../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../../law-resources/index.html">Legal studies</a></li>
 										<li><a href="../../../maths-statistics/index.html">Mathematics and statistics</a></li>
 										<li><a href="../../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
 										<li><a href="../../../subject-areas/physics/index.html">Physics</a></li>
@@ -275,7 +309,7 @@ This should be moved to a stylesheet once style is determined. -->
 <!-- START SIDEBAR NAV PANEL -->
 <nav class="right-nav" aria-label="Section Menu">
 
-<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">Chemical equations</a></h3><ul><li><a href="../chemical-equations-and-reactions/index.html">Chemical equations and reactions</a></li><li><a href="index.html" class="selected"  aria-current="page">Chemical equations - exercises</a><li><a href="../redox-reactions/index.html">Redox reactions</a></li><li><a href="../redox-reactions-exercises/index.html">Redox reactions - exercises</a></li></ul></nav>
+<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">Chemical equations</a></h3><ul><li><a href="../chemical-equations-and-reactions/index.html">Chemical equations and reactions</a></li><li><a href="index.html" class="selected"  aria-current="page">Quiz – Chemical equations</a><li><a href="../redox-reactions/index.html">Redox reactions</a></li><li><a href="../redox-reactions-exercises/index.html">Quiz – Redox reactions</a></li></ul></nav>
 <!-- END SIDEBAR NAV PANEL -->
 
 
@@ -318,247 +352,259 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li><a href="../index.html">Chemical equations</a></li>
 </ul>
 </nav>            <a id="main-content"></a>
-            <h1 class="margin-top-zero">Chemical equations - exercises</h1>
-            <p><!--<script><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span> var kw = "Keywords: " node = document.getElementById('page-title'); node.insertAdjacentHTML('afterend', '</p>
-
-
-
-
-<p>
-</p>
-
-
-
-
-<p class="keywords">'+kw+'<a href="/learninglab/tags/chemistry" title="view all content with this keyword">Chemistry</a> | <a href="/learninglab/tags/chemical-equations" title="view all content with this keyword">Chemical equations</a> | <a href="/learninglab/keywords/Reactions" title="view all content with this keyword">Reactions</a> | <a href="/learninglab/tags/tutorials" title="view all content with this keyword">Tutorials</a></p>
-
-
-
-
-<p>
-</p>
-
-
-
-
-<p>'); </script>
-
-
-
-<style type="text/css"> .keywords { text-align:right; padding: 2rem; color: #ccc; } .keywords a { color: #fff; } .field-name-field-keywords-tags { display: none; } #title-wrapper { background: url('https://rmitlibrary.github.io/cdn/learninglab/images/br116.jpg'); color: white; background-size: auto; margin: 0; height: inherit; } .lower-level #page #main h2#page-title { padding: 4rem 0 1rem 3rem ; margin: 0 0 0rem 0; line-height: 3.2rem; background: inherit; color: white; } /* hide em dash */ .lower-level #page #main h2#page-title:before { Display: none; } #sidebar-second { margin-top: 0px; } /* hide keywords */ </style>
-
---></p>
-<p>\[\require{mhchem}\]</p>
-<p class="lead">Are you looking to put your chemistry knowledge to the test? Try the exercises on this page.</p>
-<div class="acc plain">
-<h2>Exercises</h2>
-<h3>Identify the reactants and products in the following chemical equations.</h3>
-<p>\(\ce{2H}_{2}+\ce{O}_{2}\rightarrow2\ce{H}_{2}\ce{O}\)<br />
+            <h1 class="margin-top-zero">Quiz – Chemical equations</h1>
+            <p class="lead">Do you feel confident about writing balanced equations for chemical reactions? Test yourself with a quiz.</p>
+<h2>Your turn – chemical equations</h2>
+<p>For questions 1&mdash;5, identify the reactants and products in the chemical equations.</p>
+<ol>
+<li>\(\ce{2H}_{2}+\ce{O}_{2}\rightarrow2\ce{H}_{2}\ce{O}\)</li>
+</ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-2849">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-6194" aria-expanded="false" aria-controls="body-answer-6194" >Answer</button>
+<p class="accordion-header" id="head-answer-1788">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-6076" aria-expanded="false" aria-controls="body-answer-6076" >Answer</button>
 </p>
-<div id="body-answer-6194" class="accordion-collapse collapse " aria-labelledby="head-answer-2849">
+<div id="body-answer-6076" class="accordion-collapse collapse " aria-labelledby="head-answer-1788">
 <div class="accordion-body">
-<p>Reactants - \(\ce{H}_{2}\) and \(\ce{O}_{2}\)<br />
-Products - \(\ce{H}_{2}\ce{O}\)</p>
-</div></div></div>
-<p>\(\ce{CH}_{4}+2\ce{O}_{2}\rightarrow\ce{CO}_{2}+\ce{H}_{2}\ce{O}\)</p>
+<p>Reactants: \(\ce{H}_{2}\) and \(\ce{O}_{2}\)</p>
+<p>Products: \(\ce{H}_{2}\ce{O}\)</p>
+<p>	</div></div></div>
+<ol start="2">
+<li>\(\ce{CH}_{4}+2\ce{O}_{2}\rightarrow\ce{CO}_{2}+\ce{H}_{2}\ce{O}\)</li>
+</ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-4490">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-9711" aria-expanded="false" aria-controls="body-answer-9711" >Answer</button>
+<p class="accordion-header" id="head-answer-6788">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-2889" aria-expanded="false" aria-controls="body-answer-2889" >Answer</button>
 </p>
-<div id="body-answer-9711" class="accordion-collapse collapse " aria-labelledby="head-answer-4490">
+<div id="body-answer-2889" class="accordion-collapse collapse " aria-labelledby="head-answer-6788">
 <div class="accordion-body">
-<p>Reactants - \(\ce{CH}_{4}\) and \(\ce{O}_{2}\)</p>
-<p>Products - \(\ce{CO}_{2}\) and \(\ce{H}_{2}\ce{O}\)</p>
-</div></div></div>
-<p>\(2\ce{Fe}_{2}\ce{O}_{3}+3\ce{C}\rightarrow4\ce{Fe}+3\ce{CO}_{2}\)</p>
+<p>Reactants: \(\ce{CH}_{4}\) and \(\ce{O}_{2}\)</p>
+<p>Products: \(\ce{CO}_{2}\) and \(\ce{H}_{2}\ce{O}\)</p>
+<p>	</div></div></div>
+<ol start="3">
+<li>\(2\ce{Fe}_{2}\ce{O}_{3}+3\ce{C}\rightarrow4\ce{Fe}+3\ce{CO}_{2}\)</li>
+</ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-1590">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-4934" aria-expanded="false" aria-controls="body-answer-4934" >Answer</button>
+<p class="accordion-header" id="head-answer-3071">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-1678" aria-expanded="false" aria-controls="body-answer-1678" >Answer</button>
 </p>
-<div id="body-answer-4934" class="accordion-collapse collapse " aria-labelledby="head-answer-1590">
+<div id="body-answer-1678" class="accordion-collapse collapse " aria-labelledby="head-answer-3071">
 <div class="accordion-body">
-<p>Reactants - \(\ce{Fe}_{2}\ce{O}_{3}\) and \(\ce{C}\)</p>
-<p>Products - \(\ce{Fe}\) and \(\ce{CO}_{2}\)</p>
-</div></div></div>
-<p>\(\left(\ce{NH}_{4}\right)_{2}\ce{Cr}_{2}\ce{O}_{7}\rightarrow\ce{Cr}_{2}\ce{O}_{3}+4\ce{H}_{2}\ce{O}+\ce{N}_{2}\)</p>
+<p>Reactants: \(\ce{Fe}_{2}\ce{O}_{3}\) and \(\ce{C}\)</p>
+<p>Products: \(\ce{Fe}\) and \(\ce{CO}_{2}\)</p>
+<p>	</div></div></div>
+<ol start="4">
+<li>\(\left(\ce{NH}_{4}\right)_{2}\ce{Cr}_{2}\ce{O}_{7}\rightarrow\ce{Cr}_{2}\ce{O}_{3}+4\ce{H}_{2}\ce{O}+\ce{N}_{2}\)</li>
+</ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-9439">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-6010" aria-expanded="false" aria-controls="body-answer-6010" >Answer</button>
+<p class="accordion-header" id="head-answer-5719">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-6165" aria-expanded="false" aria-controls="body-answer-6165" >Answer</button>
 </p>
-<div id="body-answer-6010" class="accordion-collapse collapse " aria-labelledby="head-answer-9439">
+<div id="body-answer-6165" class="accordion-collapse collapse " aria-labelledby="head-answer-5719">
 <div class="accordion-body">
-<p>Reactants - \(\left(\ce{NH}_{4}\right)_{2}\ce{Cr}_{2}\ce{O}_{7}\)</p>
-<p>Products - \(\ce{Cr}_{2}\ce{O}_{3}\) , \(\ce{H}_{2}\ce{O}\) and \(\ce{N}_{2}\)</p>
-</div></div></div>
-<p>\(\ce{CaCO}_{3}\rightarrow\ce{CaO}+\ce{CO}_{2}\)</p>
+<p>Reactants: \(\left(\ce{NH}_{4}\right)_{2}\ce{Cr}_{2}\ce{O}_{7}\)</p>
+<p>Products: \(\ce{Cr}_{2}\ce{O}_{3}\) , \(\ce{H}_{2}\ce{O}\) and \(\ce{N}_{2}\)</p>
+<p>	</div></div></div>
+<ol start="5">
+<li>\(\ce{CaCO}_{3}\rightarrow\ce{CaO}+\ce{CO}_{2}\)</li>
+</ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-9567">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-8227" aria-expanded="false" aria-controls="body-answer-8227" >Answer</button>
+<p class="accordion-header" id="head-answer-1584">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-6083" aria-expanded="false" aria-controls="body-answer-6083" >Answer</button>
 </p>
-<div id="body-answer-8227" class="accordion-collapse collapse " aria-labelledby="head-answer-9567">
+<div id="body-answer-6083" class="accordion-collapse collapse " aria-labelledby="head-answer-1584">
 <div class="accordion-body">
-<p>Reactants - \(\ce{CaCO}_{3}\)</p>
-<p>Products - \(\ce{CaO}\) and \(\ce{CO}_{2}\)</p>
-</div></div></div>
-<h3>Write and balance the following chemical equations.</h3>
-<p>Ammonia gas reacts with oxygen gas to produce nitrogen gas and water.</p>
+<p>Reactants: \(\ce{CaCO}_{3}\)</p>
+<p>Products: \(\ce{CaO}\) and \(\ce{CO}_{2}\)</p>
+<p>	</div></div></div>
+<p>For questions 6&mdash;10, write balanced equations for the chemical reactions.</p>
+<ol start="6">
+<li>Ammonia gas reacts with oxygen gas to produce nitrogen gas and water.</li>
+</ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-4615">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-5403" aria-expanded="false" aria-controls="body-answer-5403" >Answer</button>
+<p class="accordion-header" id="head-answer-6198">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-6199" aria-expanded="false" aria-controls="body-answer-6199" >Answer</button>
 </p>
-<div id="body-answer-5403" class="accordion-collapse collapse " aria-labelledby="head-answer-4615">
+<div id="body-answer-6199" class="accordion-collapse collapse " aria-labelledby="head-answer-6198">
 <div class="accordion-body">
-<p>\(4\ce{NH}_{3}+3\ce{O}_{2}\rightarrow2\ce{N}_{2}+6\ce{H}_{2}\ce{O}\)</p>
-</div></div></div>
-<p>Sodium sulphate reacts with element carbon to produce sodium sulphite and carbon dioxide gas.<br />
+<p>\(4\ce{NH}_{3}(\textrm{g})+3\ce{O}_{2}(\textrm{g})\rightarrow2\ce{N}_{2}(\textrm{g})+6\ce{H}_{2}\ce{O}(\textrm{l})\)</p>
+<p>	</div></div></div>
+<ol start="7">
+<li>Solid sodium sulfate reacts with solid elemental carbon to produce solid sodium sulfite and carbon dioxide gas.</li>
+</ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-6552">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-1845" aria-expanded="false" aria-controls="body-answer-1845" >Answer</button>
+<p class="accordion-header" id="head-answer-5954">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-6990" aria-expanded="false" aria-controls="body-answer-6990" >Answer</button>
 </p>
-<div id="body-answer-1845" class="accordion-collapse collapse " aria-labelledby="head-answer-6552">
+<div id="body-answer-6990" class="accordion-collapse collapse " aria-labelledby="head-answer-5954">
 <div class="accordion-body">
-\(\ce{Na}_{2}\ce{SO}_{4}+2\ce{C}\rightarrow\ce{Na}_{2}\ce{S}+2\ce{CO}_{2}\)</p>
-</div></div></div>
-<p>Element iron reacts with oxygen gas to produce ferric oxide.<br />
+<p>\(\ce{Na}_{2}\ce{SO}_{4}(\textrm{s})+2\ce{C}(\textrm{s})\rightarrow\ce{Na}_{2}\ce{S}(\textrm{s})+2\ce{CO}_{2}(\textrm{g})\)</p>
+<p>	</div></div></div>
+<ol start="8">
+<li>Solid elemental iron reacts with oxygen gas to produce solid ferric oxide.</li>
+</ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-7748">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-8029" aria-expanded="false" aria-controls="body-answer-8029" >Answer</button>
+<p class="accordion-header" id="head-answer-2568">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-4938" aria-expanded="false" aria-controls="body-answer-4938" >Answer</button>
 </p>
-<div id="body-answer-8029" class="accordion-collapse collapse " aria-labelledby="head-answer-7748">
+<div id="body-answer-4938" class="accordion-collapse collapse " aria-labelledby="head-answer-2568">
 <div class="accordion-body">
-\(4\ce{Fe}+3\ce{O}_{2}\rightarrow2\ce{Fe}_{2}\ce{O}_{3}\)</p>
-</div></div></div>
-<p>Ammonium chloride separates into ammonia and hydrogen chloride<br />
+<p>\(4\ce{Fe}(\textrm{s})+3\ce{O}_{2}(\textrm{g})\rightarrow2\ce{Fe}_{2}\ce{O}_{3}(\textrm{s})\)</p>
+<p>	</div></div></div>
+<ol start="9">
+<li>Solid ammonium chloride separates into ammonia and hydrogen chloride gas.</li>
+</ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-2202">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-4412" aria-expanded="false" aria-controls="body-answer-4412" >Answer</button>
+<p class="accordion-header" id="head-answer-8789">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-5222" aria-expanded="false" aria-controls="body-answer-5222" >Answer</button>
 </p>
-<div id="body-answer-4412" class="accordion-collapse collapse " aria-labelledby="head-answer-2202">
+<div id="body-answer-5222" class="accordion-collapse collapse " aria-labelledby="head-answer-8789">
 <div class="accordion-body">
-\(\ce{NH}_{4}\ce{Cl}\rightarrow\ce{NH}_{3}+\ce{HCl}\)</p>
-</div></div></div>
-<p>Hydrogen iodide decomposes into iodine gas and hydrogen gas.<br />
+<p>\(\ce{NH}_{4}\ce{Cl}(\textrm{s})\rightarrow\ce{NH}_{3}(\textrm{g})+\ce{HCl}(\textrm{g})\)</p>
+<p>	</div></div></div>
+<ol start="10">
+<li>Gaseous hydrogen iodide decomposes into iodine gas and hydrogen gas.</li>
+</ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-9380">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-4474" aria-expanded="false" aria-controls="body-answer-4474" >Answer</button>
+<p class="accordion-header" id="head-answer-6965">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-3310" aria-expanded="false" aria-controls="body-answer-3310" >Answer</button>
 </p>
-<div id="body-answer-4474" class="accordion-collapse collapse " aria-labelledby="head-answer-9380">
+<div id="body-answer-3310" class="accordion-collapse collapse " aria-labelledby="head-answer-6965">
 <div class="accordion-body">
-\(2\ce{HI}\rightarrow\ce{H}_{2}+\ce{I}_{2}\)</p>
-</div></div></div>
-<h3>Balance the following chemical equations</h3>
-<p>\(\ce{FeI}_{2}+\ce{Cl}_{2}\rightarrow\ce{FeCl}_{3}+\ce{I}_{2}\)</p>
+<p>\(2\ce{HI}(\textrm{g})\rightarrow\ce{H}_{2}(\textrm{g})+\ce{I}_{2}(\textrm{g})\)</p>
+<p>	</div></div></div>
+<p>For questions 11&mdash;22, balance the equations.</p>
+<ol start="11">
+<li>\(\ce{FeI}_{2}(\textrm{s})+\ce{Cl}_{2}(\textrm{g})\rightarrow\ce{FeCl}_{3}(\textrm{s})+\ce{I}_{2}(\textrm{s})\)</li>
+</ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-4588">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-8865" aria-expanded="false" aria-controls="body-answer-8865" >Answer</button>
+<p class="accordion-header" id="head-answer-3677">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-8700" aria-expanded="false" aria-controls="body-answer-8700" >Answer</button>
 </p>
-<div id="body-answer-8865" class="accordion-collapse collapse " aria-labelledby="head-answer-4588">
+<div id="body-answer-8700" class="accordion-collapse collapse " aria-labelledby="head-answer-3677">
 <div class="accordion-body">
-<p>\(2\ce{FeI}_{2}+3\ce{Cl}_{2}\rightarrow2\ce{FeCl}_{3}+2\ce{I}_{2}\)</p>
-</div></div></div>
-<p>\(\ce{Fe}_{2}\ce{O}_{3}+\ce{C \rightarrow}\ce{Fe}+\ce{CO}_{2}\)</p>
+<p>\(2\ce{FeI}_{2}(\textrm{s})+3\ce{Cl}_{2}(\textrm{g})\rightarrow2\ce{FeCl}_{3}+2\ce{I}_{2}(\textrm{s})\)</p>
+<p>	</div></div></div>
+<ol start="12">
+<li>\(\ce{Fe}_{2}\ce{O}_{3}(\textrm{s})+\ce{C}(\textrm{s})\rightarrow\ce{Fe}(\textrm{s})+\ce{CO}_{2}(\textrm{g})\)</li>
+</ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-6172">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-5263" aria-expanded="false" aria-controls="body-answer-5263" >Answer</button>
+<p class="accordion-header" id="head-answer-5286">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-6955" aria-expanded="false" aria-controls="body-answer-6955" >Answer</button>
 </p>
-<div id="body-answer-5263" class="accordion-collapse collapse " aria-labelledby="head-answer-6172">
+<div id="body-answer-6955" class="accordion-collapse collapse " aria-labelledby="head-answer-5286">
 <div class="accordion-body">
-<p>\(2\ce{Fe}_{2}\ce{O}_{3}+3\ce{C}\rightarrow4\ce{Fe}+3\ce{CO}_{2}\)</p>
-</div></div></div>
-<p>\(\ce{HNO}_{3}+\ce{H}_{2}\ce{S \rightarrow}\ce{NO}+\ce{S}+\ce{H}_{2}\ce{O}\)</p>
+<p>\(2\ce{Fe}_{2}\ce{O}_{3}(\textrm{s})+3\ce{C}(\textrm{s})\rightarrow4\ce{Fe}(\textrm{s})+3\ce{CO}_{2}(\textrm{g})\)</p>
+<p>	</div></div></div>
+<ol start="13">
+<li>\(\ce{HNO}_{3}(\textrm{l})+\ce{H}_{2}\ce{S}(\textrm{g})\rightarrow\ce{NO}(\textrm{g})+\ce{S}(\textrm{s})+\ce{H}_{2}\ce{O}(\textrm{l})\)
+</ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-9496">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-7482" aria-expanded="false" aria-controls="body-answer-7482" >Answer</button>
+<p class="accordion-header" id="head-answer-3619">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-5256" aria-expanded="false" aria-controls="body-answer-5256" >Answer</button>
 </p>
-<div id="body-answer-7482" class="accordion-collapse collapse " aria-labelledby="head-answer-9496">
+<div id="body-answer-5256" class="accordion-collapse collapse " aria-labelledby="head-answer-3619">
 <div class="accordion-body">
-<p>\(2\ce{HNO}_{3}+3\ce{H}_{2}\ce{S}\rightarrow2\ce{NO}+3\ce{S}+4\ce{H}_{2}\ce{O}\)</p>
-</div></div></div>
-<p>\(\ce{SO}_{2}+\ce{H}_{2}\ce{O}\rightarrow\ce{H}_{2}\ce{SO}_{3}\)</p>
+<p>\(2\ce{HNO}_{3}(\textrm{l})+3\ce{H}_{2}\ce{S}(\textrm{g})\rightarrow2\ce{NO}(\textrm{g})+3\ce{S}(\textrm{s})+4\ce{H}_{2}\ce{O}(\textrm{l})\)</p>
+<p>	</div></div></div>
+<ol start="14">
+<li>\(\ce{SO}_{2}(\textrm{g})+\ce{H}_{2}\ce{O}(\textrm{l})\rightarrow\ce{H}_{2}\ce{SO}_{3}(\textrm{aq})\)</li>
+</ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-8260">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-3402" aria-expanded="false" aria-controls="body-answer-3402" >Answer</button>
+<p class="accordion-header" id="head-answer-6361">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-7407" aria-expanded="false" aria-controls="body-answer-7407" >Answer</button>
 </p>
-<div id="body-answer-3402" class="accordion-collapse collapse " aria-labelledby="head-answer-8260">
+<div id="body-answer-7407" class="accordion-collapse collapse " aria-labelledby="head-answer-6361">
 <div class="accordion-body">
-<p>\(\ce{SO}_{2}+\ce{H}_{2}\ce{O}\rightarrow\ce{H}_{2}\ce{SO}_{3}\)</p>
-</div></div></div>
-<p>\(\ce{AgNO}_{3}+\ce{KCl}\rightarrow\ce{KNO}_{3}+\ce{AgCl}\)</p>
+<p>\(\ce{SO}_{2}(\textrm{g})+\ce{H}_{2}\ce{O}(\textrm{l})\rightarrow\ce{H}_{2}\ce{SO}_{3}(\textrm{aq})\)</p>
+<p>	</div></div></div>
+<ol start="15">
+<li>\(\ce{AgNO}_{3}(\textrm{aq})+\ce{KCl}(\textrm{aq})\rightarrow\ce{KNO}_{3}(\textrm{aq})+\ce{AgCl}(\textrm{s})\)</li>
+</ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-4524">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-3592" aria-expanded="false" aria-controls="body-answer-3592" >Answer</button>
+<p class="accordion-header" id="head-answer-6334">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-3656" aria-expanded="false" aria-controls="body-answer-3656" >Answer</button>
 </p>
-<div id="body-answer-3592" class="accordion-collapse collapse " aria-labelledby="head-answer-4524">
+<div id="body-answer-3656" class="accordion-collapse collapse " aria-labelledby="head-answer-6334">
 <div class="accordion-body">
-<p>\(\ce{AgNO}_{3}+\ce{KCl}\rightarrow\ce{KNO}_{3}+\ce{AgCl}\)</p>
-</div></div></div>
-<p>\(\ce{PCl}_{3}+\ce{H}_{2}\rightarrow\ce{PH}_{3}+\ce{HCl}\)</p>
+<p>\(\ce{AgNO}_{3}(\textrm{aq})+\ce{KCl}(\textrm{aq})\rightarrow\ce{KNO}_{3}(\textrm{aq})+\ce{AgCl}(\textrm{s})\)</p>
+<p>	</div></div></div>
+<ol start="16">
+<li>\(\ce{PCl}_{3}(\textrm{l})+\ce{H}_{2}(\textrm{g})\rightarrow\ce{PH}_{3}(\textrm{g})+\ce{HCl}(\textrm{g})\)</li>
+</ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-2257">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-9353" aria-expanded="false" aria-controls="body-answer-9353" >Answer</button>
+<p class="accordion-header" id="head-answer-2979">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-6307" aria-expanded="false" aria-controls="body-answer-6307" >Answer</button>
 </p>
-<div id="body-answer-9353" class="accordion-collapse collapse " aria-labelledby="head-answer-2257">
+<div id="body-answer-6307" class="accordion-collapse collapse " aria-labelledby="head-answer-2979">
 <div class="accordion-body">
-<p>\(\ce{PCl}_{3}+3\ce{H}_{2}\rightarrow\ce{PH}_{3}+3\ce{HCl}\)</p>
-</div></div></div>
-<p>\(\ce{PbO}+\ce{NH}_{3}\rightarrow\ce{Pb}+\ce{N}_{2}+\ce{H}_{2}\ce{O}\)</p>
+<p>\(\ce{PCl}_{3}(\textrm{l})+3\ce{H}_{2}(\textrm{g})\rightarrow\ce{PH}_{3}(\textrm{g})+3\ce{HCl}(\textrm{g})\)</p>
+<p>	</div></div></div>
+<ol start="17">
+<li>\(\ce{PbO}(\textrm{s})+\ce{NH}_{3}(\textrm{g})\rightarrow\ce{Pb}(\textrm{s})+\ce{N}_{2}(\textrm{g})+\ce{H}_{2}\ce{O}(\textrm{l})\)</li>
+</ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-5613">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-9633" aria-expanded="false" aria-controls="body-answer-9633" >Answer</button>
+<p class="accordion-header" id="head-answer-3248">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-9597" aria-expanded="false" aria-controls="body-answer-9597" >Answer</button>
 </p>
-<div id="body-answer-9633" class="accordion-collapse collapse " aria-labelledby="head-answer-5613">
+<div id="body-answer-9597" class="accordion-collapse collapse " aria-labelledby="head-answer-3248">
 <div class="accordion-body">
-<p>\(3\ce{PbO}+2\ce{NH}_{3}\rightarrow3\ce{Pb}+\ce{N}_{2}+3\ce{H}_{2}\ce{O}\)</p>
-</div></div></div>
-<p>\(\ce{NaClO}_{3}\rightarrow\ce{NaCl}+\ce{O}_{2}\)</p>
+<p>\(3\ce{PbO}(\textrm{s})+2\ce{NH}_{3}(\textrm{g})\rightarrow3\ce{Pb}(\textrm{s})+\ce{N}_{2}(\textrm{g})+3\ce{H}_{2}\ce{O}(\textrm{l})\)</p>
+<p>	</div></div></div>
+<ol start="18">
+<li>\(\ce{NaClO}_{3}(\textrm{s})\rightarrow\ce{NaCl}(\textrm{s})+\ce{O}_{2}(\textrm{g})\)</li>
+</ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-6764">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-6218" aria-expanded="false" aria-controls="body-answer-6218" >Answer</button>
+<p class="accordion-header" id="head-answer-1422">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-9900" aria-expanded="false" aria-controls="body-answer-9900" >Answer</button>
 </p>
-<div id="body-answer-6218" class="accordion-collapse collapse " aria-labelledby="head-answer-6764">
+<div id="body-answer-9900" class="accordion-collapse collapse " aria-labelledby="head-answer-1422">
 <div class="accordion-body">
-<p>\(2\ce{NaClO}_{3}\rightarrow2\ce{NaCl}+3\ce{O}_{2}\)</p>
-</div></div></div>
-<p>\(\ce{N}_{2}\ce{O}\rightarrow\ce{N}_{2}+\ce{O}_{2}\)</p>
+<p>\(2\ce{NaClO}_{3}(\textrm{s})\rightarrow2\ce{NaCl}(\textrm{s})+3\ce{O}_{2}(\textrm{g})\)</p>
+<p>	</div></div></div>
+<ol start="19">
+<li>\(\ce{N}_{2}\ce{O}(\textrm{g})\rightarrow\ce{N}_{2}(\textrm{g})+\ce{O}_{2}(\textrm{g})\)</li>
+</ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-6100">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-5410" aria-expanded="false" aria-controls="body-answer-5410" >Answer</button>
+<p class="accordion-header" id="head-answer-7553">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-9821" aria-expanded="false" aria-controls="body-answer-9821" >Answer</button>
 </p>
-<div id="body-answer-5410" class="accordion-collapse collapse " aria-labelledby="head-answer-6100">
+<div id="body-answer-9821" class="accordion-collapse collapse " aria-labelledby="head-answer-7553">
 <div class="accordion-body">
-<p>\(2\ce{N}_{2}\ce{O}\rightarrow2\ce{N}_{2}+\ce{O}_{2}\)</p>
-</div></div></div>
-<p>\(\ce{NH}_{4}\ce{NO}_{3}\rightarrow\) \(\ce{N}_{2}+\ce{O}_{2}+\ce{H}_{2}\ce{O}\)</p>
+<p>\(2\ce{N}_{2}\ce{O}(\textrm{g})\rightarrow2\ce{N}_{2}(\textrm{g})+\ce{O}_{2}(\textrm{g})\)</p>
+<p>	</div></div></div>
+<ol start="20">
+<li>\(\ce{NH}_{4}\ce{NO}_{3}(\textrm{s})\rightarrow\ce{N}_{2}(\textrm{g})+\ce{O}_{2}(\textrm{g})+\ce{H}_{2}\ce{O}(\textrm{g})\)</li>
+</ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-2808">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-5439" aria-expanded="false" aria-controls="body-answer-5439" >Answer</button>
+<p class="accordion-header" id="head-answer-3930">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-8033" aria-expanded="false" aria-controls="body-answer-8033" >Answer</button>
 </p>
-<div id="body-answer-5439" class="accordion-collapse collapse " aria-labelledby="head-answer-2808">
+<div id="body-answer-8033" class="accordion-collapse collapse " aria-labelledby="head-answer-3930">
 <div class="accordion-body">
-<p>\(2\ce{NH}_{4}\ce{NO}_{3}\rightarrow2\ce{N}_{2}+\ce{O}_{2}+4\ce{H}_{2}\ce{O}\)</p>
-</div></div></div>
-<p>\(\ce{Mn}_{2}\left(\ce{CO}_{3}\right)_{3}\rightarrow\) \(\ce{Mn}_{2}\ce{O}_{3}+\ce{CO}_{2}\)</p>
+<p>\(2\ce{NH}_{4}\ce{NO}_{3}(\textrm{s})\rightarrow2\ce{N}_{2}(\textrm{g})+\ce{O}_{2}(\textrm{g})+4\ce{H}_{2}\ce{O}(\textrm{g})\)</p>
+<p>	</div></div></div>
+<ol start="21">
+<li>\(\ce{Mn}_{2}\left(\ce{CO}_{3}\right)_{3}(\textrm{s})\rightarrow\) \(\ce{Mn}_{2}\ce{O}_{3}(\textrm{s})+\ce{CO}_{2}(\textrm{g})\)</li>
+</ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-5434">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-3642" aria-expanded="false" aria-controls="body-answer-3642" >Answer</button>
+<p class="accordion-header" id="head-answer-3477">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-2539" aria-expanded="false" aria-controls="body-answer-2539" >Answer</button>
 </p>
-<div id="body-answer-3642" class="accordion-collapse collapse " aria-labelledby="head-answer-5434">
+<div id="body-answer-2539" class="accordion-collapse collapse " aria-labelledby="head-answer-3477">
 <div class="accordion-body">
-<p>\(\ce{Mn}_{2}\left(\ce{CO}_{3}\right)_{3}\rightarrow\ce{Mn}_{2}\ce{O}_{3}+3\ce{CO}_{2}\)</p>
-</div></div></div>
-<p>\(\ce{Na2CO3 +Mg(NO3)2\rightarrow MgCO3 +NaNO3}\)</p>
+<p>\(\ce{Mn}_{2}\left(\ce{CO}_{3}\right)_{3}(\textrm{s})\rightarrow\ce{Mn}_{2}\ce{O}_{3}(\textrm{s})+3\ce{CO}_{2}(\textrm{g})\)</p>
+<p>	</div></div></div>
+<ol start="22">
+<li>\(\ce{Na2CO3}(\textrm{aq})+\ce{Mg(NO3)2}(\textrm{aq})\rightarrow\ce{MgCO3}(\textrm{s}) +\ce{NaNO3}(\textrm{aq})\)</li>
+</ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-2208">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-3772" aria-expanded="false" aria-controls="body-answer-3772" >Answer</button>
+<p class="accordion-header" id="head-answer-3508">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-1670" aria-expanded="false" aria-controls="body-answer-1670" >Answer</button>
 </p>
-<div id="body-answer-3772" class="accordion-collapse collapse " aria-labelledby="head-answer-2208">
+<div id="body-answer-1670" class="accordion-collapse collapse " aria-labelledby="head-answer-3508">
 <div class="accordion-body">
-<p>\(\ce{Na2CO3 +Mg(NO3)2\rightarrow MgCO3 +2NaNO3}\)</p>
-</div></div></div>
-</div>
+<p>\(\ce{Na2CO3}(\textrm{aq})+\ce{Mg(NO3)2}(\textrm{aq})\rightarrow\ce{MgCO3}(\textrm{s})+2\ce{NaNO3}(\textrm{aq})\)</p>
+<p>	</div></div></div>
 			<nav class="btn-nav-container" aria-label="Previous and next links">
 <h2 class="btn-nav-prev">
     <a href="../chemical-equations-and-reactions/index.html">
@@ -599,7 +645,7 @@ Products - \(\ce{H}_{2}\ce{O}\)</p>
 <!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
 <!--
 <p><strong>Subjects </strong>
-    | <strong><a href="https://lab.bitma.app/subject-area/chemistry/">Chemistry</a></strong>  
+    | <strong><a href="https://learninglab.rmit.edu.au/subject-area/chemistry/">Chemistry</a></strong>  
     </p>
 -->
 <!-- category echo end -->
@@ -659,18 +705,17 @@ Products - \(\ce{H}_{2}\ce{O}\)</p>
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <section class="acknowledgement-container">
-                        <div class="acknowledgement-image">
-                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
-                        </div>
-
+                <section class="acknowledgement-container">
                         <div class="content">
                             <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
                             <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
-                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="#" class="link-large">More information</a>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business<span class="img-credit"> - Artwork 'Sentient' by Hollie Johnson, Gunaikurnai and Monero Ngarigo</span>.</p>
+                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                        </div>
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/sentient-hollie-johnson.jpg" alt="" />
                         </div>
                     </section>
                 </div>
@@ -750,7 +795,7 @@ Products - \(\ce{H}_{2}\ce{O}\)</p>
 </div><!-- wrapper end -->
 		
 	
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
 <script src="../../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
 <!-- Code to handle hamburger menu, embed mode, dark mode -->

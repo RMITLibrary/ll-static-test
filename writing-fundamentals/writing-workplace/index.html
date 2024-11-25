@@ -2,68 +2,31 @@
 <html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
 
 <head>
-<!-- 
-    DARK MODE
-    This script is placed in the <head> to ensure the theme is set as early as possible,
-    reducing the flash of unstyled content (FOUC). It determines the user's preferred
-    theme (either from local storage or system settings) and applies it immediately.
-  -->
-  <script>
-    (function() {
-      'use strict';
-
-      // Function to get the stored theme from local storage
-      const getStoredTheme = () => localStorage.getItem('theme');
-
-      // Function to determine the preferred theme
-      const getPreferredTheme = () => {
-        const storedTheme = getStoredTheme(); // Retrieve the stored theme
-        if (storedTheme) {
-          return storedTheme; // If a theme is stored, return it
-        }
-        // If no theme is stored, check the system preference for dark mode
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      // Function to apply the specified theme
-      const setTheme = theme => {
-        if (theme === 'auto') {
-          // If theme is 'auto', set it based on system preference
-          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-        } else {
-          // Otherwise, set the theme explicitly
-          document.documentElement.setAttribute('data-bs-theme', theme);
-        }
-      };
-
-      // Set the theme based on the preferred theme
-      setTheme(getPreferredTheme());
-    })();
-  </script>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- wp_head -->
-	<title>Writing for the workplace - lab</title>
-
-		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
+	<title>Writing for the workplace - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		
 		<meta name="description" content="When writing for the workplace, using plain English will make your texts easy to read. The following tips guide you through how to write in plain English. Short and simple sentences One of the ways to make your writing easier to read and understand is to use short and simple sentences. Keep your sentences short" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
-		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		
 		<meta property="og:locale" content="en_US" />
-		<meta property="og:site_name" content="lab -" />
+		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="Writing for the workplace - lab" />
+		<meta property="og:title" content="Writing for the workplace - Learning Lab" />
 		<meta property="og:description" content="When writing for the workplace, using plain English will make your texts easy to read. The following tips guide you through how to write in plain English. Short and simple sentences One of the ways to make your writing easier to read and understand is to use short and simple sentences. Keep your sentences short" />
-		<meta property="og:url" content="https://lab.bitma.app/writing-fundamentals/writing-workplace/" />
+		<meta property="og:url" content="https://learninglab.rmit.edu.au/writing-fundamentals/writing-workplace/" />
 		<meta property="article:published_time" content="2023-10-16T05:34:31+00:00" />
-		<meta property="article:modified_time" content="2024-10-31T07:33:53+00:00" />
+		<meta property="article:modified_time" content="2024-11-19T02:15:18+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Writing for the workplace - lab" />
+		<meta name="twitter:title" content="Writing for the workplace - Learning Lab" />
 		<meta name="twitter:description" content="When writing for the workplace, using plain English will make your texts easy to read. The following tips guide you through how to write in plain English. Short and simple sentences One of the ways to make your writing easier to read and understand is to use short and simple sentences. Keep your sentences short" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/writing-fundamentals\/writing-workplace\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/writing-fundamentals\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/writing-fundamentals\/#listItem","position":2,"name":"Writing fundamentals","item":"https:\/\/lab.bitma.app\/writing-fundamentals\/","nextItem":"https:\/\/lab.bitma.app\/writing-fundamentals\/writing-workplace\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/writing-fundamentals\/writing-workplace\/#listItem","position":3,"name":"Writing for the workplace","previousItem":"https:\/\/lab.bitma.app\/writing-fundamentals\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/writing-fundamentals\/writing-workplace\/#webpage","url":"https:\/\/lab.bitma.app\/writing-fundamentals\/writing-workplace\/","name":"Writing for the workplace - lab","description":"When writing for the workplace, using plain English will make your texts easy to read. The following tips guide you through how to write in plain English. Short and simple sentences One of the ways to make your writing easier to read and understand is to use short and simple sentences. Keep your sentences short","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/writing-fundamentals\/writing-workplace\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:31+00:00","dateModified":"2024-10-31T07:33:53+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/writing-workplace\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/#listItem","position":2,"name":"Writing fundamentals","item":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/writing-workplace\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/writing-workplace\/#listItem","position":3,"name":"Writing for the workplace","previousItem":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/writing-workplace\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/writing-workplace\/","name":"Writing for the workplace - Learning Lab","description":"When writing for the workplace, using plain English will make your texts easy to read. The following tips guide you through how to write in plain English. Short and simple sentences One of the ways to make your writing easier to read and understand is to use short and simple sentences. Keep your sentences short","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/writing-workplace\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:31+00:00","dateModified":"2024-11-19T02:15:18+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
@@ -81,25 +44,96 @@ MathJax = {
 
 </script>
 <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
-<link rel='stylesheet' id='wp-block-library-css' href='../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
-<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
-<link rel='stylesheet' id='picostrap-styles-css' href='../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+
+
+
+
+<link rel='stylesheet' id='picostrap-styles-css' href='../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=849.css' media='all' />
  	<!-- /wp_head -->
+
     
+    
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta name="author" content="RMIT Library">
+
+    <meta name="geo.position" content="-37.807778, 144.963333">
+    <meta name="geo.placename" content="Melbourne">
+    <meta name="geo.region" content="AU">
+
+    <meta name="dcterms.title" content="Learning Lab">
+    
+    <meta name="dcterms.description" content="When writing for the workplace, using plain English will make your texts easy to read. The following tips guide you through how to write in plain English. Short and simple sentences One of the ways to make your writing easier to read and understand is to use short and simple...">
+    <meta name="dcterms.type" content="Text">
+    <meta name="dcterms.identifier" content="https://learninglab.rmit.edu.au/writing-fundamentals/writing-workplace/">
+    <meta name="dcterms.format" content="text/html">
+    <!-- END Additional meta tags not covered by wp_head -->
+
+
+    <!-- START Additional scripts for tracking -->
+
+    <!-- Microsoft Clarity - does hotspot tracking of pages -->
+    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+
+    <!-- Google tag - (gtag.js) --> 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLHPB23GYR');
+    </script>
+
+    <!-- Microsoft Bing - Not sure how useful this is? --> 
+    <meta name="msvalidate.01" content="8E4954E1DFAB7E2F8A92DD0A0BD6ED09">
+
+    <!-- END Additional scripts for tracking -->
+
     <style>
         </style>
+
+    <!-- 
+    DARK MODE javascript
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+    -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Function to get the stored theme from local storage
+        const getStoredTheme = () => localStorage.getItem('theme');
+
+        // Function to determine the preferred theme
+        const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+            return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        // Function to apply the specified theme
+        const setTheme = theme => {
+        if (theme === 'auto') {
+            // If theme is 'auto', set it based on system preference
+            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+            // Otherwise, set the theme explicitly
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        };
+
+        // Set the theme based on the preferred theme
+        setTheme(getPreferredTheme());
+    })();
+    </script>
 </head>
 
 <body class="page-template-default page page-id-2855 page-parent page-child parent-pageid-6825 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
-	
 		
 <header>
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
@@ -166,7 +200,7 @@ MathJax = {
 </h2>
 <div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
 <div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../academic-style/index.html">Academic style</a></li>
-<li class="page_item page-item-2534 page_item_has_children"><a href="../academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../academic-word-list-tool/index.html">Academic Word List tool</a></li>
 <li class="page_item page-item-3107 page_item_has_children"><a href="../writing-paragraphs/index.html">Writing paragraphs</a></li>
 <li class="page_item page-item-2520 page_item_has_children"><a href="../writing-sentences/index.html">Writing sentences</a></li>
 <li class="page_item page-item-2521"><a href="../spelling-tips/index.html">Spelling tips</a></li>
@@ -211,7 +245,7 @@ MathJax = {
 									<ul>
 										<li><a href="../../art-and-design/index.html">Art and design</a></li>
 										<li><a href="../../chemistry/index.html">Chemistry</a></li>
-										<li><a href="../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../law-resources/index.html">Legal studies</a></li>
 										<li><a href="../../maths-statistics/index.html">Mathematics and statistics</a></li>
 										<li><a href="../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
 										<li><a href="../../subject-areas/physics/index.html">Physics</a></li>
@@ -328,43 +362,59 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li>Long sentences make ideas less clear.</li>
 </ul>
 <p>Compare:</p>
-<div class="row">
-<div class="col-sm-6">
-<div class="alert alert-danger"><strong>Sentence 1</strong> (27 words)<br />
-A number of proposals have been received and, after much consideration weighing the pros and cons, it has been decided to award the contract to Wright Industries.</div>
-</div>
-<div class="col-sm-6">
-<div class="alert alert-success "><strong>Sentence 2</strong> (16 words)<br />
-A number of proposals have been received and we have awarded the contract to Wright Industries.</div>
-</div>
+<div class="my-grid ">
+<div class="card ">
+<div class="card-body trim-top-wrong">
+<h3 class="card-title "><span class="visually-hidden">Too long:&nbsp;</span>Sentence 1</h3>
+
+<p>A number of proposals have been received and, after much consideration weighing the pros and cons, it has been decided to award the contract to Wright Industries. (27 words)</p>
+
+</div></div>
+
+<div class="card ">
+<div class="card-body trim-top-right">
+<h3 class="card-title "><span class="visually-hidden">Better:&nbsp;</span>Sentence 2</h3>
+
+<p>A number of proposals have been received and we have awarded the contract to Wright Industries. (16 words)</p>
+
+</div></div>
+
 </div>
 <p>The second sentence is easier to read. Sometimes long sentences may be necessary, however too many make it difficult for the reader to comprehend.</p>
 <h2>Use clear and concise language</h2>
 <p class="lead">Use simple, clear and direct language. Use strong verbs (doing/action words) rather than noun phrases.</p>
 <p>Compare:</p>
-<div class="row">
-<div class="col-sm-6">
-<div class="alert alert-danger"><strong>Sentence 1</strong><br />
-We undertook a comparison of computers.</div>
-</div>
-<div class="col-sm-6">
-<div class="alert alert-success"><strong>Sentence 2</strong><br />
-We compared computers.</div>
-</div>
+<div class="my-grid ">
+<div class="card ">
+<div class="card-body trim-top-wrong">
+<h3 class="card-title "><span class="visually-hidden">Verbose:&nbsp;</span>Sentence 1</h3>
+
+<p>We undertook a comparison of computers.</p>
+
+</div></div>
+
+<div class="card ">
+<div class="card-body trim-top-right">
+<h3 class="card-title "><span class="visually-hidden">Concise:&nbsp;</span>Sentence 2</h3>
+
+<p>We compared computers.</p>
+
+</div></div>
+
 </div>
 <p>Both sentences have the same meaning. Using the verb <strong>'compared'</strong> rather than the noun phrase <strong>'undertook a comparison'</strong> makes the second sentence clear and direct.</p>
 <div class="accordion-item ">
-<h2 class="accordion-header" id="head-activity:-clear-and-concise-language-6135">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-activity:-clear-and-concise-language-5755" aria-expanded="false" aria-controls="body-activity:-clear-and-concise-language-5755" >Activity: clear and concise language</button>
+<h2 class="accordion-header" id="head-activity:-clear-and-concise-language-7552">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-activity:-clear-and-concise-language-2588" aria-expanded="false" aria-controls="body-activity:-clear-and-concise-language-2588" >Activity: clear and concise language</button>
 </h2>
-<div id="body-activity:-clear-and-concise-language-5755" class="accordion-collapse collapse " aria-labelledby="head-activity:-clear-and-concise-language-6135">
+<div id="body-activity:-clear-and-concise-language-2588" class="accordion-collapse collapse " aria-labelledby="head-activity:-clear-and-concise-language-7552">
 <div class="accordion-body">
 <p><iframe title="Use clear and concise language" src="https://rmitlibrary.github.io/cdn/learninglab/activities/content/use-clear-and-concise-language.html" width="100%" scrolling="no"></iframe></p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-transcript-5545">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-5000" aria-expanded="false" aria-controls="body-transcript-5000" >Transcript</button>
+<p class="accordion-header" id="head-transcript-1774">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-6842" aria-expanded="false" aria-controls="body-transcript-6842" >Transcript</button>
 </p>
-<div id="body-transcript-5000" class="accordion-collapse collapse " aria-labelledby="head-transcript-5545">
+<div id="body-transcript-6842" class="accordion-collapse collapse " aria-labelledby="head-transcript-1774">
 <div class="accordion-body">
 <p>Replace these ‘wordy’ phrases with a more concise alternative.</p>
 <p>1. At this point in time = _</p>
@@ -401,26 +451,42 @@ We compared computers.</div>
 <h2>Main idea at the beginning</h2>
 <p class="lead">Where possible, put the main idea or key information at the start of the sentence to make it easier to comprehend.</p>
 <p>Compare:</p>
-<div class="row">
-<div class="col-sm-6">
-<div class="alert alert-danger"><strong>Sentence 1a</strong><br />
-A number of proposals have been considered by <em>the committee</em>.</div>
-</div>
-<div class="col-sm-6">
-<div class="alert alert-success"><strong>Sentence 1b</strong><br />
-<em>The committee</em> considered a number of proposals.</div>
-</div>
+<div class="my-grid ">
+<div class="card ">
+<div class="card-body trim-top-wrong">
+<h3 class="card-title "><span class="visually-hidden">Incorrect:&nbsp;</span>Sentence 1a</h3>
+
+<p>A number of proposals have been considered by <em>the committee</em>.</p>
+
+</div></div>
+
+<div class="card ">
+<div class="card-body trim-top-right">
+<h3 class="card-title "><span class="visually-hidden">Correct:&nbsp;</span>Sentence 1b</h3>
+
+<p><em>The committee</em> considered a number of proposals.</p>
+
+</div></div>
+
 </div>
 <p>In sentence 1b, the key information has been placed at the beginning of the sentence for easier comprehension.</p>
-<div class="row">
-<div class="col-sm-6">
-<div class="alert alert-danger"><strong>Sentence 2a</strong><br />
-You sent the wrong documents and we could not complete the hand-over in time.</div>
-</div>
-<div class="col-sm-6">
-<div class="alert alert-success"><strong>Sentence 2b</strong><br />
-The wrong documents were sent and we could not complete the hand-over in time.</div>
-</div>
+<div class="my-grid ">
+<div class="card ">
+<div class="card-body trim-top-wrong">
+<h3 class="card-title "><span class="visually-hidden">Incorrect:&nbsp;</span>Sentence 2a</h3>
+
+<p>You sent the wrong documents and we could not complete the hand-over in time.</p>
+
+</div></div>
+
+<div class="card ">
+<div class="card-body trim-top-right">
+<h3 class="card-title "><span class="visually-hidden">Correct:&nbsp;</span>Sentence 2b</h3>
+
+<p>The wrong documents were sent and we could not complete the hand-over in time.</p>
+
+</div></div>
+
 </div>
 <p>In the example above, the tone in sentence 2a is accusatory. Sentence 2b would be more appropriate as it does not attribute blame.</p>
 <h2>Use verbs instead of abstract nouns</h2>
@@ -457,48 +523,68 @@ The wrong documents were sent and we could not complete the hand-over in time.</
 </tbody>
 </table>
 <p>In these pairs of sentences, the B sentences use verbs instead of abstract nouns. As a result, they are easier to read.</p>
-<div class="row">
-<div class="col-sm-6">
-<div class="box-title color4-header"><strong>Sentence 1a:</strong></div>
-<p class="box color4 color4-h color4-b">The implementation of the plan went ahead as scheduled.</p>
-</div>
-<div class="col-sm-6">
-<div class="box-title color2-header"><strong>Sentence 1b:</strong></div>
-<p class="box color2 color2-h color2-b">The plan was implemented as scheduled.</p>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-6">
-<div class="box-title color4-header"><strong>Sentence 2a:</strong></div>
-<p class="box color4 color4-h color4-b">China and America will hold discussions on trade when they meet next February.</p>
-</div>
-<div class="col-sm-6">
-<div class="box-title color2-header"><strong>Sentence 2b:</strong></div>
-<p class="box color2 color2-h color2-b">China and America will discuss trade when they meet next February.</p>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-6">
-<div class="box-title color4-header"><strong>Sentence 3a:</strong></div>
-<p class="box color4 color4-h color4-b">There was broad agreement amongst all parties to carry on meeting regularly.</p>
-</div>
-<div class="col-sm-6">
-<div class="box-title color2-header"><strong>Sentence 3b:</strong></div>
-<p class="box color2 color2-h color2-b">All parties agreed to carry on meeting regularly.</p>
-</div>
+<div class="my-grid ">
+<div class="card ">
+<div class="card-body trim-top-wrong">
+<h3 class="card-title "><span class="visually-hidden">Incorrect:&nbsp;</span>Sentence 1a</h3>
+
+<p>The implementation of the plan went ahead as scheduled.</p>
+
+</div></div>
+
+<div class="card ">
+<div class="card-body trim-top-right">
+<h3 class="card-title "><span class="visually-hidden">Correct:&nbsp;</span>Sentence 1b</h3>
+
+<p>The plan was implemented as scheduled.</p>
+
+</div></div>
+
+<div class="card ">
+<div class="card-body trim-top-wrong">
+<h3 class="card-title "><span class="visually-hidden">Incorrect:&nbsp;</span>Sentence 2a</h3>
+
+<p>China and America will hold discussions on trade when they meet next February.</p>
+
+</div></div>
+
+<div class="card ">
+<div class="card-body trim-top-right">
+<h3 class="card-title "><span class="visually-hidden">Correct:&nbsp;</span>Sentence 2b</h3>
+
+<p>China and America will discuss trade when they meet next February.</p>
+
+</div></div>
+
+<div class="card ">
+<div class="card-body trim-top-wrong">
+<h3 class="card-title "><span class="visually-hidden">Incorrect:&nbsp;</span>Sentence 3a</h3>
+
+<p>There was broad agreement amongst all parties to carry on meeting regularly.</p>
+
+</div></div>
+
+<div class="card ">
+<div class="card-body trim-top-right">
+<h3 class="card-title "><span class="visually-hidden">Correct:&nbsp;</span>Sentence 3b</h3>
+
+<p>All parties agreed to carry on meeting regularly</p>
+
+</div></div>
+
 </div>
 <div class="accordion-item ">
-<h2 class="accordion-header" id="head-activity:-using-concise-language-8681">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-activity:-using-concise-language-4625" aria-expanded="false" aria-controls="body-activity:-using-concise-language-4625" >Activity: using concise language</button>
+<h2 class="accordion-header" id="head-activity:-using-concise-language-4684">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-activity:-using-concise-language-7412" aria-expanded="false" aria-controls="body-activity:-using-concise-language-7412" >Activity: using concise language</button>
 </h2>
-<div id="body-activity:-using-concise-language-4625" class="accordion-collapse collapse " aria-labelledby="head-activity:-using-concise-language-8681">
+<div id="body-activity:-using-concise-language-7412" class="accordion-collapse collapse " aria-labelledby="head-activity:-using-concise-language-4684">
 <div class="accordion-body">
 <p><iframe title="Use verbs instead of abstract nouns" src="https://rmitlibrary.github.io/cdn/learninglab/activities/content/use-verbs-instead-abstract-nouns.html" width="100%" scrolling="no"></iframe></p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-transcript-8901">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-5393" aria-expanded="false" aria-controls="body-transcript-5393" >Transcript</button>
+<p class="accordion-header" id="head-transcript-1987">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-6039" aria-expanded="false" aria-controls="body-transcript-6039" >Transcript</button>
 </p>
-<div id="body-transcript-5393" class="accordion-collapse collapse " aria-labelledby="head-transcript-8901">
+<div id="body-transcript-6039" class="accordion-collapse collapse " aria-labelledby="head-transcript-1987">
 <div class="accordion-body">
 <p>Rewrite the following sentences using clear, concise language. Eliminate any unnecessary words, and change nouns to verbs where possible.</p>
 <p><strong>Sentence 1: </strong></p>
@@ -554,7 +640,8 @@ The wrong documents were sent and we could not complete the hand-over in time.</
 	
 </nav><!-- .navigation -->			<div id="additional-info">
 			
-<hr class="margin-top-xl"><blockquote class="complex ">
+<hr class="margin-top-xl"><h2>Related resources</h2>
+<blockquote class="complex ">
 <a href="https://rmit.pressbooks.pub/llcc/chapter/giving-a-presentation/">
 <div class="content">
 <h3>Giving a presentation</h3>
@@ -575,6 +662,7 @@ The wrong documents were sent and we could not complete the hand-over in time.</
 <p>Explore these skills in a real world context.</p>
 </div><div class="icon-wrap"><img src="https://rmitlibrary.github.io/design-system/images/icon-llcc-large.svg" alt="" /></div>
 </a></blockquote>
+<h2>Micro-credentials</h2>
 <blockquote class="complex ">
 <a href="https://www.rmit.edu.au/study-with-us/levels-of-study/short-courses/constructive-conversations">
 <div class="content">
@@ -593,7 +681,6 @@ The wrong documents were sent and we could not complete the hand-over in time.</
     <h2 class="h5">Keywords</h2>
     <ul>
                 <li><a href="../../keyword/professional-writing/index.html">Professional writing</a></li>  
-                <li><a href="../../keyword/tutorials/index.html">Tutorials</a></li>  
         </ul>
 </div>
  
@@ -602,7 +689,7 @@ The wrong documents were sent and we could not complete the hand-over in time.</
 <!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
 <!--
 <p><strong>Subjects </strong>
-    | <strong><a href="https://lab.bitma.app/subject-area/writing/">Writing</a></strong>  
+    | <strong><a href="https://learninglab.rmit.edu.au/subject-area/writing/">Writing</a></strong>  
     </p>
 -->
 <!-- category echo end -->
@@ -662,18 +749,17 @@ The wrong documents were sent and we could not complete the hand-over in time.</
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <section class="acknowledgement-container">
-                        <div class="acknowledgement-image">
-                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
-                        </div>
-
+                <section class="acknowledgement-container">
                         <div class="content">
                             <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
                             <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
-                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="#" class="link-large">More information</a>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business<span class="img-credit"> - Artwork 'Sentient' by Hollie Johnson, Gunaikurnai and Monero Ngarigo</span>.</p>
+                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                        </div>
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/sentient-hollie-johnson.jpg" alt="" />
                         </div>
                     </section>
                 </div>
@@ -753,7 +839,7 @@ The wrong documents were sent and we could not complete the hand-over in time.</
 </div><!-- wrapper end -->
 		
 	
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
 <script src="../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
 <!-- Code to handle hamburger menu, embed mode, dark mode -->

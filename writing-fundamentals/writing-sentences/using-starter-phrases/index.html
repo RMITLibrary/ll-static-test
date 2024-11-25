@@ -2,68 +2,31 @@
 <html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
 
 <head>
-<!-- 
-    DARK MODE
-    This script is placed in the <head> to ensure the theme is set as early as possible,
-    reducing the flash of unstyled content (FOUC). It determines the user's preferred
-    theme (either from local storage or system settings) and applies it immediately.
-  -->
-  <script>
-    (function() {
-      'use strict';
-
-      // Function to get the stored theme from local storage
-      const getStoredTheme = () => localStorage.getItem('theme');
-
-      // Function to determine the preferred theme
-      const getPreferredTheme = () => {
-        const storedTheme = getStoredTheme(); // Retrieve the stored theme
-        if (storedTheme) {
-          return storedTheme; // If a theme is stored, return it
-        }
-        // If no theme is stored, check the system preference for dark mode
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      // Function to apply the specified theme
-      const setTheme = theme => {
-        if (theme === 'auto') {
-          // If theme is 'auto', set it based on system preference
-          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-        } else {
-          // Otherwise, set the theme explicitly
-          document.documentElement.setAttribute('data-bs-theme', theme);
-        }
-      };
-
-      // Set the theme based on the preferred theme
-      setTheme(getPreferredTheme());
-    })();
-  </script>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- wp_head -->
-	<title>Using starter phrases - lab</title>
-
-		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
+	<title>Using starter phrases - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		
 		<meta name="description" content="If you feel stuck for finding the right phrase to start your sentence, you can use a strategy called ‘Syntactic borrowing’ (Kamler &amp; Thomson, 2006; Swales &amp; Feak, 2004) in which you borrow the phrases used by others. To do this, look at some sentences in various sections of a research journal in your discipline" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
-		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		
 		<meta property="og:locale" content="en_US" />
-		<meta property="og:site_name" content="lab -" />
+		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="Using starter phrases - lab" />
+		<meta property="og:title" content="Using starter phrases - Learning Lab" />
 		<meta property="og:description" content="If you feel stuck for finding the right phrase to start your sentence, you can use a strategy called ‘Syntactic borrowing’ (Kamler &amp; Thomson, 2006; Swales &amp; Feak, 2004) in which you borrow the phrases used by others. To do this, look at some sentences in various sections of a research journal in your discipline" />
-		<meta property="og:url" content="https://lab.bitma.app/writing-fundamentals/writing-sentences/using-starter-phrases/" />
+		<meta property="og:url" content="https://learninglab.rmit.edu.au/writing-fundamentals/writing-sentences/using-starter-phrases/" />
 		<meta property="article:published_time" content="2023-10-16T05:34:56+00:00" />
-		<meta property="article:modified_time" content="2024-10-30T23:59:08+00:00" />
+		<meta property="article:modified_time" content="2024-11-14T04:21:22+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Using starter phrases - lab" />
+		<meta name="twitter:title" content="Using starter phrases - Learning Lab" />
 		<meta name="twitter:description" content="If you feel stuck for finding the right phrase to start your sentence, you can use a strategy called ‘Syntactic borrowing’ (Kamler &amp; Thomson, 2006; Swales &amp; Feak, 2004) in which you borrow the phrases used by others. To do this, look at some sentences in various sections of a research journal in your discipline" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/writing-fundamentals\/writing-sentences\/using-starter-phrases\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/writing-fundamentals\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/writing-fundamentals\/#listItem","position":2,"name":"Writing fundamentals","item":"https:\/\/lab.bitma.app\/writing-fundamentals\/","nextItem":"https:\/\/lab.bitma.app\/writing-fundamentals\/writing-sentences\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/writing-fundamentals\/writing-sentences\/#listItem","position":3,"name":"Writing sentences","item":"https:\/\/lab.bitma.app\/writing-fundamentals\/writing-sentences\/","nextItem":"https:\/\/lab.bitma.app\/writing-fundamentals\/writing-sentences\/using-starter-phrases\/#listItem","previousItem":"https:\/\/lab.bitma.app\/writing-fundamentals\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/writing-fundamentals\/writing-sentences\/using-starter-phrases\/#listItem","position":4,"name":"Using starter phrases","previousItem":"https:\/\/lab.bitma.app\/writing-fundamentals\/writing-sentences\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/writing-fundamentals\/writing-sentences\/using-starter-phrases\/#webpage","url":"https:\/\/lab.bitma.app\/writing-fundamentals\/writing-sentences\/using-starter-phrases\/","name":"Using starter phrases - lab","description":"If you feel stuck for finding the right phrase to start your sentence, you can use a strategy called \u2018Syntactic borrowing\u2019 (Kamler & Thomson, 2006; Swales & Feak, 2004) in which you borrow the phrases used by others. To do this, look at some sentences in various sections of a research journal in your discipline","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/writing-fundamentals\/writing-sentences\/using-starter-phrases\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:56+00:00","dateModified":"2024-10-30T23:59:08+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/writing-sentences\/using-starter-phrases\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/#listItem","position":2,"name":"Writing fundamentals","item":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/writing-sentences\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/writing-sentences\/#listItem","position":3,"name":"Writing sentences","item":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/writing-sentences\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/writing-sentences\/using-starter-phrases\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/writing-sentences\/using-starter-phrases\/#listItem","position":4,"name":"Using starter phrases","previousItem":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/writing-sentences\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/writing-sentences\/using-starter-phrases\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/writing-sentences\/using-starter-phrases\/","name":"Using starter phrases - Learning Lab","description":"If you feel stuck for finding the right phrase to start your sentence, you can use a strategy called \u2018Syntactic borrowing\u2019 (Kamler & Thomson, 2006; Swales & Feak, 2004) in which you borrow the phrases used by others. To do this, look at some sentences in various sections of a research journal in your discipline","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/writing-fundamentals\/writing-sentences\/using-starter-phrases\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:56+00:00","dateModified":"2024-11-14T04:21:22+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
@@ -81,25 +44,96 @@ MathJax = {
 
 </script>
 <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
-<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
-<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
-<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+
+
+
+
+<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=849.css' media='all' />
  	<!-- /wp_head -->
+
     
+    
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta name="author" content="RMIT Library">
+
+    <meta name="geo.position" content="-37.807778, 144.963333">
+    <meta name="geo.placename" content="Melbourne">
+    <meta name="geo.region" content="AU">
+
+    <meta name="dcterms.title" content="Learning Lab">
+    
+    <meta name="dcterms.description" content="If you feel stuck for finding the right phrase to start your sentence, you can use a strategy called ‘Syntactic borrowing’ (Kamler &amp; Thomson, 2006; Swales &amp; Feak, 2004) in which you borrow the phrases used by others. To do this, look at some sentences in various sections of a...">
+    <meta name="dcterms.type" content="Text">
+    <meta name="dcterms.identifier" content="https://learninglab.rmit.edu.au/writing-fundamentals/writing-sentences/using-starter-phrases/">
+    <meta name="dcterms.format" content="text/html">
+    <!-- END Additional meta tags not covered by wp_head -->
+
+
+    <!-- START Additional scripts for tracking -->
+
+    <!-- Microsoft Clarity - does hotspot tracking of pages -->
+    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+
+    <!-- Google tag - (gtag.js) --> 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLHPB23GYR');
+    </script>
+
+    <!-- Microsoft Bing - Not sure how useful this is? --> 
+    <meta name="msvalidate.01" content="8E4954E1DFAB7E2F8A92DD0A0BD6ED09">
+
+    <!-- END Additional scripts for tracking -->
+
     <style>
         </style>
+
+    <!-- 
+    DARK MODE javascript
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+    -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Function to get the stored theme from local storage
+        const getStoredTheme = () => localStorage.getItem('theme');
+
+        // Function to determine the preferred theme
+        const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+            return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        // Function to apply the specified theme
+        const setTheme = theme => {
+        if (theme === 'auto') {
+            // If theme is 'auto', set it based on system preference
+            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+            // Otherwise, set the theme explicitly
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        };
+
+        // Set the theme based on the preferred theme
+        setTheme(getPreferredTheme());
+    })();
+    </script>
 </head>
 
 <body class="page-template-default page page-id-3308 page-child parent-pageid-2520 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
-	
 		
 <header>
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
@@ -166,7 +200,7 @@ MathJax = {
 </h2>
 <div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
 <div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../academic-style/index.html">Academic style</a></li>
-<li class="page_item page-item-2534 page_item_has_children"><a href="../../academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../academic-word-list-tool/index.html">Academic Word List tool</a></li>
 <li class="page_item page-item-3107 page_item_has_children"><a href="../../writing-paragraphs/index.html">Writing paragraphs</a></li>
 <li class="page_item page-item-2520 page_item_has_children current_page_ancestor current_page_parent"><a href="../index.html">Writing sentences</a></li>
 <li class="page_item page-item-2521"><a href="../../spelling-tips/index.html">Spelling tips</a></li>
@@ -211,7 +245,7 @@ MathJax = {
 									<ul>
 										<li><a href="../../../art-and-design/index.html">Art and design</a></li>
 										<li><a href="../../../chemistry/index.html">Chemistry</a></li>
-										<li><a href="../../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../../law-resources/index.html">Legal studies</a></li>
 										<li><a href="../../../maths-statistics/index.html">Mathematics and statistics</a></li>
 										<li><a href="../../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
 										<li><a href="../../../subject-areas/physics/index.html">Physics</a></li>
@@ -320,125 +354,155 @@ list.querySelectorAll('h4').forEach(h4 => {
 </nav>            <a id="main-content"></a>
             <h1 class="margin-top-zero">Using starter phrases</h1>
             <p class="lead">If you feel stuck for finding the right phrase to start your sentence, you can use a strategy called ‘Syntactic borrowing’ (Kamler &amp; Thomson, 2006; Swales &amp; Feak, 2004) in which you borrow the phrases used by others.</p>
-<p>To do this, look at some sentences in various sections of a research journal in your discipline and remove all the content, leaving a sentence skeleton. This should give you some ideas for phrases that are often used.<br />
-To help you along with the process, here are some lists of common phrases you might want to use in particular sections of your thesis or exegesis.<br />
-Note: these are general academic phrases - there may be phrases in the lists that are not used in your discipline.</p>
-<h2>Introduction</h2>
-<ul>
-<li>… is an important component of …</li>
-<li>Central to the discipline of … is …</li>
-<li>… is an increasingly important issue in …</li>
-<li>Recent developments in … have shown the need for …</li>
-<li>Recent developments in the field of … have led to a renewed interest in …</li>
-<li>This study builds on … and contributes to …</li>
-<li>Over the past century, there has been a (major) decline in …</li>
-<li>Recently there has been renewed interest in …</li>
-<li>To date, there has been little agreement on …</li>
-<li>A theoretical issue that has dominated the field for many years is …</li>
-<li>The controversy over … has raged for many years.</li>
-<li>The issue of … has recently grown in importance.</li>
-<li>Most studies of … have only been carried out on …</li>
-<li>Until now, little importance has been given to …</li>
-<li>Until now, this method has only been applied to …</li>
-</ul>
-<h2>Literature review</h2>
-<ul>
-<li>A considerable amount of literature has been published on …</li>
-<li>However, there has been relatively little literature published on …</li>
-<li>Numerous studies have argued that …</li>
-<li>Several studies have revealed …</li>
-<li>The research to date has tended to focus on …</li>
-<li>Data from several studies have identified the …</li>
-<li>It has been suggested that …</li>
-<li>It has been conclusively shown that …</li>
-<li>It has been demonstrated that …</li>
-<li>It is thought that …</li>
-<li>Other studies have considered the relationship between …</li>
-<li>The first systematic study of … was reported by …</li>
-<li>The study of … was first carried out by …</li>
-<li>Detailed examination of … by … showed that …</li>
-<li>In a randomised controlled study of …</li>
-<li>A comparative study by … found that …</li>
-<li>This view is supported by …, who argues that …</li>
-<li>A key problem with this argument is …</li>
-<li>However, there is inconsistency with this argument, given …</li>
-<li>X’s interpretation overlooks much of …</li>
-<li>One question that needs to be asked, however, is …</li>
-<li>One problem with this approach is …</li>
-<li>The main limitation to X’s study is …</li>
-<li>However, this method of analysis has a number of limitations.</li>
-<li>However, the research does not take into account …</li>
-<li>The author offers no explanation for …</li>
-<li>The main weakness of this study is …</li>
-<li>Previous studies have only focused on …</li>
-<li>The existing research fails to …</li>
-<li>Much of the recent literature has not …</li>
-</ul>
-<h2>Methods</h2>
-<ul>
-<li>The design of the questionnaire was informed by …</li>
-<li>A semi-structured approach was chosen because …</li>
-<li>This methodology has a number of advantages, such as …</li>
-<li>Limitations to the study design include …</li>
-<li>Data were gathered from …</li>
-<li>…was prepared according to the procedure outlined by …</li>
-<li>The initial sample consisted of…</li>
-<li>The criteria for selecting the subjects were as follows: …</li>
-<li>Eligibility criteria required individuals to have completed …</li>
-<li>To increase the reliability of measures, …</li>
-</ul>
-<h2>Results</h2>
-<ul>
-<li>It is apparent from Table 1 that …</li>
-<li>The data in Figure 2 indicates that …</li>
-<li>Strong evidence of … was found when …</li>
-<li>A positive correlation was found between … and …</li>
-<li>The results, as seen in Table2, indicate that …</li>
-<li>No significant reduction in … was found.</li>
-<li>The majority of respondents felt that …</li>
-<li>A small number of those interviewed indicated that …</li>
-<li>A comparison of the two results reveals that …</li>
-</ul>
-<h2>Discussion</h2>
-<ul>
-<li>Contrary to expectations, this research did not find a significant difference between …</li>
-<li>This finding was unexpected and suggests that …</li>
-<li>Findings in the present study are consistent with the findings of …</li>
-<li>There are similarities in…between the present study and those described by …</li>
-<li>It is possible to hypothesise that …</li>
-<li>These findings suggest …</li>
-<li>In contrast to earlier findings, however, no evidence of … was detected.</li>
-<li>There are several possible explanations for this result. For example, …</li>
-<li>This inconsistency may be due to …</li>
-<li>These data must be interpreted with caution because …</li>
-<li>It may be the case that …</li>
-<li>This finding, while preliminary, suggests that …</li>
-<li>This finding has implications for …</li>
-<li>An important issue emerging from these findings is …</li>
-</ul>
-<h2>Conclusion</h2>
-<ul>
-<li>This research has investigated …</li>
-<li>The study set out to …</li>
-<li>The purpose of the present research was to …</li>
-<li>The study has shown that …</li>
-<li>An important finding to emerge in this study is …</li>
-<li>The results are significant in three respects …</li>
-<li>In general, therefore, the results show …</li>
-<li>The findings add to our understanding of …</li>
-<li>This study adds to the body of knowledge around …</li>
-<li>This research confirms previous findings and contributes to our understanding of …</li>
-<li>Although the study did not show …, it did substantiate …</li>
-<li>However, a number of limitations need to be considered. For instance, …</li>
-<li>The research was limited in several ways.</li>
-<li>However, the findings are subject to at least four limitations. The most significant was …</li>
-<li>Several limitations need to be acknowledged.</li>
-<li>Further research should be done to investigate the …</li>
-<li>Future research should concentrate on …</li>
-<li>More research is needed to better understand …</li>
-<li>An implication of these findings is that …</li>
-<li>The findings of this study have a number of important implications for …</li>
-</ul>
+<p>To do this, look at some sentences in various sections of a research journal in your discipline and remove all the content, leaving a sentence skeleton. This should give you some ideas for phrases that are often used.</p>
+<h2>Examples</h2>
+<p>To help you along with the process, here are some lists of common phrases you might want to use in particular sections of your thesis or exegesis.</p>
+<p>Note: these are general academic phrases - there may be phrases in the lists that are not used in your discipline.</p>
+<div class="accordion">
+<div class="accordion-item ">
+<h2 class="accordion-header" id="head-introduction-1634">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-introduction-3159" aria-expanded="false" aria-controls="body-introduction-3159" >Introduction</button>
+</h2>
+<div id="body-introduction-3159" class="accordion-collapse collapse " aria-labelledby="head-introduction-1634">
+<div class="accordion-body">
+… is an important component of …</p>
+<p>Central to the discipline of … is …</p>
+<p>… is an increasingly important issue in …</p>
+<p>Recent developments in … have shown the need for …</p>
+<p>Recent developments in the field of … have led to a renewed interest in …</p>
+<p>This study builds on … and contributes to …</p>
+<p>Over the past century, there has been a (major) decline in …</p>
+<p>Recently there has been renewed interest in …</p>
+<p>To date, there has been little agreement on …</p>
+<p>A theoretical issue that has dominated the field for many years is …</p>
+<p>The controversy over … has raged for many years.</p>
+<p>The issue of … has recently grown in importance.</p>
+<p>Most studies of … have only been carried out on …</p>
+<p>Until now, little importance has been given to …</p>
+<p>Until now, this method has only been applied to …</p>
+</div></div></div>
+<div class="accordion-item ">
+<h2 class="accordion-header" id="head-literature-review-1347">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-literature-review-4220" aria-expanded="false" aria-controls="body-literature-review-4220" >Literature review</button>
+</h2>
+<div id="body-literature-review-4220" class="accordion-collapse collapse " aria-labelledby="head-literature-review-1347">
+<div class="accordion-body">
+<p>A considerable amount of literature has been published on …</p>
+<p>However, there has been relatively little literature published on …</p>
+<p>Numerous studies have argued that …</p>
+<p>Several studies have revealed …</p>
+<p>The research to date has tended to focus on …</p>
+<p>Data from several studies have identified the …</p>
+<p>It has been suggested that …</p>
+<p>It has been conclusively shown that …</p>
+<p>It has been demonstrated that …</p>
+<p>It is thought that …</p>
+<p>Other studies have considered the relationship between …</p>
+<p>The first systematic study of … was reported by …</p>
+<p>The study of … was first carried out by …</p>
+<p>Detailed examination of … by … showed that …</p>
+<p>In a randomised controlled study of …</p>
+<p>A comparative study by … found that …</p>
+<p>This view is supported by …, who argues that …</p>
+<p>A key problem with this argument is …</p>
+<p>However, there is inconsistency with this argument, given …</p>
+<p>X’s interpretation overlooks much of …</p>
+<p>One question that needs to be asked, however, is …</p>
+<p>One problem with this approach is …</p>
+<p>The main limitation to X’s study is …</p>
+<p>However, this method of analysis has a number of limitations.</p>
+<p>However, the research does not take into account …</p>
+<p>The author offers no explanation for …</p>
+<p>The main weakness of this study is …</p>
+<p>Previous studies have only focused on …</p>
+<p>The existing research fails to …</p>
+<p>Much of the recent literature has not …</p>
+</div></div></div>
+<div class="accordion-item ">
+<h2 class="accordion-header" id="head-methods-9628">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-methods-7480" aria-expanded="false" aria-controls="body-methods-7480" >Methods</button>
+</h2>
+<div id="body-methods-7480" class="accordion-collapse collapse " aria-labelledby="head-methods-9628">
+<div class="accordion-body">
+<p>The design of the questionnaire was informed by …</p>
+<p>A semi-structured approach was chosen because …</p>
+<p>This methodology has a number of advantages, such as …</p>
+<p>Limitations to the study design include …</p>
+<p>Data were gathered from …</p>
+<p>…was prepared according to the procedure outlined by …</p>
+<p>The initial sample consisted of…</p>
+<p>The criteria for selecting the subjects were as follows: …</p>
+<p>Eligibility criteria required individuals to have completed …</p>
+<p>To increase the reliability of measures, …</p>
+</div></div></div>
+<div class="accordion-item ">
+<h2 class="accordion-header" id="head-results-4638">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-results-7375" aria-expanded="false" aria-controls="body-results-7375" >Results</button>
+</h2>
+<div id="body-results-7375" class="accordion-collapse collapse " aria-labelledby="head-results-4638">
+<div class="accordion-body">
+<p>It is apparent from Table 1 that …</p>
+<p>The data in Figure 2 indicates that …</p>
+<p>Strong evidence of … was found when …</p>
+<p>A positive correlation was found between … and …</p>
+<p>The results, as seen in Table2, indicate that …</p>
+<p>No significant reduction in … was found.</p>
+<p>The majority of respondents felt that …</p>
+<p>A small number of those interviewed indicated that …</p>
+<p>A comparison of the two results reveals that …</p>
+</div></div></div>
+<div class="accordion-item ">
+<h2 class="accordion-header" id="head-discussion-6290">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-discussion-7246" aria-expanded="false" aria-controls="body-discussion-7246" >Discussion</button>
+</h2>
+<div id="body-discussion-7246" class="accordion-collapse collapse " aria-labelledby="head-discussion-6290">
+<div class="accordion-body">
+<p>Contrary to expectations, this research did not find a significant difference between …</p>
+<p>This finding was unexpected and suggests that …</p>
+<p>Findings in the present study are consistent with the findings of …</p>
+<p>There are similarities in…between the present study and those described by …</p>
+<p>It is possible to hypothesise that …</p>
+<p>These findings suggest …</p>
+<p>In contrast to earlier findings, however, no evidence of … was detected.</p>
+<p>There are several possible explanations for this result. For example, …</p>
+<p>This inconsistency may be due to …</p>
+<p>These data must be interpreted with caution because …</p>
+<p>It may be the case that …</p>
+<p>This finding, while preliminary, suggests that …</p>
+<p>This finding has implications for …</p>
+<p>An important issue emerging from these findings is …</p>
+</div></div></div>
+<div class="accordion-item ">
+<h2 class="accordion-header" id="head-conclusion-5963">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-conclusion-4105" aria-expanded="false" aria-controls="body-conclusion-4105" >Conclusion</button>
+</h2>
+<div id="body-conclusion-4105" class="accordion-collapse collapse " aria-labelledby="head-conclusion-5963">
+<div class="accordion-body">
+<p>This research has investigated …</p>
+<p>The study set out to …</p>
+<p>The purpose of the present research was to …</p>
+<p>The study has shown that …</p>
+<p>An important finding to emerge in this study is …</p>
+<p>The results are significant in three respects …</p>
+<p>In general, therefore, the results show …</p>
+<p>The findings add to our understanding of …</p>
+<p>This study adds to the body of knowledge around …</p>
+<p>This research confirms previous findings and contributes to our understanding of …</p>
+<p>Although the study did not show …, it did substantiate …</p>
+<p>However, a number of limitations need to be considered. For instance, …</p>
+<p>The research was limited in several ways.</p>
+<p>However, the findings are subject to at least four limitations. The most significant was …</p>
+<p>Several limitations need to be acknowledged.</p>
+<p>Further research should be done to investigate the …</p>
+<p>Future research should concentrate on …</p>
+<p>More research is needed to better understand …</p>
+<p>An implication of these findings is that …</p>
+<p>The findings of this study have a number of important implications for …</p>
+</div></div></div>
+</p></div>
+<h2>References</h2>
+<p>Kamler, Barbara &amp; Thomson, Pat. (2006). Helping Doctoral Students Write: Pedagogies for Supervision. 10.4324/9781315813639.</p>
+<p>Swales, J. M., &amp; Feak, C. B. (2004). Academic writing for graduate students: Essential tasks and skills (2nd ed.). Ann Arbor, MI: The University of Michigan Press.</p>
 			<nav class="btn-nav-container" aria-label="Previous and next links">
 <h2 class="btn-nav-prev">
     <a href="../sentence-length/index.html">
@@ -469,7 +533,6 @@ Note: these are general academic phrases - there may be phrases in the lists tha
     <h2 class="h5">Keywords</h2>
     <ul>
                 <li><a href="../../../keyword/academic-writing/index.html">Academic writing</a></li>  
-                <li><a href="../../../keyword/tutorials/index.html">Tutorials</a></li>  
         </ul>
 </div>
  
@@ -478,7 +541,7 @@ Note: these are general academic phrases - there may be phrases in the lists tha
 <!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
 <!--
 <p><strong>Subjects </strong>
-    | <strong><a href="https://lab.bitma.app/subject-area/writing/">Writing</a></strong>  
+    | <strong><a href="https://learninglab.rmit.edu.au/subject-area/writing/">Writing</a></strong>  
     </p>
 -->
 <!-- category echo end -->
@@ -538,18 +601,17 @@ Note: these are general academic phrases - there may be phrases in the lists tha
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <section class="acknowledgement-container">
-                        <div class="acknowledgement-image">
-                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
-                        </div>
-
+                <section class="acknowledgement-container">
                         <div class="content">
                             <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
                             <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
-                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="#" class="link-large">More information</a>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business<span class="img-credit"> - Artwork 'Sentient' by Hollie Johnson, Gunaikurnai and Monero Ngarigo</span>.</p>
+                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                        </div>
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/sentient-hollie-johnson.jpg" alt="" />
                         </div>
                     </section>
                 </div>
@@ -629,7 +691,7 @@ Note: these are general academic phrases - there may be phrases in the lists tha
 </div><!-- wrapper end -->
 		
 	
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
 <script src="../../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
 <!-- Code to handle hamburger menu, embed mode, dark mode -->

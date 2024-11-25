@@ -2,68 +2,31 @@
 <html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
 
 <head>
-<!-- 
-    DARK MODE
-    This script is placed in the <head> to ensure the theme is set as early as possible,
-    reducing the flash of unstyled content (FOUC). It determines the user's preferred
-    theme (either from local storage or system settings) and applies it immediately.
-  -->
-  <script>
-    (function() {
-      'use strict';
-
-      // Function to get the stored theme from local storage
-      const getStoredTheme = () => localStorage.getItem('theme');
-
-      // Function to determine the preferred theme
-      const getPreferredTheme = () => {
-        const storedTheme = getStoredTheme(); // Retrieve the stored theme
-        if (storedTheme) {
-          return storedTheme; // If a theme is stored, return it
-        }
-        // If no theme is stored, check the system preference for dark mode
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      // Function to apply the specified theme
-      const setTheme = theme => {
-        if (theme === 'auto') {
-          // If theme is 'auto', set it based on system preference
-          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-        } else {
-          // Otherwise, set the theme explicitly
-          document.documentElement.setAttribute('data-bs-theme', theme);
-        }
-      };
-
-      // Set the theme based on the preferred theme
-      setTheme(getPreferredTheme());
-    })();
-  </script>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- wp_head -->
-	<title>Redox reactions - lab</title>
-
-		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
-		<meta name="description" content="\[\require{mhchem}\] A redox reaction, short for reduction-oxidation reaction, is a chemical process in which one substance loses electrons (oxidation) while another gains electrons (reduction). Want to find out more? Keep reading! Oxidation and reduction The key chemical event in a redox reaction is the net movement of electrons from one reactant to the other. As" />
+	<title>Redox reactions - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		
+		<meta name="description" content="A redox reaction, short for reduction–oxidation reaction, is a chemical process in which one substance loses electrons (oxidation) while another gains electrons (reduction). Keep reading to learn more. Oxidation and reduction Redox reactions involve the net movement of electrons from one reactant to the other. This causes some reactants to gain electrons (reduction), while others" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
-		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		
 		<meta property="og:locale" content="en_US" />
-		<meta property="og:site_name" content="lab -" />
+		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="Redox reactions - lab" />
-		<meta property="og:description" content="\[\require{mhchem}\] A redox reaction, short for reduction-oxidation reaction, is a chemical process in which one substance loses electrons (oxidation) while another gains electrons (reduction). Want to find out more? Keep reading! Oxidation and reduction The key chemical event in a redox reaction is the net movement of electrons from one reactant to the other. As" />
-		<meta property="og:url" content="https://lab.bitma.app/chemistry/chemical-equations/redox-reactions/" />
+		<meta property="og:title" content="Redox reactions - Learning Lab" />
+		<meta property="og:description" content="A redox reaction, short for reduction–oxidation reaction, is a chemical process in which one substance loses electrons (oxidation) while another gains electrons (reduction). Keep reading to learn more. Oxidation and reduction Redox reactions involve the net movement of electrons from one reactant to the other. This causes some reactants to gain electrons (reduction), while others" />
+		<meta property="og:url" content="https://learninglab.rmit.edu.au/chemistry/chemical-equations/redox-reactions/" />
 		<meta property="article:published_time" content="2023-10-16T05:34:48+00:00" />
-		<meta property="article:modified_time" content="2024-11-06T03:51:15+00:00" />
+		<meta property="article:modified_time" content="2024-11-19T02:43:53+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Redox reactions - lab" />
-		<meta name="twitter:description" content="\[\require{mhchem}\] A redox reaction, short for reduction-oxidation reaction, is a chemical process in which one substance loses electrons (oxidation) while another gains electrons (reduction). Want to find out more? Keep reading! Oxidation and reduction The key chemical event in a redox reaction is the net movement of electrons from one reactant to the other. As" />
+		<meta name="twitter:title" content="Redox reactions - Learning Lab" />
+		<meta name="twitter:description" content="A redox reaction, short for reduction–oxidation reaction, is a chemical process in which one substance loses electrons (oxidation) while another gains electrons (reduction). Keep reading to learn more. Oxidation and reduction Redox reactions involve the net movement of electrons from one reactant to the other. This causes some reactants to gain electrons (reduction), while others" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/redox-reactions\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/lab.bitma.app\/chemistry\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/#listItem","position":3,"name":"Chemical equations","item":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/redox-reactions\/#listItem","previousItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/redox-reactions\/#listItem","position":4,"name":"Redox reactions","previousItem":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/redox-reactions\/#webpage","url":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/redox-reactions\/","name":"Redox reactions - lab","description":"\\[\\require{mhchem}\\] A redox reaction, short for reduction-oxidation reaction, is a chemical process in which one substance loses electrons (oxidation) while another gains electrons (reduction). Want to find out more? Keep reading! Oxidation and reduction The key chemical event in a redox reaction is the net movement of electrons from one reactant to the other. As","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-equations\/redox-reactions\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:48+00:00","dateModified":"2024-11-06T03:51:15+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/redox-reactions\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/#listItem","position":3,"name":"Chemical equations","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/redox-reactions\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/redox-reactions\/#listItem","position":4,"name":"Redox reactions","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/redox-reactions\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/redox-reactions\/","name":"Redox reactions - Learning Lab","description":"A redox reaction, short for reduction\u2013oxidation reaction, is a chemical process in which one substance loses electrons (oxidation) while another gains electrons (reduction). Keep reading to learn more. Oxidation and reduction Redox reactions involve the net movement of electrons from one reactant to the other. This causes some reactants to gain electrons (reduction), while others","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-equations\/redox-reactions\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:48+00:00","dateModified":"2024-11-19T02:43:53+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
@@ -81,25 +44,96 @@ MathJax = {
 
 </script>
 <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
-<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
-<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
-<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+
+
+
+
+<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=849.css' media='all' />
  	<!-- /wp_head -->
+
     
+    
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta name="author" content="RMIT Library">
+
+    <meta name="geo.position" content="-37.807778, 144.963333">
+    <meta name="geo.placename" content="Melbourne">
+    <meta name="geo.region" content="AU">
+
+    <meta name="dcterms.title" content="Learning Lab">
+    
+    <meta name="dcterms.description" content="A redox reaction, short for reduction–oxidation reaction, is a chemical process in which one substance loses electrons (oxidation) while another gains electrons (reduction). Keep reading to learn more. Oxidation and reduction Redox reactions involve the net movement of electrons from one reactant to the other. This causes some reactants to...">
+    <meta name="dcterms.type" content="Text">
+    <meta name="dcterms.identifier" content="https://learninglab.rmit.edu.au/chemistry/chemical-equations/redox-reactions/">
+    <meta name="dcterms.format" content="text/html">
+    <!-- END Additional meta tags not covered by wp_head -->
+
+
+    <!-- START Additional scripts for tracking -->
+
+    <!-- Microsoft Clarity - does hotspot tracking of pages -->
+    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+
+    <!-- Google tag - (gtag.js) --> 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLHPB23GYR');
+    </script>
+
+    <!-- Microsoft Bing - Not sure how useful this is? --> 
+    <meta name="msvalidate.01" content="8E4954E1DFAB7E2F8A92DD0A0BD6ED09">
+
+    <!-- END Additional scripts for tracking -->
+
     <style>
         </style>
+
+    <!-- 
+    DARK MODE javascript
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+    -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Function to get the stored theme from local storage
+        const getStoredTheme = () => localStorage.getItem('theme');
+
+        // Function to determine the preferred theme
+        const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+            return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        // Function to apply the specified theme
+        const setTheme = theme => {
+        if (theme === 'auto') {
+            // If theme is 'auto', set it based on system preference
+            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+            // Otherwise, set the theme explicitly
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        };
+
+        // Set the theme based on the preferred theme
+        setTheme(getPreferredTheme());
+    })();
+    </script>
 </head>
 
 <body class="page-template-default page page-id-3163 page-child parent-pageid-3161 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
-	
 		
 <header>
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
@@ -166,7 +200,7 @@ MathJax = {
 </h2>
 <div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
 <div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
-<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic Word List tool</a></li>
 <li class="page_item page-item-3107 page_item_has_children"><a href="../../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
 <li class="page_item page-item-2520 page_item_has_children"><a href="../../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
 <li class="page_item page-item-2521"><a href="../../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
@@ -211,7 +245,7 @@ MathJax = {
 									<ul>
 										<li><a href="../../../art-and-design/index.html">Art and design</a></li>
 										<li><a href="../../index.html">Chemistry</a></li>
-										<li><a href="../../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../../law-resources/index.html">Legal studies</a></li>
 										<li><a href="../../../maths-statistics/index.html">Mathematics and statistics</a></li>
 										<li><a href="../../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
 										<li><a href="../../../subject-areas/physics/index.html">Physics</a></li>
@@ -275,7 +309,7 @@ This should be moved to a stylesheet once style is determined. -->
 <!-- START SIDEBAR NAV PANEL -->
 <nav class="right-nav" aria-label="Section Menu">
 
-<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">Chemical equations</a></h3><ul><li><a href="../chemical-equations-and-reactions/index.html">Chemical equations and reactions</a></li><li><a href="../chemical-equations-exercises/index.html">Chemical equations - exercises</a></li><li><a href="index.html" class="selected"  aria-current="page">Redox reactions</a><li><a href="../redox-reactions-exercises/index.html">Redox reactions - exercises</a></li></ul></nav>
+<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">Chemical equations</a></h3><ul><li><a href="../chemical-equations-and-reactions/index.html">Chemical equations and reactions</a></li><li><a href="../chemical-equations-exercises/index.html">Quiz – Chemical equations</a></li><li><a href="index.html" class="selected"  aria-current="page">Redox reactions</a><li><a href="../redox-reactions-exercises/index.html">Quiz – Redox reactions</a></li></ul></nav>
 <!-- END SIDEBAR NAV PANEL -->
 
 
@@ -319,81 +353,114 @@ list.querySelectorAll('h4').forEach(h4 => {
 </ul>
 </nav>            <a id="main-content"></a>
             <h1 class="margin-top-zero">Redox reactions</h1>
-            <p><!--<script> var kw = "Keywords: " node = document.getElementById('page-title'); node.insertAdjacentHTML('afterend', '</p>
-
-
-
-
-<p class="keywords">' + kw + '<a href="/learninglab/tags/chemistry" title="view all content with this keyword">Chemistry</a> | <a href="/learninglab/keywords/redox" title="view all content with this keyword">Redox</a> | <a href="/learninglab/tags/chemical-equations" title="view all content with this keyword">Chemical equations</a></p>
-
-
-
-
-<p>'); </script>
-
-
-
-<style type="text/css"> .keywords { text-align: right; padding: 2rem; color: #ccc; } .keywords a { color: #fff; } .field-name-field-keywords-tags { display: none; } #title-wrapper { background: url('https://rmitlibrary.github.io/cdn/learninglab/images/br110.jpg'); color: white; background-size: auto; margin: 0; height: inherit; } .lower-level #page #main h2#page-title { padding: 4rem 0 1rem 3rem; margin: 0 0 0rem 0; line-height: 3.2rem; background: inherit; color: white; } /* hide em dash */ .lower-level #page #main h2#page-title:before { Display: none; } #sidebar-second { margin-top: 0px; } /* hide keywords */ </style>
-
---></p>
-<p>\[\require{mhchem}\]</p>
-<p class="lead">A redox reaction, short for reduction-oxidation reaction, is a chemical process in which one substance loses electrons (oxidation) while another gains electrons (reduction). Want to find out more? Keep reading!</p>
-<div>
+            <style>mjx-math {white-space: wrap !important;}</style>
+<p class="lead">A redox reaction, short for reduction–oxidation reaction, is a chemical process in which one substance loses electrons (oxidation) while another gains electrons (reduction). Keep reading to learn more.</p>
 <h2>Oxidation and reduction</h2>
-<p>The key chemical event in a redox reaction is the net movement of electrons from one reactant to the other. As a result of electron movement, some reactants gain electrons (reduction), and others lose electrons (oxidation).</p>
-<p>Oxidation is the loss of electron(s) by an atom or ion.</p>
-<p>Reduction is the gain of electron(s) by an atom or ion.</p>
-<p><strong>Example 1: Overall reaction:</strong> \[ \ce{CuO}\left(s\right)+\ce{H}_{2}\left(g\right)\rightarrow\ce{Cu}\left(s\right)+\ce{H}_{2}\ce{O}\left(g\right) \]</p>
-<p>Where reduction is \[ \ce{Cu}^{2+}+2e\rightarrow\ce{Cu} \]</p>
-<p>and oxidation is \[ \ce{H}_{2}\rightarrow2\ce{H}^{+}+2e \]</p>
-<p><strong>Example 2: The following chemical redox reaction:</strong> \[ 2\ce{Ag}^{+}+\ce{Zn}\rightarrow2\ce{Ag}+\ce{Zn}^{2+} \]</p>
-<p>Can be described by the two so-called electrochemical "half reactions": \(\ce{Ag}^{+}\) is reduced \[ 2\ce{Ag}^{+}+2e\rightarrow2\ce{Ag} \]</p>
-<p>and \(\ce{Zn}\) is oxidised \[ \ce{Zn}\rightarrow\ce{Zn}^{2+}+2e \]</p>
-</div>
+<p>Redox reactions involve the net movement of electrons from one reactant to the other. This causes some reactants to gain electrons (reduction), while others lose electrons (oxidation). An easy way to remember which is which is by using the acronym <strong>OIL RIG</strong>:</p>
+<ul>
+<li><strong>O</strong>xidation <strong>i</strong>s the <strong>l</strong>oss of electron(s) by an atom or ion.</li>
+<li><strong>R</strong>eduction <strong>i</strong>s the <strong>g</strong>ain of electron(s) by an atom or ion.</li>
+</ul>
+<p>Redox reactions can be described using <strong>full redox equations</strong>, such as:</p>
+<p>\[ \ce{CuO}(\textrm{s})+\ce{H2}(\textrm{g})\rightarrow\ce{Cu}(\textrm{s})+\ce{H2O}(\textrm{g}) \]</p>
+<p>This can be broken into <strong>half-equations</strong> (sometimes called "half-reactions"). Half-equations show the loss of electrons (oxidation) or gain of electrons (reduction):</p>
+<ul>
+<li>The reduction half-equation shows \(\ce{Cu}^{2+}\) being reduced: \(\ce{Cu}^{2+}+2e\rightarrow\ce{Cu}\). In this half-equation, the redox couple is \(\ce{Cu}^{2+}\)/\(\ce{Cu}\).</li>
+<li>The oxidation half-equation shows \(\ce{H2}\) being oxidised: \(\ce{H}_{2}\rightarrow2\ce{H}^{+}+2e\). In this half-equation, the redox couple is \(\ce{H2}\)/\(\ce{H}^{+}\).</li>
+</ul>
+<p>Another example is the full redox equation: \(2\ce{Ag}^{+}+\ce{Zn}\rightarrow2\ce{Ag}+\ce{Zn}^{2+} \)</p>
+<ul>
+<li>The reduction half-equation shows \(\ce{Ag}^{+}\) being reduced: \(2\ce{Ag}^{+}+2e\rightarrow2\ce{Ag}\). The redox couple is \(\ce{Ag}^{+}\)/\(\ce{Ag}\).</li>
+<li>The oxidation half-equation shows \(\ce{Zn}\) being oxidised: \(\ce{Zn}\rightarrow\ce{Zn}^{2+}+2e\). The redox couple is \(\ce{Zn}\)/\(\ce{Zn}^{2+}\).</li>
+</ul>
+<p>Redox equations are usually written as balanced net ionic equations. These equations exclude spectator ions (ions that do not take part in the overall redox process).</p>
 <div>
 <h3>Oxidising agents and reducing agents</h3>
-<p>Oxidising agents can oxidise another reactant by accepting electrons. Therefore, the oxidising agent becomes reduced (by gaining electrons) while oxidising another reactant (causing it to lose electrons).</p>
-<p>Reducing agents reduce another reactant by offering electrons to the other reactant. Thus, the reducing agent becomes oxidised (by losing electrons) while reducing another reactant (causing it to gain electrons).</p>
-</div>
-<div>
-<h4>Oxidation number</h4>
-<p>In any discussion of redox reactions it is useful to be able to assign an oxidation number to any element in a given compound in order to keep track of the electrons during a reaction. The oxidation number is defined as the apparent electrical charge on the atom according to a set of rules like those following.</p>
-<p>We need to recognize that:</p>
-<p>Oxidation leads to a loss of electrons, and an increase in the oxidation number.</p>
-<p>Reduction is a gain of electrons, and so leads to a decrease in the oxidation number.</p>
-<div>
-<h5>Oxidation number rules</h5>
-<ol>
-<li>The oxidation number of an atom as an element is zero. Examples: \(\ce{O}_{2},\ce{P}_{4},\ce{Fe},\ce{Br}_{2}\) are the elemental forms at room temperature, and they all have an oxidation number of zero.</li>
-<li>The oxidation number of oxygen is usually \(-2\) (except when bonded to \(\ce{F}\)). Remember that in the element, oxygen \(\left(\ce{O}_{2}\right)\) has an oxidation number of zero, whilst in peroxides \(\left(\ce{O}_{2}^{2-}\right)\) each oxygen atom has an oxidation number of \(-1\).</li>
-<li>The oxidation number of a monoatomic ion is equal to the ion's charge. Examples: \(\ce{Na}^{+}=\ce{Na}\left(+1\right),\ce{Cl}^{-}=\ce{Cl}\left(-1\right),\ce{S}^{2-}=\ce{S}\left(-2\right)\).</li>
-<li>The algebraic sum of the oxidation numbers in a neutral polyatomic compound is zero; in a polyatomic ion the sum of the oxidation number is equal to the ion's overall charge.</li>
-<li>In a combination of elements, the more electronegative element has its characteristic negative oxidation number (for example, \(\left(-3\right)\) for nitrogen, \(\left(-2\right)\) for oxygen, \(\left(-1\right)\) for chlorine), and the more electropositive element has a positive oxidation number (for example, \(\left(+1\right)\) for hydrogen, \(\left(+2\right)\) for calcium, \(\left(+3\right)\) for aluminium).</li>
-<li>The oxidation number of hydrogen is usually \(+1\) due to its electronegativity being lower than that of the main-group elements to which it is normally bonded. With more electropositive elements, hydrogen has an oxidation number of \(\left(-1\right)\). For instance, \(\ce{NaH}=\ce{Na}^{+}\ce{H}^{-}\).</li>
-</ol>
-<p><strong>Example 1:</strong> Find the oxidation number of \(\ce{S}\) in \(\ce{H}_{2}\ce{SO}_{4}\left(aq\right)\).</p>
-<p>Using oxidation number rule \(4\), we can write:</p>
-<p>\(2\times\) the oxidation number of \(\ce{H}+\) the oxidation number of \(\ce{S}+4\times\) the oxidation number of \(\ce{O}=0\)</p>
-<p>Rule \(2\) states the oxidation number of \(\ce{O}\) is \(-2\) and rule \(6\) states the oxidation number of \(\ce{H}\) is \(+1\)</p>
-<p>Lets consider the oxidation number of \(\ce{S}\) as "\(x\)"</p>
-<p>Therefore, \[\begin{align*} 2\times\left(+1\right)+x+4\times\left(-2\right) &amp; =0\\ 2+x-8 &amp; =0\\ x-6 &amp; =0\\ x &amp; =+6 \end{align*}\] <strong>Example 2:</strong> Find the oxidation number of \(\ce{I}\), in \(\ce{ICl}_{4}^{-}\).</p>
-<p>We use rule \(4\) to write:</p>
-<p>\(\left(\textrm{oxidation number of }\ce{I}\right)+\left(4\times\textrm{oxidation number of }\ce{Cl}\right)=-1\)</p>
-<p>According to rule \(3,\) since \(\ce{Cl}\) is more electronegative than \(\ce{I}\), so \(\ce{Cl}\) has the conventional oxidation number of \(-1\). Let's consider the oxidation number of \(\ce{I}\) as \(x\).</p>
-<p>Thus, \[\begin{align*} x+4\times\left(-1\right) &amp; =-1\\ x-4 &amp; =-1\\ x &amp; =-1+4\\ x &amp; =+3 \end{align*}\]</p>
-</div>
-</div>
-<div>
-<p><strong>Predicting the products of an oxidation or reduction reaction</strong></p>
-<p>We can predict the outcome of the reaction between two redox couples such as \(\ce{MnO}_{4}^{-}/\ce{Mn}^{2+}\) and \(\ce{H}_{2}\ce{SO}_{3}/\ce{SO}_{4}^{2-}\) in the following way:</p>
-<p>Because each redox reaction involves the movement of electrons, it also a voltage associated with it. This is called the standard reduction potential \(\left(E^{0}\right)\) which is defined according to \[ Ox^{n+}+ne^{-}\rightarrow Red \]</p>
-<p>Where \(Ox^{n+}=\) the oxidised form of the element,</p>
-<p>\(Red=\) the reduced form of the element,</p>
-<p>\(n=\) the number of electrons transferred in the redox half-reactions</p>
-<p>\(E^{0}\) range:</p>
-<p>\(E^{0}=\) Standard reduction potential, this is the electron driving force for the reaction as it proceeds from left to right when both \(Ox^{n+}\) and \(Red\) are present at \(1M\) concentration (or one atmosphere partial pressure for gases), and at \(25^{0}C.\)</p>
-<p>NOTE: The greater (more positive) the value of \(E^{0}\), the greater the tendency for: \(Ox^{n+}+ne^{-}\rightarrow Red\)</p>
-<p>So, from the data in the table below we can decide on the spontaneous (favourable) reaction:</p>
+<p><strong>Oxidising agents</strong> (or oxidants) can become reduced (gains electrons) while causing another reactant to become oxidised (lose electrons). <strong>Reducing agents</strong> (or reductants) reduce another reactant by offering electrons to the other reactant. Thus, the reducing agent becomes oxidised (by losing electrons) while reducing another reactant (causing it to gain electrons).</p>
+<h3>Oxidation number</h3>
+<p>The <strong>oxidation number</strong> is the apparent electrical charge on the atom. It helps you keep track of the electrons during a reaction.</p>
+<ul>
+<li>When a chemical species is oxidised, its oxidation number increases.</li>
+<li>When a chemical species is reduced, its oxidation number decreases.</li>
+</ul>
+<p>You can assign an oxidation number to any element in a given compound using the rules in the table.</p>
+<table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. The oxidation number of an atom as an element is zero.</td>
+<td>The \(\ce{O}\) in \(\ce{O2}\) has an oxidation number of \(0\). The oxidation numbers of \(\ce{N}\) and \(\ce{Br}\) are \(0\) in \(\ce{N2}\) and \(\ce{Br2}\), respectively. The oxidation number of \(\ce{Fe}\) in \(\ce{Fe}\) metal is also \(0\).</td>
+</tr>
+<tr>
+<td>2. The oxidation number of \(\ce{O}\) is usually \(-2\), except when it is bonded to \(\ce{F}\) or in a peroxide (like \(\ce{H2O2}\)).</td>
+<td>The \(\ce{O}\) in \(\ce{H2O}\) has an oxidation number of \(-2\). In \(\ce{OF2}\), \(\ce{O}\) has an oxidation number of \(+2\). In \(\ce{H2O2}\), it is \(-1\).</td>
+</tr>
+<tr>
+<td>3. The oxidation number of a monoatomic ion is equal to the ion's charge.</td>
+<td>The oxidation number of \(\ce{Na}^{+}\) is \(+1\). The oxidation number of \(\ce{Cl}^{-}\) is \(-1\). The oxidation number of \(\ce{S}^{2-}\) is \(-2\).</td>
+</tr>
+<tr>
+<td>4. The algebraic sum of the oxidation numbers in a neutral polyatomic compound is zero.</td>
+<td>\(\ce{NaCl}\) has an oxidation number of \(0\). The oxidation numbers of \(\ce{Na}\) and \(\ce{Cl}\) are \(+1\) and \(-1\), respectively. \(+1-1=0\)</td>
+</tr>
+<tr>
+<td>5. In a polyatomic ion, the sum of the oxidation numbers is equal to the ion's overall charge.</td>
+<td>\(\ce{CO}_{3}^{2-}\) has an overall charge of \(-2\). The oxidation numbers of its constituent atoms are \((+4)+(-2)+(-2)+(-2)=-2\).</td>
+</tr>
+<tr>
+<td>6. In a compound containing multiple elements, the more electronegative element has its characteristic negative oxidation number and the less electronegative element has a positive oxidation number.</td>
+<td>\(\ce{N}\) has an oxidation number of \(-3\), \(\ce{O}\) has an oxidation number of \(-2\) and \(\ce{Cl}\) has an oxidation number of \(-1\). \(\ce{H}\), \(\ce{Ca}\) and \(\ce{Al}\) have the oxidation numbers of \(+1\), \(+2\) and \(+3\), respectively.</td>
+</tr>
+<tr>
+<td>7. The oxidation number of \(\ce{H}\) is usually \(+1\) because it is less electronegative than that of the main group elements to which it is normally bonded. With more electropositive elements, \(\ce{H}\) has an oxidation number of \(-1\).</td>
+<td>In \(\ce{HCl}\), \(\ce{H}\) has an oxidation number of \(+1\). However, in \(\ce{NaH}\), it has an oxidation number of \(-1\).</td>
+</tr>
+</tbody>
+</table>
+<h2>Standard reduction potential</h2>
+<p>Redox reactions involve the movement of electrons, so there is also a voltage associated with it. This is called the standard reduction potential, \(E^{0}\). It is the tendency for a reactant to attract electrons, cause oxidation, and be reduced itself. It is measured in volts (\(\textrm{V}\)) and is defined for an oxidising agent at a concentration of \(1\textrm{M}\) for solutions, \(1\textrm{ atm}\) pressure for gases, and \(25ºC\) temperature.</p>
+<p>The greater (more positive) the value of \(E^{0}\), the greater the tendency for the oxidising agent to spontaneously become reduced itself and cause another reactant to undergo oxidation. It will remove electrons from a redox couple with a less positive \(E^{0}\). Thus, there would be a <strong>spontaneous redox reaction</strong>.</p>
+<h2>Worked example – determining oxidation numbers</h2>
+<p>Find the oxidation number of \(\ce{S}\) in \(\ce{H2SO4}(\textrm{aq})\).</p>
+<p><strong>Step 1:</strong> Identify the relevant oxidation number rule/s.</p>
+<p>Rule 4 states that the algebraic sum of the oxidation numbers in a neutral polyatomic compound is zero, so:</p>
+<p>\[(2\times\ce{H})+\ce{S}+(4\times\ce{O})=0\]</p>
+<p>Rule \(2\) states that the oxidation number of \(\ce{O}\) is \(-2\) and rule \(6\) states the oxidation number of \(\ce{H}\) is \(+1\).</p>
+<p><strong>Step 2:</strong> Use algebra to calculate the missing oxidation number.</p>
+<p>Let the oxidation number of \(\ce{S}=x\).</p>
+<p>\[\begin{align*} (2\times\left(+1\right))+x+(4\times\left(-2\right)) &amp; =0\\<br />
+2+x-8 &amp; =0\\<br />
+x-6 &amp; =0\\<br />
+x &amp; =+6<br />
+\end{align*}\]</p>
+<p>Therefore, the oxidation number of \(\ce{S}\) in \(\ce{H2SO4}\) is \(+6\).</p>
+<div class="accordion-item ">
+<h2 class="accordion-header" id="head-example-2-2012">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-example-2-3330" aria-expanded="false" aria-controls="body-example-2-3330" >Example 2</button>
+</h2>
+<div id="body-example-2-3330" class="accordion-collapse collapse " aria-labelledby="head-example-2-2012">
+<div class="accordion-body">
+<p>Find the oxidation number of \(\ce{I}\) in \(\ce{ICl}_{4}^{-}\).</p>
+<p><strong>Step 1:</strong> Identify the relevant oxidation number rule/s.</p>
+<p>Rule 5 states that in a polyatomic ion, the sum of the oxidation numbers is equal to the ion's overall charge, so:</p>
+<p>\[\ce{I}+(4\times\ce{Cl})=-1\]</p>
+<p>According to rule \(6,\), the more electronegative element will have its characteristic negative oxidation number and the less electronegative element will have a positive oxidation number. Since \(\ce{Cl}\) is more electronegative than \(\ce{I}\), \(\ce{Cl}\) will have the conventional oxidation number of \(-1\).</p>
+<p><strong>Step 2:</strong> Use algebra to calculate the missing oxidation number.</p>
+<p>Let the oxidation number of \(\ce{I}=x\).</p>
+<p>\[\begin{align*} x+(4\times(-1)) &amp; =-1\\<br />
+x-4 &amp; =-1\\<br />
+x &amp; =-1+4\\<br />
+x &amp; =+3<br />
+\end{align*}\]</p>
+<p>Therefore, the oxidation number of \(\ce{I}\) in \(\ce{ICl}_{4}^{-}\) is \(+3\).</p>
+</div></div></div>
+<h2>Worked example – predicting the products of redox reactions</h2>
+<p>Predict the products formed from the spontaneous redox reaction between the two redox couples: \(\ce{MnO}_{4}^{-}/\ce{Mn}^{2+}\) and \(\ce{H}_{2}\ce{SO}_{3}/\ce{SO}_{4}^{2-}\), given the data below.</p>
 <table>
 <colgroup>
 <col width="25%" />
@@ -402,90 +469,91 @@ list.querySelectorAll('h4').forEach(h4 => {
 <col width="25%" /> </colgroup>
 <thead>
 <tr>
-<th>\(Ox^{n+}/Red\) couple</th>
-<th>\(E^{0}\)(volt)</th>
-<th>\(e^{-}\) donor/acceptor</th>
-<th>Oxidising or Reducing Agents</th>
+<th>Redox couple</th>
+<th>\(E^{0}\) (\(\textrm{V}\))</th>
+<th>\(e^{-}\) donor/acceptor?</th>
+<th>Oxidising or reducing agent?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>\(\ce{MnO}_{4}^{-}/\ce{Mn}^{2+}\)</td>
 <td>\(+1.51\)</td>
-<td>\(e^{-}\) acceptors</td>
+<td>\(e^{-}\) acceptor</td>
 <td>Oxidising agent</td>
 </tr>
 <tr>
-<td>\(\ce{SO}_{4}^{2-}/\ce{H}_{2}\ce{SO}_{3}\left(\ce{SO}_{2}\right)\)</td>
+<td>\(\ce{SO}_{4}^{2-}/\ce{H}_{2}\ce{SO}_{3}\)</td>
 <td>\(+0.17\)</td>
 <td>\(e^{-}\) donor</td>
 <td>Reducing agent</td>
 </tr>
 </tbody>
 </table>
-<p>It is crucial to note that the redox couple with the more positive \(E^{0}\) value will remove electrons from a redox couple with a less positive \(E^{0}\). The oxidising agent is the species which causes the oxidation to occur, i.e. It is the agent (redox couple) which removes electrons from the other couple.</p>
-<p>In the example above, \(\ce{MnO}_{4}^{-}\) has the more positive \(E^{0}\) and hence the greater affinity (liking) for electrons: therefore \(\ce{MnO}_{4}^{-}\) will be as the electron acceptor (i.e. Oxidant= oxidising agent). The sulphur system must donate electrons: hence \(\ce{H}_{2}\ce{SO}_{3}\) will be the electron donor (ie Reducing agent).</p>
-<p>So we predict: \(\ce{MnO}_{4}^{-}\rightarrow\ce{Mn}^{2+}\) and \(\ce{H}_{2}\ce{SO}_{3}\rightarrow\ce{SO}_{4}^{2-}\)</p>
-</div>
-<div>
-<p><strong>Reduction and oxidation half-reactions and the balancing of redox equations</strong></p>
-<p>Redox equations are usually written as balanced net ionic equations, with spectator ions (ions that do not take part in the overall redox process) being omitted.</p>
-<p>The determination of the stoichiometry of a redox reaction can be difficult to deduce even when the products of such a reaction are known. For this reason it is much more convenient and methodical to concentrate upon the stoichiometry of each redox "half-reaction" or "redox couple" individually.</p>
-<div>
-<p><strong>Balancing net ionic equations for redox reactions</strong></p>
-<p>A five step method for balancing redox equations, called the "half-reaction" method, is used, and after mastering these operations, any chemical redox equation can be balanced by combining the five steps.</p>
-<ol>
-<li>Divide the equation into the appropriate "half-reactions" which can be balanced separately, for example:<br />
-Overall reaction \[ \ce{H}_{2}\ce{SO}_{3}+\ce{MnO}_{4}^{-}\rightarrow\ce{SO}_{4}^{2-}+\ce{Mn}^{2+} \] Assign an oxidation number to each element in the ions or molecules of reactants and products:<br />
-The oxidation number of \(\ce{Mn}\) in \(\ce{MnO}_{4}^{-}\) is \(+7\) and the \(\ce{Mn}\) oxidation number in \(\ce{Mn}^{2+}\) is \(+2\)<br />
-Thus, \(\ce{Mn}^{7+}\)is being reduced to \(\ce{Mn}^{2+}\).<br />
-So, the reduction half-reaction is \[ \ce{MnO}_{4}^{-}\rightarrow\ce{Mn}^{2+} \] The oxidation number of \(\ce{S}\) in \(\ce{H}_{2}\ce{SO}_{3}\) is \(+4\), and the oxidation number of \(\ce{S}\) in \(\ce{SO}_{4}^{2-}\) ion is \(+6\)<br />
-So, \(\ce{S}\) is being oxidised from \(+4\rightarrow+6\).<br />
-So, the oxidation half-reaction \[ \ce{H}_{2}\ce{SO}_{3}\rightarrow\ce{SO}_{4}^{2-} \]</li>
-<li>Write a separate balanced chemical equation for each redox-active species. This is the mass balance step:<br />
-Add water to balance oxygen.<br />
-\[ \ce{MnO}_{4}^{-}+8\ce{H}^{+}\rightleftarrows\ce{Mn}^{2+}+4\ce{H}_{2}\ce{O} \] Add \(\ce{H}^{+}\) to balance hydrogens. \[ \ce{H}_{2}\ce{SO}_{3}+\ce{H}_{2}\ce{O}\rightleftarrows\ce{SO}_{4}^{2-}+4\ce{H}^{+} \]</li>
-<li>Although we have now achieved mass balance, we also need to balance the charge, by adding electrons (negative charge) as needed. This generates the balanced electrochemical half-reaction. The total charge on each side of a balanced reaction must be the same. \[ \ce{MnO}_{4}^{-}+8\ce{H}^{+}+5e\rightleftarrows\ce{Mn}^{2+}+4\ce{H}_{2}\ce{O} \] Left hand side (LHS) total charge \(=+2\)<br />
-Right hand side (RHS) total charge \(=+2\)<br />
-And \[ \ce{H}_{2}\ce{SO}_{3}+\ce{H}_{2}\ce{O}\rightleftarrows\ce{SO}_{4}^{2-}+4\ce{H}^{+}+2e \] LHS total charge \(=0\)<br />
-RHS total charge \(=0\)<br />
-If all three steps have been done correctly, one half-reaction will have electrons on the left hand side of the equation (the reduction half-reaction), while the other half-reaction will have electrons on the right hand side of the equation (the oxidation half-reaction).</li>
-<li>The balanced half-reactions can be termed electrochemical equations, since they involve the electrons. To obtain a chemical equation for the reaction, we need to eliminate the electrons from the overall equation.<br />
-Hence the fourth step is the addition of the two half-reactions in such a way that the electrons cancel out. This may require multiplying one equation or both, by an appropriate integer.<br />
-For the two half-reactions above:<br />
-\[\begin{align*} 2 &amp; \left\{ 5e+8\ce{H}^{+}\ce{MnO}_{4}^{-}\rightleftarrows\ce{Mn}^{2+}+4\ce{H}_{2}\ce{O}\right\} \\ 5 &amp; \left\{ \ce{H}_{2}\ce{SO}_{3}+\ce{H}_{2}\ce{O}\rightleftarrows\ce{SO}_{4}^{2-}+4\ce{H}^{+}+2e\right\} \end{align*}\] The first reaction is multiplied by two and the second reaction is multiplied by five, and both are added to give: \[ 5\ce{H}_{2}\ce{SO}_{3}+2\ce{MnO}_{4}^{-}+16\ce{H}^{+}+5\ce{H}_{2}\ce{O}+10e\rightleftarrows2\ce{Mn}^{2+}+5\ce{SO}_{4}^{2-}+20\ce{H}^{+}+8\ce{H}_{2}\ce{O}+10e \] Note the equal number of electrons on each side of the equation cancel out.</li>
-<li>The final step is to cancel the electrons and simplify the chemical equation by eliminating any chemical species common to each side of the equation.</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>LHS</th>
-<th>RHS</th>
-<th>Balance</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>\(16\ce{H}^{+}\)</td>
-<td>\(20\ce{H}^{+}\)</td>
-<td>\(20-16=4\ce{H}^{+}\)on RHS</td>
-</tr>
-<tr>
-<td>\(5\ce{H}_{2}\ce{O}\)</td>
-<td>\(8\ce{H}_{2}\ce{O}\)</td>
-<td>\(8-5=3\ce{H}_{2}\ce{O}\) on RHS</td>
-</tr>
-</tbody>
-</table>
-<p>\[ 5\ce{H}_{2}\ce{SO}_{3}+2\ce{MnO}_{4}^{-}\rightleftarrows2\ce{Mn}^{2+}+5\ce{SO}_{4}^{2-}+3\ce{H}_{2}\ce{O}+\ce{4H}^{+} \]</p>
-</div>
-</div>
-<p><script> (function() { var script = document.createElement("script"); script.type = "text/javascript"; script.src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"; document.getElementsByTagName("head")[0].appendChild(script); })(); </script></p>
+<p><strong>Step 1:</strong> Identify the redox couple with the greater/more positive \(E^{0}\).</p>
+<p>\(\ce{MnO}_{4}^{-}/\ce{Mn}^{2+}\) has a \(E^{0}\) of \(+1.51\textrm{ V}\).</p>
+<p><strong>Step 2:</strong> Identify the oxidising agent in this couple. The oxidising agent becomes reduced itself, so its oxidation number decreases.</p>
+<p>We can use the worked example above to find the oxidation numbers of each atom in the redox pair.</p>
+<p>In \(\ce{MnO}_{4}^{-}\), the oxidation number of \(\ce{Mn}\) is \(+7\) and the oxidation number of \(\ce{O}\) is \(-2\). In \(\ce{Mn}^{2+}\), the oxidation number of \(\ce{Mn}^{2+}\) is \(+2\).</p>
+<p>The oxidising agent becomes reduced, so it is the species that contains the atom with the higher oxidation number. Here, it would be \(\ce{MnO}_{4}^{-}\). It has the greater affinity (liking) for electrons. Therefore, \(\ce{MnO}_{4}^{-}\) will be the electron acceptor (i.e. oxidising agent).</p>
+<p><strong>Step 3:</strong> Identify the reducing agent in the other couple. The reducing agent becomes oxidised itself, so its oxidation number increases.</p>
+<p>The sulfur system must donate electrons; hence, \(\ce{H}_{2}\ce{SO}_{3}\) will be the electron donor (i.e. reducing agent). We can check the oxidation numbers to confirm this.</p>
+<p>In \(\ce{SO}_{4}^{2-}\), the oxidation numbers of \(\ce{S}\) and \(\ce{O}\) are \(+6\) and \(-2\), respectively. In \(\ce{H2SO3}\), the oxidation numbers of \(\ce{H}\), \(\ce{S}\) and \(\ce{O}\) are \(+1\), \(+4\), and \(-2\), respectively.</p>
+<p>The reducing agent would contain the atom with the lower oxidation number, i.e. \(\ce{H2SO3}\).</p>
+<p><strong>Step 4:</strong> Write the half-equations for the redox reaction.</p>
+<p>\(\ce{MnO}_{4}^{-}\) is reduced to \(\ce{Mn}^{2+}\), so the reduction half-equation is:</p>
+<p>\[\ce{MnO}_{4}^{-}\rightarrow\ce{Mn}^{2+}\]</p>
+<p>\(\ce{H2SO3}\) is oxidised to \(\ce{SO}_{4}^{2-}\), so the oxidation half-equation is:</p>
+<p>\[\ce{H}_{2}\ce{SO}_{3}\rightarrow\ce{SO}_{4}^{2-}\]</p>
+<h2>Worked example – writing balanced half-equations for redox equations</h2>
+<p>Balance the following full redox equation for the reaction occurring between the reactants in the previous example:<br />
+\[\ce{H}_{2}\ce{SO}_{3}+\ce{MnO}_{4}^{-}\rightarrow\ce{SO}_{4}^{2-}+\ce{Mn}^{2+}\]</p>
+<p><strong>Step 1:</strong> Assign oxidation numbers to each element in the equation to determine which reactants are being oxidised and reduced.</p>
+<p>The oxidation number of \(\ce{Mn}\) in \(\ce{MnO}_{4}^{-}\) is \(+7\) and the \(\ce{Mn}\) oxidation number in \(\ce{Mn}^{2+}\) is \(+2\). Thus, \(\ce{Mn}^{7+}\)is being reduced to \(\ce{Mn}^{2+}\).</p>
+<p>The oxidation number of \(\ce{S}\) in \(\ce{H}_{2}\ce{SO}_{3}\) is \(+4\), and the oxidation number of \(\ce{S}\) in \(\ce{SO}_{4}^{2-}\) ion is \(+6\). So, \(\ce{S}\) is being oxidised to \(\ce{SO}_{4}^{2-}\).</p>
+<p><strong>Step 2:</strong> Divide the equation into the appropriate half-reactions which can be balanced separately.</p>
+<p>The reduction half-reaction is: \(\ce{MnO}_{4}^{-}\rightarrow\ce{Mn}^{2+}\)</p>
+<p>The oxidation half-reaction is: \[ \ce{H}_{2}\ce{SO}_{3}\rightarrow\ce{SO}_{4}^{2-}\]</p>
+<p><strong>Step 3:</strong> Write separate balanced chemical equations for reduction and oxidation. Use the acronym <strong>KOHES</strong>:</p>
+<ul>
+<li><strong>K</strong>ey elements (elements aside from oxygen and hydrogen)</li>
+<li><strong>O</strong>xygen – add water molecules to balance the oxygen atoms</li>
+<li><strong>H</strong>ydrogen – add hydrogen ions (\(\ce{H}^{+}\)) to balance the hydrogen atoms</li>
+<li><strong>E</strong>lectrons – add electrons (\(e^{-}\)) to balance the charges</li>
+<li><strong>S</strong>tates – add states for all species except electrons, which have no state</li>
+</ul>
+<p>Starting with the reduction half-equation, the key elements are already balanced as there is \(1\textrm{ Mg}\) on either side of the reaction arrow. There are \(4\textrm{ O}\) atoms on the reactant side and none on the product side, so to balance the \(\textrm{ O}\) atoms, we need to add \(4\textrm{ H}_{2}\textrm{O}\) to the product side.</p>
+<p>\[\ce{MnO}_{4}^{-}\rightarrow\ce{Mn}^{2+}+4\ce{H2O}\]</p>
+<p>Next, we need to balance the \(\textrm{H}\) by adding \(8\textrm{ H}^{+}\) ions to the reactant side. This will give us \(8\textrm{ H}\) atoms on each side.</p>
+<p>\[\ce{MnO}_{4}^{-}+8\ce{H}^{+}\rightarrow\ce{Mn}^{2+}+4\ce{H2O}\]</p>
+<p>To balance the charge, add \(e^{-}\). On the reactant side, the charge is \((-1)+(+8)=(+7)\) and on the product side, the charge is \(+2\). We need to add \(5e^{-}\) to the reactant side to make the charge \(+2\) on both sides.</p>
+<p>\[\ce{MnO}_{4}^{-}+8\ce{H}^{+}+5e^{-}\rightarrow\ce{Mn}^{2+}+4\ce{H2O}\]</p>
+<p>Finally, we can add states.</p>
+<p>\[\ce{MnO}_{4}^{-}(\textrm{aq})+8\ce{H}^{+}(\textrm{aq})+5e^{-}\rightarrow\ce{Mn}^{2+}(\textrm{aq})+4\ce{H2O}(\textrm{l})\]</p>
+<p>We can confirm that this is a reduction half-equation by looking at which side of the arrow the electrons are on. For reduction half-equations, the electrons are always on the reactant (left-hand) side. This is indeed the case.</p>
+<p><strong>Step 4:</strong> Repeat step 3 for the oxidation half-equation.</p>
+<p>There is one key element, \(\ce{S}\), and it is already balanced, so we can move on to \(ce{O}\). There are \(3\textrm{ O}\) atoms on the reactant side and \(4\textrm{ O}\) atoms on the product side. We need to add \(1\textrm{ H}_{2}\textrm{O}\) to the reactant side.</p>
+<p>\[\ce{H2SO3}+\ce{H2O}\rightarrow\ce{SO}_{4}^{2-}\]</p>
+<p>To balance the \(\ce{H}\) atoms, we add \(4\textrm{ H}^{+}\) to the product side.</p>
+<p>\[\ce{H2SO3}+\ce{H2O}\rightarrow\ce{SO}_{4}^{2-}+4\ce{H}^{+}\]</p>
+<p>To balance the charge, we add \(2e^{-}\) to the product side.</p>
+<p>\[\ce{H2SO3}+\ce{H2O}\rightarrow\ce{SO}_{4}^{2-}+4\ce{H}^{+}+2e^{-}\]</p>
+<p>And finally, states.</p>
+<p>\[\ce{H2SO3}(\textrm{aq})+\ce{H2O}(\textrm{l})\rightarrow\ce{SO}_{4}^{2-}(\textrm{aq})+4\ce{H}^{+}(\textrm{aq})+2e^{-}\]</p>
+<p>We can confirm that this is an oxidation question as the electrons are on the product (right-hand) side.</p>
+<p><strong>Step 5:</strong> To get the full equation, the electrons need to be eliminated. We do this by first making sure that the number of electrons in both equations is equal.</p>
+<p>The reduction half-equation has \(5e^{-}\), whereas the oxidation half-equation has \(2e^{-}\). To make them equal, we need to find the least common multiple. In this case, it is 10, so all of the coefficients in the reduction half-equation need to be multiplied by \(2\) and all of the coefficients in the oxidation half-equation need to be multiplied by \(5\).</p>
+<p>\[2\times\textrm{( }\ce{MnO}_{4}^{-}(\textrm{aq})+8\ce{H}^{+}(\textrm{aq})+5e^{-}\rightarrow\ce{Mn}^{2+}(\textrm{aq})+4\ce{H2O}(\textrm{l})\textrm{ )}\]<br />
+\[5\times\textrm{( }\ce{H2SO3}(\textrm{aq})+\ce{H2O}(\textrm{l})\rightarrow\ce{SO}_{4}^{2-}(\textrm{aq})+4\ce{H}^{+}(\textrm{aq})+2e^{-}\textrm{ )}\]</p>
+<p>Adding these together gives:</p>
+<p>\[5\ce{H2SO3}(\textrm{aq})+2\ce{MnO}_{4}^{-}(\textrm{aq})+16\ce{H}^{+}(\textrm{aq})+5\ce{H2O}(\textrm{l})+10e^{-}\rightarrow\ce{Mn}^{2+}(\textrm{aq})+5\ce{SO}_{4}^{2-}(\textrm{aq})+20\ce{H}^{+}(\textrm{aq})+8\ce{H2O}(\textrm{aq})+10e^{-}\]</p>
+<p><strong>Step 6:</strong> Cancel out the equal number of electrons on each side of the equation and simplify the equation by eliminating any chemical species common to each side.</p>
+<p>\[5\ce{H2SO3}(\textrm{aq})+2\ce{MnO}_{4}^{-}(\textrm{aq})\rightarrow\ce{Mn}^{2+}(\textrm{aq})+5\ce{SO}_{4}^{2-}(\textrm{aq})+3\ce{H2O}(\textrm{l})+\ce{4H}^{+}(\textrm{aq})\]</p>
 			<nav class="btn-nav-container" aria-label="Previous and next links">
 <h2 class="btn-nav-prev">
     <a href="../chemical-equations-exercises/index.html">
-        <span aria-hidden="true">Chemical equations - exercises</span>
-        <span class="visually-hidden">Previous page: Chemical equations - exercises</span>
+        <span aria-hidden="true">Quiz – Chemical equations</span>
+        <span class="visually-hidden">Previous page: Quiz – Chemical equations</span>
     </a>
 </h2>
     
@@ -493,8 +561,8 @@ For the two half-reactions above:<br />
 
 <h2 class="btn-nav-next">
     <a href="../redox-reactions-exercises/index.html">
-        <span aria-hidden="true">Redox reactions - exercises</span>
-        <span class="visually-hidden">Next page: Redox reactions - exercises</span>
+        <span aria-hidden="true">Quiz – Redox reactions</span>
+        <span class="visually-hidden">Next page: Quiz – Redox reactions</span>
     </a>
 </h2>
 	
@@ -511,8 +579,8 @@ For the two half-reactions above:<br />
     <h2 class="h5">Keywords</h2>
     <ul>
                 <li><a href="../../../keyword/chemical-bonding/index.html">Chemical bonding</a></li>  
+                <li><a href="../../../keyword/redox-reactions/index.html">Redox reactions</a></li>  
                 <li><a href="../../../keyword/chemical-equations/index.html">Chemical equations</a></li>  
-                <li><a href="../../../keyword/redox/index.html">Redox</a></li>  
         </ul>
 </div>
  
@@ -521,7 +589,7 @@ For the two half-reactions above:<br />
 <!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
 <!--
 <p><strong>Subjects </strong>
-    | <strong><a href="https://lab.bitma.app/subject-area/chemistry/">Chemistry</a></strong>  
+    | <strong><a href="https://learninglab.rmit.edu.au/subject-area/chemistry/">Chemistry</a></strong>  
     </p>
 -->
 <!-- category echo end -->
@@ -581,18 +649,17 @@ For the two half-reactions above:<br />
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <section class="acknowledgement-container">
-                        <div class="acknowledgement-image">
-                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
-                        </div>
-
+                <section class="acknowledgement-container">
                         <div class="content">
                             <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
                             <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
-                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="#" class="link-large">More information</a>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business<span class="img-credit"> - Artwork 'Sentient' by Hollie Johnson, Gunaikurnai and Monero Ngarigo</span>.</p>
+                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                        </div>
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/sentient-hollie-johnson.jpg" alt="" />
                         </div>
                     </section>
                 </div>
@@ -672,7 +739,7 @@ For the two half-reactions above:<br />
 </div><!-- wrapper end -->
 		
 	
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
 <script src="../../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
 <!-- Code to handle hamburger menu, embed mode, dark mode -->

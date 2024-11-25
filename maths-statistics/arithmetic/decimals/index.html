@@ -2,68 +2,31 @@
 <html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
 
 <head>
-<!-- 
-    DARK MODE
-    This script is placed in the <head> to ensure the theme is set as early as possible,
-    reducing the flash of unstyled content (FOUC). It determines the user's preferred
-    theme (either from local storage or system settings) and applies it immediately.
-  -->
-  <script>
-    (function() {
-      'use strict';
-
-      // Function to get the stored theme from local storage
-      const getStoredTheme = () => localStorage.getItem('theme');
-
-      // Function to determine the preferred theme
-      const getPreferredTheme = () => {
-        const storedTheme = getStoredTheme(); // Retrieve the stored theme
-        if (storedTheme) {
-          return storedTheme; // If a theme is stored, return it
-        }
-        // If no theme is stored, check the system preference for dark mode
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      // Function to apply the specified theme
-      const setTheme = theme => {
-        if (theme === 'auto') {
-          // If theme is 'auto', set it based on system preference
-          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-        } else {
-          // Otherwise, set the theme explicitly
-          document.documentElement.setAttribute('data-bs-theme', theme);
-        }
-      };
-
-      // Set the theme based on the preferred theme
-      setTheme(getPreferredTheme());
-    })();
-  </script>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- wp_head -->
-	<title>Decimals - lab</title>
-
-		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
+	<title>Decimals - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		
 		<meta name="description" content="What is a decimal? Decimals are another way to express fractions or parts of a whole. We need them for measurement, and it is the easiest way to express fractions on a computer or a calculator. Work through these videos to get a review of decimals overall. Adding decimals Subtracting decimals Multiplying decimals Dividing decimals" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
-		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		
 		<meta property="og:locale" content="en_US" />
-		<meta property="og:site_name" content="lab -" />
+		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="Decimals - lab" />
+		<meta property="og:title" content="Decimals - Learning Lab" />
 		<meta property="og:description" content="What is a decimal? Decimals are another way to express fractions or parts of a whole. We need them for measurement, and it is the easiest way to express fractions on a computer or a calculator. Work through these videos to get a review of decimals overall. Adding decimals Subtracting decimals Multiplying decimals Dividing decimals" />
-		<meta property="og:url" content="https://lab.bitma.app/maths-statistics/arithmetic/decimals/" />
+		<meta property="og:url" content="https://learninglab.rmit.edu.au/maths-statistics/arithmetic/decimals/" />
 		<meta property="article:published_time" content="2023-10-16T05:34:22+00:00" />
 		<meta property="article:modified_time" content="2024-08-21T01:37:47+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Decimals - lab" />
+		<meta name="twitter:title" content="Decimals - Learning Lab" />
 		<meta name="twitter:description" content="What is a decimal? Decimals are another way to express fractions or parts of a whole. We need them for measurement, and it is the easiest way to express fractions on a computer or a calculator. Work through these videos to get a review of decimals overall. Adding decimals Subtracting decimals Multiplying decimals Dividing decimals" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/maths-statistics\/arithmetic\/decimals\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/lab.bitma.app\/maths-statistics\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/arithmetic\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/arithmetic\/#listItem","position":3,"name":"Arithmetic","item":"https:\/\/lab.bitma.app\/maths-statistics\/arithmetic\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/arithmetic\/decimals\/#listItem","previousItem":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/arithmetic\/decimals\/#listItem","position":4,"name":"Decimals","previousItem":"https:\/\/lab.bitma.app\/maths-statistics\/arithmetic\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/maths-statistics\/arithmetic\/decimals\/#webpage","url":"https:\/\/lab.bitma.app\/maths-statistics\/arithmetic\/decimals\/","name":"Decimals - lab","description":"What is a decimal? Decimals are another way to express fractions or parts of a whole. We need them for measurement, and it is the easiest way to express fractions on a computer or a calculator. Work through these videos to get a review of decimals overall. Adding decimals Subtracting decimals Multiplying decimals Dividing decimals","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/maths-statistics\/arithmetic\/decimals\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:22+00:00","dateModified":"2024-08-21T01:37:47+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/arithmetic\/decimals\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/arithmetic\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/arithmetic\/#listItem","position":3,"name":"Arithmetic","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/arithmetic\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/arithmetic\/decimals\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/arithmetic\/decimals\/#listItem","position":4,"name":"Decimals","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/arithmetic\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/arithmetic\/decimals\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/arithmetic\/decimals\/","name":"Decimals - Learning Lab","description":"What is a decimal? Decimals are another way to express fractions or parts of a whole. We need them for measurement, and it is the easiest way to express fractions on a computer or a calculator. Work through these videos to get a review of decimals overall. Adding decimals Subtracting decimals Multiplying decimals Dividing decimals","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/arithmetic\/decimals\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:22+00:00","dateModified":"2024-08-21T01:37:47+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
@@ -81,25 +44,96 @@ MathJax = {
 
 </script>
 <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
-<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
-<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
-<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+
+
+
+
+<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=849.css' media='all' />
  	<!-- /wp_head -->
+
     
+    
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta name="author" content="RMIT Library">
+
+    <meta name="geo.position" content="-37.807778, 144.963333">
+    <meta name="geo.placename" content="Melbourne">
+    <meta name="geo.region" content="AU">
+
+    <meta name="dcterms.title" content="Learning Lab">
+    
+    <meta name="dcterms.description" content="What is a decimal? Decimals are another way to express fractions or parts of a whole. We need them for measurement, and it is the easiest way to express fractions on a computer or a calculator. Work through these videos to get a review of decimals overall. Adding decimals Subtracting...">
+    <meta name="dcterms.type" content="Text">
+    <meta name="dcterms.identifier" content="https://learninglab.rmit.edu.au/maths-statistics/arithmetic/decimals/">
+    <meta name="dcterms.format" content="text/html">
+    <!-- END Additional meta tags not covered by wp_head -->
+
+
+    <!-- START Additional scripts for tracking -->
+
+    <!-- Microsoft Clarity - does hotspot tracking of pages -->
+    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+
+    <!-- Google tag - (gtag.js) --> 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLHPB23GYR');
+    </script>
+
+    <!-- Microsoft Bing - Not sure how useful this is? --> 
+    <meta name="msvalidate.01" content="8E4954E1DFAB7E2F8A92DD0A0BD6ED09">
+
+    <!-- END Additional scripts for tracking -->
+
     <style>
         </style>
+
+    <!-- 
+    DARK MODE javascript
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+    -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Function to get the stored theme from local storage
+        const getStoredTheme = () => localStorage.getItem('theme');
+
+        // Function to determine the preferred theme
+        const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+            return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        // Function to apply the specified theme
+        const setTheme = theme => {
+        if (theme === 'auto') {
+            // If theme is 'auto', set it based on system preference
+            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+            // Otherwise, set the theme explicitly
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        };
+
+        // Set the theme based on the preferred theme
+        setTheme(getPreferredTheme());
+    })();
+    </script>
 </head>
 
 <body class="page-template-default page page-id-2691 page-child parent-pageid-2527 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
-	
 		
 <header>
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
@@ -166,7 +200,7 @@ MathJax = {
 </h2>
 <div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
 <div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
-<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic Word List tool</a></li>
 <li class="page_item page-item-3107 page_item_has_children"><a href="../../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
 <li class="page_item page-item-2520 page_item_has_children"><a href="../../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
 <li class="page_item page-item-2521"><a href="../../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
@@ -211,7 +245,7 @@ MathJax = {
 									<ul>
 										<li><a href="../../../art-and-design/index.html">Art and design</a></li>
 										<li><a href="../../../chemistry/index.html">Chemistry</a></li>
-										<li><a href="../../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../../law-resources/index.html">Legal studies</a></li>
 										<li><a href="../../index.html">Mathematics and statistics</a></li>
 										<li><a href="../../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
 										<li><a href="../../../subject-areas/physics/index.html">Physics</a></li>
@@ -331,10 +365,10 @@ list.querySelectorAll('h4').forEach(h4 => {
 <h2>Adding decimals</h2>
 <div class="responsive-video"><iframe src="https://www.youtube.com/embed/pswbGl3HVu8" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-transcript-1803">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-6452" aria-expanded="false" aria-controls="body-transcript-6452" >Transcript</button>
+<p class="accordion-header" id="head-transcript-9345">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-3998" aria-expanded="false" aria-controls="body-transcript-3998" >Transcript</button>
 </p>
-<div id="body-transcript-6452" class="accordion-collapse collapse " aria-labelledby="head-transcript-1803">
+<div id="body-transcript-3998" class="accordion-collapse collapse " aria-labelledby="head-transcript-9345">
 <div class="accordion-body">
 <p>Hello. I’m Martin Lindsay from the Study and Learning Centre at RMIT University. This is a short movie on adding decimals.</p>
 <p>Let’s start with this example, 3.04 plus 17 plus 21.479. First of all set out the decimals as shown. A couple of things to notice here. The first thing is that the 17 has been turned into a decimal, in other words, it’s now 17.000. Why? Because the 21.479 decimal has got three numbers after the decimal point. They’re called decimal places. So the 17 has three decimal places as well. Notice also the 3.04 has got an additional decimal place to make it three decimal places as well. So notice how the columns line up, each of the decimals has now got three decimal places.</p>
@@ -344,10 +378,10 @@ list.querySelectorAll('h4').forEach(h4 => {
 <h2>Subtracting decimals</h2>
 <div class="responsive-video"><iframe src="https://www.youtube.com/embed/46EPrCQo_eI" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-transcript-4162">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-7655" aria-expanded="false" aria-controls="body-transcript-7655" >Transcript</button>
+<p class="accordion-header" id="head-transcript-9857">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-7562" aria-expanded="false" aria-controls="body-transcript-7562" >Transcript</button>
 </p>
-<div id="body-transcript-7655" class="accordion-collapse collapse " aria-labelledby="head-transcript-4162">
+<div id="body-transcript-7562" class="accordion-collapse collapse " aria-labelledby="head-transcript-9857">
 <div class="accordion-body">
 <p>I’m Martin Lindsay from the Study and Learning Centre at RMIT University. This is a short movie on subtracting decimals.</p>
 <p>Let’s start with an example. 825.709 take away 272.456. Make sure at the outset that you line up the decimal points. Now let’s carry out the subtraction. Nine take away six is three. The next column isn’t so easy, we’re saying zero take away five. In this case we have to add a one which effectively is a 10 to the top number. So we’re now saying 10 take away five is five. Now we carry the one at the bottom number, in other words the bottom number is four plus one which is five. So the subtraction now is seven take away five which is two. Now moving over to the left hand side of the decimal point, five take away two is three. The next column is two take away seven, which as before with a zero we can’t do, so what we do, we add the one or effectively the 10. So the 10 plus the two on the top becomes the number 12. So we’re saying 12 take away seven which is five. As before make sure you carry the one on the bottom, so the number on the bottom now becomes two plus one which is three. So we say eight take away three is five. So the subtraction to this problem is 553.253.</p>
@@ -356,10 +390,10 @@ list.querySelectorAll('h4').forEach(h4 => {
 <h2>Multiplying decimals</h2>
 <div class="responsive-video"><iframe src="https://www.youtube.com/embed/iQkt6OY5YqQ" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-transcript-2414">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-7989" aria-expanded="false" aria-controls="body-transcript-7989" >Transcript</button>
+<p class="accordion-header" id="head-transcript-9167">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-1120" aria-expanded="false" aria-controls="body-transcript-1120" >Transcript</button>
 </p>
-<div id="body-transcript-7989" class="accordion-collapse collapse " aria-labelledby="head-transcript-2414">
+<div id="body-transcript-1120" class="accordion-collapse collapse " aria-labelledby="head-transcript-9167">
 <div class="accordion-body">
 <p>Hi, I’m Martin Lindsay from the Study and Learning Centre at RMIT University. This is a short movie on multiplying decimals.</p>
 <p>Let’s start by multiplying decimals by 10, 100 and 1000. So let’s start with the decimal 5.2 times 10. When we multiple by 10 notice that we have one zero, and when you multiply by 10 you simply move the decimal point one place to the right. In other words, 5.2 times 10 becomes 52.0, or just 52. In other words, the rule is move the decimal point one place to the right for each zero. Another one, 62.7 times 100. Notice two zeros, so we simply move the decimal point two places to the right, so this answer becomes 6270. Finally, let’s move 3.14 times 1000. Here we move the decimal point three places to the right because we have three zeros, 1000 has got three zeros. So the answer is 3140.</p>
@@ -370,10 +404,10 @@ list.querySelectorAll('h4').forEach(h4 => {
 <h2>Dividing decimals</h2>
 <div class="responsive-video"><iframe src="https://www.youtube.com/embed/i6KF26Ut8NE" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-transcript-2390">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-3222" aria-expanded="false" aria-controls="body-transcript-3222" >Transcript</button>
+<p class="accordion-header" id="head-transcript-1021">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-7282" aria-expanded="false" aria-controls="body-transcript-7282" >Transcript</button>
 </p>
-<div id="body-transcript-3222" class="accordion-collapse collapse " aria-labelledby="head-transcript-2390">
+<div id="body-transcript-7282" class="accordion-collapse collapse " aria-labelledby="head-transcript-1021">
 <div class="accordion-body">
 <p>Hi, I’m Martin Lindsay from the Study and Learning Centre at RMIT University. This is a short movie on dividing decimals.</p>
 <p>Let’s start by dividing decimals by 10, 100 and 1000. Here are some examples. Let’s look at the first example, 53.7 divided by 10. Notice here that 10 has got one zero. So what we do when we divide by 10 is to move the decimal point one place to the left. In other words, the decimal point is now between the five and the three, giving us an answer of 5.37. Second example, 462.9 divided by 100. Here 100 has got two zeros, so we move the decimal point two places to the left. So the decimal point is now between the four and the six, giving us an answer of 4.629. Finally, 3782 divided by 1000. Notice here that 1000 has got three zeros, so we move the decimal point three places to the left, giving us a decimal point between three and seven, so the answer now is 3.782.</p>
@@ -385,10 +419,10 @@ list.querySelectorAll('h4').forEach(h4 => {
 <h2>Converting between fractions and decimals</h2>
 <div class="responsive-video"><iframe src="https://www.youtube.com/embed/QwkAnywnECs" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-transcript-8555">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-2125" aria-expanded="false" aria-controls="body-transcript-2125" >Transcript</button>
+<p class="accordion-header" id="head-transcript-4132">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-4601" aria-expanded="false" aria-controls="body-transcript-4601" >Transcript</button>
 </p>
-<div id="body-transcript-2125" class="accordion-collapse collapse " aria-labelledby="head-transcript-8555">
+<div id="body-transcript-4601" class="accordion-collapse collapse " aria-labelledby="head-transcript-4132">
 <div class="accordion-body">
 <p>Hi, I’m Martin Lindsay from the Study and Learning Centre at RMIT University. This is a short movie on converting between fractions and decimals.</p>
 <p>Let’s start by converting a decimal into a fraction. Here’s the decimal 0.455. The first thing to notice about this decimal is that there are three digits after the decimal point. The first digit is the 10th, the second digit the 100th, and the third digit is the 1000th. It’s the third digit you look at because the 1000th is the number that you place on the bottom of the fraction. In other word, what goes on the bottom of this fraction is 1000. What goes on the top is the decimal without the decimal point, in other words it’s 455. So 0.455 as a fraction is 455 over 1000. Now you look to see if anything cancels top and bottom. And as you can see here, you can divide both top and bottom by five. Five into the top goes 91. Five into 1000 goes 200. So 0.455 as a fraction is 91 over 200.</p>
@@ -437,7 +471,7 @@ list.querySelectorAll('h4').forEach(h4 => {
 <!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
 <!--
 <p><strong>Subjects </strong>
-    | <strong><a href="https://lab.bitma.app/subject-area/maths/">Maths</a></strong>  
+    | <strong><a href="https://learninglab.rmit.edu.au/subject-area/maths/">Maths</a></strong>  
     </p>
 -->
 <!-- category echo end -->
@@ -497,18 +531,17 @@ list.querySelectorAll('h4').forEach(h4 => {
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <section class="acknowledgement-container">
-                        <div class="acknowledgement-image">
-                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
-                        </div>
-
+                <section class="acknowledgement-container">
                         <div class="content">
                             <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
                             <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
-                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="#" class="link-large">More information</a>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business<span class="img-credit"> - Artwork 'Sentient' by Hollie Johnson, Gunaikurnai and Monero Ngarigo</span>.</p>
+                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                        </div>
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/sentient-hollie-johnson.jpg" alt="" />
                         </div>
                     </section>
                 </div>
@@ -588,7 +621,7 @@ list.querySelectorAll('h4').forEach(h4 => {
 </div><!-- wrapper end -->
 		
 	
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
 <script src="../../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
 <!-- Code to handle hamburger menu, embed mode, dark mode -->

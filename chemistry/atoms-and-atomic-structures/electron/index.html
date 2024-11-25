@@ -2,68 +2,31 @@
 <html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
 
 <head>
-<!-- 
-    DARK MODE
-    This script is placed in the <head> to ensure the theme is set as early as possible,
-    reducing the flash of unstyled content (FOUC). It determines the user's preferred
-    theme (either from local storage or system settings) and applies it immediately.
-  -->
-  <script>
-    (function() {
-      'use strict';
-
-      // Function to get the stored theme from local storage
-      const getStoredTheme = () => localStorage.getItem('theme');
-
-      // Function to determine the preferred theme
-      const getPreferredTheme = () => {
-        const storedTheme = getStoredTheme(); // Retrieve the stored theme
-        if (storedTheme) {
-          return storedTheme; // If a theme is stored, return it
-        }
-        // If no theme is stored, check the system preference for dark mode
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      // Function to apply the specified theme
-      const setTheme = theme => {
-        if (theme === 'auto') {
-          // If theme is 'auto', set it based on system preference
-          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-        } else {
-          // Otherwise, set the theme explicitly
-          document.documentElement.setAttribute('data-bs-theme', theme);
-        }
-      };
-
-      // Set the theme based on the preferred theme
-      setTheme(getPreferredTheme());
-    })();
-  </script>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- wp_head -->
-	<title>The electron - an overview - lab</title>
-
-		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
-		<meta name="description" content="Electrons are tiny particles that are revolving around the nucleus in circular orbits similar to the solar system. They play a crucial role in many aspects of science and technology. Bohr planetary (particle) model and Schrodinger&#039;s wave mechanical model Electrons behave as waves around the nucleus such that a stable energy state is only established" />
+	<title>The electron - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		
+		<meta name="description" content="Electrons are fundamental subatomic particles with a negative electric charge. They play a crucial role in many aspects of science and technology. Bohr planetary (particle) model and Schrödinger&#039;s wave mechanical model Electrons have historically been described as tiny particles that revolve around the nucleus in circular orbits similar to the solar system. This is Bohr&#039;s" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
-		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		
 		<meta property="og:locale" content="en_US" />
-		<meta property="og:site_name" content="lab -" />
+		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="The electron - an overview - lab" />
-		<meta property="og:description" content="Electrons are tiny particles that are revolving around the nucleus in circular orbits similar to the solar system. They play a crucial role in many aspects of science and technology. Bohr planetary (particle) model and Schrodinger&#039;s wave mechanical model Electrons behave as waves around the nucleus such that a stable energy state is only established" />
-		<meta property="og:url" content="https://lab.bitma.app/chemistry/atoms-and-atomic-structures/electron/" />
+		<meta property="og:title" content="The electron - Learning Lab" />
+		<meta property="og:description" content="Electrons are fundamental subatomic particles with a negative electric charge. They play a crucial role in many aspects of science and technology. Bohr planetary (particle) model and Schrödinger&#039;s wave mechanical model Electrons have historically been described as tiny particles that revolve around the nucleus in circular orbits similar to the solar system. This is Bohr&#039;s" />
+		<meta property="og:url" content="https://learninglab.rmit.edu.au/chemistry/atoms-and-atomic-structures/electron/" />
 		<meta property="article:published_time" content="2023-10-16T05:34:42+00:00" />
-		<meta property="article:modified_time" content="2024-10-28T05:31:37+00:00" />
+		<meta property="article:modified_time" content="2024-11-22T05:37:26+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="The electron - an overview - lab" />
-		<meta name="twitter:description" content="Electrons are tiny particles that are revolving around the nucleus in circular orbits similar to the solar system. They play a crucial role in many aspects of science and technology. Bohr planetary (particle) model and Schrodinger&#039;s wave mechanical model Electrons behave as waves around the nucleus such that a stable energy state is only established" />
+		<meta name="twitter:title" content="The electron - Learning Lab" />
+		<meta name="twitter:description" content="Electrons are fundamental subatomic particles with a negative electric charge. They play a crucial role in many aspects of science and technology. Bohr planetary (particle) model and Schrödinger&#039;s wave mechanical model Electrons have historically been described as tiny particles that revolve around the nucleus in circular orbits similar to the solar system. This is Bohr&#039;s" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/chemistry\/atoms-and-atomic-structures\/electron\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/lab.bitma.app\/chemistry\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/atoms-and-atomic-structures\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/atoms-and-atomic-structures\/#listItem","position":3,"name":"Atoms and atomic structures","item":"https:\/\/lab.bitma.app\/chemistry\/atoms-and-atomic-structures\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/atoms-and-atomic-structures\/electron\/#listItem","previousItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/atoms-and-atomic-structures\/electron\/#listItem","position":4,"name":"The electron - an overview","previousItem":"https:\/\/lab.bitma.app\/chemistry\/atoms-and-atomic-structures\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/chemistry\/atoms-and-atomic-structures\/electron\/#webpage","url":"https:\/\/lab.bitma.app\/chemistry\/atoms-and-atomic-structures\/electron\/","name":"The electron - an overview - lab","description":"Electrons are tiny particles that are revolving around the nucleus in circular orbits similar to the solar system. They play a crucial role in many aspects of science and technology. Bohr planetary (particle) model and Schrodinger's wave mechanical model Electrons behave as waves around the nucleus such that a stable energy state is only established","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/chemistry\/atoms-and-atomic-structures\/electron\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:42+00:00","dateModified":"2024-10-28T05:31:37+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/atoms-and-atomic-structures\/electron\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/atoms-and-atomic-structures\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/atoms-and-atomic-structures\/#listItem","position":3,"name":"Atoms and atomic structures","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/atoms-and-atomic-structures\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/atoms-and-atomic-structures\/electron\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/atoms-and-atomic-structures\/electron\/#listItem","position":4,"name":"The electron","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/atoms-and-atomic-structures\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/atoms-and-atomic-structures\/electron\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/chemistry\/atoms-and-atomic-structures\/electron\/","name":"The electron - Learning Lab","description":"Electrons are fundamental subatomic particles with a negative electric charge. They play a crucial role in many aspects of science and technology. Bohr planetary (particle) model and Schr\u00f6dinger's wave mechanical model Electrons have historically been described as tiny particles that revolve around the nucleus in circular orbits similar to the solar system. This is Bohr's","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/atoms-and-atomic-structures\/electron\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:42+00:00","dateModified":"2024-11-22T05:37:26+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
@@ -81,25 +44,96 @@ MathJax = {
 
 </script>
 <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
-<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
-<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
-<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+
+
+
+
+<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=849.css' media='all' />
  	<!-- /wp_head -->
+
     
+    
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta name="author" content="RMIT Library">
+
+    <meta name="geo.position" content="-37.807778, 144.963333">
+    <meta name="geo.placename" content="Melbourne">
+    <meta name="geo.region" content="AU">
+
+    <meta name="dcterms.title" content="Learning Lab">
+    
+    <meta name="dcterms.description" content="Electrons are fundamental subatomic particles with a negative electric charge. They play a crucial role in many aspects of science and technology. Bohr planetary (particle) model and Schrödinger&#039;s wave mechanical model Electrons have historically been described as tiny particles that revolve around the nucleus in circular orbits similar to the...">
+    <meta name="dcterms.type" content="Text">
+    <meta name="dcterms.identifier" content="https://learninglab.rmit.edu.au/chemistry/atoms-and-atomic-structures/electron/">
+    <meta name="dcterms.format" content="text/html">
+    <!-- END Additional meta tags not covered by wp_head -->
+
+
+    <!-- START Additional scripts for tracking -->
+
+    <!-- Microsoft Clarity - does hotspot tracking of pages -->
+    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+
+    <!-- Google tag - (gtag.js) --> 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLHPB23GYR');
+    </script>
+
+    <!-- Microsoft Bing - Not sure how useful this is? --> 
+    <meta name="msvalidate.01" content="8E4954E1DFAB7E2F8A92DD0A0BD6ED09">
+
+    <!-- END Additional scripts for tracking -->
+
     <style>
         </style>
+
+    <!-- 
+    DARK MODE javascript
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+    -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Function to get the stored theme from local storage
+        const getStoredTheme = () => localStorage.getItem('theme');
+
+        // Function to determine the preferred theme
+        const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+            return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        // Function to apply the specified theme
+        const setTheme = theme => {
+        if (theme === 'auto') {
+            // If theme is 'auto', set it based on system preference
+            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+            // Otherwise, set the theme explicitly
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        };
+
+        // Set the theme based on the preferred theme
+        setTheme(getPreferredTheme());
+    })();
+    </script>
 </head>
 
 <body class="page-template-default page page-id-3056 page-child parent-pageid-3132 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
-	
 		
 <header>
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
@@ -166,7 +200,7 @@ MathJax = {
 </h2>
 <div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
 <div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
-<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic Word List tool</a></li>
 <li class="page_item page-item-3107 page_item_has_children"><a href="../../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
 <li class="page_item page-item-2520 page_item_has_children"><a href="../../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
 <li class="page_item page-item-2521"><a href="../../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
@@ -211,7 +245,7 @@ MathJax = {
 									<ul>
 										<li><a href="../../../art-and-design/index.html">Art and design</a></li>
 										<li><a href="../../index.html">Chemistry</a></li>
-										<li><a href="../../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../../law-resources/index.html">Legal studies</a></li>
 										<li><a href="../../../maths-statistics/index.html">Mathematics and statistics</a></li>
 										<li><a href="../../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
 										<li><a href="../../../subject-areas/physics/index.html">Physics</a></li>
@@ -275,7 +309,7 @@ This should be moved to a stylesheet once style is determined. -->
 <!-- START SIDEBAR NAV PANEL -->
 <nav class="right-nav" aria-label="Section Menu">
 
-<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">Atoms and atomic structures</a></h3><ul><li><a href="../atoms/index.html">Atoms, molecules and compounds</a></li><li><a href="../atoms-molecules-and-compounds-quiz/index.html">Atoms, molecules and compounds quiz</a></li><li><a href="../atomic-structure/index.html">Atomic structure</a></li><li><a href="../quiz-atomic-structure/index.html">Quiz atomic structure</a></li><li><a href="index.html" class="selected"  aria-current="page">The electron - an overview</a><li><a href="../electron-configuration-quiz/index.html">Electron configuration quiz</a></li><li><a href="../quantum-numbers-address-electron/index.html">The address of an electron</a></li><li><a href="../quiz-quantum-numbers/index.html">Quiz - quantum numbers</a></li></ul></nav>
+<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">Atoms and atomic structures</a></h3><ul><li><a href="../atoms/index.html">Atoms, molecules and compounds</a></li><li><a href="../atomic-structure/index.html">Atomic structure</a></li><li><a href="index.html" class="selected"  aria-current="page">The electron</a><li><a href="../quantum-numbers-address-electron/index.html">Quantum numbers</a></li><li><a href="../quiz-quantum-numbers/index.html">Quiz – Quantum numbers</a></li></ul></nav>
 <!-- END SIDEBAR NAV PANEL -->
 
 
@@ -318,34 +352,216 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li><a href="../index.html">Atoms and atomic structures</a></li>
 </ul>
 </nav>            <a id="main-content"></a>
-            <h1 class="margin-top-zero">The electron - an overview</h1>
-            <p class="lead">Electrons are tiny particles that are revolving around the nucleus in circular orbits similar to the solar system. They play a crucial role in many aspects of science and technology.</p>
-<h2>Bohr planetary (particle) model and Schrodinger's wave mechanical model</h2>
-<p>Electrons behave as waves around the nucleus such that a stable energy state is only established when an integral number of wavelengths are "quantized" (quantum means a specific amount) into the orbital to produce a "stationary state", a confined electron wave. In this model, electrons occupy a three-dimensional space around the nucleus.</p>
-<p>The Bohr model and the Schrodinger's model:</p>
+            <h1 class="margin-top-zero">The electron</h1>
+            <p class="lead">Electrons are fundamental subatomic particles with a negative electric charge. They play a crucial role in many aspects of science and technology.</p>
+<h2>Bohr planetary (particle) model and Schrödinger's wave mechanical model</h2>
+<p>Electrons have historically been described as tiny particles that revolve around the nucleus in circular orbits similar to the solar system. This is <strong><a href="https://en.wikipedia.org/wiki/Bohr_model">Bohr's particle model</a></strong>. However, this model overly simplifies the path of electrons within atoms and was eventually rejected.</p>
+<p>The modern understanding of electron behaviour is based on <strong>Schrödinger's wave mechanical model</strong>.<br />
+The wave model shows that electrons don't have exact paths. Instead, they exist in regions of space where they are likely to be found. These regions are called orbitals. In this model, electrons occupy a three-dimensional space around the nucleus.</p>
+<div style="text-align: center;">
 <div style="width: 460px;"><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/electron-models.gif" alt="Electron models" /></div>
-<h2>Energy levels within an atom</h2>
-<p>Space, where electrons move around the nucleus, is divided into subspaces known as shells, subshells and orbitals.</p>
+</div>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-6224">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-5898" aria-expanded="false" aria-controls="body-transcript-5898" >Transcript</button>
+</p>
+<div id="body-transcript-5898" class="accordion-collapse collapse " aria-labelledby="head-transcript-6224">
+<div class="accordion-body">
+<h3>Bohr and Schrödinger models</h3>
+<div>
+<h4>The Bohr model</h4>
 <ul>
-<li>Electron shells - Electron shells are named outward from the nucleus as \(1,2,3,4\) and so on. The energy of the electron shells increases with the distance from the nucleus. Therefore, the electrons closest to the nucleus have lower energy than the electrons located further away.</li>
-</ul>
-<div style="width: 360px;"><img 
-src="https://rmitlibrary.github.io/cdn/learninglab/images/electron-shells.gif" alt="Electron shells" /></div>
+<li>A central black dot labeled "p<sup>+</sup>" representing the nucleus.</li>
+<li>A red oval path around the nucleus labeled "e<sup>-</sup>" representing an electron orbit.</li>
+</ul></div>
+<div>
+<h4>The Schrödinger model</h4>
 <ul>
-<li>Electron subshells - The number of subshells in a shell is equal to the shell number. Subshells are labeled as \(s,p,d\) and \(f\). Each subshell contains a certain number of electrons. An \(s\) subshell contains up to \(2\) electrons, a \(p\) subshell contains up to \(6\) electrons, a \(d\) subshell contains up to \(10\) electrons, and a \(f\) subshell contains up to \(14\) electrons.</li>
-<li>Electron orbitals - An electron orbital can contain a maximum of two electrons where one must spin up and the other spin down. Therefore, an \(s\) subshell has one orbital, a \(p\) subshell has three orbitals, a \(d\) subshell has five orbitals and an \(f\) subshell has seven orbitals. Orbitals have distinct shapes, \(s\) orbitals are spherical, \(p\) orbitals are dumb-bell. Orbitals within the same subshell that have the same shape are generally of equal energy but have a different orientation in space, such as \(p_{x},p_{y},p_{z}\) (\(x,y,z\) denote the orientation in space).</li>
+<li>A central black dot labeled "p<sup>+</sup>" representing the nucleus.</li>
+<li>A complex, cloud-like blue shape around the nucleus labeled "e<sup>-</sup>" representing an electron cloud.</li>
+</ul></div>
+</div></div></div>
+<p>When an electron's wave fits perfectly within an orbital, it creates a stable energy level, known as a "stationary state." This means the electron's energy is quantised, meaning that it can exist only in certain allowed states. These stable energy levels are crucial for understanding how electrons behave in atoms, influencing how atoms absorb and emit energy, and determining the chemical properties of elements. Orbitals, therefore, provide a framework for predicting where electrons are likely to be and how they will interact with other atoms in chemical reactions.</p>
+<h2>Electron energy levels</h2>
+<p>The space where electrons move around the nucleus is divided into subspaces known as shells, subshells and orbitals.</p>
+<h3>Electron shells</h3>
+<div class="img-text "><figure class="">
+
+<img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/electron-shells.gif" alt="Electron shells" />
+
+
+</figure>
+<div class="content-text">
+<p>Electron shells are named from the nucleus outwards, as \(1\), \(2\), \(3\), \(4\) and so on. The energy of the electron shells increases with the distance from the nucleus. Therefore, the electrons closest to the nucleus have lower energy than the electrons located further away. Each electron shell can contain a maximum number of electrons. These numbers can be calculated using \(2n^2\). For example, shell \(n=2\) contains \(2\times2^{2}=8\textrm{ electrons}.\)</p>
+</div></div>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-2562">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-1102" aria-expanded="false" aria-controls="body-transcript-1102" >Transcript</button>
+</p>
+<div id="body-transcript-1102" class="accordion-collapse collapse " aria-labelledby="head-transcript-2562">
+<div class="accordion-body">
+<h4>Electron shell diagram</h4>
+<ul>
+<li>A central black dot representing the nucleus.</li>
+<li>Three concentric circles around the nucleus, labeled:
+<ul>
+<li>n=1 (innermost circle)</li>
+<li>n=2 (middle circle)</li>
+<li>n=3 (outermost circle)</li>
 </ul>
-<div style="width: 600px;"><img 
+</li>
+<li>A red arrow pointing outward from the nucleus through the circles, indicating "Increasing energy and distance from the nucleus".</li>
+</ul>
+</div></div></div>
+<h3>Electron subshells</h3>
+<p>Within each electron shell are subshells. The number of subshells within a shell is the same as the shell number. For example, the \(n=3\) shell contains \(3\textrm{ subshells}\) and the \(n=6\) shell contains \(6\textrm{ subshells}\). Subshells are labeled as \(s,p,d\) and \(f\). Each subshell contains a certain number of electrons:</p>
+<ul>
+<li>An \(s\) subshell contains up to \(2\) electrons.</li>
+<li>A \(p\) subshell contains up to \(6\) electrons.</li>
+<li>A \(d\) subshell contains up to \(10\) electrons.</li>
+<li>A \(f\) subshell contains up to \(14\) electrons.</li>
+</ul>
+<p>Let's consider the \(n=4\) shell. This shell contains \(4\) subshells, which are labeled as \(4s\), \(4p\), \(4d\), and \(4f\). Remember, the \(4s\) subshell can hold up to \(2\) electrons, the \(4p\) subshell can hold up to \(6\) electrons, the \(4d\) subshell can accommodate up to \(10\) electrons, and the \(4f\) subshell can contain up to \(14\) electrons. Altogether, the \(n=4\) shell can hold a maximum of \(2+6+10+14=32\) electrons.</p>
+<p>Electron subshells are filled in order of increasing energy. The figure shows the electron filling order. Generally, shells fill from \(1\) to \(2\) to \(3\) and subshells, from \(s\) to \(p\) to \(d\), but there is an exception. Subshell \(4s\) has lower energy than subshell \(3d\); therefore, \(4s\) fills before \(3d\).</p>
+<div style="width: 500px;"><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/electron-filling.gif" alt="Electron filling" /></div>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-7321">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-3991" aria-expanded="false" aria-controls="body-transcript-3991" >Transcript</button>
+</p>
+<div id="body-transcript-3991" class="accordion-collapse collapse " aria-labelledby="head-transcript-7321">
+<div class="accordion-body">
+<h4>Electron shell filling diagram</h4>
+<ul>
+<li><strong>Left side:</strong> A vertical arrow labeled "Energy" pointing upwards.</li>
+<li>
+            <strong>Top labels:</strong></p>
+<ul>
+<li>"Shell number" on the left</li>
+<li>"Filling order" on the right</li>
+</ul>
+</li>
+<li>
+            <strong>Energy levels (from bottom to top):</strong></p>
+<ul>
+<li><strong>Shell 1:</strong> 1s (blue line)</li>
+<li><strong>Shell 2:</strong>
+<ul>
+<li>2s (red line)</li>
+<li>2p (red line)</li>
+</ul>
+</li>
+<li><strong>Shell 3:</strong>
+<ul>
+<li>3s (yellow line)</li>
+<li>3p (yellow line)</li>
+<li>3d (yellow line)</li>
+</ul>
+</li>
+<li><strong>Shell 4:</strong>
+<ul>
+<li>4s (blue line)</li>
+<li>4p (blue line)</li>
+<li>4d (blue line)</li>
+</ul>
+</li>
+<li><strong>Shell 5:</strong>
+<ul>
+<li>5s (red line)</li>
+<li>5p (red line)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Connecting lines:</strong> Lines indicate the order of filling, showing connections between shells such as from 3p to 4s to 3d.</li>
+</ul>
+</div></div></div>
+<h3>Electron orbitals</h3>
+<p>Within each electron subshell are electron orbitals. Each electron orbital can hold up to two electrons, where one spin upwards and the other spins downwards. This means that:</p>
+<ul>
+<li>An \(s\) subshell, which contains up to \(2\) electrons, has one orbital.</li>
+<li>A \(p\) subshell, which contains up to \(6\) electrons, has three orbitals.</li>
+<li>A \(d\) subshell, which contains up to \(10\) electrons, has five orbitals.</li>
+<li>An \(f\) subshell, which contains up to \(14\) electrons, has seven orbitals.</li>
+</ul>
+<p>You can see that the number of orbitals is half of the number of maximum electrons.</p>
+<p>Orbitals have distinct shapes. For example, \(s\) orbitals are spherical and \(p\) orbitals are dumbbell-shaped. Orbitals within the same subshell that have the same shape are generally of equal energy but have a different orientation in space, such as \(p_{x}\), \(p_{y}\) and \(p_{z}\), where \(x\), \(y\), and \(z\) denote the orientation in space.</p>
+<div style="width: 500px;"><img 
 src="https://rmitlibrary.github.io/cdn/learninglab/images/shapes-atomic-orbitals.gif" alt="Shapes of atomic orbitals" /></div>
-<h2>Writing electron configurations</h2>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-9293">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-7090" aria-expanded="false" aria-controls="body-transcript-7090" >Transcript</button>
+</p>
+<div id="body-transcript-7090" class="accordion-collapse collapse " aria-labelledby="head-transcript-9293">
+<div class="accordion-body">
+<h4>Electron orbitals</h4>
+<div>
+<h5>s orbital</h5>
 <ul>
-<li>Electron subshells are filled in order of increasing energy. The figure below displays the electron filling order. Subshell \(4s\) has lower energy than subshell \(3d\). Therefore \(4s\) fills before \(3d\).</li>
-<li>Each orbital can accommodate up to \(2\) electrons.</li>
-<li>Electrons fill into orbitals of a subshell so that each orbital acquires one electron before any orbital acquires a second electron. All single electrons must have the same spin.</li>
+<li>A red spherical shape labeled "s orbital".</li>
+<li>Axes labeled x, y, and z around the sphere.</li>
+</ul></div>
+<div>
+<h5>p orbitals</h5>
+<ul>
+<li>
+                <strong>p<sub>x</sub> orbital:</strong> </p>
+<ul>
+<li>Two blue lobes along the x-axis labeled "p<sub>x</sub> orbital".</li>
+<li>Axes labeled x, y, and z.</li>
 </ul>
-<p>Shapes of atomic orbitals:</p>
-<div style="width: 300px;"><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/electron-filling.gif" alt="Electron filling" /></div>
-<h3>The electron configuration of selected elements</h3>
+</li>
+<li>
+                <strong>p<sub>y</sub> orbital:</strong> </p>
+<ul>
+<li>Two blue lobes along the y-axis labeled "p<sub>y</sub> orbital".</li>
+<li>Axes labeled x, y, and z.</li>
+</ul>
+</li>
+<li>
+                <strong>p<sub>z</sub> orbital:</strong> </p>
+<ul>
+<li>Two blue lobes along the z-axis labeled "p<sub>z</sub> orbital".</li>
+<li>Axes labeled x, y, and z.</li>
+</ul>
+</li>
+</ul>
+</div></div></div>
+<p>Like shells and subshells, electron fill orbitals from lowest to highest energy level. This is called the <strong>Aufbau principle</strong>. Electrons also fill orbitals of a subshell such that each orbital acquires one electron before any orbital acquires a second electron. All single electrons must have the same spin.</p>
+<div style="text-align: center;">
+<p><img decoding="async" alt=" Aufbau principle: Electrons always fill lowest possible energy level." class="responsive" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEMTheelectronWE1.png" style="width: 500px" /></p>
+</div>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-9730">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-7892" aria-expanded="false" aria-controls="body-transcript-7892" >Transcript</button>
+</p>
+<div id="body-transcript-7892" class="accordion-collapse collapse " aria-labelledby="head-transcript-9730">
+<div class="accordion-body">
+<h4>Aufbau principle diagram</h4>
+<ul>
+<li>
+            Energy levels labeled n=1 to n=7 on the left.
+        </li>
+<li>
+            Diagonal lines indicate the filling order for orbitals:</p>
+<ul>
+<li>n=1: 1s</li>
+<li>n=2: 2s, 2p</li>
+<li>n=3: 3s, 3p, 3d</li>
+<li>n=4: 4s, 4p, 4d, 4f</li>
+<li>n=5: 5s, 5p, 5d, 5f</li>
+<li>n=6: 6s, 6p, 6d, 6f</li>
+<li>n=7: 7s, 7p, 7d, 7f</li>
+</ul>
+</li>
+<li>
+            Black and red arrows guide the sequence in which orbitals are filled.
+        </li>
+</ul>
+</div></div></div>
+<h2>Electron configurations</h2>
+<p>Electron configurations show how the electrons are distributed within an atom. They are written from lowest energy subshell to the highest energy subshell. Each subshell is written with the number of electrons in each subshell shown as a superscript. The superscripts in an electron configuration will add up to the total number of electrons for that atom. </p>
+<h3>Full electron configurations</h3>
+<p>Full electron configurations show the location of all electrons in an atom. The full electron configurations of the first 10 elements are shown in the table.</p>
 <table>
 <thead>
 <tr>
@@ -407,27 +623,151 @@ src="https://rmitlibrary.github.io/cdn/learninglab/images/shapes-atomic-orbitals
 </tr>
 </tbody>
 </table>
-<p><iframe title="Orbital diagram" src="https://rmitlibrary.github.io/cdn/learninglab/animation/orbital-diagram.html" width="600px" height="460px"></iframe></p>
+<p><h3>Condensed electron configuration</h3>
+<p>Condensed electron configurations are a short way of showing electron configurations. They are often also called noble gas configurations and are handy to avoid writing out all of the subshells. This way of representing electron configurations states the previous noble gas in square brackets, followed by the remaining electrons.</p>
+<p>For example, let's look at the magnesium atom, which has a full electron configuration of \(1s^{2}\,2s^{2}\,2p^{6}\,3s^{2}\). The previous noble gas, as shown on the periodic table, is neon. Neon has an electron configuration of \(1s^{2}\,2s^{2}\,2p^{6}\). You can see that the location of the first 10 electrons is the same as in magnesium, so we can replace this part of the electron configuration with the chemical symbol for the noble gas in square brackets: \(\textrm{[Ne]}\). This makes the condensed electron configuration for magnesium: \(\textrm{[Ne]}\,3s^{2}\).</p>
+<h2>Orbital diagrams</h2>
+<p>Orbital diagrams depict spin of individual electrons within each subshell. The orbital diagrams for the first 10 elements are also shown.</p>
+<p><iframe title="Orbital diagram" src="https://rmitlibrary.github.io/cdn/learninglab/animation/orbital-diagram.html" width="600px" height="460px"></iframe><br />
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-6197">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-8804" aria-expanded="false" aria-controls="body-transcript-8804" >Transcript</button>
+</p>
+<div id="body-transcript-8804" class="accordion-collapse collapse " aria-labelledby="head-transcript-6197">
+<div class="accordion-body">
+<h2>Electron configurations and corresponding orbital diagrams</h2>
+<table border="1">
+<thead>
+<tr>
+<th>Element</th>
+<th>Electron configuration</th>
+<th>Orbital diagram</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H</td>
+<td>1s<sup>1</sup></td>
+<td>1s: ↑</td>
+</tr>
+<tr>
+<td>He</td>
+<td>1s<sup>2</sup></td>
+<td>1s: ↑↓</td>
+</tr>
+<tr>
+<td>Li</td>
+<td>1s<sup>2</sup> 2s<sup>1</sup></td>
+<td>1s: ↑↓ 2s: ↑</td>
+</tr>
+<tr>
+<td>C</td>
+<td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>2</sup></td>
+<td>1s: ↑↓ 2s: ↑↓ 2p: ↑ ↑</td>
+</tr>
+<tr>
+<td>N</td>
+<td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>3</sup></td>
+<td>1s: ↑↓ 2s: ↑↓ 2p: ↑ ↑ ↑</td>
+</tr>
+<tr>
+<td>O</td>
+<td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>4</sup></td>
+<td>1s: ↑↓ 2s: ↑↓ 2p: ↑↓ ↑ ↑</td>
+</tr>
+</tbody>
+</table>
+</div></div></div>
+<h2>Worked example – writing full electron configurations</h2>
+<p>Write the full electron configuration for \(\ce{Na}\).</p>
+<p><strong>Step 1:</strong> Determine the number of electrons. This is the same as the atomic number (<i>Z</i>).</p>
+<p>\[Z=11\]</p>
+<p>Therefore, \(\ce{Na}\) has \(11\textrm{ electrons}\).</p>
+<p><strong>Step 2:</strong> Place the electrons into orbitals according to the Aufbau principle. The first two electrons go into the \(1s\) orbital as a pair. The next two electrons are placed in the \(2s\) orbital. The next six electrons are placed in \(2p\) orbitals as three pairs. The remaining electron is placed in \(3s\) orbital.</p>
+<div style="text-align: center;">
+<p><img decoding="async" alt="Orbital diagram for sodium atom" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM3Sodium.PNG" height="100px"class="img-responsive" /></p>
+</div>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-7178">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-3420" aria-expanded="false" aria-controls="body-transcript-3420" >Transcript</button>
+</p>
+<div id="body-transcript-3420" class="accordion-collapse collapse " aria-labelledby="head-transcript-7178">
+<div class="accordion-body">
+<h3>Orbital diagram for sodium</h3>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Electron configuration</th>
+<th>Orbital diagram</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Na</td>
+<td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>1</sup></td>
+<td>1s: ↑↓ 2s: ↑↓ 2p: ↑↓ ↑↓ ↑↓ 3s: ↑</td>
+</tr>
+</tbody>
+</table>
+</div></div></div>
+<p><strong>Step 3:</strong> Convert the orbital diagram into an electron configuration, listing the subshells in order of increasing energy. Write the total number of electrons in each subshell as a superscript.</p>
+<p>\(\ce{Na}\) has the full electron configuration \(1s^{2}\,2s^{2}\,2p^{6}\,3s^{1}\).</p>
+<div class="accordion-item ">
+<h2 class="accordion-header" id="head-example-2-5398">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-example-2-1568" aria-expanded="false" aria-controls="body-example-2-1568" >Example 2</button>
+</h2>
+<div id="body-example-2-1568" class="accordion-collapse collapse " aria-labelledby="head-example-2-5398">
+<div class="accordion-body">
+Write the full electron configuration for \(\ce{Si}\) using an orbital diagram.</p>
+<p><strong>Step 1:</strong> Determine the number of electrons. This is the same as the atomic number (<i>Z</i>).</p>
+<p>\[Z=14\]</p>
+<p>Therefore, \(\ce{Si}\) has \(14\textrm{ electrons}\).</p>
+<p><strong>Step 2:</strong> Place the electrons into orbitals according to the Aufbau principle. The first two electrons go to \(1s\) orbital as a pair. The next eight electrons are placed in the second shell (\(n=2)\) as pairs. The last four electrons enter into the third shell, where the first two occupy the \(s\) orbital as a pair and the last two fill two \(p\) orbitals as single electrons.</p>
+<div style="text-align: center;">
+<p><img decoding="async" alt="Orbital diagram for silicon atom" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM3Si.PNG" height="100px"class="img-responsive" /></p>
+</div>
+<p><strong>Step 3:</strong> Convert the orbital diagram into an electron configuration, listing the subshells in order of increasing energy. Write the total number of electrons in each subshell as a superscript.</p>
+<p>\(\ce{Si}\) has the full electron configuration \(1s^{2}\,2s^{2}\,2p^{6}\,3s^{2}\,3p^{2}\).</p>
+</div></div></div>
+<h2>Worked example – writing condensed electron configurations</h2>
+<p>Write the condensed electron configuration for \(\ce{Ca}\).</p>
+<p><strong>Step 1:</strong> Use the steps in <i>Worked example – writing full electron configurations</i> to write the full electron configuration for \(\ce{Ca}\).</p>
+<p>\(\ce{Ca}\) has the full electron configuration \(1s^{2}\,2s^{2}\,2p^{6}\,3s^{2}\,3p^{6}\,4s^{2}\).</p>
+<p><strong>Step 2:</strong> Determine the full electron configuration of the previous noble gas, according to the periodic table. For \(\ce{Ca}\), the previous noble gas is \(\ce{Ar}\).</p>
+<p>\(\ce{Ar}\) has the full electron configuration \(1s^{2}\,2s^{2}\,2p^{6}\,3s^{2}\,3p^{6}\).</p>
+<p><strong>Step 3:</strong> Write the condensed electron configuration by replacing the electron configuration of \(\ce{Ar}\) within the electron configuration of \(\ce{Ca}\) with \(\textrm{[Ar]}\).</p>
+<p>\(\ce{Ca}\) has the condensed electron configuration \(\textrm{[Ar]}\,4s^{2}\).</p>
+<h2>Your turn – the electron</h2>
+<p>Test yourself on your understanding of electrons.</p>
+<p><iframe src="https://rmit.h5p.com/content/1292428095939536419/embed" aria-label="Chemistry_Electron configuration_Quiz" width="1088" height="637" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe><script src="https://rmit.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script></p>
 <p class="small" id="my-id">Images on this page by <a href="https://rmit.edu.au/">RMIT</a>, licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC 4.0</a></p>
 			<nav class="btn-nav-container" aria-label="Previous and next links">
 <h2 class="btn-nav-prev">
-    <a href="../quiz-atomic-structure/index.html">
-        <span aria-hidden="true">Quiz atomic structure</span>
-        <span class="visually-hidden">Previous page: Quiz atomic structure</span>
+    <a href="../atomic-structure/index.html">
+        <span aria-hidden="true">Atomic structure</span>
+        <span class="visually-hidden">Previous page: Atomic structure</span>
     </a>
 </h2>
     
 
 
 <h2 class="btn-nav-next">
-    <a href="../electron-configuration-quiz/index.html">
-        <span aria-hidden="true">Electron configuration quiz</span>
-        <span class="visually-hidden">Next page: Electron configuration quiz</span>
+    <a href="../quantum-numbers-address-electron/index.html">
+        <span aria-hidden="true">Quantum numbers</span>
+        <span class="visually-hidden">Next page: Quantum numbers</span>
     </a>
 </h2>
 	
 </nav><!-- .navigation -->			<div id="additional-info">
 			
+<hr class="margin-top-xl"><blockquote class="complex ">
+<a href="https://rmit.pressbooks.pub/rmitchemistrybridgingcourse/chapter/2-2-electronic-configuration/">
+<div class="content">
+<h3>Electronic configuration</h3>
+<p>Learn more about electrons and electron configurations using this helpful resource!</p>
+</div><div class="icon-wrap"><img src="https://rmitlibrary.github.io/design-system/images/icon-llcc-large.svg" alt="" /></div>
+</a></blockquote>
 			
 
 
@@ -449,7 +789,7 @@ src="https://rmitlibrary.github.io/cdn/learninglab/images/shapes-atomic-orbitals
 <!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
 <!--
 <p><strong>Subjects </strong>
-    | <strong><a href="https://lab.bitma.app/subject-area/chemistry/">Chemistry</a></strong>  
+    | <strong><a href="https://learninglab.rmit.edu.au/subject-area/chemistry/">Chemistry</a></strong>  
     </p>
 -->
 <!-- category echo end -->
@@ -509,18 +849,17 @@ src="https://rmitlibrary.github.io/cdn/learninglab/images/shapes-atomic-orbitals
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <section class="acknowledgement-container">
-                        <div class="acknowledgement-image">
-                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
-                        </div>
-
+                <section class="acknowledgement-container">
                         <div class="content">
                             <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
                             <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
-                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="#" class="link-large">More information</a>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business<span class="img-credit"> - Artwork 'Sentient' by Hollie Johnson, Gunaikurnai and Monero Ngarigo</span>.</p>
+                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                        </div>
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/sentient-hollie-johnson.jpg" alt="" />
                         </div>
                     </section>
                 </div>
@@ -600,7 +939,7 @@ src="https://rmitlibrary.github.io/cdn/learninglab/images/shapes-atomic-orbitals
 </div><!-- wrapper end -->
 		
 	
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
 <script src="../../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
 <!-- Code to handle hamburger menu, embed mode, dark mode -->

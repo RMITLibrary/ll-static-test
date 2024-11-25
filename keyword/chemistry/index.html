@@ -2,57 +2,19 @@
 <html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
 
 <head>
-<!-- 
-    DARK MODE
-    This script is placed in the <head> to ensure the theme is set as early as possible,
-    reducing the flash of unstyled content (FOUC). It determines the user's preferred
-    theme (either from local storage or system settings) and applies it immediately.
-  -->
-  <script>
-    (function() {
-      'use strict';
-
-      // Function to get the stored theme from local storage
-      const getStoredTheme = () => localStorage.getItem('theme');
-
-      // Function to determine the preferred theme
-      const getPreferredTheme = () => {
-        const storedTheme = getStoredTheme(); // Retrieve the stored theme
-        if (storedTheme) {
-          return storedTheme; // If a theme is stored, return it
-        }
-        // If no theme is stored, check the system preference for dark mode
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      // Function to apply the specified theme
-      const setTheme = theme => {
-        if (theme === 'auto') {
-          // If theme is 'auto', set it based on system preference
-          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-        } else {
-          // Otherwise, set the theme explicitly
-          document.documentElement.setAttribute('data-bs-theme', theme);
-        }
-      };
-
-      // Set the theme based on the preferred theme
-      setTheme(getPreferredTheme());
-    })();
-  </script>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- wp_head -->
-	<title>Chemistry - lab</title>
-
-		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
+	<title>Chemistry - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
-		<link rel="next" href="page/2/index.html" />
-		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/keyword\/chemistry\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/keyword\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/keyword\/chemistry\/#listItem","position":2,"name":"Chemistry","previousItem":"https:\/\/lab.bitma.app\/#listItem"}]},{"@type":"CollectionPage","@id":"https:\/\/lab.bitma.app\/keyword\/chemistry\/#collectionpage","url":"https:\/\/lab.bitma.app\/keyword\/chemistry\/","name":"Chemistry - lab","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/keyword\/chemistry\/#breadcrumblist"}},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/keyword\/chemistry\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/keyword\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/keyword\/chemistry\/#listItem","position":2,"name":"Chemistry","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"}]},{"@type":"CollectionPage","@id":"https:\/\/learninglab.rmit.edu.au\/keyword\/chemistry\/#collectionpage","url":"https:\/\/learninglab.rmit.edu.au\/keyword\/chemistry\/","name":"Chemistry - Learning Lab","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/keyword\/chemistry\/#breadcrumblist"}},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
@@ -70,25 +32,95 @@ MathJax = {
 
 </script>
 <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
-<link rel='stylesheet' id='wp-block-library-css' href='../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
-<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
-<link rel='stylesheet' id='picostrap-styles-css' href='../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+
+
+
+
+<link rel='stylesheet' id='picostrap-styles-css' href='../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=849.css' media='all' />
  	<!-- /wp_head -->
+
     
+    
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta name="author" content="RMIT Library">
+
+    <meta name="geo.position" content="-37.807778, 144.963333">
+    <meta name="geo.placename" content="Melbourne">
+    <meta name="geo.region" content="AU">
+
+    <meta name="dcterms.title" content="Learning Lab">
+    
+        <meta name="dcterms.type" content="Text">
+    <meta name="dcterms.identifier" content="../../chemistry/solutions-and-concentrations/acids-bases-and-salts/index.html">
+    <meta name="dcterms.format" content="text/html">
+    <!-- END Additional meta tags not covered by wp_head -->
+
+
+    <!-- START Additional scripts for tracking -->
+
+    <!-- Microsoft Clarity - does hotspot tracking of pages -->
+    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+
+    <!-- Google tag - (gtag.js) --> 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLHPB23GYR');
+    </script>
+
+    <!-- Microsoft Bing - Not sure how useful this is? --> 
+    <meta name="msvalidate.01" content="8E4954E1DFAB7E2F8A92DD0A0BD6ED09">
+
+    <!-- END Additional scripts for tracking -->
+
     <style>
         </style>
+
+    <!-- 
+    DARK MODE javascript
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+    -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Function to get the stored theme from local storage
+        const getStoredTheme = () => localStorage.getItem('theme');
+
+        // Function to determine the preferred theme
+        const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+            return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        // Function to apply the specified theme
+        const setTheme = theme => {
+        if (theme === 'auto') {
+            // If theme is 'auto', set it based on system preference
+            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+            // Otherwise, set the theme explicitly
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        };
+
+        // Set the theme based on the preferred theme
+        setTheme(getPreferredTheme());
+    })();
+    </script>
 </head>
 
 <body class="archive tax-keyword term-chemistry term-41 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
-	
 		
 <header>
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
@@ -155,7 +187,7 @@ MathJax = {
 </h2>
 <div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
 <div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
-<li class="page_item page-item-2534 page_item_has_children"><a href="../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../writing-fundamentals/academic-word-list-tool/index.html">Academic Word List tool</a></li>
 <li class="page_item page-item-3107 page_item_has_children"><a href="../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
 <li class="page_item page-item-2520 page_item_has_children"><a href="../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
 <li class="page_item page-item-2521"><a href="../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
@@ -200,7 +232,7 @@ MathJax = {
 									<ul>
 										<li><a href="../../art-and-design/index.html">Art and design</a></li>
 										<li><a href="../../chemistry/index.html">Chemistry</a></li>
-										<li><a href="../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../law-resources/index.html">Legal studies</a></li>
 										<li><a href="../../maths-statistics/index.html">Mathematics and statistics</a></li>
 										<li><a href="../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
 										<li><a href="../../subject-areas/physics/index.html">Physics</a></li>
@@ -259,75 +291,335 @@ MathJax = {
                             <div>
                     <ul class="list-link-expanded">
 
+                                       <script>
+                        console.log("title: " + "Acids, bases and salts");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/solutions-and-concentrations/acids-bases-and-salts/index.html">
+                                    Acids, bases and salts                                </a>
+                            </h2>
+                            <p>Acids and bases are vital chemical compounds with significant roles in both science and daily life. Acids, with their sour taste and reactivity, are found in citrus fruits and vinegar, while bases, known for their bitter taste and slipperiness, appear in cleaning products and baking soda. When acids and bases...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Alchemy to chemistry – the start of a modern science");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/introduction-chemistry/alchemy-chemistry/index.html">
+                                    Alchemy to chemistry – the start of a modern science                                </a>
+                            </h2>
+                            <p>Isaac Newton would not have said he was a scientist, but he would have said he was an alchemist, or someone who practised alchemy. In fact, it was not until 1833 that people began calling themselves &quot;scientists&quot;. Before that time, people studied natural philosophy, the study of nature, causes, astrology...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Atomic structure");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/atoms-and-atomic-structures/atomic-structure/index.html">
+                                    Atomic structure                                </a>
+                            </h2>
+                            <p>Atomic structure underpins the behaviour of elements, their interactions, and the formation of molecules. These are fundamental to chemistry, physics, and many applied sciences. This resource explains the structure of atoms, atomic numbers and mass numbers, and isotopes and atomic masses. The atomic model All atoms are composed of a...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Atoms and atomic structures");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/atoms-and-atomic-structures/index.html">
+                                    Atoms and atomic structures                                </a>
+                            </h2>
+                            <p>Everything in the universe is made of atoms. From the screen you are looking at, to the hand you are using to navigate this page, atoms are the building blocks of all matter. Let&#039;s step through what atoms are made of and how they make other molecules and compounds. This...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Atoms, molecules and compounds");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/atoms-and-atomic-structures/atoms/index.html">
+                                    Atoms, molecules and compounds                                </a>
+                            </h2>
+                            <p>Atoms are the basic building blocks of elements. They are too small to be observed by the naked eye. Let&#039;s explore atoms, and molecules and compounds. Elements are the building blocks of all matter and composed of one type of atom, such as \(\ce{He}\), \(\ce{H}\), \(\ce{C}\), \(\ce{Mg}\), and \(\ce{Fe}\). Some...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Chemical bonding");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/chemical-bonding/index.html">
+                                    Chemical bonding                                </a>
+                            </h2>
+                            <p>How do chemicals form bonds to create molecules, compounds and more? Learn about different forms of chemical bonding, and how those bonds are broken, using this resource. Overview Ionic bonding – what are ionic bonds and how do they form? How are ionic compounds named? 80 minutes to complete Covalent...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Chemical equations");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/chemical-equations/index.html">
+                                    Chemical equations                                </a>
+                            </h2>
+                            <p>Chemical equations represent chemical reactions using symbols and letters. This tutorial will teach you what the properties of chemical equations are, how to read an equation as well as how to balance an equation. Overview Chemical equations and reactions – how do equations represent the differences in substances before and...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Chemistry");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/index.html">
+                                    Chemistry                                </a>
+                            </h2>
+                            <p>Chemistry is a vital part of creating the modern world. It is the study of matter and the building blocks of everything in the universe – atoms. Chemistry is in almost every science and technology subject you can think of. These resources will help you to improve your skills in...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Chemistry today");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/introduction-chemistry/chemistry-today/index.html">
+                                    Chemistry today                                </a>
+                            </h2>
+                            <p>Chemistry is a vital part of the modern world. From DNA to space flight, virtually all parts of science and technology have a chemistry component. Studying chemistry will help you to understand the building blocks of all matter in the universe, including how substances interact with each other and form...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Covalent bonding");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/chemical-bonding/covalent-bonds/index.html">
+                                    Covalent bonding                                </a>
+                            </h2>
+                            <p>Covalent bonding is responsible for creating many substances we encounter in our daily lives. Water (\(\ce{H2O}\)) is essential for life, carbon dioxide (\(\ce{CO2}\)) is a key component of the Earth&#039;s atmosphere, and methane (\(\ce{CH4}\)) is a common fuel source. Use this resource to learn more about how covalent bonds form....</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Famous chemists and milestones");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/introduction-chemistry/famous-chemists-and-milestones/index.html">
+                                    Famous chemists and milestones                                </a>
+                            </h2>
+                            <p>Chemists have shaped the modern world in many important ways. Notable chemists Some notable chemists are: Joseph Priestley – discovered oxygen in 1774, helping to explain the combustion reaction Alfred Nobel – invented dynamite in 1866 and established the prestigious Nobel Prizes Dmitri Mendeleev – created the periodic table of...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "History of the periodic table");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/introduction-periodic-table/history-periodic-table/index.html">
+                                    History of the periodic table                                </a>
+                            </h2>
+                            <p>The periodic table contains all the elements that we know exist in the universe. It classifies elements into categories and makes predictions about elements that have not yet been found by humans. Let&#039;s take a look at some key milestones that led to it coming to its current form. From...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Introduction to chemistry");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/introduction-chemistry/index.html">
+                                    Introduction to chemistry                                </a>
+                            </h2>
+                            <p>What were the origins of chemistry? What has it done for us? Who are the stars in the field? The history of chemistry is fascinating. Let&#039;s take a quick tour through what chemistry is and some famous chemists. Overview From alchemy to chemistry – the start of a modern science...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Ionic bonding");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/chemical-bonding/chemical-bonding-ionic-bonds/index.html">
+                                    Ionic bonding                                </a>
+                            </h2>
+                            <p>Chances are you sprinkle table salt on your meals, use baking soda in your cooking, or encounter calcium carbonate in chalk. Ionic bonding explains how these substances form. Understanding ionic bonds helps us see how different materials are made and why they have certain properties. When forming bonds, atoms attempt...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Lewis structures");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/chemical-bonding/lewis-electron-dot-structure/index.html">
+                                    Lewis structures                                </a>
+                            </h2>
+                            <p>Lewis electron dot structures are crucial because they visually represent the valence electrons of atoms, helping to predict molecular bonding, structure, and reactivity in chemistry. This resource contains all you need to know to get started with these structures. Lewis structures, also known as electron dot structures, are diagrams that...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Matter");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/matter/index.html">
+                                    Matter                                </a>
+                            </h2>
+                            <p>Matter is anything that has mass and occupies space. It includes things that can be seen (all living and non-living, natural and synthetic things) and cannot be seen to the naked eye (e.g. air and microorganisms). Studying chemistry always begins with understanding how matter behaves and is classified. Overview States...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Physical and chemical changes");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/matter/physical-chemical-changes/index.html">
+                                    Physical and chemical changes                                </a>
+                            </h2>
+                            <p>Matter is dynamic in nature. Explore how it undergoes physical and chemical changes, including transformations between different states such as melting, freezing, and evaporating. Physical change A physical change is when the substance changes its physical appearance or state without affecting its chemical identity. Examples of physical changes include: the...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Quantum numbers");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/atoms-and-atomic-structures/quantum-numbers-address-electron/index.html">
+                                    Quantum numbers                                </a>
+                            </h2>
+                            <p>Quantum numbers are used to describe orbitals. They serve as an &quot;address&quot; for locating an electron within an atom, specifying its energy level, shape, orientation, and spin. Therefore, they provide a detailed understanding of the regions in an atom where electrons are likely to be found, which is crucial for...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Quiz – Covalent bonding and Lewis structures");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/chemical-bonding/covalent-bonding-lewis-structures-quiz/index.html">
+                                    Quiz – Covalent bonding and Lewis structures                                </a>
+                            </h2>
+                            <p>Covalent bonding is a fundamental concept in chemistry that explains how atoms share electrons to form molecules. Molecular substances can be represented using Lewis structures. Test your understanding of Lewis structures and covalent compounds with this quiz. Your turn – covalent bonding and Lewis structures Draw the Lewis structures of...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Quiz – Quantum numbers");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/atoms-and-atomic-structures/quiz-quantum-numbers/index.html">
+                                    Quiz – Quantum numbers                                </a>
+                            </h2>
+                            <p>Quantum numbers provide a detailed framework for describing the arrangement and behavior of electrons in atoms. Test your understanding of quantum numbers with a quiz. Your turn – quantum numbers If \(n=5\), what are the possible values for \(\ell\)? For a certain electron, \(\ell=0\). What is the shape of the...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Quiz – Redox reactions");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/chemical-equations/redox-reactions-exercises/index.html">
+                                    Quiz – Redox reactions                                </a>
+                            </h2>
+                            <p>Redox reactions, which involve the transfer of electrons between substances, are fundamental to understanding processes like combustion, respiration, and corrosion. Test your understanding of redox reactions with a quiz. Your turn – redox reactions For questions 1—10, determine the oxidation numbers for the elements indicated. \(\ce{F}\) in \(\ce{F}_{2}\) \(\ce{Ca}\) in...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Quiz – The mole");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/working-with-quantities/mole-quiz/index.html">
+                                    Quiz – The mole                                </a>
+                            </h2>
+                            <p>The ability to complete calculations using moles is very important in chemistry. Test yourself with a quiz. Your turn – mole calculations Aspirin has the formula \(\ce{C}_{9}\ce{H}_{8}\ce{O}_{4}\). Calculate the mass of aspirin in grams present in \(0.650\textrm{ mol}\) of aspirin. The molar masses of \(\ce{C}\), \(\ce{H}\) and \(\ce{O}\) are \(12.01\textrm{...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Solubility");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/solutions-and-concentrations/solutions/index.html">
+                                    Solubility                                </a>
+                            </h2>
+                            <p>Solubility is the measure of how well a solute can dissolve in a solvent to form a solution. It dictates how substances dissolve and interact, impacting fields like pharmaceuticals, environmental science, cooking, and chemical reactions. Understanding solubility allows for better control and optimisation of processes in these areas. Solutes, solvents...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Solutions and concentration");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/solutions-and-concentrations/index.html">
+                                    Solutions and concentration                                </a>
+                            </h2>
+                            <p>Solutions and concentration are fundamental concepts in chemistry that describe how substances mix and interact. From the sugar dissolving in your morning coffee to the saline solution used in medical treatments, understanding how solutes and solvents work together is essential for grasping how mixtures are formed and how their concentrations...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "States and properties of matter");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/matter/states-properties-matter/index.html">
+                                    States and properties of matter                                </a>
+                            </h2>
+                            <p>In the study of chemistry, matter is the essential substance that makes up everything in our universe. Learn the basics of matter using this resource, including its states, properties and classification. Physical states of matter Matter exists in three physical states: solid, liquid and gas. Solid: The particles in a...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Stoichiometry");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/working-with-quantities/stoichiometry/index.html">
+                                    Stoichiometry                                </a>
+                            </h2>
+                            <p>In our daily lives, from the food we eat to the fuel that powers our vehicles, stoichiometry plays a crucial role in ensuring that chemical processes are efficient and effective. Improve your knowledge of stoichiometry by using this resource to learn about the stoichiometric coefficient, the molar ratio and chemical...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Strength of acids and bases");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/solutions-and-concentrations/strength-acids-and-bases/index.html">
+                                    Strength of acids and bases                                </a>
+                            </h2>
+                            <p>The strengths of acids and bases determine their reactivity and dissociation in solution. Strong acids and bases, like hydrochloric acid and sodium hydroxide, completely dissociate, while weak ones, like acetic acid and ammonia, only partially dissociate. Recognising these strengths is key to understanding their behaviour in chemical reactions and their...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "The electron");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/atoms-and-atomic-structures/electron/index.html">
+                                    The electron                                </a>
+                            </h2>
+                            <p>Electrons are fundamental subatomic particles with a negative electric charge. They play a crucial role in many aspects of science and technology. Bohr planetary (particle) model and Schrödinger&#039;s wave mechanical model Electrons have historically been described as tiny particles that revolve around the nucleus in circular orbits similar to the...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "The mole");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/working-with-quantities/mole-unit-measurement/index.html">
+                                    The mole                                </a>
+                            </h2>
+                            <p>The mole (\(n\)) is an important unit of measurement in chemistry because it allows scientists to count and quantify atoms, molecules, and ions in a given sample. This then allows them to perform calculations relating to chemical reactions. In everyday language, we use \(1\) dozen \(=12\) object, \(1\) dozen \(=10\)...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "The periodic table");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/introduction-periodic-table/index.html">
+                                    The periodic table                                </a>
+                            </h2>
+                            <p>The periodic table, also known as the periodic table of elements, elegantly arranges the building blocks of the universe. It reveals patterns and relationships that govern the elements and their interactions. Use this resource to explore how this essential tool has transformed our understanding of the natural world, including the...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "The structure of the periodic table");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/introduction-periodic-table/arrangement-periodic-table/index.html">
+                                    The structure of the periodic table                                </a>
+                            </h2>
+                            <p>The periodic table is more than just a list of elements; it is a structured map that reveals patterns and relationships among them. By examining the arrangement of elements, we gain valuable insights into their properties and behaviours. The periodic table arranges elements in order of increasing atomic number. The...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Trends in the periodic table");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../chemistry/introduction-periodic-table/trends-periodic-table/index.html">
+                                    Trends in the periodic table                                </a>
+                            </h2>
+                            <p>The periodic table not only organises elements based on their atomic structure but also highlights recurring patterns in their properties. These trends, observed across periods and groups, provide insights into the behaviour of elements and their interactions with others. Some key trends emerge from the periodic table, including how atomic...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Units and conversions");
+                    </script>
                                             <li>
                             <h2 class="h3">
                                 <a href="../../chemistry/working-with-quantities/units/index.html">
                                     Units and conversions                                </a>
                             </h2>
                             <p>Units are used to describe physical quantities. Being able to express units in the most appropriate way is crucial for scientific research, engineering, everyday tasks, and effective communication across measurement systems. If you expressed a quantity without a unit, it wouldn&#039;t mean much. Let&#039;s say that you tell a friend...</p>
-                        </li>
-                                            <li>
-                            <h2 class="h3">
-                                <a href="../../chemistry/matter/exercise-units/index.html">
-                                    Exercise - units and conversions                                </a>
-                            </h2>
-                            <p>Try these exercises to test your knowledge of units and conversions. Worked Exercises Write conversion factors for the following units: a) Litres and millilitres b) Ounces and grams. Convert \(3.500lb\) pounds to grams (\(1lb=454g\)). Exercises Write the conversion factors for the following: 1. Centimetres and metres 2. micromoles and moles...</p>
-                        </li>
-                                            <li>
-                            <h2 class="h3">
-                                <a href="../../chemistry/solutions-and-concentrations/acids-bases-and-salts/index.html">
-                                    Acids, bases and salts                                </a>
-                            </h2>
-                            <p>Learn how to define an acid, base and a salt. Understand where they come from and how to measure them. \[\require{mhchem}\] Arrhenius acid-base theory Arrhenius acid: Any substance that contains hydrogen and generates hydrogen ions in water. Examples - \(\ce{HCl}\) and \(\ce{HNO}_{3}\). \[ \ce{HNO}_{3}\left(l\right)\rightarrow\ce{H}^{+}\left(aq\right)+\ce{NO}_{3}^{-}\left(aq\right) \] \[ \ce{HCl}\left(g\right)\rightarrow\ce{H}^{+}\left(aq\right)+\ce{Cl}^{-}\left(aq\right) \] Arrhenius base:...</p>
-                        </li>
-                                            <li>
-                            <h2 class="h3">
-                                <a href="../../chemistry/solutions-and-concentrations/strength-acids-and-bases/index.html">
-                                    Strength of acids and bases                                </a>
-                            </h2>
-                            <p>What is the difference between a strong and a weak acid? How can you tell the strength of a base? The information on this page will provide the answers to these questions. \[\require{mhchem}\] Strong acids and weak acids Acids can be categorised as strong acids or weak acids, depending on...</p>
-                        </li>
-                                            <li>
-                            <h2 class="h3">
-                                <a href="../../chemistry/working-with-quantities/stoichiometry/index.html">
-                                    Stoichiometry                                </a>
-                            </h2>
-                            <p>\[\require{mhchem}\] Stoichiometry describes the relationship between relative quantities of reactants and products in a balanced chemical equation. Improve your knowledge of stoichiometry with the information on this page by learning about the stoichiometric coefficient, the molar ratio and chemical equations. Stoichiometric coefficient The stoichiometric coefficient is the number written immediately...</p>
-                        </li>
-                                            <li>
-                            <h2 class="h3">
-                                <a href="../../chemistry/chemical-equations/index.html">
-                                    Chemical equations                                </a>
-                            </h2>
-                            <p>Chemical equations represent chemical reactions using symbols and letters. This tutorial will teach you what the properties of chemical equations are, how to read an equation as well as how to balance an equation. Tutorial overview Chemical equations and reactions - how do equations represent the differences in substances before...</p>
-                        </li>
-                                            <li>
-                            <h2 class="h3">
-                                <a href="../../chemistry/solutions-and-concentrations/index.html">
-                                    Solutions and concentrations                                </a>
-                            </h2>
-                            <p>In chemistry, we use solutes, solutions and concentrations to describe different substances. There are also units we use to measure different concentrations. Use these units to learn more or brush up on your knowledge. Take this tutorial to learn what a solute is and how it relates to a solution...</p>
-                        </li>
-                                            <li>
-                            <h2 class="h3">
-                                <a href="../../chemistry/solutions-and-concentrations/solutions/index.html">
-                                    Solutions                                </a>
-                            </h2>
-                            <p>A solution is composed of a solute and a solvent. When we dissolve a solute in a solvent, we can obtain a solution. \[\require{mhchem}\] Solute, solvent and solution A solution is composed of a solute and a solvent. When we dissolve a solute in a solvent, we can obtain a...</p>
-                        </li>
-                                            <li>
-                            <h2 class="h3">
-                                <a href="../../chemistry/chemical-equations/redox-reactions-exercises/index.html">
-                                    Redox reactions - exercises                                </a>
-                            </h2>
-                            <p>\[\require{mhchem}\] Redox reactions, which involve the transfer of electrons between substances, are fundamental to understanding processes like combustion, respiration, and corrosion. Try the exercises on this page to test your knowledge. Determine the oxidation number of each of the following \(\ce{F}\) in \(\ce{F}_{2}\) \(\ce{Ca}\) in \(\ce{Ca}^{2+}\) \(\ce{S}\) in \(\ce{SO}_{3}\) \(\ce{P}\)...</p>
-                        </li>
-                                            <li>
-                            <h2 class="h3">
-                                <a href="../../chemistry/chemical-bonding/lewis-structure-exercises/index.html">
-                                    Lewis structure exercises                                </a>
-                            </h2>
-                            <p>\[\require{mhchem}\] Practise drawing the Lewis structure of molecules using the exercises below. Select answers to see the correct drawings. Draw the Lewis structures of the following molecules. \(\ce{SO}_{3}\) \(\ce{COCl}_{2}\) \(\ce{HF}\) \(\ce{SF}_{6}\) \(\ce{CS}_{2}\) \(\ce{SeF}_{4}\) \(\ce{AlCl}_{3}\) \(\ce{Cl}_{2}\ce{O}\) \(\ce{SiBr}_{4}\) \(\ce{N}_{2}\ce{O}\) 2. Draw the Lewis structures of the following polyatomic ions \(\ce{SO}_{3}^{2-}\) \(\ce{PO}_{4}^{3-}\) \(\ce{NO}_{2}^{-}\)...</p>
                         </li>
                                         </ul>
                 </div>
@@ -380,18 +672,17 @@ MathJax = {
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <section class="acknowledgement-container">
-                        <div class="acknowledgement-image">
-                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
-                        </div>
-
+                <section class="acknowledgement-container">
                         <div class="content">
                             <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
                             <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
-                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="#" class="link-large">More information</a>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business<span class="img-credit"> - Artwork 'Sentient' by Hollie Johnson, Gunaikurnai and Monero Ngarigo</span>.</p>
+                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                        </div>
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/sentient-hollie-johnson.jpg" alt="" />
                         </div>
                     </section>
                 </div>
@@ -471,7 +762,7 @@ MathJax = {
 </div><!-- wrapper end -->
 		
 	
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
 <script src="../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
 <!-- Code to handle hamburger menu, embed mode, dark mode -->

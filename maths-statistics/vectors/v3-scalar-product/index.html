@@ -2,68 +2,31 @@
 <html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
 
 <head>
-<!-- 
-    DARK MODE
-    This script is placed in the <head> to ensure the theme is set as early as possible,
-    reducing the flash of unstyled content (FOUC). It determines the user's preferred
-    theme (either from local storage or system settings) and applies it immediately.
-  -->
-  <script>
-    (function() {
-      'use strict';
-
-      // Function to get the stored theme from local storage
-      const getStoredTheme = () => localStorage.getItem('theme');
-
-      // Function to determine the preferred theme
-      const getPreferredTheme = () => {
-        const storedTheme = getStoredTheme(); // Retrieve the stored theme
-        if (storedTheme) {
-          return storedTheme; // If a theme is stored, return it
-        }
-        // If no theme is stored, check the system preference for dark mode
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      // Function to apply the specified theme
-      const setTheme = theme => {
-        if (theme === 'auto') {
-          // If theme is 'auto', set it based on system preference
-          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-        } else {
-          // Otherwise, set the theme explicitly
-          document.documentElement.setAttribute('data-bs-theme', theme);
-        }
-      };
-
-      // Set the theme based on the preferred theme
-      setTheme(getPreferredTheme());
-    })();
-  </script>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- wp_head -->
-	<title>V3 Scalar product - lab</title>
-
-		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
+	<title>V3: Scalar product - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		
 		<meta name="description" content="What is a scalar product? What is a dot product? This is the result of multiplying the magnitudes of the components of two or more vectors. The result is not a vector, but a scalar (which is without direction). There are two ways to multiply two vectors: The scalar or dot product which gives a" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
-		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		
 		<meta property="og:locale" content="en_US" />
-		<meta property="og:site_name" content="lab -" />
+		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="V3 Scalar product - lab" />
+		<meta property="og:title" content="V3: Scalar product - Learning Lab" />
 		<meta property="og:description" content="What is a scalar product? What is a dot product? This is the result of multiplying the magnitudes of the components of two or more vectors. The result is not a vector, but a scalar (which is without direction). There are two ways to multiply two vectors: The scalar or dot product which gives a" />
-		<meta property="og:url" content="https://lab.bitma.app/maths-statistics/vectors/v3-scalar-product/" />
+		<meta property="og:url" content="https://learninglab.rmit.edu.au/maths-statistics/vectors/v3-scalar-product/" />
 		<meta property="article:published_time" content="2023-10-16T05:34:55+00:00" />
-		<meta property="article:modified_time" content="2024-08-22T02:41:10+00:00" />
+		<meta property="article:modified_time" content="2024-11-25T01:13:00+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="V3 Scalar product - lab" />
+		<meta name="twitter:title" content="V3: Scalar product - Learning Lab" />
 		<meta name="twitter:description" content="What is a scalar product? What is a dot product? This is the result of multiplying the magnitudes of the components of two or more vectors. The result is not a vector, but a scalar (which is without direction). There are two ways to multiply two vectors: The scalar or dot product which gives a" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/maths-statistics\/vectors\/v3-scalar-product\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/lab.bitma.app\/maths-statistics\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/vectors\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/vectors\/#listItem","position":3,"name":"Vectors","item":"https:\/\/lab.bitma.app\/maths-statistics\/vectors\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/vectors\/v3-scalar-product\/#listItem","previousItem":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/vectors\/v3-scalar-product\/#listItem","position":4,"name":"V3 Scalar product","previousItem":"https:\/\/lab.bitma.app\/maths-statistics\/vectors\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/maths-statistics\/vectors\/v3-scalar-product\/#webpage","url":"https:\/\/lab.bitma.app\/maths-statistics\/vectors\/v3-scalar-product\/","name":"V3 Scalar product - lab","description":"What is a scalar product? What is a dot product? This is the result of multiplying the magnitudes of the components of two or more vectors. The result is not a vector, but a scalar (which is without direction). There are two ways to multiply two vectors: The scalar or dot product which gives a","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/maths-statistics\/vectors\/v3-scalar-product\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:55+00:00","dateModified":"2024-08-22T02:41:10+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/vectors\/v3-scalar-product\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/vectors\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/vectors\/#listItem","position":3,"name":"Vectors","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/vectors\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/vectors\/v3-scalar-product\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/vectors\/v3-scalar-product\/#listItem","position":4,"name":"V3: Scalar product","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/vectors\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/vectors\/v3-scalar-product\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/vectors\/v3-scalar-product\/","name":"V3: Scalar product - Learning Lab","description":"What is a scalar product? What is a dot product? This is the result of multiplying the magnitudes of the components of two or more vectors. The result is not a vector, but a scalar (which is without direction). There are two ways to multiply two vectors: The scalar or dot product which gives a","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/vectors\/v3-scalar-product\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:55+00:00","dateModified":"2024-11-25T01:13:00+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
@@ -81,25 +44,96 @@ MathJax = {
 
 </script>
 <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
-<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
-<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
-<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+
+
+
+
+<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=849.css' media='all' />
  	<!-- /wp_head -->
+
     
+    
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta name="author" content="RMIT Library">
+
+    <meta name="geo.position" content="-37.807778, 144.963333">
+    <meta name="geo.placename" content="Melbourne">
+    <meta name="geo.region" content="AU">
+
+    <meta name="dcterms.title" content="Learning Lab">
+    
+    <meta name="dcterms.description" content="What is a scalar product? What is a dot product? This is the result of multiplying the magnitudes of the components of two or more vectors. The result is not a vector, but a scalar (which is without direction). There are two ways to multiply two vectors: The scalar or...">
+    <meta name="dcterms.type" content="Text">
+    <meta name="dcterms.identifier" content="https://learninglab.rmit.edu.au/maths-statistics/vectors/v3-scalar-product/">
+    <meta name="dcterms.format" content="text/html">
+    <!-- END Additional meta tags not covered by wp_head -->
+
+
+    <!-- START Additional scripts for tracking -->
+
+    <!-- Microsoft Clarity - does hotspot tracking of pages -->
+    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+
+    <!-- Google tag - (gtag.js) --> 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLHPB23GYR');
+    </script>
+
+    <!-- Microsoft Bing - Not sure how useful this is? --> 
+    <meta name="msvalidate.01" content="8E4954E1DFAB7E2F8A92DD0A0BD6ED09">
+
+    <!-- END Additional scripts for tracking -->
+
     <style>
         </style>
+
+    <!-- 
+    DARK MODE javascript
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+    -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Function to get the stored theme from local storage
+        const getStoredTheme = () => localStorage.getItem('theme');
+
+        // Function to determine the preferred theme
+        const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+            return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        // Function to apply the specified theme
+        const setTheme = theme => {
+        if (theme === 'auto') {
+            // If theme is 'auto', set it based on system preference
+            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+            // Otherwise, set the theme explicitly
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        };
+
+        // Set the theme based on the preferred theme
+        setTheme(getPreferredTheme());
+    })();
+    </script>
 </head>
 
 <body class="page-template-default page page-id-3279 page-child parent-pageid-2628 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
-	
 		
 <header>
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
@@ -166,7 +200,7 @@ MathJax = {
 </h2>
 <div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
 <div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
-<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic Word List tool</a></li>
 <li class="page_item page-item-3107 page_item_has_children"><a href="../../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
 <li class="page_item page-item-2520 page_item_has_children"><a href="../../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
 <li class="page_item page-item-2521"><a href="../../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
@@ -211,7 +245,7 @@ MathJax = {
 									<ul>
 										<li><a href="../../../art-and-design/index.html">Art and design</a></li>
 										<li><a href="../../../chemistry/index.html">Chemistry</a></li>
-										<li><a href="../../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../../law-resources/index.html">Legal studies</a></li>
 										<li><a href="../../index.html">Mathematics and statistics</a></li>
 										<li><a href="../../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
 										<li><a href="../../../subject-areas/physics/index.html">Physics</a></li>
@@ -275,7 +309,7 @@ This should be moved to a stylesheet once style is determined. -->
 <!-- START SIDEBAR NAV PANEL -->
 <nav class="right-nav" aria-label="Section Menu">
 
-<h2><a href="../../index.html">Maths and statistics</a></h2><h3><a href="../index.html">Vectors</a></h3><ul><li><a href="../v1-introduction-vectors/index.html">V1 Introduction to vectors</a></li><li><a href="../v2-resolution-vectors/index.html">V2 Resolution of vectors</a></li><li><a href="index.html" class="selected"  aria-current="page">V3 Scalar product</a><li><a href="../v4-vector-product/index.html">V4 Vector product</a></li><li><a href="../v5-projection-vectors/index.html">V5 Projection of vectors</a></li><li><a href="../v6-vector-equation-line/index.html">V6 Vector equation of a line</a></li><li><a href="../v7-intersecting-lines-3d/index.html">V7 Intersecting lines in 3D</a></li><li><a href="../v8-equation-plane/index.html">V8 Equation of a plane</a></li><li><a href="../v9-intersecting-planes/index.html">V9 Intersecting planes</a></li><li><a href="../v10-distance-point-plane/index.html">V10 Distance from a point to a plane</a></li><li><a href="../v11-directional-derivatives/index.html">V11 Directional derivatives</a></li><li><a href="../pv11-addition-vectors/index.html">PV1.1 Addition of vectors</a></li></ul></nav>
+<h2><a href="../../index.html">Maths and statistics</a></h2><h3><a href="../index.html">Vectors</a></h3><ul><li><a href="../v1-introduction-vectors/index.html">Introduction to vectors</a></li><li><a href="../v2-resolution-vectors/index.html">Resolution of vectors</a></li><li><a href="index.html" class="selected"  aria-current="page">Scalar product</a><li><a href="../v4-vector-product/index.html">V4 Vector product</a></li><li><a href="../v5-projection-vectors/index.html">V5 Projection of vectors</a></li><li><a href="../v6-vector-equation-line/index.html">V6 Vector equation of a line</a></li><li><a href="../v7-intersecting-lines-3d/index.html">V7 Intersecting lines in 3D</a></li><li><a href="../v8-equation-plane/index.html">V8 Equation of a plane</a></li><li><a href="../v9-intersecting-planes/index.html">V9 Intersecting planes</a></li><li><a href="../v10-distance-point-plane/index.html">V10 Distance from a point to a plane</a></li><li><a href="../v11-directional-derivatives/index.html">V11 Directional derivatives</a></li><li><a href="../pv11-addition-vectors/index.html">PV1.1 Addition of vectors</a></li></ul></nav>
 <!-- END SIDEBAR NAV PANEL -->
 
 
@@ -318,8 +352,14 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li><a href="../index.html">Vectors</a></li>
 </ul>
 </nav>            <a id="main-content"></a>
-            <h1 class="margin-top-zero">V3 Scalar product</h1>
-            <p><span class="marginnote"><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-v3-00.png" alt="" /></span></p>
+            <h1 class="margin-top-zero">V3: Scalar product</h1>
+            <figure class="float-right ">
+
+<img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-v3-00.png" alt="" />
+
+
+</figure>
+
 <p class="lead">What is a scalar product? What is a dot product? This is the result of multiplying the magnitudes of the components of two or more vectors. The result is not a vector, but a scalar (which is without direction).</p>
 <p>There are two ways to multiply two vectors:</p>
 <ol style="list-style-type: decimal;">
@@ -327,12 +367,9 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li>The vector or cross product which gives a vector.</li>
 </ol>
 <p>In this module we consider the scalar or dot product.</p>
-<div id="definition" class="section level1">
 <h2>Definition</h2>
 <p>The scalar, or dot, product of two vectors <span class="math inline">\(\vec{a}\left(a_{1},a_{2},a_{3}\right)\)</span> and <span class="math inline">\(\vec{b}\left(b_{1},b_{2},b_{3}\right)\)</span> is a scalar, defined by: <span class="math display">\[ \vec{a}\cdot\vec{b}=a_{1}b_{1}+a_{2}b_{2}+a_{3}b_{3} \]</span> or geometrically, <span class="math display">\[ \vec{a}\cdot\vec{b}=\left|\vec{a}\right|\left|\vec{b}\right|\cos\theta \]</span> where <span class="math inline">\(\theta\)</span> is the angle between <span class="math inline">\(\vec{a}\)</span> and <span class="math inline">\(\vec{b}\)</span>.</p>
 <p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-v3-01.png" alt="Angle theta between two vectors a and b" /></p>
-</div>
-<div id="properties-of-the-scalar-or-dot-product" class="section level1">
 <h2>Properties of the scalar or dot product</h2>
 <ol style="list-style-type: decimal;">
 <li>If <span class="math inline">\(\vec{a}\)</span> and <span class="math inline">\(\vec{b}\)</span> are non-zero vectors and <span class="math inline">\(\vec{a}\)</span> is perpendicular<span class="sidenote"><span class="sidenote-number">1</span> Perpendicular means at right angles to. A right angle is <span class="math inline">\(90^{\circ}=\pi/2.\)</span></span> to <span class="math inline">\(\vec{b}\)</span> then <span class="math inline">\(\vec{a}\cdot\vec{b}=0,\)</span> since <span class="math inline">\(\cos\left(\frac{\pi}{2}\right)=0\)</span>.</li>
@@ -340,7 +377,6 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li>The dot product does not depend on the order of multiplication: <span class="math display">\[ \vec{a}\cdot\vec{b}=\vec{b}\cdot\vec{a} \]</span></li>
 <li>In three dimensions with <span class="math inline">\(\hat{i},\)</span> <span class="math inline">\(\hat{j}\)</span> and <span class="math inline">\(\hat{k}\)</span> unit vectors along the <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span> and <span class="math inline">\(z\)</span> axes respectively, we have: <span class="math display">\[\begin{align*} \vec{i}\cdot\vec{j} &amp; =\vec{j}\cdot\vec{k}=\vec{k}\cdot\vec{i}=0\\ \vec{i}\cdot\vec{i} &amp; =\vec{j}\cdot\vec{j}=\vec{k}\cdot\vec{k}=1 \end{align*}\]</span></li>
 </ol>
-<div id="examples" class="section level2">
 <h3>Examples</h3>
 <ol style="list-style-type: decimal;">
 <li><span class="math inline">\(\left(2\vec{i}+3\vec{j}+4\vec{k}\right)\cdot\left(-\vec{i}-2\vec{j}+\vec{k}\right)=\left(2\times\left(-1\right)\right)+\left(3\times\left(-2\right)\right)+\left(4\times1\right)=-4\)</span></li>
@@ -349,12 +385,8 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li><span class="math inline">\(\left(2\vec{i}+4\vec{k}\right)\cdot\left(-3\vec{i}-2\vec{j}\right)=2\times\left(-3\right)+0\times\left(-2\right)+4\times0=-6\)</span></li>
 </ol>
 <p>See Exercises 1, 2, and 3.</p>
-</div>
-</div>
-<div id="angle-between-two-vectors" class="section level1">
 <h2>Angle between two vectors</h2>
 <p>The angle <span class="math inline">\(\theta,\left(0\leq\theta\leq\pi\right)\)</span>, between two vectors can be found using the definition of the dot product: <span class="math display">\[\begin{align*} \vec{a}\cdot\vec{b} &amp; =\mid\vec{a}\mid\mid\vec{b}\mid\cos\theta. \end{align*}\]</span> Rearranging, <span class="math display">\[\begin{align*} \cos\theta &amp; =\frac{\vec{a}\cdot\vec{b}}{\mid\vec{a}\mid\mid\vec{b}\mid} \end{align*}\]</span> and <span class="math display">\[\begin{align*} \theta &amp; =\cos^{-1}\left(\frac{\vec{a}\cdot\vec{b}}{\mid\vec{a}\mid\mid\vec{b}\mid}\right). \end{align*}\]</span></p>
-<div id="examples-1" class="section level2">
 <h3>Examples</h3>
 <ol style="list-style-type: decimal;">
 <li>If <span class="math inline">\(\vec{a}=\left(2,3,1\right)\)</span> and <span class="math inline">\(\vec{b}=\left(5,-2,2\right)\)</span> find the angle <span class="math inline">\(\theta\)</span>, between <span class="math inline">\(\vec{a}\)</span> and <span class="math inline">\(\vec{b}\)</span> <span class="math display">\[\begin{align*} \theta &amp; =\cos^{-1}\left(\frac{\vec{a}\cdot\vec{b}}{\mid\vec{a}\mid\mid\vec{b}\mid}\right)\\ \vec{a}\cdot\vec{b} &amp; =\left(2,3,1\right)\cdot\left(5,-2,2\right)=6\\ \mid\vec{a}\mid &amp; =\sqrt{2^{2}+3^{2}+1^{2}}=\sqrt{14},\mid\vec{b}\mid=\sqrt{25+4+4}=\sqrt{33}\\ \theta &amp; =\cos^{-1}\left(\frac{6}{\sqrt{33}\times\sqrt{14}}\right)\\ &amp; =\cos^{-1}\left(0.2791\right)\\ \theta &amp; =73.8^{\circ}. \end{align*}\]</span> The angle between <span class="math inline">\(\vec{a}\)</span> and <span class="math inline">\(\vec{b}\)</span> is <span class="math inline">\(73.8^{\circ}\)</span>.</li>
@@ -362,54 +394,45 @@ list.querySelectorAll('h4').forEach(h4 => {
 </ol>
 <p>The angle between <span class="math inline">\(\vec{a}\)</span> and <span class="math inline">\(\vec{b}\)</span> is <span class="math inline">\(106.8^{\circ}\)</span>.</p>
 <p>See Exercises 4 and 5.</p>
-</div>
-</div>
-<div id="exercise-1" class="section level1">
 <h2>Exercise 1</h2>
 <p>Calculate the dot product of:</p>
 <p><span class="math inline">\(\text{(a) $\left(2,5,-1\right)$ and $\left(4,1,1\right)$ }\)</span></p>
 <p><span class="math inline">\(\text{(b) $3\vec{i}$ }\)</span> and <span class="math inline">\(5\vec{j}\)</span></p>
 <p><span class="math inline">\(\text{(c)}\)</span> <span class="math inline">\(5\vec{k}\)</span> and <span class="math inline">\(\left(\vec{j}+2\vec{k}\right)\)</span></p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answers-1709">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-3638" aria-expanded="false" aria-controls="body-answers-3638" >Answers</button>
+<p class="accordion-header" id="head-answers-3153">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-9773" aria-expanded="false" aria-controls="body-answers-9773" >Answers</button>
 </p>
-<div id="body-answers-3638" class="accordion-collapse collapse " aria-labelledby="head-answers-1709">
+<div id="body-answers-9773" class="accordion-collapse collapse " aria-labelledby="head-answers-3153">
 <div class="accordion-body">
 <p><span class="math inline">\(\text{(a) 12}\quad\text{(b) $0\quad\text{(c) $10$ }$ }\)</span></p>
 </div></div></div>
-</div>
-<div id="exercise-2" class="section level1">
 <h2>Exercise 2</h2>
 <p>Find:</p>
 <p><span class="math inline">\(\text{(a)$\,\left(2,0,4\right)\cdot\left(-3,1,3\right)$ }\)</span></p>
 <p><span class="math inline">\(\text{(b)$\,\left(0,5,1\right)\cdot\left(4,0,0\right)$ }\)</span></p>
 <p><span class="math inline">\(\text{(c)$\,\left(2\vec{i}+3\vec{k}\right)\cdot\left(7\vec{i}+2\vec{j}+4\vec{k}\right)$ }\)</span></p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answers-8508">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-4055" aria-expanded="false" aria-controls="body-answers-4055" >Answers</button>
+<p class="accordion-header" id="head-answers-2492">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-1252" aria-expanded="false" aria-controls="body-answers-1252" >Answers</button>
 </p>
-<div id="body-answers-4055" class="accordion-collapse collapse " aria-labelledby="head-answers-8508">
+<div id="body-answers-1252" class="accordion-collapse collapse " aria-labelledby="head-answers-2492">
 <div class="accordion-body">
 <p><span class="math inline">\(\text{(a) 6}\quad\text{(b) $0\quad\text{(c) $26$ }$ }\)</span></p>
 </div></div></div>
-</div>
-<div id="exercise-3" class="section level1">
 <h2>Exercise 3</h2>
 <p>Which of the following vectors are perpendicular?</p>
 <p><span class="math inline">\(\text{(a)}\,\left(5,2,3\right)\)</span></p>
 <p><span class="math inline">\(\text{(b)}\,\left(0,1,-1\right)\)</span></p>
 <p><span class="math inline">\(\text{(c)}\,\left(-2,2,2\right)\)</span></p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answers-4382">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-4324" aria-expanded="false" aria-controls="body-answers-4324" >Answers</button>
+<p class="accordion-header" id="head-answers-5072">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-5814" aria-expanded="false" aria-controls="body-answers-5814" >Answers</button>
 </p>
-<div id="body-answers-4324" class="accordion-collapse collapse " aria-labelledby="head-answers-4382">
+<div id="body-answers-5814" class="accordion-collapse collapse " aria-labelledby="head-answers-5072">
 <div class="accordion-body">
 <p><span class="math inline">\(\text{(a) and (c), (b) and (c)}\)</span></p>
 </div></div></div>
-</div>
-<div id="exercise-4" class="section level1">
 <h2>Exercise 4</h2>
 <p>Find the angle between the following pairs of vectors:</p>
 <p><span class="math inline">\(\text{(a)}\,\left(1,2,3\right)\ \)</span>and <span class="math inline">\(\left(4,-1,0\right)\)</span></p>
@@ -419,35 +442,31 @@ list.querySelectorAll('h4').forEach(h4 => {
 <p><span class="math inline">\(\text{(e)}\,\left(2,1,-2\right)\ \)</span>and <span class="math inline">\(\left(0,4,0\right)\)</span></p>
 <p><span class="math inline">\(\text{(f)}\,\left(0,3,0\right)\ \)</span>and <span class="math inline">\(\left(0,1,0\right)\)</span></p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answers-1198">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-7184" aria-expanded="false" aria-controls="body-answers-7184" >Answers</button>
+<p class="accordion-header" id="head-answers-4858">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-6972" aria-expanded="false" aria-controls="body-answers-6972" >Answers</button>
 </p>
-<div id="body-answers-7184" class="accordion-collapse collapse " aria-labelledby="head-answers-1198">
+<div id="body-answers-6972" class="accordion-collapse collapse " aria-labelledby="head-answers-4858">
 <div class="accordion-body">
 <p><span class="math inline">\(\text{(a)$\,82.6^{\circ}\quad\text{(b)$\,54.7^{\circ}\quad\text{(c)$\,90^{\circ}\quad\text{(d)$\,141.8^{\circ}\quad\text{(e)$\,$ $70.5^{\circ}\quad\text{(f)$\,0^{\circ}$ }$ }$ }$ }$ }$ }\)</span></p>
 </div></div></div>
-</div>
-<div id="exercise-5" class="section level1">
 <h2>Exercise 5</h2>
 <p>If <span class="math inline">\(\vec{a}=\left(2,2,2\right),\,\vec{b}=\left(3,2,-1\right),\)</span> and <span class="math inline">\(\vec{c}=\left(-1,4,1\right),\)</span></p>
 <p><span class="math inline">\(\text{(a)$\,$ }\)</span>Show <span class="math inline">\(\vec{a}\cdot\vec{b}=\vec{a}\cdot\vec{c}\)</span></p>
 <p><span class="math inline">\(\text{(b)$\,$ }\)</span>Rearranging <span class="math inline">\(\vec{a}\cdot\vec{b}=\vec{a}\cdot\vec{c}\)</span> gives <span class="math inline">\(\vec{a}\cdot\left(\vec{b}-\vec{c}\right)=0\)</span>. As <span class="math inline">\(\vec{b}\neq\vec{c}\)</span> what is the relationship between <span class="math inline">\(\vec{a}\)</span> and <span class="math inline">\(\left(\vec{b}-\vec{c}\right)\)</span>?</p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answers-7198">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-6007" aria-expanded="false" aria-controls="body-answers-6007" >Answers</button>
+<p class="accordion-header" id="head-answers-2708">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-7617" aria-expanded="false" aria-controls="body-answers-7617" >Answers</button>
 </p>
-<div id="body-answers-6007" class="accordion-collapse collapse " aria-labelledby="head-answers-7198">
+<div id="body-answers-7617" class="accordion-collapse collapse " aria-labelledby="head-answers-2708">
 <div class="accordion-body">
 <p><span class="math inline">\(\text{(a)$\,\vec{a}\cdot\vec{b}=\vec{a}\cdot\vec{c}=8\quad\text{$(b)$ $\vec{a}$ is perpendicular to $\left(\vec{b}-\vec{c}\right).$ }$ }\)</span></p>
 </div></div></div>
-</div>
-<p><a class="mathspdf" href="https://rmitlibrary.github.io/cdn/learninglab/docs/V3%20Scalar%20Product.pdf" type="application/pdf">Download this page, V3 Scalar Product <span class="file-link-info">(PDF 173 KB) </span></a></p>
 <p>Images on this page by RMIT, licensed under CC BY-NC 4.0.</p>
 			<nav class="btn-nav-container" aria-label="Previous and next links">
 <h2 class="btn-nav-prev">
     <a href="../v2-resolution-vectors/index.html">
-        <span aria-hidden="true">V2 Resolution of vectors</span>
-        <span class="visually-hidden">Previous page: V2 Resolution of vectors</span>
+        <span aria-hidden="true">Resolution of vectors</span>
+        <span class="visually-hidden">Previous page: Resolution of vectors</span>
     </a>
 </h2>
     
@@ -484,7 +503,7 @@ list.querySelectorAll('h4').forEach(h4 => {
 <!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
 <!--
 <p><strong>Subjects </strong>
-    | <strong><a href="https://lab.bitma.app/subject-area/maths/">Maths</a></strong>  
+    | <strong><a href="https://learninglab.rmit.edu.au/subject-area/maths/">Maths</a></strong>  
     </p>
 -->
 <!-- category echo end -->
@@ -544,18 +563,17 @@ list.querySelectorAll('h4').forEach(h4 => {
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <section class="acknowledgement-container">
-                        <div class="acknowledgement-image">
-                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
-                        </div>
-
+                <section class="acknowledgement-container">
                         <div class="content">
                             <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
                             <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
-                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="#" class="link-large">More information</a>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business<span class="img-credit"> - Artwork 'Sentient' by Hollie Johnson, Gunaikurnai and Monero Ngarigo</span>.</p>
+                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                        </div>
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/sentient-hollie-johnson.jpg" alt="" />
                         </div>
                     </section>
                 </div>
@@ -635,7 +653,7 @@ list.querySelectorAll('h4').forEach(h4 => {
 </div><!-- wrapper end -->
 		
 	
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
 <script src="../../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
 <!-- Code to handle hamburger menu, embed mode, dark mode -->

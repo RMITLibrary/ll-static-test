@@ -2,68 +2,31 @@
 <html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
 
 <head>
-<!-- 
-    DARK MODE
-    This script is placed in the <head> to ensure the theme is set as early as possible,
-    reducing the flash of unstyled content (FOUC). It determines the user's preferred
-    theme (either from local storage or system settings) and applies it immediately.
-  -->
-  <script>
-    (function() {
-      'use strict';
-
-      // Function to get the stored theme from local storage
-      const getStoredTheme = () => localStorage.getItem('theme');
-
-      // Function to determine the preferred theme
-      const getPreferredTheme = () => {
-        const storedTheme = getStoredTheme(); // Retrieve the stored theme
-        if (storedTheme) {
-          return storedTheme; // If a theme is stored, return it
-        }
-        // If no theme is stored, check the system preference for dark mode
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      // Function to apply the specified theme
-      const setTheme = theme => {
-        if (theme === 'auto') {
-          // If theme is 'auto', set it based on system preference
-          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-        } else {
-          // Otherwise, set the theme explicitly
-          document.documentElement.setAttribute('data-bs-theme', theme);
-        }
-      };
-
-      // Set the theme based on the preferred theme
-      setTheme(getPreferredTheme());
-    })();
-  </script>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- wp_head -->
-	<title>Page redirects - lab</title>
-
-		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
-		<meta name="description" content="This page lists all the pages which have redirects to new locations. Organise: Make the parent page &quot;Page redirects&quot; under &quot;Documentation&quot; to keep all redirects in one place. Template and Slug: Select the &quot;redirect&quot; page template. A Redirect Path field will appear — fill this with the required path. You&#039;ll need to paste in a" />
+	<title>Page redirects - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		
+		<meta name="description" content="Page redirects This page lists all the pages which have redirects to new locations. Organise: Make the parent page &quot;Page redirects&quot; under &quot;Documentation&quot; to keep all redirects in one place. Template and Slug: Select the &quot;redirect&quot; page template. A Redirect Path field will appear — fill this with the required path. You&#039;ll need to paste" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
-		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		
 		<meta property="og:locale" content="en_US" />
-		<meta property="og:site_name" content="lab -" />
+		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="Page redirects - lab" />
-		<meta property="og:description" content="This page lists all the pages which have redirects to new locations. Organise: Make the parent page &quot;Page redirects&quot; under &quot;Documentation&quot; to keep all redirects in one place. Template and Slug: Select the &quot;redirect&quot; page template. A Redirect Path field will appear — fill this with the required path. You&#039;ll need to paste in a" />
-		<meta property="og:url" content="https://lab.bitma.app/documentation/redirect/" />
+		<meta property="og:title" content="Page redirects - Learning Lab" />
+		<meta property="og:description" content="Page redirects This page lists all the pages which have redirects to new locations. Organise: Make the parent page &quot;Page redirects&quot; under &quot;Documentation&quot; to keep all redirects in one place. Template and Slug: Select the &quot;redirect&quot; page template. A Redirect Path field will appear — fill this with the required path. You&#039;ll need to paste" />
+		<meta property="og:url" content="https://learninglab.rmit.edu.au/documentation/redirect/" />
 		<meta property="article:published_time" content="2024-10-28T06:14:49+00:00" />
-		<meta property="article:modified_time" content="2024-11-05T22:06:14+00:00" />
+		<meta property="article:modified_time" content="2024-11-19T06:08:05+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Page redirects - lab" />
-		<meta name="twitter:description" content="This page lists all the pages which have redirects to new locations. Organise: Make the parent page &quot;Page redirects&quot; under &quot;Documentation&quot; to keep all redirects in one place. Template and Slug: Select the &quot;redirect&quot; page template. A Redirect Path field will appear — fill this with the required path. You&#039;ll need to paste in a" />
+		<meta name="twitter:title" content="Page redirects - Learning Lab" />
+		<meta name="twitter:description" content="Page redirects This page lists all the pages which have redirects to new locations. Organise: Make the parent page &quot;Page redirects&quot; under &quot;Documentation&quot; to keep all redirects in one place. Template and Slug: Select the &quot;redirect&quot; page template. A Redirect Path field will appear — fill this with the required path. You&#039;ll need to paste" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/documentation\/redirect\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/documentation\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/documentation\/#listItem","position":2,"name":"Documentation","item":"https:\/\/lab.bitma.app\/documentation\/","nextItem":"https:\/\/lab.bitma.app\/documentation\/redirect\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/documentation\/redirect\/#listItem","position":3,"name":"Page redirects","previousItem":"https:\/\/lab.bitma.app\/documentation\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/documentation\/redirect\/#webpage","url":"https:\/\/lab.bitma.app\/documentation\/redirect\/","name":"Page redirects - lab","description":"This page lists all the pages which have redirects to new locations. Organise: Make the parent page \"Page redirects\" under \"Documentation\" to keep all redirects in one place. Template and Slug: Select the \"redirect\" page template. A Redirect Path field will appear \u2014 fill this with the required path. You'll need to paste in a","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/documentation\/redirect\/#breadcrumblist"},"datePublished":"2024-10-28T06:14:49+00:00","dateModified":"2024-11-05T22:06:14+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/documentation\/redirect\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/documentation\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/documentation\/#listItem","position":2,"name":"Documentation","item":"https:\/\/learninglab.rmit.edu.au\/documentation\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/documentation\/redirect\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/documentation\/redirect\/#listItem","position":3,"name":"Page redirects","previousItem":"https:\/\/learninglab.rmit.edu.au\/documentation\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/documentation\/redirect\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/documentation\/redirect\/","name":"Page redirects - Learning Lab","description":"Page redirects This page lists all the pages which have redirects to new locations. Organise: Make the parent page \"Page redirects\" under \"Documentation\" to keep all redirects in one place. Template and Slug: Select the \"redirect\" page template. A Redirect Path field will appear \u2014 fill this with the required path. You'll need to paste","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/documentation\/redirect\/#breadcrumblist"},"datePublished":"2024-10-28T06:14:49+00:00","dateModified":"2024-11-19T06:08:05+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
@@ -81,25 +44,96 @@ MathJax = {
 
 </script>
 <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
-<link rel='stylesheet' id='wp-block-library-css' href='../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
-<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
-<link rel='stylesheet' id='picostrap-styles-css' href='../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+
+
+
+
+<link rel='stylesheet' id='picostrap-styles-css' href='../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=849.css' media='all' />
  	<!-- /wp_head -->
+
     
+    
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta name="author" content="RMIT Library">
+
+    <meta name="geo.position" content="-37.807778, 144.963333">
+    <meta name="geo.placename" content="Melbourne">
+    <meta name="geo.region" content="AU">
+
+    <meta name="dcterms.title" content="Learning Lab">
+    
+    <meta name="dcterms.description" content="Page redirects This page lists all the pages which have redirects to new locations. Organise: Make the parent page &quot;Page redirects&quot; under &quot;Documentation&quot; to keep all redirects in one place. Template and Slug: Select the &quot;redirect&quot; page template. A Redirect Path field will appear — fill this with the required...">
+    <meta name="dcterms.type" content="Text">
+    <meta name="dcterms.identifier" content="https://learninglab.rmit.edu.au/documentation/redirect/">
+    <meta name="dcterms.format" content="text/html">
+    <!-- END Additional meta tags not covered by wp_head -->
+
+
+    <!-- START Additional scripts for tracking -->
+
+    <!-- Microsoft Clarity - does hotspot tracking of pages -->
+    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+
+    <!-- Google tag - (gtag.js) --> 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLHPB23GYR');
+    </script>
+
+    <!-- Microsoft Bing - Not sure how useful this is? --> 
+    <meta name="msvalidate.01" content="8E4954E1DFAB7E2F8A92DD0A0BD6ED09">
+
+    <!-- END Additional scripts for tracking -->
+
     <style>
         </style>
+
+    <!-- 
+    DARK MODE javascript
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+    -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Function to get the stored theme from local storage
+        const getStoredTheme = () => localStorage.getItem('theme');
+
+        // Function to determine the preferred theme
+        const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+            return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        // Function to apply the specified theme
+        const setTheme = theme => {
+        if (theme === 'auto') {
+            // If theme is 'auto', set it based on system preference
+            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+            // Otherwise, set the theme explicitly
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        };
+
+        // Set the theme based on the preferred theme
+        setTheme(getPreferredTheme());
+    })();
+    </script>
 </head>
 
-<body class="page-template-default page page-id-9816 page-parent page-child parent-pageid-7037 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
-	
+<body class="page-template page-template-page-templates page-template-landing page-template-page-templateslanding-php page page-id-9816 page-parent page-child parent-pageid-7037 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
 		
 <header>
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
@@ -166,7 +200,7 @@ MathJax = {
 </h2>
 <div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
 <div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
-<li class="page_item page-item-2534 page_item_has_children"><a href="../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../writing-fundamentals/academic-word-list-tool/index.html">Academic Word List tool</a></li>
 <li class="page_item page-item-3107 page_item_has_children"><a href="../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
 <li class="page_item page-item-2520 page_item_has_children"><a href="../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
 <li class="page_item page-item-2521"><a href="../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
@@ -211,7 +245,7 @@ MathJax = {
 									<ul>
 										<li><a href="../../art-and-design/index.html">Art and design</a></li>
 										<li><a href="../../chemistry/index.html">Chemistry</a></li>
-										<li><a href="../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../law-resources/index.html">Legal studies</a></li>
 										<li><a href="../../maths-statistics/index.html">Mathematics and statistics</a></li>
 										<li><a href="../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
 										<li><a href="../../subject-areas/physics/index.html">Physics</a></li>
@@ -252,73 +286,14 @@ MathJax = {
 	<main id='theme-main'>
 
 <div class="container" id="page-content">
-    <div class="row ">
-        <!-- START right nav -->
-        <div class="col-xl-4 order-last">
-            
-
-<!-- this style changes the page link style in the sidebar nav 
-to indicate the current page and removes bullets from unordered lists. 
-The wp_list_pages function allocates the classes automatically. 
-This should be moved to a stylesheet once style is determined. -->
-
-<!--<style>
-[aria-current="page"] {
-  pointer-events: none !important; 
-  cursor: default;
-  text-decoration: none !important;
-  color: #000054;
-}
-</style>-->
-
-	
-<!-- START SIDEBAR NAV PANEL -->
-<nav class="right-nav" aria-label="Section Menu">
-
-<h2><a href="../index.html">Documentation</a></h2><h3 class="selected">Page redirects</h3><ul><li><a href="am-i-research-ready/index.html">Am I research ready?</a></li><li><a href="analyse-task/index.html">Analyse the task</a></li><li><a href="preparation/index.html">Assignment preparation</a></li><li><a href="beginning/index.html">Beginning a report</a></li><li><a href="developing-critical-thinking/index.html">Developing critical thinking</a></li><li><a href="english/index.html">Improve your English</a></li><li><a href="integrating-evidence-0/index.html">Integrating evidence</a></li><li><a href="international-student-stories/index.html">International student stories</a></li><li><a href="methodology/index.html">Methodology section in a report</a></li><li><a href="professional-report-writing-tutorial/index.html">Professional report writing tutorial</a></li><li><a href="quiz-it-plagiarism/index.html">Is it plagiarism?</a></li><li><a href="researching-your-assignment-0/index.html">Researching your assignment</a></li><li><a href="structuring-assignments/index.html">Structuring assignments</a></li><li><a href="understanding-referencing/index.html">Understanding referencing</a></li><li><a href="useful-websites/index.html">Useful websites</a></li><li><a href="workplace-writing-basics/index.html">Workplace writing basics</a></li><li><a href="writing-report/index.html">Writing a report</a></li><li><a href="writing-academic-reflection/index.html">Writing an academic reflection</a></li><li><a href="writing-coursework/index.html">Writing for coursework</a></li></ul></nav>
-<!-- END SIDEBAR NAV PANEL -->
-
-
-
-
-<!--<script language="javascript">
-//this script shortens strings for titles that repeat the section title at the start
-//it currently looks for the characters colon and space ": " in the page title
-//this requires strict naming conventions for the title that use a colon 
-//to separate the repeated section title from the descriptive page title
-//the regex pattern to look for - in this case, text that comes after these characters ": "
-const regex = /:\s(.*)/; 
-list.querySelectorAll('a').forEach(a => {
-  //get the text from inside all the <a> tags inside the div with the id "list"
-  const text = a.innerHTML; 
-  //find matches with the regex pattern
-  const match = text.match(regex); 
-  if(match) {
-	//replace what's in each <a> tag that matches the pattern and convert the first character to upper case
-	a.innerHTML = match[1].charAt(0).toUpperCase() + match[1].slice(1); 
-  }
-})
-//as above, but for Heading 6
-list.querySelectorAll('h4').forEach(h4 => {
-  const text = h4.innerHTML; 
-  const match = text.match(regex);
-  if(match) {
-	h4.innerHTML = match[1].charAt(0).toUpperCase() + match[1].slice(1);
-  }
-})
-</script>-->
-		        </div>
-        <!-- END right nav -->
-        <!-- START content -->
-        <div class="col-xl-8 order-first">
-            <nav aria-label="breadcrumbs">
+    <nav aria-label="breadcrumbs">
 <ul class="breadcrumbs">
 <li><a href="../../index.html">Home</a></li>
 <li><a href="../index.html">Documentation</a></li>
 </ul>
-</nav>            <a id="main-content"></a>
-            <h1 class="margin-top-zero">Page redirects</h1>
-            <p class="lead">This page lists all the pages which have redirects to new locations.</p>
+</nav>    <a id="main-content"></a>
+    <h1 class="margin-top-zero">Page redirects</h1>
+<p class="lead">This page lists all the pages which have redirects to new locations.</p>
 <ol>
 <li><strong>Organise:</strong> Make the parent page "Page redirects" under "Documentation" to keep all redirects in one place.
 <li><strong>Template and Slug:</strong> Select the "redirect" page template. A Redirect Path field will appear — fill this with the required path. You'll need to paste in a complete path, rather than just the slug to make the redirect function in the final static site. For example, rather than using:<br />
@@ -329,94 +304,13 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li><strong>Keywords:</strong> Add "Archive" to the keywords to prevent the page from being searched.
 </ol>
 <p>Note that none of the content is displayed, but it is retained for reference or potential reversal of changes. The redirect is currently set to 5 seconds.</p>
-<nav class="landing-list-container"><div class="landing-list">
-<ul class="link-list"><li class="page_item page-item-2928"><a href="am-i-research-ready/index.html">Am I research ready?</a></li>
-<li class="page_item page-item-2891"><a href="analyse-task/index.html">Analyse the task</a></li>
-<li class="page_item page-item-2909"><a href="preparation/index.html">Assignment preparation</a></li>
-<li class="page_item page-item-2600"><a href="beginning/index.html">Beginning a report</a></li>
-<li class="page_item page-item-2588"><a href="developing-critical-thinking/index.html">Developing critical thinking</a></li>
-<li class="page_item page-item-2533"><a href="english/index.html">Improve your English</a></li>
-<li class="page_item page-item-3545"><a href="integrating-evidence-0/index.html">Integrating evidence</a></li>
-<li class="page_item page-item-2584"><a href="international-student-stories/index.html">International student stories</a></li>
-<li class="page_item page-item-2601"><a href="methodology/index.html">Methodology section in a report</a></li>
-<li class="page_item page-item-3368"><a href="professional-report-writing-tutorial/index.html">Professional report writing tutorial</a></li>
-<li class="page_item page-item-2881"><a href="quiz-it-plagiarism/index.html">Quiz: Is it plagiarism?</a></li>
-<li class="page_item page-item-2910"><a href="researching-your-assignment-0/index.html">Researching your assignment</a></li>
-<li class="page_item page-item-2587"><a href="structuring-assignments/index.html">Structuring assignments</a></li>
-<li class="page_item page-item-2586"><a href="understanding-referencing/index.html">Understanding referencing</a></li>
-<li class="page_item page-item-2535"><a href="useful-websites/index.html">Useful websites</a></li>
-<li class="page_item page-item-3094"><a href="workplace-writing-basics/index.html">Workplace writing basics</a></li>
-<li class="page_item page-item-3099"><a href="writing-report/index.html">Writing a report</a></li>
-<li class="page_item page-item-2899"><a href="writing-academic-reflection/index.html">Writing an academic reflection</a></li>
-<li class="page_item page-item-2537"><a href="writing-coursework/index.html">Writing for coursework</a></li>
-</ul>
-</div></nav>
-			<nav class="btn-nav-container" aria-label="Previous and next links">
-<h2 class="btn-nav-prev">
-    <a href="../embed-mode/hide-title-and-intro/index.html">
-        <span aria-hidden="true">Hide title and intro</span>
-        <span class="visually-hidden">Previous page: Hide title and intro</span>
-    </a>
-</h2>
-    
+<table class="table-striped"><thead><tr><th></th><th>Page Title</th><th>Slug</th><th>Redirect Slug</th></tr></thead><tbody><tr><td>—</td><td>Am I research ready?</td><td><a href="am-i-research-ready/index.html">am-i-research-ready</a></td><td><a href="../../assessments/getting-started-with-assignments/choose-valid-sources/do-i-have-enough-information/index.html">/assessments/getting-started-with-assignments/choose-valid-sources/do-i-have-enough-information/</a></td></tr><tr><td>—</td><td>Analyse the task</td><td><a href="analyse-task/index.html">analyse-task</a></td><td><a href="../../assessments/essays/index.html">/assessments/essays/</a></td></tr><tr><td>—</td><td>Answering a legal problem &ndash; IRAC method</td><td><a href="answering-legal-problem-irac/index.html">answering-legal-problem-irac</a></td><td><a href="../../law-resources/writing-legal-scenario/index.html">/law-resources/writing-legal-scenario/</a></td></tr><tr><td>—</td><td>Artist statement tutorial</td><td><a href="artist-statement-tutorial/index.html">artist-statement-tutorial</a></td><td><a href="../../art-and-design/artist-statement/index.html">/art-and-design/artist-statement/</a></td></tr><tr><td>—</td><td>Assignment preparation</td><td><a href="preparation/index.html">preparation</a></td><td><a href="../../assessments/getting-started-with-assignments/index.html">/getting-started-with-assignments/</a></td></tr><tr><td>—</td><td>Beginning a report</td><td><a href="beginning/index.html">beginning</a></td><td><a href="../../assessments/reports/index.html">/reports/</a></td></tr><tr><td>—</td><td>Business law &ndash; Contract</td><td><a href="business-law-contract/index.html">business-law-contract</a></td><td><a href="../../law-resources/contract-law/language-focus-2/index.html">/law-resources/contract-law/language-focus-2/</a></td></tr><tr><td>—</td><td>Business law: Language focus</td><td><a href="language-focus-0/index.html">language-focus-0</a></td><td><a href="../../law-resources/business-law-introduction/index.html">/law-resources/business-law-introduction</a></td></tr><tr><td>—</td><td>Business law: Quizzes</td><td><a href="quizzes/index.html">quizzes</a></td><td><a href="../../law-resources/business-law-introduction/index.html">/law-resources/business-law-introduction/</a></td></tr><tr><td>—</td><td>Conclusion</td><td><a href="conclusion/index.html">conclusion</a></td><td><a href="../../university-essentials/critical-thinking-and-argument-analysis/index.html">/university-essentials/critical-thinking-and-argument-analysis/</a></td></tr><tr><td>—</td><td>Conclusion and recommendations</td><td><a href="conclusion-2/index.html">conclusion-2</a></td><td><a href="../../assessments/reports/overall-structure/index.html">/assessments/reports/overall-structure</a></td></tr><tr><td>—</td><td>Covalent bonds - exercises</td><td><a href="covalent-bonds-exercises/index.html">covalent-bonds-exercises</a></td><td><a href="../../chemistry/chemical-bonding/covalent-bonding-lewis-structures-quiz/index.html">/chemistry/chemical-bonding/covalent-bonding-lewis-structures-quiz/</a></td></tr><tr><td>—</td><td>Developing critical thinking</td><td><a href="developing-critical-thinking/index.html">developing-critical-thinking</a></td><td><a href="../../university-essentials/getting-started/index.html">/getting-started</a></td></tr><tr><td>—</td><td>Electron configuration quiz</td><td><a href="electron-configuration-quiz/index.html">electron-configuration-quiz</a></td><td><a href="../../chemistry/atoms-and-atomic-structures/electron/index.html">/chemistry/atoms-and-atomic-structures/electron/</a></td></tr><tr><td>—</td><td>Engagement</td><td><a href="engagement/index.html">engagement</a></td><td><a href="../../assessments/presentations/delivery/index.html">/assessments/presentations/delivery/</a></td></tr><tr><td>—</td><td>Exercise - units and conversions</td><td><a href="exercise-units/index.html">exercise-units</a></td><td><a href="../../chemistry/working-with-quantities/units/index.html">/chemistry/working-with-quantities/units/</a></td></tr><tr><td>—</td><td>Glossary of negligence terms</td><td><a href="glossary/index.html">glossary</a></td><td><a href="https://learninglab.rmit.edu.au/law-resources/business-law-negligence/language-focus-1/">/law-resources/business-law-negligence/language-focus-1/</a></td></tr><tr><td>—</td><td>How to study company law</td><td><a href="how-study-company-law/index.html">how-study-company-law</a></td><td><a href="../../law-resources/writing-legal-scenario/index.html">/law-resources/writing-legal-scenario/</a></td></tr><tr><td>—</td><td>How to write cohesively</td><td><a href="cohesion/index.html">cohesion</a></td><td><a href="../../writing-fundamentals/academic-style/be-cohesive/index.html">/be-cohesive</a></td></tr><tr><td>—</td><td>Improve your English</td><td><a href="english/index.html">english</a></td><td><a href="../../writing-fundamentals/academic-word-list-tool/index.html">/academic-word-list-tool/</a></td></tr><tr><td>—</td><td>Inserting references</td><td><a href="inserting-references/index.html">inserting-references</a></td><td><a href="../../referencing/quoting/index.html">/referencing/quoting</a></td></tr><tr><td>—</td><td>Integrating evidence</td><td><a href="integrating-evidence-0/index.html">integrating-evidence-0</a></td><td><a href="../../referencing/index.html">/referencing/</a></td></tr><tr><td>—</td><td>International student stories</td><td><a href="international-student-stories/index.html">international-student-stories</a></td><td><a href="../../university-essentials/getting-started/index.html">/getting-started</a></td></tr><tr><td>—</td><td>Introduction to law</td><td><a href="introduction-law/index.html">introduction-law</a></td><td><a href="../../law-resources/index.html">/law-resources/</a></td></tr><tr><td>—</td><td>Language of chemistry</td><td><a href="language-chemistry/index.html">language-chemistry</a></td><td><a href="../../chemistry/matter/index.html">/chemistry/matter/</a></td></tr><tr><td>—</td><td>Methodology section in a report</td><td><a href="methodology/index.html">methodology</a></td><td><a href="post-graduate-reports/index.html">/post-graduate-reports/</a></td></tr><tr><td>—</td><td>Negligence law: Concept map</td><td><a href="concept-map/index.html">concept-map</a></td><td><a href="../../law-resources/business-law-introduction/business-law-negligence/index.html">/law-resources/business-law-negligence</a></td></tr><tr><td>—</td><td>Oral presentations video series</td><td><a href="oral-presentations-part-1-4/index.html">oral-presentations-part-1-4</a></td><td><a href="../../assessments/presentations/index.html">/assessments/presentations/</a></td></tr><tr><td>—</td><td>Periodic table quiz</td><td><a href="periodic-table-quiz/index.html">periodic-table-quiz</a></td><td><a href="https://learninglab.rmit.edu.au/chemistry/periodic-table/arrangement-periodic-table">/chemistry/periodic-table/arrangement-periodic-table</a></td></tr><tr><td>—</td><td>Postgraduate reports</td><td><a href="post-graduate-reports/index.html">post-graduate-reports</a></td><td><a href="../../assessments/reports/overall-structure/index.html">/assessments/reports/overall-structure</a></td></tr><tr><td>—</td><td>Preparing for online presentations</td><td><a href="preparing-online-presentations/index.html">preparing-online-presentations</a></td><td><a href="../../assessments/presentations/online-presentations/index.html">/assessments/presentations/online-presentations</a></td></tr><tr><td>—</td><td>Presenting</td><td><a href="presenting/index.html">presenting</a></td><td><a href="../../assessments/presentations/index.html">/assessments/presentations/</a></td></tr><tr><td>—</td><td>Professional report writing tutorial</td><td><a href="professional-report-writing-tutorial/index.html">professional-report-writing-tutorial</a></td><td><a href="../../assessments/reports/example/index.html">/example/</a></td></tr><tr><td>—</td><td>Purpose of reports and sources to use</td><td><a href="purpose-and-sources/index.html">purpose-and-sources</a></td><td><a href="../../assessments/reports/index.html">/assessments/reports/</a></td></tr><tr><td>—</td><td>Quiz – Atomic structure</td><td><a href="quiz-atomic-structure/index.html">quiz-atomic-structure</a></td><td><a href="../../chemistry/atoms-and-atomic-structures/atomic-structure/index.html">/chemistry/atoms-and-atomic-structures/atomic-structure/</a></td></tr><tr><td>—</td><td>Quiz – Atoms, molecules and compounds</td><td><a href="atoms-molecules-and-compounds-quiz/index.html">atoms-molecules-and-compounds-quiz</a></td><td><a href="../../chemistry/atoms-and-atomic-structures/atoms/index.html">/chemistry/atoms-and-atomic-structures/atoms/</a></td></tr><tr><td>—</td><td>Quiz – Ionic bonding</td><td><a href="chemical-bonding-quiz/index.html">chemical-bonding-quiz</a></td><td><a href="../../chemistry/chemical-bonding/chemical-bonding-ionic-bonds/index.html">/chemistry/chemical-bonding/chemical-bonding-ionic-bonds</a></td></tr><tr><td>—</td><td>Quiz – Lewis structures</td><td><a href="lewis-structures-quiz/index.html">lewis-structures-quiz</a></td><td><a href="../../chemistry/chemical-bonding/covalent-bonding-lewis-structures-quiz/index.html">/chemistry/chemical-bonding/covalent-bonding-lewis-structures-quiz/</a></td></tr><tr><td>—</td><td>Quiz states of matter</td><td><a href="quiz-states-matter/index.html">quiz-states-matter</a></td><td><a href="../../chemistry/matter/states-properties-matter/index.html">/chemistry/matter/states-properties-matter/</a></td></tr><tr><td>—</td><td>Quiz: Is it plagiarism?</td><td><a href="quiz-it-plagiarism/index.html">quiz-it-plagiarism</a></td><td><a href="../../university-essentials/acting-academic-integrity/plagiarism-3/index.html">/plagiarism</a></td></tr><tr><td>—</td><td>Referencing</td><td><a href="referencing-0/index.html">referencing-0</a></td><td><a href="../../referencing/using-other-peoples-ideas/index.html">/referencing/using-other-peoples-ideas/</a></td></tr><tr><td>—</td><td>Referencing</td><td><a href="referencing-3/index.html">referencing-3</a></td><td><a href="../../referencing/using-other-peoples-ideas/index.html">/referencing/using-other-peoples-ideas</a></td></tr><tr><td>—</td><td>Researching an assignment</td><td><a href="researching-assignment/index.html">researching-assignment</a></td><td><a href="../../assessments/getting-started-with-assignments/index.html">/assessments/getting-started-with-assignments/</a></td></tr><tr><td>—</td><td>Researching your assignment</td><td><a href="researching-your-assignment-0/index.html">researching-your-assignment-0</a></td><td><a href="../../assessments/getting-started-with-assignments/index.html">/getting-started-with-assignments</a></td></tr><tr><td>—</td><td>Reviewing an academic email</td><td><a href="reviewing-academic-email/index.html">reviewing-academic-email</a></td><td><a href="../../university-essentials/online-learning-skills/writing-academic-emails/index.html">/university-essentials/online-learning-skills/writing-academic-emails</a></td></tr><tr><td>—</td><td>Signal and transition words</td><td><a href="signal-and-transition-words/index.html">signal-and-transition-words</a></td><td><a href="https://learninglab.rmit.edu.au/assessments/presentations/structure/creating-cohesion/">/assessments/presentations/structure/creating-cohesion/</a></td></tr><tr><td>—</td><td>States of matter</td><td><a href="states-matter/index.html">states-matter</a></td><td><a href="../../chemistry/matter/states-properties-matter/index.html">/chemistry/matter/states-properties-matter/</a></td></tr><tr><td>—</td><td>Strategies for reading an empirical research article</td><td><a href="strategies-reading-empirical-research-article/index.html">strategies-reading-empirical-research-article</a></td><td><a href="../../university-essentials/study-essentials/reading-skills/index.html">/university-essentials/study-essentials/reading-skills/</a></td></tr><tr><td>—</td><td>Structuring assignments</td><td><a href="structuring-assignments/index.html">structuring-assignments</a></td><td><a href="../../university-essentials/getting-started/index.html">/getting-started</a></td></tr><tr><td>—</td><td>The mole and stoichiometry</td><td><a href="mole-and-stoichiometry/index.html">mole-and-stoichiometry</a></td><td><a href="../../chemistry/working-with-quantities/index.html">/chemistry/working-with-quantities/</a></td></tr><tr><td>—</td><td>Understanding paraphrasing</td><td><a href="understanding-paraphrasing/index.html">understanding-paraphrasing</a></td><td><a href="../../referencing/paraphrasing-4/index.html">/referencing/paraphrasing-4</a></td></tr><tr><td>—</td><td>Understanding referencing</td><td><a href="understanding-referencing/index.html">understanding-referencing</a></td><td><a href="../../university-essentials/getting-started/index.html">/getting-started</a></td></tr><tr><td>—</td><td>Units and conversions</td><td><a href="../../chemistry/working-with-quantities/units/index.html">units</a></td><td><a href="../../chemistry/working-with-quantities/units/index.html">/chemistry/working-with-quantities/units/</a></td></tr><tr><td>—</td><td>Useful websites</td><td><a href="useful-websites/index.html">useful-websites</a></td><td><a href="../../writing-fundamentals/academic-word-list-tool/index.html">/academic-word-list-tool/</a></td></tr><tr><td>—</td><td>What is critical thinking?</td><td><a href="what-critical-thinking-0/index.html">what-critical-thinking-0</a></td><td><a href="../../university-essentials/critical-thinking-and-argument-analysis/introduction-critical-thinking/index.html">/university-essentials/critical-thinking-and-argument-analysis/introduction-critical-thinking/</a></td></tr><tr><td>—</td><td>What's a library database?</td><td><a href="whats-library-database/index.html">whats-library-database</a></td><td><a href="../../assessments/getting-started-with-assignments/find-information/electronic-and-av-resources/index.html">/assessments/getting-started-with-assignments/find-information/electronic-and-av-resources/</a></td></tr><tr><td>—</td><td>Workplace writing basics</td><td><a href="workplace-writing-basics/index.html">workplace-writing-basics</a></td><td><a href="../../writing-fundamentals/writing-workplace/index.html">/writing-workplace</a></td></tr><tr><td>—</td><td>Writing a legal argument: Integrating your answer</td><td><a href="integrating-legal-argument/index.html">integrating-legal-argument</a></td><td><a href="../../law-resources/writing-legal-argument/language-focus/index.html">/law-resources/writing-legal-argument/language-focus</a></td></tr><tr><td>—</td><td>Writing a legal argument: Linking words</td><td><a href="linking-words-2/index.html">linking-words-2</a></td><td><a href="../../law-resources/writing-legal-argument/language-focus/index.html">/law-resources/writing-legal-argument/language-focus/</a></td></tr><tr><td>—</td><td>Writing a report</td><td><a href="writing-report/index.html">writing-report</a></td><td><a href="../../assessments/reports/index.html">/reports</a></td></tr><tr><td>—</td><td>Writing an academic reflection</td><td><a href="writing-academic-reflection/index.html">writing-academic-reflection</a></td><td><a href="../../assessments/reflective-writing-1/index.html">/reflective-writing-1/</a></td></tr><tr><td>—</td><td>Writing clearly</td><td><a href="writing-clearly/index.html">writing-clearly</a></td><td><a href="../../writing-fundamentals/academic-style/coherence/index.html">/coherence</a></td></tr><tr><td>—</td><td>Writing for coursework</td><td><a href="writing-coursework/index.html">writing-coursework</a></td><td><a href="../../writing-fundamentals/index.html">/writing-fundamentals</a></td></tr></tbody></table>
+<p><!-- 
 
+<nav class="landing-list-container">[landing-list /]</nav>
 
-<h2 class="btn-nav-next">
-    <a href="am-i-research-ready/index.html">
-        <span aria-hidden="true">Am I research ready?</span>
-        <span class="visually-hidden">Next page: Am I research ready?</span>
-    </a>
-</h2>
-	
-</nav><!-- .navigation -->			<div id="additional-info">
-			
-			
-
-
-
-<!-- keywords echo - https://www.advancedcustomfields.com/resources/taxonomy/ -->      
-
-<hr class="margin-top-xl">
-<div class="keywords">
-    <h2 class="h5">Keywords</h2>
-    <ul>
-                <li><a href="../../keyword/documentation/index.html">Documentation</a></li>  
-        </ul>
-</div>
- 
-<!-- keywords echo end 
-
-<!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
-<!--
-<p><strong>Subjects </strong>
-    | <strong><a href="https://lab.bitma.app/subject-area/documentation/">Documentation</a></strong>  
-    </p>
--->
-<!-- category echo end -->
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            </div>
-        </div>
-        <!-- END content --> 
+ --></p>
     </div>
-</div>
 
 </main>
 
@@ -449,18 +343,17 @@ list.querySelectorAll('h4').forEach(h4 => {
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <section class="acknowledgement-container">
-                        <div class="acknowledgement-image">
-                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
-                        </div>
-
+                <section class="acknowledgement-container">
                         <div class="content">
                             <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
                             <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
-                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="#" class="link-large">More information</a>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business<span class="img-credit"> - Artwork 'Sentient' by Hollie Johnson, Gunaikurnai and Monero Ngarigo</span>.</p>
+                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                        </div>
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/sentient-hollie-johnson.jpg" alt="" />
                         </div>
                     </section>
                 </div>
@@ -540,7 +433,7 @@ list.querySelectorAll('h4').forEach(h4 => {
 </div><!-- wrapper end -->
 		
 	
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
 <script src="../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
 <!-- Code to handle hamburger menu, embed mode, dark mode -->

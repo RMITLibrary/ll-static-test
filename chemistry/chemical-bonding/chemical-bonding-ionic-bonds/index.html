@@ -2,68 +2,31 @@
 <html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
 
 <head>
-<!-- 
-    DARK MODE
-    This script is placed in the <head> to ensure the theme is set as early as possible,
-    reducing the flash of unstyled content (FOUC). It determines the user's preferred
-    theme (either from local storage or system settings) and applies it immediately.
-  -->
-  <script>
-    (function() {
-      'use strict';
-
-      // Function to get the stored theme from local storage
-      const getStoredTheme = () => localStorage.getItem('theme');
-
-      // Function to determine the preferred theme
-      const getPreferredTheme = () => {
-        const storedTheme = getStoredTheme(); // Retrieve the stored theme
-        if (storedTheme) {
-          return storedTheme; // If a theme is stored, return it
-        }
-        // If no theme is stored, check the system preference for dark mode
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      // Function to apply the specified theme
-      const setTheme = theme => {
-        if (theme === 'auto') {
-          // If theme is 'auto', set it based on system preference
-          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-        } else {
-          // Otherwise, set the theme explicitly
-          document.documentElement.setAttribute('data-bs-theme', theme);
-        }
-      };
-
-      // Set the theme based on the preferred theme
-      setTheme(getPreferredTheme());
-    })();
-  </script>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- wp_head -->
-	<title>Chemical bonding – ionic bonds - lab</title>
-
-		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
-		<meta name="description" content="\[\require{mhchem}\] Need to learn about ions? On this page, you will learn about what they are, how to write chemical formulas for ionic compounds, and much more. Ions Ions are produced when electrons transfer entirely from one atom to another. These are charged species. The charge of an ion depends on whether the atom gains" />
+	<title>Ionic bonding - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		
+		<meta name="description" content="Chances are you sprinkle table salt on your meals, use baking soda in your cooking, or encounter calcium carbonate in chalk. Ionic bonding explains how these substances form. Understanding ionic bonds helps us see how different materials are made and why they have certain properties. When forming bonds, atoms attempt to achieve a stable noble" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
-		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		
 		<meta property="og:locale" content="en_US" />
-		<meta property="og:site_name" content="lab -" />
+		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="Chemical bonding – ionic bonds - lab" />
-		<meta property="og:description" content="\[\require{mhchem}\] Need to learn about ions? On this page, you will learn about what they are, how to write chemical formulas for ionic compounds, and much more. Ions Ions are produced when electrons transfer entirely from one atom to another. These are charged species. The charge of an ion depends on whether the atom gains" />
-		<meta property="og:url" content="https://lab.bitma.app/chemistry/chemical-bonding/chemical-bonding-ionic-bonds/" />
+		<meta property="og:title" content="Ionic bonding - Learning Lab" />
+		<meta property="og:description" content="Chances are you sprinkle table salt on your meals, use baking soda in your cooking, or encounter calcium carbonate in chalk. Ionic bonding explains how these substances form. Understanding ionic bonds helps us see how different materials are made and why they have certain properties. When forming bonds, atoms attempt to achieve a stable noble" />
+		<meta property="og:url" content="https://learninglab.rmit.edu.au/chemistry/chemical-bonding/chemical-bonding-ionic-bonds/" />
 		<meta property="article:published_time" content="2023-10-16T05:34:42+00:00" />
-		<meta property="article:modified_time" content="2024-08-22T22:57:19+00:00" />
+		<meta property="article:modified_time" content="2024-11-22T06:02:53+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Chemical bonding – ionic bonds - lab" />
-		<meta name="twitter:description" content="\[\require{mhchem}\] Need to learn about ions? On this page, you will learn about what they are, how to write chemical formulas for ionic compounds, and much more. Ions Ions are produced when electrons transfer entirely from one atom to another. These are charged species. The charge of an ion depends on whether the atom gains" />
+		<meta name="twitter:title" content="Ionic bonding - Learning Lab" />
+		<meta name="twitter:description" content="Chances are you sprinkle table salt on your meals, use baking soda in your cooking, or encounter calcium carbonate in chalk. Ionic bonding explains how these substances form. Understanding ionic bonds helps us see how different materials are made and why they have certain properties. When forming bonds, atoms attempt to achieve a stable noble" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/chemical-bonding-ionic-bonds\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/lab.bitma.app\/chemistry\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/#listItem","position":3,"name":"Chemical bonding","item":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/chemical-bonding-ionic-bonds\/#listItem","previousItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/chemical-bonding-ionic-bonds\/#listItem","position":4,"name":"Chemical bonding &ndash; ionic bonds","previousItem":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/chemical-bonding-ionic-bonds\/#webpage","url":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/chemical-bonding-ionic-bonds\/","name":"Chemical bonding \u2013 ionic bonds - lab","description":"\\[\\require{mhchem}\\] Need to learn about ions? On this page, you will learn about what they are, how to write chemical formulas for ionic compounds, and much more. Ions Ions are produced when electrons transfer entirely from one atom to another. These are charged species. The charge of an ion depends on whether the atom gains","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/chemical-bonding-ionic-bonds\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:42+00:00","dateModified":"2024-08-22T22:57:19+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/chemical-bonding-ionic-bonds\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/#listItem","position":3,"name":"Chemical bonding","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/chemical-bonding-ionic-bonds\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/chemical-bonding-ionic-bonds\/#listItem","position":4,"name":"Ionic bonding","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/chemical-bonding-ionic-bonds\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/chemical-bonding-ionic-bonds\/","name":"Ionic bonding - Learning Lab","description":"Chances are you sprinkle table salt on your meals, use baking soda in your cooking, or encounter calcium carbonate in chalk. Ionic bonding explains how these substances form. Understanding ionic bonds helps us see how different materials are made and why they have certain properties. When forming bonds, atoms attempt to achieve a stable noble","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/chemical-bonding-ionic-bonds\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:42+00:00","dateModified":"2024-11-22T06:02:53+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
@@ -81,25 +44,96 @@ MathJax = {
 
 </script>
 <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
-<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
-<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
-<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+
+
+
+
+<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=849.css' media='all' />
  	<!-- /wp_head -->
+
     
+    
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta name="author" content="RMIT Library">
+
+    <meta name="geo.position" content="-37.807778, 144.963333">
+    <meta name="geo.placename" content="Melbourne">
+    <meta name="geo.region" content="AU">
+
+    <meta name="dcterms.title" content="Learning Lab">
+    
+    <meta name="dcterms.description" content="Chances are you sprinkle table salt on your meals, use baking soda in your cooking, or encounter calcium carbonate in chalk. Ionic bonding explains how these substances form. Understanding ionic bonds helps us see how different materials are made and why they have certain properties. When forming bonds, atoms attempt...">
+    <meta name="dcterms.type" content="Text">
+    <meta name="dcterms.identifier" content="https://learninglab.rmit.edu.au/chemistry/chemical-bonding/chemical-bonding-ionic-bonds/">
+    <meta name="dcterms.format" content="text/html">
+    <!-- END Additional meta tags not covered by wp_head -->
+
+
+    <!-- START Additional scripts for tracking -->
+
+    <!-- Microsoft Clarity - does hotspot tracking of pages -->
+    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+
+    <!-- Google tag - (gtag.js) --> 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLHPB23GYR');
+    </script>
+
+    <!-- Microsoft Bing - Not sure how useful this is? --> 
+    <meta name="msvalidate.01" content="8E4954E1DFAB7E2F8A92DD0A0BD6ED09">
+
+    <!-- END Additional scripts for tracking -->
+
     <style>
         </style>
+
+    <!-- 
+    DARK MODE javascript
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+    -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Function to get the stored theme from local storage
+        const getStoredTheme = () => localStorage.getItem('theme');
+
+        // Function to determine the preferred theme
+        const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+            return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        // Function to apply the specified theme
+        const setTheme = theme => {
+        if (theme === 'auto') {
+            // If theme is 'auto', set it based on system preference
+            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+            // Otherwise, set the theme explicitly
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        };
+
+        // Set the theme based on the preferred theme
+        setTheme(getPreferredTheme());
+    })();
+    </script>
 </head>
 
 <body class="page-template-default page page-id-3064 page-child parent-pageid-3135 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
-	
 		
 <header>
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
@@ -166,7 +200,7 @@ MathJax = {
 </h2>
 <div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
 <div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
-<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic Word List tool</a></li>
 <li class="page_item page-item-3107 page_item_has_children"><a href="../../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
 <li class="page_item page-item-2520 page_item_has_children"><a href="../../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
 <li class="page_item page-item-2521"><a href="../../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
@@ -211,7 +245,7 @@ MathJax = {
 									<ul>
 										<li><a href="../../../art-and-design/index.html">Art and design</a></li>
 										<li><a href="../../index.html">Chemistry</a></li>
-										<li><a href="../../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../../law-resources/index.html">Legal studies</a></li>
 										<li><a href="../../../maths-statistics/index.html">Mathematics and statistics</a></li>
 										<li><a href="../../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
 										<li><a href="../../../subject-areas/physics/index.html">Physics</a></li>
@@ -275,7 +309,7 @@ This should be moved to a stylesheet once style is determined. -->
 <!-- START SIDEBAR NAV PANEL -->
 <nav class="right-nav" aria-label="Section Menu">
 
-<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">Chemical bonding</a></h3><ul><li><a href="index.html" class="selected"  aria-current="page">Chemical bonding &ndash; ionic bonds</a><li><a href="../chemical-bonding-quiz/index.html">Chemical bonding quiz</a></li><li><a href="../lewis-electron-dot-structure/index.html">Lewis electron &ndash; dot structure</a></li><li><a href="../lewis-structure-exercises/index.html">Lewis structure exercises</a></li><li><a href="../covalent-bonds/index.html">Covalent bonds</a></li><li><a href="../covalent-bonds-exercises/index.html">Covalent bonds - exercises</a></li></ul></nav>
+<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">Chemical bonding</a></h3><ul><li><a href="index.html" class="selected"  aria-current="page">Ionic bonding</a><li><a href="../covalent-bonds/index.html">Covalent bonding</a></li><li><a href="../lewis-electron-dot-structure/index.html">Lewis structures</a></li><li><a href="../covalent-bonding-lewis-structures-quiz/index.html">Quiz – Covalent bonding and Lewis structures</a></li></ul></nav>
 <!-- END SIDEBAR NAV PANEL -->
 
 
@@ -318,58 +352,147 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li><a href="../index.html">Chemical bonding</a></li>
 </ul>
 </nav>            <a id="main-content"></a>
-            <h1 class="margin-top-zero">Chemical bonding &ndash; ionic bonds</h1>
-            <p><script> var kw = "Keywords: " node = document.getElementById('page-title'); node.insertAdjacentHTML('afterend', '</p>
-<p class="keywords">'+kw+'<a href="/learninglab/tags/chemistry" title="view all content with this keyword">Chemistry</a> | <a href="/learninglab/tags/chemical-bonding" title="view all content with this keyword">Chemical bonding</a> | <a href="/learninglab/keywords/ionic-bonds" title="view all content with this keyword">Ionic bonds</a></p>
-<p>'); </script> <script src="https://rmitlibrary.github.io/cdn/learninglab/images/enhanced/freezeframemin.js" ></script> <!-- Original: https://github.com/ctrl-freaks/freezeframe.js --></p>
-<style>.keywords { text-align:right; padding: 2rem; color: #ccc; } .keywords a { color: #fff; } .field-name-field-keywords-tags { display: none; } #title-wrapper { background: url('https://rmitlibrary.github.io/cdn/learninglab/images/br120.jpg'); color: white; background-size: auto; margin: 0; height: inherit; } .lower-level #page #main h2#page-title { padding: 4rem 0 1rem 3rem ; margin: 0 0 0rem 0; line-height: 3.2rem; background: inherit; color: white; } /* hide em dash */ .lower-level #page #main h2#page-title:before { Display: none; } #sidebar-second { margin-top: 0px; } /* hide keywords */ </style>
-<div class="acc plain">
-<p>\[\require{mhchem}\]</p>
-<p class="lead">Need to learn about ions? On this page, you will learn about what they are, how to write chemical formulas for ionic compounds, and much more.</p>
+            <h1 class="margin-top-zero">Ionic bonding</h1>
+            <p class="lead">Chances are you sprinkle table salt on your meals, use baking soda in your cooking, or encounter calcium carbonate in chalk. Ionic bonding explains how these substances form. Understanding ionic bonds helps us see how different materials are made and why they have certain properties.</p>
+<p>When forming bonds, atoms attempt to achieve a stable noble gas configuration by sharing, losing or gaining electrons for each of the atoms associated. In the case of ionic bonds, atoms lose or gain electrons to form ions, which then form electrostatic interactions.</p>
 <h2>Ions</h2>
-<p>Ions are produced when electrons transfer entirely from one atom to another. These are charged species. The charge of an ion depends on whether the atom gains (negatively charged or anions) or loses electrons (positively charged or cations).</p>
-<p>Examples: \(\ce{Na}^{+}\), \(\ce{Ca}^{2+}\),\(\ce{Al}^{3+}\), \(\ce{Cl}^{-}\), \(\ce{O}^{2-}\), \(\ce{N}^{3-}\)</p>
-<h3>Octet Rule</h3>
-<p>The valence electron configuration of noble gases is considered the most stable valence electron configuration. Except for helium, all noble gases have eight electrons in their valence shell (completely filled \(s\) and \(p\) subshells). The main group metals attempt to achieve the electron configuration of the noble gas just before them in the periodic table by losing electrons. Main group nonmetals acquire the electron configuration of the noble gas just after them in the periodic table by gaining electrons.</p>
-<p>For instance, potassium's electron configuration is \(1s^{2}\,2s^{2}2p^{6}\,3s^{2}3p^{6}\,4s^{1}\). Potassium loses one electron (\(4s\) electron) and becomes potassium cation (\(\ce{K}^{+}\)) to achieve noble gas electron configuration: \(1s^{2}\,2s^{2}2p^{6}\,3s^{2}3p^{6}\).</p>
-<p>The electron configuration of chlorine is \(1s^{2}\,2s^{2}2p^{6}\,3s^{2}3p^{5}\). To achieve noble gas electron configuration, chloride gains one electron (\(3p\) electron) and becomes chloride anion (\(\ce{Cl}^{-}\)) : \(1s^{2}\,2s^{2}2p^{6}\,3s^{2}3p^{6}\). Therefore, in general, metals form cations and nonmetals form anions.</p>
-<p>When forming bonds, atoms attempt to achieve stable noble gas configuration by sharing, losing or gaining electrons for each of the atoms associated.</p>
-<h4>Naming Monoatomic Ions</h4>
-<p>Main group cations are named using the name of the element followed by ion. For instance, \(\ce{Li}^{+}\): Lithium ion, \(\ce{Mg}^{2+}\): Magnesium ion and \(\ce{Al}^{3+}\): Aluminium ion.</p>
-<p>Transition metals (\(d,f\)blocks) and some \(p\) block elements can form multiple cations such as \(\ce{Cu}^{+}\) and \(\ce{Cu}^{2+}\), \(\ce{Pb}^{2+}\) and \(\ce{Pb}^{4+}\). These types of cations can be named in two ways. The first is that the ion with the smaller charge ends with "-ous" and the larger charge ends with "-ic". For instance, \(\ce{Cu}^{+}\)is cuprous ion and \(\ce{Cu}^{2+}\) is cupric ion. The other is writing the charge of the ion in Roman numerals within parenthesis next to the element name. For example, \(\ce{Cu}^{+}\)is Copper\(\left(\mathrm{I}\right)\) ion, and \(\ce{Cu}^{2+}\) is Copper\(\left(\mathrm{II}\right)\).</p>
-<p>Anions are named by removing the ending of the element name and replacing it with "-ide". For instance, the anion formed by \(\ce{Cl}\) is the Chloride ion.</p>
-<h5>Polyatomic Ions</h5>
-<p>Polyatomic ions consist of more than one atom. For example, \(\ce{SO}_{4}^{2-}\)(sulphate), \(\ce{NO}_{3}^{-}\) (nitrate), \(\ce{PO}_{4}^{3-}\) (phosphate) and \(\ce{NH}_{4}^{+}\) (ammonium) ions. Atoms in polyatomic ions are held together by covalent bonds.</p>
-<p><strong>Isoelectronic Species</strong></p>
-<p>Isoelectronic species are atoms and ions that have an equal number of electrons. For example, \(\ce{O}^{2-}\), \(\ce{F}^{-}\), \(\ce{Ne}\), \(\ce{Na}^{+}\) and \(\ce{Mg^{2+}}\). All of these species contain \(10\) electrons.</p>
-<p><strong>Ionic Bonds</strong></p>
-<p>Ionic bonds are created between metals and non-metals by transferring electrons from metals to non-metals. Metals provide the cation (lose electrons), and nonmetals provide the anion (gain electrons). Generally, bonds formed between atoms with larger electronegativity <sup>1</sup> (e.g. elements in groups 16 and 17 of the periodic table) and smaller electronegativity (e.g. elements in groups 1 and 2 of the periodic table) are ionic. For instance, \(\ce{NaCl}\): difference between electronegativities of \(\ce{Na}\) (EN\(=0.93\)) and \(\ce{Cl}\) (EN\(=3.16\)) is \(2.23\). For an ionic compound to be formed, the difference between electronegativities of two participating atoms must be larger than or equal to two. The larger difference in electronegativity creates electrostatic interactions between the electrons of one atom and the nucleus of the other atom. <sup>2</sup></p>
-<p><button class="btn btn-xs btn-default start" type="button">Play animation</button><button class="btn btn-xs btn-default stop" type="button">Stop animation</button></p>
+<p>Ions are charged species formed when electrons are transferred from one atom to another. The charge of an ion depends on:</p>
+<ul>
+<li>whether the atom gains electrons to form negatively-charged ions (or anions), or loses electrons to form positively-charged ions (or cations)</li>
+<li>the number of electrons gained or lost.</li>
+</ul>
+<p>For example, \(\ce{Na}^{+}\) is an \(\ce{Na}\) atom that has lost one electron. \(\ce{O}^{2-}\) is an \(\ce{O}\) atom that has gained two electrons.</p>
+<h3>Monatomic ions</h3>
+<p>Monatomic (or monoatomic) ions are ions consisting of a single atom. Ions formed from main group elements are named using the name of the element, followed by the word "ion". The chemical symbol for monatomic ions is written using the chemical symbol for the element, with the charge of the ion written afterwards as a superscript. For instance, the lithium ion is written as \(\ce{Li}^{+}\), the magnesium ion is \(\ce{Mg}^{2+}\) and the aluminium ion is \(\ce{Al}^{3+}\).</p>
+<p>Transition metals (\(d\)-block and \(f\)-block) and some \(p\)-block elements can form multiple cations such as \(\ce{Cu}^{+}\) and \(\ce{Cu}^{2+}\), and \(\ce{Pb}^{2+}\) and \(\ce{Pb}^{4+}\). When naming these ions, the ion with the smaller charge is written with an "–ous" suffix, and the larger charge is written with an "–ic". For example, copper would form the cuprous ion (\(\ce{Cu}^{+}\)) and the cupric ion (\(\ce{Cu}^{2+}\)). The charge of the ion can also be written in Roman numerals within parenthesis next to the element name. For example, \(\ce{Cu}^{+}\) is copper(I) ion, and \(\ce{Cu}^{2+}\) is copper(II). There is no space between the element name and the parenthesis.</p>
+<p>Anions are named by removing the ending of the element name and replacing it with "–ide". Let's consider the anion formed when chlorine (\(\ce{Cl}\)) gains an electron. The anion formed would be the chloride ion (\(\ce{Cl}^{-}\)).</p>
+<h3>Polyatomic ions</h3>
+<p>Polyatomic ions consist of more than one atom. Some example are the \(\ce{SO}_{4}^{2-}\) (sulfate), \(\ce{NO}_{3}^{-}\) (nitrate), \(\ce{PO}_{4}^{3-}\) (phosphate) and \(\ce{NH}_{4}^{+}\) (ammonium) ions. Atoms in polyatomic ions are held together by <a href="../covalent-bonding-lewis-structures-quiz/index.html">covalent bonds</a>.</p>
+<h2>The octet rule</h2>
+<p>The valence electron configuration of noble gases is considered the most stable. Except for helium, all noble gases have eight electrons in their valence shell (completely filled \(s\) and \(p\) subshells). Main group elements gain or lose electrons to achieve a full outer valence shell containing eight electrons. This is <strong>the octet rule</strong>. </p>
+<p>The main group metals attempt to achieve the electron configuration of the noble gas just before them in the periodic table by losing electrons. For instance, potassium's electron configuration is \(1s^{2}\,2s^{2}\,2p^{6}\,3s^{2}\,3p^{6}\,4s^{1}\). the potassium atom will lose one \(4s\) electron to become a  potassium cation (\(\ce{K}^{+}\)) to achieve a noble gas electron configuration: \(1s^{2}\,2s^{2}\,2p^{6}\,3s^{2}\,3p^{6}\). This is the same as the electron configuration for argon.</p>
+<p>Main group non-metals acquire the electron configuration of the noble gas just after them in the periodic table by gaining electrons. Consider the electron configuration of chlorine: \(1s^{2}\,2s^{2}\,2p^{6}\,3s^{2}\,3p^{5}\). To achieve a noble gas electron configuration, the chlorine atom gains one \(3p\) electron to become a chloride anion (\(\ce{Cl}^{-}\)). The electron configuration for the chloride ion is \(1s^{2}\,2s^{2}\,2p^{6}\,3s^{2}\,3p^{6}\), which is also the same as the electron configuration of argon.</p>
+<p>In general, metals form cations and non-metals form anions.</p>
+<h3>Exceptions to the octet rule</h3>
+<p>In some molecules, atoms do not follow the octet rule. Atoms such as sulfur, phosphorus and chlorine can deviate from the octet rule by forming molecules in which there are more than eight electrons in the valence shell. This is due to the availability of a vacant \(d\) orbital in the third shell.</p>
+<h2>Ionic compounds</h2>
+<p>Ionic compounds are held together by electrostatic interactions between cations and anions involved. The cations and anions are arranged in such a way that gaps between ions are filled efficiently and permit maximum electrostatic interactions. Ionic compounds are polar materials.</p>
+<h3>Formation of ionic compounds</h3>
+<p>Ionic bonds forms between metals and non-metals through the transfer of electrons from metals to non-metals. Metals provide the cation (by losing electrons), and non-metals provide the anion (by gaining electrons). </p>
 <div style="width: 400px;"><img decoding="async" class="freezeme" src="https://rmitlibrary.github.io/cdn/learninglab/images/ionic-bonds.gif" alt="Ionic bonds" /></div>
+<p><button class="btn btn-xs btn-default start" type="button">Play animation</button><button class="btn btn-xs btn-default stop" type="button">Stop animation</button><br />
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-2813">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-9137" aria-expanded="false" aria-controls="body-transcript-9137" >Transcript</button>
+</p>
+<div id="body-transcript-9137" class="accordion-collapse collapse " aria-labelledby="head-transcript-2813">
+<div class="accordion-body">
+<h4>Ionic compound formation diagram</h4>
+<p>Diagram showing the transfer of electrons from Atom 1 (metal) to Atom 2 (non-metal). Electron transfer results in Atom A becoming positively charged and Atom B negatively charged. They interact via an ionic bond to form an ionic compound.</p>
+</div></div></div>
+<p>Generally, chemical bonds formed between atoms with larger electronegativity (e.g. elements in groups 16 and 17 of the periodic table) and smaller electronegativity (e.g. elements in groups 1 and 2 of the periodic table) are considered ionic. As an example, \(\ce{NaCl}\) consists of \(\ce{Na}\) which has an electronegativity value of \(0.93\) and \(\ce{Cl}\) which has an electronegativity of 3.16. The difference between these values is \(2.23\).</p>
+<p>For an ionic compound to be formed, the difference between electronegativities of two participating atoms must be larger than or equal to \(2\). This permits strong electrostatic interactions between the electrons of one atom and the nucleus of the other atom.</p>
+<h3>Writing chemical formulas for ionic compounds</h3>
+<p>Ionic compounds are neutral species. Ions involved in an ionic compound combine in such a ratio that the net charge becomes zero. The ratio of ions in an ionic compound can be represented using a chemical formula, using subscripts after each chemical symbol. This displays the lowest possible ratio in which ions can combine to form the compound. Examples are \(\ce{MgO}\) and \(\ce{CaCl2}\).</p>
+<p>Parentheses are used to enclose polyatomic ions when more than one polyatomic ion is involved in an ionic compound. In this case, the subscript is written outside the parentheses. Examples are \(\ce{Fe2(SO4)3}\) and \(\ce{(NH4)2CO3}\).</p>
+<h3>Naming ionic compounds</h3>
+<p>Ionic compounds can be named by following some easy steps. Let's look at how we can name the compound \(\ce{CaCl2}\).</p>
+<ol>
+<li>Name the cation by writing the name of the metal element. The cation in \(\ce{CaCl2}\) would simply be "calcium".</li>
+<li>Name the anion by writing the name of the non-metal element. Remove the ending of the element name and replacing it with "–ide". The anion in \(\ce{CaCl2}\) would be "chloride".</li>
+</ol>
+<p>Transitional metals and some of the \(p\) block elements have more than one charge. Therefore, if the cation is from those groups, you must include the charge within parentheses next to its name in Roman numerals or use "–ous" and "–ic" to indicate smaller charge and larger charge, respectively. For instance, \(\ce{CuCl}\) is written as copper(I) chloride or cuprous chloride, \(\ce{CuCl2}\) is written as copper(II) chloride or cupric chloride.</p>
 <p><!--
 
 <iframe height="260px" src="https://rmitlibrary.github.io/cdn/learninglab/images/animation/ionic-bonds.html" title="Ionic bonds" width="460px"></iframe>
 
 --></p>
-<p><strong>Ionic Compounds</strong></p>
-<p>Ionic compounds are held together by electrostatic interactions between cations and anions involved. The cations and anions are arranged in such a way that gaps between ions are filled efficiently and permit maximum electrostatic interactions. Ionic compounds are polar materials.</p>
-<p><strong>Writing Chemical Formulas for Ionic Compounds</strong></p>
-<p>Ionic compounds are neutral species. Ions involved in an ionic compound combine in such a ratio that the net charge becomes zero. Parentheses are used to enclosed polyatomic ions when more than one polyatomic ions are involved in an ionic compound. In that case, the subscript is written outside the parentheses. For instance, \(\ce{Fe}_{2}\left(\ce{SO}_{4}\right)_{3}\) and \(\left(\ce{NH}_{4}\right)_{2}\ce{CO}_{3}\). The chemical formula of an ionic compound displays the lowest possible ratio that ions can combine.</p>
-<p><strong>Naming Ionic Compounds</strong></p>
-<ul>
-<li>First, write the name of the cation followed by the anion's name with a space in between. For example, \(\ce{NaCl}\) is written as sodium chloride, \(\ce{MgSO4}\) is written as magnesium sulphate.</li>
-<li>Transitional metals and some of the \(p\) block elements have more than one charge. Therefore, if the cation is from those groups, it is essential to include the charge within parentheses next to its name in Roman numerals or use "-ous" and "-ic" to indicate smaller charge and larger charge, respectively. For instance, \(\ce{CuSO4}\) is written as copper\(\left(\mathrm{II}\right)\) sulphate or cupric sulphate, \(\ce{FeCl2}\) is written as iron\(\left(\mathrm{II}\right)\) chloride or ferrous chloride.</li>
-</ul>
-<p><strong>Physical Properties of Ionic Compounds</strong></p>
-<ul>
-<li>Crystalline solids</li>
-<li>Conduct electricity in solution state</li>
-<li>High melting points and boiling points</li>
-<li>Soluble in polar solvents</li>
-</ul>
-<p><sup>1</sup>Electronegativity is the power of an atom in a molecule to attract electrons.</p>
-<p><sup>2</sup>The attraction forces between oppositely charged ions are known as electrostatic interactions.</p>
-</div>
+<h3>Physical properties of ionic compounds</h3>
+<p>Ionic compounds exhibit a range of distinctive properties that make them essential in various applications. The table below lists some properties of ionic compounds and examples of how the properties are applied.</p>
+<table>
+<thead>
+<tr>
+<td><strong>Property</strong></td>
+<td><strong>Example application</strong></td>
+</tr>
+<tbody>
+<tr>
+<td>Durable and beautiful as crystalline solids</td>
+<td>Potassium aluminium sulfate is used in traditional bookbinding to increase the toughness and lustre of decorative paste papers.</td>
+</tr>
+<tr>
+<td>Conduct electricity in solution</td>
+<td>Lithium salts in lithium–ion batteries are used to conduct electricity by facilitating the flow of charge.</td>
+</tr>
+<tr>
+<td>High melting and boiling points</td>
+<td>Magnesium oxide is used in furnace linings because it can withstand extreme temperatures.</td>
+</tr>
+<tr>
+<td>Soluble in polar solvents</td>
+<td>Potassium chloride is a medication used in the management and treatment of hypokalemia. Its solubility in bodily fluids allows it to be absorbed more effectively.</td>
+</tr>
+</tbody>
+</table>
+<h2>Worked example – determining the number of electrons gained or lost</h2>
+<p>Determine how many electrons an aluminium atom has to lose or gain to obtain a noble gas electron configuration.</p>
+<p><strong>Step 1:</strong> Write the electron configuration for aluminium.</p>
+<p>	\[1s^{2}\,2s^{2}\,2p^{6}\,3s^{2}\,3p^{1}\]</p>
+<p><strong>Step 2:</strong> Identify the nearest noble gas. Write its electron configuration.</p>
+<p>The nearest noble gas is \(\ce{Ne}\), which has an electron configuration of \(1s^{2}\,2s^{2}\,2p^{6}\).</p>
+<p><strong>Step 3:</strong> The purpose of losing or gaining an electron is to acquire an octet in the valence shell. Identify the number of electrons in the valence shell and deduce whether aluminium will gain or lose electrons to achieve an octet.</p>
+<p>The valence shell contains three electrons: two in the \(3s\) orbital and one in the \(3p\) orbital. It can gain the electron configuration of \(\ce{Ne}\) by losing these three electrons.</p>
+<div class="accordion-item ">
+<h2 class="accordion-header" id="head-example-2-2610">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-example-2-6297" aria-expanded="false" aria-controls="body-example-2-6297" >Example 2</button>
+</h2>
+<div id="body-example-2-6297" class="accordion-collapse collapse " aria-labelledby="head-example-2-2610">
+<div class="accordion-body">
+The neutral \(\ce{O}\) atom has eight electrons and eights protons. Explain how \(\ce{O}\) atom acquires valence shell octet.</p>
+<p><strong>Step 1:</strong> Write the electron configuration for oxygen.</p>
+<p>	\[1s^{2}2s^{2}2p^{4}\]</p>
+<p><strong>Step 2:</strong> Identify the nearest noble gas. Write its electron configuration.</p>
+<p>The nearest noble gas is \(\ce{Ne}\), which has an electron configuration of \(1s^{2}\,2s^{2}\,2p^{6}\).</p>
+<p><strong>Step 3:</strong> The purpose of losing or gaining an electron is to acquire an octet in the valence shell. Identify the number of electrons in the valence shell and deduce whether aluminium will gain or lose electrons to achieve an octet.</p>
+<p>The valence shell contains six electrons: two in the \(2s\) orbital and four in the \(2p\) orbital. It can gain the electron configuration of \(\ce{Ne}\) by gaining two electrons.</p>
+</div></div></div>
+<h2>Worked example – writing chemical formulas</h2>
+<p>Determine the chemical formula of the compound produced when \(\ce{Ca}^{2+}\) and \(\ce{F}^{-}\) ions become electrostatically attracted.</p>
+<p><strong>Step 1:</strong> Write the symbol of the cation with its charge, followed by the anion with its charge.</p>
+<p>	\[\ce{Ca}^{2+}\ce{F}^{-}\]</p>
+<p><strong>Step 2:</strong> Cross each ion's charge (only the numerical value, not the sign) and write it down as subscripts. The calcium ion's charge will be written next to fluoride ion, and the fluoride ion's charge will be written next to calcium ion, both as subscripts. Where the subscript is a \(1\), simply exclude it.</p>
+<div style="text-align: center;">\(\ce{Ca}_{1}\ce{F}_{2}\), which becomes \(\ce{CaF2}\)</div>
+<div class="accordion">
+<div class="accordion-item ">
+<h2 class="accordion-header" id="head-example-2-8371">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-example-2-3664" aria-expanded="false" aria-controls="body-example-2-3664" >Example 2</button>
+</h2>
+<div id="body-example-2-3664" class="accordion-collapse collapse " aria-labelledby="head-example-2-8371">
+<div class="accordion-body">
+Write the chemical formula for a compound composed of \(\ce{Al}^{3+}\) and \(\ce{O}^{2-}\).</p>
+<p><strong>Step 1:</strong> Write the symbol of the cation with its charge, followed by the anion with its charge.</p>
+<p>	\[\ce{Al}^{3+}\ce{O}^{2-}\]</p>
+<p><strong>Step 2:</strong> Cross each ion's charge (only the numerical value, not the sign) and write it down as subscripts. The aluminium ion's charge will be written next to oxygen ion, and the oxygen ion's charge will be written next to aluminium ion, both as subscripts.</p>
+<div style="text-align: center;">\[\ce{Al}_{2}\ce{O}_{3}\]</div>
+</div></div></div>
+<div class="accordion-item ">
+<h2 class="accordion-header" id="head-example-3-4466">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-example-3-8685" aria-expanded="false" aria-controls="body-example-3-8685" >Example 3</button>
+</h2>
+<div id="body-example-3-8685" class="accordion-collapse collapse " aria-labelledby="head-example-3-4466">
+<div class="accordion-body">
+Write the chemical formula of the compound formed by copper(II) ions and sulfate ions.</p>
+<p><strong>Step 1:</strong> Write the symbol of the cation with its charge, followed by the anion with its charge.</p>
+<p>	\[\ce{Cu}^{2+}\ce{SO4}^{2-}\]</p>
+<p><strong>Step 2:</strong> Cross each ion's charge (only the numerical value, not the sign) and write it down as subscripts. The copper(II) ion's charge will be written next to sulfate ion, and the sulfate ion's charge will be written next to copper(II) ion, both as subscripts. Since the sulfate ion is a polyatomic ion, brackets must be put around its chemical formula.</p>
+<p>	\[\ce{Cu}_{2}(\ce{SO4})_{2}\]</p>
+<p><strong>Step 3:</strong> Since the chemical formula is the lowest possible ratio of the elements in a compound, we need to simplify. Here, we can cancel out the subscripts as they are the same.</p>
+<p>\[\ce{CuSO}_{4}\]<br />
+</div></div></div>
+</p></div>
+<h2>Your turn – ionic bonding</h2>
+<p>Understanding ionic bonding is essential for grasping how elements interact to form compounds with unique properties. Test your understanding of ionic bonding with this quiz.</p>
+<p><iframe src="https://rmit.h5p.com/content/1292429839021403359/embed" aria-label="Chemistry_Ionic bonding_Quiz" width="1088" height="637" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe><script src="https://rmit.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script></p>
 <p><script> const manual = new Freezeframe('.freezeme', { trigger: false }); document .querySelector('.start') .addEventListener('click', () => { manual.start(); }); document .querySelector('.stop') .addEventListener('click', () => { manual.stop(); }); </script></p>
 			<nav class="btn-nav-container" aria-label="Previous and next links">
 <h2 class="btn-nav-prev">
@@ -382,9 +505,9 @@ list.querySelectorAll('h4').forEach(h4 => {
 
 
 <h2 class="btn-nav-next">
-    <a href="../chemical-bonding-quiz/index.html">
-        <span aria-hidden="true">Chemical bonding quiz</span>
-        <span class="visually-hidden">Next page: Chemical bonding quiz</span>
+    <a href="../covalent-bonds/index.html">
+        <span aria-hidden="true">Covalent bonding</span>
+        <span class="visually-hidden">Next page: Covalent bonding</span>
     </a>
 </h2>
 	
@@ -411,7 +534,7 @@ list.querySelectorAll('h4').forEach(h4 => {
 <!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
 <!--
 <p><strong>Subjects </strong>
-    | <strong><a href="https://lab.bitma.app/subject-area/chemistry/">Chemistry</a></strong>  
+    | <strong><a href="https://learninglab.rmit.edu.au/subject-area/chemistry/">Chemistry</a></strong>  
     </p>
 -->
 <!-- category echo end -->
@@ -471,18 +594,17 @@ list.querySelectorAll('h4').forEach(h4 => {
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <section class="acknowledgement-container">
-                        <div class="acknowledgement-image">
-                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
-                        </div>
-
+                <section class="acknowledgement-container">
                         <div class="content">
                             <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
                             <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
-                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="#" class="link-large">More information</a>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business<span class="img-credit"> - Artwork 'Sentient' by Hollie Johnson, Gunaikurnai and Monero Ngarigo</span>.</p>
+                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                        </div>
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/sentient-hollie-johnson.jpg" alt="" />
                         </div>
                     </section>
                 </div>
@@ -562,7 +684,7 @@ list.querySelectorAll('h4').forEach(h4 => {
 </div><!-- wrapper end -->
 		
 	
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
 <script src="../../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
 <!-- Code to handle hamburger menu, embed mode, dark mode -->

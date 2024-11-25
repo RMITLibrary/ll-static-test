@@ -2,68 +2,31 @@
 <html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
 
 <head>
-<!-- 
-    DARK MODE
-    This script is placed in the <head> to ensure the theme is set as early as possible,
-    reducing the flash of unstyled content (FOUC). It determines the user's preferred
-    theme (either from local storage or system settings) and applies it immediately.
-  -->
-  <script>
-    (function() {
-      'use strict';
-
-      // Function to get the stored theme from local storage
-      const getStoredTheme = () => localStorage.getItem('theme');
-
-      // Function to determine the preferred theme
-      const getPreferredTheme = () => {
-        const storedTheme = getStoredTheme(); // Retrieve the stored theme
-        if (storedTheme) {
-          return storedTheme; // If a theme is stored, return it
-        }
-        // If no theme is stored, check the system preference for dark mode
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      // Function to apply the specified theme
-      const setTheme = theme => {
-        if (theme === 'auto') {
-          // If theme is 'auto', set it based on system preference
-          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-        } else {
-          // Otherwise, set the theme explicitly
-          document.documentElement.setAttribute('data-bs-theme', theme);
-        }
-      };
-
-      // Set the theme based on the preferred theme
-      setTheme(getPreferredTheme());
-    })();
-  </script>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- wp_head -->
-	<title>A1.1 Algebraic operations - lab</title>
-
-		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
+	<title>A1.1: Algebraic operations - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		
 		<meta name="description" content="Introducing the basic skills for addition, subtraction, multiplication and division (+ - × ÷) of algebraic expressions. Courses in science, engineering and other fields require you to have these skills. Like and unlike terms Like terms contain exactly the same pro-numerals. 1 A pro-numeral is a combination of letters, symbols and numbers. For example, \(3x\)" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
-		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		
 		<meta property="og:locale" content="en_US" />
-		<meta property="og:site_name" content="lab -" />
+		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="A1.1 Algebraic operations - lab" />
+		<meta property="og:title" content="A1.1: Algebraic operations - Learning Lab" />
 		<meta property="og:description" content="Introducing the basic skills for addition, subtraction, multiplication and division (+ - × ÷) of algebraic expressions. Courses in science, engineering and other fields require you to have these skills. Like and unlike terms Like terms contain exactly the same pro-numerals. 1 A pro-numeral is a combination of letters, symbols and numbers. For example, \(3x\)" />
-		<meta property="og:url" content="https://lab.bitma.app/maths-statistics/algebra/a11-algebraic-operations/" />
+		<meta property="og:url" content="https://learninglab.rmit.edu.au/maths-statistics/algebra/a11-algebraic-operations/" />
 		<meta property="article:published_time" content="2023-10-16T05:34:37+00:00" />
-		<meta property="article:modified_time" content="2024-08-20T05:24:38+00:00" />
+		<meta property="article:modified_time" content="2024-11-25T00:21:17+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="A1.1 Algebraic operations - lab" />
+		<meta name="twitter:title" content="A1.1: Algebraic operations - Learning Lab" />
 		<meta name="twitter:description" content="Introducing the basic skills for addition, subtraction, multiplication and division (+ - × ÷) of algebraic expressions. Courses in science, engineering and other fields require you to have these skills. Like and unlike terms Like terms contain exactly the same pro-numerals. 1 A pro-numeral is a combination of letters, symbols and numbers. For example, \(3x\)" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/a11-algebraic-operations\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/lab.bitma.app\/maths-statistics\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/#listItem","position":3,"name":"Algebra","item":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/a11-algebraic-operations\/#listItem","previousItem":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/a11-algebraic-operations\/#listItem","position":4,"name":"A1.1 Algebraic operations","previousItem":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/a11-algebraic-operations\/#webpage","url":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/a11-algebraic-operations\/","name":"A1.1 Algebraic operations - lab","description":"Introducing the basic skills for addition, subtraction, multiplication and division (+ - \u00d7 \u00f7) of algebraic expressions. Courses in science, engineering and other fields require you to have these skills. Like and unlike terms Like terms contain exactly the same pro-numerals. 1 A pro-numeral is a combination of letters, symbols and numbers. For example, \\(3x\\)","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/a11-algebraic-operations\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:37+00:00","dateModified":"2024-08-20T05:24:38+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/algebra\/a11-algebraic-operations\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/algebra\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/algebra\/#listItem","position":3,"name":"Algebra","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/algebra\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/algebra\/a11-algebraic-operations\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/algebra\/a11-algebraic-operations\/#listItem","position":4,"name":"A1.1: Algebraic operations","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/algebra\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/algebra\/a11-algebraic-operations\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/algebra\/a11-algebraic-operations\/","name":"A1.1: Algebraic operations - Learning Lab","description":"Introducing the basic skills for addition, subtraction, multiplication and division (+ - \u00d7 \u00f7) of algebraic expressions. Courses in science, engineering and other fields require you to have these skills. Like and unlike terms Like terms contain exactly the same pro-numerals. 1 A pro-numeral is a combination of letters, symbols and numbers. For example, \\(3x\\)","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/algebra\/a11-algebraic-operations\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:37+00:00","dateModified":"2024-11-25T00:21:17+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
@@ -81,25 +44,96 @@ MathJax = {
 
 </script>
 <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
-<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
-<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
-<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+
+
+
+
+<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=849.css' media='all' />
  	<!-- /wp_head -->
+
     
+    
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta name="author" content="RMIT Library">
+
+    <meta name="geo.position" content="-37.807778, 144.963333">
+    <meta name="geo.placename" content="Melbourne">
+    <meta name="geo.region" content="AU">
+
+    <meta name="dcterms.title" content="Learning Lab">
+    
+    <meta name="dcterms.description" content="Introducing the basic skills for addition, subtraction, multiplication and division (+ - × ÷) of algebraic expressions. Courses in science, engineering and other fields require you to have these skills. Like and unlike terms Like terms contain exactly the same pro-numerals. 1 A pro-numeral is a combination of letters, symbols...">
+    <meta name="dcterms.type" content="Text">
+    <meta name="dcterms.identifier" content="https://learninglab.rmit.edu.au/maths-statistics/algebra/a11-algebraic-operations/">
+    <meta name="dcterms.format" content="text/html">
+    <!-- END Additional meta tags not covered by wp_head -->
+
+
+    <!-- START Additional scripts for tracking -->
+
+    <!-- Microsoft Clarity - does hotspot tracking of pages -->
+    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+
+    <!-- Google tag - (gtag.js) --> 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLHPB23GYR');
+    </script>
+
+    <!-- Microsoft Bing - Not sure how useful this is? --> 
+    <meta name="msvalidate.01" content="8E4954E1DFAB7E2F8A92DD0A0BD6ED09">
+
+    <!-- END Additional scripts for tracking -->
+
     <style>
         </style>
+
+    <!-- 
+    DARK MODE javascript
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+    -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Function to get the stored theme from local storage
+        const getStoredTheme = () => localStorage.getItem('theme');
+
+        // Function to determine the preferred theme
+        const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+            return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        // Function to apply the specified theme
+        const setTheme = theme => {
+        if (theme === 'auto') {
+            // If theme is 'auto', set it based on system preference
+            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+            // Otherwise, set the theme explicitly
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        };
+
+        // Set the theme based on the preferred theme
+        setTheme(getPreferredTheme());
+    })();
+    </script>
 </head>
 
 <body class="page-template-default page page-id-2965 page-child parent-pageid-2670 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
-	
 		
 <header>
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
@@ -166,7 +200,7 @@ MathJax = {
 </h2>
 <div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
 <div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
-<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic Word List tool</a></li>
 <li class="page_item page-item-3107 page_item_has_children"><a href="../../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
 <li class="page_item page-item-2520 page_item_has_children"><a href="../../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
 <li class="page_item page-item-2521"><a href="../../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
@@ -211,7 +245,7 @@ MathJax = {
 									<ul>
 										<li><a href="../../../art-and-design/index.html">Art and design</a></li>
 										<li><a href="../../../chemistry/index.html">Chemistry</a></li>
-										<li><a href="../../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../../law-resources/index.html">Legal studies</a></li>
 										<li><a href="../../index.html">Mathematics and statistics</a></li>
 										<li><a href="../../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
 										<li><a href="../../../subject-areas/physics/index.html">Physics</a></li>
@@ -275,7 +309,7 @@ This should be moved to a stylesheet once style is determined. -->
 <!-- START SIDEBAR NAV PANEL -->
 <nav class="right-nav" aria-label="Section Menu">
 
-<h2><a href="../../index.html">Maths and statistics</a></h2><h3><a href="../index.html">Algebra</a></h3><ul><li><a href="index.html" class="selected"  aria-current="page">A1.1 Algebraic operations</a><li><a href="../a12-algebraic-substitution/index.html">A1.2 Algebraic substitution</a></li><li><a href="../a13-removing-brackets/index.html">A1.3 Removing brackets</a></li><li><a href="../a14-algebraic-fractions-addition-and-subtraction/index.html">A1.4 Algebraic fractions &ndash; Addition and subtraction</a></li><li><a href="../a15-algebraic-fractions-multiplication-and-division/index.html">A1.5 Algebraic fractions &ndash; Multiplication and division</a></li><li><a href="../a16-quadratics/index.html">A1.6 Quadratics</a></li><li><a href="../a17-partial-fractions/index.html">A1.7 Partial fractions</a></li><li><a href="../a21-rearranging-formulae/index.html">A2.1 Rearranging formulas</a></li><li><a href="../a22-rearranging-formulas-brackets-and-fractions/index.html">A2.2 Rearranging formulas &ndash; Brackets and fractions</a></li><li><a href="../a23-transposition-formulas-challenges/index.html">A2.3 Transposition of formulas with challenges</a></li><li><a href="../a31-common-factors/index.html">A3.1 Common factors</a></li><li><a href="../a32-perfect-squares/index.html">A3.2 Perfect squares</a></li><li><a href="../a33-difference-two-squares/index.html">A3.3 Difference of two squares</a></li><li><a href="../a34-quadratics/index.html">A3.4 Quadratics</a></li><li><a href="../a35-completing-square/index.html">A3.5 Completing the square</a></li><li><a href="../a36-polynomial-long-division/index.html">A3.6 Polynomial long division</a></li></ul></nav>
+<h2><a href="../../index.html">Maths and statistics</a></h2><h3><a href="../index.html">Algebra</a></h3><ul><li><a href="index.html" class="selected"  aria-current="page">Algebraic operations</a><li><a href="../a12-algebraic-substitution/index.html">Algebraic substitution</a></li><li><a href="../a13-removing-brackets/index.html">Removing brackets</a></li><li><a href="../a14-algebraic-fractions-addition-and-subtraction/index.html">Algebraic fractions &ndash; Addition and subtraction</a></li><li><a href="../a15-algebraic-fractions-multiplication-and-division/index.html">Algebraic fractions &ndash; Multiplication and division</a></li><li><a href="../a16-quadratics/index.html">Quadratics</a></li><li><a href="../a17-partial-fractions/index.html">Partial fractions</a></li><li><a href="../a21-rearranging-formulae/index.html">Rearranging formulas</a></li><li><a href="../a22-rearranging-formulas-brackets-and-fractions/index.html">A2.2 Rearranging formulas &ndash; Brackets and fractions</a></li><li><a href="../a23-transposition-formulas-challenges/index.html">A2.3 Transposition of formulas with challenges</a></li><li><a href="../a31-common-factors/index.html">A3.1 Common factors</a></li><li><a href="../a32-perfect-squares/index.html">A3.2 Perfect squares</a></li><li><a href="../a33-difference-two-squares/index.html">A3.3 Difference of two squares</a></li><li><a href="../a34-quadratics/index.html">A3.4 Quadratics</a></li><li><a href="../a35-completing-square/index.html">Completing the square</a></li><li><a href="../a36-polynomial-long-division/index.html">Polynomial long division</a></li></ul></nav>
 <!-- END SIDEBAR NAV PANEL -->
 
 
@@ -318,18 +352,19 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li><a href="../index.html">Algebra</a></li>
 </ul>
 </nav>            <a id="main-content"></a>
-            <h1 class="margin-top-zero">A1.1 Algebraic operations</h1>
-            <p><!--  <span class="marginnote"><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-a11-01.jpg" alt="A page in Arabic of one of the earliest books on Algebra" />
-A page from Al-Khwarizmis “al-Kitab al-muhtasar fi hisab al-gabr wa-l-muqabala”, an early book on algebra. (Image from <a class="uri" href="https://en.wikipedia.org/wiki/The_Compendious_Book_on_Calculation_by_Completion_and_Balancing">en.wikipedia.org</a> )</span> --></p>
-<p class="lead">Introducing the basic skills for addition, subtraction, multiplication and division (+ - × ÷) of algebraic expressions. Courses in science, engineering and other fields require you to have these skills.</p>
-<div class="responsive-video"><iframe title="Video" src="https://www.youtube.com/embed/XJUKa5whUC4?rel=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
-<div class="acc transcript">
+            <h1 class="margin-top-zero">A1.1: Algebraic operations</h1>
+            <p class="lead">Introducing the basic skills for addition, subtraction, multiplication and division (+ - × ÷) of algebraic expressions. Courses in science, engineering and other fields require you to have these skills.</p>
+<figure class="">
+<div class="responsive-video">
+<iframe src="https://www.youtube.com/embed/XJUKa5whUC4?rel=0" frameborder="0" allowfullscreen=""></iframe>
+</div>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-transcript-5382">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-2660" aria-expanded="false" aria-controls="body-transcript-2660" >Transcript</button>
+<p class="accordion-header" id="head-transcript-5895">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-2938" aria-expanded="false" aria-controls="body-transcript-2938" >Transcript</button>
 </p>
-<div id="body-transcript-2660" class="accordion-collapse collapse " aria-labelledby="head-transcript-5382">
-<div class="accordion-body">M: Hi, this is Martin Lindsay from the Study and Learning Centre at RMIT University. This is a short movie on operations with algebra. First of all make sure you can tell the difference between like terms and unlike terms. Like terms contain exactly the same pro-numerals, in other words letters or variables, so look at the like terms down the left hand column and compare them with the unlike terms in the right hand column, in particular look at the last term, seven E F and eight F E, they are in fact like terms. Only like terms can be added or subtracted. For instance, in this example, seven E plus 10 E, the terms are alike, therefore they can be added to give you 17 E. But look at this one, be careful because here we have two terms, the X squared term and the X term so we have to add them separately, so three X squared minus X squared minus four X squared gives us minus two X squared, and two X, which is different to the X squared term must be left alone so the answer is minus two X squared plus two X.Similarly if you look at this example in red, there's a U V term which is the same as V U and that is different to the U term therefore that gives us minus two U V plus three U, we keep them separate, we can't add minus two U V to three U. And finally six R squared S minus two R S squared, they look similar but they are not the same, these are two unlike terms so we can't simplify this expression.Now before we move on to multiplying and dividing algebraic terms make sure you are familiar with the multiplication and dividing of positive and negative numbers on this slide. So study this carefully before moving onto the next slide.</p>
+<div id="body-transcript-2938" class="accordion-collapse collapse " aria-labelledby="head-transcript-5895">
+<div class="accordion-body">
+<p>M: Hi, this is Martin Lindsay from the Study and Learning Centre at RMIT University. This is a short movie on operations with algebra. First of all make sure you can tell the difference between like terms and unlike terms. Like terms contain exactly the same pro-numerals, in other words letters or variables, so look at the like terms down the left hand column and compare them with the unlike terms in the right hand column, in particular look at the last term, seven E F and eight F E, they are in fact like terms. Only like terms can be added or subtracted. For instance, in this example, seven E plus 10 E, the terms are alike, therefore they can be added to give you 17 E. But look at this one, be careful because here we have two terms, the X squared term and the X term so we have to add them separately, so three X squared minus X squared minus four X squared gives us minus two X squared, and two X, which is different to the X squared term must be left alone so the answer is minus two X squared plus two X.Similarly if you look at this example in red, there's a U V term which is the same as V U and that is different to the U term therefore that gives us minus two U V plus three U, we keep them separate, we can't add minus two U V to three U. And finally six R squared S minus two R S squared, they look similar but they are not the same, these are two unlike terms so we can't simplify this expression.Now before we move on to multiplying and dividing algebraic terms make sure you are familiar with the multiplication and dividing of positive and negative numbers on this slide. So study this carefully before moving onto the next slide.</p>
 <p>But let's multiply some pro-numerals. Here's the first example, minus four times three B, multiply the numbers together, minus four and minus three gives you plus 12 and then just tag on the B afterwards so the answer is 12 B. Here's another one, multiply out the numbers first, three times minus 15 gives you minus 15, now multiply the pro-numeral, E and E squared is E cubed, so the answer is minus 15 E cubed.</p>
 <p>The next example in red multiply out, as before, the numbers, minus two times minus four is plus eight, then the pro-numerals, there's a U squared term and there are Vs there, V times V is a V squared, so the answer is eight U squared V squared. Notice in these examples that because we're multiplying the actual terms can be different, so make sure you know the difference between adding and subtracting where the pro‑numerals must be exactly the same, multiplying and dividing the pro-numerals can be different.</p>
 <p>Finally minus three P Q times minus two Q times P, multiply out the numbers, that gives you plus six, P times P is P squared, Q times Q is Q squared, so the answer is six P squared Q squared. Now in this slide we're dividing pro-numerals, so the first term minus 12 W Y Z divided by the second term three Y Z, express that as a fraction first and look for terms that will cancel top and bottom, in this case the Ys cancel top and bottom and the Zs cancel top and bottom, notice three will divide into 12 four times, so the answer is minus four W.</p>
@@ -341,18 +376,18 @@ A page from Al-Khwarizmis “al-Kitab al-muhtasar fi hisab al-gabr wa-l-muqabala
 <p>And finally look at this one. We have brackets, multiplication, addition and division. So the brackets is worked out first, that gives as minus 10 A squared B squared in the second line, then I write out the rest, plus two A cubed B cubed divided by A B, what do we do next, well we have division which becomes ... comes before addition, therefore we divide the two A cubed B cubed by A B, writing that as a fraction, simplifying by cancelling like terms and then in the final line we've just got two terms which we can add together. Notice again that the terms are exactly the same, A squared B squared, therefore we can add them, minus 10 plus two gives us minus eight A squared B squared.</p>
 <p>Now try some questions for yourself. The answers to these questions are on the next slide. Thanks for watching this short video.</p>
 </div></div></div>
-</div>
-<figure class="float-right ">
+</figure>
+
+<h2>Like and unlike terms</h2>
+<figure class="float-right-sm ">
 
 <img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-a11-01.jpg" alt="A page in Arabic of one of the earliest books on Algebra" />
 
-<figcaption>A page from Al-Khwarizmis <em>al-Kitab al-muhtasar fi hisab al-gabr wa-l-muqabala</em>, an early book on algebra.</figcaption>
+<figcaption>A page from Al-Khwarizmis <em>al-Kitab al-muhtasar fi hisab al-gabr wa-l-muqabala</em>, an early book on algebra. In the public domain, via Wikipedia.</figcaption>
 
 </figure>
 
-<div id="like-and-unlike-terms" class="section level1">
-<h2>Like and unlike terms</h2>
-<p>Like terms contain exactly the same pro-numerals. <span class="sidenote"><span class="sidenote-number">1</span> A pro-numeral is a combination of letters, symbols and numbers. For example, <span class="math inline">\(3x\)</span> is a pro-numeral. In algebra, when we write <span class="math inline">\(3x\)</span> we really mean <span class="math inline">\(3\times x\)</span>. Another example of a pro-numeral is <span class="math inline">\(5ab\)</span>. This means <span class="math inline">\(5\times a\times b\)</span>. Note that <span class="math inline">\(5ab=5ba\)</span>. The order of the letters and numbers is not important but usually we write numbers first and use alphabetical order for the letters. While <span class="math inline">\(5ba\)</span> is correct, it is more common to write <span class="math inline">\(5ab\)</span>.</span> The following table gives some examples of like and unlike terms.</p>
+Like terms contain exactly the same pro-numerals. <span class="sidenote"><span class="sidenote-number">1</span> A pro-numeral is a combination of letters, symbols and numbers. For example, <span class="math inline">\(3x\)</span> is a pro-numeral. In algebra, when we write <span class="math inline">\(3x\)</span> we really mean <span class="math inline">\(3\times x\)</span>. Another example of a pro-numeral is <span class="math inline">\(5ab\)</span>. This means <span class="math inline">\(5\times a\times b\)</span>. Note that <span class="math inline">\(5ab=5ba\)</span>. The order of the letters and numbers is not important but usually we write numbers first and use alphabetical order for the letters. While <span class="math inline">\(5ba\)</span> is correct, it is more common to write <span class="math inline">\(5ab\)</span>.</span> The following table gives some examples of like and unlike terms.</p>
 <table>
 <thead>
 <tr class="header">
@@ -392,13 +427,9 @@ A page from Al-Khwarizmis “al-Kitab al-muhtasar fi hisab al-gabr wa-l-muqabala
 </tbody>
 </table>
 <p>For some practice, please go to Exercise 1 below.</p>
-</div>
-<div id="addition-and-subtraction" class="section level1">
 <h2>Addition and subtraction</h2>
 <p>The essential rule is:</p>
-<hr />
 <blockquote><p>Only like terms may be added or subtracted.</p></blockquote>
-<hr />
 <p>Example 1. <span class="math display">\[\begin{align*} 7e+10e &amp; =7\times e+10\times e\\ &amp; =\left(7+10\right)e\\ &amp; =17e. \end{align*}\]</span> In practice we would not put in the first line. It is included to reinforce what <span class="math inline">\(7e\)</span> and <span class="math inline">\(10e\)</span> mean. In practice we would probably go straight to the answer. That is <span class="math inline">\(7e+10e=17e\)</span>.</p>
 <p>Example 2. <span class="math display">\[\begin{align*} 3x^{2}-x^{2}-4x^{2} &amp; =\left(3-1-4\right)x^{2}\\ &amp; =-2x^{2}. \end{align*}\]</span></p>
 <p>Example 3. <span class="sidenote"><span class="sidenote-number">2</span> This example shows how we can gather different like terms. In this case <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span>.</span> <span class="math display">\[\begin{align*} 3m-4n+6m+n &amp; =\left(3+6\right)m+\left(-4+1\right)n\\ &amp; =9m-3n. \end{align*}\]</span></p>
@@ -408,8 +439,6 @@ A page from Al-Khwarizmis “al-Kitab al-muhtasar fi hisab al-gabr wa-l-muqabala
 <p>Example 7. <span class="math display">\[ 8uv+3u-10vu=-2uv+3u. \]</span></p>
 <p>Example 8. <span class="math display">\[ 6r^{2}s-2rs^{2}\quad\mathrm{there\textrm{ are no like terms so nothing can be done.}} \]</span></p>
 <p>For some practice, please go to Exercise 2 below.</p>
-</div>
-<div id="multiplication" class="section level1">
 <h2>Multiplication</h2>
 <p>Both like and unlike terms may be multiplied. When multiplying two or more terms consider: 1. The sign of the answer.<span class="sidenote"><span class="sidenote-number">3</span> In doing the multiplication, remember the basic rules for determining the sign of the product. <span class="math display">\[\begin{align*} \left(+ve\right)\times\left(+ve\right) &amp; =\left(+ve\right)\\ \left(+ve\right)\times\left(-ve\right) &amp; =\left(-ve\right)\\ \left(-ve\right)\times\left(+ve\right) &amp; =\left(-ve\right)\\ \left(-ve\right)\times\left(-ve\right) &amp; =\left(+ve\right). \end{align*}\]</span></span></p>
 <ol style="list-style-type: decimal;" start="2">
@@ -417,8 +446,6 @@ A page from Al-Khwarizmis “al-Kitab al-muhtasar fi hisab al-gabr wa-l-muqabala
 </ol>
 <p>Here are some examples:</p>
 <p><span class="math display">\[\begin{array}{l} 1.\quad\left(-4\right)\times\left(-3b\right)=12b\\ 2.\quad-2\times6y=-12y\\ 3.\quad2e\times\left(-5e^{2}\right)=-10e^{3}\\ 4.\quad\left(-2u^{2}v\right)\times\left(-4v\right)=8u^{2}v^{2}\\ 5.\quad-3pq\times\left(-2q\right)\times p=6p^{2}q^{2} \end{array}\]</span></p>
-</div>
-<div id="division" class="section level1">
 <h2>Division</h2>
 <p>In algebra, we often use fractions. For example: <span class="sidenote"><span class="sidenote-number">4</span> In this case the top term, 2 is called the numerator, the bottom term 5, is called the denominator and the horizontal line between them is called the fraction bar, division bar or vinculum.</span> <span class="math display">\[ \frac{2}{5}=2\div5. \]</span> Similarly for algebraic terms: <span class="math display">\[ \frac{2x^{2}yz}{3xy^{2}}=2x^{2}yz\div3xy^{2}. \]</span> When dividing algebraic terms:</p>
 <ol style="list-style-type: decimal;">
@@ -427,7 +454,6 @@ A page from Al-Khwarizmis “al-Kitab al-muhtasar fi hisab al-gabr wa-l-muqabala
 <li>Establish the sign of the answer<span class="sidenote"><span class="sidenote-number">5</span> In doing the division, remember the basic rules for determining the sign of the quotient. <span class="math display">\[\begin{align*} \left(+ve\right)\div\left(+ve\right) &amp; =\left(+ve\right)\\ \left(+ve\right)\div\left(-ve\right) &amp; =\left(-ve\right)\\ \left(-ve\right)\div\left(+ve\right) &amp; =\left(-ve\right)\\ \left(-ve\right)\div\left(-ve\right) &amp; =\left(+ve\right). \end{align*}\]</span></span></li>
 <li>Cancel any common factors</li>
 </ol>
-<div id="examples" class="section level2">
 <h3>Examples</h3>
 <ol style="list-style-type: decimal;">
 <li>Divide <span class="math inline">\(-12wyz\)</span> by <span class="math inline">\(3yz\)</span>.<br />
@@ -439,9 +465,6 @@ Solution: <span class="math display">\[\begin{align*} 6a^{2}\times4ab\div12ab &a
 <li>Divide <span class="math inline">\(m+2\)</span> by <span class="math inline">\(4m\)</span> <span class="math display">\[ \left(m+2\right)\div4m=\frac{m+2}{4m}. \]</span> There are no common factors and so it is not possible to simplify further.</li>
 </ol>
 <p>For practice examples see Exercise 3.</p>
-</div>
-</div>
-<div id="order-of-operations" class="section level1">
 <h2>Order of operations</h2>
 <p>The basic operations of arithmetic are multiplication, division, addition and subtraction. Usually the order in which we perform the operations is important.</p>
 <p><span class="marginnote"><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-a11-02.png" alt="" /></span></p>
@@ -456,7 +479,6 @@ Solution: <span class="math display">\[\begin{align*} 6a^{2}\times4ab\div12ab &a
 </ol>
 <p>Using the first letters (bold) we get the abbreviation <strong>BIMDAS.</strong></p>
 <p>Applying this rule the answer to our problem is <span class="math display">\[\begin{align*} 4+3\times2+5 &amp; =4+6+5\quad\textrm{multiplication first}\\ &amp; =15\quad\textrm{then addition}. \end{align*}\]</span></p>
-<div id="examples-1" class="section level2">
 <h3>Examples</h3>
 <ol style="list-style-type: decimal;">
 <li><span class="math inline">\(3\times2+4=6+4=10.\)</span></li>
@@ -469,62 +491,51 @@ Solution: <span class="math display">\[\begin{align*} 6a^{2}\times4ab\div12ab &a
 </ol>
 <p>For some practice, see Exercise 4.</p>
 <h2>Exercises</h2>
-</div>
-</div>
-<div id="exercise-1" class="section level1">
 <h3>Exercise 1</h3>
 <p>Which of the five terms on the right is a like term with the term on the left?</p>
 <p><span class="math display">\[\begin{array}{llllllll} 1) &amp; 3x &amp; | &amp; 3 &amp; 2x &amp; 3x^{2} &amp; 2xy &amp; 4x^{2}a\\ 2) &amp; 2ab &amp; | &amp; 2a &amp; 2b &amp; 3x^{2} &amp; 6abc &amp; 12ab\\ 3) &amp; 2x^{2} &amp; | &amp; x &amp; 2x &amp; 5x^{2} &amp; 4x &amp; 4x^{3}\\ 4) &amp; 3xy^{2} &amp; | &amp; 3 &amp; 3xy &amp; 3x^{2}xy^{2} &amp; 3y^{2} &amp; y^2x\\ 5) &amp; 2m^{2}n &amp; | &amp; n &amp; mn^{2} &amp; 8mn &amp; 2m^{2} &amp; 4nm^{2}\\ 6) &amp; 4ab^{2}c &amp; | &amp; 4 &amp; 2ab^{2}c &amp; 4abc &amp; 8b^{2}c &amp; 4cba \end{array}\]</span></p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answers:-exercise-1-4042">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers:-exercise-1-2386" aria-expanded="false" aria-controls="body-answers:-exercise-1-2386" >Answers: Exercise 1</button>
+<p class="accordion-header" id="head-answers:-exercise-1-7125">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers:-exercise-1-2459" aria-expanded="false" aria-controls="body-answers:-exercise-1-2459" >Answers: Exercise 1</button>
 </p>
-<div id="body-answers:-exercise-1-2386" class="accordion-collapse collapse " aria-labelledby="head-answers:-exercise-1-4042">
+<div id="body-answers:-exercise-1-2459" class="accordion-collapse collapse " aria-labelledby="head-answers:-exercise-1-7125">
 <div class="accordion-body">
 <p><span class="math display">\[\begin{array}{lllllllllllllll} 1.\;2x &amp; &amp; 2.\;12ab &amp; &amp; 3.\;5x^{2} &amp; &amp; 4.\;y^2x &amp; &amp; 5.\;4nm^{2} &amp; &amp; 6.\;2ab^{2}c\end{array}\]</span></p>
 </div></div></div>
-</div>
-<div id="exercise-2" class="section level1">
 <h3>Exercise 2</h3>
 <p>Simplify each of the following:</p>
 <p><span class="math display">\[\begin{array}{lllllll} &amp; &amp; a)\;13x+4-3x-1 &amp; &amp; &amp; &amp; b)\;10mn+5m+12mn+6m\\ &amp; &amp; c)\;3xy^{2}+2xy+5xy^{2}+3xy &amp; &amp; &amp; &amp; d)\;5xy+6m-2xy-2m\\ &amp; &amp; e)\;x+y+2x-y &amp; &amp; &amp; &amp; f)\;3a+5b-a-6b\\ &amp; &amp; g)\;x+4y-x-2y &amp; &amp; &amp; &amp; h)\;7x-4m-5x-3m\\ &amp; &amp; i)\;4x-5x-3y+5x &amp; &amp; &amp; &amp; j)\;9mn-3m-n+4m^{2} \end{array}\]</span></p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answers:-exercise-2-7807">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers:-exercise-2-9814" aria-expanded="false" aria-controls="body-answers:-exercise-2-9814" >Answers: Exercise 2</button>
+<p class="accordion-header" id="head-answers:-exercise-2-4932">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers:-exercise-2-3446" aria-expanded="false" aria-controls="body-answers:-exercise-2-3446" >Answers: Exercise 2</button>
 </p>
-<div id="body-answers:-exercise-2-9814" class="accordion-collapse collapse " aria-labelledby="head-answers:-exercise-2-7807">
+<div id="body-answers:-exercise-2-3446" class="accordion-collapse collapse " aria-labelledby="head-answers:-exercise-2-4932">
 <div class="accordion-body">
 <p><span class="math display">\[\begin{array}{llllllllll} &amp; a)\;10x+3 &amp; &amp; b)\;22mn+11m &amp; &amp; c)\;8xy^{2}+5xy &amp; &amp; d)\;3xy+4m &amp; &amp; e)\;3x\\ &amp; f)\;2a-b &amp; &amp; g)\;2y &amp; &amp; h)\;2x-7m &amp; &amp; i)\;5x-3y &amp; &amp; j)\;9mn-3m-n+4m^{2} \end{array}\]</span></p>
 </div></div></div>
-</div>
-<div id="exercise-3" class="section level1">
 <h3>Exercise 3</h3>
 <p>Simplify the following algebraic expressions:</p>
 <p><span class="math display">\[\begin{array}{lllllll} 1. &amp; &amp; a)\;5\times2k &amp; &amp; &amp; &amp; b)\;4a\times3ab\\ &amp; &amp; c)\;y\times3y &amp; &amp; &amp; &amp; d)\;4m\times\left(-3mn\right)\\ &amp; &amp; e)\;m\times39\times5 &amp; &amp; &amp; &amp; f)\;2ab\times3bc\times\left(-4\right)\\ &amp; &amp; g)\;2ab^{2}\times3ac &amp; &amp; &amp; &amp; h)\;4m\times\left(-5kmp\right)\\ \\ \\ 2. &amp; &amp; a)\;18ef\div6f &amp; &amp; &amp; &amp; b)\;-100uvw\div100w\\ &amp; &amp; c)\;24gh^{2}\div8gh &amp; &amp; &amp; &amp; d)\;3m^{2}n\div12mn^{2}\\ &amp; &amp; e)\;rs\times2st\div2s &amp; &amp; &amp; &amp; f)\;3jk\times12km\div9jkm\\ &amp; &amp; g)\;10p\times3qp\div16pq &amp; &amp; &amp; &amp; h)\;4yz\times5w^{2}z\div10wy \end{array}\]</span></p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answers:-exercise-3-2946">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers:-exercise-3-3698" aria-expanded="false" aria-controls="body-answers:-exercise-3-3698" >Answers: Exercise 3</button>
+<p class="accordion-header" id="head-answers:-exercise-3-2831">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers:-exercise-3-5999" aria-expanded="false" aria-controls="body-answers:-exercise-3-5999" >Answers: Exercise 3</button>
 </p>
-<div id="body-answers:-exercise-3-3698" class="accordion-collapse collapse " aria-labelledby="head-answers:-exercise-3-2946">
+<div id="body-answers:-exercise-3-5999" class="accordion-collapse collapse " aria-labelledby="head-answers:-exercise-3-2831">
 <div class="accordion-body">
 <p><span class="math display">\[\begin{array}{llllllll} 1. &amp; a)\;10k &amp; &amp; b)\;12a^{2}b &amp; &amp; c)\;3y^{2} &amp; &amp; d)\;-12m^{2}n\\ &amp; e)\;15mp &amp; &amp; f)\;-24ab^{2}c &amp; &amp; g)\;6a^{2}b^{2}c &amp; &amp; h)\;-20km^{2}p\\ \\ 2. &amp; a)\;3e &amp; &amp; b)\;-uv &amp; &amp; c)\;3h &amp; &amp; d)\;m/4n\\ &amp; e)\;rst &amp; &amp; f)\;4k &amp; &amp; g)\;15p/8 &amp; &amp; h)\;2wz^{2} \end{array}\]</span></p>
 </div></div></div>
-</div>
-<div id="exercise-4" class="section level1">
 <h3>Exercise 4</h3>
 <p>Simplify the following expressions:</p>
 <p><span class="math display">\[\begin{array}{lllll} 1)\;18+\left(3\times\left(-5\right)\right) &amp; &amp; &amp; &amp; 2)\;3\times\left(-4\right)+\left(8\times2\right)\\ 3)\;10-5^{2}+3 &amp; &amp; &amp; &amp; 4)\;\left(10-5\right)^{2}+3\\ 5)\;10^{2}-5^{2} &amp; &amp; &amp; &amp; 6)\;\left(10-5\right)^{2}\\ 7)\;3m+2\times3m &amp; &amp; &amp; &amp; 8)\;6ab-3a\times4b\\ 9)\;16gh-4gh\times4 &amp; &amp; &amp; &amp; 10)\;9b-3b\times2k+2k\times b \end{array}\]</span></p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answers:-exercise-4-4310">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers:-exercise-4-5578" aria-expanded="false" aria-controls="body-answers:-exercise-4-5578" >Answers: Exercise 4</button>
+<p class="accordion-header" id="head-answers:-exercise-4-5071">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers:-exercise-4-2004" aria-expanded="false" aria-controls="body-answers:-exercise-4-2004" >Answers: Exercise 4</button>
 </p>
-<div id="body-answers:-exercise-4-5578" class="accordion-collapse collapse " aria-labelledby="head-answers:-exercise-4-4310">
+<div id="body-answers:-exercise-4-2004" class="accordion-collapse collapse " aria-labelledby="head-answers:-exercise-4-5071">
 <div class="accordion-body">
 <p><span class="math display">\[\begin{array}{lllllllll} 1.\;3 &amp; &amp; 2.\;4 &amp; &amp; 3.\;-12 &amp; &amp; 4.\;28 &amp; &amp; 5.\;75\\ 6.\;25 &amp; &amp; 7.\;9m &amp; &amp; 8.\;-6ab &amp; &amp; 9.\;0 &amp; &amp; 10.\;9b-4bk \end{array}\]</span></p>
 </div></div></div>
-</div>
-<p><a class="mathspdf" href="https://rmitlibrary.github.io/cdn/learninglab/docs/A1.1_Algebraic_Operations.pdf" type="application/pdf">Download this page, A1.1 Algebraic operations <span class="file-link-info">(PDF 231KB)</span></a></p>
-<p>Head image from Pixabay. Other images on this page by RMIT, licensed under CC BY-NC 4.0.</p>
+<p class="small" id="my-id">Head image from Pixabay. Other images on this page by <a href="https://rmit.edu.au/">RMIT</a>, licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC 4.0</a></p>
 			<nav class="btn-nav-container" aria-label="Previous and next links">
 <h2 class="btn-nav-prev">
     <a href="../index.html">
@@ -537,8 +548,8 @@ Solution: <span class="math display">\[\begin{align*} 6a^{2}\times4ab\div12ab &a
 
 <h2 class="btn-nav-next">
     <a href="../a12-algebraic-substitution/index.html">
-        <span aria-hidden="true">A1.2 Algebraic substitution</span>
-        <span class="visually-hidden">Next page: A1.2 Algebraic substitution</span>
+        <span aria-hidden="true">Algebraic substitution</span>
+        <span class="visually-hidden">Next page: Algebraic substitution</span>
     </a>
 </h2>
 	
@@ -566,7 +577,7 @@ Solution: <span class="math display">\[\begin{align*} 6a^{2}\times4ab\div12ab &a
 <!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
 <!--
 <p><strong>Subjects </strong>
-    | <strong><a href="https://lab.bitma.app/subject-area/maths/">Maths</a></strong>  
+    | <strong><a href="https://learninglab.rmit.edu.au/subject-area/maths/">Maths</a></strong>  
     </p>
 -->
 <!-- category echo end -->
@@ -626,18 +637,17 @@ Solution: <span class="math display">\[\begin{align*} 6a^{2}\times4ab\div12ab &a
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <section class="acknowledgement-container">
-                        <div class="acknowledgement-image">
-                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
-                        </div>
-
+                <section class="acknowledgement-container">
                         <div class="content">
                             <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
                             <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
-                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="#" class="link-large">More information</a>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business<span class="img-credit"> - Artwork 'Sentient' by Hollie Johnson, Gunaikurnai and Monero Ngarigo</span>.</p>
+                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                        </div>
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/sentient-hollie-johnson.jpg" alt="" />
                         </div>
                     </section>
                 </div>
@@ -717,7 +727,7 @@ Solution: <span class="math display">\[\begin{align*} 6a^{2}\times4ab\div12ab &a
 </div><!-- wrapper end -->
 		
 	
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
 <script src="../../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
 <!-- Code to handle hamburger menu, embed mode, dark mode -->

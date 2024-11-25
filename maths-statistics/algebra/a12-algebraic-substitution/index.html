@@ -2,68 +2,31 @@
 <html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
 
 <head>
-<!-- 
-    DARK MODE
-    This script is placed in the <head> to ensure the theme is set as early as possible,
-    reducing the flash of unstyled content (FOUC). It determines the user's preferred
-    theme (either from local storage or system settings) and applies it immediately.
-  -->
-  <script>
-    (function() {
-      'use strict';
-
-      // Function to get the stored theme from local storage
-      const getStoredTheme = () => localStorage.getItem('theme');
-
-      // Function to determine the preferred theme
-      const getPreferredTheme = () => {
-        const storedTheme = getStoredTheme(); // Retrieve the stored theme
-        if (storedTheme) {
-          return storedTheme; // If a theme is stored, return it
-        }
-        // If no theme is stored, check the system preference for dark mode
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      // Function to apply the specified theme
-      const setTheme = theme => {
-        if (theme === 'auto') {
-          // If theme is 'auto', set it based on system preference
-          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-        } else {
-          // Otherwise, set the theme explicitly
-          document.documentElement.setAttribute('data-bs-theme', theme);
-        }
-      };
-
-      // Set the theme based on the preferred theme
-      setTheme(getPreferredTheme());
-    })();
-  </script>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- wp_head -->
-	<title>A1.2 Algebraic substitution - lab</title>
-
-		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
+	<title>A1.2: Algebraic substitution - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		
 		<meta name="description" content="Find out how to replace pronumerals with numbers in a formula to get a numerical value for some quantity. In many courses you will be required to use formulae to calculate something of interest. The process of substituting numbers for pro-numerals in an expression or formula is called substitution. Pro-numerals Pro-numerals are letters or symbols" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
-		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		
 		<meta property="og:locale" content="en_US" />
-		<meta property="og:site_name" content="lab -" />
+		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="A1.2 Algebraic substitution - lab" />
+		<meta property="og:title" content="A1.2: Algebraic substitution - Learning Lab" />
 		<meta property="og:description" content="Find out how to replace pronumerals with numbers in a formula to get a numerical value for some quantity. In many courses you will be required to use formulae to calculate something of interest. The process of substituting numbers for pro-numerals in an expression or formula is called substitution. Pro-numerals Pro-numerals are letters or symbols" />
-		<meta property="og:url" content="https://lab.bitma.app/maths-statistics/algebra/a12-algebraic-substitution/" />
+		<meta property="og:url" content="https://learninglab.rmit.edu.au/maths-statistics/algebra/a12-algebraic-substitution/" />
 		<meta property="article:published_time" content="2023-10-16T05:34:41+00:00" />
-		<meta property="article:modified_time" content="2024-08-20T05:26:03+00:00" />
+		<meta property="article:modified_time" content="2024-11-25T00:34:51+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="A1.2 Algebraic substitution - lab" />
+		<meta name="twitter:title" content="A1.2: Algebraic substitution - Learning Lab" />
 		<meta name="twitter:description" content="Find out how to replace pronumerals with numbers in a formula to get a numerical value for some quantity. In many courses you will be required to use formulae to calculate something of interest. The process of substituting numbers for pro-numerals in an expression or formula is called substitution. Pro-numerals Pro-numerals are letters or symbols" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/a12-algebraic-substitution\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/lab.bitma.app\/maths-statistics\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/#listItem","position":3,"name":"Algebra","item":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/","nextItem":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/a12-algebraic-substitution\/#listItem","previousItem":"https:\/\/lab.bitma.app\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/a12-algebraic-substitution\/#listItem","position":4,"name":"A1.2 Algebraic substitution","previousItem":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/a12-algebraic-substitution\/#webpage","url":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/a12-algebraic-substitution\/","name":"A1.2 Algebraic substitution - lab","description":"Find out how to replace pronumerals with numbers in a formula to get a numerical value for some quantity. In many courses you will be required to use formulae to calculate something of interest. The process of substituting numbers for pro-numerals in an expression or formula is called substitution. Pro-numerals Pro-numerals are letters or symbols","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/maths-statistics\/algebra\/a12-algebraic-substitution\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:41+00:00","dateModified":"2024-08-20T05:26:03+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/algebra\/a12-algebraic-substitution\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/algebra\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/algebra\/#listItem","position":3,"name":"Algebra","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/algebra\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/algebra\/a12-algebraic-substitution\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/algebra\/a12-algebraic-substitution\/#listItem","position":4,"name":"A1.2: Algebraic substitution","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/algebra\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/algebra\/a12-algebraic-substitution\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/algebra\/a12-algebraic-substitution\/","name":"A1.2: Algebraic substitution - Learning Lab","description":"Find out how to replace pronumerals with numbers in a formula to get a numerical value for some quantity. In many courses you will be required to use formulae to calculate something of interest. The process of substituting numbers for pro-numerals in an expression or formula is called substitution. Pro-numerals Pro-numerals are letters or symbols","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/algebra\/a12-algebraic-substitution\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:41+00:00","dateModified":"2024-11-25T00:34:51+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
@@ -81,25 +44,96 @@ MathJax = {
 
 </script>
 <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
-<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
-<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
-<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+
+
+
+
+<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=849.css' media='all' />
  	<!-- /wp_head -->
+
     
+    
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta name="author" content="RMIT Library">
+
+    <meta name="geo.position" content="-37.807778, 144.963333">
+    <meta name="geo.placename" content="Melbourne">
+    <meta name="geo.region" content="AU">
+
+    <meta name="dcterms.title" content="Learning Lab">
+    
+    <meta name="dcterms.description" content="Find out how to replace pronumerals with numbers in a formula to get a numerical value for some quantity. In many courses you will be required to use formulae to calculate something of interest. The process of substituting numbers for pro-numerals in an expression or formula is called substitution. Pro-numerals...">
+    <meta name="dcterms.type" content="Text">
+    <meta name="dcterms.identifier" content="https://learninglab.rmit.edu.au/maths-statistics/algebra/a12-algebraic-substitution/">
+    <meta name="dcterms.format" content="text/html">
+    <!-- END Additional meta tags not covered by wp_head -->
+
+
+    <!-- START Additional scripts for tracking -->
+
+    <!-- Microsoft Clarity - does hotspot tracking of pages -->
+    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+
+    <!-- Google tag - (gtag.js) --> 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLHPB23GYR');
+    </script>
+
+    <!-- Microsoft Bing - Not sure how useful this is? --> 
+    <meta name="msvalidate.01" content="8E4954E1DFAB7E2F8A92DD0A0BD6ED09">
+
+    <!-- END Additional scripts for tracking -->
+
     <style>
         </style>
+
+    <!-- 
+    DARK MODE javascript
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+    -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Function to get the stored theme from local storage
+        const getStoredTheme = () => localStorage.getItem('theme');
+
+        // Function to determine the preferred theme
+        const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+            return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        // Function to apply the specified theme
+        const setTheme = theme => {
+        if (theme === 'auto') {
+            // If theme is 'auto', set it based on system preference
+            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+            // Otherwise, set the theme explicitly
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        };
+
+        // Set the theme based on the preferred theme
+        setTheme(getPreferredTheme());
+    })();
+    </script>
 </head>
 
 <body class="page-template-default page page-id-3035 page-child parent-pageid-2670 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
-	
 		
 <header>
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
@@ -166,7 +200,7 @@ MathJax = {
 </h2>
 <div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
 <div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
-<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic Word List tool</a></li>
 <li class="page_item page-item-3107 page_item_has_children"><a href="../../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
 <li class="page_item page-item-2520 page_item_has_children"><a href="../../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
 <li class="page_item page-item-2521"><a href="../../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
@@ -211,7 +245,7 @@ MathJax = {
 									<ul>
 										<li><a href="../../../art-and-design/index.html">Art and design</a></li>
 										<li><a href="../../../chemistry/index.html">Chemistry</a></li>
-										<li><a href="../../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../../law-resources/index.html">Legal studies</a></li>
 										<li><a href="../../index.html">Mathematics and statistics</a></li>
 										<li><a href="../../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
 										<li><a href="../../../subject-areas/physics/index.html">Physics</a></li>
@@ -275,7 +309,7 @@ This should be moved to a stylesheet once style is determined. -->
 <!-- START SIDEBAR NAV PANEL -->
 <nav class="right-nav" aria-label="Section Menu">
 
-<h2><a href="../../index.html">Maths and statistics</a></h2><h3><a href="../index.html">Algebra</a></h3><ul><li><a href="../a11-algebraic-operations/index.html">A1.1 Algebraic operations</a></li><li><a href="index.html" class="selected"  aria-current="page">A1.2 Algebraic substitution</a><li><a href="../a13-removing-brackets/index.html">A1.3 Removing brackets</a></li><li><a href="../a14-algebraic-fractions-addition-and-subtraction/index.html">A1.4 Algebraic fractions &ndash; Addition and subtraction</a></li><li><a href="../a15-algebraic-fractions-multiplication-and-division/index.html">A1.5 Algebraic fractions &ndash; Multiplication and division</a></li><li><a href="../a16-quadratics/index.html">A1.6 Quadratics</a></li><li><a href="../a17-partial-fractions/index.html">A1.7 Partial fractions</a></li><li><a href="../a21-rearranging-formulae/index.html">A2.1 Rearranging formulas</a></li><li><a href="../a22-rearranging-formulas-brackets-and-fractions/index.html">A2.2 Rearranging formulas &ndash; Brackets and fractions</a></li><li><a href="../a23-transposition-formulas-challenges/index.html">A2.3 Transposition of formulas with challenges</a></li><li><a href="../a31-common-factors/index.html">A3.1 Common factors</a></li><li><a href="../a32-perfect-squares/index.html">A3.2 Perfect squares</a></li><li><a href="../a33-difference-two-squares/index.html">A3.3 Difference of two squares</a></li><li><a href="../a34-quadratics/index.html">A3.4 Quadratics</a></li><li><a href="../a35-completing-square/index.html">A3.5 Completing the square</a></li><li><a href="../a36-polynomial-long-division/index.html">A3.6 Polynomial long division</a></li></ul></nav>
+<h2><a href="../../index.html">Maths and statistics</a></h2><h3><a href="../index.html">Algebra</a></h3><ul><li><a href="../a11-algebraic-operations/index.html">Algebraic operations</a></li><li><a href="index.html" class="selected"  aria-current="page">Algebraic substitution</a><li><a href="../a13-removing-brackets/index.html">Removing brackets</a></li><li><a href="../a14-algebraic-fractions-addition-and-subtraction/index.html">Algebraic fractions &ndash; Addition and subtraction</a></li><li><a href="../a15-algebraic-fractions-multiplication-and-division/index.html">Algebraic fractions &ndash; Multiplication and division</a></li><li><a href="../a16-quadratics/index.html">Quadratics</a></li><li><a href="../a17-partial-fractions/index.html">Partial fractions</a></li><li><a href="../a21-rearranging-formulae/index.html">Rearranging formulas</a></li><li><a href="../a22-rearranging-formulas-brackets-and-fractions/index.html">A2.2 Rearranging formulas &ndash; Brackets and fractions</a></li><li><a href="../a23-transposition-formulas-challenges/index.html">A2.3 Transposition of formulas with challenges</a></li><li><a href="../a31-common-factors/index.html">A3.1 Common factors</a></li><li><a href="../a32-perfect-squares/index.html">A3.2 Perfect squares</a></li><li><a href="../a33-difference-two-squares/index.html">A3.3 Difference of two squares</a></li><li><a href="../a34-quadratics/index.html">A3.4 Quadratics</a></li><li><a href="../a35-completing-square/index.html">Completing the square</a></li><li><a href="../a36-polynomial-long-division/index.html">Polynomial long division</a></li></ul></nav>
 <!-- END SIDEBAR NAV PANEL -->
 
 
@@ -318,18 +352,18 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li><a href="../index.html">Algebra</a></li>
 </ul>
 </nav>            <a id="main-content"></a>
-            <h1 class="margin-top-zero">A1.2 Algebraic substitution</h1>
-            <div class="acc plain">
-<p><span class="marginnote"><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-a12-0.png" alt="" /></span></p>
-<p class="lead">Find out how to replace pronumerals with numbers in a formula to get a numerical value for some quantity.<br />
+            <h1 class="margin-top-zero">A1.2: Algebraic substitution</h1>
+            <p class="lead">Find out how to replace pronumerals with numbers in a formula to get a numerical value for some quantity.<br />
 In many courses you will be required to use formulae to calculate something of interest. The process of substituting numbers for pro-numerals in an expression or formula is called substitution.</p>
-<div class="responsive-video"><iframe src="https://www.youtube.com/embed/9g4bONtTBV0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
-<div class="acc transcript">
+<figure class="">
+<div class="responsive-video">
+<iframe src="https://www.youtube.com/embed/9g4bONtTBV0" frameborder="0" allowfullscreen=""></iframe>
+</div>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-transcript-6494">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-1411" aria-expanded="false" aria-controls="body-transcript-1411" >Transcript</button>
+<p class="accordion-header" id="head-transcript-9246">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-9840" aria-expanded="false" aria-controls="body-transcript-9840" >Transcript</button>
 </p>
-<div id="body-transcript-1411" class="accordion-collapse collapse " aria-labelledby="head-transcript-6494">
+<div id="body-transcript-9840" class="accordion-collapse collapse " aria-labelledby="head-transcript-9246">
 <div class="accordion-body">
 <p>Hi, this is Martin Lindsay from the Study and Learning Centre at RMIT University. This is a short movie on substitution in algebra. Replacing a pro-numeral or variable or letter in an expression or formula with a number is called substitution. Instance, here’s an expression, three P, and we want to work this out, in other words evaluate, if P equals minus five. So substituting P equals minus five into the expression, three P is the same as three times P, which is three times minus five which is minus 15.</p>
 <p>Here are two more examples. Evaluate A plus five over B, if A equals minus nine and B equals two, here you notice we have two pro-numerals A and B, so substituting A and B into the formula or, sorry, into the expression, we have minus nine plus five over two which gives us minus four over two which is minus two.</p>
@@ -337,74 +371,80 @@ In many courses you will be required to use formulae to calculate something of i
 <p>Let’s look at a more complicated expression. Here we have the formula C equals five brackets F minus 32 close brackets over nine and that’s the formula that converts a temperature in Fahrenheit into one in Centigrade, so here we want to convert a temperature of 100 degrees in Fahrenheit, so substituting F equals 100 into the formula we get 37.78 degrees Celsius, so again, as with the previous examples, we’re just substituting the unknown, or the pro-numeral, which in this case is F, into the formula.</p>
 <p>Now try some questions for yourself. The answers to these questions are on the next slide. Thanks for watching this short movie.</p>
 </div></div></div>
-</div>
-<div id="pro-numerals" class="section level1">
+</figure>
+
 <h2>Pro-numerals</h2>
-<p>Pro-numerals are letters or symbols that represent numbers in a mathematical expression or formula. In the expression <span class="math display">\[ \frac{a+b}{2} \]</span> <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are pro-numerals. In the formula for the area of a circle<span class="sidenote"><span class="sidenote-number">1</span> <span class="math inline">\(A\)</span> is the area, <span class="math inline">\(r\)</span> is the radius and <span class="math inline">\(\pi\)</span> is a number that is approximately <span class="math inline">\(3.14\)</span>. <img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-a12-1-circleradr.png" alt="Circle of radius r" /></span> <span class="math display">\[ A=\pi r^{2} \]</span> <span class="math inline">\(A\)</span>, the Greek letter <span class="math inline">\(\pi\)</span> (pronounced pi) and the letter <span class="math inline">\(r\)</span> are pro-numerals.</p>
-</div>
-<div id="substitution" class="section level1">
+<figure class="float-right ">
+
+<img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-a12-0.png" alt="" />
+
+
+</figure>
+
+Pro-numerals are letters or symbols that represent numbers in a mathematical expression or formula. In the expression <span class="math display">\[ \frac{a+b}{2} \]</span> <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are pro-numerals. In the formula for the area of a circle<span class="sidenote"><span class="sidenote-number">1</span> <span class="math inline">\(A\)</span> is the area, <span class="math inline">\(r\)</span> is the radius and <span class="math inline">\(\pi\)</span> is a number that is approximately <span class="math inline">\(3.14\)</span>. <figure class="img-width-sm ">
+
+<img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-a12-1-circleradr.png" alt="Circle of radius r" />
+
+
+</figure>
+</span> <span class="math display">\[ A=\pi r^{2} \]</span> <span class="math inline">\(A\)</span>, the Greek letter <span class="math inline">\(\pi\)</span> (pronounced pi) and the letter <span class="math inline">\(r\)</span> are pro-numerals.</p>
 <h2>Substitution</h2>
 <p>Putting a number into an expression or formula in place of pro-numerals is called substitution. For example if <span class="math inline">\(a=5\)</span> and <span class="math inline">\(b=3,\)</span> the expression <span class="math inline">\(\frac{a+b}{2}\)</span> can be evaluated by substituting <span class="math inline">\(5\)</span> for <span class="math inline">\(a\)</span> and <span class="math inline">\(3\)</span> for <span class="math inline">\(b\)</span> wherever they occur. That is <span class="math display">\[\begin{align*} \frac{a+b}{2} &amp; =\frac{5+3}{2}\\ &amp; =\frac{8}{2}\\ &amp; =4. \end{align*}\]</span></p>
 <p>Similarly, the area of a circle with a radius <span class="math inline">\(r=5\,cm\)</span> is given by <span class="math display">\[\begin{align*} A &amp; =\pi r^{2}\\ &amp; =\pi5^{2}\\ &amp; =25\pi\\ &amp; \thickapprox78.54\,cm. \end{align*}\]</span></p>
-<div id="example-1" class="section level2">
 <h3>Example 1</h3>
 <p>Evaluate <span class="math inline">\(\frac{a+5}{b}\)</span> if <span class="math inline">\(a=-9\)</span> and <span class="math inline">\(b=2.\)</span></p>
 <h4>Solution</h4>
 <p> <span class="math display">\[\begin{align*} \frac{a+5}{b} &amp; =\frac{-9+5}{2}\\ &amp; =\frac{-4}{2}\\ &amp; =-2. \end{align*}\]</span></p>
-</div>
-<div id="example-2" class="section level2">
 <h3>Example 2</h3>
 <p>Evaluate <span class="math inline">\(w^{2}-2z\)</span> if <span class="math inline">\(w=-1\)</span> and <span class="math inline">\(z=5.\)</span></p>
 <h4>Solution</h4>
 <p> <span class="math display">\[\begin{align*} w^{2}-2z &amp; =\left(-1\right)\times\left(-1\right)-2\times5\\ &amp; =1-10\\ &amp; =-9. \end{align*}\]</span></p>
-</div>
-<div id="example-3" class="section level2">
 <h3>Example 3</h3>
 <p>Use the formula <span class="math display">\[ C=\frac{5\left(F-32\right)}{9} \]</span> to convert a temperature of <span class="math inline">\(212^{\circ}\)</span>Fahrenheit (F) to Centigrade (C).</p>
 <h4>Solution</h4>
 <p>Substituting <span class="math inline">\(F=212\)</span> into the formula gives: <span class="math display">\[\begin{align*} C &amp; =\frac{5\left(F-32\right)}{9}\\ &amp; =\frac{5\left(212-32\right)}{9}\\ &amp; =\frac{5\times180}{9}\\ &amp; =100^{\circ}\ \textrm{centigrade.} \end{align*}\]</span></p>
-</div>
-<div id="example-4" class="section level2">
 <h3>Example 4</h3>
 <p>The current in an electrical circuit is given by <span class="math inline">\(V=IR\)</span> where <span class="math inline">\(V\)</span>is the voltage (in volts), <span class="math inline">\(I\)</span> is the current (in amps) and <span class="math inline">\(R\)</span> is the resistance (in ohms).</p>
-<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-a12-2-circuit.png" alt="Resistor in series with battery" /></p>
+<figure class="img-width-sm ">
+
+<img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-a12-2-circuit.png" alt="Resistor in series with battery" />
+
+
+</figure>
+
 <p>If the resistance is <span class="math inline">\(5\)</span> ohms and the current is <span class="math inline">\(2\)</span> amps, what is the voltage, <span class="math inline">\(V?\)</span></p>
 <h4>Solution</h4>
 <p>We have <span class="math inline">\(r=5\)</span> and <span class="math inline">\(I=2.\)</span>Therefore, the voltage <span class="math display">\[\begin{align*} V &amp; =IR\\ &amp; =2\times5\\ &amp; =10\,\textrm{volts.} \end{align*}\]</span></p>
-</div>
-<div id="example-5" class="section level2">
 <h3>Example 5</h3>
 <p>The volume <span class="math inline">\(V,\)</span> of a right circular cone with base radius <span class="math inline">\(r\)</span> and height <span class="math inline">\(h\)</span> is given by <span class="math inline">\(V=\frac{1}{3}\pi r^{2}h.\)</span></p>
-<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-a12-3-conerh.png" alt="Right circular cone of radius r and height h" /></p>
+<figure class="img-width-sm ">
+
+<img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-a12-3-conerh.png" alt="Right circular cone of radius r and height h" />
+
+
+</figure>
+
 <p>If the radius of a cone is <span class="math inline">\(5\,cm\)</span> and its height is <span class="math inline">\(15\:cm.\)</span> what is the volume of the cone?</p>
 <h4>Solution</h4>
 <p>In this case <span class="math inline">\(r=5\)</span> and <span class="math inline">\(h=15\)</span>, so the volume of the cone is <span class="math display">\[\begin{align*} V &amp; =\frac{1}{3}\pi r^{2}h\\ &amp; =\frac{1}{3}\times\pi\times5^{2}\times15\\ &amp; \approx392.7\:cm^{3}. \end{align*}\]</span></p>
-</div>
-<div id="example-6" class="section level2">
 <h3>Example 6</h3>
 <p>The formula relating distance traveled <span class="math inline">\(s,\)</span> to initial speed <span class="math inline">\(u,\)</span> acceleration <span class="math inline">\(a\)</span> and time <span class="math inline">\(t\)</span> is <span class="math display">\[\begin{align*} s &amp; =ut+\frac{1}{2}at^{2}. \end{align*}\]</span> A car traveling at a speed of <span class="math inline">\(4\,m/s\)</span> accelerates at a rate of <span class="math inline">\(2\:m/s^{2}\)</span> for <span class="math inline">\(5\,s.\)</span> How far does it travel during this time?</p>
 <h4>Solution</h4>
 <p>In this case, <span class="math inline">\(u=4,\)</span> <span class="math inline">\(a=2\)</span> and <span class="math inline">\(t=5\)</span>. So the distance traveled is <span class="math display">\[\begin{align*} s &amp; =ut+\frac{1}{2}at^{2}\\ &amp; =4\times5+\frac{1}{2}\times2\times5^{2}\\ &amp; =20+\frac{1}{2}\times2\times25\\ &amp; =45\:m. \end{align*}\]</span></p>
-</div>
-<div id="example-7" class="section level2">
 <h3>Example 7</h3>
 <p>The area of a circle <span class="math inline">\(A\)</span> is given by <span class="math display">\[ A=\pi r^{2} \]</span> where <span class="math inline">\(r\)</span> is the radius. If a circle has an area of <span class="math inline">\(30\,cm^{2}\)</span> what is it’s radius.</p>
 <h4>Solution</h4>
 <p>Substituting <span class="math inline">\(A=30\)</span> we have <span class="math display">\[\begin{align*} 30 &amp; =\pi r^{2}. \end{align*}\]</span> We want <span class="math inline">\(r\)</span>. First we divide both sides by <span class="math inline">\(\pi\)</span> to get <span class="math display">\[\begin{align*} \frac{30}{\pi} &amp; =\frac{\pi r^{2}}{\pi}.\\ &amp; =r^{2}\\ r^{2} &amp; =\frac{30}{\pi}\\ r &amp; =\sqrt{\frac{30}{\pi}}\\ &amp; \approx3.1\:cm. \end{align*}\]</span></p>
-</div>
-</div>
-<div id="exercises" class="section level1">
 <h2>Exercises</h2>
 <ol style="list-style-type: decimal;">
 <li>Evaluate the following:</li>
 </ol>
 <p><span class="math display">\[\begin{array}{ll} a)\,-4k\textrm{ if $k=7$ }\quad &amp; b)\,2mn\textrm{ if $m=4,\,n=-2$ }\\ c)\,e^{2}-5\textrm{ if $e=2$ }\quad &amp; d)\,5-b-b^{2}\ \textrm{if $b=3$ }\\ e)\,2k^{2}+4\textrm{ if $k=-6\quad$ } &amp; f)\,-3ab^{2}\ \textrm{if }a=4,\,b=2\\ g)\,\frac{n}{4}+2\textrm{ if $n=10$ }\quad &amp; h)\,\frac{u}{5v}\textrm{ if $u=-20,\,v=2$ } \end{array}\]</span></p>
-<div id="answers" class="section level2">
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answers-5872">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-5475" aria-expanded="false" aria-controls="body-answers-5475" >Answers</button>
+<p class="accordion-header" id="head-answers-2642">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-9699" aria-expanded="false" aria-controls="body-answers-9699" >Answers</button>
 </p>
-<div id="body-answers-5475" class="accordion-collapse collapse " aria-labelledby="head-answers-5872">
+<div id="body-answers-9699" class="accordion-collapse collapse " aria-labelledby="head-answers-2642">
 <div class="accordion-body">
 <p><span class="math display">\[\begin{array}{llllllll} a)\,-28 &amp; b)\,-16 &amp; c)\,-1 &amp; d)\,-7 &amp; e)\,76 &amp; f)\,-48 &amp; g)\,4.5 &amp; h)\,-2\end{array}\]</span></p>
 </div></div></div>
@@ -412,25 +452,20 @@ In many courses you will be required to use formulae to calculate something of i
 <li>Evaluate the following if <span class="math inline">\(a=-1,\,b=6,\,c=3,\,m=-2,\,n=2.\)</span></li>
 </ol>
 <p><span class="math display">\[\begin{array}{ll} a)\,3a^{2}-7\quad &amp; b)\,3a-b^{2}\\ c)\,\left(2m+1\right)^{2} &amp; \quad d)\,3\left(a-b^{2}\right)\\ e)\,\frac{2m}{n} &amp; \quad f)\,\left(m-n\right)^{2} \end{array}\]</span></p>
-</div>
-<div id="answers-1" class="section level2">
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answers-7621">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-7783" aria-expanded="false" aria-controls="body-answers-7783" >Answers</button>
+<p class="accordion-header" id="head-answers-7756">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-3174" aria-expanded="false" aria-controls="body-answers-3174" >Answers</button>
 </p>
-<div id="body-answers-7783" class="accordion-collapse collapse " aria-labelledby="head-answers-7621">
+<div id="body-answers-3174" class="accordion-collapse collapse " aria-labelledby="head-answers-7756">
 <div class="accordion-body">
 <p><span class="math display">\[\begin{array}{llllll} a)\,-4\ &amp; b)\,-39 &amp; \ c)\,9\ &amp; d)\,147 &amp; \ e)\,-2 &amp; \ f)\,16\end{array}\]</span></p>
 </div></div></div>
-</div>
-</div>
-<p><a class="mathspdf" href="https://rmitlibrary.github.io/cdn/learninglab/docs/A1.2_Algebraic_Substitution.pdf" type="application/pdf">Download this page, A1.2 Algebraic Substitution <span class="file-link-info">(PDF 402 KB) </span></a></p>
-</div>
+<p class="small" id="my-id">Images on this page by <a href="https://rmit.edu.au/">RMIT</a>, licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC 4.0</a></p>
 			<nav class="btn-nav-container" aria-label="Previous and next links">
 <h2 class="btn-nav-prev">
     <a href="../a11-algebraic-operations/index.html">
-        <span aria-hidden="true">A1.1 Algebraic operations</span>
-        <span class="visually-hidden">Previous page: A1.1 Algebraic operations</span>
+        <span aria-hidden="true">Algebraic operations</span>
+        <span class="visually-hidden">Previous page: Algebraic operations</span>
     </a>
 </h2>
     
@@ -438,8 +473,8 @@ In many courses you will be required to use formulae to calculate something of i
 
 <h2 class="btn-nav-next">
     <a href="../a13-removing-brackets/index.html">
-        <span aria-hidden="true">A1.3 Removing brackets</span>
-        <span class="visually-hidden">Next page: A1.3 Removing brackets</span>
+        <span aria-hidden="true">Removing brackets</span>
+        <span class="visually-hidden">Next page: Removing brackets</span>
     </a>
 </h2>
 	
@@ -465,7 +500,7 @@ In many courses you will be required to use formulae to calculate something of i
 <!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
 <!--
 <p><strong>Subjects </strong>
-    | <strong><a href="https://lab.bitma.app/subject-area/maths/">Maths</a></strong>  
+    | <strong><a href="https://learninglab.rmit.edu.au/subject-area/maths/">Maths</a></strong>  
     </p>
 -->
 <!-- category echo end -->
@@ -525,18 +560,17 @@ In many courses you will be required to use formulae to calculate something of i
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <section class="acknowledgement-container">
-                        <div class="acknowledgement-image">
-                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
-                        </div>
-
+                <section class="acknowledgement-container">
                         <div class="content">
                             <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
                             <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
-                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="#" class="link-large">More information</a>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business<span class="img-credit"> - Artwork 'Sentient' by Hollie Johnson, Gunaikurnai and Monero Ngarigo</span>.</p>
+                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                        </div>
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/sentient-hollie-johnson.jpg" alt="" />
                         </div>
                     </section>
                 </div>
@@ -616,7 +650,7 @@ In many courses you will be required to use formulae to calculate something of i
 </div><!-- wrapper end -->
 		
 	
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
 <script src="../../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
 <!-- Code to handle hamburger menu, embed mode, dark mode -->

@@ -2,68 +2,31 @@
 <html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
 
 <head>
-<!-- 
-    DARK MODE
-    This script is placed in the <head> to ensure the theme is set as early as possible,
-    reducing the flash of unstyled content (FOUC). It determines the user's preferred
-    theme (either from local storage or system settings) and applies it immediately.
-  -->
-  <script>
-    (function() {
-      'use strict';
-
-      // Function to get the stored theme from local storage
-      const getStoredTheme = () => localStorage.getItem('theme');
-
-      // Function to determine the preferred theme
-      const getPreferredTheme = () => {
-        const storedTheme = getStoredTheme(); // Retrieve the stored theme
-        if (storedTheme) {
-          return storedTheme; // If a theme is stored, return it
-        }
-        // If no theme is stored, check the system preference for dark mode
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      // Function to apply the specified theme
-      const setTheme = theme => {
-        if (theme === 'auto') {
-          // If theme is 'auto', set it based on system preference
-          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-        } else {
-          // Otherwise, set the theme explicitly
-          document.documentElement.setAttribute('data-bs-theme', theme);
-        }
-      };
-
-      // Set the theme based on the preferred theme
-      setTheme(getPreferredTheme());
-    })();
-  </script>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- wp_head -->
-	<title>Lewis electron – dot structure - lab</title>
-
-		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
-		<meta name="description" content="\[\require{mhchem}\] Understanding the Lewis electron dot model is crucial because it visually represents the valence electrons of atoms, helping to predict molecular bonding, structure, and reactivity in chemistry. This page contains all you need to know to get started with these models. The Lewis electron-dot model is based on the fact that all atoms combine" />
+	<title>Lewis structures - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		
+		<meta name="description" content="Lewis electron dot structures are crucial because they visually represent the valence electrons of atoms, helping to predict molecular bonding, structure, and reactivity in chemistry. This resource contains all you need to know to get started with these structures. Lewis structures, also known as electron dot structures, are diagrams that represent the valence electrons of" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
-		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		
 		<meta property="og:locale" content="en_US" />
-		<meta property="og:site_name" content="lab -" />
+		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="Lewis electron – dot structure - lab" />
-		<meta property="og:description" content="\[\require{mhchem}\] Understanding the Lewis electron dot model is crucial because it visually represents the valence electrons of atoms, helping to predict molecular bonding, structure, and reactivity in chemistry. This page contains all you need to know to get started with these models. The Lewis electron-dot model is based on the fact that all atoms combine" />
-		<meta property="og:url" content="https://lab.bitma.app/chemistry/chemical-bonding/lewis-electron-dot-structure/" />
+		<meta property="og:title" content="Lewis structures - Learning Lab" />
+		<meta property="og:description" content="Lewis electron dot structures are crucial because they visually represent the valence electrons of atoms, helping to predict molecular bonding, structure, and reactivity in chemistry. This resource contains all you need to know to get started with these structures. Lewis structures, also known as electron dot structures, are diagrams that represent the valence electrons of" />
+		<meta property="og:url" content="https://learninglab.rmit.edu.au/chemistry/chemical-bonding/lewis-electron-dot-structure/" />
 		<meta property="article:published_time" content="2023-10-16T05:34:48+00:00" />
-		<meta property="article:modified_time" content="2024-08-22T22:58:50+00:00" />
+		<meta property="article:modified_time" content="2024-11-24T23:17:01+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Lewis electron – dot structure - lab" />
-		<meta name="twitter:description" content="\[\require{mhchem}\] Understanding the Lewis electron dot model is crucial because it visually represents the valence electrons of atoms, helping to predict molecular bonding, structure, and reactivity in chemistry. This page contains all you need to know to get started with these models. The Lewis electron-dot model is based on the fact that all atoms combine" />
+		<meta name="twitter:title" content="Lewis structures - Learning Lab" />
+		<meta name="twitter:description" content="Lewis electron dot structures are crucial because they visually represent the valence electrons of atoms, helping to predict molecular bonding, structure, and reactivity in chemistry. This resource contains all you need to know to get started with these structures. Lewis structures, also known as electron dot structures, are diagrams that represent the valence electrons of" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/lewis-electron-dot-structure\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/lab.bitma.app\/chemistry\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/#listItem","position":3,"name":"Chemical bonding","item":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/lewis-electron-dot-structure\/#listItem","previousItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/lewis-electron-dot-structure\/#listItem","position":4,"name":"Lewis electron &ndash; dot structure","previousItem":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/lewis-electron-dot-structure\/#webpage","url":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/lewis-electron-dot-structure\/","name":"Lewis electron \u2013 dot structure - lab","description":"\\[\\require{mhchem}\\] Understanding the Lewis electron dot model is crucial because it visually represents the valence electrons of atoms, helping to predict molecular bonding, structure, and reactivity in chemistry. This page contains all you need to know to get started with these models. The Lewis electron-dot model is based on the fact that all atoms combine","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/chemistry\/chemical-bonding\/lewis-electron-dot-structure\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:48+00:00","dateModified":"2024-08-22T22:58:50+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/lewis-electron-dot-structure\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/#listItem","position":3,"name":"Chemical bonding","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/lewis-electron-dot-structure\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/lewis-electron-dot-structure\/#listItem","position":4,"name":"Lewis structures","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/lewis-electron-dot-structure\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/lewis-electron-dot-structure\/","name":"Lewis structures - Learning Lab","description":"Lewis electron dot structures are crucial because they visually represent the valence electrons of atoms, helping to predict molecular bonding, structure, and reactivity in chemistry. This resource contains all you need to know to get started with these structures. Lewis structures, also known as electron dot structures, are diagrams that represent the valence electrons of","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/chemical-bonding\/lewis-electron-dot-structure\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:48+00:00","dateModified":"2024-11-24T23:17:01+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
@@ -81,25 +44,96 @@ MathJax = {
 
 </script>
 <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
-<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
-<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
-<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+
+
+
+
+<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=849.css' media='all' />
  	<!-- /wp_head -->
+
     
+    
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta name="author" content="RMIT Library">
+
+    <meta name="geo.position" content="-37.807778, 144.963333">
+    <meta name="geo.placename" content="Melbourne">
+    <meta name="geo.region" content="AU">
+
+    <meta name="dcterms.title" content="Learning Lab">
+    
+    <meta name="dcterms.description" content="Lewis electron dot structures are crucial because they visually represent the valence electrons of atoms, helping to predict molecular bonding, structure, and reactivity in chemistry. This resource contains all you need to know to get started with these structures. Lewis structures, also known as electron dot structures, are diagrams that...">
+    <meta name="dcterms.type" content="Text">
+    <meta name="dcterms.identifier" content="https://learninglab.rmit.edu.au/chemistry/chemical-bonding/lewis-electron-dot-structure/">
+    <meta name="dcterms.format" content="text/html">
+    <!-- END Additional meta tags not covered by wp_head -->
+
+
+    <!-- START Additional scripts for tracking -->
+
+    <!-- Microsoft Clarity - does hotspot tracking of pages -->
+    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+
+    <!-- Google tag - (gtag.js) --> 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLHPB23GYR');
+    </script>
+
+    <!-- Microsoft Bing - Not sure how useful this is? --> 
+    <meta name="msvalidate.01" content="8E4954E1DFAB7E2F8A92DD0A0BD6ED09">
+
+    <!-- END Additional scripts for tracking -->
+
     <style>
         </style>
+
+    <!-- 
+    DARK MODE javascript
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+    -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Function to get the stored theme from local storage
+        const getStoredTheme = () => localStorage.getItem('theme');
+
+        // Function to determine the preferred theme
+        const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+            return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        // Function to apply the specified theme
+        const setTheme = theme => {
+        if (theme === 'auto') {
+            // If theme is 'auto', set it based on system preference
+            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+            // Otherwise, set the theme explicitly
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        };
+
+        // Set the theme based on the preferred theme
+        setTheme(getPreferredTheme());
+    })();
+    </script>
 </head>
 
 <body class="page-template-default page page-id-3156 page-child parent-pageid-3135 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
-	
 		
 <header>
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
@@ -166,7 +200,7 @@ MathJax = {
 </h2>
 <div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
 <div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
-<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic Word List tool</a></li>
 <li class="page_item page-item-3107 page_item_has_children"><a href="../../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
 <li class="page_item page-item-2520 page_item_has_children"><a href="../../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
 <li class="page_item page-item-2521"><a href="../../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
@@ -211,7 +245,7 @@ MathJax = {
 									<ul>
 										<li><a href="../../../art-and-design/index.html">Art and design</a></li>
 										<li><a href="../../index.html">Chemistry</a></li>
-										<li><a href="../../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../../law-resources/index.html">Legal studies</a></li>
 										<li><a href="../../../maths-statistics/index.html">Mathematics and statistics</a></li>
 										<li><a href="../../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
 										<li><a href="../../../subject-areas/physics/index.html">Physics</a></li>
@@ -275,7 +309,7 @@ This should be moved to a stylesheet once style is determined. -->
 <!-- START SIDEBAR NAV PANEL -->
 <nav class="right-nav" aria-label="Section Menu">
 
-<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">Chemical bonding</a></h3><ul><li><a href="../chemical-bonding-ionic-bonds/index.html">Chemical bonding &ndash; ionic bonds</a></li><li><a href="../chemical-bonding-quiz/index.html">Chemical bonding quiz</a></li><li><a href="index.html" class="selected"  aria-current="page">Lewis electron &ndash; dot structure</a><li><a href="../lewis-structure-exercises/index.html">Lewis structure exercises</a></li><li><a href="../covalent-bonds/index.html">Covalent bonds</a></li><li><a href="../covalent-bonds-exercises/index.html">Covalent bonds - exercises</a></li></ul></nav>
+<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">Chemical bonding</a></h3><ul><li><a href="../chemical-bonding-ionic-bonds/index.html">Ionic bonding</a></li><li><a href="../covalent-bonds/index.html">Covalent bonding</a></li><li><a href="index.html" class="selected"  aria-current="page">Lewis structures</a><li><a href="../covalent-bonding-lewis-structures-quiz/index.html">Quiz – Covalent bonding and Lewis structures</a></li></ul></nav>
 <!-- END SIDEBAR NAV PANEL -->
 
 
@@ -318,21 +352,13 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li><a href="../index.html">Chemical bonding</a></li>
 </ul>
 </nav>            <a id="main-content"></a>
-            <h1 class="margin-top-zero">Lewis electron &ndash; dot structure</h1>
-            <p><script> var kw = "Keywords: " node = document.getElementById('page-title'); node.insertAdjacentHTML('afterend', '</p>
-</p>
-<p class="keywords">'+kw+'<a href="/learninglab/tags/chemistry" title="view all content with this keyword">Chemistry</a> | <a href="/learninglab/keywords/electron" title="view all content with this keyword">Electron</a> | <a href="/learninglab/keywords/chemical-bonds" title="view all content with this keyword">Chemical bonds</a></p>
-</p>
-<p>'); </script></p>
-<style type="text/css">.keywords { text-align:right; padding: 2rem; color: #ccc; } .keywords a { color: #fff; } .field-name-field-keywords-tags { display: none; } #title-wrapper { background: url('https://rmitlibrary.github.io/cdn/learninglab/images/br153.jpg'); color: white; background-size: auto; margin: 0; height: inherit; } .lower-level #page #main h2#page-title { padding: 4rem 0 1rem 3rem ; margin: 0 0 0rem 0; line-height: 3.2rem; background: inherit; color: white; } /* hide em dash */ .lower-level #page #main h2#page-title:before { Display: none; } #sidebar-second { margin-top: 0px; } /* hide keywords */</style>
-<p>\[\require{mhchem}\]</p>
-<p class="lead">Understanding the Lewis electron dot model is crucial because it visually represents the valence electrons of atoms, helping to predict molecular bonding, structure, and reactivity in chemistry. This page contains all you need to know to get started with these models.</p>
-<p>The Lewis electron-dot model is based on the fact that all atoms combine to give compounds in which each atom or ion achieves the noble gas valence electron configuration of \(s^{2}p^{6}\) (or \(s^{2}\) for hydrogen) in its valence shell, as this is the most stable configuration.</p>
-<div>
-<h2>Lewis Structures of Molecular Compounds</h2>
-<p><strong>Draw the Lewis structure of \(\ce{SO}_{2}\) </strong></p>
-<p>Step 1 - Count the total number of valence shell electrons of all the atoms involved in the molecule<br />
-Sulphur dioxide has two sulphur atoms and one oxygen atom.</p>
+            <h1 class="margin-top-zero">Lewis structures</h1>
+            <p class="lead">Lewis electron dot structures are crucial because they visually represent the valence electrons of atoms, helping to predict molecular bonding, structure, and reactivity in chemistry. This resource contains all you need to know to get started with these structures.</p>
+<p>Lewis structures, also known as electron dot structures, are diagrams that represent the valence electrons of atoms within a molecule. These structures are used to show how the electrons are arranged around individual atoms in a molecule. The main purpose of Lewis structures is to predict the number and type of bonds that may form around an atom.</p>
+<h2>Worked example – drawing Lewis structures of molecular compounds</h2>
+<p>Draw the Lewis structure of sulfur dioxide, \(\ce{SO}_{2}\).</p>
+<p><strong>Step 1:</strong> Count the total number of valence shell electrons of all the atoms involved in the molecule.</p>
+<p>Sulfur dioxide has two sulfur atoms and one oxygen atom.</p>
 <table>
 <thead>
 <tr>
@@ -346,46 +372,56 @@ Sulphur dioxide has two sulphur atoms and one oxygen atom.</p>
 <tr>
 <td>\(\ce{S}\)</td>
 <td>\(16\)</td>
-<td>\(1s^{2}2s^{2}2p^{6}3s^{2}3p^{4}\)</td>
+<td>\(1s^{2}\,2s^{2}\,2p^{6}\,3s^{2}\,3p^{4}\)</td>
 <td>\(6\)</td>
 </tr>
 <tr>
 <td>\(\ce{O}\)</td>
 <td>\(8\)</td>
-<td>\(1s^{2}2s^{2}2p^{4}\)</td>
+<td>\(1s^{2}\,2s^{2}\,2p^{4}\)</td>
 <td>\(6\)</td>
 </tr>
 </tbody>
 </table>
-<p>Total number of valence shell electrons \(=6+\left(6\times2\right)=18\)</p>
-<p>Step 2 - Predict the central atom.</p>
-<p>The atom that can form most bonds is considered as the central atom. If two different atoms can form the same number of bonds, then the least electronegative atom should be the central atom. Among sulphur and oxygen, sulphur is the least electronegative atom.</p>
-<p>Step 3 - Draw the bonds connected to the central atom.</p>
-<p><img decoding="async" style="width: 111px; height: 51px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6SO2Step3.png" alt="" /></p>
-<p>Step 4 - Add the lone pairs of electrons to the atoms connected to the central atom.</p>
-<p>Calculate the remaining valence electrons after drawing bonds. Four valence electrons are used for two bonds.</p>
-<p>Remaining valence electrons \(=18-4=14\). These fourteen valence electrons can be distributed among atoms connected to the central atom as lone pairs to complete the octet.</p>
-<p><img decoding="async" style="width: 125px; height: 45px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6SO2Step4_.png" alt="" /></p>
-<p>Step 5 - Assign lone pairs of electrons to the central atom if any valence electrons remain.</p>
-<p>\(14-12=2\)</p>
-<p>To assign lone pairs to the connected atoms, we have used twelve electrons. Therefore, we have two electrons remaining, which can be allocated to the central atom as a lone pair.</p>
-<p><img decoding="async" style="width: 125px; height: 45px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6SO2Step5.png" alt="" /></p>
-<p>Step 6 - If the central atom still lacks the octet, create multiple bonds with connected atoms using lone pairs of electrons.</p>
-<p><img decoding="async" style="width: 289px; height: 194px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/chem6SO2-Step6.png" alt="" /></p>
-<p>Since sulphur has not acquired the octet, create a double bond with one of the oxygens using a lone pair. With the double bond, all three atoms have acquired an octet. Finally, calculate the formal charges for each atom. Formal charges should be closer to zero for each atom. Use the following formula to calculate the formal charges.<br />
-Formal charge \(=\) Valence electrons of the atom \(-\) Lone pairs of electrons \(-\) Bonding electrons</p>
-<p><img decoding="async" style="width: 380px; height: 80px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/chem6-SO2-Step6_1.png" alt="" /></p>
-<p>For \(\ce{S}\), formal charge \(=6-2-3=+1\)</p>
-<p>For single-bonded \(\ce{O}\), formal charge \(=6-6-1=-1\)</p>
-<p>For double-bonded \(\ce{O}\), formal charge \(=6-4-2=0\)</p>
+<p>The total number of valence shell electrons is:</p>
+<p>\[6+\left(6\times2\right)=18\]</p>
+<p><strong>Step 2:</strong> Predict the central atom. This is the atom that can form most bonds. If two different atoms can form the same number of bonds, then the least electronegative atom should be the central atom.</p>
+<p>Among sulfur and oxygen, sulfur is the least electronegative atom. Therefore, it is the central atom.</p>
+<p><strong>Step 3:</strong> Draw single bonds connected to the central atom.</p>
+<div style="text-align: center;">
+<img decoding="async" style="width: 111px; height: 51px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6SO2Step3.png" alt="One sulfur atom attached to two oxygen atoms with single bonds" />
 </div>
-<div>
-<h3>Lewis Structures of Polyatomic Ions</h3>
-<div>
-<p><strong>Polyatomic Anions</strong></p>
-<p><strong>Draw the Lewis structure of \(\ce{CO}_{3}^{2-}\) (carbonate ion)</strong></p>
-<p>Step 1 - Count the total number of valence shell electrons of all the atoms involved in the molecule, including the charge of the ion.</p>
-<p>Carbonate ion is composed of three oxygen atoms and one carbon atom.</p>
+<p><strong>Step 4:</strong> Add the lone pairs of electrons to the atoms connected to the central atom. Calculate the remaining valence electrons after drawing bonds.</p>
+<p>Four valence electrons are used for two bonds. The remaining valence electrons are:</p>
+<p>\[=18-4=14\]</p>
+<p>These valence electrons can be distributed among atoms connected to the central atom as lone pairs to complete the octet.</p>
+<div style="text-align: center;">
+<img decoding="async" style="width: 125px; height: 45px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6SO2Step4_.png" alt="The oxygen atoms have six lone pairs each" />
+</div>
+<p><strong>Step 5:</strong> Assign lone pairs of electrons to the central atom if any valence electrons remain.</p>
+<p>To assign lone pairs to the connected atoms, we have used 12 electrons. Therefore, we can calculate the electrons remaining:</p>
+<p>\[14-12=2\]</p>
+<p>These electrons can be allocated to the central atom as a lone pair.</p>
+<div style="text-align: center;">
+<img decoding="async" style="width: 125px; height: 45px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6SO2Step5.png" alt="The sulfur atom has two lone pair electrons and the oxygen atoms have six lone pair electrons each" />
+</div>
+<p><strong>Step 6:</strong> If the central atom still lacks the octet, create multiple bonds with connected atoms using lone pairs of electrons.</p>
+<p><div style="text-align: center;">
+<img decoding="async" style="width: 230px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/chem6SO2-Step6.png" alt="The sulfur atom has six valence electrons and the oxygen atoms have eight valence electrons each" />
+</div>
+<p>Since sulfur has not achieved an octet, a double bond must be created with one of the oxygen atoms using a lone pair. With the double bond, all three atoms have acquired an octet.</p>
+<div style="text-align: center;">
+<img decoding="async" style="width: 380px; height: 80px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/chem6-SO2-Step6_1.png" alt="A lone pair of electrons on an oxygen atom is used to form a double bond with the sulfur atom. The final sulfur dioxide molecule consists of a positively charged sulfur with a double bond to one oxygen atom and a single bond to a negatively charged oxygen."/>
+</div>
+<p><strong>Step 7:</strong> Calculate the formal charges for each atom. Formal charges should be closer to zero for each atom. The formula to calculate the formal charges is:</p>
+<p>\[\textrm{Formal charge}=\textrm{Valence electrons}-\textrm{Lone pairs}-\textrm{Bonding electrons}\]</p>
+<p>For \(\ce{S}\), formal charge \(=6-2-3=+1\).</p>
+<p>For the single-bonded \(\ce{O}\), formal charge \(=6-6-1=-1\).</p>
+<p>For the double-bonded \(\ce{O}\), formal charge \(=6-4-2=0\).</p>
+<h2>Worked example – drawing Lewis structures of polyatomic ions</h2>
+<p>Draw the Lewis structure of the carbonate ion, \(\ce{CO}_{3}^{2-}\).</p>
+<p><strong>Step 1:</strong> Count the total number of valence shell electrons of all the atoms involved in the molecule, including the charge of the ion.</p>
+<p>The carbonate ion is composed of three oxygen atoms and one carbon atom. It also has a \(2-\) charge, so two extra electrons.</p>
 <table>
 <thead>
 <tr>
@@ -399,43 +435,55 @@ Formal charge \(=\) Valence electrons of the atom \(-\) Lone pairs of electrons 
 <tr>
 <td>\(\ce{C}\)</td>
 <td>\(6\)</td>
-<td>\(1s^{2}2s^{2}2p^{2}\)</td>
+<td>\(1s^{2}\,2s^{2}\,2p^{2}\)</td>
 <td>\(4\)</td>
 </tr>
 <tr>
 <td>\(\ce{O}\)</td>
 <td>\(8\)</td>
-<td>\(1s^{2}2s^{2}2p^{4}\)</td>
+<td>\(1s^{2}\,2s^{2}\,2p^{4}\)</td>
 <td>\(6\)</td>
 </tr>
 </tbody>
 </table>
-<p>Total number of valence electrons\(=4+\left(6\times3\right)+2\)(from the negative charge) \(=24\)</p>
-<p>Step 2 - Predict the central atom.</p>
-<p>Among carbon and oxygen, carbon can form many bonds.</p>
-<p>Step 3 - Draw the bonds connected to the central atom.</p>
-<p><img decoding="async" style="width: 154px; height: 100px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6CO32step3.png" alt="" /></p>
-<p>Step 4 - Add the lone pairs of electrons to the atoms connected to the central atom.</p>
-<p>Calculate the remaing valence electrons after drawing bonds. Six valence electrons are given for three bonds.</p>
-<p>Remaining valence electrons \(=24-6=18\). These eighteen valence electrons can be distributed among atoms connected to the central atom as lone pairs to complete the octet.</p>
-<p><img decoding="async" style="width: 156px; height: 100px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6CO32step4%20%281%29.png" alt="" /></p>
-<p>Step 5 - Assign lone pairs of electrons to the central atom if any valence electrons remain.</p>
-<p>Not applicable since we have used all the valence electrons.</p>
-<p>Step 6 - If the central atom still lacks the octet, create multiple bonds with connected atoms using lone pairs of electrons.</p>
-<p>The central atom only has six electrons, therefore create a double bond with one of the oxygen atoms using lone pairs of electrons.</p>
-<p><img decoding="async" style="width: 279px; height: 253px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/chem6-CO32-step6.png" alt="" /></p>
-<p>Calculate the formal charges and allocate two negative charges.</p>
-<p><img decoding="async" style="width: 520px; height: 170px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/chem6-CO32-step6_1.png" alt="" /></p>
-<p>Formal charge \(=\) Valence electrons of the atom \(-\) Lone pairs of electrons \(-\) Bonding electrons</p>
-<p>Formal charge for \(\ce{C}\) \(=4-0-4=0\)</p>
-<p>Formal charge for double bonded \(\ce{O}\) \(=6-4-2=0\)</p>
-<p>Formal charge for single bonded \(\ce{O}\)'s \(=6-6-1=-1\)</p>
+<p>The total number of valence shell electrons is:<br />
+\[=4+\left(6\times3\right)+2=24\]</p>
+<p><strong>Step 2:</strong> Predict the central atom.</p>
+<p>Among carbon and oxygen, carbon is the least electronegative atom. Therefore, it is the central atom.</p>
+<p><strong>Step 3:</strong> Draw single bonds connected to the central atom.</p>
+<div style="text-align: center;">
+<img decoding="async" style="width: 154px; height: 100px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6CO32step3.png" alt="One carbon attached to three oxygen atoms with single bonds" />
 </div>
-<div>
-<p><strong>Polyatomic Cations</strong></p>
-<p><strong>Draw the Lewis structure of \(\ce{NH}_{4}^{+}\) (ammonium ion)</strong></p>
-<p>Step 1 - Count the total number of valence shell electrons of all the atoms involved in the molecule, including the charge of the ion.</p>
-<p>The ammonium ion is composed of one nitrogen atom and four hydrogen atoms.</p>
+<p><strong>Step 4:</strong> Add the lone pairs of electrons to the atoms connected to the central atom. Calculate the remaining valence electrons after drawing bonds.</p>
+<p>Six valence electrons are used for three bonds. The remaining valence electrons are:<br />
+\[=24-6=18\]</p>
+<p>These valence electrons can be distributed among atoms connected to the central atom as lone pairs to complete the octet.</p>
+<div style="text-align: center;">
+<img decoding="async" style="width: 156px; height: 100px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6CO32step4%20%281%29.png" alt="The oxygen atoms have six lone pairs each" />
+</div>
+<p><strong>Step 5:</strong> Assign lone pairs of electrons to the central atom if any valence electrons remain.</p>
+<p><p>To assign lone pairs to the connected atoms, we have used 18 electrons. We have used all the valence electrons.</p>
+<p><strong>Step 6:</strong> If the central atom still lacks the octet, create multiple bonds with connected atoms using lone pairs of electrons.</p>
+<div style="text-align: center;">
+<img decoding="async" style="width: 250px" src="https://rmitlibrary.github.io/cdn/learninglab/images/chem6-CO32-step6.png" alt="The carbon atom has six valence electrons and the oxygen atoms have eight valence electrons each" />
+</div>
+<p>Since carbon has not achieved an octet, a double bond must be created with one of the oxygen atoms using a lone pair. With the double bond, all four atoms have acquired an octet.</p>
+<div style="text-align: center;">
+<img decoding="async" style="width: 520px; height: 170px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/chem6-CO32-step6_1.png" alt="A lone pair of electrons on an oxygen atom is used to form a double bond with the carbon atom. The final carbonate ion consists of a carbon atom with a double bond to one oxygen atom and a single bond to a two negatively charged oxygen atoms." />
+</div>
+<p><strong>Step 7:</strong> Calculate the formal charges for each atom. Allocate the two negative charges.</p>
+<p>For \(\ce{C}\), formal charge \(=4-0-4=0\).</p>
+<p>For the double-bonded \(\ce{O}\), formal charge \(=6-4-2=0\).</p>
+<p>For the single-bonded \(\ce{O}\)s, formal charge \(=6-6-1=-1\).</p>
+<div class="accordion-item ">
+<h2 class="accordion-header" id="head-example-2-9126">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-example-2-9291" aria-expanded="false" aria-controls="body-example-2-9291" >Example 2</button>
+</h2>
+<div id="body-example-2-9291" class="accordion-collapse collapse " aria-labelledby="head-example-2-9126">
+<div class="accordion-body">
+Draw the Lewis structure of the ammonium ion, \(\ce{NH}_{4}^{+}\).</p>
+<p><strong>Step 1:</strong> Count the total number of valence shell electrons of all the atoms involved in the molecule, including the charge of the ion.</p>
+<p>The ammonium ion is composed of one nitrogen atom and four hydrogen atoms. It also has a \(1+\) charge, so one fewer electron.</p>
 <table>
 <thead>
 <tr>
@@ -449,7 +497,7 @@ Formal charge \(=\) Valence electrons of the atom \(-\) Lone pairs of electrons 
 <tr>
 <td>\(\ce{N}\)</td>
 <td>7</td>
-<td>\(1s^{2}2s^{2}2p^{3}\)</td>
+<td>\(1s^{2}\,2s^{2}\,2p^{3}\)</td>
 <td>\(5\)</td>
 </tr>
 <tr>
@@ -460,43 +508,84 @@ Formal charge \(=\) Valence electrons of the atom \(-\) Lone pairs of electrons 
 </tr>
 </tbody>
 </table>
-<p>Total number of valence electrons\(=5+\left(1\times4\right)-1\)(from the positive charge) \(=8\)</p>
-<p>Step 2 - Predict the central atom</p>
+<p>The total number of valence shell electrons is:<br />
+\[=5+\left(1\times4\right)-1=8\]</p>
+<p><strong>Step 2:</strong> Predict the central atom.</p>
 <p>Since hydrogen can not handle many bonds, nitrogen is the central atom.</p>
-<p>Step 3 - Draw the bonds connected to the central atom.</p>
-<p><img decoding="async" style="width: 144px; height: 161px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6NH4step3.png" alt="" /></p>
-<p>Step 4 - Add the lone pairs of electrons to the atoms connected to the central atom.</p>
-<p>Calculate the remaining valence electrons after drawing bonds. Eight valence electrons are given for four bonds.</p>
-<p>Remaining valence electrons \(=8-8=0\). Since all the valence electrons have been used no need for step 4.</p>
-<p>Step 5 - Assign lone pairs of electrons to the central atom if any valence electrons remain.</p>
-<p>Not applicable since all the valence electrons have been used.</p>
-<p>Step 6 - If the central atom still lacks the octet, create multiple bonds with connected atoms using lone pairs of electrons.</p>
-<p>Since the central atom already acquired the octet, this step is not required.</p>
-<p>Calculate the formal charges and assign the positive charge.</p>
-<p>Formal charge \(=\) Valence electrons of the atom \(-\) Lone pairs of electrons \(-\) Bonding electrons</p>
-<p>Formal charge for \(\ce{N}\) \(=5-0-4=+1\)</p>
-<p>Formal charge for double-bonded \(\ce{H}\)'s \(=1-0-1=0\)</p>
-<p><img decoding="async" style="width: 142px; height: 150px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6NH4step6.png" alt="" /></p>
-<p><span style="font-size: 1.077em; font-weight: bold;">Exceptions to the Octet Rule</span></p>
+<p><strong>Step 3:</strong> Draw single bonds connected to the central atom.</p>
+<div style="text-align: center;">
+<img decoding="async" style="width: 144px; height: 161px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6NH4step3.png" alt="One nitrogen atom attached to four hydrogen atoms with single bonds" />
 </div>
+<p><strong>Step 4:</strong> Add the lone pairs of electrons to the atoms connected to the central atom. Calculate the remaining valence electrons after drawing bonds.</p>
+<p>Eight valence electrons are used for four bonds. The remaining valence electrons are:<br />
+\[=8-8=0\]</p>
+<p>We have used all the valence electrons.</p>
+<p><strong>Step 5:</strong> Assign lone pairs of electrons to the central atom if any valence electrons remain.</p>
+<p>We have used all the valence electrons.</p>
+<p><strong>Step 6:</strong> If the central atom still lacks the octet, create multiple bonds with connected atoms using lone pairs of electrons.</p>
+<div style="text-align: center;">
+<img decoding="async" style="width: 142px; height: 150px;" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6NH4step6.png" alt="The ammonium ion with a positively charged nitrogen atom" />
 </div>
+<p>The central atom has already achieved an octet.</p>
+<p><strong>Step 7:</strong> Calculate the formal charges for each atom. Allocate the one positive charge.</p>
+<p>For \(\ce{N}\), formal charge \(=5-0-4=+1\).</p>
+<p>For \(\ce{H}\), formal charge \(=1-0-1=0\).</p>
+</div></div></div>
+<h2>Worked example – using Lewis structures to determine molecular shape</h2>
+<p>Predict the molecular shape of \(\ce{NH3}\).</p>
+<p><strong>Step 1:</strong> Draw the Lewis structure of the molecule and identify the central atom.</p>
+<div style="text-align: center;">
+<img decoding="async" style="width: 120px" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEMammonia.png" alt="The Lewis structure of ammonia" />
+</div>
+<p>The central atom is \(\ce{N}\) as it forms most bonds.</p>
+<p><strong>Step 2:</strong> Sum up the number of bonds and lone pairs connected to the central atom to get the total number of electron clouds around the central atom.</p>
+<p>The central atom \(\ce{N}\) forms three bonds—one with each \(\ce{H}\) atom—and one lone pair. Therefore there are four electron clouds (three bonds and one lone pair) around the central atom.</p>
+<div style="text-align: center;">
+<img decoding="async" style="width: 120px" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEMammonia2.png" alt="Ammonia with the bonds and lone pairs highlighted" />
+</div>
+<p><strong>Step 3:</strong> Recall the VSEPR theory to determine how the electron clouds will be arranged.</p>
+<p>According to VSEPR theory, the four electron clouds around the \(\ce{N}\) will arrange in such a way that each cloud stays as far as possible from the others to minimise the repulsion forces between them. This will result in a tetrahedral shape. Molecules with a tetrahedral shape have a bond angle of \(109^{\circ}\). However, due to the presence of a lone pair on the central atom, the overall shape of ammonia becomes pyramidal rather than tetrahedral with a bond angle of \(107^{\circ}\).</p>
+<div style="text-align: center;">
+<img decoding="async" style="width: 100%" src="https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEMammonia3.png" alt="Drawing on the left depicts a tetrahedron with a central atom in the middle surrounded by three other atoms in a tetrahedral shape. Drawing on the right depicts the pyramidal shape of ammonia." />
+</div>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-7442">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-6423" aria-expanded="false" aria-controls="body-transcript-6423" >Transcript</button>
+</p>
+<div id="body-transcript-6423" class="accordion-collapse collapse " aria-labelledby="head-transcript-7442">
+<div class="accordion-body">
+<h3>Molecular geometry diagram</h3>
 <div>
-<p>Some molecules do not follow the octet rule. Atoms such as sulphur, phosphorus and chlorine deviate from the octet rule by having more than eight electrons in the valence shell. This is due to the availability of a vacant \(d\) orbital in the third shell.</p>
-</div>
+<h4>Tetrahedron</h4>
+<p>
+            A diagram of a tetrahedral shape with a central atom labeled "C" (in red) and surrounding atoms labeled "A" (in blue). The legend indicates that "C" is the central atom and "A" represents other atoms.
+        </p>
+</p></div>
+<div>
+<h4>Ammonia – Pyramid Shape</h4>
+<ul>
+<li>
+            The chemical structure of ammonia (NH₃), showing a nitrogen atom bonded to three hydrogen atoms in a pyramidal shape. The nitrogen has a lone pair represented by a grey lobe.
+        </li>
+<li>
+            A 3D model of the ammonia molecule with a blue nitrogen atom and white hydrogen atoms arranged in a pyramidal shape.
+        </li>
+</ul></div>
+</div></div></div>
 			<nav class="btn-nav-container" aria-label="Previous and next links">
 <h2 class="btn-nav-prev">
-    <a href="../chemical-bonding-quiz/index.html">
-        <span aria-hidden="true">Chemical bonding quiz</span>
-        <span class="visually-hidden">Previous page: Chemical bonding quiz</span>
+    <a href="../covalent-bonds/index.html">
+        <span aria-hidden="true">Covalent bonding</span>
+        <span class="visually-hidden">Previous page: Covalent bonding</span>
     </a>
 </h2>
     
 
 
 <h2 class="btn-nav-next">
-    <a href="../lewis-structure-exercises/index.html">
-        <span aria-hidden="true">Lewis structure exercises</span>
-        <span class="visually-hidden">Next page: Lewis structure exercises</span>
+    <a href="../covalent-bonding-lewis-structures-quiz/index.html">
+        <span aria-hidden="true">Quiz – Covalent bonding and Lewis structures</span>
+        <span class="visually-hidden">Next page: Quiz – Covalent bonding and Lewis structures</span>
     </a>
 </h2>
 	
@@ -512,9 +601,9 @@ Formal charge \(=\) Valence electrons of the atom \(-\) Lone pairs of electrons 
 <div class="keywords">
     <h2 class="h5">Keywords</h2>
     <ul>
-                <li><a href="../../../keyword/chemical-bonds/index.html">Chemical bonds</a></li>  
                 <li><a href="../../../keyword/chemistry/index.html">Chemistry</a></li>  
                 <li><a href="../../../keyword/electron/index.html">Electron</a></li>  
+                <li><a href="../../../keyword/chemical-bonding/index.html">Chemical bonding</a></li>  
         </ul>
 </div>
  
@@ -523,7 +612,7 @@ Formal charge \(=\) Valence electrons of the atom \(-\) Lone pairs of electrons 
 <!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
 <!--
 <p><strong>Subjects </strong>
-    | <strong><a href="https://lab.bitma.app/subject-area/chemistry/">Chemistry</a></strong>  
+    | <strong><a href="https://learninglab.rmit.edu.au/subject-area/chemistry/">Chemistry</a></strong>  
     </p>
 -->
 <!-- category echo end -->
@@ -583,18 +672,17 @@ Formal charge \(=\) Valence electrons of the atom \(-\) Lone pairs of electrons 
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <section class="acknowledgement-container">
-                        <div class="acknowledgement-image">
-                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
-                        </div>
-
+                <section class="acknowledgement-container">
                         <div class="content">
                             <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
                             <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
-                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="#" class="link-large">More information</a>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business<span class="img-credit"> - Artwork 'Sentient' by Hollie Johnson, Gunaikurnai and Monero Ngarigo</span>.</p>
+                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                        </div>
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/sentient-hollie-johnson.jpg" alt="" />
                         </div>
                     </section>
                 </div>
@@ -674,7 +762,7 @@ Formal charge \(=\) Valence electrons of the atom \(-\) Lone pairs of electrons 
 </div><!-- wrapper end -->
 		
 	
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
 <script src="../../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
 <!-- Code to handle hamburger menu, embed mode, dark mode -->

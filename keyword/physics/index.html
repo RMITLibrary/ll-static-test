@@ -2,57 +2,19 @@
 <html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
 
 <head>
-<!-- 
-    DARK MODE
-    This script is placed in the <head> to ensure the theme is set as early as possible,
-    reducing the flash of unstyled content (FOUC). It determines the user's preferred
-    theme (either from local storage or system settings) and applies it immediately.
-  -->
-  <script>
-    (function() {
-      'use strict';
-
-      // Function to get the stored theme from local storage
-      const getStoredTheme = () => localStorage.getItem('theme');
-
-      // Function to determine the preferred theme
-      const getPreferredTheme = () => {
-        const storedTheme = getStoredTheme(); // Retrieve the stored theme
-        if (storedTheme) {
-          return storedTheme; // If a theme is stored, return it
-        }
-        // If no theme is stored, check the system preference for dark mode
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      // Function to apply the specified theme
-      const setTheme = theme => {
-        if (theme === 'auto') {
-          // If theme is 'auto', set it based on system preference
-          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-        } else {
-          // Otherwise, set the theme explicitly
-          document.documentElement.setAttribute('data-bs-theme', theme);
-        }
-      };
-
-      // Set the theme based on the preferred theme
-      setTheme(getPreferredTheme());
-    })();
-  </script>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- wp_head -->
-	<title>Physics - lab</title>
-
-		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
+	<title>Physics - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
-		<link rel="next" href="page/2/index.html" />
-		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/keyword\/physics\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/keyword\/physics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/keyword\/physics\/#listItem","position":2,"name":"Physics","previousItem":"https:\/\/lab.bitma.app\/#listItem"}]},{"@type":"CollectionPage","@id":"https:\/\/lab.bitma.app\/keyword\/physics\/#collectionpage","url":"https:\/\/lab.bitma.app\/keyword\/physics\/","name":"Physics - lab","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/keyword\/physics\/#breadcrumblist"}},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/keyword\/physics\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/keyword\/physics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/keyword\/physics\/#listItem","position":2,"name":"Physics","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"}]},{"@type":"CollectionPage","@id":"https:\/\/learninglab.rmit.edu.au\/keyword\/physics\/#collectionpage","url":"https:\/\/learninglab.rmit.edu.au\/keyword\/physics\/","name":"Physics - Learning Lab","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/keyword\/physics\/#breadcrumblist"}},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
@@ -70,25 +32,95 @@ MathJax = {
 
 </script>
 <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
-<link rel='stylesheet' id='wp-block-library-css' href='../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
-<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
-<link rel='stylesheet' id='picostrap-styles-css' href='../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+
+
+
+
+<link rel='stylesheet' id='picostrap-styles-css' href='../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=849.css' media='all' />
  	<!-- /wp_head -->
+
     
+    
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta name="author" content="RMIT Library">
+
+    <meta name="geo.position" content="-37.807778, 144.963333">
+    <meta name="geo.placename" content="Melbourne">
+    <meta name="geo.region" content="AU">
+
+    <meta name="dcterms.title" content="Learning Lab">
+    
+        <meta name="dcterms.type" content="Text">
+    <meta name="dcterms.identifier" content="../../subject-areas/physics/dynamics/index.html">
+    <meta name="dcterms.format" content="text/html">
+    <!-- END Additional meta tags not covered by wp_head -->
+
+
+    <!-- START Additional scripts for tracking -->
+
+    <!-- Microsoft Clarity - does hotspot tracking of pages -->
+    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+
+    <!-- Google tag - (gtag.js) --> 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLHPB23GYR');
+    </script>
+
+    <!-- Microsoft Bing - Not sure how useful this is? --> 
+    <meta name="msvalidate.01" content="8E4954E1DFAB7E2F8A92DD0A0BD6ED09">
+
+    <!-- END Additional scripts for tracking -->
+
     <style>
         </style>
+
+    <!-- 
+    DARK MODE javascript
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+    -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Function to get the stored theme from local storage
+        const getStoredTheme = () => localStorage.getItem('theme');
+
+        // Function to determine the preferred theme
+        const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+            return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        // Function to apply the specified theme
+        const setTheme = theme => {
+        if (theme === 'auto') {
+            // If theme is 'auto', set it based on system preference
+            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+            // Otherwise, set the theme explicitly
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        };
+
+        // Set the theme based on the preferred theme
+        setTheme(getPreferredTheme());
+    })();
+    </script>
 </head>
 
 <body class="archive tax-keyword term-physics term-145 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
-	
 		
 <header>
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
@@ -155,7 +187,7 @@ MathJax = {
 </h2>
 <div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
 <div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
-<li class="page_item page-item-2534 page_item_has_children"><a href="../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../writing-fundamentals/academic-word-list-tool/index.html">Academic Word List tool</a></li>
 <li class="page_item page-item-3107 page_item_has_children"><a href="../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
 <li class="page_item page-item-2520 page_item_has_children"><a href="../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
 <li class="page_item page-item-2521"><a href="../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
@@ -200,7 +232,7 @@ MathJax = {
 									<ul>
 										<li><a href="../../art-and-design/index.html">Art and design</a></li>
 										<li><a href="../../chemistry/index.html">Chemistry</a></li>
-										<li><a href="../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../law-resources/index.html">Legal studies</a></li>
 										<li><a href="../../maths-statistics/index.html">Mathematics and statistics</a></li>
 										<li><a href="../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
 										<li><a href="../../subject-areas/physics/index.html">Physics</a></li>
@@ -259,6 +291,29 @@ MathJax = {
                             <div>
                     <ul class="list-link-expanded">
 
+                                       <script>
+                        console.log("title: " + "Dynamics");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../subject-areas/physics/dynamics/index.html">
+                                    Dynamics                                </a>
+                            </h2>
+                            <p>Dynamics resources Worksheets Download the dynamics worksheets to improve your skills. Work, energy and power (PDF) Motion: Constant acceleration (PDF) Motion: Non-constant acceleration (worked solution) (PDF) Blocks &amp; pulleys (worked solution) (PDF)...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Electricity");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../subject-areas/physics/electricity/index.html">
+                                    Electricity                                </a>
+                            </h2>
+                            <p>These physics worksheets can help you to improve your skills in electricity and electrical circuits. Worksheets Download the electricity worksheets to improve your skills. Basic electrical concepts (PDF) Ohm&#039;s law (PDF)...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Measurement");
+                    </script>
                                             <li>
                             <h2 class="h3">
                                 <a href="../../subject-areas/physics/measurement-0/index.html">
@@ -266,6 +321,9 @@ MathJax = {
                             </h2>
                             <p>Measurements are fundamental in mathematics because they provide a means to quantify and understand the physical world. See also: Units and conversions Worksheets Download the measurement worksheets to improve your skills. Dimensions (PDF) Errors in measurement (PDF) Errors in calculations (PDF) Scientific notation (PDF) Engineering notation (PDF) Rules (PDF) Calculations...</p>
                         </li>
+                                       <script>
+                        console.log("title: " + "Parallel circuits");
+                    </script>
                                             <li>
                             <h2 class="h3">
                                 <a href="../../subject-areas/physics/electricity/parallel-circuits/index.html">
@@ -273,27 +331,19 @@ MathJax = {
                             </h2>
                             <p>Parallel circuits ensure that each component receives the same voltage, and they are widely used in electrical systems to ensure that the failure of one component does not affect the operation of others. On this page, we describe what parallel circuits are and give you an exercise to test what...</p>
                         </li>
+                                       <script>
+                        console.log("title: " + "PF1.1 Newton&#039;s laws of motion");
+                    </script>
                                             <li>
                             <h2 class="h3">
-                                <a href="../../maths-statistics/vectors/v4-vector-product/index.html">
-                                    V4 Vector product                                </a>
+                                <a href="../../subject-areas/physics/dynamics/pf11-newtons-laws-motion/index.html">
+                                    PF1.1 Newton&#039;s laws of motion                                </a>
                             </h2>
-                            <p>What is a vector product? What is a cross product? The vector product is a vector that is the result of multiplying the magnitudes (size) of two vectors. The magnitude is found using matrices and determinants). The result of the cross product is another vector, and the direction is perpendicular...</p>
+                            <p>An object in motion tends to stay in motion and an object at rest tends to stay at rest unless acted upon by an unbalanced force. Force equals mass times acceleration. For every action there is an equal and opposite reaction. Do you need to learn about Newton&#039;s first three...</p>
                         </li>
-                                            <li>
-                            <h2 class="h3">
-                                <a href="../../maths-statistics/vectors/v3-scalar-product/index.html">
-                                    V3 Scalar product                                </a>
-                            </h2>
-                            <p>What is a scalar product? What is a dot product? This is the result of multiplying the magnitudes of the components of two or more vectors. The result is not a vector, but a scalar (which is without direction). There are two ways to multiply two vectors: The scalar or...</p>
-                        </li>
-                                            <li>
-                            <h2 class="h3">
-                                <a href="../../subject-areas/physics/electricity/series-circuits/index.html">
-                                    Series circuits                                </a>
-                            </h2>
-                            <p>Series circuits are electrical circuits in which components are connected end-to-end such that the same current flows through each component sequentially. On this page, you will find out about Kirchoff&#039;s laws and two ways of connecting circuits. Kirchoff&#039;s laws The principle of conservation of charge and the principle of conservation...</p>
-                        </li>
+                                       <script>
+                        console.log("title: " + "PF1.2 Forces on slopes");
+                    </script>
                                             <li>
                             <h2 class="h3">
                                 <a href="../../subject-areas/physics/dynamics/pf12-forces-slopes/index.html">
@@ -301,20 +351,129 @@ MathJax = {
                             </h2>
                             <p>Forces on object sliding downhill We will look at the gravitational force acting on an object on a slope. These can be divided into two components, the normal (resisting) force pushing into the slope which produces friction and the shear or driving force pushing the block down the slope. So...</p>
                         </li>
+                                       <script>
+                        console.log("title: " + "PF1.3 Forces &ndash; Statics");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../subject-areas/physics/statics/pf13-forces-statics/index.html">
+                                    PF1.3 Forces &ndash; Statics                                </a>
+                            </h2>
+                            <p>Static equilibrium Structures that are stable are said to be in static equilibrium. This occurs when the sum of the forces on it in each direction is zero and the sum of the torques in each direction is zero. So there are two types of static equilibrium: translational equilibrium and...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "PF1.4 Momentum");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../subject-areas/physics/dynamics/pf14-momentum/index.html">
+                                    PF1.4 Momentum                                </a>
+                            </h2>
+                            <p>Momentum is a vector quantitiy, so it is important to remember that direction must be taken into account when doing problems on momentum. Let&#039;s explore how we can do this. The moment p of an object is the product of its mass \(m\) and velocity \(v\), or: \[\begin{align*} p &amp;...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Physics");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../subject-areas/physics/index.html">
+                                    Physics                                </a>
+                            </h2>
+                            <p>This tutorial is designed for Physics students to improve their knowledge. Find out more about Measurement, Vectors, Statics, Dynamics and Electricity....</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "PMO1.2 Linear motion &ndash; Graphs");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../subject-areas/physics/dynamics/pmo12-linear-motion-graphs/index.html">
+                                    PMO1.2 Linear motion &ndash; Graphs                                </a>
+                            </h2>
+                            <p>Linear motion refers to the motion of an object in a straight line. Describing these motions require some technical terms such as displacement, distance, velocity, speed and acceleration. The terms and their relationships to one another are described in this module. Scalar and vector quantities Quantities that have only a...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Series circuits");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../subject-areas/physics/electricity/series-circuits/index.html">
+                                    Series circuits                                </a>
+                            </h2>
+                            <p>Series circuits are electrical circuits in which components are connected end-to-end such that the same current flows through each component sequentially. On this page, you will find out about Kirchoff&#039;s laws and two ways of connecting circuits. Kirchoff&#039;s laws The principle of conservation of charge and the principle of conservation...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "Statics");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../subject-areas/physics/statics/index.html">
+                                    Statics                                </a>
+                            </h2>
+                            <p>These statics learning activities will help you to improve your skills in these areas of physics. Worksheets Download the statics worksheets to improve your skills. Forces on slopes (PDF) Circular motion (PDF) Angular motion (PDF) Moment (or torque) (PDF) Moment of inertia (PDF) Method of joints (worked solution) (PDF) Method...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "V1: Introduction to vectors");
+                    </script>
                                             <li>
                             <h2 class="h3">
                                 <a href="../../maths-statistics/vectors/v1-introduction-vectors/index.html">
-                                    V1 Introduction to vectors                                </a>
+                                    V1: Introduction to vectors                                </a>
                             </h2>
-                            <p>The modern idea of vectors appeared late in the 19th century when Josiah Willard Gibbs and Oliver Heaviside (of USA and Britain, respectively) independently developed vector analysis to express the new laws of electromagnetism discovered by the Scottish physicist James Clerk Maxwell. Introducing the basic concept of vectors (which are...</p>
+                            <p>Introducing the basic concept of vectors (which are measurable quantities with direction such as force) and the concept of a scalar (which is a quantity without a direction such as heat or thermal energy). We cover vector components (aligned along the horizontal and vertical or the 3-dimensional axes), unit vectors...</p>
                         </li>
+                                       <script>
+                        console.log("title: " + "V10 Distance from a point to a plane");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/vectors/v10-distance-point-plane/index.html">
+                                    V10 Distance from a point to a plane                                </a>
+                            </h2>
+                            <p>The shortest distance from any point in the air to the ground is defined by a line sitting at right angles to the ground going straight down. Learn how to find the perpendicular (right angle) distance from a point to a plane. What do we mean when we talk about...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "V11 Directional derivatives");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/vectors/v11-directional-derivatives/index.html">
+                                    V11 Directional derivatives                                </a>
+                            </h2>
+                            <p>If you are on the side of a hill, the gradient depends on the direction you look. So the directional derivative is the gradient in a particular direction. (See also Linear graphs) Learn how to find the directional derivative of a function of two variables f(x,y) or three variables g(x,y,z)...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "V2: Resolution of vectors");
+                    </script>
                                             <li>
                             <h2 class="h3">
                                 <a href="../../maths-statistics/vectors/v2-resolution-vectors/index.html">
-                                    V2 Resolution of vectors                                </a>
+                                    V2: Resolution of vectors                                </a>
                             </h2>
-                            <p>A Force \(\vec{F}\) at an angle \(\theta\) to the horizontal is broken up horizontally as vector \(\vec{a}\) with magnitude \(\vec{\left|F\right|}cos\theta\) and vertically as vector \(\vec{b}\) with magnitude \(\vec{\left|F\right|}sin\theta\). Vector quantities in combination will enhance or counteract each other, depending on their direction. An opposing force for example will lessen another...</p>
+                            <p>Vector quantities in combination will enhance or counteract each other, depending on their direction. An opposing force for example will lessen another force. However, if the forces (or vector quantities) do not act along exactly the same line, it is difficult to know how they will interact. This task is...</p>
                         </li>
+                                       <script>
+                        console.log("title: " + "V3 Scalar product");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/vectors/v3-scalar-product/index.html">
+                                    V3 Scalar product                                </a>
+                            </h2>
+                            <p>What is a scalar product? What is a dot product? This is the result of multiplying the magnitudes of the components of two or more vectors. The result is not a vector, but a scalar (which is without direction). There are two ways to multiply two vectors: The scalar or...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "V4 Vector product");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/vectors/v4-vector-product/index.html">
+                                    V4 Vector product                                </a>
+                            </h2>
+                            <p>What is a vector product? What is a cross product? The vector product is a vector that is the result of multiplying the magnitudes (size) of two vectors. The magnitude is found using matrices and determinants). The result of the cross product is another vector, and the direction is perpendicular...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "V5 Projection of vectors");
+                    </script>
                                             <li>
                             <h2 class="h3">
                                 <a href="../../maths-statistics/vectors/v5-projection-vectors/index.html">
@@ -322,12 +481,45 @@ MathJax = {
                             </h2>
                             <p>In Resolution of vectors we learned how to resolve vectors in two dimensions along horizontal and vertical axes. It is also possible to resolve one vector along the line of another vector (instead of along the x-y axes). (See also Linear graphs) Learn how to find the projection (resolution) of...</p>
                         </li>
+                                       <script>
+                        console.log("title: " + "V6 Vector equation of a line");
+                    </script>
                                             <li>
                             <h2 class="h3">
                                 <a href="../../maths-statistics/vectors/v6-vector-equation-line/index.html">
                                     V6 Vector equation of a line                                </a>
                             </h2>
                             <p>If you want to uniquely define a line, you need to pin it between two points in 3-dimensional space. You can also define a point with a 3-dimensional vector through it. This process uses three types of equations. Learn how to find the vector equation, the parametric equation, and the...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "V7 Intersecting lines in 3D");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/vectors/v7-intersecting-lines-3d/index.html">
+                                    V7 Intersecting lines in 3D                                </a>
+                            </h2>
+                            <p>Learn how to determine if two lines in three dimensions intersect (cross each other) and, if so, what their point of intersection is. (See also Linear graphs) In order to find the point of intersection of two lines in three dimensional space, it is best to have both equations in...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "V8 Equation of a plane");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/vectors/v8-equation-plane/index.html">
+                                    V8 Equation of a plane                                </a>
+                            </h2>
+                            <p>Learn how to find the equation of a plane (a 2-dimensional space) a) through three points or b) given a normal (line at right angles) and a point on the plane or c) given a parallel plane and a point on the plane. (See also Linear graphs) A plane is...</p>
+                        </li>
+                                       <script>
+                        console.log("title: " + "V9 Intersecting planes");
+                    </script>
+                                            <li>
+                            <h2 class="h3">
+                                <a href="../../maths-statistics/vectors/v9-intersecting-planes/index.html">
+                                    V9 Intersecting planes                                </a>
+                            </h2>
+                            <p>Two 2-dimensional planes will slice through each other (unless they are parallel). Where they slice will be defined by a straight line. There will also be an angle between the two planes. Learn how to determine the angle between two intersecting planes and the equation of the line of intersection....</p>
                         </li>
                                         </ul>
                 </div>
@@ -380,18 +572,17 @@ MathJax = {
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <section class="acknowledgement-container">
-                        <div class="acknowledgement-image">
-                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
-                        </div>
-
+                <section class="acknowledgement-container">
                         <div class="content">
                             <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
                             <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
-                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="#" class="link-large">More information</a>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business<span class="img-credit"> - Artwork 'Sentient' by Hollie Johnson, Gunaikurnai and Monero Ngarigo</span>.</p>
+                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                        </div>
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/sentient-hollie-johnson.jpg" alt="" />
                         </div>
                     </section>
                 </div>
@@ -471,7 +662,7 @@ MathJax = {
 </div><!-- wrapper end -->
 		
 	
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
 <script src="../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
 <!-- Code to handle hamburger menu, embed mode, dark mode -->

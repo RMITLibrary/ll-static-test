@@ -2,68 +2,31 @@
 <html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
 
 <head>
-<!-- 
-    DARK MODE
-    This script is placed in the <head> to ensure the theme is set as early as possible,
-    reducing the flash of unstyled content (FOUC). It determines the user's preferred
-    theme (either from local storage or system settings) and applies it immediately.
-  -->
-  <script>
-    (function() {
-      'use strict';
-
-      // Function to get the stored theme from local storage
-      const getStoredTheme = () => localStorage.getItem('theme');
-
-      // Function to determine the preferred theme
-      const getPreferredTheme = () => {
-        const storedTheme = getStoredTheme(); // Retrieve the stored theme
-        if (storedTheme) {
-          return storedTheme; // If a theme is stored, return it
-        }
-        // If no theme is stored, check the system preference for dark mode
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      // Function to apply the specified theme
-      const setTheme = theme => {
-        if (theme === 'auto') {
-          // If theme is 'auto', set it based on system preference
-          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-        } else {
-          // Otherwise, set the theme explicitly
-          document.documentElement.setAttribute('data-bs-theme', theme);
-        }
-      };
-
-      // Set the theme based on the preferred theme
-      setTheme(getPreferredTheme());
-    })();
-  </script>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- wp_head -->
-	<title>Atomic structure - lab</title>
-
-		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
-		<meta name="description" content="\[\require{mhchem}\] Atomic structure underpins the behaviour of elements, their interactions, and the formation of molecules, which are fundamental to chemistry, physics, and many applied sciences. This page explains the structure of atoms, atomic numbers and mass numbers, and isotopes and atomic masses. Structure of atoms All atoms are composed of a small positively charged nucleus" />
+	<title>Atomic structure - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		
+		<meta name="description" content="Atomic structure underpins the behaviour of elements, their interactions, and the formation of molecules. These are fundamental to chemistry, physics, and many applied sciences. This resource explains the structure of atoms, atomic numbers and mass numbers, and isotopes and atomic masses. The atomic model All atoms are composed of a small, positively charged nucleus containing" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
-		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		
 		<meta property="og:locale" content="en_US" />
-		<meta property="og:site_name" content="lab -" />
+		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="Atomic structure - lab" />
-		<meta property="og:description" content="\[\require{mhchem}\] Atomic structure underpins the behaviour of elements, their interactions, and the formation of molecules, which are fundamental to chemistry, physics, and many applied sciences. This page explains the structure of atoms, atomic numbers and mass numbers, and isotopes and atomic masses. Structure of atoms All atoms are composed of a small positively charged nucleus" />
-		<meta property="og:url" content="https://lab.bitma.app/chemistry/atoms-and-atomic-structures/atomic-structure/" />
+		<meta property="og:title" content="Atomic structure - Learning Lab" />
+		<meta property="og:description" content="Atomic structure underpins the behaviour of elements, their interactions, and the formation of molecules. These are fundamental to chemistry, physics, and many applied sciences. This resource explains the structure of atoms, atomic numbers and mass numbers, and isotopes and atomic masses. The atomic model All atoms are composed of a small, positively charged nucleus containing" />
+		<meta property="og:url" content="https://learninglab.rmit.edu.au/chemistry/atoms-and-atomic-structures/atomic-structure/" />
 		<meta property="article:published_time" content="2023-10-16T05:34:40+00:00" />
-		<meta property="article:modified_time" content="2024-08-22T22:34:12+00:00" />
+		<meta property="article:modified_time" content="2024-11-22T05:12:10+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Atomic structure - lab" />
-		<meta name="twitter:description" content="\[\require{mhchem}\] Atomic structure underpins the behaviour of elements, their interactions, and the formation of molecules, which are fundamental to chemistry, physics, and many applied sciences. This page explains the structure of atoms, atomic numbers and mass numbers, and isotopes and atomic masses. Structure of atoms All atoms are composed of a small positively charged nucleus" />
+		<meta name="twitter:title" content="Atomic structure - Learning Lab" />
+		<meta name="twitter:description" content="Atomic structure underpins the behaviour of elements, their interactions, and the formation of molecules. These are fundamental to chemistry, physics, and many applied sciences. This resource explains the structure of atoms, atomic numbers and mass numbers, and isotopes and atomic masses. The atomic model All atoms are composed of a small, positively charged nucleus containing" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/chemistry\/atoms-and-atomic-structures\/atomic-structure\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/lab.bitma.app\/chemistry\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/atoms-and-atomic-structures\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/atoms-and-atomic-structures\/#listItem","position":3,"name":"Atoms and atomic structures","item":"https:\/\/lab.bitma.app\/chemistry\/atoms-and-atomic-structures\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/atoms-and-atomic-structures\/atomic-structure\/#listItem","previousItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/atoms-and-atomic-structures\/atomic-structure\/#listItem","position":4,"name":"Atomic structure","previousItem":"https:\/\/lab.bitma.app\/chemistry\/atoms-and-atomic-structures\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/chemistry\/atoms-and-atomic-structures\/atomic-structure\/#webpage","url":"https:\/\/lab.bitma.app\/chemistry\/atoms-and-atomic-structures\/atomic-structure\/","name":"Atomic structure - lab","description":"\\[\\require{mhchem}\\] Atomic structure underpins the behaviour of elements, their interactions, and the formation of molecules, which are fundamental to chemistry, physics, and many applied sciences. This page explains the structure of atoms, atomic numbers and mass numbers, and isotopes and atomic masses. Structure of atoms All atoms are composed of a small positively charged nucleus","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/chemistry\/atoms-and-atomic-structures\/atomic-structure\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:40+00:00","dateModified":"2024-08-22T22:34:12+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/atoms-and-atomic-structures\/atomic-structure\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/atoms-and-atomic-structures\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/atoms-and-atomic-structures\/#listItem","position":3,"name":"Atoms and atomic structures","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/atoms-and-atomic-structures\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/atoms-and-atomic-structures\/atomic-structure\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/atoms-and-atomic-structures\/atomic-structure\/#listItem","position":4,"name":"Atomic structure","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/atoms-and-atomic-structures\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/atoms-and-atomic-structures\/atomic-structure\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/chemistry\/atoms-and-atomic-structures\/atomic-structure\/","name":"Atomic structure - Learning Lab","description":"Atomic structure underpins the behaviour of elements, their interactions, and the formation of molecules. These are fundamental to chemistry, physics, and many applied sciences. This resource explains the structure of atoms, atomic numbers and mass numbers, and isotopes and atomic masses. The atomic model All atoms are composed of a small, positively charged nucleus containing","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/atoms-and-atomic-structures\/atomic-structure\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:40+00:00","dateModified":"2024-11-22T05:12:10+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
@@ -81,25 +44,96 @@ MathJax = {
 
 </script>
 <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
-<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
-<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
-<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+
+
+
+
+<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=849.css' media='all' />
  	<!-- /wp_head -->
+
     
+    
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta name="author" content="RMIT Library">
+
+    <meta name="geo.position" content="-37.807778, 144.963333">
+    <meta name="geo.placename" content="Melbourne">
+    <meta name="geo.region" content="AU">
+
+    <meta name="dcterms.title" content="Learning Lab">
+    
+    <meta name="dcterms.description" content="Atomic structure underpins the behaviour of elements, their interactions, and the formation of molecules. These are fundamental to chemistry, physics, and many applied sciences. This resource explains the structure of atoms, atomic numbers and mass numbers, and isotopes and atomic masses. The atomic model All atoms are composed of a...">
+    <meta name="dcterms.type" content="Text">
+    <meta name="dcterms.identifier" content="https://learninglab.rmit.edu.au/chemistry/atoms-and-atomic-structures/atomic-structure/">
+    <meta name="dcterms.format" content="text/html">
+    <!-- END Additional meta tags not covered by wp_head -->
+
+
+    <!-- START Additional scripts for tracking -->
+
+    <!-- Microsoft Clarity - does hotspot tracking of pages -->
+    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+
+    <!-- Google tag - (gtag.js) --> 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLHPB23GYR');
+    </script>
+
+    <!-- Microsoft Bing - Not sure how useful this is? --> 
+    <meta name="msvalidate.01" content="8E4954E1DFAB7E2F8A92DD0A0BD6ED09">
+
+    <!-- END Additional scripts for tracking -->
+
     <style>
         </style>
+
+    <!-- 
+    DARK MODE javascript
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+    -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Function to get the stored theme from local storage
+        const getStoredTheme = () => localStorage.getItem('theme');
+
+        // Function to determine the preferred theme
+        const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+            return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        // Function to apply the specified theme
+        const setTheme = theme => {
+        if (theme === 'auto') {
+            // If theme is 'auto', set it based on system preference
+            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+            // Otherwise, set the theme explicitly
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        };
+
+        // Set the theme based on the preferred theme
+        setTheme(getPreferredTheme());
+    })();
+    </script>
 </head>
 
 <body class="page-template-default page page-id-3026 page-child parent-pageid-3132 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
-	
 		
 <header>
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
@@ -166,7 +200,7 @@ MathJax = {
 </h2>
 <div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
 <div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
-<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic Word List tool</a></li>
 <li class="page_item page-item-3107 page_item_has_children"><a href="../../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
 <li class="page_item page-item-2520 page_item_has_children"><a href="../../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
 <li class="page_item page-item-2521"><a href="../../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
@@ -211,7 +245,7 @@ MathJax = {
 									<ul>
 										<li><a href="../../../art-and-design/index.html">Art and design</a></li>
 										<li><a href="../../index.html">Chemistry</a></li>
-										<li><a href="../../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../../law-resources/index.html">Legal studies</a></li>
 										<li><a href="../../../maths-statistics/index.html">Mathematics and statistics</a></li>
 										<li><a href="../../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
 										<li><a href="../../../subject-areas/physics/index.html">Physics</a></li>
@@ -275,7 +309,7 @@ This should be moved to a stylesheet once style is determined. -->
 <!-- START SIDEBAR NAV PANEL -->
 <nav class="right-nav" aria-label="Section Menu">
 
-<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">Atoms and atomic structures</a></h3><ul><li><a href="../atoms/index.html">Atoms, molecules and compounds</a></li><li><a href="../atoms-molecules-and-compounds-quiz/index.html">Atoms, molecules and compounds quiz</a></li><li><a href="index.html" class="selected"  aria-current="page">Atomic structure</a><li><a href="../quiz-atomic-structure/index.html">Quiz atomic structure</a></li><li><a href="../electron/index.html">The electron - an overview</a></li><li><a href="../electron-configuration-quiz/index.html">Electron configuration quiz</a></li><li><a href="../quantum-numbers-address-electron/index.html">The address of an electron</a></li><li><a href="../quiz-quantum-numbers/index.html">Quiz - quantum numbers</a></li></ul></nav>
+<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">Atoms and atomic structures</a></h3><ul><li><a href="../atoms/index.html">Atoms, molecules and compounds</a></li><li><a href="index.html" class="selected"  aria-current="page">Atomic structure</a><li><a href="../electron/index.html">The electron</a></li><li><a href="../quantum-numbers-address-electron/index.html">Quantum numbers</a></li><li><a href="../quiz-quantum-numbers/index.html">Quiz – Quantum numbers</a></li></ul></nav>
 <!-- END SIDEBAR NAV PANEL -->
 
 
@@ -319,17 +353,19 @@ list.querySelectorAll('h4').forEach(h4 => {
 </ul>
 </nav>            <a id="main-content"></a>
             <h1 class="margin-top-zero">Atomic structure</h1>
-            <p><script src="https://rmitlibrary.github.io/cdn/learninglab/images/enhanced/freezeframemin.js" ></script><!-- Original: https://github.com/ctrl-freaks/freezeframe.js --> <script> var kw = "Keywords: " node = document.getElementById('page-title'); node.insertAdjacentHTML('afterend', '</p>
-<p class="keywords">'+kw+'<a href="/learninglab/tags/chemistry" title="view all content with this keyword">Chemistry</a> | <a href="/learninglab/keywords/atomic-structures" title="view all content with this keyword">Atomic structures</a> | <a href="/learninglab/tags/tutorials" title="view all content with this keyword">Tutorials</a></p>
-<p>'); </script></p>
-<style>.keywords { text-align:right; padding: 2rem; color: #ccc; } .keywords a { color: #fff; } .field-name-field-keywords-tags { display: none; } #title-wrapper { background: url('https://rmitlibrary.github.io/cdn/learninglab/images/br108.jpg'); color: white; background-size: auto; margin: 0; height: inherit; } .lower-level #page #main h2#page-title { padding: 4rem 0 1rem 3rem ; margin: 0 0 0rem 0; line-height: 3.2rem; background: inherit; color: white; } /* hide em dash */ .lower-level #page #main h2#page-title:before { Display: none; } #sidebar-second { margin-top: 0px; } /* hide keywords */ </style>
-<p>\[\require{mhchem}\]</p>
-<p class="lead">Atomic structure underpins the behaviour of elements, their interactions, and the formation of molecules, which are fundamental to chemistry, physics, and many applied sciences. This page explains the structure of atoms, atomic numbers and mass numbers, and isotopes and atomic masses.</p>
-<h2>Structure of atoms</h2>
-<p>All atoms are composed of a small positively charged nucleus containing protons and neutrons surrounded by a larger negatively charged electron cloud.</p>
-<p><img decoding="async" class="img-responsive" src="https://rmitlibrary.github.io/cdn/learninglab/images/1364-structure-atom-drawing.png" alt="Bohr planetary model for atomic structure" /></p>
-<p>Protons, neutrons and electrons are known as subatomic particles. Properties of the subatomic particles are given in the table below. Subatomic particles present in the nucleus are known as nucleons (e.g. Protons and neutrons). Protons and neutrons are almost identical in mass, whereas electrons are much smaller than the other two. Atoms are uncharged species due to the presence of an equal number of protons and electrons.</p>
-<p>Properties of subatomic particles.</p>
+            <p class="lead">Atomic structure underpins the behaviour of elements, their interactions, and the formation of molecules. These are fundamental to chemistry, physics, and many applied sciences. This resource explains the structure of atoms, atomic numbers and mass numbers, and isotopes and atomic masses.</p>
+<h2>The atomic model</h2>
+<p>All atoms are composed of a small, positively charged nucleus containing protons and neutrons surrounded by a larger negatively charged electron cloud. This is the atomic model, which describes the structure of atoms.</p>
+<p><img decoding="async" class="img-responsive" src="https://rmitlibrary.github.io/cdn/learninglab/images/1364-structure-atom-drawing.png" alt="Bohr planetary model for atomic structure" /><br />
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-7844">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-5880" aria-expanded="false" aria-controls="body-transcript-5880" >Transcript</button>
+</p>
+<div id="body-transcript-5880" class="accordion-collapse collapse " aria-labelledby="head-transcript-7844">
+<div class="accordion-body">
+<p>Hydrogen-1 (\(^{1}_{1}\ce{H}\)) consists of one electron, with one proton in its nucleus. Carbon-12 (\(^{12}_{6}\ce{C}\)) consists of six electrons, with six protons and six neutrons in its nucleus.</p>
+</div></div></div>
+<p>Protons, neutrons and electrons are subatomic particles. Subatomic particles present in the nucleus are known as nucleons (e.g. protons and neutrons). Properties of the subatomic particles are given in the table. You can see that protons and neutrons are almost identical in mass, whereas electrons are much smaller. Atoms are uncharged species due to the presence of an equal number of postiively charged protons and negatively charged electrons.</p>
 <table>
 <thead>
 <tr class="header">
@@ -342,86 +378,202 @@ list.querySelectorAll('h4').forEach(h4 => {
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center">Proton</td>
+<td align="center">proton</td>
 <td align="center">p</td>
 <td align="center"><span class="math inline">\(+1\)</span></td>
 <td align="center"><span class="math inline">\(1.673\times10^{-24}\)</span></td>
 <td align="center"><span class="math inline">\(1\)</span></td>
 </tr>
 <tr class="even">
-<td align="center">Neutron</td>
+<td align="center">neutron</td>
 <td align="center">n</td>
 <td align="center"><span class="math inline">\(0\)</span></td>
 <td align="center"><span class="math inline">\(1.675\times10^{-24}\)</span></td>
 <td align="center"><span class="math inline">\(1\)</span></td>
 </tr>
 <tr class="odd">
-<td align="center">Electron</td>
+<td align="center">electron</td>
 <td align="center">e</td>
 <td align="center"><span class="math inline">\(-1\)</span></td>
 <td align="center"><span class="math inline">\(9.109\times10^{-28}\)</span></td>
-<td align="center"><span class="math inline">\(\frac{1}{1800}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{1}{1&thinsp;800}\)</span></td>
 </tr>
 </tbody>
 </table>
-<div class="section level1" id="atomic-number-and-mass-number">
-<h2>Atomic number and mass number</h2>
-<p><button class="btn btn-xs btn-default start" type="button">Start animation</button> <button class="btn btn-xs btn-default stop" type="button">Stop animation</button></p>
-<div style="width: 400px;"><img decoding="async" class="freezeme" src="https://rmitlibrary.github.io/cdn/learninglab/images/1364-atomic-mass-number.gif" alt="Representation of atomic mass along with the chemical symbol of the element" />Atomic number and mass number symbols.</div>
-<div class="section level2" id="atomic-number">
+<h2>Nuclide notation</h2>
+<p>Atoms are represented using nuclide notation (also called isotope notation). This includes the chemical symbol for the element, its atomic number and mass number.</p>
+<div style="width: 400px;"><img decoding="async" class="freezeme" src="https://rmitlibrary.github.io/cdn/learninglab/images/1364-atomic-mass-number.gif" alt="Representation of atomic mass along with the chemical symbol of the element" /></div>
+<p><button class="btn btn-xs btn-default start" type="button">Start animation</button> <button class="btn btn-xs btn-default stop" type="button">Stop animation</button><br />
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-6340">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-2683" aria-expanded="false" aria-controls="body-transcript-2683" >Transcript</button>
+</p>
+<div id="body-transcript-2683" class="accordion-collapse collapse " aria-labelledby="head-transcript-6340">
+<div class="accordion-body">
+<p>The nuclide notation of carbon-12 shows the mass number \(12\) at the top, the atomic number \(6\) at the bottom, and the chemical symbol \(\ce{C}\).</p>
+</div></div></div>
 <h3>Atomic number</h3>
-<p>An atomic number (Z) is the number of protons present in the nucleus of an atom. Since an atom contains an equal number of protons and electrons, the atomic number also indicates the number of electrons present in an atom.</p>
+<p>An atomic number (<i>Z</i>) is the number of protons present in the nucleus of an atom. Since an atom contains an equal number of protons and electrons, the atomic number also indicates the number of electrons present in an atom.</p>
 <ul>
-<li>Atomic number (Z) = Number of protons = Number of electrons</li>
+<li>Atomic number (<i>Z</i>) = Number of protons = Number of electrons</li>
 </ul>
-</div>
-<div class="section level2" id="mass-number">
 <h3>Mass number</h3>
-<p>A mass number (A) is the sum of the number of protons and neutrons present in the nucleus of an atom.</p>
+<p>A mass number (<i>A</i>) is the sum of the number of protons and neutrons present in the nucleus of an atom. It is the total number of nucleons.</p>
 <ul>
-<li>Mass number (A) = Number of protons + Number of neutrons</li>
+<li>Mass number (<i>A</i>) = Number of protons + Number of neutrons</li>
 </ul>
-<p>The number of subatomic particles present in an atom can be determined using its atomic number and mass number, as shown below.</p>
+<p>The number of subatomic particles present in an atom can be determined using its atomic number and mass number.</p>
 <ul>
-<li>Number of protons = Atomic number (Z)</li>
-<li>Number of electrons = Atomic number (Z)</li>
-<li>Number of neutrons = Massnumber (A) - Atomic number (Z)</li>
-<li>Total number of subatomic particles present in an atom = Mass number (A) + Atomic number (Z)</li>
+<li>Number of protons = Atomic number (<i>Z</i>)</li>
+<li>Number of electrons = Atomic number (<i>Z</i>)</li>
+<li>Number of neutrons = Mass number (<i>A</i>) – Atomic number (<i>Z</i>)</li>
+<li>Total number of subatomic particles = Mass number (<i>A</i>) + Atomic number (<i>Z</i>)</li>
 </ul>
 <h2>Isotopes and atomic masses</h2>
-<p>Isotopes are atoms of an element with the same number of protons and electrons but different numbers of neutrons.</p>
-<p>Examples:</p>
-<p>Carbon has three isotopes: \(\ce{_{6}^{12}C}\), \(\ce{_{6}^{13}C}\), \(\ce{_{6}^{14}C}\)</p>
-<p>Chlorine has two isotopes: \(\ce{_{17}^{35}Cl}\), \(\ce{_{17}^{37}Cl}\)</p>
-<p>Hydrogen has three isotopes: \(\ce{_{1}^{1}H}\), \(\ce{_{1}^{2}H}\), \(\ce{_{1}^{3}H}\)</p>
-<div>
-<p>Atomic mass is the weighted average mass of an atom of an element. Relative percentage abundancy and atomic mass of each isotope are considered when determining an element's atomic mass.</p>
+<p><strong>Isotopes</strong> are atoms of an element with the same number of protons and electrons, but different numbers of neutrons. Examples are:</p>
+<ul>
+<li>carbon which has three isotopes: \(\ce{_{6}^{12}C}\), \(\ce{_{6}^{13}C}\), \(\ce{_{6}^{14}C}\)</li>
+<li>chlorine which has two isotopes: \(\ce{_{17}^{35}Cl}\), \(\ce{_{17}^{37}Cl}\)</li>
+<li>hydrogen which as three isotopes: \(\ce{_{1}^{1}H}\), \(\ce{_{1}^{2}H}\), \(\ce{_{1}^{3}H}\).</li>
+</ul>
+<p><strong>Atomic mass</strong> is the weighted average mass of an atom of an element. To calculate the atomic mass, the relative percentage abundance and atomic mass of each isotope is considered. The atomic number and atomic mass are typically represented alongside the chemical symbol in the periodic table. You will learn about the periodic table later.</p>
 <div style="width: 400px;"><img decoding="async" class="freezeme" src="https://rmitlibrary.github.io/cdn/learninglab/images/1373-gif-atomic-mass.gif" alt="Representation of atomic mass along with the chemical symbol of the element" /></div>
+<div class="accordion-item transcript ">
+<p class="accordion-header" id="head-transcript-8061">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-1005" aria-expanded="false" aria-controls="body-transcript-1005" >Transcript</button>
+</p>
+<div id="body-transcript-1005" class="accordion-collapse collapse " aria-labelledby="head-transcript-8061">
+<div class="accordion-body">
+<p>The carbon-12 isotope has an atomic number of \(6\), an atomic mass of \(12.01\), and the chemical symbol \(\ce{C}\).</p>
+</div></div></div>
+<div>
+<h2>Worked example – determining the number of subatomic particles</h2>
+<p>Calculate the number of protons, electrons and neutrons present in the atom \(\ce{_{18}^{40}Ar}\).</p>
+<p><strong>Step 1:</strong> Find the atomic number (<i>Z</i>) and mass number (<i>A</i>) from the nuclide notation. <i>Z</i> is the number written at the bottom. <i>A</i> is the number at the top.</p>
+<p>\[Z=18\]<br />
+\[A=40\]</p>
+<p><strong>Step 2:</strong> Determine the number of protons. This is the same as the atomic number (<i>Z</i>).<br />
+\[\textrm{Number of protons}=Z=18\]</p>
+<p><strong>Step 3:</strong> Determine the number of electrons. This is the same as the atomic number (<i>Z</i>).<br />
+\[\textrm{Number of electrons}=Z=18\]</p>
+<p><strong>Step 4:</strong> Determine the number of neutrons. This is the mass number (<i>A</i>) minus the atomic number (<i>Z</i>).</p>
+<p>\[\begin{align*}\textrm{Number of neutrons} &amp; =A-Z\\<br />
+&amp;=40-18\\<br />
+&amp;=22<br />
+\end{align*}\]</p>
+<div class="accordion">
+<div class="accordion-item ">
+<h2 class="accordion-header" id="head-example-2-8222">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-example-2-8212" aria-expanded="false" aria-controls="body-example-2-8212" >Example 2</button>
+</h2>
+<div id="body-example-2-8212" class="accordion-collapse collapse " aria-labelledby="head-example-2-8222">
+<div class="accordion-body">
+<p>The atomic number of the lithium atom is \(3\), and its mass number is \(7\). Calculate the total number of nucleons present in the atom.</p>
+<p><strong>Step 1:</strong> Recall that nucleons include protons and neutrons.</p>
+<p><strong>Step 2:</strong> Determine the number of protons. This is the same as the atomic number (<i>Z</i>).<br />
+\[\textrm{Number of protons}=Z=3\]</p>
+<p><strong>Step 3:</strong> Determine the number of neutrons. This is the mass number (<i>A</i>) minus the atomic number (<i>Z</i>).</p>
+<p>\[\begin{align*}\textrm{Number of neutrons} &amp; =A-Z\\<br />
+&amp;=7-3\\<br />
+&amp;=4<br />
+\end{align*}\]</p>
+<p><strong>Step 4:</strong> Calculate the number of nucleons by adding up the number of protons and neutrons.</p>
+<p>\[\begin{align*}\textrm{Number of nucleons} &amp; = \textrm{Number of protons}+\textrm{Number of neutrons}\\<br />
+&amp;=3+4\\<br />
+&amp;=7\\<br />
+\end{align*}\]<br />
+</div></div></div>
+<div class="accordion-item ">
+<h2 class="accordion-header" id="head-example-3-6933">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-example-3-8700" aria-expanded="false" aria-controls="body-example-3-8700" >Example 3</button>
+</h2>
+<div id="body-example-3-8700" class="accordion-collapse collapse " aria-labelledby="head-example-3-6933">
+<div class="accordion-body">
+<p>Determine the number of neutrons present in the iodine isotopes, \(\ce{_{53}^{125}I}\) and \(\ce{_{53}^{131}I}\).</p>
+<p><strong>Step 1:</strong> Find the atomic number (<i>Z</i>) and mass number (<i>A</i>) from the nuclide notation. <i>Z</i> is the number written at the bottom. <i>A</i> is the number at the top.</p>
+<p>For \(\ce{_{53}^{125}I}\), \(Z=53\) and \(A=125\).</p>
+<p>For \(\ce{_{53}^{131}I}\): \(Z=53\) and \(A=131\).</p>
+<p><strong>Step 2:</strong> Determine the number of neutrons. This is the mass number (<i>A</i>) minus the atomic number (<i>Z</i>).</p>
+<p>For \(\ce{_{53}^{125}I}\):</p>
+<p>\[\begin{align*}\textrm{Number of neutrons} &amp; =A-Z\\<br />
+&amp; =125-53\\<br />
+&amp; =72<br />
+\end{align*}\]</p>
+<p>For \(\ce{_{53}^{131}I}\):</p>
+<p>\[\begin{align*}\textrm{Number of neutrons} &amp; =A-Z\\<br />
+&amp; =131-53\\<br />
+&amp; =78<br />
+\end{align*}\]<br />
+</div></div></div></div>
 </div>
-<p>Build an atom with the simulation below <a href="https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_en.html">or open this activity in a new window</a>.</p>
-<p><iframe class="img-responsive" src="https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_en.html" allowfullscreen="allowfullscreen"> </iframe></p>
-</div>
-</div>
+<div>
+<h2>Worked example – determining the atomic mass</h2>
+<p>Chlorine naturally exists in two isotopic forms: \(\ce{_{17}^{35}Cl}\) and \(\ce{_{17}^{37}Cl}\). Each isotope's relative percentage abundance and atomic mass are given in the following table. Calculate the atomic mass of chlorine.</p>
+<table>
+<thead>
+<tr>
+<th>Isotopes</th>
+<th>Relative percentage abundance (%)</th>
+<th>Atomic mass (amu)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chlorine-\(35\)</td>
+<td>\(75.53\)</td>
+<td>\(34.97\)</td>
+</tr>
+<tr>
+<td>Chlorine-\(37\)</td>
+<td>\(24.47\)</td>
+<td>\(36.97\)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Step 1:</strong> For each isotope, multiply the atomic mass by its percentage abundance.</p>
+<p>\[\begin{align*}\textrm{Chlorine-35} &amp; = \textrm{percentage abundance}\times\textrm{atomic mass}\\<br />
+&amp; = 75.53\textrm{%}\times34.97\textrm{ amu}\\<br />
+&amp; = 26.41\textrm{ amu}<br />
+\end{align*}\]<br />
+\[\begin{align*}\textrm{Chlorine-37} &amp; = \textrm{percentage abundance}\times\textrm{atomic mass}\\<br />
+&amp; = 24.47\textrm{%}\times36.97\textrm{ amu}\\<br />
+&amp; = 9.047\textrm{ amu}<br />
+\end{align*}\]</p>
+<p><strong>Step :</strong> Find the sum of the values calculated in Step 1.</p>
+<p>\[\begin{align*}\textrm{Atomic mass of chlorine} &amp; = 26.41\textrm{ amu}+9.047\textrm{ amu}\\<br />
+&amp; =35.46\textrm{ amu}<br />
+\end{align*}\]
+</p></div>
+<h2>Your turn – atomic structure</h2>
+<p>Test yourself on your understanding of atomic structure.</p>
+<p><iframe src="https://rmit.h5p.com/content/1292427301278021799/embed" aria-label="Chemistry_Atomic structure_Quiz" width="1088" height="637" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe><script src="https://rmit.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script></p>
 <p><script> const manual = new Freezeframe('.freezeme', { trigger: false }); document .querySelector('.start') .addEventListener('click', () => { manual.start(); }); document .querySelector('.stop') .addEventListener('click', () => { manual.stop(); }); </script></p>
 			<nav class="btn-nav-container" aria-label="Previous and next links">
 <h2 class="btn-nav-prev">
-    <a href="../atoms-molecules-and-compounds-quiz/index.html">
-        <span aria-hidden="true">Atoms, molecules and compounds quiz</span>
-        <span class="visually-hidden">Previous page: Atoms, molecules and compounds quiz</span>
+    <a href="../atoms/index.html">
+        <span aria-hidden="true">Atoms, molecules and compounds</span>
+        <span class="visually-hidden">Previous page: Atoms, molecules and compounds</span>
     </a>
 </h2>
     
 
 
 <h2 class="btn-nav-next">
-    <a href="../quiz-atomic-structure/index.html">
-        <span aria-hidden="true">Quiz atomic structure</span>
-        <span class="visually-hidden">Next page: Quiz atomic structure</span>
+    <a href="../electron/index.html">
+        <span aria-hidden="true">The electron</span>
+        <span class="visually-hidden">Next page: The electron</span>
     </a>
 </h2>
 	
 </nav><!-- .navigation -->			<div id="additional-info">
 			
+<hr class="margin-top-xl"><blockquote class="complex ">
+<a href="https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_en.html">
+<div class="content">
+<h3>Build an atom</h3>
+<p>Check out this PhET simulation to make your own molecule.</p>
+</div><div class="icon-wrap"><img src="https://rmitlibrary.github.io/design-system/images/icon-llcc-large.svg" alt="" /></div>
+</a></blockquote>
 			
 
 
@@ -434,7 +586,6 @@ list.querySelectorAll('h4').forEach(h4 => {
     <ul>
                 <li><a href="../../../keyword/atomic-structures/index.html">Atomic Structures</a></li>  
                 <li><a href="../../../keyword/chemistry/index.html">Chemistry</a></li>  
-                <li><a href="../../../keyword/tutorials/index.html">Tutorials</a></li>  
         </ul>
 </div>
  
@@ -443,7 +594,7 @@ list.querySelectorAll('h4').forEach(h4 => {
 <!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
 <!--
 <p><strong>Subjects </strong>
-    | <strong><a href="https://lab.bitma.app/subject-area/chemistry/">Chemistry</a></strong>  
+    | <strong><a href="https://learninglab.rmit.edu.au/subject-area/chemistry/">Chemistry</a></strong>  
     </p>
 -->
 <!-- category echo end -->
@@ -503,18 +654,17 @@ list.querySelectorAll('h4').forEach(h4 => {
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <section class="acknowledgement-container">
-                        <div class="acknowledgement-image">
-                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
-                        </div>
-
+                <section class="acknowledgement-container">
                         <div class="content">
                             <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
                             <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
-                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="#" class="link-large">More information</a>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business<span class="img-credit"> - Artwork 'Sentient' by Hollie Johnson, Gunaikurnai and Monero Ngarigo</span>.</p>
+                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                        </div>
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/sentient-hollie-johnson.jpg" alt="" />
                         </div>
                     </section>
                 </div>
@@ -594,7 +744,7 @@ list.querySelectorAll('h4').forEach(h4 => {
 </div><!-- wrapper end -->
 		
 	
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
 <script src="../../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
 <!-- Code to handle hamburger menu, embed mode, dark mode -->

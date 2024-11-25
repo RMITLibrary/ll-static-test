@@ -2,68 +2,31 @@
 <html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
 
 <head>
-<!-- 
-    DARK MODE
-    This script is placed in the <head> to ensure the theme is set as early as possible,
-    reducing the flash of unstyled content (FOUC). It determines the user's preferred
-    theme (either from local storage or system settings) and applies it immediately.
-  -->
-  <script>
-    (function() {
-      'use strict';
-
-      // Function to get the stored theme from local storage
-      const getStoredTheme = () => localStorage.getItem('theme');
-
-      // Function to determine the preferred theme
-      const getPreferredTheme = () => {
-        const storedTheme = getStoredTheme(); // Retrieve the stored theme
-        if (storedTheme) {
-          return storedTheme; // If a theme is stored, return it
-        }
-        // If no theme is stored, check the system preference for dark mode
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      // Function to apply the specified theme
-      const setTheme = theme => {
-        if (theme === 'auto') {
-          // If theme is 'auto', set it based on system preference
-          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-        } else {
-          // Otherwise, set the theme explicitly
-          document.documentElement.setAttribute('data-bs-theme', theme);
-        }
-      };
-
-      // Set the theme based on the preferred theme
-      setTheme(getPreferredTheme());
-    })();
-  </script>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- wp_head -->
-	<title>Stoichiometry - lab</title>
-
-		<!-- All in One SEO 4.7.3.1 - aioseo.com -->
-		<meta name="description" content="\[\require{mhchem}\] Stoichiometry describes the relationship between relative quantities of reactants and products in a balanced chemical equation. Improve your knowledge of stoichiometry with the information on this page by learning about the stoichiometric coefficient, the molar ratio and chemical equations. Stoichiometric coefficient The stoichiometric coefficient is the number written immediately before the atoms, ions and" />
+	<title>Stoichiometry - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		
+		<meta name="description" content="In our daily lives, from the food we eat to the fuel that powers our vehicles, stoichiometry plays a crucial role in ensuring that chemical processes are efficient and effective. Improve your knowledge of stoichiometry by using this resource to learn about the stoichiometric coefficient, the molar ratio and chemical equations. Stoichiometry describes the quantitative" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
-		<meta name="generator" content="All in One SEO (AIOSEO) 4.7.3.1" />
+		
 		<meta property="og:locale" content="en_US" />
-		<meta property="og:site_name" content="lab -" />
+		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="Stoichiometry - lab" />
-		<meta property="og:description" content="\[\require{mhchem}\] Stoichiometry describes the relationship between relative quantities of reactants and products in a balanced chemical equation. Improve your knowledge of stoichiometry with the information on this page by learning about the stoichiometric coefficient, the molar ratio and chemical equations. Stoichiometric coefficient The stoichiometric coefficient is the number written immediately before the atoms, ions and" />
-		<meta property="og:url" content="https://lab.bitma.app/chemistry/working-with-quantities/stoichiometry/" />
+		<meta property="og:title" content="Stoichiometry - Learning Lab" />
+		<meta property="og:description" content="In our daily lives, from the food we eat to the fuel that powers our vehicles, stoichiometry plays a crucial role in ensuring that chemical processes are efficient and effective. Improve your knowledge of stoichiometry by using this resource to learn about the stoichiometric coefficient, the molar ratio and chemical equations. Stoichiometry describes the quantitative" />
+		<meta property="og:url" content="https://learninglab.rmit.edu.au/chemistry/working-with-quantities/stoichiometry/" />
 		<meta property="article:published_time" content="2023-10-16T05:34:48+00:00" />
-		<meta property="article:modified_time" content="2024-11-07T03:24:57+00:00" />
+		<meta property="article:modified_time" content="2024-11-22T03:48:54+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Stoichiometry - lab" />
-		<meta name="twitter:description" content="\[\require{mhchem}\] Stoichiometry describes the relationship between relative quantities of reactants and products in a balanced chemical equation. Improve your knowledge of stoichiometry with the information on this page by learning about the stoichiometric coefficient, the molar ratio and chemical equations. Stoichiometric coefficient The stoichiometric coefficient is the number written immediately before the atoms, ions and" />
+		<meta name="twitter:title" content="Stoichiometry - Learning Lab" />
+		<meta name="twitter:description" content="In our daily lives, from the food we eat to the fuel that powers our vehicles, stoichiometry plays a crucial role in ensuring that chemical processes are efficient and effective. Improve your knowledge of stoichiometry by using this resource to learn about the stoichiometric coefficient, the molar ratio and chemical equations. Stoichiometry describes the quantitative" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/lab.bitma.app\/chemistry\/working-with-quantities\/stoichiometry\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/#listItem","position":1,"name":"Home","item":"https:\/\/lab.bitma.app\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/lab.bitma.app\/chemistry\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/working-with-quantities\/#listItem","previousItem":"https:\/\/lab.bitma.app\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/working-with-quantities\/#listItem","position":3,"name":"Working with physical quantities","item":"https:\/\/lab.bitma.app\/chemistry\/working-with-quantities\/","nextItem":"https:\/\/lab.bitma.app\/chemistry\/working-with-quantities\/stoichiometry\/#listItem","previousItem":"https:\/\/lab.bitma.app\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/lab.bitma.app\/chemistry\/working-with-quantities\/stoichiometry\/#listItem","position":4,"name":"Stoichiometry","previousItem":"https:\/\/lab.bitma.app\/chemistry\/working-with-quantities\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/lab.bitma.app\/#organization","name":"lab","url":"https:\/\/lab.bitma.app\/"},{"@type":"WebPage","@id":"https:\/\/lab.bitma.app\/chemistry\/working-with-quantities\/stoichiometry\/#webpage","url":"https:\/\/lab.bitma.app\/chemistry\/working-with-quantities\/stoichiometry\/","name":"Stoichiometry - lab","description":"\\[\\require{mhchem}\\] Stoichiometry describes the relationship between relative quantities of reactants and products in a balanced chemical equation. Improve your knowledge of stoichiometry with the information on this page by learning about the stoichiometric coefficient, the molar ratio and chemical equations. Stoichiometric coefficient The stoichiometric coefficient is the number written immediately before the atoms, ions and","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/lab.bitma.app\/#website"},"breadcrumb":{"@id":"https:\/\/lab.bitma.app\/chemistry\/working-with-quantities\/stoichiometry\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:48+00:00","dateModified":"2024-11-07T03:24:57+00:00"},{"@type":"WebSite","@id":"https:\/\/lab.bitma.app\/#website","url":"https:\/\/lab.bitma.app\/","name":"lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/lab.bitma.app\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/working-with-quantities\/stoichiometry\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem","position":2,"name":"Chemistry","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/working-with-quantities\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/working-with-quantities\/#listItem","position":3,"name":"Working with physical quantities","item":"https:\/\/learninglab.rmit.edu.au\/chemistry\/working-with-quantities\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/working-with-quantities\/stoichiometry\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/working-with-quantities\/stoichiometry\/#listItem","position":4,"name":"Stoichiometry","previousItem":"https:\/\/learninglab.rmit.edu.au\/chemistry\/working-with-quantities\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/working-with-quantities\/stoichiometry\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/chemistry\/working-with-quantities\/stoichiometry\/","name":"Stoichiometry - Learning Lab","description":"In our daily lives, from the food we eat to the fuel that powers our vehicles, stoichiometry plays a crucial role in ensuring that chemical processes are efficient and effective. Improve your knowledge of stoichiometry by using this resource to learn about the stoichiometric coefficient, the molar ratio and chemical equations. Stoichiometry describes the quantitative","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/chemistry\/working-with-quantities\/stoichiometry\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:48+00:00","dateModified":"2024-11-22T03:48:54+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
@@ -81,25 +44,96 @@ MathJax = {
 
 </script>
 <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
-<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min%EF%B9%96ver=6.6.2.css' media='all' />
-<style id='classic-theme-styles-inline-css'>/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='h5p-plugin-styles-css' href='../../../wp-content/plugins/h5p/h5p-php-library/styles/h5p%EF%B9%96ver=1.16.0.css' media='all' />
-<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=843.css' media='all' />
+
+
+
+
+<link rel='stylesheet' id='picostrap-styles-css' href='../../../wp-content/themes/picostrap5-child-base/css-output/bundle%EF%B9%96ver=849.css' media='all' />
  	<!-- /wp_head -->
+
     
+    
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta name="author" content="RMIT Library">
+
+    <meta name="geo.position" content="-37.807778, 144.963333">
+    <meta name="geo.placename" content="Melbourne">
+    <meta name="geo.region" content="AU">
+
+    <meta name="dcterms.title" content="Learning Lab">
+    
+    <meta name="dcterms.description" content="In our daily lives, from the food we eat to the fuel that powers our vehicles, stoichiometry plays a crucial role in ensuring that chemical processes are efficient and effective. Improve your knowledge of stoichiometry by using this resource to learn about the stoichiometric coefficient, the molar ratio and chemical...">
+    <meta name="dcterms.type" content="Text">
+    <meta name="dcterms.identifier" content="https://learninglab.rmit.edu.au/chemistry/working-with-quantities/stoichiometry/">
+    <meta name="dcterms.format" content="text/html">
+    <!-- END Additional meta tags not covered by wp_head -->
+
+
+    <!-- START Additional scripts for tracking -->
+
+    <!-- Microsoft Clarity - does hotspot tracking of pages -->
+    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+
+    <!-- Google tag - (gtag.js) --> 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLHPB23GYR');
+    </script>
+
+    <!-- Microsoft Bing - Not sure how useful this is? --> 
+    <meta name="msvalidate.01" content="8E4954E1DFAB7E2F8A92DD0A0BD6ED09">
+
+    <!-- END Additional scripts for tracking -->
+
     <style>
         </style>
+
+    <!-- 
+    DARK MODE javascript
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+    -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Function to get the stored theme from local storage
+        const getStoredTheme = () => localStorage.getItem('theme');
+
+        // Function to determine the preferred theme
+        const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+            return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        // Function to apply the specified theme
+        const setTheme = theme => {
+        if (theme === 'auto') {
+            // If theme is 'auto', set it based on system preference
+            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+            // Otherwise, set the theme explicitly
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        };
+
+        // Set the theme based on the preferred theme
+        setTheme(getPreferredTheme());
+    })();
+    </script>
 </head>
 
 <body class="page-template-default page page-id-3160 page-child parent-pageid-3157 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
-	
 		
 <header>
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
@@ -166,7 +200,7 @@ MathJax = {
 </h2>
 <div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
 <div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="../../../writing-fundamentals/academic-style/index.html">Academic style</a></li>
-<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic word list tool</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="../../../writing-fundamentals/academic-word-list-tool/index.html">Academic Word List tool</a></li>
 <li class="page_item page-item-3107 page_item_has_children"><a href="../../../writing-fundamentals/writing-paragraphs/index.html">Writing paragraphs</a></li>
 <li class="page_item page-item-2520 page_item_has_children"><a href="../../../writing-fundamentals/writing-sentences/index.html">Writing sentences</a></li>
 <li class="page_item page-item-2521"><a href="../../../writing-fundamentals/spelling-tips/index.html">Spelling tips</a></li>
@@ -211,7 +245,7 @@ MathJax = {
 									<ul>
 										<li><a href="../../../art-and-design/index.html">Art and design</a></li>
 										<li><a href="../../index.html">Chemistry</a></li>
-										<li><a href="../../../subject-areas/law-resources/index.html">Legal studies</a></li>
+										<li><a href="../../../law-resources/index.html">Legal studies</a></li>
 										<li><a href="../../../maths-statistics/index.html">Mathematics and statistics</a></li>
 										<li><a href="../../../subject-areas/nursing-calculations/resources-nursing/index.html">Nursing</a></li>
 										<li><a href="../../../subject-areas/physics/index.html">Physics</a></li>
@@ -275,7 +309,7 @@ This should be moved to a stylesheet once style is determined. -->
 <!-- START SIDEBAR NAV PANEL -->
 <nav class="right-nav" aria-label="Section Menu">
 
-<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">Working with physical quantities</a></h3><ul><li><a href="../units/index.html">Units and conversions</a></li><li><a href="../mole/index.html">The mole as a unit of measurement</a></li><li><a href="../mole-exercises/index.html">The mole - exercises</a></li><li><a href="index.html" class="selected"  aria-current="page">Stoichiometry</a><li><a href="../stoichiometry-exercises/index.html">Stoichiometry - exercises</a></li></ul></nav>
+<h2><a href="../../index.html">Chemistry</a></h2><h3><a href="../index.html">Working with physical quantities</a></h3><ul><li><a href="../units/index.html">Units and conversions</a></li><li><a href="../mole-unit-measurement/index.html">The mole</a></li><li><a href="../mole-quiz/index.html">Quiz – The mole</a></li><li><a href="index.html" class="selected"  aria-current="page">Stoichiometry</a><li><a href="../stoichiometry-exercises/index.html">Quiz – Stoichiometry</a></li></ul></nav>
 <!-- END SIDEBAR NAV PANEL -->
 
 
@@ -319,61 +353,73 @@ list.querySelectorAll('h4').forEach(h4 => {
 </ul>
 </nav>            <a id="main-content"></a>
             <h1 class="margin-top-zero">Stoichiometry</h1>
-            <p><!--<script> var kw = "Keywords: " node = document.getElementById('page-title'); node.insertAdjacentHTML('afterend', '</p>
-
-
-
-
-<p class="keywords">'+kw+'<a href="/learninglab/keywords/stoichiometry" title="view all content with this keyword">Stoichiometry</a> | <a href="/learninglab/tags/chemical-equations" title="view all content with this keyword">Chemical Equations</a> | <a href="/learninglab/tags/measurement" title="view all content with this keyword">Measurement</a></p>
-
-
-
-
-<p>'); </script>
-
-
-
-<style type="text/css"> .keywords { text-align:right; padding: 2rem; color: #ccc; } .keywords a { color: #fff; } .field-name-field-keywords-tags { display: none; } #title-wrapper { background: url('https://rmitlibrary.github.io/cdn/learninglab/images/br138.jpg'); color: white; background-size: auto; margin: 0; height: inherit; } .lower-level #page #main h2#page-title { padding: 4rem 0 1rem 3rem ; margin: 0 0 0rem 0; line-height: 3.2rem; background: inherit; color: white; } /* hide em dash */ .lower-level #page #main h2#page-title:before { Display: none; } #sidebar-second { margin-top: 0px; } /* hide keywords */</style>
-
---></p>
-<p>\[\require{mhchem}\]</p>
-<p class="lead">Stoichiometry describes the relationship between relative quantities of reactants and products in a balanced chemical equation. Improve your knowledge of stoichiometry with the information on this page by learning about the stoichiometric coefficient, the molar ratio and chemical equations.</p>
-<div>
-<h2>Stoichiometric coefficient</h2>
-<p>The stoichiometric coefficient is the number written immediately before the atoms, ions and molecules in a balanced chemical equation. These numbers indicate the ratio of any reactant or product that reacts or forms in a reaction.</p>
-<p>Example: Let's consider the reaction between hydrogen gas and nitrogen gas to form ammonia. The balanced chemical equation can be written as follows: \[ 3\ce{H}_{2}\left(g\right)+\ce{N}_{2}\left(g\right)\rightarrow2\ce{NH}_{3}\left(g\right) \]</p>
-<p>Three, one and two are written in front of \(\ce{H},\ce{N},\ce{NH}_{3}\), respectively, these are considered as stoichiometric coefficients. Stoichiometric coefficients in this reaction show that three molecules of hydrogen gas react with one molecule of nitrogen gas to form two ammonia molecules. When there is no coefficient before an atom, ion or molecule, we interpret it as one. For instance, the coefficient of molecular nitrogen in this reaction is one.</p>
-</div>
-<div>
-<h3>The molar ratio and chemical equations</h3>
-<p>The stoichiometric coefficients in a balanced chemical equation can also be interpreted on the molar scale. Let's consider the same example again: \[ 3\ce{H}_{2}\left(g\right)+\ce{N}_{2}\left(g\right)\rightarrow2\ce{NH}_{3}\left(g\right) \]</p>
-<p>Based on the molar scale, we can say that three moles of hydrogen gas react with one mole of nitrogen gas to form two moles of ammonia gas. Molar scale interpretation relates to the quantities of substances involved in the reaction. Therefore, if we know the amount of one substance involved in the reaction, we can use the molar ratio to determine the amounts of others involved in the reaction.</p>
-<div>
-<h4>Moles calculations</h4>
-<p>Worked Example 1: How many moles of ammonia gas can be produced from \(0.18\textrm{mol}\) of hydrogen gas? \[ 3\ce{H}_{2}\left(g\right)+\ce{N}_{2}\left(g\right)\rightarrow2\ce{NH}_{3}\left(g\right) \]</p>
-<p>We are asked to calculate the amount of ammonia and are given the moles of hydrogen and the balanced chemical equation for the reaction. We need to find out the molar ratio of hydrogen and ammonia to calculate the amount of ammonia. From the stoichiometric coefficients, we know that three moles of hydrogen produce two moles of ammonia. Therefore, the molar ratio between hydrogen gas to ammonia gas is \(3:2\). Thus, if we use \(0.18\textrm{mol}\) of hydrogen gas, we can produce the following amount of ammonia gas: \[\begin{align*} \frac{2\textrm{mol}\ce{NH}_{3}}{3\textrm{mol}\ce{H}_{2}} &amp; \times0.18\textrm{mol}\ce{H}_{2}=0.12\textrm{mol} \end{align*}\]</p>
-</div>
-<div>
-<h5>Mass calculations</h5>
-<p>Worked Example 2: The burning of methane gas \(\left(\ce{CH}_{4}\right)\) in excess oxygen produces carbon dioxide gas and water vapour. The balanced chemical equation for the reaction is as follows: \[ \ce{CH}_{4}\left(g\right)+2\ce{O}_{2}\left(g\right)\rightarrow\ce{CO}_{2}\left(g\right)+2\ce{H}_{2}\ce{O}\left(g\right) \]</p>
-<p>How many moles of water vapour can be obtained by the complete burning of \(3.20\textrm{g}\) of methane gas? The molar mass of methane is \(16.0\textrm{g}/\textrm{mol}\).</p>
-<p>We are asked to calculate the number of moles of water vapour and are given the mass of methane and the balanced chemical equation for the reaction. To find the moles of water vapour, first, we need to find out the moles of methane. As the quantity of methane is given in grams, we need to convert it to moles using \(M=\frac{m}{n}\)<sup>1</sup><br />
-\[\begin{align*} M &amp; =\frac{m}{n}\\ n &amp; =\frac{m}{M}\\ n &amp; =\frac{3.20\textrm{g}}{16.0\textrm{g}/\textrm{mol}}\\ n &amp; =0.200\textrm{mol} \end{align*}\] To relate the amount of methane to the amount of water vapour, we need to know the molar ratio of the two. From the balanced chemical equation, we know one mole of methane produces two moles of water vapour. Therefore, \(0.200\textrm{mol}\) of methane can produce the following amount of water vapour: \[ \frac{2\textrm{mol}\ce{H}_{2}\ce{O}}{1\textrm{mol}\ce{CH}_{4}}\times0.200\textrm{mol}\ce{CH}_{4}=0.400\textrm{mol} \]</p>
-</div>
-</div>
-<div>
-<p><strong>Limiting reagents and yields</strong></p>
-<div>
-<p><strong>Limiting and excess reagents</strong></p>
-<p>Let's consider the reaction between hydrogen gas and nitrogen gas to form ammonia gas again: \[ 3\ce{H}_{2}\left(g\right)+\ce{N}_{2}\left(g\right)\rightarrow2\ce{NH}_{3}\left(g\right) \]</p>
-<p>Based on stoichiometry, we know that if we mix three moles of \(\ce{H}_{2}\) with one mole of \(\ce{N}_{2}\), we can obtain two moles of \(\ce{NH}_{3}\). In other words, \(\ce{H}_{2}\) reacts with \(\ce{N}_{2}\) in a molar ratio of \(3:1\). If we mix three moles of hydrogen gas and two moles of nitrogen gas, what will happen? Similarly, three moles of \(\ce{H}_{2}\) will react with one mole of \(\ce{N}_{2}\) and produce two moles of \(\ce{NH}_{3}\). However, the entire quantity of \(\ce{H}_{2}\) will be used before the \(\ce{N}_{2}\) as we start with the exact amount of \(\ce{H}_{2}\) required for the reaction. The product mixture will contain one unreacted mole of \(\ce{N}_{2}\) as we only required one mole of \(\ce{N}_{2}\) for the reaction. If we had more \(\ce{H}_{2}\), we could have produced more \(\ce{NH}_{3}\) as we already have excess \(\ce{N}_{2}\). Therefore, in this reaction, we call \(\ce{H}_{2}\) the limiting reagent since it limits the production of \(\ce{NH}_{3}\). Hence, the limiting reagent is the reactant that runs out first, limiting the formation of products. Nitrogen gas is called the excess reagent because we have a greater amount than required for the reaction.</p>
-<p>Worked Example: Phosphoric acid is produced by treating the phosphate rock, which contains calcium phosphate, with sulphuric acid, as follows: \[ \ce{Ca}_{3}\left(\ce{PO}_{4}\right)_{2}+3\ce{H}_{2}\ce{SO}_{4}\rightarrow3\ce{CaSO}_{4}+2\ce{H}_{3}\ce{PO}_{4} \]</p>
-<p>A chemist in a fertiliser production plant mixed \(144.5\textrm{g}\) of calcium phosphate with \(160.5\textrm{g}\) of sulphuric acid. What is the maximum mass of phosphoric acid that can be formed? The molar masses are given below.</p>
+            <p class="lead">In our daily lives, from the food we eat to the fuel that powers our vehicles, stoichiometry plays a crucial role in ensuring that chemical processes are efficient and effective. Improve your knowledge of stoichiometry by using this resource to learn about the stoichiometric coefficient, the molar ratio and chemical equations.</p>
+<p>Stoichiometry describes the quantitative relationship between relative quantities of reactants and products in a balanced chemical equation. <strong>Stoichiometric coefficients</strong> are the numbers written immediately before the atoms, ions and molecules in a balanced chemical equation. These numbers indicate the ratio of any reactant or product that reacts or forms in a reaction.</p>
+<p>As an example, let's consider the reaction between hydrogen gas and nitrogen gas to form ammonia. The balanced chemical equation can be written as:</p>
+<p>\[3\ce{H}_{2}\left(\textrm{g}\right)+\ce{N}_{2}\left(\textrm{g}\right)\rightarrow2\ce{NH}_{3}\left(\textrm{g}\right)\]</p>
+<p>The numbers three, one and two are written in front of \(\ce{H}\), \(\ce{N}\) and \(\ce{NH}_{3}\), respectively. These are the stoichiometric coefficients. They show that three molecules of hydrogen gas react with one molecule of nitrogen gas to form two ammonia molecules. When there is no coefficient before an atom, ion or molecule, we interpret it as one. For example, the coefficient of molecular nitrogen in this reaction is one.</p>
+<h2>Molar ratios</h2>
+<p>The stoichiometric coefficients in a balanced chemical equation can also be interpreted on the molar scale. Molar scale interpretation relates to the quantities of substances involved in the reaction. Therefore, if we know the amount of one substance involved in the reaction, we can use the molar ratio to determine the amounts of others involved in the reaction. Let's consider the same example:<br />
+\[3\ce{H}_{2}\left(\textrm{g}\right)+\ce{N}_{2}\left(\textrm{g}\right)\rightarrow2\ce{NH}_{3}\left(\textrm{g}\right)\]</p>
+<p>Using the molar scale, we can say that three moles of hydrogen gas react with one mole of nitrogen gas to form two moles of ammonia gas.</p>
+<h2>Limiting and excess reactants</h2>
+<p>In chemical reactions, limiting and excess reactants (or reagents) determine the extent of the reaction and the amount of products formed. The <strong>limiting reactant</strong> is the substance that is consumed completely first, thus limiting the amount of product that can be formed. Once the limiting reactant is used up, the reaction cannot proceed further, even if other reactants are still available. On the other hand, <strong>excess reactants</strong> are those that remain after the reaction has reached completion.</p>
+<p>Let's consider the reaction between hydrogen gas and nitrogen gas to form ammonia gas again:<br />
+\[3\ce{H}_{2}\left(\textrm{g}\right)+\ce{N}_{2}\left(\textrm{g}\right)\rightarrow2\ce{NH}_{3}\left(\textrm{g}\right)\]</p>
+<p>Based on stoichiometry, we know that if we mix three moles of \(\ce{H}_{2}\) with one mole of \(\ce{N}_{2}\), we can obtain two moles of \(\ce{NH}_{3}\). In other words, \(\ce{H}_{2}\) reacts with \(\ce{N}_{2}\) in a molar ratio of \(3:1\).</p>
+<p>If we mix three moles of hydrogen gas and two moles of nitrogen gas, two moles of \(\ce{NH}_{3}\) will be produced. However, the entire quantity of \(\ce{H}_{2}\) will be used before the \(\ce{N}_{2}\) as we start with the exact amount of \(\ce{H}_{2}\) required for the reaction. The product mixture will contain one unreacted mole of \(\ce{N}_{2}\) as we only required one mole of \(\ce{N}_{2}\) for the reaction. If we had more \(\ce{H}_{2}\), we could have produced more \(\ce{NH}_{3}\) as we already have excess \(\ce{N}_{2}\). Therefore, in this reaction, we call \(\ce{H}_{2}\) the limiting reagent since it limits the production of \(\ce{NH}_{3}\).</p>
+<p>Hence, the limiting reagent is the reactant that runs out first, limiting the formation of products. Nitrogen gas is called the excess reagent because we have a greater amount than required for the reaction.</p>
+<h2>Reaction yield</h2>
+<p>The <strong>theoretical yield</strong> is the maximum amount of product that can form under the given reaction conditions. This is determined by the amount of limiting reagent available. Theoretical yield can be calculated using the stoichiometric coefficients (or molar ratios) in the balanced chemical equation. We calculate theoretical yield assuming no losses occur during the reaction, and all the reactants are converted into products. However, in reality, losses and inefficiencies occur during chemical reactions. Therefore, the actual amount you isolate and measure from a chemical reaction is less than what you expect in theory.</p>
+<p>The <strong>actual yield</strong> of a reaction is the amount of the product you isolate from the chemical reaction. Actual yield must be determined experimentally, so it often referred to as experimental yield. You need to isolate the product and weigh it to get the actual yield.</p>
+<p>The <strong>percentage yield</strong> indicates how efficient the reaction was in converting reactants into products. If the value is closer to \(100\textrm{%}\), most of the reactants were converted into products; the reaction was closer to completion. Percentage yield can be calculated using:</p>
+<p>\[\textrm{Percentage yield}=\frac{\textrm{Actual yield}}{\textrm{Theoretical yield}}\times100\textrm{%}\]</p>
+<h2>Worked example – calculating the amount of product formed from a chemical reaction</h2>
+<p>Calculate the amount in moles of ammonia gas that can be produced from \(0.18\textrm{ mol}\) of hydrogen gas. \[3\ce{H}_{2}\left(\textrm{g}\right)+\ce{N}_{2}\left(\textrm{g}\right)\rightarrow2\ce{NH}_{3}\left(\textrm{g}\right)\]</p>
+<p><strong>Step 1:</strong> Determine the molar ratio of the compounds and write it as a fraction. The stoichiometric coefficient for the compound we are interested in (the "unknown") is written as the numerator at the top, and the coefficient for the compound we have the amount for (the "known") is written as the denominator at the bottom.</p>
+<p>\[\begin{align*}<br />
+\textrm{Stoichiometric ratio} &amp; =\frac{\textrm{coefficient of unknown}}{\textrm{coefficient of known}}\\<br />
+&amp; = \frac{2}{3}<br />
+\end{align*}\]</p>
+<p><strong>Step 2:</strong> Calculate the amount of product formed by multiplying the amount of reactant by the molar ratio.</p>
+<p>\[\begin{align*}<br />
+n(\ce{NH3}) &amp; = \frac{2}{3}\times0.18\textrm{ mol}\\<br />
+&amp; =0.12\textrm{ mol}<br />
+\end{align*}\]</p>
+<div class="accordion-item ">
+<h2 class="accordion-header" id="head-example-2-1634">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-example-2-8526" aria-expanded="false" aria-controls="body-example-2-8526" >Example 2</button>
+</h2>
+<div id="body-example-2-8526" class="accordion-collapse collapse " aria-labelledby="head-example-2-1634">
+<div class="accordion-body">
+<p>The burning of methane gas \(\left(\ce{CH}_{4}\right)\) in excess oxygen produces carbon dioxide gas and water vapour. The balanced chemical equation for the reaction is:</p>
+<p>\[\ce{CH}_{4}\left(\textrm{g}\right)+2\ce{O}_{2}\left(\textrm{g}\right)\rightarrow\ce{CO}_{2}\left(\textrm{g}\right)+2\ce{H}_{2}\ce{O}\left(\textrm{g}\right)\]</p>
+<p>Calculate the amount of water vapour that can be obtained from the complete burning of \(3.20\textrm{ g}\) of methane gas. The molar mass of methane is \(16.0\textrm{ g mol}^{-1}\).</p>
+<p><strong>Step 1:</strong> Calculate the amount in moles of methane burned.</p>
+<p>\[\begin{align*} n(\ce{CH4}) &amp; =\frac{m}{M}\\<br />
+&amp; =\frac{3.20\textrm{ g}}{16.0\textrm{ g mol}^{-1}}\\<br />
+&amp; =0.200\textrm{ mol}<br />
+\end{align*}\]</p>
+<p><strong>Step 2:</strong> Determine the molar ratio of the compounds and write it as a fraction. The stoichiometric coefficient for the compound we are interested in (the "unknown") is written as the numerator at the top, and the coefficient for the compound we have the amount for (the "known") is written as the denominator at the bottom.</p>
+<p>\[\begin{align*}<br />
+\textrm{Stoichiometric ratio} &amp; =\frac{\textrm{coefficient of unknown}}{\textrm{coefficient of known}}\\<br />
+&amp; = \frac{2}{1}<br />
+\end{align*}\] </p>
+<p><strong>Step 3:</strong> Calculate the amount of product formed by multiplying the amount of reactant by the molar ratio.</p>
+<p>\[\begin{align*}<br />
+n(\ce{H2O}) &amp; = \frac{2}{1}\times0.200\textrm{ mol}\\<br />
+&amp; =0.400\textrm{ mol}<br />
+\end{align*}\]<br />
+</div></div></div>
+<h2>Worked example – calculating the theoretical yield of a reaction</h2>
+<p>Phosphoric acid is produced by treating phosphate rock, which contains calcium phosphate, with sulfuric acid:<br />
+\[\ce{Ca}_{3}\left(\ce{PO}_{4}\right)_{2}+3\ce{H}_{2}\ce{SO}_{4}\rightarrow3\ce{CaSO}_{4}+2\ce{H}_{3}\ce{PO}_{4}\]</p>
+<p>A chemist in a fertiliser production plant mixes \(144.5\textrm{ g}\) of calcium phosphate with \(160.5\textrm{ g}\) of sulfuric acid. Determine the maximum mass of phosphoric acid that can be formed. The molar masses are given in the table.</p>
 <table>
 <thead>
 <tr>
-<th>Molecule</th>
-<th>Molar mass (g/mol)</th>
+<th>Compound</th>
+<th>Molar mass (\(\textrm{g mol}^{-1}\))</th>
 </tr>
 </thead>
 <tbody>
@@ -391,36 +437,102 @@ list.querySelectorAll('h4').forEach(h4 => {
 </tr>
 </tbody>
 </table>
-<p>We are given the mass of reactants and are asked to determine the mass of one of the products.</p>
-<p>Step 1 - Identify the limiting reagent in this reaction. For that, find the number of moles of each reactant using \(M=\frac{m}{n}\).</p>
-<p>Number of moles of \(\ce{Ca}_{3}\left(\ce{PO}_{4}\right)_{2}\): \[\begin{align*} M &amp; =\frac{m}{n}\\ n &amp; =\frac{m}{M}\\ n &amp; =\frac{144.5\textrm{g}}{310.2\textrm{ g}/\textrm{mol}}\\ n &amp; =0.4658\textrm{mol} \end{align*}\]</p>
-<p>Number of moles of \(\ce{H}_{2}\ce{SO}_{4}\): \[\begin{align*} M &amp; =\frac{m}{n}\\ n &amp; =\frac{m}{M}\\ n &amp; =\frac{160.5\textrm{g}}{98.1\textrm{g}/\textrm{mol}}\\ n &amp; =1.64\textrm{mol} \end{align*}\]</p>
-<p>Then, compare the calculated moles with the molar ratio of two reactants. According to the balanced chemical equation, calcium phosphate reacts with sulphuric acid in a \(1:3\) molar ratio. Therefore, \(0.4658\textrm{mol}\) of \(\ce{Ca}_{3}\left(\ce{PO}_{4}\right)_{2}\) reacts with the following number of moles of \(\ce{H}_{2}\ce{SO}_{4}\): \[\begin{align*} \frac{3\textrm{mol}\ce{H}_{2}\ce{SO}_{4}}{1\textrm{mol}\ce{Ca}_{3}\left(\ce{PO}_{4}\right)_{2}}\times0.4658\textrm{mol}\ce{Ca}_{3}\left(\ce{PO}_{4}\right)_{2} &amp; =1.397\textrm{mol} \end{align*}\]</p>
-<p>We have \(1.64\textrm{mol}\) of \(\ce{H}_{2}\ce{SO}_{4}\) , but we only need \(1.397\textrm{mol}\) for the reaction. This means we have excess \(\ce{H}_{2}\ce{SO}_{4}\) acid. Therefore, the limiting reagent is \(\ce{Ca}_{3}\left(\ce{PO}_{4}\right)_{2}\). The quantity of limiting reagent can determine the mass of \(\ce{H}_{3}\ce{PO}_{4}\) acid formed.</p>
-<p>Step 2 - Use the molar ratio between \(\ce{Ca}_{3}\left(\ce{PO}_{4}\right)_{2}\) and \(\ce{H}_{3}\ce{PO}_{4}\) acid to calculate the mass of \(\ce{H}_{3}\ce{PO}_{4}\) acid formed.</p>
-<p>We know one mole of \(\ce{Ca}_{3}\left(\ce{PO}_{4}\right)_{2}\) forms two moles of \(\ce{H}_{3}\ce{PO}_{4}\) acid from the balanced chemical equation. Therefore, the number of moles of \(\ce{H}_{3}\ce{PO}_{4}\) acid forms from \(0.4658\textrm{mol}\) of \(\ce{Ca}_{3}\left(\ce{PO}_{4}\right)_{2}\) is: \[\begin{align*} \frac{2\textrm{mol}\ce{H}_{3}\ce{PO}_{4}}{1\textrm{mol}\ce{Ca}_{3}\left(\ce{PO}_{4}\right)_{2}}\times0.4658\textrm{mol}\ce{Ca}_{3}\left(\ce{PO}_{4}\right)_{2} &amp; =0.9316\textrm{mol} \end{align*}\]</p>
-<p>Now, find the mass of \(\ce{H}_{3}\ce{PO}_{4}\) using \(M=\frac{m}{n}\) \[\begin{align*} M &amp; =\frac{m}{n}\\ m &amp; =M\times n\\ m &amp; =97.99\textrm{g}/\textrm{mol}\times0.9316\textrm{mol}\\ m &amp; =91.29\textrm{g} \end{align*}\]</p>
-<p>Based on the given reaction conditions, maximum mass we can obtain for \(\ce{H}_{3}\ce{PO}_{4}\) acid is \(91.29\textrm{g}\).</p>
-</div>
-<div>
-<p><strong>Yields</strong></p>
-<p>Theoretical yield is the maximum amount of the product that can form under the given reaction conditions. The available amount of limiting reagent determines the maximum amount of the product that can be formed. Theoretical yield can be calculated using the stoichiometric coefficients (or molar ratios) displayed in the balanced chemical equation. We calculate theoretical yield assuming no losses occur during the reaction, and all the reactants convert to products. However, in reality, often losses and inefficiencies occur during chemical reactions. Therefore, the actual amount you isolate and measure from a chemical reaction is less than the theoretically expected amount.</p>
-<p>The actual yield of a product is the amount of the product you isolate from the chemical reaction. You can not calculate the actual yield. It must be determined experimentally. You need to isolate the product and weigh it to get the actual yield.</p>
-<p>Percentage yield \[ \frac{\textrm{Actual yield}}{\textrm{Theoretical yield}}\times100 \]</p>
-<p>Percentage yield indicates the success of the reaction. If the value is closer to the hundred, that means losses are minor, and most reactants have converted to products.</p>
-<p><sup>1</sup> Where, M=Molar mass (g/mol) m=mass of the substance (g) n=Number of Moles (mol)</p>
-</div>
-</div>
-<p><!--
-
-<style media="all" type="text/css"> @import url("/learninglab/sites/default/files/enhanced/maths.css");</style>
-
- --></p>
+<p><strong>Step 1:</strong> Identify the limiting reagent in this reaction by first, finding the number of moles of each reactant.</p>
+<p>\[\begin{align*}<br />
+n(\ce{Ca}_{3}\left(\ce{PO}_{4}\right)_{2}) &amp; = \frac{m}{M}\\<br />
+&amp; =\frac{144.5\textrm{ g}}{310.2\textrm{ g mol}^{-1}}\\<br />
+&amp; =0.4658\textrm{ mol}<br />
+\end{align*}\]</p>
+<p>\[\begin{align*}<br />
+n(\ce{H}_{2}\ce{SO}_{4}) &amp; = \frac{m}{M}\\<br />
+&amp; =\frac{160.5\textrm{ g}}{98.1\textrm{ g mol}^{-1}}\\<br />
+&amp; =1.64\textrm{ mol}<br />
+\end{align*}\]</p>
+<p><strong>Step 2:</strong> Compare the calculated amounts of two reactants. The easiest way to find the limiting reactant is to use the formula:</p>
+<p>\[\frac{n}{\textrm{coefficient}}\]</p>
+<p>The reactant with the smallest \(\frac{n}{\textrm{coefficient}}\) is the limiting reactant.</p>
+<p>For \(\ce{Ca}_{3}\left(\ce{PO}_{4}\right)_{2}\):</p>
+<p>\[\begin{align*}<br />
+\frac{n}{\textrm{coefficient}} &amp; = \frac{0.4659\textrm{ mol}}{1}\\<br />
+&amp; = 0.4659\textrm{ mol}<br />
+\end{align*}\]</p>
+<p>For \(\ce{H}_{2}\ce{SO}_{4}\):</p>
+<p>\[\begin{align*}<br />
+\frac{n}{\textrm{coefficient}} &amp; = \frac{1.64\textrm{ mol}}{2}\\<br />
+&amp; = 0.82\textrm{ mol}<br />
+\end{align*}\]</p>
+<p>As the \(\frac{n}{\textrm{coefficient}}\) for \(\ce{Ca}_{3}\left(\ce{PO}_{4}\right)_{2}\) is smaller, it is the limiting reactant.</p>
+<p><strong>Step 3:</strong> Determine the molar ratio of the compounds and write it as a fraction. The stoichiometric coefficient for the compound we are interested in (the "unknown") is written as the numerator at the top, and the coefficient for the limiting reactant (the "known") is written as the denominator at the bottom.</p>
+<p>\[\begin{align*}<br />
+\textrm{Stoichiometric ratio} &amp; =\frac{\textrm{coefficient of unknown}}{\textrm{coefficient of known}}\\<br />
+&amp; = \frac{2}{1}<br />
+\end{align*}\] </p>
+<p><strong>Step 4:</strong> Calculate the amount of product formed by multiplying the amount of reactant by the molar ratio.</p>
+<p>\[\begin{align*}<br />
+n(\ce{H3PO4}) &amp; = \frac{2}{1}\times0.4659\textrm{ mol}\\<br />
+&amp; = 0.9317\textrm{ mol}<br />
+\end{align*}\]</p>
+<p><strong>Step 5:</strong> Calculate the mass of product formed. This is the theoretical yield.</p>
+<p>\[\begin{align*}<br />
+m(\ce{H3PO4}) &amp; = n\times{M}\\<br />
+&amp; = 0.9317\textrm{ mol}\times 97.99\textrm{ g mol}^{-1}\\<br />
+&amp; = 91.29\textrm{ g}<br />
+\end{align*}\]</p>
+<h2>Worked example – calculating percentage yield</h2>
+<p>When \(64.5\textrm{ g}\) of methane is burnt in the presence of excess oxygen, it forms \(136.2\textrm{ g}\) of carbon dioxide and water vapour.<br />
+\[\ce{CH}_{4}\left(\textrm{g}\right)+2\ce{O}_{2}\left(\textrm{g}\right)\rightarrow\ce{CO}_{2}\left(\textrm{g}\right)+2\ce{H}_{2}\ce{O}\left(\textrm{g}\right)\]</p>
+<p>However, the theoretical yield of carbon dioxide for this reaction is \(176.4\textrm{ g}\). Calculate the percentage yield of carbon dioxide for this reaction.</p>
+<p><strong>Step 1:</strong> Recall the formula for calculating percentage yield.</p>
+<p>\[\textrm{Percentage yield}=\frac{\textrm{Actual yield}}{\textrm{Theoretical yield}}\times100\textrm{%}\]</p>
+<p><strong>Step 2:</strong> Substitute the values into the formula to calculate percentage yield.</p>
+<p>\[\begin{align*}<br />
+\textrm{Percentage yield} &amp; =\frac{136.2\textrm{ g}}{176.4\textrm{ g}}\times100\textrm{%}\\<br />
+&amp; = 77.21\textrm{%}<br />
+\end{align*}\]</p>
+<div class="accordion-item ">
+<h2 class="accordion-header" id="head-example-2-1655">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-example-2-8467" aria-expanded="false" aria-controls="body-example-2-8467" >Example 2</button>
+</h2>
+<div id="body-example-2-8467" class="accordion-collapse collapse " aria-labelledby="head-example-2-1655">
+<div class="accordion-body">
+<p>\(\ce{Fe}\) and \(\ce{O2}\) react according to the following equation:</p>
+<p>\[4\ce{Fe}+3\ce{O}_{2}\rightarrow2\ce{Fe}_{2}\ce{O}_{3}\]</p>
+<p>When \(168.3\textrm{ g}\) of \(\ce{Fe}\) reacts with \(\ce{O}_{2}\), \(172.6\textrm{ g}\) of \(\ce{Fe}_{2}\ce{O}_{3}\) is obtained. Determine the percentage yield of \(\ce{Fe}_{2}\ce{O}_{3}\) for this reaction. The molar mass of \(\ce{Fe}_{2}\ce{O}_{3}\) is \(159.69\textrm{ g mol}^{-1}\) and \(\ce{Fe}\) is \(55.85\textrm{g mol}^{-1}\).</p>
+<p><strong>Step 1:</strong> Calculate the amount in moles of \(\ce{Fe}\) reacted.</p>
+<p>\[\begin{align*}<br />
+n(\ce{Fe}) &amp; = \frac{m}{M}\\<br />
+&amp; = \frac{168.3\textrm{ g}}{55.85\textrm{ g mol}^{-1}}\\<br />
+&amp; = 3.013\textrm{ mol}<br />
+\end{align*}\]</p>
+<p><strong>Step 2:</strong> Determine the molar ratio of the compounds and write it as a fraction. The stoichiometric coefficient for the compound we are interested in (the "unknown") is written as the numerator at the top, and the coefficient for the limiting reactant (the "known") is written as the denominator at the bottom.</p>
+<p>\[\begin{align*}<br />
+\textrm{Stoichiometric ratio} &amp; =\frac{\textrm{coefficient of unknown}}{\textrm{coefficient of known}}\\<br />
+&amp; = \frac{2}{4}<br />
+\end{align*}\] </p>
+<p><strong>Step 3:</strong> Calculate the amount of product formed by multiplying the amount of reactant by the molar ratio.</p>
+<p>\[\begin{align*}<br />
+n(\ce{Fe2O3}) &amp; = \frac{2}{4}\times3.013\textrm{ mol}\\<br />
+&amp; = 0.1507\textrm{ mol}<br />
+\end{align*}\]</p>
+<p><strong>Step 4:</strong> Calculate the mass of product formed. This is the theoretical yield.</p>
+<p>\[\begin{align*}<br />
+m(\ce{Fe2O3}) &amp; =n\times M\\<br />
+&amp; =0.1507\textrm{ mol}\times159.69\textrm{ g mol}^{-1}\\<br />
+&amp; =240.6\textrm{ g}<br />
+\end{align*}\]</p>
+<p><strong>Step 5:</strong> Recall the formula for calculating percentage yield.</p>
+<p>\[\textrm{Percentage yield}=\frac{\textrm{Actual yield}}{\textrm{Theoretical yield}}\times100\textrm{%}\]</p>
+<p><strong>Step 6:</strong> Substitute the values into the formula to calculate percentage yield.</p>
+<p>\[\begin{align*}<br />
+\textrm{Percentage yield} &amp; =\frac{172.6\textrm{ g}}{240.6\textrm{ g}}\times100\textrm{%}\\<br />
+&amp; = 71.74\textrm{%}<br />
+\end{align*}\]<br />
+</div></div></div>
 			<nav class="btn-nav-container" aria-label="Previous and next links">
 <h2 class="btn-nav-prev">
-    <a href="../mole-exercises/index.html">
-        <span aria-hidden="true">The mole - exercises</span>
-        <span class="visually-hidden">Previous page: The mole - exercises</span>
+    <a href="../mole-quiz/index.html">
+        <span aria-hidden="true">Quiz – The mole</span>
+        <span class="visually-hidden">Previous page: Quiz – The mole</span>
     </a>
 </h2>
     
@@ -428,13 +540,27 @@ list.querySelectorAll('h4').forEach(h4 => {
 
 <h2 class="btn-nav-next">
     <a href="../stoichiometry-exercises/index.html">
-        <span aria-hidden="true">Stoichiometry - exercises</span>
-        <span class="visually-hidden">Next page: Stoichiometry - exercises</span>
+        <span aria-hidden="true">Quiz – Stoichiometry</span>
+        <span class="visually-hidden">Next page: Quiz – Stoichiometry</span>
     </a>
 </h2>
 	
 </nav><!-- .navigation -->			<div id="additional-info">
 			
+<hr class="margin-top-xl"><blockquote class="complex ">
+<a href="https://rmit.pressbooks.pub/rmitchemistrybridgingcourse/chapter/5-2-molar-mass/">
+<div class="content">
+<h3>Molar mass and stoichiometry</h3>
+<p>If you need more support working with molar masses and stoichiometry, check out this helpful resource!</p>
+</div><div class="icon-wrap"><img src="https://rmitlibrary.github.io/design-system/images/icon-llcc-large.svg" alt="" /></div>
+</a></blockquote>
+<blockquote class="complex ">
+<a href="https://rmit.pressbooks.pub/rmitchemistrybridgingcourse/chapter/5-4-limiting-reagents-and-yield/">
+<div class="content">
+<h3>Limiting reagents and yield</h3>
+<p>Explore limiting reagents and yield using this resource.</p>
+</div><div class="icon-wrap"><img src="https://rmitlibrary.github.io/design-system/images/icon-llcc-large.svg" alt="" /></div>
+</a></blockquote>
 			
 
 
@@ -456,7 +582,7 @@ list.querySelectorAll('h4').forEach(h4 => {
 <!-- category echo - https://www.advancedcustomfields.com/resources/taxonomy/ --> 
 <!--
 <p><strong>Subjects </strong>
-    | <strong><a href="https://lab.bitma.app/subject-area/chemistry/">Chemistry</a></strong>  
+    | <strong><a href="https://learninglab.rmit.edu.au/subject-area/chemistry/">Chemistry</a></strong>  
     </p>
 -->
 <!-- category echo end -->
@@ -516,18 +642,17 @@ list.querySelectorAll('h4').forEach(h4 => {
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <section class="acknowledgement-container">
-                        <div class="acknowledgement-image">
-                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/luwaytini.png" alt="" />
-                        </div>
-
+                <section class="acknowledgement-container">
                         <div class="content">
                             <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
                             <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
                             
                             <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
-                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business - Artwork 'Luwaytini' by Mark Cleaver, Palawa.</p>
-                            <a href="#" class="link-large">More information</a>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business<span class="img-credit"> - Artwork 'Sentient' by Hollie Johnson, Gunaikurnai and Monero Ngarigo</span>.</p>
+                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                        </div>
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/sentient-hollie-johnson.jpg" alt="" />
                         </div>
                     </section>
                 </div>
@@ -607,7 +732,7 @@ list.querySelectorAll('h4').forEach(h4 => {
 </div><!-- wrapper end -->
 		
 	
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.6.2" id="mathjax-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
 <script src="../../../wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
 <!-- Code to handle hamburger menu, embed mode, dark mode -->
