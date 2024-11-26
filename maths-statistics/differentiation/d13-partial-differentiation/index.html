@@ -5,11 +5,7 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- wp_head -->
-	<title>D13 Partial differentiation - Learning Lab</title>
-	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	
-		
 		<meta name="description" content="Partial derivatives reveal how a function with many variables changes when you adjust just one of the variables in the input. Let us suppose that we have the equation for a paraboloid with an elliptical cross-section such as \(z=x^{2}+4y^{2}.\) In this case we have a function of two independent variables, \(z=f\left(x,y\right),\) and its graph is" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
@@ -17,18 +13,18 @@
 		<meta property="og:locale" content="en_US" />
 		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="D13 Partial differentiation - Learning Lab" />
+		<meta property="og:title" content="D13: Partial differentiation - Learning Lab" />
 		<meta property="og:description" content="Partial derivatives reveal how a function with many variables changes when you adjust just one of the variables in the input. Let us suppose that we have the equation for a paraboloid with an elliptical cross-section such as \(z=x^{2}+4y^{2}.\) In this case we have a function of two independent variables, \(z=f\left(x,y\right),\) and its graph is" />
 		<meta property="og:url" content="https://learninglab.rmit.edu.au/maths-statistics/differentiation/d13-partial-differentiation/" />
 		<meta property="article:published_time" content="2023-10-16T05:34:57+00:00" />
-		<meta property="article:modified_time" content="2024-08-21T05:59:18+00:00" />
+		<meta property="article:modified_time" content="2024-11-25T23:04:07+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="D13 Partial differentiation - Learning Lab" />
+		<meta name="twitter:title" content="D13: Partial differentiation - Learning Lab" />
 		<meta name="twitter:description" content="Partial derivatives reveal how a function with many variables changes when you adjust just one of the variables in the input. Let us suppose that we have the equation for a paraboloid with an elliptical cross-section such as \(z=x^{2}+4y^{2}.\) In this case we have a function of two independent variables, \(z=f\left(x,y\right),\) and its graph is" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d13-partial-differentiation\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/#listItem","position":3,"name":"Differentiation","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d13-partial-differentiation\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d13-partial-differentiation\/#listItem","position":4,"name":"D13 Partial differentiation","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d13-partial-differentiation\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d13-partial-differentiation\/","name":"D13 Partial differentiation - Learning Lab","description":"Partial derivatives reveal how a function with many variables changes when you adjust just one of the variables in the input. Let us suppose that we have the equation for a paraboloid with an elliptical cross-section such as \\(z=x^{2}+4y^{2}.\\) In this case we have a function of two independent variables, \\(z=f\\left(x,y\\right),\\) and its graph is","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d13-partial-differentiation\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:57+00:00","dateModified":"2024-08-21T05:59:18+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d13-partial-differentiation\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/#listItem","position":3,"name":"Differentiation","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d13-partial-differentiation\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d13-partial-differentiation\/#listItem","position":4,"name":"D13: Partial differentiation","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d13-partial-differentiation\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d13-partial-differentiation\/","name":"D13: Partial differentiation - Learning Lab","description":"Partial derivatives reveal how a function with many variables changes when you adjust just one of the variables in the input. Let us suppose that we have the equation for a paraboloid with an elliptical cross-section such as \\(z=x^{2}+4y^{2}.\\) In this case we have a function of two independent variables, \\(z=f\\left(x,y\\right),\\) and its graph is","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d13-partial-differentiation\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:57+00:00","dateModified":"2024-11-25T23:04:07+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
-		<!-- All in One SEO -->
+		
 
 
 <script>
@@ -309,7 +305,7 @@ This should be moved to a stylesheet once style is determined. -->
 <!-- START SIDEBAR NAV PANEL -->
 <nav class="right-nav" aria-label="Section Menu">
 
-<h2><a href="../../index.html">Maths and statistics</a></h2><h3><a href="../index.html">Differentiation</a></h3><ul><li><a href="../d1-limit-function/index.html">D1 Limit of a function</a></li><li><a href="../d2-gradients-tangents-and-derivatives/index.html">D2 Gradients, tangents and derivatives</a></li><li><a href="../d3-differentiation-first-principles/index.html">D3 Differentiation from first principles</a></li><li><a href="../d4-rules-differentiation/index.html">D4 Rules for differentiation</a></li><li><a href="../d5-chain-rule/index.html">D5 The chain rule</a></li><li><a href="../d6-product-rule/index.html">D6 The product rule</a></li><li><a href="../d7-quotient-rule/index.html">D7 The quotient rule</a></li><li><a href="../d8-maxima-and-minima/index.html">D8 Maxima and minima</a></li><li><a href="../d9-curve-sketching/index.html">D9 Curve sketching</a></li><li><a href="../d10-rates-change/index.html">D10 Rates of change</a></li><li><a href="../d11-small-changes-and-approximations/index.html">D11 Small changes and approximations</a></li><li><a href="../d12-implicit-differentiation/index.html">D12 Implicit differentiation</a></li><li><a href="index.html" class="selected"  aria-current="page">D13 Partial differentiation</a><li><a href="../d14-higher-order-derivatives/index.html">D14 Higher Order Derivatives</a></li><li><a href="../d15-logarithmic-differentiation/index.html">D15 Logarithmic differentiation</a></li></ul></nav>
+<h2><a href="../../index.html">Maths and statistics</a></h2><h3><a href="../index.html">Differentiation</a></h3><ul><li><a href="../d1-limit-function/index.html">Limit of a function</a></li><li><a href="../d2-gradients-tangents-and-derivatives/index.html">Gradients, tangents and derivatives</a></li><li><a href="../d3-differentiation-first-principles/index.html">Differentiation from first principles</a></li><li><a href="../d4-rules-differentiation/index.html">Rules for differentiation</a></li><li><a href="../d5-chain-rule/index.html">The chain rule</a></li><li><a href="../d6-product-rule/index.html">The product rule</a></li><li><a href="../d7-quotient-rule/index.html">The quotient rule</a></li><li><a href="../d8-maxima-and-minima/index.html">Maxima and minima</a></li><li><a href="../d9-curve-sketching/index.html">Curve sketching</a></li><li><a href="../d10-rates-change/index.html">Rates of change</a></li><li><a href="../d11-small-changes-and-approximations/index.html">Small changes and approximations</a></li><li><a href="../d12-implicit-differentiation/index.html">Implicit differentiation</a></li><li><a href="index.html" class="selected"  aria-current="page">Partial differentiation</a><li><a href="../d14-higher-order-derivatives/index.html">Higher order derivatives</a></li><li><a href="../d15-logarithmic-differentiation/index.html">Logarithmic differentiation</a></li></ul></nav>
 <!-- END SIDEBAR NAV PANEL -->
 
 
@@ -352,11 +348,16 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li><a href="../index.html">Differentiation</a></li>
 </ul>
 </nav>            <a id="main-content"></a>
-            <h1 class="margin-top-zero">D13 Partial differentiation</h1>
-            <p><span class="marginnote"><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-d13-00.png" alt="" /></span></p>
+            <h1 class="margin-top-zero">D13: Partial differentiation</h1>
+            <figure class="float-right ">
+
+<img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-d13-00.png" alt="" />
+
+
+</figure>
+
 <p class="lead">Partial derivatives reveal how a function with many variables changes when you adjust just one of the variables in the input.</p>
 <p>Let us suppose that we have the equation for a paraboloid with an elliptical cross-section such as <span class="math inline">\(z=x^{2}+4y^{2}.\)</span> In this case we have a function of two independent variables, <span class="math inline">\(z=f\left(x,y\right),\)</span> and its graph is a 3-dimensional surface. We need to be able to differentiate <span class="math inline">\(z\)</span> with respect to either <span class="math inline">\(x\)</span> or <span class="math inline">\(y\)</span>. If we treat one of the variables, say <span class="math inline">\(y\)</span>, as a constant, then we can treat <span class="math inline">\(z\)</span> as a function of just one variable, <span class="math inline">\(x\)</span>. We can then calculate the derivative of <span class="math inline">\(z\)</span> with respect to <span class="math inline">\(x\)</span>. This derivative is called the partial derivative of <span class="math inline">\(z\)</span> with respect to <span class="math inline">\(x\)</span> and is denoted by <span class="math inline">\(\frac{\partial z }{\partial x}\)</span>. If we treat <span class="math inline">\(x\)</span> as a constant then we can treat <span class="math inline">\(z\)</span> as a function of <span class="math inline">\(y\)</span> and we can then calculate <span class="math inline">\(\frac{\partial z }{\partial y}\)</span> the partial derivative of <span class="math inline">\(z\)</span> with respect to <span class="math inline">\(y\)</span>.</p>
-<div id="examples" class="section level1">
 <h3>Examples</h3>
 <ol style="list-style-type: decimal;">
 <li>If <span class="math inline">\(z=x^{2}+4y^{2}\)</span> find <span class="math inline">\(\frac{\partial z }{\partial x}\)</span> and <span class="math inline">\(\frac{\partial z }{\partial y}\)</span></li>
@@ -367,18 +368,12 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li>If <span class="math inline">\(f(x,y)=x^{2}y+y^{2}\sin x\)</span> find <span class="math inline">\(\frac{\partial f }{\partial x}\)</span> and <span class="math inline">\(\frac{\partial f }{\partial y}\)</span> <span class="math display">\[\begin{align*} \frac{\partial f }{\partial x} &amp; =2xy+y^{2}\cos x\\ \frac{\partial f }{\partial y} &amp; =x^{2}+2y\sin x \end{align*}\]</span></li>
 <li>If <span class="math inline">\(f(x,y)=xy^{2}\sin(xy)\)</span> find <span class="math inline">\(\frac{\partial f }{\partial x}\)</span> and <span class="math inline">\(\frac{\partial f }{\partial y}\)</span> <span class="math display">\[\begin{align*} \frac{\partial f }{\partial x} &amp; =y^{2}\sin(xy)+xy^{2}\times y\cos(xy)[\textrm{applying the product rule}]\\ &amp; =y^{2}\sin(xy)+xy^{3}\cos(xy)\\ \frac{\partial f }{\partial y} &amp; =2xy\sin(xy)+xy^{2}\times x\cos(xy)\\ &amp; =2xy\sin(xy)+x^{2}y^{2}\cos(xy) \end{align*}\]</span></li>
 </ol>
-</div>
-<div id="alternative-notation-and-evaluation-at-a-point" class="section level1">
 <h2>Alternative notation and evaluation at a point</h2>
 <p>An alternative notation for partial derivatives is <span class="math inline">\(f_{x}\)</span> for <span class="math inline">\(\frac{\partial f }{\partial x}\)</span>and <span class="math inline">\(f_{y}\)</span> for <span class="math inline">\(\frac{\partial f }{\partial y}\)</span>.</p>
 <p>Partial derivatives may be evaluated at particular points: <span class="math inline">\(f_{x}(2,1)\)</span> refers to the value of the partial derivative of <span class="math inline">\(f\)</span> with respect to <span class="math inline">\(x\)</span> at the point where <span class="math inline">\(x=2\)</span> and <span class="math inline">\(y=1\)</span>.</p>
-<div id="example" class="section level2">
 <h3>Example</h3>
 <p>If <span class="math inline">\(f(x,y)=2x^{3}y+3y^{2}\)</span> find <span class="math inline">\(f_{y}(1,3)\)</span></p>
 <p><span class="math display">\[\begin{align*} f(x,y) &amp; =2x^{3}y+3y^{2}\\ \Rightarrow f_{y} &amp; =2x^{3}+6y\\ \Rightarrow f_{y}(1,3) &amp; =2+18\\ &amp; =20. \end{align*}\]</span></p>
-</div>
-</div>
-<div id="higher-order-partial-derivatives" class="section level1">
 <h2>Higher order partial derivatives</h2>
 <p>As we have seen, a function <span class="math inline">\(z\)</span>= <span class="math inline">\(f(x,y)\)</span> has two partial derivatives. They are <span class="math inline">\(\frac{\partial f }{\partial x}\)</span> and <span class="math inline">\(\frac{\partial f }{\partial y}.\)</span></p>
 <p>A function such as this will have four second order partial derivatives:</p>
@@ -388,13 +383,10 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li>It can be differentiated with respect to <span class="math inline">\(x\)</span> and then with respect to <span class="math inline">\(y\)</span> <span class="math inline">\(\frac{\partial }{\partial y }\left(\frac{\partial f }{\partial x}\right)\)</span>=<span class="math inline">\(\frac{\partial ^2 f }{\partial x\partial y}=\)</span> <span class="math inline">\(f_{xy}\)</span></li>
 <li>It can be differentiated with respect to <span class="math inline">\(y\)</span> and then with respect to <span class="math inline">\(x\)</span> <span class="math inline">\(\frac{\partial }{\partial x}\left(\frac{\partial f }{\partial y}\right)\)</span>=<span class="math inline">\(\frac{\partial ^2 f }{\partial y\partial x}=\)</span> <span class="math inline">\(f_{yx}\)</span></li>
 </ol>
-<div id="example-1" class="section level2">
 <h3>Example</h3>
 <p>Find all second order partial derivatives of <span class="math inline">\(f(x,y)=x^{2}y^{3}+2x\cos y\)</span></p>
 <p><span class="math display">\[\begin{align*} f_{x} &amp; =2xy^{3}+2\cos y\\ \Rightarrow f_{xx}=2y^{3} &amp; \textrm{and }f_{xy}=6xy^{2}-2\sin y\\ f_{y} &amp; =3x^{2}y-2x\cos y\\ \Rightarrow f_{yy}=6x^{2}y-2x\sin y &amp; \textrm{and $f_{yx}$ }=6xy^{2}-2\sin y \end{align*}\]</span></p>
 <p>(Note that <span class="math inline">\(f_{xy}=f_{yx}.\)</span> This will always be the case.)</p>
-</div>
-<div id="exercises" class="section level2">
 <h2>Exercises</h2>
 <p><span class="math inline">\(1.\)</span> Find the partial derivatives <span class="math inline">\(\frac{\partial z }{\partial x}\)</span> and <span class="math inline">\(\frac{\partial z }{\partial y}\)</span>for each of the following</p>
 <p><span class="math inline">\(\quad\text{a) $z=3x^{4}+2y^{3}$ }\)</span></p>
@@ -402,10 +394,10 @@ list.querySelectorAll('h4').forEach(h4 => {
 <p><span class="math inline">\(\quad\text{c)}\)</span> <span class="math inline">\(z=3xe^{2y}\)</span></p>
 <p><span class="math inline">\(\quad\text{d)}\)</span> <span class="math inline">\(z\)</span> = <span class="math inline">\(\ln(x^{3}y^{5}-2)\)</span></p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answers-2435">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-6461" aria-expanded="false" aria-controls="body-answers-6461" >Answers</button>
+<p class="accordion-header" id="head-answers-8109">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-8380" aria-expanded="false" aria-controls="body-answers-8380" >Answers</button>
 </p>
-<div id="body-answers-6461" class="accordion-collapse collapse " aria-labelledby="head-answers-2435">
+<div id="body-answers-8380" class="accordion-collapse collapse " aria-labelledby="head-answers-8109">
 <div class="accordion-body">
 <p><span class="math inline">\(\quad\text{a) $\frac{\partial z }{\partial x}=12x^{3},$ $\frac{\partial z }{\partial y}$ =6$y^{2}$ }\)</span></p>
 <p><span class="math inline">\(\quad\)</span>b) <span class="math inline">\(\frac{\partial z }{\partial x}=2xy\)</span>, <span class="math inline">\(\frac{\partial z }{\partial y}=x^{2}\)</span></p>
@@ -416,10 +408,10 @@ list.querySelectorAll('h4').forEach(h4 => {
 <p><span class="math inline">\(\text{$\quad$ a)}\)</span> <span class="math inline">\(f(x,y)=x^{4}-4y^{2},\text{ find }f_{x}(2,3)\)</span></p>
 <p><span class="math inline">\(\text{$\quad$ b})\)</span> <span class="math inline">\(f(x,y)=\ln(x^{2}+y^{3})\text{, find }f_{y}(-1,1)\)</span></p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answers-3899">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-2083" aria-expanded="false" aria-controls="body-answers-2083" >Answers</button>
+<p class="accordion-header" id="head-answers-1993">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-9172" aria-expanded="false" aria-controls="body-answers-9172" >Answers</button>
 </p>
-<div id="body-answers-2083" class="accordion-collapse collapse " aria-labelledby="head-answers-3899">
+<div id="body-answers-9172" class="accordion-collapse collapse " aria-labelledby="head-answers-1993">
 <div class="accordion-body">
 <p><span class="math inline">\(\text{$\quad$ a)}\)</span> 32</p>
 <p><span class="math inline">\(\text{$\quad$ b})\)</span> 1.5</p>
@@ -430,10 +422,10 @@ list.querySelectorAll('h4').forEach(h4 => {
 <p><span class="math inline">\(\quad\text{c)}\)</span> <span class="math inline">\(f(x,y)=\sin(xy)\)</span></p>
 <p><span class="math inline">\(\quad\text{d)}\)</span> <span class="math inline">\(f(x,y)=x\cos y+ye^{x}\)</span></p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answers-9658">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-9582" aria-expanded="false" aria-controls="body-answers-9582" >Answers</button>
+<p class="accordion-header" id="head-answers-9325">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-9043" aria-expanded="false" aria-controls="body-answers-9043" >Answers</button>
 </p>
-<div id="body-answers-9582" class="accordion-collapse collapse " aria-labelledby="head-answers-9658">
+<div id="body-answers-9043" class="accordion-collapse collapse " aria-labelledby="head-answers-9325">
 <div class="accordion-body">
 <p><span class="math inline">\(\quad\text{a)}\)</span> <span class="math inline">\(f_{x}=\ln y,\)</span> <span class="math inline">\(f_{y}=\frac{x}{y}\)</span>, <span class="math inline">\(f_{xx}=0,f_{xy}=-\frac{x}{y^{2}}\)</span>,<span class="math inline">\(f_{xy}=f_{yx}=\frac{1}{y}\)</span></p>
 <p><span class="math inline">\(\quad\text{b)}\)</span> <span class="math inline">\(f_{x}=3x^{2}+2xy-3y^{2},\)</span> <span class="math inline">\(f_{y}=x^{2}-6xy+3y^{2},\)</span></p>
@@ -443,15 +435,12 @@ list.querySelectorAll('h4').forEach(h4 => {
 <p><span class="math inline">\(\quad\text{d)}\)</span> <span class="math inline">\(f_{x}=\cos y+ye^{x},\)</span> <span class="math inline">\(f_{y}=x\sin y+e^{x},\)</span> <span class="math inline">\(f_{xx}=ye^{x},\)</span></p>
 <p><span class="math inline">\(\quad\quad\!\ f_{yy}=-x\cos y,f_{xy}=f_{yx}=e^{x}-\sin y\)</span></p>
 </div></div></div>
-</div>
-</div>
-<p><a class="mathspdf" href="https://rmitlibrary.github.io/cdn/learninglab/docs/13_Partial_Differentiation.pdf" type="application/pdf">Download this page, D13 Partial Differentiation <span class="file-link-info">(PDF 139KB)</span></a></p>
-<p>Images on this page by RMIT, licensed under CC BY-NC 4.0.</p>
+<p class="small" id="my-id">Images on this page by <a href="https://rmit.edu.au/">RMIT</a>, licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC 4.0</a></p>
 			<nav class="btn-nav-container" aria-label="Previous and next links">
 <h2 class="btn-nav-prev">
     <a href="../d12-implicit-differentiation/index.html">
-        <span aria-hidden="true">D12 Implicit differentiation</span>
-        <span class="visually-hidden">Previous page: D12 Implicit differentiation</span>
+        <span aria-hidden="true">Implicit differentiation</span>
+        <span class="visually-hidden">Previous page: Implicit differentiation</span>
     </a>
 </h2>
     
@@ -459,8 +448,8 @@ list.querySelectorAll('h4').forEach(h4 => {
 
 <h2 class="btn-nav-next">
     <a href="../d14-higher-order-derivatives/index.html">
-        <span aria-hidden="true">D14 Higher Order Derivatives</span>
-        <span class="visually-hidden">Next page: D14 Higher Order Derivatives</span>
+        <span aria-hidden="true">Higher order derivatives</span>
+        <span class="visually-hidden">Next page: Higher order derivatives</span>
     </a>
 </h2>
 	

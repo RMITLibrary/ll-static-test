@@ -5,30 +5,23 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- wp_head -->
-	<title>ES5 Cubic equations, polynomial long division - Learning Lab</title>
-	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	
-		
-		<meta name="description" content="One polynomial may be divided by another of lower degree by long division (similar to arithmetic long division). At primary school you were probably exposed to long division, whereby a big number was divided by another big number. Sometimes this gave an integer result or sometimes a number plus a fraction. 1 An integer is" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
 		
 		<meta property="og:locale" content="en_US" />
 		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="ES5 Cubic equations, polynomial long division - Learning Lab" />
-		<meta property="og:description" content="One polynomial may be divided by another of lower degree by long division (similar to arithmetic long division). At primary school you were probably exposed to long division, whereby a big number was divided by another big number. Sometimes this gave an integer result or sometimes a number plus a fraction. 1 An integer is" />
+		<meta property="og:title" content="ES5: Cubic equations, polynomial long division - Learning Lab" />
 		<meta property="og:url" content="https://learninglab.rmit.edu.au/maths-statistics/equation-solving/es5-cubic-equations-polynomial-long-division/" />
 		<meta property="article:published_time" content="2023-10-16T05:34:53+00:00" />
-		<meta property="article:modified_time" content="2024-08-21T06:04:42+00:00" />
+		<meta property="article:modified_time" content="2024-11-25T23:28:45+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="ES5 Cubic equations, polynomial long division - Learning Lab" />
-		<meta name="twitter:description" content="One polynomial may be divided by another of lower degree by long division (similar to arithmetic long division). At primary school you were probably exposed to long division, whereby a big number was divided by another big number. Sometimes this gave an integer result or sometimes a number plus a fraction. 1 An integer is" />
+		<meta name="twitter:title" content="ES5: Cubic equations, polynomial long division - Learning Lab" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/equation-solving\/es5-cubic-equations-polynomial-long-division\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/equation-solving\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/equation-solving\/#listItem","position":3,"name":"Equation solving","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/equation-solving\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/equation-solving\/es5-cubic-equations-polynomial-long-division\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/equation-solving\/es5-cubic-equations-polynomial-long-division\/#listItem","position":4,"name":"ES5 Cubic equations, polynomial long division","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/equation-solving\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/equation-solving\/es5-cubic-equations-polynomial-long-division\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/equation-solving\/es5-cubic-equations-polynomial-long-division\/","name":"ES5 Cubic equations, polynomial long division - Learning Lab","description":"One polynomial may be divided by another of lower degree by long division (similar to arithmetic long division). At primary school you were probably exposed to long division, whereby a big number was divided by another big number. Sometimes this gave an integer result or sometimes a number plus a fraction. 1 An integer is","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/equation-solving\/es5-cubic-equations-polynomial-long-division\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:53+00:00","dateModified":"2024-08-21T06:04:42+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/equation-solving\/es5-cubic-equations-polynomial-long-division\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/equation-solving\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/equation-solving\/#listItem","position":3,"name":"Equation solving","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/equation-solving\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/equation-solving\/es5-cubic-equations-polynomial-long-division\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/equation-solving\/es5-cubic-equations-polynomial-long-division\/#listItem","position":4,"name":"ES5: Cubic equations, polynomial long division","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/equation-solving\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/equation-solving\/es5-cubic-equations-polynomial-long-division\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/equation-solving\/es5-cubic-equations-polynomial-long-division\/","name":"ES5: Cubic equations, polynomial long division - Learning Lab","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/equation-solving\/es5-cubic-equations-polynomial-long-division\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:53+00:00","dateModified":"2024-11-25T23:28:45+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
-		<!-- All in One SEO -->
+		
 
 
 <script>
@@ -64,7 +57,7 @@ MathJax = {
 
     <meta name="dcterms.title" content="Learning Lab">
     
-    <meta name="dcterms.description" content="One polynomial may be divided by another of lower degree by long division (similar to arithmetic long division). At primary school you were probably exposed to long division, whereby a big number was divided by another big number. Sometimes this gave an integer result or sometimes a number plus a...">
+    <meta name="dcterms.description" content="The Learning Lab provides foundation skills and study support materials for writing, science and more.">
     <meta name="dcterms.type" content="Text">
     <meta name="dcterms.identifier" content="https://learninglab.rmit.edu.au/maths-statistics/equation-solving/es5-cubic-equations-polynomial-long-division/">
     <meta name="dcterms.format" content="text/html">
@@ -309,7 +302,7 @@ This should be moved to a stylesheet once style is determined. -->
 <!-- START SIDEBAR NAV PANEL -->
 <nav class="right-nav" aria-label="Section Menu">
 
-<h2><a href="../../index.html">Maths and statistics</a></h2><h3><a href="../index.html">Equation solving</a></h3><ul><li><a href="../es1-linear-equations/index.html">ES1 Linear equations</a></li><li><a href="../es2-simultaneous-equations/index.html">ES2 Simultaneous equations</a></li><li><a href="../es3-quadratic-equations/index.html">ES3 Quadratic equations</a></li><li><a href="../es4-quadratic-formula/index.html">ES4 Quadratic formula</a></li><li><a href="index.html" class="selected"  aria-current="page">ES5 Cubic equations, polynomial long division</a><li><a href="../es6-exponential-equations/index.html">ES6 Exponential equations</a></li></ul></nav>
+<h2><a href="../../index.html">Maths and statistics</a></h2><h3><a href="../index.html">Equation solving</a></h3><ul><li><a href="../es1-linear-equations/index.html">ES1 Linear equations</a></li><li><a href="../es2-simultaneous-equations/index.html">ES2 Simultaneous equations</a></li><li><a href="../es3-quadratic-equations/index.html">ES3 Quadratic equations</a></li><li><a href="../es4-quadratic-formula/index.html">Quadratic formula</a></li><li><a href="index.html" class="selected"  aria-current="page">Cubic equations, polynomial long division</a><li><a href="../es6-exponential-equations/index.html">Exponential equations</a></li></ul></nav>
 <!-- END SIDEBAR NAV PANEL -->
 
 
@@ -352,180 +345,380 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li><a href="../index.html">Equation solving</a></li>
 </ul>
 </nav>            <a id="main-content"></a>
-            <h1 class="margin-top-zero">ES5 Cubic equations, polynomial long division</h1>
-            <p><span class="marginnote"><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-es5-00.png" alt="" /></span></p>
-<p class="lead">One polynomial may be divided by another of lower degree by long division (similar to arithmetic long division).</p>
-<p>At primary school you were probably exposed to long division, whereby a big number was divided by another big number. Sometimes this gave an integer result or sometimes a number plus a fraction.</p>
-<p><span class="sidenote"><span class="sidenote-number">1</span> An integer is a positive or negative whole number and may include <span class="math inline">\(0.\)</span></span></p>
-<p>For example in the case that the result was an integer we could have</p>
-<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-es5-01.png" alt="6750 divided by 15 using long division." /></p>
-<p>This means that <span class="math inline">\(6750\div15=450\)</span> or <span class="math inline">\(6750=15\times450.\)</span></p>
-<p>In case the numbers do not exactly divide we could have</p>
-<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-es5-02.png" alt="6751 divided by 15 using long division." /></p>
-<p>This means that <span class="math display">\[\begin{align*} 6751\div15 &amp; =450+\frac{1}{15} \end{align*}\]</span> or, in decimal form, <span class="math display">\[\begin{align*} 6751\div15 &amp; =450.0\overline{6} \end{align*}\]</span> where the over-bar on the <span class="math inline">\(6\)</span> indicates it repeats.</p>
-<p>In the age of calculators, long division of numbers is not so important. However it is still useful in solving cubic (and higher degree) polynomials.<span class="sidenote"><span class="sidenote-number">2</span> The degree of a polynomial is the highest power to which the variable is raised. For example, <span class="math display">\[\begin{align*} 5x^{4}+2x^{2}-3 \end{align*}\]</span> is a polynomial of degree <span class="math inline">\(4.\)</span> Polynomials of degree <span class="math inline">\(1,2\)</span>, <span class="math inline">\(3\)</span> and <span class="math inline">\(4\)</span> are called linear, quadratic, cubic and quartic respectively. </span> This module describes how to divide a polynomial by a polynomial of lower degree using long division and how to solve cubic equations.</p>
-<div id="the-basic-approach" class="section level1">
+            <h1 class="margin-top-zero">ES5: Cubic equations, polynomial long division</h1>
+            <p><iframe src="../../algebra/a36-polynomial-long-division/index%EF%B9%96iframe=true&amp;hide-title=true.html" width="100%" scrolling="no"></iframe></p>
+<p><!--
+<span class="sidenote"><span class="sidenote-number">1</span> An integer is a positive or negative whole number and may include <span class="math inline">\(0.\)</span></span>
+
+For example in the case that the result was an integer we could have
+
+[ll-image url="https://rmitlibrary.github.io/cdn/learninglab/images/maths-es5-01.png" alt="6750 divided by 15 using long division." size="xs"]
+
+This means that <span class="math inline">\(6750\div15=450\)</span> or <span class="math inline">\(6750=15\times450.\)</span>
+
+In case the numbers do not exactly divide we could have
+
+[ll-image url="https://rmitlibrary.github.io/cdn/learninglab/images/maths-es5-02.png" alt="6751 divided by 15 using long division." size="xs"]
+
+This means that <span class="math display">\[\begin{align*} 6751\div15 &amp; =450+\frac{1}{15} \end{align*}\]</span> or, in decimal form, <span class="math display">\[\begin{align*} 6751\div15 &amp; =450.0\overline{6} \end{align*}\]</span> where the over-bar on the <span class="math inline">\(6\)</span> indicates it repeats.
+
+In the age of calculators, long division of numbers is not so important. However it is still useful in solving cubic (and higher degree) polynomials.<span class="sidenote"><span class="sidenote-number">2</span> The degree of a polynomial is the highest power to which the variable is raised. For example, <span class="math display">\[\begin{align*} 5x^{4}+2x^{2}-3 \end{align*}\]</span> is a polynomial of degree <span class="math inline">\(4.\)</span> Polynomials of degree <span class="math inline">\(1,2\)</span>, <span class="math inline">\(3\)</span> and <span class="math inline">\(4\)</span> are called linear, quadratic, cubic and quartic respectively. </span> This module describes how to divide a polynomial by a polynomial of lower degree using long division and how to solve cubic equations.
+
+
+
 <h2>The basic approach</h2>
-<p>For long division, a useful algorithm, whether for numbers or polynomials is Divide, Multiply, Subtract, Bring down.<span class="sidenote"><span class="sidenote-number">3</span> An algorithm is a series of instructions. If you look at long division on the web, you may find some differences.</span> This is repeated until you obtain a remainder or zero and is illustrated below:</p>
-<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-es5-03.png" alt="Algorithm for long division." /></p>
-<div id="example-1" class="section level2">
+
+
+For long division, a useful algorithm, whether for numbers or polynomials is Divide, Multiply, Subtract, Bring down.<span class="sidenote"><span class="sidenote-number">3</span> An algorithm is a series of instructions. If you look at long division on the web, you may find some differences.</span> This is repeated until you obtain a remainder or zero and is illustrated below:
+
+[ll-image url="https://rmitlibrary.github.io/cdn/learninglab/images/maths-es5-03.png" alt="Algorithm for long division." size="sm"]
+
+
+
 <h3>Example 1</h3>
-<p>Divide <span class="math inline">\(x^{2}-5x+6\)</span> by <span class="math inline">\(x-3.\)</span></p>
-<p>First we set up the long division by writing</p>
-<p><span class="math display">\[\begin{array}{r} \\ x-3{\overline{\smash{\big)}\,x^2-5x+6\phantom{)}}} \end{array}\]</span></p>
-<p>Now we start the algorithm: Divide, Multiply, Subtract and Bring down.</p>
-<p><strong>Divide</strong> the highest power of the polynomial <span class="math inline">\(x^{2}-5x+6\)</span> by the highest power in the polynomial <span class="math inline">\(x-3.\)</span> That is divide <span class="math inline">\(x^{2}\)</span> by <span class="math inline">\(x\)</span> to get <span class="math inline">\(x.\)</span> Place the <span class="math inline">\(x\)</span> as follows:</p>
-<p><span class="math display">\[\begin{array}{r} x\phantom{)-2} \\ x-3{\overline{\smash{\big)}\,x^2-5x+6\phantom{)}}} \end{array}\]</span></p>
-<p><strong>Multiply</strong> <span class="math inline">\(x-3\)</span> by <span class="math inline">\(x\)</span> to get <span class="math inline">\(x^{2}-3x\)</span> and write the result as shown below:</p>
-<p><span class="math display">\[\begin{array}{r} x\phantom{)-2} \\ x-3{\overline{\smash{\big)}\,x^2-5x+6\phantom{)}}} \\ \underline{-~\phantom{(}(x^2-3x)\phantom{-b)}} \end{array}\]</span></p>
-<p><strong>Subtract</strong> <span class="math inline">\(x^{2}-3x\)</span> from <span class="math inline">\(x^{2}-5x\)</span> to get <span class="math inline">\(-2x\)</span> as shown below:</p>
-<p><span class="math display">\[\begin{array}{r} x\phantom{)-2} \\ x-3{\overline{\smash{\big)}\,x^2-5x+6\phantom{)}}} \\ \underline{-~\phantom{(}(x^2-3x)\phantom{-b)}} \\ 0\,\,\,-2x\phantom{)+6} \end{array}\]</span></p>
-<p><strong>Bring down</strong> the <span class="math inline">\(6\)</span> and write as follows:</p>
-<p><span class="math display">\[\begin{array}{r} x\phantom{)-2} \\ x-3{\overline{\smash{\big)}\,x^2-5x+6\phantom{)}}} \\ \underline{-~\phantom{(}(x^2-3x)\phantom{-b)}} \\ 0-2x+6\phantom{)} \end{array}\]</span></p>
-<p>We now go back to the divide step and continue the algorithm until we get a remainder or zero.</p>
-<p><strong>Divide</strong> <span class="math inline">\(-2x\)</span> by the leading term in <span class="math inline">\(x-3\)</span> to get <span class="math inline">\(-2.\)</span> That is divide <span class="math inline">\(x\)</span> into <span class="math inline">\(-2x\)</span> to get <span class="math inline">\(-2\)</span> and write the <span class="math inline">\(-2\)</span> on the top line as shown below.</p>
-<p><span class="math display">\[\begin{array}{r} x-2\phantom{)} \\ x-3{\overline{\smash{\big)}\,x^2-5x+6\phantom{)}}} \\ \underline{-~\phantom{(}(x^2-3x)\phantom{-b)}} \\ 0-2x+6\phantom{)} \end{array}\]</span></p>
-<p><strong>Multiply</strong> <span class="math inline">\(x-3\)</span> by <span class="math inline">\(-2\)</span> to get<span class="math inline">\(-2x+6\)</span> and write this as shown below.</p>
-<p><span class="math display">\[\begin{array}{r} x-2\phantom{)} \\ x-3{\overline{\smash{\big)}\,x^2-5x+6\phantom{)}}} \\ \underline{-~\phantom{(}(x^2-3x)\phantom{-b)}} \\ 0-2x+6\phantom{)} \\ \underline{~\phantom{()}(-2x+6)} \end{array}\]</span></p>
-<p><strong>Subtract</strong> <span class="math inline">\(-2x+6\)</span> from <span class="math inline">\(-2x+6\)</span> to get <span class="math inline">\(0.\)</span> This is the end of the process and, in this case there is no remainder.</p>
-<p><span class="math display">\[\begin{array}{r} x-2\phantom{)} \\ x-3{\overline{\smash{\big)}\,x^2-5x+6\phantom{)}}} \\ \underline{-~\phantom{(}(x^2-3x)\phantom{-b)}} \\ 0-2x+6\phantom{)} \\ \underline{-~\phantom{()}(-2x+6)} \\ 0+0\phantom{)} \end{array}\]</span></p>
-<p>This is the end of the process and, in this case, there is no remainder. That means that <span class="math inline">\(x-3\)</span> divides <span class="math inline">\(x^{2}-5x+6\)</span> exactly and the answer is <span class="math inline">\(x-2.\)</span> <span class="sidenote"><span class="sidenote-number">4</span> Note that in this case it would be much easier to just factorise the quadratic or use the quadratic formula to get the same result. However, this is not available to us in general when the polynomials have higher degree. This is discussed in the next section.</span> In other words <span class="math display">\[\begin{align*} \left(x-3\right)\left(x-2\right) &amp; =x^{2}-5x+6. \end{align*}\]</span></p>
-</div>
-</div>
-<div id="dividing-a-higher-order-polynomial" class="section level1">
+
+
+Divide <span class="math inline">\(x^{2}-5x+6\)</span> by <span class="math inline">\(x-3.\)</span>
+
+First we set up the long division by writing
+
+<span class="math display">\[\begin{array}{r} \\ x-3{\overline{\smash{\big)}\,x^2-5x+6\phantom{)}}} \end{array}\]</span>
+
+Now we start the algorithm: Divide, Multiply, Subtract and Bring down.
+
+<strong>Divide</strong> the highest power of the polynomial <span class="math inline">\(x^{2}-5x+6\)</span> by the highest power in the polynomial <span class="math inline">\(x-3.\)</span> That is divide <span class="math inline">\(x^{2}\)</span> by <span class="math inline">\(x\)</span> to get <span class="math inline">\(x.\)</span> Place the <span class="math inline">\(x\)</span> as follows:
+
+<span class="math display">\[\begin{array}{r} x\phantom{)-2} \\ x-3{\overline{\smash{\big)}\,x^2-5x+6\phantom{)}}} \end{array}\]</span>
+
+<strong>Multiply</strong> <span class="math inline">\(x-3\)</span> by <span class="math inline">\(x\)</span> to get <span class="math inline">\(x^{2}-3x\)</span> and write the result as shown below:
+
+<span class="math display">\[\begin{array}{r} x\phantom{)-2} \\ x-3{\overline{\smash{\big)}\,x^2-5x+6\phantom{)}}} \\ \underline{-~\phantom{(}(x^2-3x)\phantom{-b)}} \end{array}\]</span>
+
+<strong>Subtract</strong> <span class="math inline">\(x^{2}-3x\)</span> from <span class="math inline">\(x^{2}-5x\)</span> to get <span class="math inline">\(-2x\)</span> as shown below:
+
+<span class="math display">\[\begin{array}{r} x\phantom{)-2} \\ x-3{\overline{\smash{\big)}\,x^2-5x+6\phantom{)}}} \\ \underline{-~\phantom{(}(x^2-3x)\phantom{-b)}} \\ 0\,\,\,-2x\phantom{)+6} \end{array}\]</span>
+
+<strong>Bring down</strong> the <span class="math inline">\(6\)</span> and write as follows:
+
+<span class="math display">\[\begin{array}{r} x\phantom{)-2} \\ x-3{\overline{\smash{\big)}\,x^2-5x+6\phantom{)}}} \\ \underline{-~\phantom{(}(x^2-3x)\phantom{-b)}} \\ 0-2x+6\phantom{)} \end{array}\]</span>
+
+We now go back to the divide step and continue the algorithm until we get a remainder or zero.
+
+<strong>Divide</strong> <span class="math inline">\(-2x\)</span> by the leading term in <span class="math inline">\(x-3\)</span> to get <span class="math inline">\(-2.\)</span> That is divide <span class="math inline">\(x\)</span> into <span class="math inline">\(-2x\)</span> to get <span class="math inline">\(-2\)</span> and write the <span class="math inline">\(-2\)</span> on the top line as shown below.
+
+<span class="math display">\[\begin{array}{r} x-2\phantom{)} \\ x-3{\overline{\smash{\big)}\,x^2-5x+6\phantom{)}}} \\ \underline{-~\phantom{(}(x^2-3x)\phantom{-b)}} \\ 0-2x+6\phantom{)} \end{array}\]</span>
+
+<strong>Multiply</strong> <span class="math inline">\(x-3\)</span> by <span class="math inline">\(-2\)</span> to get<span class="math inline">\(-2x+6\)</span> and write this as shown below.
+
+<span class="math display">\[\begin{array}{r} x-2\phantom{)} \\ x-3{\overline{\smash{\big)}\,x^2-5x+6\phantom{)}}} \\ \underline{-~\phantom{(}(x^2-3x)\phantom{-b)}} \\ 0-2x+6\phantom{)} \\ \underline{~\phantom{()}(-2x+6)} \end{array}\]</span>
+
+<strong>Subtract</strong> <span class="math inline">\(-2x+6\)</span> from <span class="math inline">\(-2x+6\)</span> to get <span class="math inline">\(0.\)</span> This is the end of the process and, in this case there is no remainder.
+
+<span class="math display">\[\begin{array}{r} x-2\phantom{)} \\ x-3{\overline{\smash{\big)}\,x^2-5x+6\phantom{)}}} \\ \underline{-~\phantom{(}(x^2-3x)\phantom{-b)}} \\ 0-2x+6\phantom{)} \\ \underline{-~\phantom{()}(-2x+6)} \\ 0+0\phantom{)} \end{array}\]</span>
+
+This is the end of the process and, in this case, there is no remainder. That means that <span class="math inline">\(x-3\)</span> divides <span class="math inline">\(x^{2}-5x+6\)</span> exactly and the answer is <span class="math inline">\(x-2.\)</span> <span class="sidenote"><span class="sidenote-number">4</span> Note that in this case it would be much easier to just factorise the quadratic or use the quadratic formula to get the same result. However, this is not available to us in general when the polynomials have higher degree. This is discussed in the next section.</span> In other words <span class="math display">\[\begin{align*} \left(x-3\right)\left(x-2\right) &amp; =x^{2}-5x+6. \end{align*}\]</span>
+
+
+
+
+
+
 <h2>Dividing a higher order polynomial</h2>
-<p>The basic approach described above may be used on higher order polynomials. Generally the most common case is dividing a cubic polynomial by a linear polynomial We show this in the following example.</p>
-<div id="example-2" class="section level2">
+
+
+The basic approach described above may be used on higher order polynomials. Generally the most common case is dividing a cubic polynomial by a linear polynomial We show this in the following example.
+
+
+
 <h3>Example 2</h3>
-<p>Divide <span class="math inline">\(\left(x^{3}-6x^{2}+11x-6\right)\)</span> by <span class="math inline">\(\left(x-1\right)\)</span>.</p>
-<p>First we write the long division as shown below:</p>
-<p><span class="math display">\[\begin{array}{r} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}} \end{array}\]</span></p>
-<p>We then apply the steps of the algorithm: Divide, Multiply, Subtract, Bring down.</p>
-<p><strong>Divide</strong> the highest term of <span class="math inline">\(x-1\)</span> into the highest term of <span class="math inline">\(x^{3}-6x^{2}+11x-6\)</span>. That is divide <span class="math inline">\(x\)</span> into <span class="math inline">\(x^{3}\)</span> to get <span class="math inline">\(x^{2}\)</span> and write</p>
-<p><span class="math display">\[\begin{array}{r} x^2\phantom{\,-5\,x+6)x} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}} \end{array}\]</span></p>
-<p><strong>Multiply</strong> <span class="math inline">\(x^{2}\)</span> by <span class="math inline">\(x-1\)</span> to get <span class="math inline">\(x^{3}-x^{2}\)</span> and write as below:</p>
-<p><span class="math display">\[\begin{array}{r} x^2\phantom{\,-5\,x+6)x} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}} \\ \underline{(x^3-\,\, x^2)\phantom{bbbbbbbbbi)}} \end{array}\]</span></p>
-<p><strong>Subtract</strong> <span class="math inline">\(x^{3}-x^{2}\)</span> from <span class="math inline">\(x^{3}-6x^{2}\)</span> to get <span class="math inline">\(-5x^{2}\)</span>and write as:</p>
-<p><span class="math display">\[\begin{array}{r} x^2\phantom{\,-5\,x+6)x} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}} \\ \underline{-(x^3-\,\, x^2)\phantom{bbbbbbbbbi)}} \\ 0- \, \, 5x^2\phantom{bbbi+11x)} \end{array}\]</span></p>
-<p><strong>Bring down</strong> the <span class="math inline">\(11x\)</span> term and write as:</p>
-<p><span class="math display">\[\begin{array}{r} x^2\phantom{\,-5\,x+6)x} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}} \\ \underline{-(x^3-\,\, x^2)\phantom{bbbbbbbbbi)}} \\ \, \, -5x^2+11x\phantom{bbbi)} \end{array}\]</span></p>
-<p><strong>Divide</strong></p>
-<p>We now repeat the algorithm. We divide the highest power of <span class="math inline">\(x-1\)</span> into <span class="math inline">\(-5x^{2}\)</span>. That is, we divide <span class="math inline">\(x\)</span> into <span class="math inline">\(-5x^{2}\)</span> to get <span class="math inline">\(-5x\)</span> and write as follows.</p>
-<p><span class="math display">\[\begin{array}{r} x^2\,\,-5x\phantom{)+6} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}} \\ \underline{-(x^3-\,\, x^2)\phantom{bbbbbbbbbi)}} \\ 0- \, \, 5x^2+11x\phantom{bbbi)} \end{array}\]</span></p>
-<p><strong>Multiply</strong> <span class="math inline">\(-5x\)</span> by <span class="math inline">\(x-1\)</span> to get <span class="math inline">\(-5x^{2}+5x\)</span> and write:</p>
-<p><span class="math display">\[\begin{array}{r} x^2\,-5\,x\phantom{)+6} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}} \\ \underline{-(x^3-\,\, x^2)\phantom{bbbbbbbbbi)}} \\ \, \, -5x^2+11x\phantom{bbbi)} \\ \underline{~\phantom{()}(-5x^2+\,\,5x)}\phantom{bbb)} \end{array}\]</span></p>
-<p><strong>Subtract</strong> <span class="math inline">\(-5x^{2}+5x\)</span> from <span class="math inline">\(-5x^{2}+11x\)</span> to get <span class="math inline">\(6x\)</span> and write:</p>
-<p><span class="math display">\[\begin{array}{r} x^2\,-5\,x\phantom{)+6} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}}\\ \underline{-(x^3-\,\, x^2)\phantom{bbbbbbbbi)}}\\ - \, \, 5x^2+11x\phantom{bbbi)}\\ \underline{-~\phantom{()}(-5x^2+\,\,5x)}\phantom{bbb)}\\ 6x \phantom{)-6} \end{array}\]</span></p>
-<p><strong>Bring down</strong> the <span class="math inline">\(-6\)</span> and write as</p>
-<p><span class="math display">\[\begin{array}{r} x^2\,-5\,x\phantom{)+6} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}} \\ \underline{-(x^3-\,\, x^2)\phantom{bbbbbbbbi)}}\\ 0- \, \, 5x^2+11x\phantom{bbbi)}\\ \underline{-~\phantom{()}(-5x^2+\,\,5x)}\phantom{bbb)}\\ 6x-6 \phantom{)} \end{array}\]</span></p>
-<p><strong>Divide</strong> the leading term of <span class="math inline">\(x-1\)</span> into the leading term of <span class="math inline">\(6x-6.\)</span> That is divide <span class="math inline">\(x\)</span> into <span class="math inline">\(6x\)</span> to get <span class="math inline">\(6\)</span> and write as follows:</p>
-<p><span class="math display">\[\begin{array}{r} x^2\,-5\,x+6\phantom{)} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}}\\ \underline{-(x^3-\,\, x^2)\phantom{bbbbbbbbi)}}\\ 0- \, \, 5x^2+11x\phantom{bbbi)} \\ \underline{-~\phantom{()}(-5x^2+\,\,5x)}\phantom{bbb)}\\ 6x-6 \phantom{)} \end{array}\]</span></p>
-<p><strong>Multiply</strong> <span class="math inline">\(x-1\)</span> by <span class="math inline">\(6\)</span> and write as follows:</p>
-<p><span class="math display">\[\begin{array}{r} x^2\,-5\,x+6\phantom{)} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}} \\ \underline{-(x^3-\,\, x^2)\phantom{bbbbbbbbi)}} \\ 0- \, \, 5x^2+11x\phantom{bbbi)} \\ \underline{-~\phantom{()}(-5x^2+\,\,5x)}\phantom{bbb)} \\ 6x-6 \phantom{)} \\ \underline{\phantom{()}(6x-6)} \end{array}\]</span></p>
-<p><strong>Subtract</strong> <span class="math inline">\(6x-6-\left(6x-6\right)\)</span> to get <span class="math inline">\(0\)</span> and write as follows:</p>
-<p><span class="math display">\[\begin{array}{r} x^2\,-5\,x+6\phantom{)} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}} \\ \underline{-(x^3-\,\, x^2)\phantom{bbbbbbbbi)}} \\ 0- \, \, 5x^2+11x\phantom{bbbi)} \\ \underline{-~\phantom{()}(-5x^2+\,\,5x)}\phantom{bbb)}\\ 6x-6 \phantom{)} \\ \underline{-~\phantom{()}(6x-6)} \\ 0+0\phantom{)} \end{array}\]</span></p>
-<p>As there are no more terms to bring down, we stop the algorithm. Our result is that <span class="math display">\[\begin{align*} \left(x^{3}-6x^{2}+11x-6\right)\div\left(x-1\right) &amp; =x^{2}-5x+6. \end{align*}\]</span></p>
-<p>This is the same as <span class="math display">\[\begin{align*} x^{3}-6x^{2}+11x-6=\left(x^{2}-5x+6\right)\left(x-1\right). \end{align*}\]</span></p>
-<p>This is probably the best interpretation as we can then factorise the quadratic term on the RHS to get <span class="math display">\[\begin{align*} x^{3}-6x^{2}+11x-6 &amp; =\left(x^{2}-5x+6\right)\left(x-1\right)\\ &amp; =\left(x-3\right)\left(x-2\right)\left(x-1\right). \end{align*}\]</span> Which is of value when we are trying to graph <span class="math inline">\(x^{3}-6x^{2}+11x-6\)</span> as it gives us the <span class="math inline">\(x-\)</span>intercepts of the function.</p>
-</div>
-<div id="example-3" class="section level2">
+
+
+Divide <span class="math inline">\(\left(x^{3}-6x^{2}+11x-6\right)\)</span> by <span class="math inline">\(\left(x-1\right)\)</span>.
+
+First we write the long division as shown below:
+
+<span class="math display">\[\begin{array}{r} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}} \end{array}\]</span>
+
+We then apply the steps of the algorithm: Divide, Multiply, Subtract, Bring down.
+
+<strong>Divide</strong> the highest term of <span class="math inline">\(x-1\)</span> into the highest term of <span class="math inline">\(x^{3}-6x^{2}+11x-6\)</span>. That is divide <span class="math inline">\(x\)</span> into <span class="math inline">\(x^{3}\)</span> to get <span class="math inline">\(x^{2}\)</span> and write
+
+<span class="math display">\[\begin{array}{r} x^2\phantom{\,-5\,x+6)x} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}} \end{array}\]</span>
+
+<strong>Multiply</strong> <span class="math inline">\(x^{2}\)</span> by <span class="math inline">\(x-1\)</span> to get <span class="math inline">\(x^{3}-x^{2}\)</span> and write as below:
+
+<span class="math display">\[\begin{array}{r} x^2\phantom{\,-5\,x+6)x} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}} \\ \underline{(x^3-\,\, x^2)\phantom{bbbbbbbbbi)}} \end{array}\]</span>
+
+<strong>Subtract</strong> <span class="math inline">\(x^{3}-x^{2}\)</span> from <span class="math inline">\(x^{3}-6x^{2}\)</span> to get <span class="math inline">\(-5x^{2}\)</span>and write as:
+
+<span class="math display">\[\begin{array}{r} x^2\phantom{\,-5\,x+6)x} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}} \\ \underline{-(x^3-\,\, x^2)\phantom{bbbbbbbbbi)}} \\ 0- \, \, 5x^2\phantom{bbbi+11x)} \end{array}\]</span>
+
+<strong>Bring down</strong> the <span class="math inline">\(11x\)</span> term and write as:
+
+<span class="math display">\[\begin{array}{r} x^2\phantom{\,-5\,x+6)x} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}} \\ \underline{-(x^3-\,\, x^2)\phantom{bbbbbbbbbi)}} \\ \, \, -5x^2+11x\phantom{bbbi)} \end{array}\]</span>
+
+<strong>Divide</strong>
+
+We now repeat the algorithm. We divide the highest power of <span class="math inline">\(x-1\)</span> into <span class="math inline">\(-5x^{2}\)</span>. That is, we divide <span class="math inline">\(x\)</span> into <span class="math inline">\(-5x^{2}\)</span> to get <span class="math inline">\(-5x\)</span> and write as follows.
+
+<span class="math display">\[\begin{array}{r} x^2\,\,-5x\phantom{)+6} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}} \\ \underline{-(x^3-\,\, x^2)\phantom{bbbbbbbbbi)}} \\ 0- \, \, 5x^2+11x\phantom{bbbi)} \end{array}\]</span>
+
+<strong>Multiply</strong> <span class="math inline">\(-5x\)</span> by <span class="math inline">\(x-1\)</span> to get <span class="math inline">\(-5x^{2}+5x\)</span> and write:
+
+<span class="math display">\[\begin{array}{r} x^2\,-5\,x\phantom{)+6} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}} \\ \underline{-(x^3-\,\, x^2)\phantom{bbbbbbbbbi)}} \\ \, \, -5x^2+11x\phantom{bbbi)} \\ \underline{~\phantom{()}(-5x^2+\,\,5x)}\phantom{bbb)} \end{array}\]</span>
+
+<strong>Subtract</strong> <span class="math inline">\(-5x^{2}+5x\)</span> from <span class="math inline">\(-5x^{2}+11x\)</span> to get <span class="math inline">\(6x\)</span> and write:
+
+<span class="math display">\[\begin{array}{r} x^2\,-5\,x\phantom{)+6} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}}\\ \underline{-(x^3-\,\, x^2)\phantom{bbbbbbbbi)}}\\ - \, \, 5x^2+11x\phantom{bbbi)}\\ \underline{-~\phantom{()}(-5x^2+\,\,5x)}\phantom{bbb)}\\ 6x \phantom{)-6} \end{array}\]</span>
+
+<strong>Bring down</strong> the <span class="math inline">\(-6\)</span> and write as
+
+<span class="math display">\[\begin{array}{r} x^2\,-5\,x\phantom{)+6} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}} \\ \underline{-(x^3-\,\, x^2)\phantom{bbbbbbbbi)}}\\ 0- \, \, 5x^2+11x\phantom{bbbi)}\\ \underline{-~\phantom{()}(-5x^2+\,\,5x)}\phantom{bbb)}\\ 6x-6 \phantom{)} \end{array}\]</span>
+
+<strong>Divide</strong> the leading term of <span class="math inline">\(x-1\)</span> into the leading term of <span class="math inline">\(6x-6.\)</span> That is divide <span class="math inline">\(x\)</span> into <span class="math inline">\(6x\)</span> to get <span class="math inline">\(6\)</span> and write as follows:
+
+<span class="math display">\[\begin{array}{r} x^2\,-5\,x+6\phantom{)} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}}\\ \underline{-(x^3-\,\, x^2)\phantom{bbbbbbbbi)}}\\ 0- \, \, 5x^2+11x\phantom{bbbi)} \\ \underline{-~\phantom{()}(-5x^2+\,\,5x)}\phantom{bbb)}\\ 6x-6 \phantom{)} \end{array}\]</span>
+
+<strong>Multiply</strong> <span class="math inline">\(x-1\)</span> by <span class="math inline">\(6\)</span> and write as follows:
+
+<span class="math display">\[\begin{array}{r} x^2\,-5\,x+6\phantom{)} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}} \\ \underline{-(x^3-\,\, x^2)\phantom{bbbbbbbbi)}} \\ 0- \, \, 5x^2+11x\phantom{bbbi)} \\ \underline{-~\phantom{()}(-5x^2+\,\,5x)}\phantom{bbb)} \\ 6x-6 \phantom{)} \\ \underline{\phantom{()}(6x-6)} \end{array}\]</span>
+
+<strong>Subtract</strong> <span class="math inline">\(6x-6-\left(6x-6\right)\)</span> to get <span class="math inline">\(0\)</span> and write as follows:
+
+<span class="math display">\[\begin{array}{r} x^2\,-5\,x+6\phantom{)} \\ x-1{\overline{\smash{\big)}\,x^3-6x^2+11x-6\phantom{)}}} \\ \underline{-(x^3-\,\, x^2)\phantom{bbbbbbbbi)}} \\ 0- \, \, 5x^2+11x\phantom{bbbi)} \\ \underline{-~\phantom{()}(-5x^2+\,\,5x)}\phantom{bbb)}\\ 6x-6 \phantom{)} \\ \underline{-~\phantom{()}(6x-6)} \\ 0+0\phantom{)} \end{array}\]</span>
+
+As there are no more terms to bring down, we stop the algorithm. Our result is that <span class="math display">\[\begin{align*} \left(x^{3}-6x^{2}+11x-6\right)\div\left(x-1\right) &amp; =x^{2}-5x+6. \end{align*}\]</span>
+
+This is the same as <span class="math display">\[\begin{align*} x^{3}-6x^{2}+11x-6=\left(x^{2}-5x+6\right)\left(x-1\right). \end{align*}\]</span>
+
+This is probably the best interpretation as we can then factorise the quadratic term on the RHS to get <span class="math display">\[\begin{align*} x^{3}-6x^{2}+11x-6 &amp; =\left(x^{2}-5x+6\right)\left(x-1\right)\\ &amp; =\left(x-3\right)\left(x-2\right)\left(x-1\right). \end{align*}\]</span> Which is of value when we are trying to graph <span class="math inline">\(x^{3}-6x^{2}+11x-6\)</span> as it gives us the <span class="math inline">\(x-\)</span>intercepts of the function.
+
+
+
+
+
 <h3>Example 3</h3>
-<p>Divide <span class="math inline">\(\left(2x^{3}-3x+1\right)\)</span> by <span class="math inline">\(\left(x-1\right)\)</span>.</p>
-<p>The major difference from example 2 above is that there is no <span class="math inline">\(x^{2}\)</span> term in <span class="math display">\[\begin{align*} 2x^{3}-3x+1. \end{align*}\]</span> We get around this by writing <span class="math display">\[\begin{align*} 2x^{3}-3x+1 &amp; =2x^{3}+0x^{2}-3x+1 \end{align*}\]</span></p>
-<p>That is, we set up the long division as</p>
-<p><span class="math display">\[\begin{array}{r} \\ x-1{\overline{\smash{\big)}\,2x^3+0x^2-3x+1\phantom{)}}} \end{array}\]</span></p>
-<p>and apply the algorithm used in Example 1 and 2 above.</p>
-<p>Applying the algorithm we obtain:</p>
-<p><span class="math display">\[\begin{array}{r} 2x^2+2x-1\phantom{)} \\ x-1{\overline{\smash{\big)}\,2x^3+0x^2-3x+1\phantom{)}}} \\ \underline{-(2x^3- 2x^2)\phantom{bbbbbbbi)}}\\ 0+ \, \, 2x^2-3x\phantom{bbbi)} \\ \underline{-~\phantom{()}(2x^2-2x)}\phantom{bbb)} \\ 0-\,\, x\,\,+1 \phantom{)} \\ \underline{-~\phantom{()}(-x\,\,+1)} \\ 0\,\,+0\phantom{)} \end{array}\]</span></p>
-<p>Hence we see that <span class="math display">\[\begin{align*} \left(2x^{3}-3x+1\right)\div\left(x-1\right) &amp; =2x^{2}+2x-1 \end{align*}\]</span> or <span class="math display">\[\begin{align*} 2x^{3}-3x+1 &amp; =\left(2x^{2}+2x-1\right)\times\left(x-1\right). \end{align*}\]</span></p>
-<p>In your work, the final result as shown above is all that is required. That is you would write:</p>
-<p><span class="math display">\[\begin{array}{r} 2x^2+2x-1\phantom{)} \\ x-1{\overline{\smash{\big)}\,2x^3+0x^2-3x+1\phantom{)}}} \\ \underline{-(2x^3- 2x^2)\phantom{bbbbbbbi)}} \\ 0+ \, \, 2x^2-3x\phantom{bbbi)} \\ \underline{-~\phantom{()}(2x^2-2x)}\phantom{bbb)} \\ 0-\,\, x\,\,+1 \phantom{)} \\ \underline{-~\phantom{()}(-x\,\,+1)} \\ 0\,\,+0\phantom{)} \end{array}\]</span></p>
-<p>The steps (divide, multiply, subtract, bring down) identified in Examples <span class="math inline">\(1\)</span> and <span class="math inline">\(2\)</span> are for explanation only. You do not have to make reference to them.</p>
-<p>Please try Exercise 1.</p>
-</div>
-</div>
-<div id="the-factor-theorem" class="section level1">
+
+
+Divide <span class="math inline">\(\left(2x^{3}-3x+1\right)\)</span> by <span class="math inline">\(\left(x-1\right)\)</span>.
+
+The major difference from example 2 above is that there is no <span class="math inline">\(x^{2}\)</span> term in <span class="math display">\[\begin{align*} 2x^{3}-3x+1. \end{align*}\]</span> We get around this by writing <span class="math display">\[\begin{align*} 2x^{3}-3x+1 &amp; =2x^{3}+0x^{2}-3x+1 \end{align*}\]</span>
+
+That is, we set up the long division as
+
+<span class="math display">\[\begin{array}{r} \\ x-1{\overline{\smash{\big)}\,2x^3+0x^2-3x+1\phantom{)}}} \end{array}\]</span>
+
+and apply the algorithm used in Example 1 and 2 above.
+
+Applying the algorithm we obtain:
+
+<span class="math display">\[\begin{array}{r} 2x^2+2x-1\phantom{)} \\ x-1{\overline{\smash{\big)}\,2x^3+0x^2-3x+1\phantom{)}}} \\ \underline{-(2x^3- 2x^2)\phantom{bbbbbbbi)}}\\ 0+ \, \, 2x^2-3x\phantom{bbbi)} \\ \underline{-~\phantom{()}(2x^2-2x)}\phantom{bbb)} \\ 0-\,\, x\,\,+1 \phantom{)} \\ \underline{-~\phantom{()}(-x\,\,+1)} \\ 0\,\,+0\phantom{)} \end{array}\]</span>
+
+Hence we see that <span class="math display">\[\begin{align*} \left(2x^{3}-3x+1\right)\div\left(x-1\right) &amp; =2x^{2}+2x-1 \end{align*}\]</span> or <span class="math display">\[\begin{align*} 2x^{3}-3x+1 &amp; =\left(2x^{2}+2x-1\right)\times\left(x-1\right). \end{align*}\]</span>
+
+In your work, the final result as shown above is all that is required. That is you would write:
+
+<span class="math display">\[\begin{array}{r} 2x^2+2x-1\phantom{)} \\ x-1{\overline{\smash{\big)}\,2x^3+0x^2-3x+1\phantom{)}}} \\ \underline{-(2x^3- 2x^2)\phantom{bbbbbbbi)}} \\ 0+ \, \, 2x^2-3x\phantom{bbbi)} \\ \underline{-~\phantom{()}(2x^2-2x)}\phantom{bbb)} \\ 0-\,\, x\,\,+1 \phantom{)} \\ \underline{-~\phantom{()}(-x\,\,+1)} \\ 0\,\,+0\phantom{)} \end{array}\]</span>
+
+The steps (divide, multiply, subtract, bring down) identified in Examples <span class="math inline">\(1\)</span> and <span class="math inline">\(2\)</span> are for explanation only. You do not have to make reference to them.
+
+Please try Exercise 1.
+
+
+
+
+
+
 <h2>The Factor Theorem</h2>
-<p>Solution of a cubic equation is frequently required in maths, science and engineering.</p>
-<p>The long division of polynomials described above is an important tool in this. However the Factor Theorem is equally important.</p>
-<p>The Factor Theorem states:</p>
-<hr />
-<blockquote><p>If <span class="math inline">\(P(x)\)</span> is a polynomial in <span class="math inline">\(x\)</span> and <span class="math inline">\(P(a)=0\)</span> then <span class="math inline">\((x-a)\)</span> is a factor of <span class="math inline">\(P(x)\)</span>. We can use the factor theorem to find one factor of a polynomial, and then use polynomial long division to find the remaining factor(s).</p></blockquote>
-<hr />
-<div id="example-4" class="section level2">
+
+
+Solution of a cubic equation is frequently required in maths, science and engineering.
+
+The long division of polynomials described above is an important tool in this. However the Factor Theorem is equally important.
+
+The Factor Theorem states:
+
+
+
+
+
+<blockquote>If <span class="math inline">\(P(x)\)</span> is a polynomial in <span class="math inline">\(x\)</span> and <span class="math inline">\(P(a)=0\)</span> then <span class="math inline">\((x-a)\)</span> is a factor of <span class="math inline">\(P(x)\)</span>. We can use the factor theorem to find one factor of a polynomial, and then use polynomial long division to find the remaining factor(s).</blockquote>
+
+
+
+
+
+
+
 <h3>Example 4</h3>
-<p>Solve the equation <span class="math inline">\(x^{3}-5x^{2}-2x+24=0.\)</span></p>
-<p>We first use the Factor Theorem to try and get a linear factor of <span class="math inline">\(x^{3}-5x^{2}-2x+24.\)</span> Let <span class="math display">\[ P\left(x\right)=x^{3}-5x^{2}-2x+24 \]</span> then letting <span class="math inline">\(x=1,\)</span> <span class="math display">\[\begin{align*} P\left(1\right) &amp; =1-5-2+24\\ &amp; =18\\ &amp; \neq0 \end{align*}\]</span> and so <span class="math inline">\(\left(x-1\right)\)</span> is not a factor of <span class="math inline">\(x^{3}-5x^{2}-2x+24\)</span>.</p>
-<p>Now try <span class="math inline">\(x=-1\)</span> to get, <span class="math display">\[\begin{align*} P\left(-1\right) &amp; =-1-5+2+24\\ &amp; =20\\ &amp; \neq0 \end{align*}\]</span> and so <span class="math inline">\(\left(x-\left(-1\right)\right)=\left(x+1\right)\)</span> is not a factor of <span class="math inline">\(x^{3}-5x^{2}-2x+24\)</span>.</p>
-<p>Now try <span class="math inline">\(x=2\)</span> to get <span class="math display">\[\begin{align*} P\left(2\right) &amp; =8-20-4+24\\ &amp; =8\\ &amp; \neq0 \end{align*}\]</span> and so <span class="math inline">\(\left(x-2\right)\)</span> is not a factor of <span class="math inline">\(x^{3}-5x^{2}-2x+24\)</span>.</p>
-<p>Now try <span class="math inline">\(x=-2\)</span> to get <span class="math display">\[\begin{align*} P\left(-2\right) &amp; =-8-20+4+24\\ &amp; =0 \end{align*}\]</span> and so <span class="math inline">\(\left(x-\left(-2\right)\right)=x+2\)</span> is factor of <span class="math inline">\(x^{3}-5x^{2}-2x+24\)</span>. We now use polynomial division to divide <span class="math inline">\(x^{3}-5x^{2}-2x+24\)</span> by <span class="math inline">\(x+2.\)</span> We have</p>
-<p><span class="math display">\[\begin{array}{r} x^2-7x+12\phantom{)} \\ x+2{\overline{\smash{\big)}\,x^3-5x^2-2x+24\phantom{)}}} \\ \underline{-(x^3+ 2x^2)\phantom{bbbbbbbbbi)}} \\ 0- 7x^2 \,-2x\phantom{bbbbi)} \\ \underline{-~\phantom{()}(-7x^2-\!14x)}\phantom{bbbi)} \\ 12x+24 \phantom{)} \\ \underline{-~\phantom{()}(12x+24)} \\ 0+0\phantom{)} \end{array}\]</span></p>
-<p>That is, <span class="math display">\[\begin{align*} \left(x^{3}-5x^{2}-2x+24\right)\div\left(x+2\right) &amp; =\left(x^{2}-7x+12\right)\\ x^{3}-5x^{2}-2x+24 &amp; =\left(x^{2}-7x+12\right)\left(x+2\right) \end{align*}\]</span> The quadratic on the RHS may be factorised as <span class="math display">\[\begin{align*} x^{2}-7x+12 &amp; =\left(x-4\right)\left(x-3\right) \end{align*}\]</span><br />
-<span class="sidenote"><span class="sidenote-number">5</span> This can be done by inspection, or more formally using the quadratic formula which says for a quadratic equation: <span class="math display">\[\begin{align*} ax^{2}+bx+c &amp; =0,\\ x &amp; =\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}. \end{align*}\]</span> In our case <span class="math display">\[\begin{align*} x &amp; =\frac{-\left(-7\right)\pm\sqrt{49-4\left(1\right)12}}{2}\\ &amp; =\frac{7\pm\sqrt{1}}{2}\\ &amp; =4\text{ or $3$ .} \end{align*}\]</span></span></p>
-<p>and so <span class="math display">\[\begin{align*} x^{3}-5x^{2}-2x+24 &amp; =\left(x-4\right)\left(x-3\right)\left(x+2\right). \end{align*}\]</span> Hence the solutions to <span class="math inline">\(x^{3}-5x^{2}-2x+24=0\)</span>, are <span class="math inline">\(x=4\)</span>, <span class="math inline">\(x=3\)</span> and <span class="math inline">\(x=-2.\)</span></p>
-<p>Please try Exercise 2 below.</p>
-</div>
-</div>
-<div id="exercise-1" class="section level1">
+
+
+Solve the equation <span class="math inline">\(x^{3}-5x^{2}-2x+24=0.\)</span>
+
+We first use the Factor Theorem to try and get a linear factor of <span class="math inline">\(x^{3}-5x^{2}-2x+24.\)</span> Let <span class="math display">\[ P\left(x\right)=x^{3}-5x^{2}-2x+24 \]</span> then letting <span class="math inline">\(x=1,\)</span> <span class="math display">\[\begin{align*} P\left(1\right) &amp; =1-5-2+24\\ &amp; =18\\ &amp; \neq0 \end{align*}\]</span> and so <span class="math inline">\(\left(x-1\right)\)</span> is not a factor of <span class="math inline">\(x^{3}-5x^{2}-2x+24\)</span>.
+
+Now try <span class="math inline">\(x=-1\)</span> to get, <span class="math display">\[\begin{align*} P\left(-1\right) &amp; =-1-5+2+24\\ &amp; =20\\ &amp; \neq0 \end{align*}\]</span> and so <span class="math inline">\(\left(x-\left(-1\right)\right)=\left(x+1\right)\)</span> is not a factor of <span class="math inline">\(x^{3}-5x^{2}-2x+24\)</span>.
+
+Now try <span class="math inline">\(x=2\)</span> to get <span class="math display">\[\begin{align*} P\left(2\right) &amp; =8-20-4+24\\ &amp; =8\\ &amp; \neq0 \end{align*}\]</span> and so <span class="math inline">\(\left(x-2\right)\)</span> is not a factor of <span class="math inline">\(x^{3}-5x^{2}-2x+24\)</span>.
+
+Now try <span class="math inline">\(x=-2\)</span> to get <span class="math display">\[\begin{align*} P\left(-2\right) &amp; =-8-20+4+24\\ &amp; =0 \end{align*}\]</span> and so <span class="math inline">\(\left(x-\left(-2\right)\right)=x+2\)</span> is factor of <span class="math inline">\(x^{3}-5x^{2}-2x+24\)</span>. We now use polynomial division to divide <span class="math inline">\(x^{3}-5x^{2}-2x+24\)</span> by <span class="math inline">\(x+2.\)</span> We have
+
+<span class="math display">\[\begin{array}{r} x^2-7x+12\phantom{)} \\ x+2{\overline{\smash{\big)}\,x^3-5x^2-2x+24\phantom{)}}} \\ \underline{-(x^3+ 2x^2)\phantom{bbbbbbbbbi)}} \\ 0- 7x^2 \,-2x\phantom{bbbbi)} \\ \underline{-~\phantom{()}(-7x^2-\!14x)}\phantom{bbbi)} \\ 12x+24 \phantom{)} \\ \underline{-~\phantom{()}(12x+24)} \\ 0+0\phantom{)} \end{array}\]</span>
+
+That is, <span class="math display">\[\begin{align*} \left(x^{3}-5x^{2}-2x+24\right)\div\left(x+2\right) &amp; =\left(x^{2}-7x+12\right)\\ x^{3}-5x^{2}-2x+24 &amp; =\left(x^{2}-7x+12\right)\left(x+2\right) \end{align*}\]</span> The quadratic on the RHS may be factorised as <span class="math display">\[\begin{align*} x^{2}-7x+12 &amp; =\left(x-4\right)\left(x-3\right) \end{align*}\]</span>
+<span class="sidenote"><span class="sidenote-number">5</span> This can be done by inspection, or more formally using the quadratic formula which says for a quadratic equation: <span class="math display">\[\begin{align*} ax^{2}+bx+c &amp; =0,\\ x &amp; =\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}. \end{align*}\]</span> In our case <span class="math display">\[\begin{align*} x &amp; =\frac{-\left(-7\right)\pm\sqrt{49-4\left(1\right)12}}{2}\\ &amp; =\frac{7\pm\sqrt{1}}{2}\\ &amp; =4\text{ or $3$ .} \end{align*}\]</span></span>
+
+and so <span class="math display">\[\begin{align*} x^{3}-5x^{2}-2x+24 &amp; =\left(x-4\right)\left(x-3\right)\left(x+2\right). \end{align*}\]</span> Hence the solutions to <span class="math inline">\(x^{3}-5x^{2}-2x+24=0\)</span>, are <span class="math inline">\(x=4\)</span>, <span class="math inline">\(x=3\)</span> and <span class="math inline">\(x=-2.\)</span>
+
+Please try Exercise 2 below.
+
+
+
+
+
+
 <h2>Exercise 1</h2>
-<p><span class="math inline">\(\quad\)</span>a. Divide <span class="math inline">\(2x^{3}-6x^{2}+5x+2\)</span> by <span class="math inline">\(x-2\)</span>.</p>
+
+
+<span class="math inline">\(\quad\)</span>a. Divide <span class="math inline">\(2x^{3}-6x^{2}+5x+2\)</span> by <span class="math inline">\(x-2\)</span>.
+
+
 <ol style="list-style-type: lower-alpha;" start="2">
+ 	
+
 <li>Divide <span class="math inline">\(3x^{3}+13x^{2}+6x-12\)</span> by <span class="math inline">\(3x+4\)</span></li>
+
+
+ 	
+
 <li>Divide <span class="math inline">\(3x^{3}+x-1\)</span> by <span class="math inline">\(x-1\)</span></li>
+
+
+ 	
+
 <li>Divide <span class="math inline">\(x^{3}+2x-3\)</span> by <span class="math inline">\(x-1\)</span></li>
+
+
+ 	
+
 <li>Divide <span class="math inline">\(2x^{4}+5x^{3}+x+3\)</span> by <span class="math inline">\(2x+1\)</span></li>
+
+
+ 	
+
 <li>Divide <span class="math inline">\(2x^{3}+x^{2}+5x+12\)</span> by <span class="math inline">\(2x+3\)</span></li>
+
+
 </ol>
-<div id="answers" class="section level2">
-<div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answers-5234">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-3597" aria-expanded="false" aria-controls="body-answers-3597" >Answers</button>
-</p>
-<div id="body-answers-3597" class="accordion-collapse collapse " aria-labelledby="head-answers-5234">
-<div class="accordion-body">
-<p><span class="math inline">\(\quad\)</span>a. <span class="math inline">\(2x^{2}-2x+1\)</span> with remainder <span class="math inline">\(4.\)</span></p>
+
+
+
+
+[transcript title="Answers"]
+
+<span class="math inline">\(\quad\)</span>a. <span class="math inline">\(2x^{2}-2x+1\)</span> with remainder <span class="math inline">\(4.\)</span>
+
+
 <ol style="list-style-type: lower-alpha;" start="2">
+ 	
+
 <li><span class="math inline">\(x^{3}+3x-2\)</span> with remainder <span class="math inline">\(-4\)</span></li>
+
+
+ 	
+
 <li><span class="math inline">\(3x^{2}-3x+4\)</span> with remainder <span class="math inline">\(-3\)</span></li>
+
+
+ 	
+
 <li><span class="math inline">\(x^{2}+x+3\)</span> with remainder <span class="math inline">\(0\)</span></li>
+
+
+ 	
+
 <li><span class="math inline">\(x^{3}+2x^{2}-x+1\)</span> with remainder <span class="math inline">\(2\)</span></li>
+
+
+ 	
+
 <li><span class="math inline">\(x^{2}-x+4\)</span> with remainder <span class="math inline">\(0.\)</span></li>
+
+
 </ol>
-</div></div></div>
-</div>
-</div>
-<div id="exercise-2" class="section level1">
+
+
+[/transcript]
+
+
+
+
+
+
 <h2>Exercise 2</h2>
-<p>Solve the following equations:</p>
+
+
+Solve the following equations:
+
+
 <ol style="list-style-type: lower-alpha;">
+ 	
+
 <li><span class="math inline">\(x^{3}+7x^{2}+11x+5=0\)</span></li>
+
+
+ 	
+
 <li><span class="math inline">\(4x^{3}+2x^{2}-2x=0\)</span></li>
+
+
+ 	
+
 <li><span class="math inline">\(-x^{3}-3x^{2}+x+3=0\)</span></li>
+
+
+ 	
+
 <li><span class="math inline">\(x^{3}-7x-6=0\)</span></li>
+
+
 </ol>
-<div id="answers-1" class="section level2">
-<div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answers-7551">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-8336" aria-expanded="false" aria-controls="body-answers-8336" >Answers</button>
-</p>
-<div id="body-answers-8336" class="accordion-collapse collapse " aria-labelledby="head-answers-7551">
-<div class="accordion-body">
-<p><span class="math inline">\(\quad\)</span>a. <span class="math inline">\(x=-1,\ x=-5\)</span></p>
+
+
+
+
+[transcript title="Answers"]
+
+<span class="math inline">\(\quad\)</span>a. <span class="math inline">\(x=-1,\ x=-5\)</span>
+
+
 <ol style="list-style-type: lower-alpha;" start="2">
+ 	
+
 <li><span class="math inline">\(x=0,\ x=-1,\ x=1/2\)</span></li>
+
+
+ 	
+
 <li><span class="math inline">\(x=1,\ x=-3,\ x=-1\)</span></li>
+
+
+ 	
+
 <li><span class="math inline">\(x=-1,\ x=-2,\ x=3\)</span></li>
+
+
 </ol>
-</div></div></div>
-</div>
-</div>
-<p><a class="mathspdf" href="https://rmitlibrary.github.io/cdn/learninglab/docs/ES5_Cubic_Equations_Polynomial_long_division.pdf" type="application/pdf">Download this page, ES5: Cubic Equations Polynomial Long Division <span class="file-link-info">(PDF 300KB) </span></a></p>
-<p>Images on this page by RMIT, licensed under CC BY-NC 4.0.</p>
+
+
+[/transcript]
+
+[attribution id="my-id"][/attribution] --></p>
 			<nav class="btn-nav-container" aria-label="Previous and next links">
 <h2 class="btn-nav-prev">
     <a href="../es4-quadratic-formula/index.html">
-        <span aria-hidden="true">ES4 Quadratic formula</span>
-        <span class="visually-hidden">Previous page: ES4 Quadratic formula</span>
+        <span aria-hidden="true">Quadratic formula</span>
+        <span class="visually-hidden">Previous page: Quadratic formula</span>
     </a>
 </h2>
     
@@ -533,8 +726,8 @@ list.querySelectorAll('h4').forEach(h4 => {
 
 <h2 class="btn-nav-next">
     <a href="../es6-exponential-equations/index.html">
-        <span aria-hidden="true">ES6 Exponential equations</span>
-        <span class="visually-hidden">Next page: ES6 Exponential equations</span>
+        <span aria-hidden="true">Exponential equations</span>
+        <span class="visually-hidden">Next page: Exponential equations</span>
     </a>
 </h2>
 	

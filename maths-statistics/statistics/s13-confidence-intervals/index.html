@@ -5,11 +5,7 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- wp_head -->
-	<title>S13 Confidence intervals - Learning Lab</title>
-	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	
-		
 		<meta name="description" content="We can use the mean of a sample to estimate the mean of the entire population. It is more appropriate to give an interval estimate rather than a point estimate. We use the statistics we obtain from samples to make inferences or estimates about the population from which the sample was drawn. For example: A" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
@@ -17,18 +13,18 @@
 		<meta property="og:locale" content="en_US" />
 		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="S13 Confidence intervals - Learning Lab" />
+		<meta property="og:title" content="S13: Confidence intervals - Learning Lab" />
 		<meta property="og:description" content="We can use the mean of a sample to estimate the mean of the entire population. It is more appropriate to give an interval estimate rather than a point estimate. We use the statistics we obtain from samples to make inferences or estimates about the population from which the sample was drawn. For example: A" />
 		<meta property="og:url" content="https://learninglab.rmit.edu.au/maths-statistics/statistics/s13-confidence-intervals/" />
 		<meta property="article:published_time" content="2023-10-16T05:34:44+00:00" />
-		<meta property="article:modified_time" content="2024-08-21T23:29:22+00:00" />
+		<meta property="article:modified_time" content="2024-11-25T22:56:21+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="S13 Confidence intervals - Learning Lab" />
+		<meta name="twitter:title" content="S13: Confidence intervals - Learning Lab" />
 		<meta name="twitter:description" content="We can use the mean of a sample to estimate the mean of the entire population. It is more appropriate to give an interval estimate rather than a point estimate. We use the statistics we obtain from samples to make inferences or estimates about the population from which the sample was drawn. For example: A" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s13-confidence-intervals\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/#listItem","position":3,"name":"Statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s13-confidence-intervals\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s13-confidence-intervals\/#listItem","position":4,"name":"S13 Confidence intervals","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s13-confidence-intervals\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s13-confidence-intervals\/","name":"S13 Confidence intervals - Learning Lab","description":"We can use the mean of a sample to estimate the mean of the entire population. It is more appropriate to give an interval estimate rather than a point estimate. We use the statistics we obtain from samples to make inferences or estimates about the population from which the sample was drawn. For example: A","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s13-confidence-intervals\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:44+00:00","dateModified":"2024-08-21T23:29:22+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s13-confidence-intervals\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/#listItem","position":3,"name":"Statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s13-confidence-intervals\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s13-confidence-intervals\/#listItem","position":4,"name":"S13: Confidence intervals","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s13-confidence-intervals\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s13-confidence-intervals\/","name":"S13: Confidence intervals - Learning Lab","description":"We can use the mean of a sample to estimate the mean of the entire population. It is more appropriate to give an interval estimate rather than a point estimate. We use the statistics we obtain from samples to make inferences or estimates about the population from which the sample was drawn. For example: A","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s13-confidence-intervals\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:44+00:00","dateModified":"2024-11-25T22:56:21+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
-		<!-- All in One SEO -->
+		
 
 
 <script>
@@ -309,7 +305,7 @@ This should be moved to a stylesheet once style is determined. -->
 <!-- START SIDEBAR NAV PANEL -->
 <nav class="right-nav" aria-label="Section Menu">
 
-<h2><a href="../../index.html">Maths and statistics</a></h2><h3><a href="../index.html">Statistics</a></h3><ul><li><a href="../s1-summation-notation/index.html">S1 Summation notation</a></li><li><a href="../s2-data/index.html">S2 Data</a></li><li><a href="../s3-mean-mode-median/index.html">S3 Mean, mode, median</a></li><li><a href="../s4-measures-spread/index.html">S4 Measures of spread</a></li><li><a href="../s5-probability-rules/index.html">S5 Probability rules</a></li><li><a href="../s6-sample-spaces/index.html">S6 Sample spaces</a></li><li><a href="../s7-conditional-probability/index.html">S7 Conditional probability</a></li><li><a href="../s8-binomial-probability/index.html">S8 Binomial probability</a></li><li><a href="../s9-normal-distributions/index.html">S9 Normal distributions</a></li><li><a href="../s10-standard-normal-distribution/index.html">S10 Standard normal distribution</a></li><li><a href="../s11-probability-and-normal-distribution/index.html">S11 Probability and the normal distribution</a></li><li><a href="../s12-sampling-distributions/index.html">S12 Sampling distributions</a></li><li><a href="index.html" class="selected"  aria-current="page">S13 Confidence intervals</a><li><a href="../s14-hypothesis-testing/index.html">S14 Hypothesis testing</a></li><li><a href="../s15-t-tests/index.html">S15 T-tests</a></li><li><a href="../s16-p-value/index.html">S16 P-value</a></li><li><a href="../s17-one-sided-tests/index.html">S17 One sided tests</a></li><li><a href="../s18-tests-proportion/index.html">S18 Tests of proportion</a></li><li><a href="../s19-poisson-distribution/index.html">S19 Poisson distribution</a></li></ul></nav>
+<h2><a href="../../index.html">Maths and statistics</a></h2><h3><a href="../index.html">Statistics</a></h3><ul><li><a href="../s1-summation-notation/index.html">Summation notation</a></li><li><a href="../s2-data/index.html">Data</a></li><li><a href="../s3-mean-mode-median/index.html">Mean, mode, median</a></li><li><a href="../s4-measures-spread/index.html">Measures of spread</a></li><li><a href="../s5-probability-rules/index.html">Probability rules</a></li><li><a href="../s6-sample-spaces/index.html">Sample spaces</a></li><li><a href="../s7-conditional-probability/index.html">Conditional probability</a></li><li><a href="../s8-binomial-probability/index.html">Binomial probability</a></li><li><a href="../s9-normal-distributions/index.html">Normal distributions</a></li><li><a href="../s10-standard-normal-distribution/index.html">Standard normal distribution</a></li><li><a href="../s11-probability-and-normal-distribution/index.html">Probability and the normal distribution</a></li><li><a href="../s12-sampling-distributions/index.html">Sampling distributions</a></li><li><a href="index.html" class="selected"  aria-current="page">Confidence intervals</a><li><a href="../s14-hypothesis-testing/index.html">Hypothesis testing</a></li><li><a href="../s15-t-tests/index.html">T-tests</a></li><li><a href="../s16-p-value/index.html">P-value</a></li><li><a href="../s17-one-sided-tests/index.html">One sided tests</a></li><li><a href="../s18-tests-proportion/index.html">Tests of proportion</a></li><li><a href="../s19-poisson-distribution/index.html">Poisson distribution</a></li></ul></nav>
 <!-- END SIDEBAR NAV PANEL -->
 
 
@@ -352,10 +348,9 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li><a href="../index.html">Statistics</a></li>
 </ul>
 </nav>            <a id="main-content"></a>
-            <h1 class="margin-top-zero">S13 Confidence intervals</h1>
-            <p><span class="marginnote"><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-s13.png" alt="" /></span></p>
+            <h1 class="margin-top-zero">S13: Confidence intervals</h1>
+            <p><!--<span class="marginnote"><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-s13.png" alt="" /></span> --></p>
 <p class="lead">We can use the mean of a sample to estimate the mean of the entire population. It is more appropriate to give an interval estimate rather than a point estimate.</p>
-<div id="introduction" class="section level1">
 <p>We use the statistics we obtain from samples to make inferences or estimates about the population from which the sample was drawn.</p>
 <p>For example:</p>
 <ol style="list-style-type: decimal;">
@@ -363,19 +358,22 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li>Surveys of consumers are used to determine the preferred brands in the population.</li>
 <li>Polls are conducted on samples of the voting population before elections to predict the result of the election.</li>
 </ol>
-</div>
-<div id="confidence-intervals" class="section level1">
 <h2>Confidence intervals</h2>
 <p>Together with our estimate of the population parameter it is often helpful to provide a confidence interval. After constructing a confidence interval we are able to make statements such as: “we are <span class="math inline">\(95\)</span>% confident that the true mean weight of boxes of cocobix cereal labelled <span class="math inline">\(450\)</span>g is in the interval <span class="math inline">\([449.5,453.8]\)</span>”.</p>
 <p>For large samples (<span class="math inline">\(n\geq30\)</span>) we can use the mean of a sample, <span class="math inline">\(\overline{x}\)</span>, to find an interval estimate for the mean of the population, <span class="math inline">\(\mu\)</span>, using the formula:</p>
 <p><span class="math display">\[\begin{align*} \mu &amp; =\overline{x}\pm z\times\frac{\sigma}{\sqrt{n}}\qquad\textrm{or}\qquad\mu=\overline{x}\pm z\times\frac{s}{\sqrt{n}}\qquad\textrm{when}\;\sigma\;\textrm{is not known} \end{align*}\]</span></p>
 <p>The value of <span class="math inline">\(z\)</span> is determined by the level of confidence and can be found using normal tables, a graphics calculator or an online statistics program.</p>
-<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-s13.png" alt="95% confidence for a standard normal distribution" /></p>
+<figure class="centre img-width-md ">
+
+<img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-s13.png" alt="95% confidence for a standard normal distribution" />
+
+<figcaption>Confidence intervals, by <a href='https://rmit.edu.au/'>RMIT</a>, licensed under <a href='https://creativecommons.org/licenses/by/4.0/'>CC BY-NC 4.0</a></figcaption>
+
+</figure>
+
 <p>For a <span class="math inline">\(95\)</span>% confidence interval, <span class="math inline">\(z=1.96\)</span></p>
 <p>For a <span class="math inline">\(99\)</span>% confidence interval, <span class="math inline">\(z=2.575\)</span></p>
 <p>For a <span class="math inline">\(90\)</span>% confidence interval, <span class="math inline">\(z=1.645\)</span></p>
-</div>
-<div id="example" class="section level1">
 <h3>Example</h3>
 <p><span class="math inline">\(36\)</span> of a certain type of fish were caught in Port Phillip Bay. This sample had a mean length of <span class="math inline">\(30\)</span> cm. and a standard deviation of <span class="math inline">\(3\)</span> cm.</p>
 <ol style="list-style-type: lower-alpha;">
@@ -387,8 +385,6 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li><span class="math inline">\(95\)</span>% confidence interval for <span class="math inline">\(\mu\)</span> <span class="math display">\[\begin{align*} &amp; =\overline{x}\pm z\times\frac{s}{\sqrt{n}}\\ &amp; =30\pm1.96\times\frac{3}{\sqrt{36}}\\ &amp; =30\pm0.98\\ &amp; =\left[29.02,30.98\right] \end{align*}\]</span> We can state with <span class="math inline">\(95\)</span>% confidence that the mean of the entire population of fish will be between <span class="math inline">\(29.02\)</span>cm and <span class="math inline">\(30.98\)</span>cm</li>
 <li><span class="math inline">\(98\)</span>% confidence interval for <span class="math inline">\(\mu\)</span> <span class="math display">\[\begin{align*} &amp; =\overline{x}\pm z\times\frac{s}{\sqrt{n}}\\ &amp; =30\pm2.326\times\frac{3}{\sqrt{36}}\\ &amp; =30\pm1.163\\ &amp; =\left[28.84,31.16\right] \end{align*}\]</span> We can state with <span class="math inline">\(98\)</span>% confidence that the mean of the entire population of fish will be between <span class="math inline">\(28.84\)</span> cm and <span class="math inline">\(31.16\)</span> cm.</li>
 </ol>
-</div>
-<div id="exercises" class="section level1">
 <h2>Exercises</h2>
 <p><strong>1. </strong>In an effort to improve appointment scheduling, a doctor agreed to estimate the average time spent with each patient. A random sample of <span class="math inline">\(49\)</span> patients yielded a mean of <span class="math inline">\(30\)</span> minutes and a standard deviation of <span class="math inline">\(7\)</span> minutes.</p>
 <ol style="list-style-type: lower-alpha;">
@@ -396,10 +392,10 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li>Construct an <span class="math inline">\(80\)</span>% confidence interval for the true mean.</li>
 </ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-1-1941">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-1-2341" aria-expanded="false" aria-controls="body-answer-1-2341" >Answer 1</button>
+<p class="accordion-header" id="head-answer-1-8808">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-1-9610" aria-expanded="false" aria-controls="body-answer-1-9610" >Answer 1</button>
 </p>
-<div id="body-answer-1-2341" class="accordion-collapse collapse " aria-labelledby="head-answer-1-1941">
+<div id="body-answer-1-9610" class="accordion-collapse collapse " aria-labelledby="head-answer-1-8808">
 <div class="accordion-body">
 <p>(a) <span class="math inline">\([28.04,31.96]\quad\)</span>(b) <span class="math inline">\([28.72,31.28]\)</span></p>
 </div></div></div>
@@ -409,39 +405,36 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li>In two of the suburbs of Cityville, Subtown and Tubtown, the mean weights for males were found to be <span class="math inline">\(80\)</span>kg and <span class="math inline">\(88\)</span>kg repectively. Comment on these results.</li>
 </ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-2-8555">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-2-7853" aria-expanded="false" aria-controls="body-answer-2-7853" >Answer 2</button>
+<p class="accordion-header" id="head-answer-2-6297">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-2-9959" aria-expanded="false" aria-controls="body-answer-2-9959" >Answer 2</button>
 </p>
-<div id="body-answer-2-7853" class="accordion-collapse collapse " aria-labelledby="head-answer-2-8555">
+<div id="body-answer-2-9959" class="accordion-collapse collapse " aria-labelledby="head-answer-2-6297">
 <div class="accordion-body">
 <p>(a) <span class="math inline">\(\left[79.91,86.09\right]\quad\)</span>(b) The mean weight for Subtown men is within the expected range but men who live in Tubtown appear to be extremely heavy compared with the general population. This may reflect lifestyle differences or a failure to select a random and representative sample.</p>
 </div></div></div>
 <p><strong>3.</strong> A market research company conducted a randomised survey of <span class="math inline">\(50\)</span> regular smokers to find the amount spent on cigarettes per week. They found that the smokers spent on average $ <span class="math inline">\(22\)</span> each week and the standard deviation was $ <span class="math inline">\(4.50\)</span>. Using a <span class="math inline">\(95\)</span>% level of confidence calculate the confidence interval for the true mean amount spent on cigarettes by regular smokers.</p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-3-9386">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-3-8219" aria-expanded="false" aria-controls="body-answer-3-8219" >Answer 3</button>
+<p class="accordion-header" id="head-answer-3-4388">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-3-1665" aria-expanded="false" aria-controls="body-answer-3-1665" >Answer 3</button>
 </p>
-<div id="body-answer-3-8219" class="accordion-collapse collapse " aria-labelledby="head-answer-3-9386">
+<div id="body-answer-3-1665" class="accordion-collapse collapse " aria-labelledby="head-answer-3-4388">
 <div class="accordion-body">
 <p><span class="math inline">\([20.75,23.25]\)</span></p>
 </div></div></div>
 <p><strong>4.</strong> After randomly sampling <span class="math inline">\(400\)</span> individuals and obtaining a sample mean of <span class="math inline">\(56.5\)</span> a research company was able to claim they were <span class="math inline">\(90\)</span>% certain that the true mean of the population was between <span class="math inline">\(56.089\)</span> and <span class="math inline">\(56.911\)</span>. What was the standard deviation of the sample?</p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-4-7732">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-4-4606" aria-expanded="false" aria-controls="body-answer-4-4606" >Answer 4</button>
+<p class="accordion-header" id="head-answer-4-8984">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-4-8545" aria-expanded="false" aria-controls="body-answer-4-8545" >Answer 4</button>
 </p>
-<div id="body-answer-4-4606" class="accordion-collapse collapse " aria-labelledby="head-answer-4-7732">
+<div id="body-answer-4-8545" class="accordion-collapse collapse " aria-labelledby="head-answer-4-8984">
 <div class="accordion-body">
 <p>5</p>
 </div></div></div>
-</div>
-<p><a class="mathspdf" href="https://rmitlibrary.github.io/cdn/learninglab/docs/S13_Confidence_Intervals.pdf" type="application/pdf">Download this page: S13_Confidence_Intervals <span class="file-link-info">(PDF 1.907KB)</span></a></p>
-<p>Images on this page by RMIT, licensed under CC BY-NC 4.0.</p>
 			<nav class="btn-nav-container" aria-label="Previous and next links">
 <h2 class="btn-nav-prev">
     <a href="../s12-sampling-distributions/index.html">
-        <span aria-hidden="true">S12 Sampling distributions</span>
-        <span class="visually-hidden">Previous page: S12 Sampling distributions</span>
+        <span aria-hidden="true">Sampling distributions</span>
+        <span class="visually-hidden">Previous page: Sampling distributions</span>
     </a>
 </h2>
     
@@ -449,8 +442,8 @@ list.querySelectorAll('h4').forEach(h4 => {
 
 <h2 class="btn-nav-next">
     <a href="../s14-hypothesis-testing/index.html">
-        <span aria-hidden="true">S14 Hypothesis testing</span>
-        <span class="visually-hidden">Next page: S14 Hypothesis testing</span>
+        <span aria-hidden="true">Hypothesis testing</span>
+        <span class="visually-hidden">Next page: Hypothesis testing</span>
     </a>
 </h2>
 	

@@ -5,11 +5,7 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- wp_head -->
-	<title>D11 Small changes and approximations - Learning Lab</title>
-	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	
-		
 		<meta name="description" content="Sometimes a small change in one variable can render a big change in a larger value. For example, a small increase (or error) in the radius of a sphere means a lot more volume is added! If you estimate the small error in one variable, you can calculate the significant change in a larger variable" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
@@ -17,18 +13,18 @@
 		<meta property="og:locale" content="en_US" />
 		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="D11 Small changes and approximations - Learning Lab" />
+		<meta property="og:title" content="D11: Small changes and approximations - Learning Lab" />
 		<meta property="og:description" content="Sometimes a small change in one variable can render a big change in a larger value. For example, a small increase (or error) in the radius of a sphere means a lot more volume is added! If you estimate the small error in one variable, you can calculate the significant change in a larger variable" />
 		<meta property="og:url" content="https://learninglab.rmit.edu.au/maths-statistics/differentiation/d11-small-changes-and-approximations/" />
 		<meta property="article:published_time" content="2023-10-16T05:34:57+00:00" />
-		<meta property="article:modified_time" content="2024-08-21T05:57:48+00:00" />
+		<meta property="article:modified_time" content="2024-11-25T06:22:06+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="D11 Small changes and approximations - Learning Lab" />
+		<meta name="twitter:title" content="D11: Small changes and approximations - Learning Lab" />
 		<meta name="twitter:description" content="Sometimes a small change in one variable can render a big change in a larger value. For example, a small increase (or error) in the radius of a sphere means a lot more volume is added! If you estimate the small error in one variable, you can calculate the significant change in a larger variable" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d11-small-changes-and-approximations\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/#listItem","position":3,"name":"Differentiation","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d11-small-changes-and-approximations\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d11-small-changes-and-approximations\/#listItem","position":4,"name":"D11 Small changes and approximations","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d11-small-changes-and-approximations\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d11-small-changes-and-approximations\/","name":"D11 Small changes and approximations - Learning Lab","description":"Sometimes a small change in one variable can render a big change in a larger value. For example, a small increase (or error) in the radius of a sphere means a lot more volume is added! If you estimate the small error in one variable, you can calculate the significant change in a larger variable","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d11-small-changes-and-approximations\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:57+00:00","dateModified":"2024-08-21T05:57:48+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d11-small-changes-and-approximations\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/#listItem","position":3,"name":"Differentiation","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d11-small-changes-and-approximations\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d11-small-changes-and-approximations\/#listItem","position":4,"name":"D11: Small changes and approximations","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d11-small-changes-and-approximations\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d11-small-changes-and-approximations\/","name":"D11: Small changes and approximations - Learning Lab","description":"Sometimes a small change in one variable can render a big change in a larger value. For example, a small increase (or error) in the radius of a sphere means a lot more volume is added! If you estimate the small error in one variable, you can calculate the significant change in a larger variable","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d11-small-changes-and-approximations\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:57+00:00","dateModified":"2024-11-25T06:22:06+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
-		<!-- All in One SEO -->
+		
 
 
 <script>
@@ -309,7 +305,7 @@ This should be moved to a stylesheet once style is determined. -->
 <!-- START SIDEBAR NAV PANEL -->
 <nav class="right-nav" aria-label="Section Menu">
 
-<h2><a href="../../index.html">Maths and statistics</a></h2><h3><a href="../index.html">Differentiation</a></h3><ul><li><a href="../d1-limit-function/index.html">D1 Limit of a function</a></li><li><a href="../d2-gradients-tangents-and-derivatives/index.html">D2 Gradients, tangents and derivatives</a></li><li><a href="../d3-differentiation-first-principles/index.html">D3 Differentiation from first principles</a></li><li><a href="../d4-rules-differentiation/index.html">D4 Rules for differentiation</a></li><li><a href="../d5-chain-rule/index.html">D5 The chain rule</a></li><li><a href="../d6-product-rule/index.html">D6 The product rule</a></li><li><a href="../d7-quotient-rule/index.html">D7 The quotient rule</a></li><li><a href="../d8-maxima-and-minima/index.html">D8 Maxima and minima</a></li><li><a href="../d9-curve-sketching/index.html">D9 Curve sketching</a></li><li><a href="../d10-rates-change/index.html">D10 Rates of change</a></li><li><a href="index.html" class="selected"  aria-current="page">D11 Small changes and approximations</a><li><a href="../d12-implicit-differentiation/index.html">D12 Implicit differentiation</a></li><li><a href="../d13-partial-differentiation/index.html">D13 Partial differentiation</a></li><li><a href="../d14-higher-order-derivatives/index.html">D14 Higher Order Derivatives</a></li><li><a href="../d15-logarithmic-differentiation/index.html">D15 Logarithmic differentiation</a></li></ul></nav>
+<h2><a href="../../index.html">Maths and statistics</a></h2><h3><a href="../index.html">Differentiation</a></h3><ul><li><a href="../d1-limit-function/index.html">Limit of a function</a></li><li><a href="../d2-gradients-tangents-and-derivatives/index.html">Gradients, tangents and derivatives</a></li><li><a href="../d3-differentiation-first-principles/index.html">Differentiation from first principles</a></li><li><a href="../d4-rules-differentiation/index.html">Rules for differentiation</a></li><li><a href="../d5-chain-rule/index.html">The chain rule</a></li><li><a href="../d6-product-rule/index.html">The product rule</a></li><li><a href="../d7-quotient-rule/index.html">The quotient rule</a></li><li><a href="../d8-maxima-and-minima/index.html">Maxima and minima</a></li><li><a href="../d9-curve-sketching/index.html">Curve sketching</a></li><li><a href="../d10-rates-change/index.html">Rates of change</a></li><li><a href="index.html" class="selected"  aria-current="page">Small changes and approximations</a><li><a href="../d12-implicit-differentiation/index.html">Implicit differentiation</a></li><li><a href="../d13-partial-differentiation/index.html">Partial differentiation</a></li><li><a href="../d14-higher-order-derivatives/index.html">Higher order derivatives</a></li><li><a href="../d15-logarithmic-differentiation/index.html">Logarithmic differentiation</a></li></ul></nav>
 <!-- END SIDEBAR NAV PANEL -->
 
 
@@ -352,8 +348,14 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li><a href="../index.html">Differentiation</a></li>
 </ul>
 </nav>            <a id="main-content"></a>
-            <h1 class="margin-top-zero">D11 Small changes and approximations</h1>
-            <p><span class="marginnote"><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-d11-00.png" alt="Tangent to curve and its gradient" /> </span></p>
+            <h1 class="margin-top-zero">D11: Small changes and approximations</h1>
+            <figure class="float-right ">
+
+<img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-d11-00.png" alt="Tangent to curve and its gradient" />
+
+
+</figure>
+
 <p class="lead">Sometimes a small change in one variable can render a big change in a larger value. For example, a small increase (or error) in the radius of a sphere means a lot more volume is added! If you estimate the small error in one variable, you can calculate the significant change in a larger variable by using derivatives.</p>
 <p>The curve of any differentiable function will appear linear if observed over a sufficiently limited interval. If <span class="math inline">\(a\)</span> is a point within that interval the tangent line through <span class="math inline">\((a,f(a))\)</span> provides a reasonable approximation of values of <span class="math inline">\(f(x)\)</span> providing <span class="math inline">\(x\)</span> remains near <span class="math inline">\(a.\)</span> A function that is differentiable at a specific point <span class="math inline">\((a,f(a))\)</span> has a tangent line defined by the equation</p>
 <p><span class="math display">\[ y=f(a)+f'(a)(x-a) \]</span></p>
@@ -363,36 +365,40 @@ list.querySelectorAll('h4').forEach(h4 => {
 <h3>Example</h3>
 <p>Consider the graph of the function <span class="math inline">\(f(x)=e^{2-x}\)</span> near <span class="math inline">\(x=2.\)</span></p>
 <p>Note that <span class="math inline">\(f'(x)=-e^{2-x}\)</span></p>
-<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-d11-01.png" alt="graph of exponential function showing the tangent at x=2 and it's equation which is y=3-x in this case " /></p>
+<figure class="img-width-sm ">
+
+<img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-d11-01.png" alt="graph of exponential function showing the tangent at x=2 and it's equation which is y=3-x in this case." />
+
+
+</figure>
+
 <p>The tangent line at <span class="math inline">\(x=2\)</span> is given by: <span class="math display">\[\begin{align*} y &amp; =f(2)+f'(2)(x-2)\\ y &amp; =1+(-1)(x-2)\\ y &amp; =3-x \end{align*}\]</span></p>
 <p>For values of <span class="math inline">\(x\)</span> near 2 the graph of the tangent line is close to the graph of <span class="math inline">\(f(x)=e^{2-x}\)</span> and the tangent line can be used to approximate <span class="math inline">\(f(x).\)</span></p>
 <p>If <span class="math inline">\(x=1.9\)</span> , <span class="math inline">\(f(1.9)=e^{(2-1.9)}\approx1.105\)</span>. At <span class="math inline">\(x=1.9\)</span> on the tangent line the value of <span class="math inline">\(y\)</span> is <span class="math inline">\(y=3-1.9=1.1\)</span></p>
 <p>If <span class="math inline">\(x=2.05\)</span> , <span class="math inline">\(f(2.05)\approx0.951\)</span>. At <span class="math inline">\(x=2.05\)</span> on the tangent line the value of <span class="math inline">\(y\)</span> is <span class="math inline">\(0.95\)</span></p>
-</div>
-<div id="example-1" class="section level2">
 <h3>Example</h3>
 <p><span class="math display">\[\begin{align*} f(x)=\sqrt[3]{x} &amp; \Rightarrow f'(x)=\frac{x^{-\frac{2}{3}}}{3}\\ f(8)=\sqrt[3]{8}=2 &amp; \ and\ f'(8)=\frac{8^{-\frac{2}{3}}}{3}=\frac{1}{12}\\ L(x) &amp; =f(a)+f'(a)(x-a)\\ L(7.98) &amp; =2+\frac{1}{12}(7.98-8)\\ &amp; =1.998 \end{align*}\]</span></p>
-</div>
-<div id="differentials" class="section level2">
 <h2>Differentials</h2>
 <p><span class="math inline">\(\triangle x\)</span> is used to indicate a change in <span class="math inline">\(x\)</span>. <span class="math inline">\(\triangle y\)</span> is used to indicate a change in <span class="math inline">\(y\)</span>. <span class="math inline">\(\triangle x\)</span> and <span class="math inline">\(\triangle y\)</span> are called differentials. Differentials can be used to estimate the amount a function will change as a result of a small change in <span class="math inline">\(x\)</span>.</p>
-<p><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-d11-02.png" alt="showing tangent to curve and its gradient dy/dx " /></p>
+<figure class="img-width-sm ">
+
+<img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-d11-02.png" alt="showing tangent to curve and its gradient dy/dx." />
+
+
+</figure>
+
 <p>Consider the graph of the function <span class="math inline">\(y=f(x)\)</span> above and the tangent to the function at the point P. As illustrated in the diagram for values of <span class="math inline">\(x\)</span> close to <span class="math inline">\(1\)</span> the slope of the tangent at <span class="math inline">\(1\)</span>, <span class="math inline">\(f'(1),\)</span> is reasonably approximated by <span class="math inline">\(\frac{\triangle y}{\triangle x}\)</span></p>
 <p><span class="math display">\[\begin{align*} \textrm{More generally, as}\triangle x\rightarrow0,\frac{\triangle y}{\triangle x} &amp; \rightarrow\frac{dy}{dx}\\ \textrm{For small values of $\triangle$ x: }\triangle y &amp; \approx\frac{dy}{dx}\triangle x \end{align*}\]</span></p>
-</div>
-<div id="examples" class="section level2">
 <h3>Examples</h3>
 <ol style="list-style-type: decimal;">
-<li> The side of a square has length <span class="math inline">\(5\,cm.\)</span> How much will the area of the square increase when the side length is increased by <span class="math inline">\(0.01\,cm\)</span>?</li>
+<li> The side of a square has length <span class="math inline">\(5\,cm.\)</span> How much will the area of the square increase when the side length is increased by <span class="math inline">\(0.01\,cm\)</span>?</li>
 </ol>
 <p>Let the area of the square be<span class="math inline">\(A\)</span> and let the length of a side be<span class="math inline">\(x\,cm\)</span>. Then <span class="math inline">\(A=x^{2}\)</span> and <span class="math inline">\(\frac{dA}{dx}=2x.\)</span> <span class="math display">\[\begin{align*} \triangle A &amp; \approx\frac{dA}{dx}\triangle x\\ &amp; =2x\triangle x\\ &amp; =2\times5\times0.01\\ &amp; =0.1 \end{align*}\]</span> The increase in area is approximately <span class="math inline">\(0.1\,cm^{2}\)</span>.</p>
 <ol style="list-style-type: decimal;" start="2">
-<li> A <span class="math inline">\(2\)</span>% error is made in measuring the radius of a sphere. Find the percentage error in the volume?</li>
+<li> A <span class="math inline">\(2\)</span>% error is made in measuring the radius of a sphere. Find the percentage error in the volume?</li>
 </ol>
 <p>Let the radius be <span class="math inline">\(r\)</span> and the volume be <span class="math inline">\(V\)</span> then <span class="math inline">\(\Delta r=0.02r.\)</span> Since the volume of the sphere is given by <span class="math inline">\(V=\frac{4}{3}\pi r^{3},\)</span> <span class="math inline">\(\frac{dV}{dr}=4\pi r^{2}.\)</span></p>
 <p>First find <span class="math inline">\(\triangle V:\)</span> <span class="math display">\[\begin{align*} \triangle V &amp; \approx\frac{dV}{dr}\triangle r\\ &amp; =4\pi r^{2}\triangle r\\ &amp; =4\pi r^{2}\times0.02r\\ &amp; =0.08\pi r^{3} \end{align*}\]</span> The percentage error in the volume: <span class="math display">\[\begin{align*} \textrm{Percentage error in $V$ } &amp; \approx\frac{\Delta V}{V}\times100\%\\ &amp; =\frac{0.08\pi r^{3}}{\frac{4}{3}\pi r^{3}}\times100\%\\ &amp; =\frac{0.08}{\frac{4}{3}}\times100\%\\ &amp; =6\%. \end{align*}\]</span> The percentage error in the volume is approximately 6%.</p>
-</div>
-<div id="exercises" class="section level2">
 <h2>Exercises</h2>
 <ol style="list-style-type: decimal;">
 <li>Use linear approximation of the function <span class="math inline">\(f(x)=\sqrt{x}\)</span> to find the approximate value of <span class="math inline">\(\sqrt{16.1}\)</span></li>
@@ -402,33 +408,29 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li>An error of 3% is made in measuring the radius of a sphere. Find the percentage error in volume.</li>
 </ol>
 <p>Hint: useful formula</p>
-<p>Surface area of sphere , <span class="math inline">\(A=4\pi r^{2}\)</span></p>
-<p>Volume of cylinder , <span class="math inline">\(V=\pi r^{2}h\)</span></p>
-<p>Volume of sphere , <span class="math inline">\(V=\frac{4}{3}\pi r^{3}\)</span></p>
-</div>
-<div id="answers" class="section level2">
+<p>Surface area of sphere, <span class="math inline">\(A=4\pi r^{2}\)</span></p>
+<p>Volume of cylinder, <span class="math inline">\(V=\pi r^{2}h\)</span></p>
+<p>Volume of sphere, <span class="math inline">\(V=\frac{4}{3}\pi r^{3}\)</span></p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answers-5129">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-9308" aria-expanded="false" aria-controls="body-answers-9308" >Answers</button>
+<p class="accordion-header" id="head-answers-4587">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-2569" aria-expanded="false" aria-controls="body-answers-2569" >Answers</button>
 </p>
-<div id="body-answers-9308" class="accordion-collapse collapse " aria-labelledby="head-answers-5129">
+<div id="body-answers-2569" class="accordion-collapse collapse " aria-labelledby="head-answers-4587">
 <div class="accordion-body">
 <ol style="list-style-type: decimal;">
-<li>   4.0125</li>
-<li>    0.515</li>
-<li>    25.13 cm<span class="math inline">\(\textrm{$^{2}$ }\)</span></li>
-<li>    5.03cm<span class="math inline">\(^{3}\)</span></li>
-<li>    9%</li>
+<li>   4.0125</li>
+<li>    0.515</li>
+<li>    25.13 cm<span class="math inline">\(\textrm{$^{2}$ }\)</span></li>
+<li>    5.03cm<span class="math inline">\(^{3}\)</span></li>
+<li>    9%</li>
 </ol>
 </div></div></div>
-</div>
-<p><a class="mathspdf" href="https://rmitlibrary.github.io/cdn/learninglab/docs/11_Small_Changes_and_Approximations.pdf">Download this page, D11 Small Changes and Approximations <span class="file-link-info">(PDF 230KB) </span></a></p>
-<p>Images on this page by RMIT, licensed under CC BY-NC 4.0.</p>
+<p class="small" id="my-id">Images on this page by <a href="https://rmit.edu.au/">RMIT</a>, licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC 4.0</a></p>
 			<nav class="btn-nav-container" aria-label="Previous and next links">
 <h2 class="btn-nav-prev">
     <a href="../d10-rates-change/index.html">
-        <span aria-hidden="true">D10 Rates of change</span>
-        <span class="visually-hidden">Previous page: D10 Rates of change</span>
+        <span aria-hidden="true">Rates of change</span>
+        <span class="visually-hidden">Previous page: Rates of change</span>
     </a>
 </h2>
     
@@ -436,8 +438,8 @@ list.querySelectorAll('h4').forEach(h4 => {
 
 <h2 class="btn-nav-next">
     <a href="../d12-implicit-differentiation/index.html">
-        <span aria-hidden="true">D12 Implicit differentiation</span>
-        <span class="visually-hidden">Next page: D12 Implicit differentiation</span>
+        <span aria-hidden="true">Implicit differentiation</span>
+        <span class="visually-hidden">Next page: Implicit differentiation</span>
     </a>
 </h2>
 	

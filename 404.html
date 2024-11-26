@@ -1,192 +1,597 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-        <title>404 - v6</title>
-        <style>
-            #redirect-container {
-                display: none;
-            }
+<!doctype html>
+<html dir="ltr" lang="en-AU" prefix="og: https://ogp.me/ns#" class="nav-fixed">
 
-            #four-oh-container {
-                display: none;
-            }
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+		<meta name="robots" content="max-image-preview:large" />
+		<link rel="canonical" href="index.html" />
+		
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Redirect 404 - Learning Lab" />
+		<meta property="og:url" content="https://learninglab.rmit.edu.au/redirect-404/" />
+		<meta property="article:published_time" content="2024-11-25T22:29:05+00:00" />
+		<meta property="article:modified_time" content="2024-11-25T22:29:05+00:00" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Redirect 404 - Learning Lab" />
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/redirect-404\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/redirect-404\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/redirect-404\/#listItem","position":2,"name":"Redirect 404","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/redirect-404\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/redirect-404\/","name":"Redirect 404 - Learning Lab","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/redirect-404\/#breadcrumblist"},"datePublished":"2024-11-25T22:29:05+00:00","dateModified":"2024-11-25T22:29:05+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
+		</script>
+		
+
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$','$'],['\\(','\\)']], 
+    processEscapes: true
+  },
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore|editor-rich-text'
+  }
+};
+
+</script>
+<link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
+
+
+
+
+<link rel='stylesheet' id='picostrap-styles-css' href='https://learninglab.rmit.edu.au/wp-content/themes/picostrap5-child-base/css-output/bundle.css?ver=849' media='all' />
+ 	<!-- /wp_head -->
+
+    
+    
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="https://www.rmit.edu.au/etc.clientlibs/rmit/clientlibs/clientlib-site/resources/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta name="author" content="RMIT Library">
+
+    <meta name="geo.position" content="-37.807778, 144.963333">
+    <meta name="geo.placename" content="Melbourne">
+    <meta name="geo.region" content="AU">
+
+    <meta name="dcterms.title" content="Learning Lab">
+    
+    <meta name="dcterms.description" content="The Learning Lab provides foundation skills and study support materials for writing, science and more.">
+    <meta name="dcterms.type" content="Text">
+    <meta name="dcterms.identifier" content="https://learninglab.rmit.edu.au/redirect-404/">
+    <meta name="dcterms.format" content="text/html">
+    <!-- END Additional meta tags not covered by wp_head -->
+
+
+    <!-- START Additional scripts for tracking -->
+
+    <!-- Microsoft Clarity - does hotspot tracking of pages -->
+    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+
+    <!-- Google tag - (gtag.js) --> 
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLHPB23GYR');
+    </script>
+
+    <!-- Microsoft Bing - Not sure how useful this is? --> 
+    <meta name="msvalidate.01" content="8E4954E1DFAB7E2F8A92DD0A0BD6ED09">
+
+    <!-- END Additional scripts for tracking -->
+
+    <style>
         </style>
-    </head>
-    <body>
-        <div class="container" id="page-content">
-            <div class="row ">
-                <!-- START content -->
-                <div class="col-xl-8 order-first">
-                    <nav aria-label="breadcrumbs">
-                        <ul class="breadcrumbs">
-                            <li><a href="index.html">Home</a></li>
-                        </ul>
-                    </nav>
 
-                    <a id="main-content"></a>
+    <!-- 
+    DARK MODE javascript
+    This script is placed in the <head> to ensure the theme is set as early as possible,
+    reducing the flash of unstyled content (FOUC). It determines the user's preferred
+    theme (either from local storage or system settings) and applies it immediately.
+    -->
+    <script>
+    (function() {
+        'use strict';
 
-                    <!-- START redirect container -->
-                    <div id="redirect-container">
-                        <h1 class="margin-top-zero">Archived Page - v6</h1>
-                        <p>This content has been updated or relocated. You will be redirected shortly to the latest version. Please update your links if necessary.</p>  
-                    </div>
-                    <!-- END redirect container -->
+        // Function to get the stored theme from local storage
+        const getStoredTheme = () => localStorage.getItem('theme');
 
-                    <!-- START 404 container -->
-                    <div id="four-oh-container">
-                        <h1 class="margin-top-zero">Page not found - v6</h1>
-			            <p>We're sorry, but the page you're looking for doesn't exist.</p>
-                    </div>
-                    <!-- END 404 container -->
+        // Function to determine the preferred theme
+        const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme(); // Retrieve the stored theme
+        if (storedTheme) {
+            return storedTheme; // If a theme is stored, return it
+        }
+        // If no theme is stored, check the system preference for dark mode
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
 
+        // Function to apply the specified theme
+        const setTheme = theme => {
+        if (theme === 'auto') {
+            // If theme is 'auto', set it based on system preference
+            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        } else {
+            // Otherwise, set the theme explicitly
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        };
+
+        // Set the theme based on the preferred theme
+        setTheme(getPreferredTheme());
+    })();
+    </script>
+</head>
+
+<body class="page-template page-template-page-templates page-template-redirect-404 page-template-page-templatesredirect-404-php page page-id-11552 wp-embed-responsive picostrap_header_navbar_position_ picostrap_header_navbar_color_choice_">
+		
+<header>
+<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+<div class="top-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-auto left-nav">
+                <div class="rmit-logo"><span class="visually-hidden">RMIT University logo</span></div>
+				<h2>
+					<!-- Explicitly turn off one bit of text and turn on the other to deal with JAWS bug - https://github.com/alphagov/govuk-frontend/issues/1643 -->
+					<a href="https://learninglab.rmit.edu.au/home">
+						<span aria-hidden="true">Learning lab</span>
+						<span class="visually-hidden">Learning lab homepage</span>
+					</a>
+				</h2>
+            </div>
+            <div class="col">       
+                <ul>
+                    <li class="hide-sm">
+                        <a href="https://www.rmit.edu.au/library">
+							<span aria-hidden="true">Library</span>
+							<span class="visually-hidden">Library homepage</span>
+						</a>
+                    </li>
+                    <li class="search">
+                        <a href="https://learninglab.rmit.edu.au/search/" id="search2">
+                            <div class="search-label">Search</div>
+                            <div class="mag-glass"></div>
+                        </a>
+                    </li>
+                    <li class="menu">
+                        <button id="menu-button" 
+                        class="btn btn-primary collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#context-menu" data-bs-display="static" aria-expanded="false" 
+                        aria-controls="context-menu">Click for main menu</button>
+                    </li>
+                </ul> 
+            </div>   
+        </div>
+    </div>
+</div>
+<nav id="context-menu" class="collapse" aria-label="Main Menu">
+    <div class="container nav-container not-wordpress">
+        <div class="row">
+            <!-- START menu -->
+            <div class="col-xl-8">
+				<div class="accordion accordion-white" id="context-menu-accordion">	
+						<div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-6823">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-6823" aria-expanded="false" aria-controls="accordion-body-6823">University essentials</button>
+</h2>
+<div id="accordion-body-6823" class="accordion-collapse collapse" aria-labelledby="accordion-head-6823">
+<div class="accordion-body"><ul><li class="page_item page-item-3339 page_item_has_children"><a href="https://learninglab.rmit.edu.au/university-essentials/acting-academic-integrity/">Academic integrity</a></li>
+<li class="page_item page-item-3347 page_item_has_children"><a href="https://learninglab.rmit.edu.au/university-essentials/artificial-intelligence-tools/">Artificial intelligence</a></li>
+<li class="page_item page-item-3117 page_item_has_children"><a href="https://learninglab.rmit.edu.au/university-essentials/critical-thinking-and-argument-analysis/">Critical thinking</a></li>
+<li class="page_item page-item-2501 page_item_has_children"><a href="https://learninglab.rmit.edu.au/university-essentials/getting-started/">Getting started with Uni</a></li>
+<li class="page_item page-item-3097 page_item_has_children"><a href="https://learninglab.rmit.edu.au/university-essentials/group-work/">Group work</a></li>
+<li class="page_item page-item-3175 page_item_has_children"><a href="https://learninglab.rmit.edu.au/university-essentials/online-learning-skills/">Online learning skills</a></li>
+<li class="page_item page-item-6844 page_item_has_children"><a href="https://learninglab.rmit.edu.au/university-essentials/study-essentials/">Study essentials</a></li>
+<li class="page_item page-item-3313 page_item_has_children"><a href="https://learninglab.rmit.edu.au/university-essentials/sustainability/">Sustainability</a></li>
+</ul></div></div></div><div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-6825">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-6825" aria-expanded="false" aria-controls="accordion-body-6825">Writing fundamentals</button>
+</h2>
+<div id="accordion-body-6825" class="accordion-collapse collapse" aria-labelledby="accordion-head-6825">
+<div class="accordion-body"><ul><li class="page_item page-item-2522 page_item_has_children"><a href="https://learninglab.rmit.edu.au/writing-fundamentals/academic-style/">Academic style</a></li>
+<li class="page_item page-item-2534 page_item_has_children"><a href="https://learninglab.rmit.edu.au/writing-fundamentals/academic-word-list-tool/">Academic Word List tool</a></li>
+<li class="page_item page-item-3107 page_item_has_children"><a href="https://learninglab.rmit.edu.au/writing-fundamentals/writing-paragraphs/">Writing paragraphs</a></li>
+<li class="page_item page-item-2520 page_item_has_children"><a href="https://learninglab.rmit.edu.au/writing-fundamentals/writing-sentences/">Writing sentences</a></li>
+<li class="page_item page-item-2521"><a href="https://learninglab.rmit.edu.au/writing-fundamentals/spelling-tips/">Spelling tips</a></li>
+<li class="page_item page-item-2855 page_item_has_children"><a href="https://learninglab.rmit.edu.au/writing-fundamentals/writing-workplace/">Writing for the workplace</a></li>
+</ul></div></div></div><div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-6828">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-6828" aria-expanded="false" aria-controls="accordion-body-6828">Assessments</button>
+</h2>
+<div id="accordion-body-6828" class="accordion-collapse collapse" aria-labelledby="accordion-head-6828">
+<div class="accordion-body"><ul><li class="page_item page-item-7168 page_item_has_children"><a href="https://learninglab.rmit.edu.au/assessments/getting-started-with-assignments/">Getting started with assignments</a></li>
+<li class="page_item page-item-2516 page_item_has_children"><a href="https://learninglab.rmit.edu.au/assessments/essays/">Essays</a></li>
+<li class="page_item page-item-2580 page_item_has_children"><a href="https://learninglab.rmit.edu.au/assessments/reflective-writing-1/">Academic reflection</a></li>
+<li class="page_item page-item-7204 page_item_has_children"><a href="https://learninglab.rmit.edu.au/assessments/presentations/">Presentations</a></li>
+<li class="page_item page-item-2578 page_item_has_children"><a href="https://learninglab.rmit.edu.au/assessments/case-studies/">Case studies</a></li>
+<li class="page_item page-item-2544 page_item_has_children"><a href="https://learninglab.rmit.edu.au/assessments/reports/">Reports</a></li>
+<li class="page_item page-item-2536 page_item_has_children"><a href="https://learninglab.rmit.edu.au/assessments/literature-review/">Literature review</a></li>
+<li class="page_item page-item-2617"><a href="https://learninglab.rmit.edu.au/assessments/annotated-bibliographies/">Annotated bibliographies</a></li>
+</ul></div></div></div><div class="accordion-item">
+<h2 class="accordion-header" id="accordion-head-2545">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-2545" aria-expanded="false" aria-controls="accordion-body-2545">Referencing</button>
+</h2>
+<div id="accordion-body-2545" class="accordion-collapse collapse" aria-labelledby="accordion-head-2545">
+<div class="accordion-body"><ul><li class="page_item page-item-3329"><a href="https://learninglab.rmit.edu.au/referencing/using-other-peoples-ideas/">What is referencing?</a></li>
+<li class="page_item page-item-3346"><a href="https://learninglab.rmit.edu.au/referencing/understanding-citations/">Understanding citations</a></li>
+<li class="page_item page-item-3330"><a href="https://learninglab.rmit.edu.au/referencing/when-referencing-isnt-needed/">When referencing isn't needed</a></li>
+<li class="page_item page-item-3331"><a href="https://learninglab.rmit.edu.au/referencing/quoting/">Quoting</a></li>
+<li class="page_item page-item-3337"><a href="https://learninglab.rmit.edu.au/referencing/paraphrasing-4/">Paraphrasing</a></li>
+<li class="page_item page-item-3334"><a href="https://learninglab.rmit.edu.au/referencing/summarising-0/">Summarising</a></li>
+<li class="page_item page-item-3338"><a href="https://learninglab.rmit.edu.au/referencing/synthesising/">Synthesising</a></li>
+<li class="page_item page-item-3333"><a href="https://learninglab.rmit.edu.au/referencing/integrating-ideas-reporting-words/">Integrating ideas with reporting words</a></li>
+<li class="page_item page-item-3336"><a href="https://learninglab.rmit.edu.au/referencing/getting-help-referencing/">Easy Cite and referencing help</a></li>
+</ul></div></div></div>						<!-- START Subject support
+                        special case. Effectively each of the child pages here is a section page. For the nav, however, we want toshow these under the banner of subject support. -->
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-head-subject-support">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-body-subject-support" aria-expanded="false" aria-controls="accordion-body-subject-support">
+								Subject support
+							  	</button>
+							</h2>
+							<div id="accordion-body-subject-support" class="accordion-collapse collapse" aria-labelledby="accordion-head-subject-support" style="">
+								<div class="accordion-body">
+									<ul>
+										<li><a href="https://learninglab.rmit.edu.au/art-and-design/">Art and design</a></li>
+										<li><a href="https://learninglab.rmit.edu.au/chemistry/">Chemistry</a></li>
+										<li><a href="https://learninglab.rmit.edu.au/law-resources/">Legal studies</a></li>
+										<li><a href="https://learninglab.rmit.edu.au/maths-statistics/">Mathematics and statistics</a></li>
+										<li><a href="https://learninglab.rmit.edu.au/resources-nursing/">Nursing</a></li>
+										<li><a href="https://learninglab.rmit.edu.au/physics/">Physics</a></li>
+										<!-- <li><a href="//">Life sciences</a></li> -->
+									</ul>
+								</div>
+							  </div>
+						</div>
+						<!-- END subject support - special case -->
+                </div>	
+            </div>
+            <!-- END menu -->
+
+            <!-- Start theme switcher -->
+				<div id="theme-switcher">
+					<h2 class="h5">Theme</h2>
+					<div class="theme-bg">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" data-bs-theme-value="auto" value="option1">
+							<label class="form-check-label" for="inlineRadio1">System</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" data-bs-theme-value="light" value="option2">
+							<label class="form-check-label" for="inlineRadio2">Light</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" data-bs-theme-value="dark" value="option3">
+							<label class="form-check-label" for="inlineRadio3">Dark</label>
+						</div>
+					</div>
+				</div>
+				<!-- End theme switcher -->
+        </div>
+    </div>
+</nav>
+</header>
+
+	<main id='theme-main'>
+<script type='text/javascript'>
+const urlMappings = [
+{ oldPath: '/aardvark', newPath: '/assessments/essays/' },
+{ oldPath: '/am-i-research-ready', newPath: '/assessments/getting-started-with-assignments/choose-valid-sources/do-i-have-enough-information/' },
+{ oldPath: '/analyse-task', newPath: '/assessments/essays/' },
+{ oldPath: '/answering-legal-problem-irac', newPath: '/law-resources/writing-legal-scenario/' },
+{ oldPath: '/artist-statement-tutorial', newPath: '/art-and-design/artist-statement/' },
+{ oldPath: '/preparation', newPath: '/getting-started-with-assignments/' },
+{ oldPath: '/beginning', newPath: '/reports/' },
+{ oldPath: '/business-law-contract', newPath: '/law-resources/contract-law/language-focus-2/' },
+{ oldPath: '/language-focus-0', newPath: '/law-resources/business-law-introduction' },
+{ oldPath: '/quizzes', newPath: '/law-resources/business-law-introduction/' },
+{ oldPath: '/conclusion', newPath: '/university-essentials/critical-thinking-and-argument-analysis/' },
+{ oldPath: '/conclusion-2', newPath: '/assessments/reports/overall-structure' },
+{ oldPath: '/covalent-bonds-exercises', newPath: '/chemistry/chemical-bonding/covalent-bonding-lewis-structures-quiz/' },
+{ oldPath: '/developing-critical-thinking', newPath: '/getting-started' },
+{ oldPath: '/electron-configuration-quiz', newPath: '/chemistry/atoms-and-atomic-structures/electron/' },
+{ oldPath: '/engagement', newPath: '/assessments/presentations/delivery/' },
+{ oldPath: '/exercise-units', newPath: '/chemistry/working-with-quantities/units/' },
+{ oldPath: '/glossary', newPath: '/law-resources/business-law-negligence/language-focus-1/' },
+{ oldPath: '/how-study-company-law', newPath: '/law-resources/writing-legal-scenario/' },
+{ oldPath: '/cohesion', newPath: '/be-cohesive' },
+{ oldPath: '/english', newPath: '/academic-word-list-tool/' },
+{ oldPath: '/inserting-references', newPath: '/referencing/quoting' },
+{ oldPath: '/integrating-evidence-0', newPath: '/referencing/' },
+{ oldPath: '/international-student-stories', newPath: '/getting-started' },
+{ oldPath: '/introduction-law', newPath: '/law-resources/' },
+{ oldPath: '/language-chemistry', newPath: '/chemistry/matter/' },
+{ oldPath: '/methodology', newPath: '/post-graduate-reports/' },
+{ oldPath: '/concept-map', newPath: '/law-resources/business-law-negligence' },
+{ oldPath: '/oral-presentations-part-1-4', newPath: '/assessments/presentations/' },
+{ oldPath: '/periodic-table-quiz', newPath: '/chemistry/periodic-table/arrangement-periodic-table' },
+{ oldPath: '/post-graduate-reports', newPath: '/assessments/reports/overall-structure' },
+{ oldPath: '/preparing-online-presentations', newPath: '/assessments/presentations/online-presentations' },
+{ oldPath: '/presenting', newPath: '/assessments/presentations/' },
+{ oldPath: '/professional-report-writing-tutorial', newPath: '/example/' },
+{ oldPath: '/purpose-and-sources', newPath: '/assessments/reports/' },
+{ oldPath: '/quiz-atomic-structure', newPath: '/chemistry/atoms-and-atomic-structures/atomic-structure/' },
+{ oldPath: '/atoms-molecules-and-compounds-quiz', newPath: '/chemistry/atoms-and-atomic-structures/atoms/' },
+{ oldPath: '/chemical-bonding-quiz', newPath: '/chemistry/chemical-bonding/chemical-bonding-ionic-bonds' },
+{ oldPath: '/lewis-structures-quiz', newPath: '/chemistry/chemical-bonding/covalent-bonding-lewis-structures-quiz/' },
+{ oldPath: '/quiz-states-matter', newPath: '/chemistry/matter/states-properties-matter/' },
+{ oldPath: '/quiz-it-plagiarism', newPath: '/plagiarism' },
+{ oldPath: '/referencing-0', newPath: '/referencing/using-other-peoples-ideas/' },
+{ oldPath: '/referencing-3', newPath: '/referencing/using-other-peoples-ideas' },
+{ oldPath: '/researching-assignment', newPath: '/assessments/getting-started-with-assignments/' },
+{ oldPath: '/researching-your-assignment-0', newPath: '/getting-started-with-assignments' },
+{ oldPath: '/reviewing-academic-email', newPath: '/university-essentials/online-learning-skills/writing-academic-emails' },
+{ oldPath: '/signal-and-transition-words', newPath: '/assessments/presentations/structure/creating-cohesion/' },
+{ oldPath: '/states-matter', newPath: '/chemistry/matter/states-properties-matter/' },
+{ oldPath: '/strategies-reading-empirical-research-article', newPath: '/university-essentials/study-essentials/reading-skills/' },
+{ oldPath: '/structuring-assignments', newPath: '/getting-started' },
+{ oldPath: '/mole-and-stoichiometry', newPath: '/chemistry/working-with-quantities/' },
+{ oldPath: '/understanding-paraphrasing', newPath: '/referencing/paraphrasing-4' },
+{ oldPath: '/understanding-referencing', newPath: '/getting-started' },
+{ oldPath: '/units', newPath: '/chemistry/working-with-quantities/units/' },
+{ oldPath: '/useful-websites', newPath: '/academic-word-list-tool/' },
+{ oldPath: '/what-critical-thinking-0', newPath: '/university-essentials/critical-thinking-and-argument-analysis/introduction-critical-thinking/' },
+{ oldPath: '/whats-library-database', newPath: '/assessments/getting-started-with-assignments/find-information/electronic-and-av-resources/' },
+{ oldPath: '/workplace-writing-basics', newPath: '/writing-workplace' },
+{ oldPath: '/integrating-legal-argument', newPath: '/law-resources/writing-legal-argument/language-focus' },
+{ oldPath: '/linking-words-2', newPath: '/law-resources/writing-legal-argument/language-focus/' },
+{ oldPath: '/writing-report', newPath: '/reports' },
+{ oldPath: '/writing-academic-reflection', newPath: '/reflective-writing-1/' },
+{ oldPath: '/writing-clearly', newPath: '/coherence' },
+{ oldPath: '/writing-coursework', newPath: '/writing-fundamentals' },
+];console.log('urlMappings.length: ' + 64);
+</script>
+    <style>#redirect-container {
+            display: none;
+        }
+
+        #four-oh-container {
+            display: none;
+        }
+    </style>
+
+    <div class="container" id="page-content">
+        <div class="row ">
+            <!-- START content -->
+            <div class="col-xl-8 order-first">
+                <nav aria-label="breadcrumbs">
+<ul class="breadcrumbs">
+<li><a href="https://learninglab.rmit.edu.au/">Home</a></li>
+</ul>
+</nav>                <a id="main-content"></a>
+                
+                <!-- START redirect container -->
+                <div id="redirect-container">
+                    <h1 class="margin-top-zero">Archived Page</h1>
+                    <p>This content has been updated or relocated. You will be redirected shortly to the latest version. Please update your links if necessary.</p>  
                 </div>
-                <!-- END content --> 
+                <!-- END redirect container -->
+
+                <!-- START 404 container -->
+                <div id="four-oh-container">
+                    <h1 class="margin-top-zero">Page not found</h1>
+                    <p>We're sorry, but the page you're looking for doesn't exist.</p>
+                </div>
+                <!-- END 404 container -->
+            </div>
+            <!-- END content --> 
+        </div>
+    </div>
+
+<script>
+// References to DOM objects
+var fourOhInfo = document.getElementById("four-oh-container");
+var redirectInfo = document.getElementById("redirect-container");
+
+// Prefix for the environment; set to '' for live and '/preview' for test
+//const pathPrefix = '/preview';
+const pathPrefix = '/ll-static-test';
+
+// Function to extract the path after the domain, considering the prefix for the environment
+function extractPathAfterDomain(url) {
+    const urlObj = new URL(url);
+    let path = urlObj.pathname;
+
+    // Remove the path prefix if present
+    if (path.startsWith(pathPrefix)) {
+        path = path.substring(pathPrefix.length);
+    }
+
+    return path;
+}
+
+// Function to normalize a path by trimming leading and trailing slashes
+function normalizePath(path) {
+    return path.replace(/^\/|\/$/g, '');
+}
+
+// Function to replace the old URL path with the new URL path, adding the prefix
+function replaceUrlPath(url, newPath) {
+    const urlObj = new URL(url);
+    urlObj.pathname = pathPrefix + newPath;
+    return urlObj.toString();
+}
+
+// Use window.location to get the current URL
+const currentURL = window.location.href;
+
+// Extract and normalize the path after the domain
+const extractedPath = normalizePath(extractPathAfterDomain(currentURL));
+
+// Log the extracted path for debugging
+console.log("Extracted Path: " + extractedPath);
+
+// Compare the normalized extracted path with the normalized oldPath in the list
+const mapping = urlMappings.find(function(mapping) {
+    const normalizedOldPath = normalizePath(mapping.oldPath);
+    // Log each comparison for debugging
+    console.log("Comparing: " + normalizedOldPath + " with " + extractedPath);
+    return normalizedOldPath === extractedPath;
+});
+
+if (mapping) {
+    // Construct the new URL using the newPath from the mapping
+    // Show the redirect info
+    const newUrl = replaceUrlPath(currentURL, mapping.newPath);
+    console.log("Match found! New URL: " + newUrl);
+    redirectInfo.style.display = "block";
+    doRedirect(newUrl);
+} else {
+    // No match, show the 404 info
+    console.log("No match found.");
+    fourOhInfo.style.display = "block";
+}
+
+function doRedirect(redirectUrl) {
+    // Redirect after 5 seconds
+    setTimeout(function() {
+        console.log('Redirecting to: ' + redirectUrl);
+        window.location.href = redirectUrl;
+    }, 5000);
+}
+
+</script>
+
+    </main>
+
+					
+		
+<div class="wrapper footer-container" id="wrapper-footer-colophon">
+	<div class="container">
+        <div class="row">
+            <div class="col">
+				<!-- START ask the library -->
+				<div class="ask-container">
+					
+					<section class="ask-the-library">
+						<a href="https://www.rmit.edu.au/library/about-and-contacts/ask-the-library">
+							<img src="https://rmitlibrary.github.io/cdn/image/svg/ask-the-library.svg" class="ask-logo" alt="Ask the library" />
+							<div class="ask-text">
+								<p class="lead">Still can't find what you need?</p>
+								<p>The RMIT University Library provides study support, one-on-one consultations and peer mentoring to RMIT students.</p>
+							</div>
+						</a>
+					</section>
+			
+				</div>
+				<!-- END ask the library -->
+			</div>
+ 		</div>
+	</div>
+    <!-- START acknowledgement -->
+    <div class="acknowledgement">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                <section class="acknowledgement-container">
+                        <div class="content">
+                            <img alt="aboriginal flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-red.png" />
+                            <img alt="torres strait flag" src="https://www.rmit.edu.au/content/dam/rmit/au/en/news/homepage/flag-green.png">
+                            
+                            <h2 class="h4 margin-top-zero">Acknowledgement of Country</h2>
+                            <p>RMIT University acknowledges the people of the Woi wurrung and Boon wurrung language groups of the eastern Kulin Nation on whose unceded lands we conduct the business of the University. RMIT University respectfully acknowledges their Ancestors and Elders, past and present. RMIT also acknowledges the Traditional Custodians and their Ancestors of the lands and waters across Australia where we conduct our business<span class="img-credit"> - Artwork 'Sentient' by Hollie Johnson, Gunaikurnai and Monero Ngarigo</span>.</p>
+                            <a href="https://www.rmit.edu.au/about/our-values/respect-for-australian-indigenous-cultures" class="link-large">More information</a>
+                        </div>
+                        <div class="acknowledgement-image">
+                            <img src="https://www.rmit.edu.au/content/dam/rmit/images/sentient-hollie-johnson.jpg" alt="" />
+                        </div>
+                    </section>
+                </div>
             </div>
         </div>
-        
-        <script>
+    </div>    
+    <!-- END acknowledgement -->
+    <!-- START footer -->
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- START logo -->    
+                <a aria-label="Royal Melbourne Institute of Technology University Logo" href="https://www.rmit.edu.au/">
+					<div aria-hidden="true" class="logo"><span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/rmit-logo.svg" style="width: 100px" alt="" /></span>
+					</div>
+				</a>
+                <!-- END logo -->
+                <!-- START links -->
+				<ul class="footer-links">
+					<li><a href="">About Learning Lab</a></li>
+					<li><a href="">For educators</a></li>
+					<li><a href="">Contribute</a></li>
+					<li><a href="">Contact us</a></li>
+				</ul>
+                <!-- END links -->
+                <!-- START legal-social -->
+                <div class="footerlegalShareItems">
+                    <!-- START legal -->
+                    <div class="footer-legal">
+                    <ul>
+                        <li>Copyright © 2024 RMIT University<span> | </span></li>
+                        <li><a href="https://www.rmit.edu.au/utilities/terms"><span class="no-focus" tabindex="-1">Terms</span></a><span> | </span></li>
+                        <li><a href="https://www.rmit.edu.au/utilities/privacy"><span class="no-focus" tabindex="-1">Privacy</span></a><span> | </span></li>
+                        <li><a href="https://www.rmit.edu.au/utilities/accessibility"><span class="no-focus" tabindex="-1">Accessibility</span></a> <span> | </span></li>
+                        <li><a data-analytics-type="footerlink" data-analytics-value="Website feedback" href="https://www.rmit.edu.au/utilities/website-feedback"><span class="no-focus" tabindex="-1">Website feedback</span></a><span> | </span></li>
+                        <li><a data-analytics-type="footerlink" data-analytics-value="Complaints" href="https://www.rmit.edu.au/utilities/complaints"><span class="no-focus" tabindex="-1">Complaints</span></a><span> | </span></li>
+                        <li>ABN 49 781 030 034<span> | </span></li>
+                        <li>CRICOS provider number: 00122A<span> | </span></li>
+                        <li>TEQSA provider number: PRV12145<span> | </span></li>
+                        <li>RTO Code: 3046<span> | </span></li>
+                        <li><a href="https://www.open.edu.au/online-courses/rmit-university"><span class="no-focus" tabindex="-1">Open Universities Australia</span></a> </li>
+                      </ul>
+                    </div>
+                    <!-- END legal -->
+                    <!-- START social -->
+                    <div class="social-nav">
+                    <ul> 
+                        <!-- START facebook -->
+                        <li><a aria-label="For Facebook"  href="https://www.facebook.com/RMITuniversity/"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/facebook.svg" alt="" /></span></a></li>
+                        <!-- END facebook -->
+                        <!-- START twitter/x -->
+                        <li><a aria-label="For Twitter" href="https://twitter.com/rmit"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/twitter.svg" alt="" /></span></a></li>
+                        <!-- END twitter/x -->
+                        <!-- START insta -->
+                        <li><a aria-label="For Instagram" href="https://www.instagram.com/rmituniversity/"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/instagram.svg" alt="" /></span> </a></li>
+                        <!-- END insta -->              
+                        <!-- START LinkedIn -->
+                        <li><a aria-label="For LinkedIn" data-analytics-type="socialshare" data-analytics-value="LinkedIn" href="https://www.linkedin.com/school/rmit-university/"><span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/linkedin.svg" alt="" /></span></a></li>
+                        <!-- END LinkedIn -->
+                        <!-- START YouTube -->
+                        <li><a aria-label="For Youtube" href="https://www.youtube.com/user/rmitmedia"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/youtube.svg" alt="" /></span></a></li>
+                        <!-- END YouTube -->     
+                        <!-- START Weibo -->          
+                        <li><a aria-label="For Weibo" href="https://www.weibo.com/rmituni"> <span class="no-focus" tabindex="-1"><img src="https://rmitlibrary.github.io/cdn/image/svg/social/weibo.svg" alt="" /></span></a></li>
+                        <!-- END Weibo -->                
+					</ul>
+					</div>
+                    <!-- END social -->
+                </div>
+                <!-- END legal-social -->
+            </div>
+        </div>
+    </div>
+	</footer>
+    <!-- END footer -->		
+</div><!-- wrapper end -->
+		
+	
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
+<script src="https://learninglab.rmit.edu.au/wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
-        // References to DOM objects
-        var fourOhInfo = document.getElementById("four-oh-container");
-        var redirectInfo = document.getElementById("redirect-container");
+<!-- Code to handle hamburger menu, embed mode, dark mode -->
+<script type="text/javascript" src="https://learninglab.rmit.edu.au/wp-content/themes/picostrap5-child-base/js/main-body.js?v=1.0.2"></script>
 
-        // Array of objects with oldURL and newURL properties
-        const urlMappings = [
-            { oldPath: 'frog', newPath: '/assessments/essays/' },
-            { oldPath: '/am-i-research-ready', newPath: '/assessments/getting-started-with-assignments/choose-valid-sources/do-i-have-enough-information/' },
-            { oldPath: '/analyse-task', newPath: '/assessments/essays/' },
-            { oldPath: '/answering-legal-problem-irac', newPath: '/law-resources/writing-legal-scenario/' },
-            { oldPath: '/artist-statement-tutorial', newPath: '/art-and-design/artist-statement/' },
-            { oldPath: '/preparation', newPath: '/getting-started-with-assignments/' },
-            { oldPath: '/beginning', newPath: '/reports/' },
-            { oldPath: '/business-law-contract', newPath: '/law-resources/contract-law/language-focus-2/' },
-            { oldPath: '/language-focus-0', newPath: '/law-resources/business-law-introduction' },
-            { oldPath: '/quizzes', newPath: '/law-resources/business-law-introduction/' },
-            { oldPath: '/conclusion', newPath: '/university-essentials/critical-thinking-and-argument-analysis/' },
-            { oldPath: '/conclusion-2', newPath: '/assessments/reports/overall-structure' },
-            { oldPath: '/covalent-bonds-exercises', newPath: '/chemistry/chemical-bonding/covalent-bonding-lewis-structures-quiz/' },
-            { oldPath: '/developing-critical-thinking', newPath: '/getting-started' },
-            { oldPath: '/electron-configuration-quiz', newPath: '/chemistry/atoms-and-atomic-structures/electron/' },
-            { oldPath: '/engagement', newPath: '/assessments/presentations/delivery/' },
-            { oldPath: '/exercise-units', newPath: '/chemistry/working-with-quantities/units/' },
-            { oldPath: '/glossary', newPath: '/law-resources/business-law-negligence/language-focus-1/' },
-            { oldPath: '/how-study-company-law', newPath: '/law-resources/writing-legal-scenario/' },
-            { oldPath: '/cohesion', newPath: '/be-cohesive' },
-            { oldPath: '/english', newPath: '/academic-word-list-tool/' },
-            { oldPath: '/inserting-references', newPath: '/referencing/quoting' },
-            { oldPath: '/integrating-evidence-0', newPath: '/referencing/' },
-            { oldPath: '/international-student-stories', newPath: '/getting-started' },
-            { oldPath: '/introduction-law', newPath: '/law-resources/' },
-            { oldPath: '/language-chemistry', newPath: '/chemistry/matter/' },
-            { oldPath: '/methodology', newPath: '/post-graduate-reports/' },
-            { oldPath: '/concept-map', newPath: '/law-resources/business-law-negligence' },
-            { oldPath: '/oral-presentations-part-1-4', newPath: '/assessments/presentations/' },
-            { oldPath: '/periodic-table-quiz', newPath: '/chemistry/periodic-table/arrangement-periodic-table' },
-            { oldPath: '/post-graduate-reports', newPath: '/assessments/reports/overall-structure' },
-            { oldPath: '/preparing-online-presentations', newPath: '/assessments/presentations/online-presentations' },
-            { oldPath: '/presenting', newPath: '/assessments/presentations/' },
-            { oldPath: '/professional-report-writing-tutorial', newPath: '/example/' },
-            { oldPath: '/purpose-and-sources', newPath: '/assessments/reports/' },
-            { oldPath: '/quiz-atomic-structure', newPath: '/chemistry/atoms-and-atomic-structures/atomic-structure/' },
-            { oldPath: '/atoms-molecules-and-compounds-quiz', newPath: '/chemistry/atoms-and-atomic-structures/atoms/' },
-            { oldPath: '/chemical-bonding-quiz', newPath: '/chemistry/chemical-bonding/chemical-bonding-ionic-bonds' },
-            { oldPath: '/lewis-structures-quiz', newPath: '/chemistry/chemical-bonding/covalent-bonding-lewis-structures-quiz/' },
-            { oldPath: '/quiz-states-matter', newPath: '/chemistry/matter/states-properties-matter/' },
-            { oldPath: '/quiz-it-plagiarism', newPath: '/plagiarism' },
-            { oldPath: '/referencing-0', newPath: '/referencing/using-other-peoples-ideas/' },
-            { oldPath: '/referencing-3', newPath: '/referencing/using-other-peoples-ideas' },
-            { oldPath: '/researching-assignment', newPath: '/assessments/getting-started-with-assignments/' },
-            { oldPath: '/researching-your-assignment-0', newPath: '/getting-started-with-assignments' },
-            { oldPath: '/reviewing-academic-email', newPath: '/university-essentials/online-learning-skills/writing-academic-emails' },
-            { oldPath: '/signal-and-transition-words', newPath: '/assessments/presentations/structure/creating-cohesion/' },
-            { oldPath: '/states-matter', newPath: '/chemistry/matter/states-properties-matter/' },
-            { oldPath: '/strategies-reading-empirical-research-article', newPath: '/university-essentials/study-essentials/reading-skills/' },
-            { oldPath: '/structuring-assignments', newPath: '/getting-started' },
-            { oldPath: '/mole-and-stoichiometry', newPath: '/chemistry/working-with-quantities/' },
-            { oldPath: '/understanding-paraphrasing', newPath: '/referencing/paraphrasing-4' },
-            { oldPath: '/understanding-referencing', newPath: '/getting-started' },
-            { oldPath: '/units', newPath: '/chemistry/working-with-quantities/units/' },
-            { oldPath: '/useful-websites', newPath: '/academic-word-list-tool/' },
-            { oldPath: '/what-critical-thinking-0', newPath: '/university-essentials/critical-thinking-and-argument-analysis/introduction-critical-thinking/' },
-            { oldPath: '/whats-library-database', newPath: '/assessments/getting-started-with-assignments/find-information/electronic-and-av-resources/' },
-            { oldPath: '/workplace-writing-basics', newPath: '/writing-workplace' },
-            { oldPath: '/integrating-legal-argument', newPath: '/law-resources/writing-legal-argument/language-focus' },
-            { oldPath: '/linking-words-2', newPath: '/law-resources/writing-legal-argument/language-focus/' },
-            { oldPath: '/writing-report', newPath: '/reports' },
-            { oldPath: '/writing-academic-reflection', newPath: '/reflective-writing-1/' },
-            { oldPath: '/writing-clearly', newPath: '/coherence' },
-            { oldPath: '/writing-coursework', newPath: '/writing-fundamentals' }
-        ];
+<!-- Code to handle resizing iframes on this page -->
+<script type="text/javascript" src="https://learninglab.rmit.edu.au/wp-content/themes/picostrap5-child-base/js/iframeResizer.min.js"></script>
+    <script type="text/javascript">
+        iFrameResize({log:true});
+    </script>
 
+<!-- Code to handle this page being resized by other wordpress pages, e.g. embed mode described in main-body.js -->
+<script src="https://rmitlibrary.github.io/cdn/libraries/js/iframeResizer.contentWindow.min.js"></script>
 
-        // Prefix for the environment; set to '' for live and '/ll-static-test' for test
-        const pathPrefix = '/ll-static-test';
-
-        // Function to extract the path after the domain, considering the prefix for the environment
-        function extractPathAfterDomain(url) {
-            const urlObj = new URL(url);
-            let path = urlObj.pathname;
-
-            // Remove the path prefix if present
-            if (path.startsWith(pathPrefix)) {
-                path = path.substring(pathPrefix.length);
-            }
-
-            return path;
-        }
-
-        // Function to normalize a path by trimming leading and trailing slashes
-        function normalizePath(path) {
-            return path.replace(/^\/|\/$/g, '');
-        }
-
-        // Function to replace the old URL path with the new URL path, adding the prefix
-        function replaceUrlPath(url, newPath) {
-            const urlObj = new URL(url);
-            urlObj.pathname = pathPrefix + newPath;
-            return urlObj.toString();
-        }
-
-        // Use window.location to get the current URL
-        const currentURL = window.location.href;
-
-        // Extract and normalize the path after the domain
-        const extractedPath = normalizePath(extractPathAfterDomain(currentURL));
-
-        // Log the extracted path for debugging
-        console.log("Extracted Path: " + extractedPath);
-
-        // Compare the normalized extracted path with the normalized oldPath in the list
-        const mapping = urlMappings.find(function(mapping) {
-            const normalizedOldPath = normalizePath(mapping.oldPath);
-            // Log each comparison for debugging
-            console.log("Comparing: " + normalizedOldPath + " with " + extractedPath);
-            return normalizedOldPath === extractedPath;
-        });
-
-        if (mapping) {
-            // Construct the new URL using the newPath from the mapping
-            // Show the redirect info
-            const newUrl = replaceUrlPath(currentURL, mapping.newPath);
-            console.log("Match found! New URL: " + newUrl);
-            redirectInfo.style.display = "block";
-            doRedirect(newUrl);
-        } else {
-            // No match, show the 404 info
-            console.log("No match found.");
-            fourOhInfo.style.display = "block";
-        }
-
-        function doRedirect(redirectUrl) {
-            // Redirect after 5 seconds
-            setTimeout(function() {
-                console.log('Redirecting to: ' + redirectUrl);
-                window.location.href = redirectUrl;
-            }, 5000);
-        }
-
-        </script>
-        <!-- <script type="text/javascript" src="../../../wp-content/themes/picostrap5-child-base/js/redirect%EF%B9%96v=1.0.2.js"></script> -->
-    </body>
+</body>
 </html>
+

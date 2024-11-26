@@ -5,11 +5,7 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- wp_head -->
-	<title>D3 Differentiation from first principles - Learning Lab</title>
-	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	
-		
 		<meta name="description" content="Learn how to take a derivative of a function using first principles. Using this method is the best way to understand the concepts around differentiation. Start here to really appreciate what you are doing when you differentiate, before you start differentiating using other methods in later modules. Definition The derivative of a function \(f\left(x\right)\) is" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
@@ -17,18 +13,18 @@
 		<meta property="og:locale" content="en_US" />
 		<meta property="og:site_name" content="Learning Lab - RMIT Library" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="D3 Differentiation from first principles - Learning Lab" />
+		<meta property="og:title" content="D3: Differentiation from first principles - Learning Lab" />
 		<meta property="og:description" content="Learn how to take a derivative of a function using first principles. Using this method is the best way to understand the concepts around differentiation. Start here to really appreciate what you are doing when you differentiate, before you start differentiating using other methods in later modules. Definition The derivative of a function \(f\left(x\right)\) is" />
 		<meta property="og:url" content="https://learninglab.rmit.edu.au/maths-statistics/differentiation/d3-differentiation-first-principles/" />
 		<meta property="article:published_time" content="2023-10-16T05:34:41+00:00" />
-		<meta property="article:modified_time" content="2024-08-21T05:52:19+00:00" />
+		<meta property="article:modified_time" content="2024-11-25T05:56:27+00:00" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="D3 Differentiation from first principles - Learning Lab" />
+		<meta name="twitter:title" content="D3: Differentiation from first principles - Learning Lab" />
 		<meta name="twitter:description" content="Learn how to take a derivative of a function using first principles. Using this method is the best way to understand the concepts around differentiation. Start here to really appreciate what you are doing when you differentiate, before you start differentiating using other methods in later modules. Definition The derivative of a function \(f\left(x\right)\) is" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d3-differentiation-first-principles\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/#listItem","position":3,"name":"Differentiation","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d3-differentiation-first-principles\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d3-differentiation-first-principles\/#listItem","position":4,"name":"D3 Differentiation from first principles","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d3-differentiation-first-principles\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d3-differentiation-first-principles\/","name":"D3 Differentiation from first principles - Learning Lab","description":"Learn how to take a derivative of a function using first principles. Using this method is the best way to understand the concepts around differentiation. Start here to really appreciate what you are doing when you differentiate, before you start differentiating using other methods in later modules. Definition The derivative of a function \\(f\\left(x\\right)\\) is","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d3-differentiation-first-principles\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:41+00:00","dateModified":"2024-08-21T05:52:19+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d3-differentiation-first-principles\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/#listItem","position":3,"name":"Differentiation","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d3-differentiation-first-principles\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d3-differentiation-first-principles\/#listItem","position":4,"name":"D3: Differentiation from first principles","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d3-differentiation-first-principles\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d3-differentiation-first-principles\/","name":"D3: Differentiation from first principles - Learning Lab","description":"Learn how to take a derivative of a function using first principles. Using this method is the best way to understand the concepts around differentiation. Start here to really appreciate what you are doing when you differentiate, before you start differentiating using other methods in later modules. Definition The derivative of a function \\(f\\left(x\\right)\\) is","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/differentiation\/d3-differentiation-first-principles\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:41+00:00","dateModified":"2024-11-25T05:56:27+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
-		<!-- All in One SEO -->
+		
 
 
 <script>
@@ -309,7 +305,7 @@ This should be moved to a stylesheet once style is determined. -->
 <!-- START SIDEBAR NAV PANEL -->
 <nav class="right-nav" aria-label="Section Menu">
 
-<h2><a href="../../index.html">Maths and statistics</a></h2><h3><a href="../index.html">Differentiation</a></h3><ul><li><a href="../d1-limit-function/index.html">D1 Limit of a function</a></li><li><a href="../d2-gradients-tangents-and-derivatives/index.html">D2 Gradients, tangents and derivatives</a></li><li><a href="index.html" class="selected"  aria-current="page">D3 Differentiation from first principles</a><li><a href="../d4-rules-differentiation/index.html">D4 Rules for differentiation</a></li><li><a href="../d5-chain-rule/index.html">D5 The chain rule</a></li><li><a href="../d6-product-rule/index.html">D6 The product rule</a></li><li><a href="../d7-quotient-rule/index.html">D7 The quotient rule</a></li><li><a href="../d8-maxima-and-minima/index.html">D8 Maxima and minima</a></li><li><a href="../d9-curve-sketching/index.html">D9 Curve sketching</a></li><li><a href="../d10-rates-change/index.html">D10 Rates of change</a></li><li><a href="../d11-small-changes-and-approximations/index.html">D11 Small changes and approximations</a></li><li><a href="../d12-implicit-differentiation/index.html">D12 Implicit differentiation</a></li><li><a href="../d13-partial-differentiation/index.html">D13 Partial differentiation</a></li><li><a href="../d14-higher-order-derivatives/index.html">D14 Higher Order Derivatives</a></li><li><a href="../d15-logarithmic-differentiation/index.html">D15 Logarithmic differentiation</a></li></ul></nav>
+<h2><a href="../../index.html">Maths and statistics</a></h2><h3><a href="../index.html">Differentiation</a></h3><ul><li><a href="../d1-limit-function/index.html">Limit of a function</a></li><li><a href="../d2-gradients-tangents-and-derivatives/index.html">Gradients, tangents and derivatives</a></li><li><a href="index.html" class="selected"  aria-current="page">Differentiation from first principles</a><li><a href="../d4-rules-differentiation/index.html">Rules for differentiation</a></li><li><a href="../d5-chain-rule/index.html">The chain rule</a></li><li><a href="../d6-product-rule/index.html">The product rule</a></li><li><a href="../d7-quotient-rule/index.html">The quotient rule</a></li><li><a href="../d8-maxima-and-minima/index.html">Maxima and minima</a></li><li><a href="../d9-curve-sketching/index.html">Curve sketching</a></li><li><a href="../d10-rates-change/index.html">Rates of change</a></li><li><a href="../d11-small-changes-and-approximations/index.html">Small changes and approximations</a></li><li><a href="../d12-implicit-differentiation/index.html">Implicit differentiation</a></li><li><a href="../d13-partial-differentiation/index.html">Partial differentiation</a></li><li><a href="../d14-higher-order-derivatives/index.html">Higher order derivatives</a></li><li><a href="../d15-logarithmic-differentiation/index.html">Logarithmic differentiation</a></li></ul></nav>
 <!-- END SIDEBAR NAV PANEL -->
 
 
@@ -352,22 +348,29 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li><a href="../index.html">Differentiation</a></li>
 </ul>
 </nav>            <a id="main-content"></a>
-            <h1 class="margin-top-zero">D3 Differentiation from first principles</h1>
-            <p><span class="marginnote"><img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-d3.png" alt="" /></span></p>
+            <h1 class="margin-top-zero">D3: Differentiation from first principles</h1>
+            <figure class="float-right ">
+
+<img decoding="async" src="https://rmitlibrary.github.io/cdn/learninglab/images/maths-d3.png" alt="" />
+
+
+</figure>
+
 <p class="lead">Learn how to take a derivative of a function using first principles. Using this method is the best way to understand the concepts around differentiation.</p>
 <p>Start here to really appreciate what you are doing when you differentiate, before you start differentiating using other methods in later modules.</p>
-<div id="definition" class="section level1">
 <h2>Definition</h2>
 <p>The derivative of a function <span class="math inline">\(f\left(x\right)\)</span> is denoted by <span class="math inline">\(f'\left(x\right)\)</span> and is defined as <span class="math display">\[ f'(x)=\lim_{h\rightarrow0}\frac{f(x+h)-f(x)}{h},h\text{$\neq$ }0. \]</span> Using this definition is called differentiating from first principles.</p>
 <p>The result <span class="math inline">\(f'\left(x\right)\)</span>, is called the derivative of <span class="math inline">\(f\left(x\right)\)</span>.</p>
-<p>There are rules for differentiation that are far more convenient than using the definition above. In general, you should only use the first principles approach above if you are asked to. This module provides some examples on differentiation from first principles.</p>
-<div class="responsive-video"><iframe src="https://www.youtube.com/embed/SC2u50E53WY" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
-<div class="acc transcript">
+<p>There are rules for differentiation that are far more convenient than using the definition above. In general, you should only use the first principles approach above if you are asked to. This module provides some examples on differentiation from first principles.<br />
+<figure class="">
+<div class="responsive-video">
+<iframe src="https://www.youtube.com/embed/SC2u50E53WY" frameborder="0" allowfullscreen=""></iframe>
+</div>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-transcript-6559">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-3550" aria-expanded="false" aria-controls="body-transcript-3550" >Transcript</button>
+<p class="accordion-header" id="head-transcript-8334">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-transcript-1526" aria-expanded="false" aria-controls="body-transcript-1526" >Transcript</button>
 </p>
-<div id="body-transcript-3550" class="accordion-collapse collapse " aria-labelledby="head-transcript-6559">
+<div id="body-transcript-1526" class="accordion-collapse collapse " aria-labelledby="head-transcript-8334">
 <div class="accordion-body">
 <p>Hi, I’m Martin Lindsay from the Study and Learning Centre at RMIT University. This is a short movie on differentiation from first principles.</p>
 <p>The process of finding the derivative f-x is equal to the limit as h approaches zero of f, of x plus h, minus f of x, divided by h, is called differentiation from first principles. Just be aware that f-x is the same as dydx.</p>
@@ -378,30 +381,23 @@ list.querySelectorAll('h4').forEach(h4 => {
 <p>So, to conclude, the derivative of fx is equal to a<sup>²</sup> minus x using first principles is f-x equals 2x minus one.</p>
 <p>Now try some questions for yourself. The answers to these questions are on the next slide. Thanks for watching this short movie.</p>
 </div></div></div>
-</div>
-</div>
-<div id="example-1" class="section level1">
+</figure>
+
 <h3>Example 1</h3>
 <p>If <span class="math inline">\(f\left(x\right)=x^{2},\)</span> find the derivative of <span class="math inline">\(f\left(x\right)\)</span> from first principles.</p>
 <h4>Solution</h4>
 <p>Using first principles,<span class="sidenote"><span class="sidenote-number">1</span> You need to know the identity <span class="math display">\[\begin{align*} \left(a+b\right)^{2} &amp; =a^{2}+2ab+b^{2} \end{align*}\]</span> for this example. In general, you need to know a bit of algebra to do limits effectively. </span></p>
 <p><span class="math display">\[\begin{align*} f'(x) &amp; =\lim_{h\rightarrow0}\frac{f(x+h)-f(x)}{h},h\text{$\neq$ }0\\ &amp; =\lim_{h\rightarrow0}\frac{(x+h)^{2}-x^{2}}{h}\\ &amp; =\lim_{h\rightarrow0}\frac{x^{2}+2xh+h^{2}-x^{2}}{h}\\ &amp; =\lim_{h\rightarrow0}\frac{2xh+h^{2}}{h}\\ &amp; =\lim_{h\rightarrow0}\frac{h(2x+h)}{h}\\ &amp; =\lim_{h\rightarrow0}2x+h\\ &amp; =2x. \end{align*}\]</span> The derivative of <span class="math inline">\(x^{2}=2x.\)</span></p>
-</div>
-<div id="example-2" class="section level1">
 <h3>Example 2</h3>
 <p>Determine, from first principles, the gradient function for the curve <span class="math inline">\(f(x)=2x^{2}-x\)</span> and calculate its value at <span class="math inline">\(x=3\)</span>.</p>
 <h4>Solution</h4>
 <p>Using first principles, <span class="math display">\[\begin{align*} f'(x) &amp; =\lim_{h\rightarrow0}\frac{f(x+h)-f(x)}{h}h\text{$\neq$ }0\\ &amp; =\lim_{h\rightarrow0}\frac{2(x+h)^{2}-(x+h)-(2x^{2}-x)}{h}\\ &amp; =\lim_{h\rightarrow0}\frac{2x^{2}+4xh+2h^{2}-x-h-2x^{2}+x)}{h}\\ &amp; =\lim_{h\rightarrow0}\frac{4xh+2h^{2}-h)}{h}\\ &amp; =\lim_{h\rightarrow0}4x+2h-1\\ &amp; =4x-1. \end{align*}\]</span></p>
 <p>The gradient function is <span class="math inline">\(f'(x)=4x-1.\)</span> It’s value at <span class="math inline">\(x=3\)</span> is <span class="math display">\[\begin{align*} f'\left(3\right) &amp; =4\left(3\right)-1\\ &amp; =11. \end{align*}\]</span> The value of the gradient function at <span class="math inline">\(x=3\)</span> is <span class="math inline">\(11.\)</span></p>
-</div>
-<div id="example-3" class="section level1">
 <h3>Example 3</h3>
 <p>Use differentiation from first principles to find the gradient function of <span class="math inline">\(y=\frac{1}{x}\)</span>.</p>
 <h4>Solution</h4>
 <p>Using first principles,</p>
 <p><span class="math display">\[\begin{align*} f'(x) &amp; =\lim_{h\rightarrow0}\frac{f(x+h)-f(x)}{h},h\text{$\neq$ }0\\ &amp; =\lim_{h\rightarrow0}\frac{\frac{1}{x+h}-\frac{1}{x}}{h}\\ &amp; =\lim_{h\rightarrow0}\frac{\frac{x}{x(x+h)}-\frac{x+h}{x(x+h)}}{h}\\ &amp; =\lim_{h\rightarrow0}\frac{\frac{x-(x+h)}{x(x+h)}}{h}\\ &amp; =\lim_{h\rightarrow0}\frac{\frac{-h}{x(x+h)}}{h}\\ &amp; =\lim_{h\rightarrow0}\frac{-1}{x(x+h)}\\ &amp; =\frac{-1}{x^{2}}. \end{align*}\]</span> The gradient function of <span class="math inline">\(y=\frac{1}{x}\)</span> is <span class="math inline">\(-\frac{1}{x^{2}}\)</span>. In this case we can write <span class="math display">\[\begin{align*} \frac{dy}{dx} &amp; =-\frac{1}{x^{2}}. \end{align*}\]</span></p>
-</div>
-<div id="exercises" class="section level1">
 <h2>Exercises</h2>
 <p>Find the derivative of the following functions using differentiation from first principles.</p>
 <ol style="list-style-type: decimal;">
@@ -410,23 +406,21 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li><span class="math inline">\(f\left(x\right)=2x^{2}-1/x\)</span></li>
 </ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answers-4893">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-4715" aria-expanded="false" aria-controls="body-answers-4715" >Answers</button>
+<p class="accordion-header" id="head-answers-1089">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-9635" aria-expanded="false" aria-controls="body-answers-9635" >Answers</button>
 </p>
-<div id="body-answers-4715" class="accordion-collapse collapse " aria-labelledby="head-answers-4893">
+<div id="body-answers-9635" class="accordion-collapse collapse " aria-labelledby="head-answers-1089">
 <div class="accordion-body">
 <p>1. <span class="math display">\[\begin{align*} f'\left(x\right) &amp; =\lim_{h\rightarrow0}\frac{3(x+h)-3x}{h}\\ &amp; =\lim_{h\rightarrow0}\frac{3x+3h-3x}{h}\\ &amp; =\lim_{h\rightarrow0}\frac{3h}{h}\\ &amp; =\lim_{h\rightarrow0}\frac{3}{1}\\ &amp; =3. \end{align*}\]</span></p>
 <p>2. <span class="math display">\[\begin{align*} f'\left(x\right) &amp; =\lim_{h\rightarrow0}\frac{5(x+h)^{2}-5x^{2}}{h}\\ &amp; =\lim_{h\rightarrow0}\frac{5(x^{2}+2xh+h^{2})-5x^{2}}{h}\\ &amp; =\lim_{h\rightarrow0}\frac{5x^{2}+10xh+5h^{2}-5x^{2}}{h}\\ &amp; =\lim_{h\rightarrow0}\frac{10xh+5h^{2}}{h}\\ &amp; =\lim_{h\rightarrow0}10x+5h\\ &amp; =10x. \end{align*}\]</span></p>
 <p>3.<span class="math display">\[\begin{align*} f'\left(x\right) &amp; =\lim_{h\rightarrow0}\frac{2\left(x+h\right)^{2}-\frac{1}{x+h}-\left(2x^{2}-\frac{1}{x}\right)}{h}\\ &amp; =\lim_{h\rightarrow0}\frac{2\left(x^{2}+2xh+h^{2}\right)-\frac{1}{x+h}-\left(2x^{2}-1/x\right)}{h}\\ &amp; =\lim_{h\rightarrow0}\frac{2x^{2}+4xh+2h^{2}-\frac{1}{x+h}-\left(2x^{2}-1/x\right)}{h}\\ &amp; =\lim_{h\rightarrow0}\frac{4xh+2h^{2}-\frac{1}{x+h}+\frac{1}{x}}{h}\\ &amp; =\lim_{h\rightarrow0}\frac{4xh+2h^{2}-\frac{x}{x\left(x+h\right)}+\frac{x+h}{x\left(x+h\right)}}{h}\\ &amp; =\lim_{h\rightarrow0}\frac{4xh+2h^{2}+\frac{h}{x\left(x+h\right)}}{h}\\ &amp; =\lim_{h\rightarrow0}4x+2h+\frac{1}{x\left(x+h\right)}\\ &amp; =4x+\frac{1}{x^{2}}. \end{align*}\]</span></p>
 </div></div></div>
-</div>
-<p><a class="mathspdf" href="https://rmitlibrary.github.io/cdn/learninglab/docs/3_Differentiation_from_First_Principles.pdf" type="application/pdf">Download this page, D3 Differentiation from first principles <span class="file-link-info">(PDF 241KB)</span></a></p>
-<p>Images on this page by RMIT, licensed under CC BY-NC 4.0.</p>
+<p class="small" id="my-id">Images on this page by <a href="https://rmit.edu.au/">RMIT</a>, licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC 4.0</a></p>
 			<nav class="btn-nav-container" aria-label="Previous and next links">
 <h2 class="btn-nav-prev">
     <a href="../d2-gradients-tangents-and-derivatives/index.html">
-        <span aria-hidden="true">D2 Gradients, tangents and derivatives</span>
-        <span class="visually-hidden">Previous page: D2 Gradients, tangents and derivatives</span>
+        <span aria-hidden="true">Gradients, tangents and derivatives</span>
+        <span class="visually-hidden">Previous page: Gradients, tangents and derivatives</span>
     </a>
 </h2>
     
@@ -434,8 +428,8 @@ list.querySelectorAll('h4').forEach(h4 => {
 
 <h2 class="btn-nav-next">
     <a href="../d4-rules-differentiation/index.html">
-        <span aria-hidden="true">D4 Rules for differentiation</span>
-        <span class="visually-hidden">Next page: D4 Rules for differentiation</span>
+        <span aria-hidden="true">Rules for differentiation</span>
+        <span class="visually-hidden">Next page: Rules for differentiation</span>
     </a>
 </h2>
 	
