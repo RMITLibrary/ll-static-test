@@ -428,6 +428,7 @@ console.log("Extracted Path: " + extractedPath);
 //check for /content and .html, legacy from the old site
 //remove if present and redirect to that url
 processOldSiteLinksAndRedirect(extractedPath);
+console.log("Checking for legacy path: " + extractedPath);
 
 // Compare the normalized extracted path with the normalized oldPath in the list
 const mapping = urlMappings.find(function(mapping) {
@@ -457,8 +458,8 @@ function processOldSiteLinksAndRedirect(path) {
     }
 
     // Replace "/content/" with "/"
-    if (path.startsWith('/content/')) {
-        path = path.replace('/content/', '/');
+    if (path.startsWith(pathPrefix + '/content/')) {
+        path = path.replace(pathPrefix + '/content/', '/');
     }
 
     // Redirect using the existing function
