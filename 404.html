@@ -425,6 +425,10 @@ const extractedPath = normalizePath(extractPathAfterDomain(currentURL));
 // Log the extracted path for debugging
 console.log("Extracted Path: " + extractedPath);
 
+//check for /content and .html, legacy from the old site
+//remove if present and redirect to that url
+processOldSiteLinksAndRedirect(extractedPath);
+
 // Compare the normalized extracted path with the normalized oldPath in the list
 const mapping = urlMappings.find(function(mapping) {
     const normalizedOldPath = normalizePath(mapping.oldPath);
@@ -444,6 +448,21 @@ if (mapping) {
     // No match, show the 404 info
     console.log("No match found.");
     fourOhInfo.style.display = "block";
+}
+
+function processOldSiteLinksAndRedirect(path) {
+    // Remove ".html" if present
+    if (path.endsWith('.html')) {
+        path = path.slice(0, -5);
+    }
+
+    // Replace "/content/" with "/"
+    if (path.startsWith('/content/')) {
+        path = path.replace('/content/', '/');
+    }
+
+    // Redirect using the existing function
+    doRedirect(path);
 }
 
 function doRedirect(redirectUrl) {
