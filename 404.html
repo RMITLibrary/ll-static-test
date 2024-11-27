@@ -366,14 +366,14 @@ const urlMappings = [
                 
                 <!-- START redirect container -->
                 <div id="redirect-container">
-                    <h1 class="margin-top-zero">Archived page 2</h1>
+                    <h1 class="margin-top-zero">Archived page 3</h1>
                     <p>This content has been updated or relocated. You will be redirected shortly to the latest version. Please update your links if necessary.</p>  
                 </div>
                 <!-- END redirect container -->
 
                 <!-- START 404 container -->
                 <div id="four-oh-container">
-                    <h1 class="margin-top-zero">Page not found 2</h1>
+                    <h1 class="margin-top-zero">Page not found 3</h1>
                     <p>We're sorry, but the page you're looking for doesn't exist.</p>
                 </div>
                 <!-- END 404 container -->
@@ -468,9 +468,7 @@ function processOldSiteLinksAndRedirect(path) {
         newPath = pathPrefix + path;
 
         // Redirect using the existing function
-        doRedirect(newPath);
-
-        console.log("CONTENT found. Redirect: " +newPath);
+        doRedirect(newPath, 0);
         return true;
     }
     else {
@@ -478,12 +476,12 @@ function processOldSiteLinksAndRedirect(path) {
     }
 }
 
-function doRedirect(redirectUrl) {
+function doRedirect(redirectUrl, delay = 5000) {
     // Redirect after 5 seconds
     setTimeout(function() {
         console.log('Redirecting to: ' + redirectUrl);
         window.location.href = redirectUrl;
-    }, 5000);
+    }, delay);
 }
 
 </script>
