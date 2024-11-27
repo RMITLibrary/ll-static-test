@@ -366,14 +366,14 @@ const urlMappings = [
                 
                 <!-- START redirect container -->
                 <div id="redirect-container">
-                    <h1 class="margin-top-zero">Archived Page</h1>
+                    <h1 class="margin-top-zero">Archived page 1</h1>
                     <p>This content has been updated or relocated. You will be redirected shortly to the latest version. Please update your links if necessary.</p>  
                 </div>
                 <!-- END redirect container -->
 
                 <!-- START 404 container -->
                 <div id="four-oh-container">
-                    <h1 class="margin-top-zero">Page not found</h1>
+                    <h1 class="margin-top-zero">Page not found 1</h1>
                     <p>We're sorry, but the page you're looking for doesn't exist.</p>
                 </div>
                 <!-- END 404 container -->
@@ -458,12 +458,16 @@ function processOldSiteLinksAndRedirect(path) {
     }
 
     // Replace "/content/" with "/"
-    if (path.startsWith(pathPrefix + '/content/')) {
-        path = path.replace(pathPrefix + '/content/', '/');
-    }
+    if (path.startsWith('content/')) {
+        path = path.replace('content/', '/');
 
-    // Redirect using the existing function
-    doRedirect(path);
+        newPath = pathPrefix + path;
+
+        // Redirect using the existing function
+        //doRedirect(newPath);
+
+        console.log("CONTENT found. Would redirect to: " +newPath);
+    }
 }
 
 function doRedirect(redirectUrl) {
