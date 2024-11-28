@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<!-- This sitemap was dynamically generated on 28 November 2024 at 3:29 am by All in One SEO v4.7.4.2 - the original SEO plugin for WordPress. -->
 
 <?xml-stylesheet type="text/xsl" href="https://learninglab.rmit.edu.au/default-sitemap.xsl?sitemap=page"?>
 <urlset
@@ -14,32 +14,149 @@
 		<priority><![CDATA[1]]></priority>
 	</url>
 	<url>
-		<loc><![CDATA[https://learninglab.rmit.edu.au/about-the-learning-lab/]]></loc>
-		<lastmod><![CDATA[2024-11-27T12:07:15+00:00]]></lastmod>
+		<loc><![CDATA[https://learninglab.rmit.edu.au/documentation/redirect/]]></loc>
+		<lastmod><![CDATA[2024-11-28T01:40:46+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 	</url>
 	<url>
-		<loc><![CDATA[https://learninglab.rmit.edu.au/about-the-learning-lab/accessibility/]]></loc>
-		<lastmod><![CDATA[2024-11-27T12:06:03+00:00]]></lastmod>
+		<loc><![CDATA[https://learninglab.rmit.edu.au/documentation/publishing-the-learning-lab/]]></loc>
+		<lastmod><![CDATA[2024-11-28T01:34:37+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 	</url>
 	<url>
 		<loc><![CDATA[https://learninglab.rmit.edu.au/about-the-learning-lab/whats-new/]]></loc>
-		<lastmod><![CDATA[2024-11-27T11:53:56+00:00]]></lastmod>
+		<lastmod><![CDATA[2024-11-28T01:29:17+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[https://learninglab.rmit.edu.au/about-the-learning-lab/accessibility/]]></loc>
+		<lastmod><![CDATA[2024-11-28T01:07:58+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[https://learninglab.rmit.edu.au/art-and-design/reflective-writing-design/reflecting/]]></loc>
+		<lastmod><![CDATA[2024-11-28T01:02:25+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[https://learninglab.rmit.edu.au/about-the-learning-lab/]]></loc>
+		<lastmod><![CDATA[2024-11-28T01:02:22+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[https://learninglab.rmit.edu.au/chemistry/chemical-bonding/covalent-bonds/]]></loc>
+		<lastmod><![CDATA[2024-11-28T01:00:19+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/chem7-covalenbondformation.png]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6carbondioxide.png]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6ethyne.png]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/chem7-coordinatecovalentbonds.png]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6CO2.png]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6SO2.png]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6H2Opng.png]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6COH2.png]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6NH3.png]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6CH4.png]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6C2H4.png]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6water.png]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEMcarbondioxidedipole.png]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[https://learninglab.rmit.edu.au/law/assessments-law/]]></loc>
+		<lastmod><![CDATA[2024-11-28T00:57:16+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[https://learninglab.rmit.edu.au/law/writing-legal-scenario/]]></loc>
+		<lastmod><![CDATA[2024-11-28T00:56:21+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/company_law_IRAC_diagram_V3.png]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[https://learninglab.rmit.edu.au/art-and-design/propositional-writing/]]></loc>
+		<lastmod><![CDATA[2024-11-28T00:54:59+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[https://learninglab.rmit.edu.au/assessments/annotated-bibliographies/]]></loc>
+		<lastmod><![CDATA[2024-11-28T00:36:18+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[https://learninglab.rmit.edu.au/art-and-design/]]></loc>
+		<lastmod><![CDATA[2024-11-28T00:33:51+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[https://learninglab.rmit.edu.au/assessments/getting-started-with-assignments/]]></loc>
+		<lastmod><![CDATA[2024-11-28T00:29:33+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/illustration/assessments/getting-started/getting-started-home-1@2x.png]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/illustration/assessments/getting-started/getting-started-home-2@2x.png]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/illustration/assessments/getting-started/getting-started-home-3@2x.png]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[https://learninglab.rmit.edu.au/university-essentials/sustainability/sdgs-your-life/sustainable-creative-practice/]]></loc>
+		<lastmod><![CDATA[2024-11-27T23:32:58+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[https://learninglab.rmit.edu.au/university-essentials/acting-academic-integrity/]]></loc>
+		<lastmod><![CDATA[2024-11-27T22:26:57+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 	</url>
 	<url>
 		<loc><![CDATA[https://learninglab.rmit.edu.au/referencing/summarising/]]></loc>
 		<lastmod><![CDATA[2024-11-27T06:29:15+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[https://learninglab.rmit.edu.au/art-and-design/propositional-writing/]]></loc>
-		<lastmod><![CDATA[2024-11-27T06:28:32+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 	</url>
@@ -160,12 +277,6 @@
 	<url>
 		<loc><![CDATA[https://learninglab.rmit.edu.au/assessments/literature-review/verbs/]]></loc>
 		<lastmod><![CDATA[2024-11-27T05:17:22+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[https://learninglab.rmit.edu.au/documentation/redirect/]]></loc>
-		<lastmod><![CDATA[2024-11-27T05:07:40+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 	</url>
@@ -299,12 +410,6 @@
 		<priority><![CDATA[0.7]]></priority>
 	</url>
 	<url>
-		<loc><![CDATA[https://learninglab.rmit.edu.au/art-and-design/]]></loc>
-		<lastmod><![CDATA[2024-11-27T01:13:07+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
 		<loc><![CDATA[https://learninglab.rmit.edu.au/art-and-design/colour-theory/]]></loc>
 		<lastmod><![CDATA[2024-11-27T01:10:51+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
@@ -346,27 +451,6 @@
 	<url>
 		<loc><![CDATA[https://learninglab.rmit.edu.au/assessments/essays/]]></loc>
 		<lastmod><![CDATA[2024-11-27T00:53:06+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[https://learninglab.rmit.edu.au/assessments/getting-started-with-assignments/]]></loc>
-		<lastmod><![CDATA[2024-11-27T00:52:30+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/illustration/assessments/getting-started/getting-started-home-1@2x.png]]></image:loc>
-		</image:image>
-		<image:image>
-			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/illustration/assessments/getting-started/getting-started-home-2@2x.png]]></image:loc>
-		</image:image>
-		<image:image>
-			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/illustration/assessments/getting-started/getting-started-home-3@2x.png]]></image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[https://learninglab.rmit.edu.au/assessments/annotated-bibliographies/]]></loc>
-		<lastmod><![CDATA[2024-11-27T00:52:04+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 	</url>
@@ -429,12 +513,6 @@
 		<image:image>
 			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/AI-tools-image1.jpg]]></image:loc>
 		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[https://learninglab.rmit.edu.au/university-essentials/acting-academic-integrity/]]></loc>
-		<lastmod><![CDATA[2024-11-27T00:41:56+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
 	</url>
 	<url>
 		<loc><![CDATA[https://learninglab.rmit.edu.au/university-essentials/artificial-intelligence-tools/how-does-ai-work/]]></loc>
@@ -1688,12 +1766,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc><![CDATA[https://learninglab.rmit.edu.au/documentation/publishing-the-learning-lab/]]></loc>
-		<lastmod><![CDATA[2024-11-25T23:36:37+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
 		<loc><![CDATA[https://learninglab.rmit.edu.au/maths-statistics/statistics/s19-poisson-distribution/]]></loc>
 		<lastmod><![CDATA[2024-11-25T23:32:30+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
@@ -2729,51 +2801,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc><![CDATA[https://learninglab.rmit.edu.au/chemistry/chemical-bonding/covalent-bonds/]]></loc>
-		<lastmod><![CDATA[2024-11-25T05:22:46+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/chem7-covalenbondformation.png]]></image:loc>
-		</image:image>
-		<image:image>
-			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6carbondioxide.png]]></image:loc>
-		</image:image>
-		<image:image>
-			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6ethyne.png]]></image:loc>
-		</image:image>
-		<image:image>
-			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/chem7-coordinatecovalentbonds.png]]></image:loc>
-		</image:image>
-		<image:image>
-			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6CO2.png]]></image:loc>
-		</image:image>
-		<image:image>
-			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6SO2.png]]></image:loc>
-		</image:image>
-		<image:image>
-			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6H2Opng.png]]></image:loc>
-		</image:image>
-		<image:image>
-			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6COH2.png]]></image:loc>
-		</image:image>
-		<image:image>
-			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6NH3.png]]></image:loc>
-		</image:image>
-		<image:image>
-			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6CH4.png]]></image:loc>
-		</image:image>
-		<image:image>
-			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6C2H4.png]]></image:loc>
-		</image:image>
-		<image:image>
-			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEM6water.png]]></image:loc>
-		</image:image>
-		<image:image>
-			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/ChemCHEMcarbondioxidedipole.png]]></image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc><![CDATA[https://learninglab.rmit.edu.au/chemistry/chemical-bonding/]]></loc>
 		<lastmod><![CDATA[2024-11-25T05:13:17+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
@@ -3689,12 +3716,6 @@
 		<priority><![CDATA[0.7]]></priority>
 	</url>
 	<url>
-		<loc><![CDATA[https://learninglab.rmit.edu.au/art-and-design/reflective-writing-design/reflecting/]]></loc>
-		<lastmod><![CDATA[2024-11-17T22:18:32+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
 		<loc><![CDATA[https://learninglab.rmit.edu.au/university-essentials/critical-thinking-and-argument-analysis/argument-analysis/elements-argument/]]></loc>
 		<lastmod><![CDATA[2024-11-17T22:16:19+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
@@ -3842,12 +3863,6 @@
 		<priority><![CDATA[0.7]]></priority>
 	</url>
 	<url>
-		<loc><![CDATA[https://learninglab.rmit.edu.au/university-essentials/sustainability/sdgs-your-life/sustainable-creative-practice/]]></loc>
-		<lastmod><![CDATA[2024-11-13T06:05:20+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
 		<loc><![CDATA[https://learninglab.rmit.edu.au/law/business-law-introduction/language-focus-1/]]></loc>
 		<lastmod><![CDATA[2024-11-13T06:04:07+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
@@ -3870,15 +3885,6 @@
 		<lastmod><![CDATA[2024-11-13T06:03:42+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[https://learninglab.rmit.edu.au/law/writing-legal-scenario/]]></loc>
-		<lastmod><![CDATA[2024-11-13T06:03:31+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/company_law_IRAC_diagram_V3.png]]></image:loc>
-		</image:image>
 	</url>
 	<url>
 		<loc><![CDATA[https://learninglab.rmit.edu.au/law/writing-legal-scenario/mind-maps/]]></loc>
@@ -4096,12 +4102,6 @@
 	<url>
 		<loc><![CDATA[https://learninglab.rmit.edu.au/law/writing-legal-argument/language-focus/]]></loc>
 		<lastmod><![CDATA[2024-11-12T04:34:28+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[https://learninglab.rmit.edu.au/law/assessments-law/]]></loc>
-		<lastmod><![CDATA[2024-11-12T03:44:06+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 	</url>

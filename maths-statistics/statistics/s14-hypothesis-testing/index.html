@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- wp_head -->
+	<title>S14: Hypothesis testing - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	
+		<!-- All in One SEO 4.7.4.2 - aioseo.com -->
 		<meta name="description" content="This module explains how to set up and test hypotheses to see if a difference between a sample mean and a population mean is significant. Consider statements such as Teenagers aged \(13\)-\(15\) spend no more than \(10\) hours a week on Facebook. The average weight of Australian men is the same as it was in" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
@@ -27,7 +31,7 @@
 		<script type="application/ld+json" class="aioseo-schema">
 			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s14-hypothesis-testing\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/#listItem","position":3,"name":"Statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s14-hypothesis-testing\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s14-hypothesis-testing\/#listItem","position":4,"name":"S14: Hypothesis testing","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s14-hypothesis-testing\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s14-hypothesis-testing\/","name":"S14: Hypothesis testing - Learning Lab","description":"This module explains how to set up and test hypotheses to see if a difference between a sample mean and a population mean is significant. Consider statements such as Teenagers aged \\(13\\)-\\(15\\) spend no more than \\(10\\) hours a week on Facebook. The average weight of Australian men is the same as it was in","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s14-hypothesis-testing\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:44+00:00","dateModified":"2024-11-25T23:01:14+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
-		
+		<!-- All in One SEO -->
 
 
 <script>
@@ -73,7 +77,14 @@ MathJax = {
     <!-- START Additional scripts for tracking -->
 
     <!-- Microsoft Clarity - does hotspot tracking of pages -->
-    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "ku7m575lss");
+    </script>
+    
 
     <!-- Google tag - (gtag.js) --> 
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
@@ -434,37 +445,37 @@ There is not enough evidence to suggest that the scores of those who attended th
 <p>Your answers should be set out and contain all the steps shown above. A brief outline of the main features is given in the answers to teh following exercises.</p>
 <p>1. Repeat the example to decide if there is evidence at the <span class="math inline">\(10\)</span>% level of significance that attending the bridging program is associated with the change in scores.</p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-1-4705">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-1-7145" aria-expanded="false" aria-controls="body-answer-1-7145" >Answer 1</button>
+<p class="accordion-header" id="head-answer-1-7807">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-1-4976" aria-expanded="false" aria-controls="body-answer-1-4976" >Answer 1</button>
 </p>
-<div id="body-answer-1-7145" class="accordion-collapse collapse " aria-labelledby="head-answer-1-4705">
+<div id="body-answer-1-4976" class="accordion-collapse collapse " aria-labelledby="head-answer-1-7807">
 <div class="accordion-body">
 <p>Test statistic <span class="math inline">\(=1.83\)</span> reject <span class="math inline">\(H_{o}\)</span>: evidence of change in scores.</p>
 </div></div></div>
 <p>2. A random sample of <span class="math inline">\(36\)</span> soft drinks from vending machines had an average content of <span class="math inline">\(370\)</span>ml with a standard deviation of <span class="math inline">\(20\)</span>ml. Test the null hypothesis that <span class="math inline">\(\mu\)</span> <span class="math inline">\(=375\)</span> ml against the alternative hypothesis <span class="math inline">\(\mu\)</span> <span class="math inline">\(\neq375\)</span>ml at the <span class="math inline">\(1\)</span>% significance level.<br />
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-2-4282">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-2-6481" aria-expanded="false" aria-controls="body-answer-2-6481" >Answer 2</button>
+<p class="accordion-header" id="head-answer-2-1923">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-2-2265" aria-expanded="false" aria-controls="body-answer-2-2265" >Answer 2</button>
 </p>
-<div id="body-answer-2-6481" class="accordion-collapse collapse " aria-labelledby="head-answer-2-4282">
+<div id="body-answer-2-2265" class="accordion-collapse collapse " aria-labelledby="head-answer-2-1923">
 <div class="accordion-body">
 <p>Test statistic <span class="math inline">\(=-1.5\)</span> do not reject <span class="math inline">\(H_{o}\)</span>: difference consistent with chance variation</p>
 </div></div></div>
 <p>3. A bank manager has historical data that shows over lunchtime Mon – Fri the mean number of customers that come into the bank is <span class="math inline">\(32\)</span>. Accordingly he believes he has no need to change the number of tellers. However a branch survey conducted every lunchtime over eight weeks found that the mean number of customers was <span class="math inline">\(36\)</span> with a standard deviation of <span class="math inline">\(8.2\)</span>. Conduct a hypothesis test with a <span class="math inline">\(5\)</span>% level of significance to test whether the mean number of lunchtime customers has changed. What recommendation would you make to the bank manager?<br />
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-3-3230">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-3-9197" aria-expanded="false" aria-controls="body-answer-3-9197" >Answer 3</button>
+<p class="accordion-header" id="head-answer-3-8828">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-3-2303" aria-expanded="false" aria-controls="body-answer-3-2303" >Answer 3</button>
 </p>
-<div id="body-answer-3-9197" class="accordion-collapse collapse " aria-labelledby="head-answer-3-3230">
+<div id="body-answer-3-2303" class="accordion-collapse collapse " aria-labelledby="head-answer-3-8828">
 <div class="accordion-body">
 <p>Test statistic <span class="math inline">\(=3.09\)</span> reject <span class="math inline">\(H_{o}\)</span>: evidence of increase in lunchtime customers, therefore need more tellers</p>
 </div></div></div>
 <p>4. The manufacturer of ‘longlast’ batteries claims the mean lifetime of his batteries is <span class="math inline">\(450\)</span> hours. A consumer interest magazine samples 100 batteries and finds that they have a mean of <span class="math inline">\(444\)</span> hours with a standard deviation of <span class="math inline">\(28\)</span> hours. Do the sample data contradict the manufacturers claim? (use <span class="math inline">\(\alpha\)</span> <span class="math inline">\(=0.02\)</span>)<br />
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-4-3690">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-4-3317" aria-expanded="false" aria-controls="body-answer-4-3317" >Answer 4</button>
+<p class="accordion-header" id="head-answer-4-6907">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-4-7578" aria-expanded="false" aria-controls="body-answer-4-7578" >Answer 4</button>
 </p>
-<div id="body-answer-4-3317" class="accordion-collapse collapse " aria-labelledby="head-answer-4-3690">
+<div id="body-answer-4-7578" class="accordion-collapse collapse " aria-labelledby="head-answer-4-6907">
 <div class="accordion-body">
 <p>Test statistic <span class="math inline">\(=2.14\)</span> do not reject <span class="math inline">\(H_{o}\)</span>: the difference is consistent with chance variation and there is no evidence to contradict the claim that the mean battery life is <span class="math inline">\(450\)</span> hours.</p>
 </div></div></div>
@@ -602,7 +613,7 @@ There is not enough evidence to suggest that the scores of those who attended th
 					<li><a href="../../../about-the-learning-lab/index.html">About Learning Lab</a></li>
 					<li><a href="../../../about-the-learning-lab/accessibility/index.html">Accessibility</a></li>
 					<li><a href="../../../about-the-learning-lab/whats-new/index.html">What's new</a></li>
-					<!--<li><a href="">Contact us</a></li>-->
+					<li><a href="https://forms.office.com/r/YvquUHdtE5">Learning Lab feedback</a></li>
 				</ul>
                 <!-- END links -->
                 <!-- START legal-social -->
@@ -614,7 +625,7 @@ There is not enough evidence to suggest that the scores of those who attended th
                         <li><a href="https://www.rmit.edu.au/utilities/terms"><span class="no-focus" tabindex="-1">Terms</span></a><span> | </span></li>
                         <li><a href="https://www.rmit.edu.au/utilities/privacy"><span class="no-focus" tabindex="-1">Privacy</span></a><span> | </span></li>
                         <!--<li><a href="https://www.rmit.edu.au/utilities/accessibility"><span class="no-focus" tabindex="-1">Accessibility</span></a> <span> | </span></li>-->
-                        <li><a data-analytics-type="footerlink" data-analytics-value="Website feedback" href="https://www.rmit.edu.au/utilities/website-feedback"><span class="no-focus" tabindex="-1">Website feedback</span></a><span> | </span></li>
+                        <!--<li><a data-analytics-type="footerlink" data-analytics-value="Website feedback" href="https://www.rmit.edu.au/utilities/website-feedback"><span class="no-focus" tabindex="-1">Website feedback</span></a><span> | </span></li>-->
                         <li><a data-analytics-type="footerlink" data-analytics-value="Complaints" href="https://www.rmit.edu.au/utilities/complaints"><span class="no-focus" tabindex="-1">Complaints</span></a><span> | </span></li>
                         <li>ABN 49 781 030 034<span> | </span></li>
                         <li>CRICOS provider number: 00122A<span> | </span></li>

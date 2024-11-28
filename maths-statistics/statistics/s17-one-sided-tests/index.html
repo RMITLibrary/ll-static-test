@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- wp_head -->
+	<title>S17: One sided tests - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	
+		<!-- All in One SEO 4.7.4.2 - aioseo.com -->
 		<meta name="description" content="How do we apply a test of proportions? Rather than comparing a sample mean to a population mean, we can compare a sample proportion to a population proportion. In the hypothesis tests we have looked at so far, we have been concerned to find evidence that there has been a change in the population mean." />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
@@ -27,7 +31,7 @@
 		<script type="application/ld+json" class="aioseo-schema">
 			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s17-one-sided-tests\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/#listItem","position":3,"name":"Statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s17-one-sided-tests\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s17-one-sided-tests\/#listItem","position":4,"name":"S17: One sided tests","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s17-one-sided-tests\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s17-one-sided-tests\/","name":"S17: One sided tests - Learning Lab","description":"How do we apply a test of proportions? Rather than comparing a sample mean to a population mean, we can compare a sample proportion to a population proportion. In the hypothesis tests we have looked at so far, we have been concerned to find evidence that there has been a change in the population mean.","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s17-one-sided-tests\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:44+00:00","dateModified":"2024-11-25T23:18:56+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
-		
+		<!-- All in One SEO -->
 
 
 <script>
@@ -73,7 +77,14 @@ MathJax = {
     <!-- START Additional scripts for tracking -->
 
     <!-- Microsoft Clarity - does hotspot tracking of pages -->
-    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "ku7m575lss");
+    </script>
+    
 
     <!-- Google tag - (gtag.js) --> 
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
@@ -432,37 +443,37 @@ There is evidence to suggest that the pies are being filled with less than <span
 <h2>Exercises</h2>
 <p>Nutrition guidelines for an aged care facility recommend that no more than <span class="math inline">\(71.1mg\)</span> of a particular vitamin be consumed each day. A random sample of seven residents revealed <span class="math inline">\(\overline{x}=71.3\)</span> and <span class="math inline">\(s=0.214\)</span>. Use a test with <span class="math inline">\(\alpha=0.05\)</span> to decide if there is evidence of a problem with the dietary intake at this facility?</p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-1-1356">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-1-2029" aria-expanded="false" aria-controls="body-answer-1-2029" >Answer 1</button>
+<p class="accordion-header" id="head-answer-1-3946">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-1-7468" aria-expanded="false" aria-controls="body-answer-1-7468" >Answer 1</button>
 </p>
-<div id="body-answer-1-2029" class="accordion-collapse collapse " aria-labelledby="head-answer-1-1356">
+<div id="body-answer-1-7468" class="accordion-collapse collapse " aria-labelledby="head-answer-1-3946">
 <div class="accordion-body">
 <p>One sided t-test. Test stat = 2.47, t crit = 1.943. <span class="math inline">\(\Longrightarrow\)</span> reject <span class="math inline">\(H_{o}\)</span></p>
 </div></div></div>
 <p>A long term analysis of Rabbit University students’ study habits revealed that on average students study for 18 hours per week with a standard deviation of 4.2 hours. However, a random sample of 45 students in 2017 had a mean weekly study time of 14.68 hours. At the 1% significance level does this data suggest that students at Rabbit University are now studying less?</p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-2-6483">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-2-4138" aria-expanded="false" aria-controls="body-answer-2-4138" >Answer 2</button>
+<p class="accordion-header" id="head-answer-2-1978">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-2-3444" aria-expanded="false" aria-controls="body-answer-2-3444" >Answer 2</button>
 </p>
-<div id="body-answer-2-4138" class="accordion-collapse collapse " aria-labelledby="head-answer-2-6483">
+<div id="body-answer-2-3444" class="accordion-collapse collapse " aria-labelledby="head-answer-2-1978">
 <div class="accordion-body">
 <p>One sided t-test. Test stat = -5.30, t crit = -2.414, <span class="math inline">\(\Longrightarrow\)</span> reject <span class="math inline">\(H_{o}\)</span></p>
 </div></div></div>
 <p>An IVF process resulted in <span class="math inline">\(50\)</span> successful live births of which <span class="math inline">\(33\)</span> were females. Use the p-value method to decide at the 1% level of significance whether female children are more likely to result from this procedure.</p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-3-1905">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-3-9708" aria-expanded="false" aria-controls="body-answer-3-9708" >Answer 3</button>
+<p class="accordion-header" id="head-answer-3-9563">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-3-1827" aria-expanded="false" aria-controls="body-answer-3-1827" >Answer 3</button>
 </p>
-<div id="body-answer-3-9708" class="accordion-collapse collapse " aria-labelledby="head-answer-3-1905">
+<div id="body-answer-3-1827" class="accordion-collapse collapse " aria-labelledby="head-answer-3-9563">
 <div class="accordion-body">
 <p>One sided z-test of proportion. Test stat = 2.263, p = 0.012 <span class="math inline">\(\Longrightarrow\)</span> do not reject <span class="math inline">\(H_{o}\)</span></p>
 </div></div></div>
 <p>A maths Drop-in service is considering opening each evening, but only if attendance would be at least 20% of the weekly daytime average. A random survey of 400 attendees indicated that 92 would attend in the evening. Use the p-value method <span class="math inline">\((\alpha=0.1)\)</span> to decide what the Drop-in service should do.</p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-4-1514">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-4-6570" aria-expanded="false" aria-controls="body-answer-4-6570" >Answer 4</button>
+<p class="accordion-header" id="head-answer-4-1567">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-4-5149" aria-expanded="false" aria-controls="body-answer-4-5149" >Answer 4</button>
 </p>
-<div id="body-answer-4-6570" class="accordion-collapse collapse " aria-labelledby="head-answer-4-1514">
+<div id="body-answer-4-5149" class="accordion-collapse collapse " aria-labelledby="head-answer-4-1567">
 <div class="accordion-body">
 <p>One sided z-test of proportion Test stat = 1.5, p = 0.067<span class="math inline">\(\Longrightarrow\)</span> reject <span class="math inline">\(H_{o}\)</span></p>
 </div></div></div>
@@ -600,7 +611,7 @@ There is evidence to suggest that the pies are being filled with less than <span
 					<li><a href="../../../about-the-learning-lab/index.html">About Learning Lab</a></li>
 					<li><a href="../../../about-the-learning-lab/accessibility/index.html">Accessibility</a></li>
 					<li><a href="../../../about-the-learning-lab/whats-new/index.html">What's new</a></li>
-					<!--<li><a href="">Contact us</a></li>-->
+					<li><a href="https://forms.office.com/r/YvquUHdtE5">Learning Lab feedback</a></li>
 				</ul>
                 <!-- END links -->
                 <!-- START legal-social -->
@@ -612,7 +623,7 @@ There is evidence to suggest that the pies are being filled with less than <span
                         <li><a href="https://www.rmit.edu.au/utilities/terms"><span class="no-focus" tabindex="-1">Terms</span></a><span> | </span></li>
                         <li><a href="https://www.rmit.edu.au/utilities/privacy"><span class="no-focus" tabindex="-1">Privacy</span></a><span> | </span></li>
                         <!--<li><a href="https://www.rmit.edu.au/utilities/accessibility"><span class="no-focus" tabindex="-1">Accessibility</span></a> <span> | </span></li>-->
-                        <li><a data-analytics-type="footerlink" data-analytics-value="Website feedback" href="https://www.rmit.edu.au/utilities/website-feedback"><span class="no-focus" tabindex="-1">Website feedback</span></a><span> | </span></li>
+                        <!--<li><a data-analytics-type="footerlink" data-analytics-value="Website feedback" href="https://www.rmit.edu.au/utilities/website-feedback"><span class="no-focus" tabindex="-1">Website feedback</span></a><span> | </span></li>-->
                         <li><a data-analytics-type="footerlink" data-analytics-value="Complaints" href="https://www.rmit.edu.au/utilities/complaints"><span class="no-focus" tabindex="-1">Complaints</span></a><span> | </span></li>
                         <li>ABN 49 781 030 034<span> | </span></li>
                         <li>CRICOS provider number: 00122A<span> | </span></li>

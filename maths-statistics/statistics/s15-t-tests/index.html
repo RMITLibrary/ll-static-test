@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- wp_head -->
+	<title>S15: T-tests - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	
+		<!-- All in One SEO 4.7.4.2 - aioseo.com -->
 		<meta name="description" content="Hypothesis testing usually uses the population standard deviation to calculate a “z” value. If the population standard deviation is unknown, we use the sample standard deviation to calculate a “t” value. T-distribution In conducting a hypothesis test the population standard deviation \(\sigma\) may be unknown. In that case we approximate with the sample standard deviation" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
@@ -27,7 +31,7 @@
 		<script type="application/ld+json" class="aioseo-schema">
 			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s15-t-tests\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/#listItem","position":3,"name":"Statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s15-t-tests\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s15-t-tests\/#listItem","position":4,"name":"S15: T-tests","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s15-t-tests\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s15-t-tests\/","name":"S15: T-tests - Learning Lab","description":"Hypothesis testing usually uses the population standard deviation to calculate a \u201cz\u201d value. If the population standard deviation is unknown, we use the sample standard deviation to calculate a \u201ct\u201d value. T-distribution In conducting a hypothesis test the population standard deviation \\(\\sigma\\) may be unknown. In that case we approximate with the sample standard deviation","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s15-t-tests\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:44+00:00","dateModified":"2024-11-25T23:04:35+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
-		
+		<!-- All in One SEO -->
 
 
 <script>
@@ -73,7 +77,14 @@ MathJax = {
     <!-- START Additional scripts for tracking -->
 
     <!-- Microsoft Clarity - does hotspot tracking of pages -->
-    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "ku7m575lss");
+    </script>
+    
 
     <!-- Google tag - (gtag.js) --> 
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
@@ -442,28 +453,28 @@ There is not evidence to suggest that the average battery life differs from 200 
 <p>Your answers should be set out and contain all the steps shown above. A brief outline of the main features is given in the answers below.</p>
 <p>1. The number of nic nac lollies in a small pack follows a normal distribution and the average is claimed to be <span class="math inline">\(40\)</span>. A suspicious customer buys <span class="math inline">\(10\)</span> packs and counts the nic nacs in each pack. The results are: 38 45 36 40 42 44 35 41 36 40. Use a one sided test with <span class="math inline">\(\alpha\)</span> <span class="math inline">\(=0.05\)</span> to decide whether the customer’s are justified.</p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer--7771">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer--7578" aria-expanded="false" aria-controls="body-answer--7578" >Answer </button>
+<p class="accordion-header" id="head-answer--8319">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer--2262" aria-expanded="false" aria-controls="body-answer--2262" >Answer </button>
 </p>
-<div id="body-answer--7578" class="accordion-collapse collapse " aria-labelledby="head-answer--7771">
+<div id="body-answer--2262" class="accordion-collapse collapse " aria-labelledby="head-answer--8319">
 <div class="accordion-body">
 <p>Answer: Test statistic = <span class="math inline">\(-0.28\)</span> do not reject <span class="math inline">\(H_{o}\)</span>.</p>
 </div></div></div>
 <p>2. A hospital claims a new process will reduce the waiting time for surgery to treat a condition considered as non life threatening. To date the average waiting time has been <span class="math inline">\(15.7\)</span> months. A random sample of <span class="math inline">\(33\)</span> patients diagnosed with the condition were observed and the time till surgery recorded (<span class="math inline">\(\overline{x}=13.664,s=2.544\)</span>). Test the hospitals claim at the <span class="math inline">\(1\)</span>% significance level.</p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer--5553">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer--1254" aria-expanded="false" aria-controls="body-answer--1254" >Answer </button>
+<p class="accordion-header" id="head-answer--3281">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer--5506" aria-expanded="false" aria-controls="body-answer--5506" >Answer </button>
 </p>
-<div id="body-answer--1254" class="accordion-collapse collapse " aria-labelledby="head-answer--5553">
+<div id="body-answer--5506" class="accordion-collapse collapse " aria-labelledby="head-answer--3281">
 <div class="accordion-body">
 <p>Answer: Test statistic = <span class="math inline">\(-0.28\)</span> do not reject <span class="math inline">\(H_{o}\)</span>.</p>
 </div></div></div>
 <p>3. The quality of a pre-natal program for at-risk mothers is to be assessed by comparing the weight of babies born to mothers participating in the program with the historical average of <span class="math inline">\(2800g\)</span>. The babies of the <span class="math inline">\(25\)</span> mothers in the program had a mean birth weight of <span class="math inline">\(3075g\)</span> and a standard deviation of <span class="math inline">\(300\)</span> <span class="math inline">\(g\)</span>. Comment on success of the program using a two sided hypothesis test and <span class="math inline">\(\alpha=0.01\)</span>.</p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer--1911">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer--8333" aria-expanded="false" aria-controls="body-answer--8333" >Answer </button>
+<p class="accordion-header" id="head-answer--6648">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer--5948" aria-expanded="false" aria-controls="body-answer--5948" >Answer </button>
 </p>
-<div id="body-answer--8333" class="accordion-collapse collapse " aria-labelledby="head-answer--1911">
+<div id="body-answer--5948" class="accordion-collapse collapse " aria-labelledby="head-answer--6648">
 <div class="accordion-body">
 <p>Answer: Test statistic = <span class="math inline">\(4.58\)</span> reject <span class="math inline">\(H_{o}\)</span></p>
 </div></div></div>
@@ -601,7 +612,7 @@ There is not evidence to suggest that the average battery life differs from 200 
 					<li><a href="../../../about-the-learning-lab/index.html">About Learning Lab</a></li>
 					<li><a href="../../../about-the-learning-lab/accessibility/index.html">Accessibility</a></li>
 					<li><a href="../../../about-the-learning-lab/whats-new/index.html">What's new</a></li>
-					<!--<li><a href="">Contact us</a></li>-->
+					<li><a href="https://forms.office.com/r/YvquUHdtE5">Learning Lab feedback</a></li>
 				</ul>
                 <!-- END links -->
                 <!-- START legal-social -->
@@ -613,7 +624,7 @@ There is not evidence to suggest that the average battery life differs from 200 
                         <li><a href="https://www.rmit.edu.au/utilities/terms"><span class="no-focus" tabindex="-1">Terms</span></a><span> | </span></li>
                         <li><a href="https://www.rmit.edu.au/utilities/privacy"><span class="no-focus" tabindex="-1">Privacy</span></a><span> | </span></li>
                         <!--<li><a href="https://www.rmit.edu.au/utilities/accessibility"><span class="no-focus" tabindex="-1">Accessibility</span></a> <span> | </span></li>-->
-                        <li><a data-analytics-type="footerlink" data-analytics-value="Website feedback" href="https://www.rmit.edu.au/utilities/website-feedback"><span class="no-focus" tabindex="-1">Website feedback</span></a><span> | </span></li>
+                        <!--<li><a data-analytics-type="footerlink" data-analytics-value="Website feedback" href="https://www.rmit.edu.au/utilities/website-feedback"><span class="no-focus" tabindex="-1">Website feedback</span></a><span> | </span></li>-->
                         <li><a data-analytics-type="footerlink" data-analytics-value="Complaints" href="https://www.rmit.edu.au/utilities/complaints"><span class="no-focus" tabindex="-1">Complaints</span></a><span> | </span></li>
                         <li>ABN 49 781 030 034<span> | </span></li>
                         <li>CRICOS provider number: 00122A<span> | </span></li>

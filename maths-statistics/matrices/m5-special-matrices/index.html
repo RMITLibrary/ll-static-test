@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- wp_head -->
+	<title>M5: Special matrices - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	
+		<!-- All in One SEO 4.7.4.2 - aioseo.com -->
 		<meta name="description" content="It is helpful to understand the definition of a number of different types of “special” matrices. Transpose of a matrix The transpose of a matrix \(\mathbf{A}\) is denoted \(\mathbf{A}^{T}\)and is found by interchanging the rows and the columns. The first row becomes the first column, the second row becomes the second column etc. If \(\mathbf{A}\)" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
@@ -27,7 +31,7 @@
 		<script type="application/ld+json" class="aioseo-schema">
 			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/matrices\/m5-special-matrices\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/matrices\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/matrices\/#listItem","position":3,"name":"Matrices","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/matrices\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/matrices\/m5-special-matrices\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/matrices\/m5-special-matrices\/#listItem","position":4,"name":"M5: Special matrices","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/matrices\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/matrices\/m5-special-matrices\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/matrices\/m5-special-matrices\/","name":"M5: Special matrices - Learning Lab","description":"It is helpful to understand the definition of a number of different types of \u201cspecial\u201d matrices. Transpose of a matrix The transpose of a matrix \\(\\mathbf{A}\\) is denoted \\(\\mathbf{A}^{T}\\)and is found by interchanging the rows and the columns. The first row becomes the first column, the second row becomes the second column etc. If \\(\\mathbf{A}\\)","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/matrices\/m5-special-matrices\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:54+00:00","dateModified":"2024-11-26T00:23:00+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
-		
+		<!-- All in One SEO -->
 
 
 <script>
@@ -73,7 +77,14 @@ MathJax = {
     <!-- START Additional scripts for tracking -->
 
     <!-- Microsoft Clarity - does hotspot tracking of pages -->
-    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "ku7m575lss");
+    </script>
+    
 
     <!-- Google tag - (gtag.js) --> 
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
@@ -406,10 +417,10 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li>Which of the given matrices are symmetric?</li>
 </ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answers-3113">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-5872" aria-expanded="false" aria-controls="body-answers-5872" >Answers</button>
+<p class="accordion-header" id="head-answers-1237">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-6990" aria-expanded="false" aria-controls="body-answers-6990" >Answers</button>
 </p>
-<div id="body-answers-5872" class="accordion-collapse collapse " aria-labelledby="head-answers-3113">
+<div id="body-answers-6990" class="accordion-collapse collapse " aria-labelledby="head-answers-1237">
 <div class="accordion-body">
 <p><span class="math display">\[\begin{align*} \text{a. }\mathbf{A}^{T} &amp; =\left[\begin{array}{c} 3\\ -2 \end{array}\right]\quad\mathbf{B}^{T}=\left[\begin{array}{cc} 1 &amp; -3\\ -3 &amp; 0 \end{array}\right]\quad\mathbf{C}^{T}=\left[\begin{array}{ccc} 2 &amp; 0 &amp; 5\\ 0 &amp; -2 &amp; 2\\ 5 &amp; 2 &amp; 1 \end{array}\right]\quad\mathbf{D}^{T}=\left[\begin{array}{cc} 2 &amp; 5\\ -1 &amp; -1\\ 5 &amp; 2 \end{array}\right]\quad\mathbf{E}=\left[\begin{array}{ccc} 0 &amp; 1 &amp; 1\\ 1 &amp; 0 &amp; -1\\ -1 &amp; 1 &amp; 0 \end{array}\right] \end{align*}\]</span></p>
 <p><span class="math inline">\(\text{$\text{b.}$ }\mathbf{B}\)</span> and <span class="math inline">\(\mathbf{C}\)</span> are symmetric.</p>
@@ -421,10 +432,10 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li>Which of the given matices is a rotation matrix?</li>
 </ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answers-5600">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-4698" aria-expanded="false" aria-controls="body-answers-4698" >Answers</button>
+<p class="accordion-header" id="head-answers-5777">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-3253" aria-expanded="false" aria-controls="body-answers-3253" >Answers</button>
 </p>
-<div id="body-answers-4698" class="accordion-collapse collapse " aria-labelledby="head-answers-5600">
+<div id="body-answers-3253" class="accordion-collapse collapse " aria-labelledby="head-answers-5777">
 <div class="accordion-body">
 <ol style="list-style-type: lower-alpha;">
 <li><span class="math inline">\(\mathbf{M}\)</span>, <span class="math inline">\(\mathbf{N}\)</span> and <span class="math inline">\(\mathbf{Q}\)</span> are orthogonal</li>
@@ -567,7 +578,7 @@ list.querySelectorAll('h4').forEach(h4 => {
 					<li><a href="../../../about-the-learning-lab/index.html">About Learning Lab</a></li>
 					<li><a href="../../../about-the-learning-lab/accessibility/index.html">Accessibility</a></li>
 					<li><a href="../../../about-the-learning-lab/whats-new/index.html">What's new</a></li>
-					<!--<li><a href="">Contact us</a></li>-->
+					<li><a href="https://forms.office.com/r/YvquUHdtE5">Learning Lab feedback</a></li>
 				</ul>
                 <!-- END links -->
                 <!-- START legal-social -->
@@ -579,7 +590,7 @@ list.querySelectorAll('h4').forEach(h4 => {
                         <li><a href="https://www.rmit.edu.au/utilities/terms"><span class="no-focus" tabindex="-1">Terms</span></a><span> | </span></li>
                         <li><a href="https://www.rmit.edu.au/utilities/privacy"><span class="no-focus" tabindex="-1">Privacy</span></a><span> | </span></li>
                         <!--<li><a href="https://www.rmit.edu.au/utilities/accessibility"><span class="no-focus" tabindex="-1">Accessibility</span></a> <span> | </span></li>-->
-                        <li><a data-analytics-type="footerlink" data-analytics-value="Website feedback" href="https://www.rmit.edu.au/utilities/website-feedback"><span class="no-focus" tabindex="-1">Website feedback</span></a><span> | </span></li>
+                        <!--<li><a data-analytics-type="footerlink" data-analytics-value="Website feedback" href="https://www.rmit.edu.au/utilities/website-feedback"><span class="no-focus" tabindex="-1">Website feedback</span></a><span> | </span></li>-->
                         <li><a data-analytics-type="footerlink" data-analytics-value="Complaints" href="https://www.rmit.edu.au/utilities/complaints"><span class="no-focus" tabindex="-1">Complaints</span></a><span> | </span></li>
                         <li>ABN 49 781 030 034<span> | </span></li>
                         <li>CRICOS provider number: 00122A<span> | </span></li>

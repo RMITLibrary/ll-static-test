@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- wp_head -->
+	<title>M9: Inverse of a 3x3 matrix - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	
+		<!-- All in One SEO 4.7.4.2 - aioseo.com -->
 		<meta name="description" content="Understanding the inverse of a 3x3 matrix equips you with skills for solving systems of linear equations, crucial in fields like engineering, physics, and computer science. This knowledge simplifies complex problems and enhances your ability to perform matrix operations efficiently. Mastering this concept will boost your mathematical proficiency and problem-solving capabilities. The \(3\times3\) identity matrix" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
@@ -27,7 +31,7 @@
 		<script type="application/ld+json" class="aioseo-schema">
 			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/matrices\/m9-inverse-3x3-matrix\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/matrices\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/matrices\/#listItem","position":3,"name":"Matrices","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/matrices\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/matrices\/m9-inverse-3x3-matrix\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/matrices\/m9-inverse-3x3-matrix\/#listItem","position":4,"name":"M9: Inverse of a 3x3 matrix","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/matrices\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/matrices\/m9-inverse-3x3-matrix\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/matrices\/m9-inverse-3x3-matrix\/","name":"M9: Inverse of a 3x3 matrix - Learning Lab","description":"Understanding the inverse of a 3x3 matrix equips you with skills for solving systems of linear equations, crucial in fields like engineering, physics, and computer science. This knowledge simplifies complex problems and enhances your ability to perform matrix operations efficiently. Mastering this concept will boost your mathematical proficiency and problem-solving capabilities. The \\(3\\times3\\) identity matrix","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/matrices\/m9-inverse-3x3-matrix\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:54+00:00","dateModified":"2024-11-26T00:37:46+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
-		
+		<!-- All in One SEO -->
 
 
 <script>
@@ -73,7 +77,14 @@ MathJax = {
     <!-- START Additional scripts for tracking -->
 
     <!-- Microsoft Clarity - does hotspot tracking of pages -->
-    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "ku7m575lss");
+    </script>
+    
 
     <!-- Google tag - (gtag.js) --> 
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
@@ -409,10 +420,10 @@ list.querySelectorAll('h4').forEach(h4 => {
 <p><span class="math inline">\(\text{3. $\left[\begin{array}{ccc} 1 &amp; 2 &amp; 0\\ 1 &amp; 2 &amp; 1\\ 1 &amp; 2 &amp; 4 \end{array}\right]$ }\)</span></p>
 <p><span class="math inline">\(\text{4. $\left[\begin{array}{ccc} -2 &amp; 2 &amp; 0\\ 1 &amp; 0 &amp; 1\\ 1 &amp; -1 &amp; -2 \end{array}\right]$ }\)</span></p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answers-3690">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-2443" aria-expanded="false" aria-controls="body-answers-2443" >Answers</button>
+<p class="accordion-header" id="head-answers-8439">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answers-7148" aria-expanded="false" aria-controls="body-answers-7148" >Answers</button>
 </p>
-<div id="body-answers-2443" class="accordion-collapse collapse " aria-labelledby="head-answers-3690">
+<div id="body-answers-7148" class="accordion-collapse collapse " aria-labelledby="head-answers-8439">
 <div class="accordion-body">
 <p><span class="math inline">\(\text{1. $\left[\begin{array}{ccc} 6 &amp; 3 &amp; -1\\ -10 &amp; -5 &amp; 2\\ -1 &amp; 0 &amp; 0 \end{array}\right]$ }.\)</span></p>
 <p><span class="math inline">\(\text{2. $\,\frac{1}{9}\left[\begin{array}{ccc} 1 &amp; -4 &amp; 2\\ 4 &amp; 2 &amp; -1\\ -11 &amp; -1 &amp; 5 \end{array}\right]$ }.\)</span></p>
@@ -552,7 +563,7 @@ list.querySelectorAll('h4').forEach(h4 => {
 					<li><a href="../../../about-the-learning-lab/index.html">About Learning Lab</a></li>
 					<li><a href="../../../about-the-learning-lab/accessibility/index.html">Accessibility</a></li>
 					<li><a href="../../../about-the-learning-lab/whats-new/index.html">What's new</a></li>
-					<!--<li><a href="">Contact us</a></li>-->
+					<li><a href="https://forms.office.com/r/YvquUHdtE5">Learning Lab feedback</a></li>
 				</ul>
                 <!-- END links -->
                 <!-- START legal-social -->
@@ -564,7 +575,7 @@ list.querySelectorAll('h4').forEach(h4 => {
                         <li><a href="https://www.rmit.edu.au/utilities/terms"><span class="no-focus" tabindex="-1">Terms</span></a><span> | </span></li>
                         <li><a href="https://www.rmit.edu.au/utilities/privacy"><span class="no-focus" tabindex="-1">Privacy</span></a><span> | </span></li>
                         <!--<li><a href="https://www.rmit.edu.au/utilities/accessibility"><span class="no-focus" tabindex="-1">Accessibility</span></a> <span> | </span></li>-->
-                        <li><a data-analytics-type="footerlink" data-analytics-value="Website feedback" href="https://www.rmit.edu.au/utilities/website-feedback"><span class="no-focus" tabindex="-1">Website feedback</span></a><span> | </span></li>
+                        <!--<li><a data-analytics-type="footerlink" data-analytics-value="Website feedback" href="https://www.rmit.edu.au/utilities/website-feedback"><span class="no-focus" tabindex="-1">Website feedback</span></a><span> | </span></li>-->
                         <li><a data-analytics-type="footerlink" data-analytics-value="Complaints" href="https://www.rmit.edu.au/utilities/complaints"><span class="no-focus" tabindex="-1">Complaints</span></a><span> | </span></li>
                         <li>ABN 49 781 030 034<span> | </span></li>
                         <li>CRICOS provider number: 00122A<span> | </span></li>

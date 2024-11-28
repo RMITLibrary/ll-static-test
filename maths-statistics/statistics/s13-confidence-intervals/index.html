@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- wp_head -->
+	<title>S13: Confidence intervals - Learning Lab</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	
+		<!-- All in One SEO 4.7.4.2 - aioseo.com -->
 		<meta name="description" content="We can use the mean of a sample to estimate the mean of the entire population. It is more appropriate to give an interval estimate rather than a point estimate. We use the statistics we obtain from samples to make inferences or estimates about the population from which the sample was drawn. For example: A" />
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href="index.html" />
@@ -27,7 +31,7 @@
 		<script type="application/ld+json" class="aioseo-schema">
 			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s13-confidence-intervals\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/#listItem","position":1,"name":"Home","item":"https:\/\/learninglab.rmit.edu.au\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem","position":2,"name":"Maths and statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/#listItem","position":3,"name":"Statistics","item":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/","nextItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s13-confidence-intervals\/#listItem","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/#listItem"},{"@type":"ListItem","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s13-confidence-intervals\/#listItem","position":4,"name":"S13: Confidence intervals","previousItem":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/learninglab.rmit.edu.au\/#organization","name":"Learning Lab","url":"https:\/\/learninglab.rmit.edu.au\/"},{"@type":"WebPage","@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s13-confidence-intervals\/#webpage","url":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s13-confidence-intervals\/","name":"S13: Confidence intervals - Learning Lab","description":"We can use the mean of a sample to estimate the mean of the entire population. It is more appropriate to give an interval estimate rather than a point estimate. We use the statistics we obtain from samples to make inferences or estimates about the population from which the sample was drawn. For example: A","inLanguage":"en-AU","isPartOf":{"@id":"https:\/\/learninglab.rmit.edu.au\/#website"},"breadcrumb":{"@id":"https:\/\/learninglab.rmit.edu.au\/maths-statistics\/statistics\/s13-confidence-intervals\/#breadcrumblist"},"datePublished":"2023-10-16T05:34:44+00:00","dateModified":"2024-11-25T22:56:21+00:00"},{"@type":"WebSite","@id":"https:\/\/learninglab.rmit.edu.au\/#website","url":"https:\/\/learninglab.rmit.edu.au\/","name":"Learning Lab","inLanguage":"en-AU","publisher":{"@id":"https:\/\/learninglab.rmit.edu.au\/#organization"}}]}
 		</script>
-		
+		<!-- All in One SEO -->
 
 
 <script>
@@ -73,7 +77,14 @@ MathJax = {
     <!-- START Additional scripts for tracking -->
 
     <!-- Microsoft Clarity - does hotspot tracking of pages -->
-    <script async="" src="https://www.clarity.ms/tag/ku7m575lss"></script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "ku7m575lss");
+    </script>
+    
 
     <!-- Google tag - (gtag.js) --> 
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLHPB23GYR"></script> 
@@ -395,10 +406,10 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li>Construct an <span class="math inline">\(80\)</span>% confidence interval for the true mean.</li>
 </ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-1-6443">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-1-5209" aria-expanded="false" aria-controls="body-answer-1-5209" >Answer 1</button>
+<p class="accordion-header" id="head-answer-1-8379">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-1-2753" aria-expanded="false" aria-controls="body-answer-1-2753" >Answer 1</button>
 </p>
-<div id="body-answer-1-5209" class="accordion-collapse collapse " aria-labelledby="head-answer-1-6443">
+<div id="body-answer-1-2753" class="accordion-collapse collapse " aria-labelledby="head-answer-1-8379">
 <div class="accordion-body">
 <p>(a) <span class="math inline">\([28.04,31.96]\quad\)</span>(b) <span class="math inline">\([28.72,31.28]\)</span></p>
 </div></div></div>
@@ -408,28 +419,28 @@ list.querySelectorAll('h4').forEach(h4 => {
 <li>In two of the suburbs of Cityville, Subtown and Tubtown, the mean weights for males were found to be <span class="math inline">\(80\)</span>kg and <span class="math inline">\(88\)</span>kg repectively. Comment on these results.</li>
 </ol>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-2-6135">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-2-3928" aria-expanded="false" aria-controls="body-answer-2-3928" >Answer 2</button>
+<p class="accordion-header" id="head-answer-2-8121">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-2-9465" aria-expanded="false" aria-controls="body-answer-2-9465" >Answer 2</button>
 </p>
-<div id="body-answer-2-3928" class="accordion-collapse collapse " aria-labelledby="head-answer-2-6135">
+<div id="body-answer-2-9465" class="accordion-collapse collapse " aria-labelledby="head-answer-2-8121">
 <div class="accordion-body">
 <p>(a) <span class="math inline">\(\left[79.91,86.09\right]\quad\)</span>(b) The mean weight for Subtown men is within the expected range but men who live in Tubtown appear to be extremely heavy compared with the general population. This may reflect lifestyle differences or a failure to select a random and representative sample.</p>
 </div></div></div>
 <p><strong>3.</strong> A market research company conducted a randomised survey of <span class="math inline">\(50\)</span> regular smokers to find the amount spent on cigarettes per week. They found that the smokers spent on average $ <span class="math inline">\(22\)</span> each week and the standard deviation was $ <span class="math inline">\(4.50\)</span>. Using a <span class="math inline">\(95\)</span>% level of confidence calculate the confidence interval for the true mean amount spent on cigarettes by regular smokers.</p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-3-4651">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-3-8541" aria-expanded="false" aria-controls="body-answer-3-8541" >Answer 3</button>
+<p class="accordion-header" id="head-answer-3-3039">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-3-8273" aria-expanded="false" aria-controls="body-answer-3-8273" >Answer 3</button>
 </p>
-<div id="body-answer-3-8541" class="accordion-collapse collapse " aria-labelledby="head-answer-3-4651">
+<div id="body-answer-3-8273" class="accordion-collapse collapse " aria-labelledby="head-answer-3-3039">
 <div class="accordion-body">
 <p><span class="math inline">\([20.75,23.25]\)</span></p>
 </div></div></div>
 <p><strong>4.</strong> After randomly sampling <span class="math inline">\(400\)</span> individuals and obtaining a sample mean of <span class="math inline">\(56.5\)</span> a research company was able to claim they were <span class="math inline">\(90\)</span>% certain that the true mean of the population was between <span class="math inline">\(56.089\)</span> and <span class="math inline">\(56.911\)</span>. What was the standard deviation of the sample?</p>
 <div class="accordion-item transcript ">
-<p class="accordion-header" id="head-answer-4-8362">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-4-5058" aria-expanded="false" aria-controls="body-answer-4-5058" >Answer 4</button>
+<p class="accordion-header" id="head-answer-4-7327">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-answer-4-5421" aria-expanded="false" aria-controls="body-answer-4-5421" >Answer 4</button>
 </p>
-<div id="body-answer-4-5058" class="accordion-collapse collapse " aria-labelledby="head-answer-4-8362">
+<div id="body-answer-4-5421" class="accordion-collapse collapse " aria-labelledby="head-answer-4-7327">
 <div class="accordion-body">
 <p>5</p>
 </div></div></div>
@@ -566,7 +577,7 @@ list.querySelectorAll('h4').forEach(h4 => {
 					<li><a href="../../../about-the-learning-lab/index.html">About Learning Lab</a></li>
 					<li><a href="../../../about-the-learning-lab/accessibility/index.html">Accessibility</a></li>
 					<li><a href="../../../about-the-learning-lab/whats-new/index.html">What's new</a></li>
-					<!--<li><a href="">Contact us</a></li>-->
+					<li><a href="https://forms.office.com/r/YvquUHdtE5">Learning Lab feedback</a></li>
 				</ul>
                 <!-- END links -->
                 <!-- START legal-social -->
@@ -578,7 +589,7 @@ list.querySelectorAll('h4').forEach(h4 => {
                         <li><a href="https://www.rmit.edu.au/utilities/terms"><span class="no-focus" tabindex="-1">Terms</span></a><span> | </span></li>
                         <li><a href="https://www.rmit.edu.au/utilities/privacy"><span class="no-focus" tabindex="-1">Privacy</span></a><span> | </span></li>
                         <!--<li><a href="https://www.rmit.edu.au/utilities/accessibility"><span class="no-focus" tabindex="-1">Accessibility</span></a> <span> | </span></li>-->
-                        <li><a data-analytics-type="footerlink" data-analytics-value="Website feedback" href="https://www.rmit.edu.au/utilities/website-feedback"><span class="no-focus" tabindex="-1">Website feedback</span></a><span> | </span></li>
+                        <!--<li><a data-analytics-type="footerlink" data-analytics-value="Website feedback" href="https://www.rmit.edu.au/utilities/website-feedback"><span class="no-focus" tabindex="-1">Website feedback</span></a><span> | </span></li>-->
                         <li><a data-analytics-type="footerlink" data-analytics-value="Complaints" href="https://www.rmit.edu.au/utilities/complaints"><span class="no-focus" tabindex="-1">Complaints</span></a><span> | </span></li>
                         <li>ABN 49 781 030 034<span> | </span></li>
                         <li>CRICOS provider number: 00122A<span> | </span></li>
