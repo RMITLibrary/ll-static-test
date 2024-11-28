@@ -1,6 +1,4 @@
 User-agent: *
-Disallow: /wp-admin/
-Allow: /wp-admin/admin-ajax.php
+Disallow: /documentation/
 
 Sitemap: https://learninglab.rmit.edu.au/sitemap.xml
-Sitemap: https://learninglab.rmit.edu.au/sitemap.rss
