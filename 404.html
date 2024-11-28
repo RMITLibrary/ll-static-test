@@ -764,7 +764,23 @@ const urlMappings = [
                 <!-- START 404 container -->
                 <div id="four-oh-container">
                     <h1 class="margin-top-zero">Page not found</h1>
-                    <p>We're sorry, but the page you're looking for doesn't exist.</p>
+                    <p class="lead">We're sorry, but the page you're looking for doesn't exist. <br />It might have been moved or deleted.</p>
+
+                    <p>Use the search bar below to find what you're looking for or <a href="search/#keywords">browse keywords</a> to find related content.</p>
+
+                     <!-- START search -->
+                    <div class="search-container label-side" style="max-width: 592px;">
+                        <label for="searchInput">
+                        <h2 class="h4">
+                            Search <span class="visually-hidden">this website:</span>
+                        </h2>
+                        </label>
+                        <div class="input-group">
+                            <input type="search" id="searchInput" class="form-control">
+                            <button type="submit"  id="searchButton" class="btn btn-primary"><div class="mag-glass"></div><span class="visually-hidden">Search</span></button>
+                        </div>
+                    </div>
+                    <!-- END search -->
                 </div>
                 <!-- END 404 container -->
             </div>
@@ -994,9 +1010,11 @@ function doRedirect(redirectUrl, delay = 5000) {
 	</footer>
     <!-- END footer -->		
 </div><!-- wrapper end -->
-		
 	
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
+<!-- script to punt search input to /search via query string -->
+<script type="text/javascript" src="wp-content/themes/picostrap5-child-base/js/search-home%EF%B9%96v=1.0.0.js"></script>
+	
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.7.1" id="mathjax-js"></script>
 <script src="wp-content/themes/picostrap5-child-base/js/bootstrap.bundle.min.js" id="bootstrap5-childtheme-js" defer data-wp-strategy="defer"></script>
 
 <!-- Code to handle hamburger menu, embed mode, dark mode -->
