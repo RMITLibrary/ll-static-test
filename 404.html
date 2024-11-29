@@ -822,6 +822,48 @@ function replaceUrlPath(url, newPath) {
     return urlObj.toString();
 }
 
+// This function looks for links to the old drupal site in the style of "/content/maths.html"
+// Redirects to /maths/
+function processOldSiteLinksAndRedirect(path) {
+    // Remove ".html" if present
+    if (path.endsWith('.html')) {
+        path = path.slice(0, -5);
+    }
+
+    // Replace "/content/" with "/"
+    if (path.startsWith('content/')) {
+        path = path.replace('content/', '/');
+
+        newPath = pathPrefix + path;
+
+        // Redirect using the existing function
+        doRedirect(newPath, 0);
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+// Function to do the redirect after all the checks and url processing
+function doRedirect(redirectUrl, delay = 5000) {
+    // Redirect after 5 seconds
+    setTimeout(function() {
+        console.log('Redirecting to: ' + redirectUrl);
+        window.location.href = redirectUrl;
+    }, delay);
+}
+
+// Check if the URL has a trailing slash (but not .html), ad it if not present
+// this is required due to poor routing options current on learninglab.rmit.edu.au. Remove if resolved
+let myPath = window.location.pathname;
+
+// Check if the path does not end with a slash and does not end with ".html"
+if (!myPath.endsWith("/") && !myPath.endsWith(".html")) {
+    // Redirect to the same path with a trailing slash
+    let newPath = myPath + "/";
+    window.location.replace(newPath + window.location.search + window.location.hash);
+}
+
 // Use window.location to get the current URL
 const currentURL = window.location.href;
 
@@ -858,35 +900,6 @@ if(!contentBool)
         console.log("No match found.");
         fourOhInfo.style.display = "block";
     }
-}
-
-function processOldSiteLinksAndRedirect(path) {
-    // Remove ".html" if present
-    if (path.endsWith('.html')) {
-        path = path.slice(0, -5);
-    }
-
-    // Replace "/content/" with "/"
-    if (path.startsWith('content/')) {
-        path = path.replace('content/', '/');
-
-        newPath = pathPrefix + path;
-
-        // Redirect using the existing function
-        doRedirect(newPath, 0);
-        return true;
-    }
-    else {
-        return false;
-    }
-}
-
-function doRedirect(redirectUrl, delay = 5000) {
-    // Redirect after 5 seconds
-    setTimeout(function() {
-        console.log('Redirecting to: ' + redirectUrl);
-        window.location.href = redirectUrl;
-    }, delay);
 }
 
 </script>
