@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This sitemap was dynamically generated on 28 November 2024 at 3:29 am by All in One SEO v4.7.4.2 - the original SEO plugin for WordPress. -->
+<!-- This sitemap was dynamically generated on 29 November 2024 at 3:42 am by All in One SEO v4.7.6 - the original SEO plugin for WordPress. -->
 
 <?xml-stylesheet type="text/xsl" href="https://learninglab.rmit.edu.au/default-sitemap.xsl?sitemap=page"?>
 <urlset
@@ -14,20 +14,32 @@
 		<priority><![CDATA[1]]></priority>
 	</url>
 	<url>
-		<loc><![CDATA[https://learninglab.rmit.edu.au/documentation/redirect/]]></loc>
-		<lastmod><![CDATA[2024-11-28T01:40:46+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[https://learninglab.rmit.edu.au/documentation/publishing-the-learning-lab/]]></loc>
-		<lastmod><![CDATA[2024-11-28T01:34:37+00:00]]></lastmod>
+		<loc><![CDATA[https://learninglab.rmit.edu.au/about-the-learning-lab/]]></loc>
+		<lastmod><![CDATA[2024-11-29T03:31:50+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 	</url>
 	<url>
 		<loc><![CDATA[https://learninglab.rmit.edu.au/about-the-learning-lab/whats-new/]]></loc>
-		<lastmod><![CDATA[2024-11-28T01:29:17+00:00]]></lastmod>
+		<lastmod><![CDATA[2024-11-29T01:15:31+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[https://learninglab.rmit.edu.au/documentation/publishing-the-learning-lab/]]></loc>
+		<lastmod><![CDATA[2024-11-29T01:05:09+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[https://learninglab.rmit.edu.au/documentation/redirect/]]></loc>
+		<lastmod><![CDATA[2024-11-28T06:48:23+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[https://learninglab.rmit.edu.au/redirect-404/]]></loc>
+		<lastmod><![CDATA[2024-11-28T04:01:45+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 	</url>
@@ -40,12 +52,6 @@
 	<url>
 		<loc><![CDATA[https://learninglab.rmit.edu.au/art-and-design/reflective-writing-design/reflecting/]]></loc>
 		<lastmod><![CDATA[2024-11-28T01:02:25+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[https://learninglab.rmit.edu.au/about-the-learning-lab/]]></loc>
-		<lastmod><![CDATA[2024-11-28T01:02:22+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 	</url>
@@ -2007,12 +2013,6 @@
 		<image:image>
 			<image:loc><![CDATA[https://rmitlibrary.github.io/cdn/learninglab/images/maths-s7-venndiagram.jpg]]></image:loc>
 		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[https://learninglab.rmit.edu.au/redirect-404/]]></loc>
-		<lastmod><![CDATA[2024-11-25T22:29:05+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
 	</url>
 	<url>
 		<loc><![CDATA[https://learninglab.rmit.edu.au/maths-statistics/statistics/s6-sample-spaces/]]></loc>
